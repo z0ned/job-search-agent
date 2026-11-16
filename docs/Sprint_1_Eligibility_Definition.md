@@ -36,6 +36,20 @@ This user correction supersedes treating the senior financial-services/PMO leade
 
 **Matching implication:** Run and evaluate contract and permanent searches as separate profiles. For contract jobs, scoring should not penalize an otherwise attractive role for lacking VP-level scope. Do not raise or lower either compensation threshold based on this clarification.
 
+## Confirmed Atlanta-area location rule (user clarification, 2026-11-16)
+
+**Decision A confirmed:** An Atlanta-based job may be **100% onsite**. For this rule, **"Atlanta" means within 10 miles of ZIP code 30307**. A posting explicitly labeled **"Atlanta"** remains eligible for **100% onsite work even if the precise office address/location is not specified**. Do not reject an Atlanta-labeled posting just because a street address is unavailable.
+
+| Case | Confirmed treatment | Evidence handling |
+|---|---|---|
+| Verified job office within **10 miles** of 30307 | Eligible for fully onsite work | Record the located office/distance when available |
+| Posting location is "Atlanta", but no specific office address is listed | Eligible for fully onsite work | Record that eligibility came from the **Atlanta location label**, not from verified 10-mile distance |
+| Office more than 10 but under 30 miles from 30307 | Prior rule requires remote work on **Mondays and Fridays** | Do not silently extend the Atlanta fully-onsite exception beyond 10 miles |
+| Office at or beyond 30 miles from 30307 | Prior rule requires **100% remote** | Exact 30-mile boundary remains to be reconciled if necessary |
+| Onsite requirement unspecified, regardless of posted city | **OPEN**: the original source document contains an additional "Onsite requirement not stated" alternative | Do not reinterpret or remove this branch without user clarification |
+
+**Important:** A nearby city label alone does not demonstrate a job is within 10 miles. "Atlanta" without an office address is an explicit user-approved exception, not a geocoding result. The original rule allowing jobs with *no stated onsite requirement* still needs separate clarification about geographical scope.
+
 ## Hard eligibility and soft ranking dimensions
 
 | Dimension | Hard rule needing user decision | Soft preference needing user decision | Unknown field problem |
