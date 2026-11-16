@@ -36,7 +36,7 @@ This user correction supersedes treating the senior financial-services/PMO leade
 
 **Matching implication:** Run and evaluate contract and permanent searches as separate profiles. For contract jobs, scoring should not penalize an otherwise attractive role for lacking VP-level scope. Do not raise or lower either compensation threshold based on this clarification.
 
-## Confirmed Atlanta-area location rule (user clarification, 2026-11-16)
+## Confirmed location and onsite-rule exceptions (user clarifications, 2026-11-16)
 
 **Decision A confirmed:** An Atlanta-based job may be **100% onsite**. For this rule, **"Atlanta" means within 10 miles of ZIP code 30307**. A posting explicitly labeled **"Atlanta"** remains eligible for **100% onsite work even if the precise office address/location is not specified**. Do not reject an Atlanta-labeled posting just because a street address is unavailable.
 
@@ -46,9 +46,9 @@ This user correction supersedes treating the senior financial-services/PMO leade
 | Posting location is "Atlanta", but no specific office address is listed | Eligible for fully onsite work | Record that eligibility came from the **Atlanta location label**, not from verified 10-mile distance |
 | Office more than 10 but under 30 miles from 30307 | Prior rule requires remote work on **Mondays and Fridays** | Do not silently extend the Atlanta fully-onsite exception beyond 10 miles |
 | Office at or beyond 30 miles from 30307 | Prior rule requires **100% remote** | Exact 30-mile boundary remains to be reconciled if necessary |
-| Onsite requirement unspecified, regardless of posted city | **OPEN**: the original source document contains an additional "Onsite requirement not stated" alternative | Do not reinterpret or remove this branch without user clarification |
+| Onsite requirement unspecified, regardless of posted city | **ELIGIBLE, but FLAGGED: work arrangement must be verified (Option C)** | Keep even if the posted city is outside the local area; do not assert that the role is remote or on-site. Clearly display “Work arrangement not specified — verification required.” |
 
-**Important:** A nearby city label alone does not demonstrate a job is within 10 miles. "Atlanta" without an office address is an explicit user-approved exception, not a geocoding result. The original rule allowing jobs with *no stated onsite requirement* still needs separate clarification about geographical scope.
+**Important:** A nearby city label alone does not demonstrate a job is within 10 miles. "Atlanta" without an office address is an explicit user-approved exception, not a geocoding result. **Confirmed work-arrangement exception: Option C supersedes previously selected Option A.** A job outside the local area whose posting omits onsite requirements remains eligible but must be clearly flagged “Work arrangement not specified — verification required.” The exception is an independent OR condition for initial location/arrangement eligibility; it does **not** establish that the job is remote. If explicit onsite requirements exist, use the distance-dependent rules above instead. Other eligibility requirements (such as compensation and role) still apply.
 
 ## Hard eligibility and soft ranking dimensions
 
