@@ -768,16 +768,18 @@ Use a Python virtual environment and systemd user timer (or cron if simpler and 
 
 ## 19. Development Roadmap and Sprint Plan
 
+**Sprint numbering correction (2026-11-16):** Sprint 1 is source validation and eligibility definition, not coding. See [Sprint 1 Status](./Sprint_1_Status.md).
+
 The following is a **recommended sequencing plan**, not a date commitment.
 
 | Sprint | Goal | Deliverables | Exit gate |
 |---|---|---|---|
-| Sprint 0 — Decisions and spike | Validate source access and scoring expectations | Eligibility interview, provider sample calls, architecture ADRs, baseline profile, test corpus | At least two suitable sources or documented fallback |
-| Sprint 1 — Foundation | Reliable collection and dedup | Project skeleton, migrations, two adapters, run logging, canonical jobs, rule engine | Repeat runs do not duplicate jobs; failures visible |
-| Sprint 2 — Recommendation | High-quality useful job assessments | Pydantic AI outputs, scoring, ranked dashboard, profile management, new-only digest | Grounded evaluations; no known hard-rule violation |
-| Sprint 3 — Learning controls | Guarded preference evolution | Mandatory free-form feedback, interpretation queue, clarification, corrections, bulk approval, career map | No unapproved or frozen learning updates |
-| Sprint 4 — Measurement | Reproducible improvement framework | Immutable cohorts, two-phase freeze controller, 5-item weekly blind audit, scorecard, regression pause state | All FR-24–33 acceptance tests pass |
-| Sprint 5 — Release hardening | Reliable home deployment | Task scheduler, backup, authentication setup, diagnostics, integration tests, recovery runbook | Local restart/retry/restore verified |
+| Sprint 1 — Source & eligibility validation | Validate source access and scoring expectations | Eligibility interview, provider sample calls, architecture ADRs, baseline profile, test corpus | At least two suitable sources or documented fallback |
+| Sprint 2 — Foundation | Reliable collection and dedup | Project skeleton, migrations, two adapters, run logging, canonical jobs, rule engine | Repeat runs do not duplicate jobs; failures visible |
+| Sprint 3 — Recommendation | High-quality useful job assessments | Pydantic AI outputs, scoring, ranked dashboard, profile management, new-only digest | Grounded evaluations; no known hard-rule violation |
+| Sprint 4 — Learning controls | Guarded preference evolution | Mandatory free-form feedback, interpretation queue, clarification, corrections, bulk approval, career map | No unapproved or frozen learning updates |
+| Sprint 5 — Measurement | Reproducible improvement framework | Immutable cohorts, two-phase freeze controller, 5-item weekly blind audit, scorecard, regression pause state | All FR-24–33 acceptance tests pass |
+| Sprint 6 — Release hardening | Reliable home deployment | Task scheduler, backup, authentication setup, diagnostics, integration tests, recovery runbook | Local restart/retry/restore verified |
 
 **Testing/release approach:** Do not wait for 100 live reviews to test phase behavior. Simulate cohorts with controlled fixture decisions, then validate genuine behavior with real user feedback during operation.
 
@@ -851,7 +853,7 @@ Explicitly **not** part of v2 by implication: application tracking, interviews, 
 2. Run an early **job-source feasibility spike** and **sample ranking calibration** before writing the main dashboard.
 3. Finalize **eligibility and exclusion rules** explicitly; keep unknown information visible.
 4. Approve the **database identity/learning/evaluation model**, with particular attention to immutable cohorts and separation between signal approval and activation.
-5. Only then begin Sprint 1 implementation.
+5. Only then begin Sprint 2 implementation.
 
 ## 24. External Reference Notes
 
