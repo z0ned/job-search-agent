@@ -16,6 +16,26 @@ Before writing hard filters, distinguish mandatory disqualifiers from preference
 5. Adjacent career exploration stays within confirmed mandatory constraints.
 6. Important explicit user preferences are distinct from AI-inferred preferences.
 
+## Confirmed two-track search strategy (user clarification, 2026-11-16)
+
+This user correction supersedes treating the senior financial-services/PMO leadership characterization as the target profile for **both** employment tracks.
+
+| Dimension | Contract work — immediate practical priority | Full-time work — senior career track |
+|---|---|---|
+| Desired kind of work | A **40-hour/week project manager or program manager role** is welcome; execution-focused work is attractive because it preserves time to develop AI and other skills | Senior financial-services technology, portfolio/PMO leadership, and business transformation roles |
+| Title targeting | Project Manager, Program Manager, Product Manager/Product Owner and similar roles or work loosely matching the resume | Head of PMO, PMO Leader, Portfolio Manager and comparable senior roles or work loosely matching the resume |
+| Seniority interpretation | **Do not require director/VP/SVP leadership responsibilities or title.** A conventional experienced individual-contributor PM/program-manager contract may be a very good match | Use senior leadership scope and enterprise-level responsibilities as strong ranking evidence |
+| Compensation rules from Job_Requirements.docx | Minimum **$70/hour when disclosed**; undisclosed hourly rate stays eligible | Minimum **$180,000/year when disclosed**; undisclosed salary stays eligible |
+| Weekly hours | **Approximately 40 hours/week is the user's expressed preference**, motivated by protected time for AI/other skills. Do not yet implement a rigid overtime or exact-hours exclusion without explicit approval | No new weekly-hours requirement stated |
+| Industry interpretation | Deep banking/capital-markets background is useful evidence of qualifications, **not** a requirement that contracts be in finance | Financial-services and transformation leadership are strong matches, but other loosely matching roles remain discoverable |
+| Strategic purpose | Good-paying, sustainable contract delivery work **now**, while maintaining room for skill development | Strongly aligned longer-term senior leadership opportunity |
+
+**Confirmed user wording (paraphrased):** The senior financial-services technology / PMO / portfolio-leader characterization is correct **for full-time roles only**. The user is happy to take a contract 40-hour-week project/program manager role now to allow time to expand AI and other skills.
+
+**Do not silently infer** that contract jobs must be low-stress, fully remote, lack leadership duties, be short duration, or be exclusive to financial services. The earlier documented location/onsite alternatives and experience exception for product roles still apply to both tracks until changed.
+
+**Matching implication:** Run and evaluate contract and permanent searches as separate profiles. For contract jobs, scoring should not penalize an otherwise attractive role for lacking VP-level scope. Do not raise or lower either compensation threshold based on this clarification.
+
 ## Hard eligibility and soft ranking dimensions
 
 | Dimension | Hard rule needing user decision | Soft preference needing user decision | Unknown field problem |
