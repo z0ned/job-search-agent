@@ -244,6 +244,8 @@ Distinguish approved-learning scores from externally observed market counts. Dur
 
 Approval and activation are **different events**: during frozen phases, approved signals remain unapplied until the permitted transition.
 
+**Nonblocking interpretation execution:** Submission creates a durable interpretation task and returns the user to job review immediately. The existing scheduled Python CLI can process pending proposals after daily discovery (or when the Learning Queue is opened by an explicit user action), so no message broker, always-on background worker, or approval interruption is required. The queue distinguishes AWAITING_INTERPRETATION from NEEDS_CLARIFICATION and PENDING_APPROVAL.
+
 ### 8.2 Proposed preference signal
 
 ~~~text
@@ -265,6 +267,8 @@ One comment may yield multiple signals. A salary complaint with a positive remar
 The queue displays each original comment alongside AI-proposed signals and any confidence warnings. User edits or clarifies mistaken interpretations. The user clicks an explicit bulk approval action covering all remaining **reviewed and eligible** proposals. Any item still Needs Clarification or explicitly dismissed is excluded. Record approval time, final signals, and the exact interpretation IDs included; no implicit auto-approval.
 
 ### 8.4 Learning application gates
+
+**Profile consistency during evaluation:** A freeze locks the versioned profile/scorer snapshot used for ordinary evaluation cohorts, not just learned preference weights. Manual profile edits can be saved, but a material explicit profile edit should be applied at a documented cohort boundary and the evaluation marked non-comparable or restarted. A safety-critical hard eligibility change must take effect for future discovery immediately, with a visible evaluation comparability warning; never continue recommending known-ineligible jobs merely to preserve an experiment.
 
 - **Phase 1:** Collect and approve signals, but apply zero learned changes through completion of 50 designated ordinary reviews.
 - **Transition:** Freeze and calculate Phase 1 results. User reviews pending proposals; take one authorized snapshot of approved baseline feedback, create new preference/model version, and apply it once.
@@ -288,8 +292,8 @@ The 10-point threshold is a **practical product success target**, not proof of c
 ### 9.2 Weekly blind audit
 
 - Build one AuditBatch per scheduled week from eligible, lower-ranked jobs **not already reviewed or selected in ordinary top-recommendation cohorts**, without using predicted attraction to choose among this pool.
-- Randomly select five distinct jobs and save random seed, pool definition, original assessment ID/rank, and time of selection.
-- Until all five have Interested/Rejected decisions **and nonblank comments**, UI must hide scores, ranks, AI explanation, and comparisons for all five.
+- Randomly select five distinct jobs and save random seed, pool definition, original assessment ID/rank, and time of selection. **Exclude candidates whose AI assessment or score the user has already viewed**; choose candidates before their scores are exposed, or the audit is not genuinely blind.
+- Until all five have Interested/Rejected decisions **and nonblank comments**, UI and service methods must hide scores, ranks, AI explanation, and comparisons for all five **across every dashboard route, normal search result, detail view, and deep link**, not solely on the Weekly Audit page.
 - Persist partial review progress; on the fifth completed review reveal the five original assessments together.
 - Only then calculate the five-item missed-opportunity sample rate = Interested / five and enqueue normal AI interpretation proposals.
 - If fewer than five eligible candidates exist, preserve a pending audit rather than fabricating jobs; exact skip/carry-forward policy is OPEN.
