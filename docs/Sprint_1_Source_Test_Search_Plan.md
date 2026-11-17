@@ -1,80 +1,69 @@
-# Sprint 1 — Job Source Test Search Plan v1.0
+# Sprint 1 — Feed Access and Volume Validation Plan v1.1
 
-**Date:** 2026-11-17  
-**Status:** Proposed testing portfolio. **No live provider results, relevance percentages, or freshness figures claimed yet.**  
-**Evidence basis:** [User questionnaire](./Sprint_1_Remaining_Decisions_Questionnaire.md) and [eligibility decisions](./Sprint_1_Eligibility_Decisions_v1_0.md).
+**Revised:** 2026-11-17  
+**Status:** FEED-ONLY FEASIBILITY TEST — user scope correction  
+**Supersedes:** the earlier ten-query posting suitability plan for current Sprint 1 testing. The prior test cases are historical research, not current acceptance evidence.
 
-## Recommended 10-query test allocation
+## Executive Summary
 
-The **confirmed 80% contract / 20% full-time** division governs the initial validation workload, not final recommendation counts or career exploration.
+**Current question: Can we programmatically obtain enough job postings, regularly and legally, through feeds/APIs to support a useful local job-discovery agent?**
 
-| Slot | Track | Representative search phrase | Evaluation focus |
-|---|---|---|---|
-| C1 | Contract | Project Manager | Conventional 40-hour execution roles |
-| C2 | Contract | Program Manager | Cross-functional delivery, no executive-level requirement |
-| C3 | Contract | Technical Project Manager | Technology implementations |
-| C4 | Contract | IT Project Manager | Enterprise delivery |
-| C5 | Contract | Banking Project Manager | Finance/technology strength |
-| C6 | Contract | Product Owner | Transferable product skills, relaxed experience criterion |
-| C7 | Contract | Product Manager | Product and AI-adjacent exposure |
-| C8 | Contract | Regulatory Technology Program Manager | Adjacent compliance/tech experience |
-| F1 | Full-time | Head of PMO / PMO Director | Senior PMO/portfolio leadership |
-| F2 | Full-time | Enterprise Portfolio Director / Transformation Leader | Senior strategic delivery |
+We are **not** looking for attractive jobs for the user now. We are **not** scoring suitability, applying salary/experience exclusions, or asking whether a sample posting deserves a recommendation. Individual job web pages and search-engine snippets **do not count as successful feed access**.
 
-These phrases are **trial inputs**, not an exclusive approved title list. Split alternatives when an API doesn't support OR queries. Evaluate actual responsibilities, employment type and eligibility, not only the job title.
+## Feed-only measurement criteria
 
-## Geographic test slices
+For each source record:
 
-1. Atlanta and metro roles: use actual **road miles** from a private origin (not ZIP centroid) when a precise employer office is available.
-2. US remote: verify states where employment is allowed, onsite frequency and occasional travel expectations.
-3. Canada and Mexico: include in source coverage research as user-requested markets, but **do not presume** that a US-based worker can take any posting or that international relocation is desired. Preserve compensation currency.
-4. Tennessee: include potential onsite/relocation scenarios for review; do not classify as ordinary local commute opportunities.
-
-Never commit the user's private street address to this public repo.
-
-## Candidate providers for testing
-
-| Candidate | Purpose | Verification method |
+| Dimension | What to measure | Pass/fail caveat |
 |---|---|---|
-| Adzuna | Broad search | Credentialed sample after user provisions free key, confirm terms/quotas; record actual responses |
-| Greenhouse | Direct employer published jobs | Pick balanced finance, tech, consulting board tokens; inspect public GET job and content fields |
-| Ashby | Direct employer published jobs | Sample employer boards, including whether compensation/arrangement are exposed |
-| Lever | Direct employer postings fallback | Sample distinct employer boards and compare additional coverage |
-| Himalayas | **Keyless remote broad-discovery candidate** | Live unfiltered feed verified on 2026-11-17; test keyword/country/employment_type Contractor filtering and 30-day original-date limitations; remote only |
+| Direct programmatic access | An actual HTTPS feed/API response (endpoint, status, timestamp, auth conditions) | Documentation or browser-rendered posting does not qualify |
+| Volume | Total distinct IDs returned, pages/cursors available, number obtainable within terms/quota | A provider-wide advertised total is **not** the accessible relevant inventory |
+| Freshness | Number with **original publication date within last 30 days**, where available; distinguish updated/ingested date | Missing original date = UNKNOWN, never guessed |
+| Basic discoverability | Broad project/program/product and PMO/portfolio title or keyword counts, when feed supports them | Counts only; **no per-job fit or pay review** |
+| Geography & work type metadata | Whether filters/fields exist for Atlanta/local/hybrid/remote, US/CA/MX, contract/full-time | Assess capability and field presence, not personal eligibility |
+| Repeated access | Same bounded feed request repeated on a different day | One successful call is a technical proof, not daily reliability |
+| Stable identity | Presence of employer, title, posting ID or canonical URL | Determines whether aggregate unique count can be trusted |
+| Cost/permission | Permitted automated access, key requirements, rate limits, attribution and ongoing fees | Personal free-first requirement remains |
 
-Official docs for interface feasibility: [Adzuna](https://developer.adzuna.com/docs/search), [Greenhouse](https://docs.greenhouse.io/job-board), [Ashby](https://developers.ashbyhq.com/docs/public-job-posting-api), [Lever](https://github.com/Lever/postings-api).
+**Result levels:**
+- **PASS — accessible:** The feed/API returns parseable actual posting data.
+- **VOLUME EVIDENCE:** Count of accessible postings, unique IDs and 30-day original-date subset measured with enough paging.
+- **PASS — enough supply:** Volume is observed across broad relevant role families and geographic types, with repeatability and acceptable permission/cost. Numerical sufficiency threshold should be justified **after measuring** real supply; don't invent a magic number.
+- **BLOCKED / UNVERIFIED:** No usable direct API response in the testing environment; do not call the provider broken.
+- **NOT TESTED:** No bounded attempt made.
 
-Documentation alone cannot establish relevant coverage. **Observed 2026-11-17:** public JSON from Ashby/Ramp and Himalayas unfiltered browse was retrieved, as recorded in [live test results](./Sprint_1_Live_Source_Test_Results_2026-11-17.md). Targeted role-query relevance and ongoing access still need evaluation.
+## Source test matrix
 
-## Evidence to record for each real call
+| Candidate feed | Role in source mix | Current proven state | Remaining feed-only test |
+|---|---|---|---|
+| Ashby public job-board API | Multiple employer-specific feeds | **One board (Ramp) returned structured JSON** | Validate more employer board IDs, aggregate accessible unique postings and original-date 30-day counts |
+| Himalayas public jobs API | Broad remote jobs feed | **One unfiltered 20-posting JSON page returned**; API advertised a much larger total | Page/keyword/country/employment-type filtered count, date semantics, duplicate identities and daily access |
+| Greenhouse public Job Board API | Multiple employer-specific feeds | Individual job **HTML** pages readable; **JSON API not yet directly verified** | Fetch JSON from a connected shell, count postings across several boards, sample field availability |
+| Lever public postings API | Employer-specific feed | Individual job page evidence only; **JSON API unverified** | Bounded feed JSON request across sample employers |
+| Adzuna search API | Broad local/hybrid + non-remote coverage | Official docs/terms found; **requires evaluation credentials; no call tested** | Request developer key, observe query counts, volume, pagination, and limits |
+| Additional keyless remote feeds | Backup for broad remote volume | Documentation for some; no reliable filtered data volume yet | Only if above sources insufficient |
 
-- Exact timestamp/timezone, provider, board token or query, request status, page count and posted listing count.
-- At least up to 20 available representative postings per source/query where the source has sufficient volume.
-- Posting ID, canonical employer, title, direct apply/source URL, complete duties and requirements.
-- Employment type (W-2/1099/C2H/C2C where actually disclosed), hours, work arrangement and exact remote days.
-- Location, candidate road-route feasibility (private origin stays local), posted date and whether the role is active.
-- Pay minimum/maximum, period and original currency; missing/estimated versus employer-stated compensation.
-- Manually judged eligibility, likely interest, relevance, missing critical fields, source overlap and stale/resurfaced postings.
-- Source-specific terms, quota, fees, access prerequisites and observed error behavior.
+## Proposed minimal trial
 
-Each newly enabled job source receives its own **30-day initial lookback**, as explicitly specified by the user. A later scan can include newly discovered older open roles with age visible; do not re-email a previously known canonical posting as new.
+1. **One live GET from each accessible public provider**; record date/time, response status and format. Record failures and environment limitations.
+2. **Sample three to five employer boards** for each employer-specific ATS provider. Count posting IDs rather than assess whether postings are good for the user.
+3. For broad aggregators, request **bounded sample pages** for broadly named Project Manager, Program Manager, Product Manager and PMO roles, across US/local and remote slices where supported. Count only.
+4. Measure total accessible postings, duplicates/overlap, structured work-type/location availability and **true original 30-day age** where supported.
+5. Repeat one day later for rate stability and new IDs. Do not build a production connector, dashboard or database as part of this test.
+6. Report a comparative volume/coverage/access/cost table and recommend minimal starting feed combination.
 
-## Source acceptance gate
+## Explicitly deferred work
 
-A provider passes when:
-1. It permits repeatable personal-use automated collection at acceptable cost (free-first).
-2. Real samples include **relevant open opportunities** for the two target tracks.
-3. Descriptions and source identity support meaningful suitability ranking and deduplication.
-4. Unknown salary/work arrangement is preserved honestly and linked to source evidence.
-5. Failures and partial search runs are visible; advertised age is not treated as absolute newness.
+- Individual job suitability judgments; compensation and qualification gap screening.
+- Rejection decisions and AI ranking.
+- Career map or career exploration effectiveness.
+- Daily digest and dashboard behavior.
+- Job-specific human-readable HTML page hunts.
 
-Do not announce completed source validation until dated live responses and manually inspected sample findings are recorded.
+Your confirmed 80% contract/20% full-time strategy is **a future search allocation requirement**, not a reason to spend Sprint 1 manually finding good individual jobs.
 
-## Next actions
+## Exit gate
 
-- [x] Derive search portfolio from user-submitted questionnaire.
-- [ ] Select employers with verified public board identities, excluding Regions and Invesco from recommendations.
-- [x] Retrieve two independent public API JSON samples (Ashby/Ramp and unfiltered Himalayas).
-- [ ] Execute **targeted** query tests and measure relevant role counts, not just unfiltered API availability.
-- [ ] Verify provider usage terms and any credentials/payment implications.
-- [ ] Recommend initial sources and obtain source/eligibility approval.
+**Sprint 1 feed-validation is complete only when we can show actual repeatable direct-feed access and measured counts sufficient to plausibly supply the daily discovery pipeline**, with documented access costs, restrictions and data age limitations. A source that only has published web pages but no verified accessible feed stays UNVERIFIED.
+
+**No production implementation authorized.**
