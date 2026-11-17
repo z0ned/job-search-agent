@@ -115,6 +115,19 @@ Of the 721, **175** titles match broad project/program/product/portfolio/PMO/tra
 
 [Full five-board source-volume report](./Sprint_1_Greenhouse_Feed_Volume_2026-11-17.md). Recommended next action: probe recent **contract ∩ role** inventory and validate INFUSE contract classification, then test Lever. No production application code has been started.
 
+## Greenhouse recent × role × contract overlap probe — approved and committed (2026-11-17)
+
+The user approved a **targeted follow-up on the same five validated Greenhouse boards before moving to Lever**. Committed the read-only PowerShell script [scripts/feasibility/test_greenhouse_contract_overlap.ps1](../scripts/feasibility/test_greenhouse_contract_overlap.ps1).
+
+**Purpose:** With one unauthenticated `GET /v1/boards/{board}/jobs` per selected employer, report each board's **30-day first-published ∩ broad target-role-title ∩ contract-signal** count, separate contract evidence from **title only, employer custom metadata only, or both**, and show aggregated INFUSE work-type-like metadata field/value frequency and location labels among the intersection. This provides a direct diagnostic for whether the **250 INFUSE contract signals** in the initial test reflect meaningful type metadata rather than a misleading heuristic. Counts remain **signals**, not verified job contracts, and remote/U.S. location labels do **not** establish eligibility.
+
+**Execution:** The script has been committed but **not yet run on the user's PC**. No count for the triple intersection is claimed. No production code, applicant evaluation, credential use or Adzuna calls. Run from the repo root with:
+
+    git pull origin main
+    powershell -NoProfile -File .\scripts\feasibility\test_greenhouse_contract_overlap.ps1
+
+Then record the actual result and decide whether to expand Greenhouse boards or proceed to Lever.
+
 ## Next actions
 
 1. **Adzuna U.S. direct authenticated feed is now verified.** Next measure its 30-day contract search volume and page retrieval limits. Continue unverified Greenhouse/Lever APIs in parallel.
