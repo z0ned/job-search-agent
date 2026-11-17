@@ -194,7 +194,7 @@ After the user accepted the next two low-cost Himalayas checks, committed [scrip
 
 **Important:** The feed is sorted by last update (`pubDate`), not verified original posting date. A new GUID appearing in the **top 40 sample** may reflect a previously existing job moving into the window due to an edit; it is **not necessarily a newly published vacancy**. The four requests cover only 40 sampled jobs per query, not the 231/131 reported query totals. Detecting stable *new feed arrival rates* may eventually require broader pagination or provider origin dates.
 
-**Status:** Script has been committed to GitHub but **not yet executed from the user's Windows machine**. The assistant environment lacks PowerShell and cannot exercise its local JSON snapshot. **Do not claim page-two or day-over-day validation passed yet.**
+**Status:** The user successfully executed this test locally on 2026-11-17; **page-two validation passed and the first GUID baseline was saved**, but no day-over-day change measurement has yet occurred. See the measured results below.
 
 **Run from local repo root (same command today and on a later day):**
 
@@ -202,6 +202,14 @@ After the user accepted the next two low-cost Himalayas checks, committed [scrip
     powershell -NoProfile -File .\scripts\feasibility\test_himalayas_daily_delta.ps1
 
 No Adzuna Pending Activation calls consumed, no production application implementation.
+
+## Himalayas filtered page-two validation and GUID baseline — VERIFIED (2026-11-17)
+
+**User-run at 18:41:13 UTC:** Four keyless public API requests fetched two pages each for Project Manager and Program Manager, 20 jobs/page. Each query had **40 unique IDs across pages with no within-query duplicates**. **71 unique GUIDs across both query result samples** (80 record appearances, **9 jobs overlapping across queries**). All 80 entries satisfied Contractor/Temporary type filters and U.S.-explicit location restrictions; all were last updated within 30 days according to `pubDate`, which is **not an original first-published date**. Broad role-title keyword matches were **13/40** Project Manager and **18/40** Program Manager. Provider-reported query totals remained **231** and **131**, respectively.
+
+**Snapshot:** The script successfully saved the first **GUID-only** local baseline to `.local-test-data/himalayas_pm_contract_page_samples.json` (Git-ignored). **Day-over-day new-ID rate remains unmeasured.** The next source test is to run the **same script after 2026-11-18 18:41 UTC**, compare IDs entering/leaving the two 40-result windows, and avoid equating recently updated job IDs with genuinely new postings.
+
+[Full test measurements](./Sprint_1_Himalayas_Pagination_Baseline_2026-11-17.md). No Adzuna trial calls, credentials or production application code used.
 
 ## Next actions
 
