@@ -36,6 +36,14 @@ This user correction supersedes treating the senior financial-services/PMO leade
 
 **Matching implication:** Run and evaluate contract and permanent searches as separate profiles. For contract jobs, scoring should not penalize an otherwise attractive role for lacking VP-level scope. Do not raise or lower either compensation threshold based on this clarification.
 
+## Confirmed contract classification and preference (2026-11-17)
+
+- **Eligible contract arrangements:** Both **W-2 contract** and **1099 independent-contractor** opportunities.
+- **Preference:** W-2 contract is preferred; this is a **soft ranking preference**, not a mandatory eligibility filter. Do not reject an otherwise eligible 1099 role solely because it is 1099.
+- **Compensation:** Preserve the previously confirmed **$70/hour minimum when disclosed**, or include when the rate is unspecified, for both arrangements. Do not silently change the minimum to account for tax, benefits or overhead differences; those factors may be displayed separately and revisited later.
+- **Unknown classification:** A posting labeled only "contract" without W-2/1099 details stays eligible on this dimension, with engagement arrangement unverified. Do not silently classify it as W-2 or 1099.
+- **Workload context:** The approximate 40-hour-week preference remains a separate soft criterion intended to preserve time for AI and other skill development.
+
 ## Confirmed location and onsite rules (user clarifications through 2026-11-17)
 
 **Confirmed commute origin and method (2026-11-17):** Driving distance (actual road miles) from the user's **specified street address in ZIP 30307**, **not** straight-line radius and **not** the ZIP centroid. The precise origin address is private and MUST NOT be committed to this public GitHub repository, printed in logs, or embedded in exported reports. Store it later in a local untracked setting or protected secrets store, e.g. `JSA_COMMUTE_ORIGIN_ADDRESS`; this documentation intentionally omits it. Reconcile address geocoding and road-routing capability during the source/eligibility feasibility phase, without building a production adapter now.
