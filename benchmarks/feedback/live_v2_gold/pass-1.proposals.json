@@ -1,0 +1,1078 @@
+{
+  "FI-001": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "I would spend my days creating status decks. That is not the work I want.",
+        "feature": "status_deck_creation",
+        "polarity": "negative",
+        "scope": {
+          "type": "role_feature",
+          "value": "status_deck_creation"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-002": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "I love solving client problems",
+        "feature": "solving_client_problems",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "client_problem_solving"
+        },
+        "strength": "strong"
+      },
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "running AI solution workshops.",
+        "feature": "running_ai_solution_workshops",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "ai_solution_workshops"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-003": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "The advisory work appeals to me",
+        "feature": "advisory_work",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "advisory_work"
+        },
+        "strength": "mild"
+      },
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "I do not want a sales quota.",
+        "feature": "sales_quota",
+        "polarity": "negative",
+        "scope": {
+          "type": "role_feature",
+          "value": "sales_quota"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-004": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "I enjoy delivering concrete transformation milestones",
+        "feature": "delivering_concrete_transformation_milestones",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "concrete_transformation_milestones"
+        },
+        "strength": "mild"
+      },
+      {
+        "condition": null,
+        "dimension": "contract_terms",
+        "evidence_quote": "on short contracts",
+        "feature": "short_contracts",
+        "polarity": "positive",
+        "scope": {
+          "type": "contract_term",
+          "value": "short_contracts"
+        },
+        "strength": "mild"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-005": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "career_category",
+        "evidence_quote": "I do not want to return to contact-center operations roles.",
+        "feature": "contact_center_operations_roles",
+        "polarity": "negative",
+        "scope": {
+          "type": "career_category",
+          "value": "contact_center_operations"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-006": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "career_category",
+        "evidence_quote": "AI enablement is a career direction I would love to explore",
+        "feature": "ai_enablement_roles",
+        "polarity": "positive",
+        "scope": {
+          "type": "career_category",
+          "value": "ai_enablement"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-007": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "I am not interested in another core-banking replacement transformation.",
+        "feature": "core_banking_replacement_transformation_work",
+        "polarity": "negative",
+        "scope": {
+          "type": "role_feature",
+          "value": "core_banking_replacement_transformation"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-008": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "work_arrangement",
+        "evidence_quote": "rotating overnight on-call duties would be draining",
+        "feature": "rotating_overnight_on_call",
+        "polarity": "negative",
+        "scope": {
+          "type": "schedule",
+          "value": "rotating_overnight_on_call"
+        },
+        "strength": "mild"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-009": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "I like the client-facing AI work",
+        "feature": "client_facing_ai_work",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "client_facing_ai_work"
+        },
+        "strength": "mild"
+      },
+      {
+        "condition": null,
+        "dimension": "compensation",
+        "evidence_quote": "$110/hour is too low for this C2C job",
+        "feature": "c2c_110_hour_rate",
+        "polarity": "negative",
+        "scope": {
+          "type": "compensation_context",
+          "value": "c2c_110_hour"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-010": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "compensation",
+        "evidence_quote": "The $140/hour C2C rate works for this opportunity",
+        "feature": "c2c_rate_acceptable",
+        "polarity": "positive",
+        "scope": {
+          "type": "compensation_context",
+          "value": "c2c_140_hour"
+        },
+        "strength": "mild"
+      },
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "the scope is attractive",
+        "feature": "attractive_scope",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "scope"
+        },
+        "strength": "mild"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-011": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "compensation",
+        "evidence_quote": "The $80/hour rate is fine.",
+        "feature": "rate_is_fine",
+        "polarity": "positive",
+        "scope": {
+          "type": "compensation_context",
+          "value": "w2_80_hour"
+        },
+        "strength": "mild"
+      },
+      {
+        "condition": null,
+        "dimension": "work_arrangement",
+        "evidence_quote": "I only dislike the onsite schedule.",
+        "feature": "onsite_schedule",
+        "polarity": "negative",
+        "scope": {
+          "type": "arrangement",
+          "value": "onsite"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-012": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "compensation",
+        "evidence_quote": "The $190,000 base salary is acceptable",
+        "feature": "base_salary_acceptable",
+        "polarity": "positive",
+        "scope": {
+          "type": "compensation_context",
+          "value": "permanent_190000_usd_base"
+        },
+        "strength": "mild"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-013": {
+    "clarification_question": null,
+    "hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "growth_purpose",
+        "evidence_quote": "could be fun",
+        "feature": "fun_work",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "fun_work"
+        },
+        "strength": "mild"
+      },
+      {
+        "condition": null,
+        "dimension": "compensation",
+        "evidence_quote": "$175,000 base is below my established minimum",
+        "feature": "pay_below_minimum",
+        "polarity": "negative",
+        "scope": {
+          "type": "compensation_context",
+          "value": "permanent_base_175000_usd"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-014": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "contract_terms",
+        "evidence_quote": "I still worry about months without billable work.",
+        "feature": "concern_about_unbillable_gaps",
+        "polarity": "negative",
+        "scope": {
+          "type": "contract_term",
+          "value": "months_without_billable_work"
+        },
+        "strength": "mild"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-015": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "compensation",
+        "evidence_quote": "do not want to invest time with employers who refuse to disclose base salary",
+        "feature": "salary_transparency",
+        "polarity": "negative",
+        "scope": {
+          "type": "compensation_transparency",
+          "value": "base_salary_disclosed"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-016": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "growth_purpose",
+        "evidence_quote": "The mission really resonates with me.",
+        "feature": "mission_alignment",
+        "polarity": "positive",
+        "scope": {
+          "type": "mission",
+          "value": "nonprofit_ai_program_manager_mission"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-017": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "employer",
+        "evidence_quote": "I am uncomfortable with Northstar Tech after its recent layoffs.",
+        "feature": "discomfort_after_recent_layoffs",
+        "polarity": "negative",
+        "scope": {
+          "type": "employer",
+          "value": "Northstar Tech"
+        },
+        "strength": "mild"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-018": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "industry",
+        "evidence_quote": "I do not want to work in the tobacco industry.",
+        "feature": "tobacco_industry",
+        "polarity": "negative",
+        "scope": {
+          "type": "industry",
+          "value": "tobacco"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-019": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "growth_purpose",
+        "evidence_quote": "Helping small nonprofits apply AI would be meaningful to me.",
+        "feature": "ai_for_small_nonprofits_mission",
+        "polarity": "positive",
+        "scope": {
+          "type": "mission",
+          "value": "small_nonprofits_apply_ai"
+        },
+        "strength": "mild"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-020": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "culture_environment",
+        "evidence_quote": "would hate a manager who micromanages every decision",
+        "feature": "micromanagement",
+        "polarity": "negative",
+        "scope": {
+          "type": "culture_feature",
+          "value": "micromanaging_every_decision"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-021": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "employer",
+        "evidence_quote": "I admire Verity Labs",
+        "feature": "positive_view_of_verity_labs",
+        "polarity": "positive",
+        "scope": {
+          "type": "employer",
+          "value": "Verity Labs"
+        },
+        "strength": "mild"
+      },
+      {
+        "condition": null,
+        "dimension": "culture_environment",
+        "evidence_quote": "the technical team seems thoughtful and collaborative",
+        "feature": "thoughtful_collaborative_team",
+        "polarity": "positive",
+        "scope": {
+          "type": "culture_feature",
+          "value": "thoughtful_collaborative_team"
+        },
+        "strength": "mild"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-022": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "employer",
+        "evidence_quote": "but not for Ridgetop Bank.",
+        "feature": "does_not_want_ridgetop_bank",
+        "polarity": "negative",
+        "scope": {
+          "type": "employer",
+          "value": "Ridgetop Bank"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-023": {
+    "clarification_question": null,
+    "hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+    "interpretations": [],
+    "profile_fact_candidate": "Confirmed hard-rule conflict: job is hybrid_3_on_site at 45 miles, which conflicts with the existing commute rule requiring fully remote regular work at at least 30 driving miles. Feedback states this as a rule conflict rather than an independent preference: \"breaks my distance rule.\"",
+    "review_status": "PROFILE_FACT_REVIEW"
+  },
+  "FI-024": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "work_arrangement",
+        "evidence_quote": "I like being fully remote",
+        "feature": "fully_remote",
+        "polarity": "positive",
+        "scope": {
+          "type": "arrangement",
+          "value": "fully_remote"
+        },
+        "strength": "mild"
+      },
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "could focus on the client work",
+        "feature": "client_work_focus",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "client_work"
+        },
+        "strength": "mild"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-025": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "work_arrangement",
+        "evidence_quote": "required night and weekend coverage would interfere with my personal time",
+        "feature": "night_and_weekend_coverage",
+        "polarity": "negative",
+        "scope": {
+          "type": "schedule",
+          "value": "night_and_weekend_coverage"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-026": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "work_arrangement",
+        "evidence_quote": "Hybrid is appealing",
+        "feature": "hybrid_arrangement",
+        "polarity": "positive",
+        "scope": {
+          "type": "arrangement",
+          "value": "hybrid"
+        },
+        "strength": "mild"
+      },
+      {
+        "condition": null,
+        "dimension": "work_arrangement",
+        "evidence_quote": "this nearby office, only six miles from home.",
+        "feature": "nearby_office_commute",
+        "polarity": "positive",
+        "scope": {
+          "type": "location_arrangement",
+          "value": "within_10_miles"
+        },
+        "strength": "mild"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-027": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "work_arrangement",
+        "evidence_quote": "Flying every week would wear me out",
+        "feature": "weekly_travel",
+        "polarity": "negative",
+        "scope": {
+          "type": "travel_frequency",
+          "value": "every_week"
+        },
+        "strength": "strong"
+      },
+      {
+        "condition": null,
+        "dimension": "work_arrangement",
+        "evidence_quote": "occasional trips are okay",
+        "feature": "occasional_travel",
+        "polarity": "positive",
+        "scope": {
+          "type": "travel_frequency",
+          "value": "occasional_trips"
+        },
+        "strength": "mild"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-028": {
+    "clarification_question": null,
+    "hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "work_arrangement",
+        "evidence_quote": "I would have to be onsite Mondays and Fridays",
+        "feature": "onsite_mondays_and_fridays",
+        "polarity": "negative",
+        "scope": {
+          "type": "arrangement",
+          "value": "onsite_mon_fri"
+        },
+        "strength": "mild"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-029": {
+    "clarification_question": "What specifically about the commute is the problem for you—distance, required onsite frequency, traffic/time, or something else?",
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [],
+    "profile_fact_candidate": null,
+    "review_status": "NEEDS_CLARIFICATION"
+  },
+  "FI-030": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "seniority_scope",
+        "evidence_quote": "I like being the trusted hands-on expert",
+        "feature": "hands_on_individual_contributor_scope",
+        "polarity": "positive",
+        "scope": {
+          "type": "seniority_feature",
+          "value": "trusted_hands_on_expert"
+        },
+        "strength": "strong"
+      },
+      {
+        "condition": null,
+        "dimension": "seniority_scope",
+        "evidence_quote": "without managing a large team",
+        "feature": "large_team_management",
+        "polarity": "negative",
+        "scope": {
+          "type": "seniority_feature",
+          "value": "large_team_management"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-031": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "seniority_scope",
+        "evidence_quote": "Directly managing 20 people is not what I want to spend my time doing.",
+        "feature": "direct_people_management",
+        "polarity": "negative",
+        "scope": {
+          "type": "seniority_feature",
+          "value": "direct_management_of_20_people"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-032": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "growth_purpose",
+        "evidence_quote": "Owning a larger AI transformation portfolio is exactly the stretch I want.",
+        "feature": "larger_ai_transformation_portfolio",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "ai_transformation_portfolio_ownership"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-033": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "seniority_scope",
+        "evidence_quote": "I would have almost no decision-making autonomy",
+        "feature": "low_decision_making_autonomy",
+        "polarity": "negative",
+        "scope": {
+          "type": "seniority_feature",
+          "value": "decision_making_autonomy"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-034": {
+    "clarification_question": "When you say the role seems too senior, is your concern mainly about leadership/ownership scope, people-management expectations, or something else about the level?",
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [],
+    "profile_fact_candidate": null,
+    "review_status": "NEEDS_CLARIFICATION"
+  },
+  "FI-035": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "career_category",
+        "evidence_quote": "I want to move into AI solution architecture",
+        "feature": "move_into_ai_solution_architecture",
+        "polarity": "positive",
+        "scope": {
+          "type": "career_category",
+          "value": "ai_solution_architecture"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-036": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [],
+    "profile_fact_candidate": "Candidate states they do not have the hands-on SAP integration experience this contract needs.",
+    "review_status": "PROFILE_FACT_REVIEW"
+  },
+  "FI-037": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "I do not want my daily work to consist mostly of writing Python code.",
+        "feature": "mostly_writing_python_code",
+        "polarity": "negative",
+        "scope": {
+          "type": "role_feature",
+          "value": "mostly_writing_python_code"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-038": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [],
+    "profile_fact_candidate": "Candidate states they have already delivered these migrations.",
+    "review_status": "PROFILE_FACT_REVIEW"
+  },
+  "FI-039": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "career_category",
+        "evidence_quote": "AI evangelist roles genuinely excite me as a career direction.",
+        "feature": "ai_evangelist_roles",
+        "polarity": "positive",
+        "scope": {
+          "type": "career_category",
+          "value": "ai_evangelist"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-040": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "career_category",
+        "evidence_quote": "I do not want a career in quota-carrying sales.",
+        "feature": "quota_carrying_sales_career",
+        "polarity": "negative",
+        "scope": {
+          "type": "career_category",
+          "value": "quota_carrying_sales"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-041": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "employer",
+        "evidence_quote": "I do not trust the employer",
+        "feature": "trust_in_employer",
+        "polarity": "negative",
+        "scope": {
+          "type": "employer",
+          "value": "current_job_employer"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-042": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "career_category",
+        "evidence_quote": "I would love an AI product leadership career",
+        "feature": "ai_product_leadership",
+        "polarity": "positive",
+        "scope": {
+          "type": "career_category",
+          "value": "ai_product_leadership"
+        },
+        "strength": "strong"
+      },
+      {
+        "condition": null,
+        "dimension": "employer",
+        "evidence_quote": "just not at Omega Health.",
+        "feature": "Omega Health",
+        "polarity": "negative",
+        "scope": {
+          "type": "employer",
+          "value": "Omega Health"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-043": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "growth_purpose",
+        "evidence_quote": "I love AI strategy consulting",
+        "feature": "ai_strategy_consulting",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "ai_strategy_consulting"
+        },
+        "strength": "strong"
+      },
+      {
+        "condition": null,
+        "dimension": "compensation",
+        "evidence_quote": "this $105/hour C2C rate is not worthwhile",
+        "feature": "pay_not_worthwhile",
+        "polarity": "negative",
+        "scope": {
+          "type": "compensation_context",
+          "value": "c2c_105_hour"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-044": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "growth_purpose",
+        "evidence_quote": "looks promising to me",
+        "feature": "promising_opportunity",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "this_job"
+        },
+        "strength": "mild"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-045": {
+    "clarification_question": "What specifically made this role 'not your thing'—for example the work itself, the seniority/scope, the employer, or the contract arrangement?",
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [],
+    "profile_fact_candidate": null,
+    "review_status": "NEEDS_CLARIFICATION"
+  },
+  "FI-046": {
+    "clarification_question": "What specifically felt off about the culture—such as management style, collaboration, pace, values, or work-life expectations?",
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [],
+    "profile_fact_candidate": null,
+    "review_status": "NEEDS_CLARIFICATION"
+  },
+  "FI-047": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "compensation",
+        "evidence_quote": "The pay is fine",
+        "feature": "pay_is_fine",
+        "polarity": "positive",
+        "scope": {
+          "type": "compensation_context",
+          "value": "this_job_pay"
+        },
+        "strength": "mild"
+      },
+      {
+        "condition": null,
+        "dimension": "seniority_scope",
+        "evidence_quote": "it is not senior enough for the responsibility I want",
+        "feature": "insufficient_seniority_for_desired_responsibility",
+        "polarity": "negative",
+        "scope": {
+          "type": "seniority_feature",
+          "value": "seniority_level"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-048": {
+    "clarification_question": null,
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "must love sales'; that's exactly what I want to avoid.",
+        "feature": "sales_focus",
+        "polarity": "negative",
+        "scope": {
+          "type": "role_feature",
+          "value": "sales"
+        },
+        "strength": "strong"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FI-049": {
+    "clarification_question": "What specifically feels wrong about this opportunity—pay, employer, responsibilities, work arrangement, or something else?",
+    "hard_constraint_action": "UNCHANGED",
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "career_category",
+        "evidence_quote": "I like consulting as a career",
+        "feature": "consulting_career",
+        "polarity": "positive",
+        "scope": {
+          "type": "career_category",
+          "value": "consulting"
+        },
+        "strength": "mild"
+      }
+    ],
+    "profile_fact_candidate": null,
+    "review_status": "NEEDS_CLARIFICATION"
+  },
+  "FI-050": {
+    "clarification_question": null,
+    "hard_constraint_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+    "interpretations": [],
+    "profile_fact_candidate": "User explicitly wants to reconsider the confirmed permanent base minimum rule: \"I want to reconsider my minimum.\"",
+    "review_status": "PROFILE_FACT_REVIEW"
+  }
+}

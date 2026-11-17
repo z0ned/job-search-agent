@@ -1,0 +1,1845 @@
+{
+  "configuration": {
+    "benchmark_version": "2.0",
+    "hard_rules": {
+      "1099_hourly_minimum_usd": 100,
+      "c2c_hourly_minimum_usd": null,
+      "commute_rules": [
+        "Within 10 driving miles: onsite acceptable.",
+        "Greater than 10 and less than 30 driving miles: Mondays and Fridays must be remote. Unknown days require verification.",
+        "At least 30 driving miles: regular work must be fully remote. Occasional visits or business trips are allowed."
+      ],
+      "permanent_base_minimum_usd": 180000,
+      "unknown_salary_remains_eligible": true,
+      "w2_hourly_minimum_usd": 75
+    },
+    "scenario_count": 12,
+    "suite_file": "benchmarks/feedback/holdout_cases_v2.json",
+    "suite_sha256": "c38ff4c44d7cd0110e198b0682833da8f7c70c15e1cfd04489075858ef099393",
+    "suite_version": "2.0-holdout",
+    "taxonomy_version": "feedback-taxonomy-v2.0"
+  },
+  "consistency": {
+    "changed_case_ids": [
+      "FH-004",
+      "FH-005",
+      "FH-010"
+    ],
+    "unchanged_cases": {
+      "accuracy": 0.75,
+      "correct": 9,
+      "total": 12
+    },
+    "unverified_case_ids": []
+  },
+  "elapsed_seconds": 52.918,
+  "evaluation_source": {
+    "mode": "live",
+    "passes": 2,
+    "prompt_version": "feedback-interpretation-v2.0",
+    "requested_model": "gpt-5.4-2026-03-05",
+    "temperature_override": 0.1
+  },
+  "repeated_pass_requirement_met": true,
+  "runs": [
+    {
+      "ambiguity_and_profile_fact_routing": {
+        "accuracy": 1.0,
+        "correct": 4,
+        "total": 4
+      },
+      "cases_without_unmatched_career_category_downgrades": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "category_interest_indicator_accuracy": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "clarification_routing": {
+        "accuracy": 1.0,
+        "correct": 1,
+        "total": 1
+      },
+      "clear_case_dimension_and_scope_accuracy": {
+        "accuracy": 0.5,
+        "correct": 4,
+        "total": 8
+      },
+      "elapsed_seconds": 26.173,
+      "evidence_grounding": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "exact_case_match": {
+        "accuracy": 0.25,
+        "correct": 3,
+        "total": 12
+      },
+      "execution_errors": {},
+      "expected_hard_action_accuracy": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "explicit_signal_recall": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 11
+      },
+      "failures": [
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "case_id": "FH-002",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-003",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-004",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-005",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-006",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "NEEDS_CLARIFICATION",
+          "case_id": "FH-007",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": false,
+          "signal_fields_with_differences": [
+            "feature",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-010",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-011",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-012",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        }
+      ],
+      "false_positive_signals": 12,
+      "hard_constraint_no_mutation": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "missed_signals": 11,
+      "predictions_sha256": "934cdbae24aafd10bb40e3b88a485c43240285749e002682e8e4293dc20e5c27",
+      "profile_fact_routing": {
+        "accuracy": 1.0,
+        "correct": 3,
+        "total": 3
+      },
+      "proposals_sha256": "593864fe9ede9046db4c3a1e7c7e338490e84c10a0db9a2aa5993aed720e9ded",
+      "quality_gates": {
+        "all_ambiguity_and_profile_facts_routed_safely": true,
+        "all_cases_completed": true,
+        "all_emitted_evidence_quotes_grounded": true,
+        "clear_case_dimension_and_scope_at_least_95_percent": false,
+        "explicit_signal_recall_at_least_90_percent": false,
+        "hard_constraints_unchanged": true,
+        "no_unmatched_career_category_downgrades": true
+      },
+      "quality_gates_passed": false,
+      "route_accuracy": {
+        "accuracy": 0.9166666666666666,
+        "correct": 11,
+        "total": 12
+      },
+      "route_confusion": {
+        "NEEDS_CLARIFICATION": {
+          "NEEDS_CLARIFICATION": 1
+        },
+        "PENDING_APPROVAL": {
+          "NEEDS_CLARIFICATION": 1,
+          "PENDING_APPROVAL": 7
+        },
+        "PROFILE_FACT_REVIEW": {
+          "PROFILE_FACT_REVIEW": 3
+        }
+      },
+      "scenario_count": 12,
+      "semantic": {
+        "authorized_hard_rule_actions": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "total": 12
+        },
+        "cases": [
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "NEEDS_CLARIFICATION",
+            "case_id": "FH-001",
+            "correct_signals": [],
+            "dimension_and_scope_correct": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "NEEDS_CLARIFICATION",
+            "extra_signals": [],
+            "failure_classifications": [],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": true,
+            "missed_signals": [],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PROFILE_FACT_REVIEW",
+            "case_id": "FH-002",
+            "correct_signals": [],
+            "dimension_and_scope_correct": false,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PROFILE_FACT_REVIEW",
+            "extra_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:facilitating_incident_tabletop_exercises",
+                "feature_label": "facilitating_incident_tabletop_exercises",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:incident_tabletop_exercises",
+                "scope_label": "incident_tabletop_exercises",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "failure_classifications": [
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:facilitating incident tabletop exercises",
+                "feature_label": "facilitating incident tabletop exercises",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:incident_tabletop_facilitation",
+                "scope_label": "incident_tabletop_facilitation",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-003",
+            "correct_signals": [],
+            "dimension_and_scope_correct": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": false,
+                "dimension": "career_category",
+                "feature_id": "literal:data_governance_analysis_career",
+                "feature_label": "data_governance_analysis_career",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:data_governance_analysis",
+                "scope_label": "data_governance_analysis",
+                "scope_type": "career_category",
+                "strength": "strong"
+              }
+            ],
+            "failure_classifications": [
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": false,
+                "dimension": "career_category",
+                "feature_id": "literal:data governance analysis",
+                "feature_label": "data governance analysis",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:data_governance_analysis",
+                "scope_label": "data_governance_analysis",
+                "scope_type": "career_category",
+                "strength": "strong"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-004",
+            "correct_signals": [],
+            "dimension_and_scope_correct": false,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:diagnosing_production_alerts",
+                "feature_label": "diagnosing_production_alerts",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:diagnosing_production_alerts",
+                "scope_label": "diagnosing_production_alerts",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              },
+              {
+                "conditional": false,
+                "dimension": "work_arrangement",
+                "feature_id": "literal:weekend_pager_duty",
+                "feature_label": "weekend_pager_duty",
+                "index": 1,
+                "polarity": "negative",
+                "scope_id": "literal:weekend_pager_duty",
+                "scope_label": "weekend_pager_duty",
+                "scope_type": "schedule",
+                "strength": "strong"
+              }
+            ],
+            "failure_classifications": [
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:diagnosing production alerts",
+                "feature_label": "diagnosing production alerts",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:production_alert_diagnosis",
+                "scope_label": "production_alert_diagnosis",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              },
+              {
+                "conditional": false,
+                "dimension": "work_arrangement",
+                "feature_id": "literal:weekend pager duty",
+                "feature_label": "weekend pager duty",
+                "index": 1,
+                "polarity": "negative",
+                "scope_id": "literal:weekend_pager_duty",
+                "scope_label": "weekend_pager_duty",
+                "scope_type": "schedule",
+                "strength": "strong"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-005",
+            "correct_signals": [],
+            "dimension_and_scope_correct": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": false,
+                "dimension": "career_category",
+                "feature_id": "literal:procurement_operations_career",
+                "feature_label": "procurement_operations_career",
+                "index": 0,
+                "polarity": "negative",
+                "scope_id": "literal:procurement_operations",
+                "scope_label": "procurement_operations",
+                "scope_type": "career_category",
+                "strength": "strong"
+              },
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:vendor_negotiation",
+                "feature_label": "vendor_negotiation",
+                "index": 1,
+                "polarity": "positive",
+                "scope_id": "literal:vendor_negotiation",
+                "scope_label": "vendor_negotiation",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "failure_classifications": [
+              "unsupported_career_category_downgrade",
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": false,
+                "dimension": "career_category",
+                "feature_id": "literal:procurement operations",
+                "feature_label": "procurement operations",
+                "index": 0,
+                "polarity": "negative",
+                "scope_id": "literal:procurement_operations",
+                "scope_label": "procurement_operations",
+                "scope_type": "career_category",
+                "strength": "strong"
+              },
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:vendor negotiation",
+                "feature_label": "vendor negotiation",
+                "index": 1,
+                "polarity": "positive",
+                "scope_id": "literal:vendor_negotiation",
+                "scope_label": "vendor_negotiation",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "unsupported_career_category_downgrades": [
+              {
+                "conditional": false,
+                "dimension": "career_category",
+                "feature_id": "literal:procurement_operations_career",
+                "feature_label": "procurement_operations_career",
+                "index": 0,
+                "polarity": "negative",
+                "scope_id": "literal:procurement_operations",
+                "scope_label": "procurement_operations",
+                "scope_type": "career_category",
+                "strength": "strong"
+              }
+            ]
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-006",
+            "correct_signals": [],
+            "dimension_and_scope_correct": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:purchase_order_processing",
+                "feature_label": "purchase_order_processing",
+                "index": 0,
+                "polarity": "negative",
+                "scope_id": "literal:purchase_order_processing",
+                "scope_label": "purchase_order_processing",
+                "scope_type": "role_feature",
+                "strength": "strong"
+              }
+            ],
+            "failure_classifications": [
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": true,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:purchase-order-heavy duties",
+                "feature_label": "purchase-order-heavy duties",
+                "index": 0,
+                "polarity": "negative",
+                "scope_id": "literal:purchase_order_processing",
+                "scope_label": "purchase_order_processing",
+                "scope_type": "role_feature",
+                "strength": "strong"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "NEEDS_CLARIFICATION",
+            "case_id": "FH-007",
+            "correct_signals": [],
+            "dimension_and_scope_correct": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:accessibility_testing",
+                "feature_label": "accessibility_testing",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:accessibility_testing",
+                "scope_label": "accessibility_testing",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "failure_classifications": [
+              "route_mismatch",
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:accessibility testing",
+                "feature_label": "accessibility testing",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:accessibility_testing",
+                "scope_label": "accessibility_testing",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "actual_route": "PROFILE_FACT_REVIEW",
+            "case_id": "FH-008",
+            "correct_signals": [],
+            "dimension_and_scope_correct": true,
+            "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "expected_route": "PROFILE_FACT_REVIEW",
+            "extra_signals": [],
+            "failure_classifications": [],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": true,
+            "missed_signals": [],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+            "actual_route": "PROFILE_FACT_REVIEW",
+            "case_id": "FH-009",
+            "correct_signals": [],
+            "dimension_and_scope_correct": true,
+            "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+            "expected_route": "PROFILE_FACT_REVIEW",
+            "extra_signals": [],
+            "failure_classifications": [],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": true,
+            "missed_signals": [],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-010",
+            "correct_signals": [],
+            "dimension_and_scope_correct": false,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": true,
+                "dimension": "contract_terms",
+                "feature_id": "literal:client_supplied_lab_kit_required",
+                "feature_label": "client_supplied_lab_kit_required",
+                "index": 0,
+                "polarity": "negative",
+                "scope_id": "literal:worker_must_supply_lab_kit",
+                "scope_label": "worker_must_supply_lab_kit",
+                "scope_type": "contract_term",
+                "strength": "strong"
+              }
+            ],
+            "failure_classifications": [
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": true,
+                "dimension": "compensation",
+                "feature_id": "literal:C2C hourly rate of $115",
+                "feature_label": "C2C hourly rate of $115",
+                "index": 0,
+                "polarity": "negative",
+                "scope_id": "literal:c2c_115_hour",
+                "scope_label": "c2c_115_hour",
+                "scope_type": "compensation_context",
+                "strength": "mild"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-011",
+            "correct_signals": [],
+            "dimension_and_scope_correct": false,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": true,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:leading_onboarding_workshops",
+                "feature_label": "leading_onboarding_workshops",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:leading_onboarding_workshops",
+                "scope_label": "leading_onboarding_workshops",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              },
+              {
+                "conditional": true,
+                "dimension": "work_arrangement",
+                "feature_id": "literal:video_delivery_for_workshops",
+                "feature_label": "video_delivery_for_workshops",
+                "index": 1,
+                "polarity": "positive",
+                "scope_id": "literal:video",
+                "scope_label": "video",
+                "scope_type": "arrangement",
+                "strength": "mild"
+              }
+            ],
+            "failure_classifications": [
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": true,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:leading onboarding workshops",
+                "feature_label": "leading onboarding workshops",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:onboarding_workshop_leadership",
+                "scope_label": "onboarding_workshop_leadership",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-012",
+            "correct_signals": [],
+            "dimension_and_scope_correct": false,
+            "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:data_loss_investigation_work",
+                "feature_label": "data_loss_investigation_work",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:data_loss_investigation_work",
+                "scope_label": "data_loss_investigation_work",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "failure_classifications": [
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:data loss investigation",
+                "feature_label": "data loss investigation",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:data_loss_investigation",
+                "scope_label": "data_loss_investigation",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          }
+        ],
+        "cases_without_unsupported_career_category_downgrades": {
+          "accuracy": 0.9166666666666666,
+          "correct": 11,
+          "total": 12
+        },
+        "clear_case_dimension_and_scope_accuracy": {
+          "accuracy": 0.5,
+          "correct": 4,
+          "total": 8
+        },
+        "explicit_signal_recall": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 11
+        },
+        "extra_signals": 12,
+        "incorrectly_conditioned_signals": 0,
+        "incorrectly_scoped_signals": 0,
+        "missed_signals": 11,
+        "quality_gates": {
+          "all_ambiguity_and_profile_facts_routed_safely": true,
+          "all_cases_completed": true,
+          "all_emitted_evidence_quotes_grounded": true,
+          "all_hard_rule_actions_authorized": true,
+          "clear_case_dimension_and_scope_at_least_95_percent": false,
+          "explicit_signal_recall_at_least_90_percent": false,
+          "hard_constraints_unchanged": true,
+          "no_unsupported_career_category_downgrades": false
+        },
+        "quality_gates_passed": false,
+        "signal_precision": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 12
+        },
+        "unsupported_career_category_downgrades": 1
+      },
+      "signal_precision": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 12
+      },
+      "unmatched_career_category_signals": 0,
+      "unsupported_evidence_quotes": 0,
+      "versions": {
+        "model": [
+          "gpt-5.4-2026-03-05"
+        ],
+        "prompt_version": [
+          "feedback-interpretation-v2.0"
+        ]
+      }
+    },
+    {
+      "ambiguity_and_profile_fact_routing": {
+        "accuracy": 1.0,
+        "correct": 4,
+        "total": 4
+      },
+      "cases_without_unmatched_career_category_downgrades": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "category_interest_indicator_accuracy": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "clarification_routing": {
+        "accuracy": 1.0,
+        "correct": 1,
+        "total": 1
+      },
+      "clear_case_dimension_and_scope_accuracy": {
+        "accuracy": 0.625,
+        "correct": 5,
+        "total": 8
+      },
+      "elapsed_seconds": 26.744,
+      "evidence_grounding": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "exact_case_match": {
+        "accuracy": 0.25,
+        "correct": 3,
+        "total": 12
+      },
+      "execution_errors": {},
+      "expected_hard_action_accuracy": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "explicit_signal_recall": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 11
+      },
+      "failures": [
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "case_id": "FH-002",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-003",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-004",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-005",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-006",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "NEEDS_CLARIFICATION",
+          "case_id": "FH-007",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": false,
+          "signal_fields_with_differences": [
+            "feature",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-010",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-011",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-012",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        }
+      ],
+      "false_positive_signals": 12,
+      "hard_constraint_no_mutation": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "missed_signals": 11,
+      "predictions_sha256": "aa9d40fa0e87466d235ab3e2661a48cfa3cd53314e0ff4a8d49f5c1b2a40467a",
+      "profile_fact_routing": {
+        "accuracy": 1.0,
+        "correct": 3,
+        "total": 3
+      },
+      "proposals_sha256": "e95ec1c265e10a32312aba1437fe7dbe6f17c4e0ca9cac4e6f9ad13433cff902",
+      "quality_gates": {
+        "all_ambiguity_and_profile_facts_routed_safely": true,
+        "all_cases_completed": true,
+        "all_emitted_evidence_quotes_grounded": true,
+        "clear_case_dimension_and_scope_at_least_95_percent": false,
+        "explicit_signal_recall_at_least_90_percent": false,
+        "hard_constraints_unchanged": true,
+        "no_unmatched_career_category_downgrades": true
+      },
+      "quality_gates_passed": false,
+      "route_accuracy": {
+        "accuracy": 0.9166666666666666,
+        "correct": 11,
+        "total": 12
+      },
+      "route_confusion": {
+        "NEEDS_CLARIFICATION": {
+          "NEEDS_CLARIFICATION": 1
+        },
+        "PENDING_APPROVAL": {
+          "NEEDS_CLARIFICATION": 1,
+          "PENDING_APPROVAL": 7
+        },
+        "PROFILE_FACT_REVIEW": {
+          "PROFILE_FACT_REVIEW": 3
+        }
+      },
+      "scenario_count": 12,
+      "semantic": {
+        "authorized_hard_rule_actions": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "total": 12
+        },
+        "cases": [
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "NEEDS_CLARIFICATION",
+            "case_id": "FH-001",
+            "correct_signals": [],
+            "dimension_and_scope_correct": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "NEEDS_CLARIFICATION",
+            "extra_signals": [],
+            "failure_classifications": [],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": true,
+            "missed_signals": [],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PROFILE_FACT_REVIEW",
+            "case_id": "FH-002",
+            "correct_signals": [],
+            "dimension_and_scope_correct": false,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PROFILE_FACT_REVIEW",
+            "extra_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:facilitating_incident_tabletop_exercises",
+                "feature_label": "facilitating_incident_tabletop_exercises",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:incident_tabletop_exercises",
+                "scope_label": "incident_tabletop_exercises",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "failure_classifications": [
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:facilitating incident tabletop exercises",
+                "feature_label": "facilitating incident tabletop exercises",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:incident_tabletop_facilitation",
+                "scope_label": "incident_tabletop_facilitation",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-003",
+            "correct_signals": [],
+            "dimension_and_scope_correct": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": false,
+                "dimension": "career_category",
+                "feature_id": "literal:data_governance_analysis_career",
+                "feature_label": "data_governance_analysis_career",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:data_governance_analysis",
+                "scope_label": "data_governance_analysis",
+                "scope_type": "career_category",
+                "strength": "strong"
+              }
+            ],
+            "failure_classifications": [
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": false,
+                "dimension": "career_category",
+                "feature_id": "literal:data governance analysis",
+                "feature_label": "data governance analysis",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:data_governance_analysis",
+                "scope_label": "data_governance_analysis",
+                "scope_type": "career_category",
+                "strength": "strong"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-004",
+            "correct_signals": [],
+            "dimension_and_scope_correct": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:production_alert_diagnosis",
+                "feature_label": "production_alert_diagnosis",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:production_alert_diagnosis",
+                "scope_label": "production_alert_diagnosis",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              },
+              {
+                "conditional": false,
+                "dimension": "work_arrangement",
+                "feature_id": "literal:weekend_pager_duty",
+                "feature_label": "weekend_pager_duty",
+                "index": 1,
+                "polarity": "negative",
+                "scope_id": "literal:weekend_pager_duty",
+                "scope_label": "weekend_pager_duty",
+                "scope_type": "schedule",
+                "strength": "strong"
+              }
+            ],
+            "failure_classifications": [
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:diagnosing production alerts",
+                "feature_label": "diagnosing production alerts",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:production_alert_diagnosis",
+                "scope_label": "production_alert_diagnosis",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              },
+              {
+                "conditional": false,
+                "dimension": "work_arrangement",
+                "feature_id": "literal:weekend pager duty",
+                "feature_label": "weekend pager duty",
+                "index": 1,
+                "polarity": "negative",
+                "scope_id": "literal:weekend_pager_duty",
+                "scope_label": "weekend_pager_duty",
+                "scope_type": "schedule",
+                "strength": "strong"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-005",
+            "correct_signals": [],
+            "dimension_and_scope_correct": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": false,
+                "dimension": "career_category",
+                "feature_id": "literal:does_not_want_procurement_operations_career",
+                "feature_label": "does_not_want_procurement_operations_career",
+                "index": 0,
+                "polarity": "negative",
+                "scope_id": "literal:procurement_operations",
+                "scope_label": "procurement_operations",
+                "scope_type": "career_category",
+                "strength": "strong"
+              },
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:vendor_negotiation",
+                "feature_label": "vendor_negotiation",
+                "index": 1,
+                "polarity": "positive",
+                "scope_id": "literal:vendor_negotiation",
+                "scope_label": "vendor_negotiation",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "failure_classifications": [
+              "unsupported_career_category_downgrade",
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": false,
+                "dimension": "career_category",
+                "feature_id": "literal:procurement operations",
+                "feature_label": "procurement operations",
+                "index": 0,
+                "polarity": "negative",
+                "scope_id": "literal:procurement_operations",
+                "scope_label": "procurement_operations",
+                "scope_type": "career_category",
+                "strength": "strong"
+              },
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:vendor negotiation",
+                "feature_label": "vendor negotiation",
+                "index": 1,
+                "polarity": "positive",
+                "scope_id": "literal:vendor_negotiation",
+                "scope_label": "vendor_negotiation",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "unsupported_career_category_downgrades": [
+              {
+                "conditional": false,
+                "dimension": "career_category",
+                "feature_id": "literal:does_not_want_procurement_operations_career",
+                "feature_label": "does_not_want_procurement_operations_career",
+                "index": 0,
+                "polarity": "negative",
+                "scope_id": "literal:procurement_operations",
+                "scope_label": "procurement_operations",
+                "scope_type": "career_category",
+                "strength": "strong"
+              }
+            ]
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-006",
+            "correct_signals": [],
+            "dimension_and_scope_correct": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:purchase_order_processing",
+                "feature_label": "purchase_order_processing",
+                "index": 0,
+                "polarity": "negative",
+                "scope_id": "literal:purchase_order_processing",
+                "scope_label": "purchase_order_processing",
+                "scope_type": "role_feature",
+                "strength": "strong"
+              }
+            ],
+            "failure_classifications": [
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": true,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:purchase-order-heavy duties",
+                "feature_label": "purchase-order-heavy duties",
+                "index": 0,
+                "polarity": "negative",
+                "scope_id": "literal:purchase_order_processing",
+                "scope_label": "purchase_order_processing",
+                "scope_type": "role_feature",
+                "strength": "strong"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "NEEDS_CLARIFICATION",
+            "case_id": "FH-007",
+            "correct_signals": [],
+            "dimension_and_scope_correct": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:accessibility_testing",
+                "feature_label": "accessibility_testing",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:accessibility_testing",
+                "scope_label": "accessibility_testing",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "failure_classifications": [
+              "route_mismatch",
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:accessibility testing",
+                "feature_label": "accessibility testing",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:accessibility_testing",
+                "scope_label": "accessibility_testing",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "actual_route": "PROFILE_FACT_REVIEW",
+            "case_id": "FH-008",
+            "correct_signals": [],
+            "dimension_and_scope_correct": true,
+            "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "expected_route": "PROFILE_FACT_REVIEW",
+            "extra_signals": [],
+            "failure_classifications": [],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": true,
+            "missed_signals": [],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+            "actual_route": "PROFILE_FACT_REVIEW",
+            "case_id": "FH-009",
+            "correct_signals": [],
+            "dimension_and_scope_correct": true,
+            "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+            "expected_route": "PROFILE_FACT_REVIEW",
+            "extra_signals": [],
+            "failure_classifications": [],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": true,
+            "missed_signals": [],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-010",
+            "correct_signals": [],
+            "dimension_and_scope_correct": false,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": true,
+                "dimension": "contract_terms",
+                "feature_id": "literal:client_supplied_lab_kit_required",
+                "feature_label": "client_supplied_lab_kit_required",
+                "index": 0,
+                "polarity": "negative",
+                "scope_id": "literal:candidate_must_supply_lab_kit",
+                "scope_label": "candidate_must_supply_lab_kit",
+                "scope_type": "contract_term",
+                "strength": "mild"
+              }
+            ],
+            "failure_classifications": [
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": true,
+                "dimension": "compensation",
+                "feature_id": "literal:C2C hourly rate of $115",
+                "feature_label": "C2C hourly rate of $115",
+                "index": 0,
+                "polarity": "negative",
+                "scope_id": "literal:c2c_115_hour",
+                "scope_label": "c2c_115_hour",
+                "scope_type": "compensation_context",
+                "strength": "mild"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-011",
+            "correct_signals": [],
+            "dimension_and_scope_correct": false,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": true,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:leading_onboarding_workshops",
+                "feature_label": "leading_onboarding_workshops",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:leading_onboarding_workshops",
+                "scope_label": "leading_onboarding_workshops",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              },
+              {
+                "conditional": true,
+                "dimension": "work_arrangement",
+                "feature_id": "literal:video_delivery_for_workshops",
+                "feature_label": "video_delivery_for_workshops",
+                "index": 1,
+                "polarity": "positive",
+                "scope_id": "literal:video",
+                "scope_label": "video",
+                "scope_type": "arrangement",
+                "strength": "mild"
+              }
+            ],
+            "failure_classifications": [
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": true,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:leading onboarding workshops",
+                "feature_label": "leading onboarding workshops",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:onboarding_workshop_leadership",
+                "scope_label": "onboarding_workshop_leadership",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          },
+          {
+            "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-012",
+            "correct_signals": [],
+            "dimension_and_scope_correct": false,
+            "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "expected_route": "PENDING_APPROVAL",
+            "extra_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:data_loss_investigation_work",
+                "feature_label": "data_loss_investigation_work",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:data_loss_investigation_work",
+                "scope_label": "data_loss_investigation_work",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "failure_classifications": [
+              "missed_signal",
+              "extra_signal"
+            ],
+            "hard_rule_action_authorized": true,
+            "incorrectly_conditioned_signals": [],
+            "incorrectly_scoped_signals": [],
+            "literal_case_match": false,
+            "missed_signals": [
+              {
+                "conditional": false,
+                "dimension": "role_responsibilities",
+                "feature_id": "literal:data loss investigation",
+                "feature_label": "data loss investigation",
+                "index": 0,
+                "polarity": "positive",
+                "scope_id": "literal:data_loss_investigation",
+                "scope_label": "data_loss_investigation",
+                "scope_type": "role_feature",
+                "strength": "mild"
+              }
+            ],
+            "unsupported_career_category_downgrades": []
+          }
+        ],
+        "cases_without_unsupported_career_category_downgrades": {
+          "accuracy": 0.9166666666666666,
+          "correct": 11,
+          "total": 12
+        },
+        "clear_case_dimension_and_scope_accuracy": {
+          "accuracy": 0.625,
+          "correct": 5,
+          "total": 8
+        },
+        "explicit_signal_recall": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 11
+        },
+        "extra_signals": 12,
+        "incorrectly_conditioned_signals": 0,
+        "incorrectly_scoped_signals": 0,
+        "missed_signals": 11,
+        "quality_gates": {
+          "all_ambiguity_and_profile_facts_routed_safely": true,
+          "all_cases_completed": true,
+          "all_emitted_evidence_quotes_grounded": true,
+          "all_hard_rule_actions_authorized": true,
+          "clear_case_dimension_and_scope_at_least_95_percent": false,
+          "explicit_signal_recall_at_least_90_percent": false,
+          "hard_constraints_unchanged": true,
+          "no_unsupported_career_category_downgrades": false
+        },
+        "quality_gates_passed": false,
+        "signal_precision": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 12
+        },
+        "unsupported_career_category_downgrades": 1
+      },
+      "signal_precision": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 12
+      },
+      "unmatched_career_category_signals": 0,
+      "unsupported_evidence_quotes": 0,
+      "versions": {
+        "model": [
+          "gpt-5.4-2026-03-05"
+        ],
+        "prompt_version": [
+          "feedback-interpretation-v2.0"
+        ]
+      }
+    }
+  ],
+  "semantic_consistency": {
+    "changed_case_ids": [
+      "FH-004",
+      "FH-005",
+      "FH-010"
+    ],
+    "unchanged_cases": {
+      "accuracy": 0.75,
+      "correct": 9,
+      "total": 12
+    },
+    "unverified_case_ids": []
+  },
+  "semantic_signal_matching": "Dimension, canonical feature, polarity, canonical context scope, and exact condition.",
+  "signal_label_matching": "Exact feature, polarity, and context scope. No synonym mappings supplied.",
+  "suite_sha256": "c38ff4c44d7cd0110e198b0682833da8f7c70c15e1cfd04489075858ef099393",
+  "suite_version": "2.0-holdout"
+}

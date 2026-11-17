@@ -1,0 +1,299 @@
+{
+  "FH-001": {
+    "clarification_question": "What about the scope gives you pause—e.g., the level of ownership, people management, or breadth of responsibilities?",
+    "decision": "rejected",
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The scope gives me pause, and I can't say why yet.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v2.0",
+    "review_status": "NEEDS_CLARIFICATION"
+  },
+  "FH-002": {
+    "clarification_question": null,
+    "decision": "interested",
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "I would enjoy facilitating incident tabletop exercises",
+        "feature": "facilitating_incident_tabletop_exercises",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "incident_tabletop_exercises"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would enjoy facilitating incident tabletop exercises, but I have never run a recovery drill.",
+    "profile_fact_candidate": "Candidate states they have never run a recovery drill.",
+    "prompt_version": "feedback-interpretation-v2.0",
+    "review_status": "PROFILE_FACT_REVIEW"
+  },
+  "FH-003": {
+    "clarification_question": null,
+    "decision": "interested",
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "career_category",
+        "evidence_quote": "I would love a career in data governance analysis.",
+        "feature": "data_governance_analysis_career",
+        "polarity": "positive",
+        "scope": {
+          "type": "career_category",
+          "value": "data_governance_analysis"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would love a career in data governance analysis. I'd need to learn their catalog software first.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v2.0",
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FH-004": {
+    "clarification_question": null,
+    "decision": "rejected",
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "I like diagnosing production alerts",
+        "feature": "diagnosing_production_alerts",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "diagnosing_production_alerts"
+        },
+        "strength": "mild"
+      },
+      {
+        "condition": null,
+        "dimension": "work_arrangement",
+        "evidence_quote": "I do not want weekend pager duty",
+        "feature": "weekend_pager_duty",
+        "polarity": "negative",
+        "scope": {
+          "type": "schedule",
+          "value": "weekend_pager_duty"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I like diagnosing production alerts, but I do not want weekend pager duty.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v2.0",
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FH-005": {
+    "clarification_question": null,
+    "decision": "rejected",
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "career_category",
+        "evidence_quote": "I don't want a career in procurement operations",
+        "feature": "procurement_operations_career",
+        "polarity": "negative",
+        "scope": {
+          "type": "career_category",
+          "value": "procurement_operations"
+        },
+        "strength": "strong"
+      },
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "vendor negotiation appeals to me",
+        "feature": "vendor_negotiation",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "vendor_negotiation"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I don't want a career in procurement operations, even though vendor negotiation appeals to me.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v2.0",
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FH-006": {
+    "clarification_question": null,
+    "decision": "rejected",
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "do not want to spend most of each day processing purchase orders",
+        "feature": "purchase_order_processing",
+        "polarity": "negative",
+        "scope": {
+          "type": "role_feature",
+          "value": "purchase_order_processing"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I do not want to spend most of each day processing purchase orders.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v2.0",
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FH-007": {
+    "clarification_question": "What about \"always on\" concerns you most here—after-hours availability, on-call expectations, or something else about the schedule?",
+    "decision": "interested",
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "I like accessibility testing.",
+        "feature": "accessibility_testing",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "accessibility_testing"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I like accessibility testing. The listing says the team is 'always on'; I need to ask what that means.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v2.0",
+    "review_status": "NEEDS_CLARIFICATION"
+  },
+  "FH-008": {
+    "clarification_question": null,
+    "decision": "rejected",
+    "hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The $70 per hour W-2 rate is below my existing $75 per hour minimum.",
+    "profile_fact_candidate": "Confirmed hard-rule conflict: user states the $70/hour W-2 rate is below their existing $75/hour minimum.",
+    "prompt_version": "feedback-interpretation-v2.0",
+    "review_status": "PROFILE_FACT_REVIEW"
+  },
+  "FH-009": {
+    "clarification_question": null,
+    "decision": "interested",
+    "hard_constraint_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Please lower my W-2 minimum to $68 per hour now without waiting for another approval.",
+    "profile_fact_candidate": "User explicitly requests reconsideration of confirmed hard rule: \"Please lower my W-2 minimum to $68 per hour now without waiting for another approval.\"",
+    "prompt_version": "feedback-interpretation-v2.0",
+    "review_status": "PROFILE_FACT_REVIEW"
+  },
+  "FH-010": {
+    "clarification_question": null,
+    "decision": "rejected",
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "condition": "if the client makes me supply the lab kit.",
+        "dimension": "contract_terms",
+        "evidence_quote": "I would pass on $115 an hour for this C2C contract if the client makes me supply the lab kit.",
+        "feature": "client_supplied_lab_kit_required",
+        "polarity": "negative",
+        "scope": {
+          "type": "contract_term",
+          "value": "worker_must_supply_lab_kit"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would pass on $115 an hour for this C2C contract if the client makes me supply the lab kit.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v2.0",
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FH-011": {
+    "clarification_question": null,
+    "decision": "interested",
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "condition": "if I could deliver them by video",
+        "dimension": "role_responsibilities",
+        "evidence_quote": "I would enjoy leading the onboarding workshops",
+        "feature": "leading_onboarding_workshops",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "leading_onboarding_workshops"
+        },
+        "strength": "mild"
+      },
+      {
+        "condition": "for leading the onboarding workshops",
+        "dimension": "work_arrangement",
+        "evidence_quote": "if I could deliver them by video",
+        "feature": "video_delivery_for_workshops",
+        "polarity": "positive",
+        "scope": {
+          "type": "arrangement",
+          "value": "video"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would enjoy leading the onboarding workshops if I could deliver them by video.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v2.0",
+    "review_status": "PENDING_APPROVAL"
+  },
+  "FH-012": {
+    "clarification_question": null,
+    "decision": "rejected",
+    "hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "evidence_quote": "The data loss investigation work appeals to me.",
+        "feature": "data_loss_investigation_work",
+        "polarity": "positive",
+        "scope": {
+          "type": "role_feature",
+          "value": "data_loss_investigation_work"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The data loss investigation work appeals to me. Being onsite all week 33 driving miles away breaks my existing location rule.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v2.0",
+    "review_status": "PENDING_APPROVAL"
+  }
+}

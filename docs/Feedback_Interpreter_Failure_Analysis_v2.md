@@ -14,3 +14,25 @@ The original live report identifies literal disagreements and routing errors. A 
 | FI-050 | The reference asks for evaluation of both rule reconsideration and attraction to an exceptional role. The latter needs an annotation review because the hypothetical identifies no concrete duty. | Evaluate explicit rule reconsideration separately. Hold it for confirmation without altering any rule. Review the role annotation before approving a new gold version. |
 
 These are diagnoses of the observable proposal and prompt behavior. The case-level JSON records every canonical hit, miss, extra signal, and scope disagreement, while the annotation review traces evidence for proposed changes to the references. [Benchmark artifacts](../benchmarks/feedback/README.md) · [Gold annotation review](Feedback_Interpreter_Gold_Review_v2.md)
+
+## Holdout findings from both v2 passes
+
+| Cases | Review of the raw proposals |
+| --- | --- |
+| FH-001, FH-008, FH-009 | The model clarified an unspecified concern, reported a known W-2 floor violation, and sent an explicit W-2 change request for separate confirmation. Neither pay case emitted a new preference or changed a rule. |
+| FH-002, FH-003, FH-004, FH-012 | The model preserved positive tabletop facilitation alongside a specific experience claim, kept career interest without converting a training hurdle into a qualification claim, extracted separate alert and pager reactions, and retained the investigation interest alongside a commute-rule violation. Feature and scope wording caused the scorer's unmatched records. |
+| FH-005 | The proposal correctly separated the rejection of a procurement operations career from interest in vendor negotiation. Both passes used the expected career scope, negative polarity, and full supporting quote. The unseen feature labels caused the automated downgrade gate to flag the case for review. |
+| FH-006 | The model avoided a career downgrade. It recorded a general objection to purchase-order processing, with the “most of each day” qualifier available only in the quote. The structured signal lost that limit. |
+| FH-007 | The model preserved accessibility testing and asked what concerned the user about “always on.” The user asked to verify a posting detail without expressing a negative reaction to it, so the reference keeps the clear preference on the approval route. |
+| FH-010 | Both passes classified a conditional objection to a specific C2C rate as a contract-term objection and lost the rate from the structured signal. Pass 2 also omitted the rate from the evidence quote. |
+| FH-011 | Both passes kept the video condition on the workshop preference and added a separate workshop-specific video signal from the same clause. The condition qualifies the preference and does not independently establish an arrangement preference. |
+
+All evidence quotes were verbatim. The review did not find an unsupported career-category downgrade in the holdout proposals. That finding and the automated downgrade flag are both retained. The frozen holdout and taxonomy retain their pre-run definitions.
+
+## Gold-suite findings from both v2 passes
+
+- FI-023, FI-029, FI-034, FI-035, and FI-046 moved to the expected routes. FI-035 kept the career preference and omitted the training signal under review. FI-022 kept the negative employer preference and dropped the unsupported positive career inference. Both FI-024 signals and the career preference in FI-049 remained present.
+- FI-028 still inferred a negative schedule preference from a rule conflict. FI-044 newly routed generic interest to approval by inventing a growth-purpose feature, `promising_opportunity`. These two route mismatches appeared in both passes.
+- FI-013 still emitted a preference from the known pay-floor conflict. FI-026 still split one nearby hybrid preference and applied a ten-mile threshold drawn from the rules. FI-027 kept weekly frequency and dropped air travel from the structured negative scope.
+- FI-007 moved the narrow recurring-project rejection from career category to role responsibilities. The dimension differs from the frozen reference, and the product classification remains an open annotation question.
+- FI-040 used the unmapped feature `quota_carrying_sales_career` with the correct career scope, negative polarity, and directly supporting quote. The automated safeguard flagged this label on both v2 passes. Manual review found support for the narrow category. The recorded flags and scores remain the results of the frozen taxonomy.

@@ -6,7 +6,7 @@
 
 The v1 CLI serialized scores and failure classifications. Its per-case proposals existed in process memory and the API requests used `store: false`, so individual proposals from that execution are unavailable. Any separately captured rerun has its own provenance.
 
-From the v1 commit, the command was:
+Run the v1 command from the baseline commit.
 
 ```sh
 PYTHONPATH=src python -m job_search_agent.feedback_evaluation \
@@ -19,3 +19,9 @@ PYTHONPATH=src python -m job_search_agent.feedback_evaluation \
 [Same-configuration baseline rerun](live_v1_capture.json) records a separate live run using the same source commit, model, prompt, temperature, and fixture. It includes a raw structured proposal and a validated prediction for each of the 100 requests, plus the v1 report with literal metrics and per-case failure classifications. The proposals in this file belong to this rerun. The capture records the prompt and response schema fingerprints and preserves the original hard-rule inputs.
 
 For a v2 replay, export each capture entry's `passes[].cases` as a JSON object keyed by case ID with its `validated_prediction` as the value. Pass the two exported files with repeated `--predictions` arguments. [Benchmark specification](../../docs/Feedback_Interpreter_Benchmark_Spec_v2.md)
+
+## Live v2 captures
+
+The v2 captures ran on November 17, 2026 with Python 3.12.14, the OpenAI Responses API with `store: false`, model `gpt-5.4-2026-03-05`, prompt `feedback-interpretation-v2.0`, temperature `0.1`, and taxonomy `feedback-taxonomy-v2.0`. The prompt and response schema are in commit `b696794aff8e33576f1d00413c1e41d8d65e36ec`. The command started before metadata-only capture updates in that commit. The final evaluator reproduced both the literal and canonical scores from the saved predictions.
+
+Each run directory contains the original live configuration, complete report, two raw proposal files, and two validated prediction files. The report binds the captures to each pass with SHA-256 fingerprints. The two suites were run independently with the same configuration. The unseen fixture was frozen before the prompt changes. [Gold report](live_v2_gold/report.json) · [Holdout report](live_v2_holdout/report.json) · [Holdout fixture](holdout_cases_v2.json)

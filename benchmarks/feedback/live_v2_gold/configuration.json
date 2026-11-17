@@ -1,0 +1,27 @@
+{
+  "benchmark_version": "2.0",
+  "evaluation_source": {
+    "mode": "live",
+    "passes": 2,
+    "prompt_version": "feedback-interpretation-v2.0",
+    "requested_model": "gpt-5.4-2026-03-05",
+    "temperature_override": 0.1
+  },
+  "hard_rules": {
+    "1099_hourly_minimum_usd": 100,
+    "c2c_hourly_minimum_usd": null,
+    "commute_rules": [
+      "Within 10 driving miles: onsite acceptable.",
+      "Greater than 10 and less than 30 driving miles: Mondays and Fridays must be remote. Unknown days require verification.",
+      "At least 30 driving miles: regular work must be fully remote. Occasional visits or business trips are allowed."
+    ],
+    "permanent_base_minimum_usd": 180000,
+    "unknown_salary_remains_eligible": true,
+    "w2_hourly_minimum_usd": 75
+  },
+  "scenario_count": 50,
+  "suite_file": "feedback_interpretation_gold_cases_v1.json",
+  "suite_sha256": "fbf6872f847d533871ad2db7d3412a324504171f057f56ae7a8f1f8f48311523",
+  "suite_version": "1.0-draft",
+  "taxonomy_version": "feedback-taxonomy-v2.0"
+}
