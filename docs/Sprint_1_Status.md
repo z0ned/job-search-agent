@@ -47,6 +47,19 @@ The user has created a local untracked `.env` in the repository root with their 
 - Prioritize a small handful of high-information searches that answer **feed access and total accessible job volume**, then stop before exhausting the trial balance. No automatic loops or broad paging during the trial.
 - Full paid activation requires an explicit cost/terms decision, **not** an automatic next step.
 
+## Adzuna country-coverage verification (2026-11-17)
+
+Official **standard Job Search API** OpenAPI specification `https://developer.adzuna.com/swagger/spec/test2.json` explicitly enumerates `us` (United States), `ca` (Canada), and `mx` (Mexico) for `GET /jobs/{country}/search/{page}`. Supported request fields include `what`, `where`, `contract=1`, `permanent=1`, `max_days_old` and pagination. The USA endpoint is `https://api.adzuna.com/v1/api/jobs/us/search/1`, with `app_id` and `app_key` added locally at execution time.
+
+**Important distinction:** Adzuna's separate **Intelligence** API documentation says its analytics API currently serves UK data only; that limitation does not apply to the standard job search endpoint's published `us` country support.
+
+**Evidence level:** U.S. support **CONFIRMED IN OFFICIAL SPECIFICATION**, but actual U.S. API response using the user's **Pending Activation** key remains **UNTESTED**. No trial calls spent by this documentation-only verification, and no actual U.S. volume claimed.
+
+Sources:
+- Standard search OpenAPI: https://developer.adzuna.com/swagger/spec/test2.json
+- Standard API overview: https://developer.adzuna.com/overview
+- Separate Intelligence API coverage note: https://developer.intelligence.adzuna.com/doc-593840
+
 ## Next actions
 
 1. Get actual **direct HTTPS JSON feed responses** from each candidate provider; distinguish tool/network restrictions from source unavailability.
