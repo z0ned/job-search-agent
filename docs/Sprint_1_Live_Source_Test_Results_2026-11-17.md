@@ -73,9 +73,11 @@ The successful response (https://himalayas.app/jobs/api?limit=20) included a **2
 - **Job 1:** Principal Product Manager, Insights Learning & Development Ltd, employmentType Full Time; country restriction **United Kingdom**; salary not given. Despite title relevance to product exploration, the available country restriction is outside the user-approved USA/Canada/Mexico scope; do not falsely label eligible.
 - **Job 3:** Key Account Specialist, SGS, country restriction **Canada**, annual USD pay **58100–77500**, Full Time. Comp is below the $180000 base floor and duties are customer account work, not a senior PMO role. Canada in the approved search-country set is not itself sufficient for job suitability.
 - **Schema issue from later visible job:** One posting's title says **Full-Time Contract** but feed employmentType says **Full Time**. Contract classification must look at job text rather than relying on a single provider field.
-- **Common data:** pubDate and expiryDate as Unix epoch seconds; companySlug; locationRestrictions; employmentType; currency; salaryPeriod (annual/monthly/etc); minSalary/maxSalary nullable; full description HTML; guid and applicationLink. Filter regions and pay using the field meanings rather than assuming US/USD/annual.
+- **Common data:** pubDate (the provider defines this as **last updated**, NOT original posting date) and expiryDate as Unix epoch seconds; companySlug; locationRestrictions; employmentType; currency; salaryPeriod (annual/monthly/etc); minSalary/maxSalary nullable; full description HTML; guid and applicationLink. Filter regions and pay using the field meanings rather than assuming US/USD/annual.
 - **Access limitation:** Filtering requests with q=project or q=project%20manager returned inaccessible in this environment. The unfiltered browse feed and unfiltered search endpoint succeeded. We cannot yet claim the ten targeted searches or 80/20 yield metrics work on this source.
 - **Terms:** The official API requires source credit and API-provided application links; cached results are updated roughly daily, so one scheduled discovery run per day is appropriate.
+- **Important date semantic:** Himalayas documentation defines pubDate as **when the job was last updated**, which cannot independently prove it was originally posted within the user's 30-day new-source lookback. Mark initial-age UNKNOWN until original employer posting date is established; do not relabel refreshed old jobs as new simply because pubDate is recent.
+- **Search filters documented but not yet response-tested:** employment_type=Contractor, country=US and q=... are supported in official docs; the source data may still classify a role described as contract under Full Time. Verify both structured type and description.
 
 ## 6. Official Terms and Technology Findings
 
@@ -88,7 +90,7 @@ The successful response (https://himalayas.app/jobs/api?limit=20) included a **2
 
 ## 7. Design Consequences
 
-1. Apply the **initial 30-day lookback independently to each newly added job source**, using source-published dates, not crawl/index timestamps.
+1. Apply the **initial 30-day lookback independently to each newly added job source**, using true original posting dates when available, not crawl/index timestamps or a source field explicitly defined as **last updated** (such as Himalayas pubDate). If original posting age is unverified, flag and hold that fact for age-policy review rather than inventing a publication date.
 2. Differentiate **remote, hybrid, and geographic hiring eligibility**. A remote boolean alone is unsafe.
 3. Preserve salary currency and period; hourly contract floors cannot automatically be compared to annualized contractor fees without hours assumptions.
 4. Display qualifications that need verification, rather than silently rejecting or inventing credentials.
