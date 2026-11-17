@@ -36,19 +36,24 @@ This user correction supersedes treating the senior financial-services/PMO leade
 
 **Matching implication:** Run and evaluate contract and permanent searches as separate profiles. For contract jobs, scoring should not penalize an otherwise attractive role for lacking VP-level scope. Do not raise or lower either compensation threshold based on this clarification.
 
-## Confirmed location and onsite-rule exceptions (user clarifications, 2026-11-16)
+## Confirmed location and onsite rules (user clarifications through 2026-11-17)
 
-**Decision A confirmed:** An Atlanta-based job may be **100% onsite**. For this rule, **"Atlanta" means within 10 miles of ZIP code 30307**. A posting explicitly labeled **"Atlanta"** remains eligible for **100% onsite work even if the precise office address/location is not specified**. Do not reject an Atlanta-labeled posting just because a street address is unavailable.
+**Confirmed commute origin and method (2026-11-17):** Driving distance (actual road miles) from the user's **specified street address in ZIP 30307**, **not** straight-line radius and **not** the ZIP centroid. The precise origin address is private and MUST NOT be committed to this public GitHub repository, printed in logs, or embedded in exported reports. Store it later in a local untracked setting or protected secrets store, e.g. `JSA_COMMUTE_ORIGIN_ADDRESS`; this documentation intentionally omits it. Reconcile address geocoding and road-routing capability during the source/eligibility feasibility phase, without building a production adapter now.
 
-| Case | Confirmed treatment | Evidence handling |
+**Confirmed Atlanta onsite exception:** A job whose listed office is **within 10 driving miles** of the private origin is eligible even if **100% onsite**. A job explicitly labeled **"Atlanta"** but without a more specific office address is also eligible for 100% onsite work by user-approved exception; this **does not** mean a road distance has been verified. When an exact office address is known, evaluate the actual driving distance rather than assuming a broad "Atlanta" city label guarantees proximity.
+
+| Case | Confirmed eligibility treatment | Evidence / display requirement |
 |---|---|---|
-| Verified job office within **10 miles** of 30307 | Eligible for fully onsite work | Record the located office/distance when available |
-| Posting location is "Atlanta", but no specific office address is listed | Eligible for fully onsite work | Record that eligibility came from the **Atlanta location label**, not from verified 10-mile distance |
-| Office more than 10 but under 30 miles from 30307 | Prior rule requires remote work on **Mondays and Fridays** | Do not silently extend the Atlanta fully-onsite exception beyond 10 miles |
-| Office at or beyond 30 miles from 30307 | Prior rule requires **100% remote** | Exact 30-mile boundary remains to be reconciled if necessary |
-| Onsite requirement unspecified, regardless of posted city | **ELIGIBLE, but FLAGGED: work arrangement must be verified (Option C)** | Keep even if the posted city is outside the local area; do not assert that the role is remote or on-site. Clearly display “Work arrangement not specified — verification required.” |
+| Office **0–10 driving miles**, inclusive, from private origin | 100% onsite acceptable | Save road mileage and routing provider/method when available |
+| Listing says **"Atlanta"** but gives no exact office | 100% onsite acceptable | Flag distance as unverified; eligible via the user's explicit Atlanta-label exception |
+| Office **over 10 but under 30 driving miles** | Eligible only if **both Mondays and Fridays are remote** | Verify the particular weekdays, not just generic "hybrid" |
+| Office **30 or more driving miles** | Eligible if **100% remote** | Do not equate generic hybrid with fully remote |
+| **No onsite requirement stated**, wherever the listed job is based | **Include, with verification flag (Option C)** | Display: "Work arrangement not specified — verification required"; do not label as remote |
+| Office or route cannot be resolved, but specific onsite attendance is required | Location/commute eligibility is **UNKNOWN** until distance can be verified | Never invent road miles or silently declare a pass/fail |
 
-**Important:** A nearby city label alone does not demonstrate a job is within 10 miles. "Atlanta" without an office address is an explicit user-approved exception, not a geocoding result. **Confirmed work-arrangement exception: Option C supersedes previously selected Option A.** A job outside the local area whose posting omits onsite requirements remains eligible but must be clearly flagged “Work arrangement not specified — verification required.” The exception is an independent OR condition for initial location/arrangement eligibility; it does **not** establish that the job is remote. If explicit onsite requirements exist, use the distance-dependent rules above instead. Other eligibility requirements (such as compensation and role) still apply.
+**Decision priority:** A specific advertised work arrangement and verifiable office location control distance-based evaluation; the Atlanta-without-office exception and absent-onsite-requirement exception are separate user-approved paths to initial eligibility. An omitted onsite requirement keeps a posting in discovery with an explicit verification flag; it is not proof of remote work. All other employment, pay, experience and role rules still apply.
+
+**Feasibility caveat:** Road miles require a routable origin and destination. A city centroid, ZIP centroid or straight-line estimate may help triage candidates but must never be presented as a verified 10/30-driving-mile result. Provider, route type and possible usage cost are open design choices.
 
 ## Hard eligibility and soft ranking dimensions
 
