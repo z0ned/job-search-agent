@@ -13,3 +13,9 @@ PYTHONPATH=src python -m job_search_agent.feedback_evaluation \
   feedback_interpretation_gold_cases_v1.json \
   --model gpt-5.4-2026-03-05 --temperature 0.1
 ```
+
+## Live v1 capture
+
+[Same-configuration baseline rerun](live_v1_capture.json) records a separate live run using the same source commit, model, prompt, temperature, and fixture. It includes a raw structured proposal and a validated prediction for each of the 100 requests, plus the v1 report with literal metrics and per-case failure classifications. The proposals in this file belong to this rerun. The capture records the prompt and response schema fingerprints and preserves the original hard-rule inputs.
+
+For a v2 replay, export each capture entry's `passes[].cases` as a JSON object keyed by case ID with its `validated_prediction` as the value. Pass the two exported files with repeated `--predictions` arguments. [Benchmark specification](../../docs/Feedback_Interpreter_Benchmark_Spec_v2.md)
