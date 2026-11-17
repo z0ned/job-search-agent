@@ -142,12 +142,22 @@ After the Greenhouse contract-eligibility false positives, the user approved mov
 
 **Output:** HTTP/access status, page and distinct posting counts, `createdAt` availability and recent-creation count, broad project/program/product/PMO title matches, explicit **commitment = contract/temporary/etc.** versus weaker **title-only hints**, their recent-created overlap, and US-country/remote label breakdown. Explicitly warns that `createdAt` is **posting creation**, **NOT confirmed first-publication**; a board can have recently published jobs with old creation dates. Country or remote labels do not prove US-worker eligibility.
 
-**Status:** Script committed; **not yet executed locally**, so **no Lever count is claimed**. Next user action from cloned repo root:
+**Status:** This script has now run successfully locally; results are recorded in the verified section below. Next user action from cloned repo root:
 
     git pull origin main
     powershell -NoProfile -File .\scripts\feasibility\test_lever_feed_volume.ps1
 
 After results: determine if Lever adds distinct technically accessible recent contract-role volume, and compare first-published versus created-date limitations. No production code has begun.
+
+## Lever five-board public API volume — VERIFIED (2026-11-17)
+
+The user ran the read-only Lever probe locally at **2026-11-17 17:18:37 UTC**. **All five named board endpoints returned HTTP 200** (the `lever` board returned an empty array; not an API access failure). **111 unique within-board IDs**, **111 valid `createdAt` dates**, **40 created in the last 30 days**, **23 broad target-role title signals**, **15 explicit contract commitment signals**, and **3 additional title-only contract hints**. **Four** jobs satisfy recent creation × role-title × explicit contract commitment; **two** have `country=US` and `workplaceType=remote`. None is yet verified as personally eligible, and `createdAt` **is not** first publication date.
+
+The five selected employers are not representative of all Lever employers. The result supports technical feasibility (HTTP 200, stable posting IDs, employment type, paging) but does not establish enough U.S.-eligible recent contract inventory. **No Adzuna calls, credentials, application tracking or production app code.**
+
+[Full Lever direct-feed measurements](./Sprint_1_Lever_Feed_Volume_2026-11-17.md).
+
+**Next hardest-risk check:** Test the already verified Himalayas public remote-jobs feed with targeted count/filters for U.S. contract project/program roles, using original-date caution and without scoring individual jobs. Preserve Adzuna trial quota. After this, choose broad aggregation vs systematic employer-board discovery.
 
 ## Next actions
 
