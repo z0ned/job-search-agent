@@ -40,10 +40,11 @@ Never commit the user's private street address to this public repo.
 | Greenhouse | Direct employer published jobs | Pick balanced finance, tech, consulting board tokens; inspect public GET job and content fields |
 | Ashby | Direct employer published jobs | Sample employer boards, including whether compensation/arrangement are exposed |
 | Lever | Direct employer postings fallback | Sample distinct employer boards and compare additional coverage |
+| Himalayas | **Keyless remote broad-discovery candidate** | Live unfiltered feed verified on 2026-11-17; test keyword/country/employment_type Contractor filtering and 30-day original-date limitations; remote only |
 
 Official docs for interface feasibility: [Adzuna](https://developer.adzuna.com/docs/search), [Greenhouse](https://docs.greenhouse.io/job-board), [Ashby](https://developers.ashbyhq.com/docs/public-job-posting-api), [Lever](https://github.com/Lever/postings-api).
 
-Documentation confirms API interfaces exist; it does **not** establish actual currently open relevant roles or acceptable usage terms/price for this user's workload.
+Documentation alone cannot establish relevant coverage. **Observed 2026-11-17:** public JSON from Ashby/Ramp and Himalayas unfiltered browse was retrieved, as recorded in [live test results](./Sprint_1_Live_Source_Test_Results_2026-11-17.md). Targeted role-query relevance and ongoing access still need evaluation.
 
 ## Evidence to record for each real call
 
@@ -73,6 +74,7 @@ Do not announce completed source validation until dated live responses and manua
 
 - [x] Derive search portfolio from user-submitted questionnaire.
 - [ ] Select employers with verified public board identities, excluding Regions and Invesco from recommendations.
-- [ ] Execute real API samples and record actual response fields/relevance.
+- [x] Retrieve two independent public API JSON samples (Ashby/Ramp and unfiltered Himalayas).
+- [ ] Execute **targeted** query tests and measure relevant role counts, not just unfiltered API availability.
 - [ ] Verify provider usage terms and any credentials/payment implications.
 - [ ] Recommend initial sources and obtain source/eligibility approval.
