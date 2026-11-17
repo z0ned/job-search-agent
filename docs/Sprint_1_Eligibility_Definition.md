@@ -44,6 +44,16 @@ This user correction supersedes treating the senior financial-services/PMO leade
 - **Unknown classification:** A posting labeled only "contract" without W-2/1099 details stays eligible on this dimension, with engagement arrangement unverified. Do not silently classify it as W-2 or 1099.
 - **Workload context:** The approximate 40-hour-week preference remains a separate soft criterion intended to preserve time for AI and other skill development.
 
+## Confirmed contract travel policy (2026-11-17)
+
+**User selection: Option D — travel requirements are flexible for contract roles.**
+
+- No maximum overnight travel percentage or number of nights has been established for **contract** opportunities.
+- Do **not** exclude contract jobs based solely on stated overnight travel expectations or invent a 10% or 25% cap.
+- Display advertised travel requirements when available. Mark absent or vague travel details as **not specified**, rather than inventing a commitment.
+- Keep the approximately 40-hour workweek as a **separate expressed preference** for practical PM/program-management contract roles; flexible travel does not imply approval of unlimited weekly work hours.
+- **Full-time-role travel expectations remain OPEN** and should be elicited separately.
+
 ## Confirmed location and onsite rules (user clarifications through 2026-11-17)
 
 **Confirmed commute origin and method (2026-11-17):** Driving distance (actual road miles) from the user's **specified street address in ZIP 30307**, **not** straight-line radius and **not** the ZIP centroid. The precise origin address is private and MUST NOT be committed to this public GitHub repository, printed in logs, or embedded in exported reports. Store it later in a local untracked setting or protected secrets store, e.g. `JSA_COMMUTE_ORIGIN_ADDRESS`; this documentation intentionally omits it. Reconcile address geocoding and road-routing capability during the source/eligibility feasibility phase, without building a production adapter now.
