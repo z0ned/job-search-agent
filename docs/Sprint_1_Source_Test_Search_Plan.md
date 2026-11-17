@@ -36,7 +36,7 @@ For each source record:
 
 | Candidate feed | Role in source mix | Current proven state | Remaining feed-only test |
 |---|---|---|---|
-| Ashby public job-board API | Multiple employer-specific feeds | **One board (Ramp) returned structured JSON** | Validate more employer board IDs, aggregate accessible unique postings and original-date 30-day counts |
+| Ashby public job-board API | Multiple employer-specific feeds | **Five of five public boards succeeded locally (HTTP 200): 292 listed posts, 120 published in last 30 days, 0 unknown dates; 16 contract title/type signals not confirmed contracts** | Establish recent true contract inventory, repeat-day stability, and wider employer-board coverage; see [Ashby measurements](./Sprint_1_Ashby_Feed_Volume_2026-11-17.md) |
 | Himalayas public jobs API | Broad remote jobs feed | **One unfiltered 20-posting JSON page returned**; API advertised a much larger total | Page/keyword/country/employment-type filtered count, date semantics, duplicate identities and daily access |
 | Greenhouse public Job Board API | Multiple employer-specific feeds | Individual job **HTML** pages readable; **JSON API not yet directly verified** | Fetch JSON from a connected shell, count postings across several boards, sample field availability |
 | Lever public postings API | Employer-specific feed | Individual job page evidence only; **JSON API unverified** | Bounded feed JSON request across sample employers |
