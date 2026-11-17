@@ -1,0 +1,1747 @@
+{
+  "suite_version": "1.0-draft",
+  "created_date": "2026-11-17",
+  "purpose": "Gold-standard reference cases for feedback interpretation. These are authored expectations, not model evaluation results.",
+  "assumptions": {
+    "hard_rules_immutable_without_explicit_change": true,
+    "written_explanation_required_for_both_decisions": true,
+    "batch_approval_before_application": true,
+    "frozen_phase_approval_is_held": true,
+    "unknown_salary_remains_eligible": true,
+    "permanent_base_minimum_usd": 180000,
+    "w2_hourly_minimum_usd": 75,
+    "1099_hourly_minimum_usd": 100,
+    "c2c_hourly_minimum_usd": null
+  },
+  "schema": {
+    "expected_review_status": {
+      "PENDING_APPROVAL": "Clear preference evidence can enter batch approval; nothing applied.",
+      "NEEDS_CLARIFICATION": "Clarification required before proposal approval/application.",
+      "PROFILE_FACT_REVIEW": "Detected statement about verified facts, existing rules, or a proposed hard-rule change; separate path, not learned automatically."
+    },
+    "polarity": [
+      "positive",
+      "negative",
+      "uncertain"
+    ],
+    "strength": [
+      "mild",
+      "strong"
+    ],
+    "dimension": [
+      "career_category",
+      "compensation",
+      "contract_terms",
+      "culture_environment",
+      "employer",
+      "growth_purpose",
+      "industry",
+      "qualifications_fit",
+      "role_responsibilities",
+      "seniority_scope",
+      "work_arrangement"
+    ],
+    "scope_types": [
+      "arrangement",
+      "career_category",
+      "compensation_context",
+      "compensation_transparency",
+      "contract_term",
+      "culture_feature",
+      "employer",
+      "employment_type",
+      "industry",
+      "location_arrangement",
+      "mission",
+      "role_feature",
+      "schedule",
+      "seniority_feature",
+      "travel_frequency"
+    ]
+  },
+  "test_cases": [
+    {
+      "case_id": "FI-001",
+      "section": "Responsibilities",
+      "title": "Status-reporting-heavy PM",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Senior Program Manager",
+        "employer": "Briarton Group"
+      },
+      "decision": "rejected",
+      "original_feedback": "I would spend my days creating status decks. That is not the work I want.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "status-reporting-heavy duties",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "status_reporting"
+          },
+          "evidence_quote": "creating status decks"
+        }
+      ],
+      "prohibited_inferences": [
+        "Reject all Project Manager roles",
+        "Infer dislike of banking"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-002",
+      "section": "Responsibilities",
+      "title": "AI workshops with clients",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "AI Solutions Advisor",
+        "employer": "Clientwise AI"
+      },
+      "decision": "interested",
+      "original_feedback": "I love solving client problems and running AI solution workshops.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "client problem-solving",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "client_problem_solving"
+          },
+          "evidence_quote": "solving client problems"
+        },
+        {
+          "dimension": "role_responsibilities",
+          "feature": "AI workshops",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "ai_workshops"
+          },
+          "evidence_quote": "running AI solution workshops"
+        }
+      ],
+      "prohibited_inferences": [
+        "Assume every AI role is attractive"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-003",
+      "section": "Responsibilities",
+      "title": "Sales quota vs consulting",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Transformation Advisory Lead",
+        "employer": "Meridian Partners"
+      },
+      "decision": "rejected",
+      "original_feedback": "The advisory work appeals to me, but I do not want a sales quota.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "advisory work",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "advisory"
+          },
+          "evidence_quote": "advisory work appeals to me"
+        },
+        {
+          "dimension": "role_responsibilities",
+          "feature": "sales quota responsibilities",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "sales_quota"
+          },
+          "evidence_quote": "do not want a sales quota"
+        }
+      ],
+      "prohibited_inferences": [
+        "Downgrade all consulting categories",
+        "Reject the employer"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-004",
+      "section": "Responsibilities",
+      "title": "Execution-heavy contract",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "title": "Contract Program Delivery Lead",
+        "employer": "Harbor Consulting"
+      },
+      "decision": "interested",
+      "original_feedback": "I enjoy delivering concrete transformation milestones on short contracts.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "delivery of defined transformation milestones",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "transformation_delivery"
+          },
+          "evidence_quote": "delivering concrete transformation milestones"
+        },
+        {
+          "dimension": "contract_terms",
+          "feature": "short-duration contracts",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "employment_type",
+            "value": "contract"
+          },
+          "evidence_quote": "short contracts"
+        }
+      ],
+      "prohibited_inferences": [
+        "Automatically favor all permanent execution roles"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-005",
+      "section": "Responsibilities",
+      "title": "Contact-center operations career category",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Contact Center Operations Director",
+        "employer": "Northpoint Services"
+      },
+      "decision": "rejected",
+      "original_feedback": "I do not want to return to contact-center operations roles.",
+      "expected_interpretations": [
+        {
+          "dimension": "career_category",
+          "feature": "contact-center operations roles",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "career_category",
+            "value": "contact_center_operations"
+          },
+          "evidence_quote": "do not want to return to contact-center operations roles"
+        }
+      ],
+      "prohibited_inferences": [
+        "Exclude all operations roles",
+        "Create a new hard exclusion"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": true
+    },
+    {
+      "case_id": "FI-006",
+      "section": "Responsibilities",
+      "title": "Interest in AI enablement transition",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "AI Enablement Manager",
+        "employer": "Beacon Digital"
+      },
+      "decision": "interested",
+      "original_feedback": "AI enablement is a career direction I would love to explore, even if I need training.",
+      "expected_interpretations": [
+        {
+          "dimension": "career_category",
+          "feature": "AI enablement career path",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "career_category",
+            "value": "ai_enablement"
+          },
+          "evidence_quote": "AI enablement is a career direction I would love to explore"
+        },
+        {
+          "dimension": "growth_purpose",
+          "feature": "learning opportunity",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "learning_new_skills"
+          },
+          "evidence_quote": "even if I need training"
+        }
+      ],
+      "prohibited_inferences": [
+        "Claim all qualifications already met",
+        "Ignore any genuinely mandatory credential"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": true
+    },
+    {
+      "case_id": "FI-007",
+      "section": "Responsibilities",
+      "title": "Banking transformation fatigue",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Core Banking Transformation Lead",
+        "employer": "Elmwood Bank"
+      },
+      "decision": "rejected",
+      "original_feedback": "I am not interested in another core-banking replacement transformation.",
+      "expected_interpretations": [
+        {
+          "dimension": "career_category",
+          "feature": "core-banking replacement transformation",
+          "polarity": "negative",
+          "strength": "mild",
+          "scope": {
+            "type": "career_category",
+            "value": "core_banking_replacement"
+          },
+          "evidence_quote": "not interested in another core-banking replacement transformation"
+        }
+      ],
+      "prohibited_inferences": [
+        "Reject all financial-services employers",
+        "Reject all transformation programs"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": true
+    },
+    {
+      "case_id": "FI-008",
+      "section": "Responsibilities",
+      "title": "On-call operational burden",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "title": "IT Operations Program Manager",
+        "employer": "Crest Systems"
+      },
+      "decision": "rejected",
+      "original_feedback": "The title sounds fine, but rotating overnight on-call duties would be draining.",
+      "expected_interpretations": [
+        {
+          "dimension": "work_arrangement",
+          "feature": "overnight on-call rotation",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "schedule",
+            "value": "overnight_on_call"
+          },
+          "evidence_quote": "rotating overnight on-call duties would be draining"
+        }
+      ],
+      "prohibited_inferences": [
+        "Reject the job title category",
+        "Infer dislike of all remote roles"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-009",
+      "section": "Compensation",
+      "title": "Mixed AI-positive, C2C rate-negative",
+      "job_context": {
+        "employment_type": "c2c_contract",
+        "hourly_rate_usd": 110,
+        "rate_type": "C2C",
+        "title": "AI Transformation Consultant",
+        "employer": "Altura Advisory"
+      },
+      "decision": "rejected",
+      "original_feedback": "I like the client-facing AI work, but $110/hour is too low for this C2C job.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "client-facing AI work",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "client_facing_ai"
+          },
+          "evidence_quote": "like the client-facing AI work"
+        },
+        {
+          "dimension": "compensation",
+          "feature": "C2C hourly rate of $110",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "compensation_context",
+            "value": "c2c_110_hour"
+          },
+          "evidence_quote": "$110/hour is too low for this C2C job"
+        }
+      ],
+      "prohibited_inferences": [
+        "Set C2C hard minimum to $111 or more",
+        "Downgrade AI consultant category"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-010",
+      "section": "Compensation",
+      "title": "Positive C2C rate, no threshold creation",
+      "job_context": {
+        "employment_type": "c2c_contract",
+        "hourly_rate_usd": 140,
+        "rate_type": "C2C",
+        "title": "AI Transformation Consultant",
+        "employer": "Vector Grove"
+      },
+      "decision": "interested",
+      "original_feedback": "The $140/hour C2C rate works for this opportunity and the scope is attractive.",
+      "expected_interpretations": [
+        {
+          "dimension": "compensation",
+          "feature": "C2C rate of $140",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "compensation_context",
+            "value": "c2c_140_hour"
+          },
+          "evidence_quote": "$140/hour C2C rate works for this opportunity"
+        },
+        {
+          "dimension": "role_responsibilities",
+          "feature": "scope of duties",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "stated_scope"
+          },
+          "evidence_quote": "scope is attractive"
+        }
+      ],
+      "prohibited_inferences": [
+        "Set a C2C minimum rate of $140"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-011",
+      "section": "Compensation",
+      "title": "W2 rate acceptable; onsite reason",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "hourly_rate_usd": 80,
+        "rate_type": "W2",
+        "title": "Contract Project Manager",
+        "employer": "Lakeview Financial"
+      },
+      "decision": "rejected",
+      "original_feedback": "The $80/hour rate is fine. I only dislike the onsite schedule.",
+      "expected_interpretations": [
+        {
+          "dimension": "compensation",
+          "feature": "W-2 rate of $80",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "compensation_context",
+            "value": "w2_80_hour"
+          },
+          "evidence_quote": "$80/hour rate is fine"
+        },
+        {
+          "dimension": "work_arrangement",
+          "feature": "onsite schedule",
+          "polarity": "negative",
+          "strength": "mild",
+          "scope": {
+            "type": "arrangement",
+            "value": "onsite_schedule"
+          },
+          "evidence_quote": "dislike the onsite schedule"
+        }
+      ],
+      "prohibited_inferences": [
+        "Assume $80/hour is below minimum",
+        "Reject all contract work"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-012",
+      "section": "Compensation",
+      "title": "Permanent meets base target",
+      "job_context": {
+        "employment_type": "permanent",
+        "base_salary_usd": 190000,
+        "title": "AI Delivery Director",
+        "employer": "Redpine AI"
+      },
+      "decision": "interested",
+      "original_feedback": "The $190,000 base salary is acceptable; I would need details on the bonus.",
+      "expected_interpretations": [
+        {
+          "dimension": "compensation",
+          "feature": "annual base of $190000",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "compensation_context",
+            "value": "permanent_base_190000"
+          },
+          "evidence_quote": "$190,000 base salary is acceptable"
+        }
+      ],
+      "prohibited_inferences": [
+        "Assume the bonus is inadequate",
+        "Assume total compensation is known"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-013",
+      "section": "Compensation",
+      "title": "Known pay below confirmed floor",
+      "job_context": {
+        "employment_type": "permanent",
+        "base_salary_usd": 175000,
+        "title": "Innovation Director",
+        "employer": "Oakline Labs"
+      },
+      "decision": "rejected",
+      "original_feedback": "This could be fun, but $175,000 base is below my established minimum.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "attractive underlying duties",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "interesting_role"
+          },
+          "evidence_quote": "This could be fun"
+        }
+      ],
+      "prohibited_inferences": [
+        "Change $180000 hard minimum",
+        "Downgrade the career category"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+      "expected_category_interest_change": false,
+      "test_notes": "Hard compensation floor is enforced by eligibility engine; negative salary remark is not evidence for another rule."
+    },
+    {
+      "case_id": "FI-014",
+      "section": "Compensation",
+      "title": "Unbillable time concern",
+      "job_context": {
+        "employment_type": "c2c_contract",
+        "hourly_rate_usd": 120,
+        "title": "C2C Transformation Consultant",
+        "employer": "Willow Ventures"
+      },
+      "decision": "rejected",
+      "original_feedback": "At $120/hour I still worry about months without billable work.",
+      "expected_interpretations": [
+        {
+          "dimension": "contract_terms",
+          "feature": "unbillable gaps in C2C contracts",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "contract_term",
+            "value": "billing_gaps"
+          },
+          "evidence_quote": "months without billable work"
+        }
+      ],
+      "prohibited_inferences": [
+        "Invent a new C2C rate floor",
+        "Reject all C2C work"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-015",
+      "section": "Compensation",
+      "title": "Pay transparency dislike",
+      "job_context": {
+        "employment_type": "permanent",
+        "base_salary_usd": null,
+        "title": "AI Program Director",
+        "employer": "Aster Holdings"
+      },
+      "decision": "rejected",
+      "original_feedback": "I do not want to invest time with employers who refuse to disclose base salary.",
+      "expected_interpretations": [
+        {
+          "dimension": "compensation",
+          "feature": "employer salary nondisclosure",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "compensation_transparency",
+            "value": "undisclosed_base"
+          },
+          "evidence_quote": "refuse to disclose base salary"
+        }
+      ],
+      "prohibited_inferences": [
+        "Automatically change missing-salary eligibility",
+        "Create hard pay-transparency exclusion"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-016",
+      "section": "Compensation",
+      "title": "Salary unknown but purpose attractive",
+      "job_context": {
+        "employment_type": "permanent",
+        "base_salary_usd": null,
+        "title": "Nonprofit AI Program Manager",
+        "employer": "Community Futures"
+      },
+      "decision": "interested",
+      "original_feedback": "The mission really resonates with me. I would need to confirm compensation.",
+      "expected_interpretations": [
+        {
+          "dimension": "growth_purpose",
+          "feature": "mission alignment",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "mission_alignment"
+          },
+          "evidence_quote": "mission really resonates with me"
+        }
+      ],
+      "prohibited_inferences": [
+        "Treat unknown compensation as unacceptable",
+        "Assume pay meets $180000 floor"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-017",
+      "section": "Employer and industry",
+      "title": "Employer-specific layoffs",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Product Operations Director",
+        "employer": "Northstar Tech"
+      },
+      "decision": "rejected",
+      "original_feedback": "I am uncomfortable with Northstar Tech after its recent layoffs.",
+      "expected_interpretations": [
+        {
+          "dimension": "employer",
+          "feature": "Northstar Tech employer",
+          "polarity": "negative",
+          "strength": "mild",
+          "scope": {
+            "type": "employer",
+            "value": "Northstar Tech"
+          },
+          "evidence_quote": "uncomfortable with Northstar Tech after its recent layoffs"
+        }
+      ],
+      "prohibited_inferences": [
+        "Downgrade technology industry",
+        "Treat layoffs as verified independently"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-018",
+      "section": "Employer and industry",
+      "title": "Explicit industry avoidance",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Industry Transformation Director",
+        "employer": "Cedar Tobacco Group"
+      },
+      "decision": "rejected",
+      "original_feedback": "I do not want to work in the tobacco industry.",
+      "expected_interpretations": [
+        {
+          "dimension": "industry",
+          "feature": "tobacco industry",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "industry",
+            "value": "tobacco"
+          },
+          "evidence_quote": "do not want to work in the tobacco industry"
+        }
+      ],
+      "prohibited_inferences": [
+        "Hard-exclude tobacco roles without separate confirmation",
+        "Reject general consumer goods"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-019",
+      "section": "Employer and industry",
+      "title": "Nonprofit mission interest",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "AI Nonprofit Consultant",
+        "employer": "Community Futures"
+      },
+      "decision": "interested",
+      "original_feedback": "Helping small nonprofits apply AI would be meaningful to me.",
+      "expected_interpretations": [
+        {
+          "dimension": "growth_purpose",
+          "feature": "AI assistance to nonprofits",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "mission",
+            "value": "nonprofit_ai_enablement"
+          },
+          "evidence_quote": "Helping small nonprofits apply AI would be meaningful to me"
+        }
+      ],
+      "prohibited_inferences": [
+        "Assume any nonprofit employer is attractive"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-020",
+      "section": "Employer and industry",
+      "title": "Micromanagement concern",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Senior Program Lead",
+        "employer": "Quillworks"
+      },
+      "decision": "rejected",
+      "original_feedback": "I would hate a manager who micromanages every decision.",
+      "expected_interpretations": [
+        {
+          "dimension": "culture_environment",
+          "feature": "micromanagement",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "culture_feature",
+            "value": "micromanagement"
+          },
+          "evidence_quote": "hate a manager who micromanages every decision"
+        }
+      ],
+      "prohibited_inferences": [
+        "Assert this employer actually micromanages",
+        "Blacklist this employer"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-021",
+      "section": "Employer and industry",
+      "title": "Employer positive, specific peers",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "AI Product Strategy Director",
+        "employer": "Verity Labs"
+      },
+      "decision": "interested",
+      "original_feedback": "I admire Verity Labs because the technical team seems thoughtful and collaborative.",
+      "expected_interpretations": [
+        {
+          "dimension": "employer",
+          "feature": "Verity Labs",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "employer",
+            "value": "Verity Labs"
+          },
+          "evidence_quote": "admire Verity Labs"
+        },
+        {
+          "dimension": "culture_environment",
+          "feature": "thoughtful collaborative peers",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "culture_feature",
+            "value": "collaborative_peers"
+          },
+          "evidence_quote": "technical team seems thoughtful and collaborative"
+        }
+      ],
+      "prohibited_inferences": [
+        "Assume all employers in industry are similar"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-022",
+      "section": "Employer and industry",
+      "title": "Employer rejection only",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "title": "Enterprise Program Manager",
+        "employer": "Ridgetop Bank"
+      },
+      "decision": "rejected",
+      "original_feedback": "I would do this job for a different firm, but not for Ridgetop Bank.",
+      "expected_interpretations": [
+        {
+          "dimension": "employer",
+          "feature": "Ridgetop Bank",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "employer",
+            "value": "Ridgetop Bank"
+          },
+          "evidence_quote": "not for Ridgetop Bank"
+        }
+      ],
+      "prohibited_inferences": [
+        "Downgrade Program Manager work",
+        "Downgrade entire banking industry"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-023",
+      "section": "Work arrangement",
+      "title": "45-mile hybrid violates existing rule",
+      "job_context": {
+        "employment_type": "permanent",
+        "distance_miles": 45,
+        "arrangement": "hybrid_3_on_site",
+        "title": "Hybrid Program Director",
+        "employer": "Westhaven Group"
+      },
+      "decision": "rejected",
+      "original_feedback": "The three-days-in-office arrangement 45 miles away breaks my distance rule.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Infer dislike of all hybrid positions",
+        "Alter existing location rule"
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+      "expected_category_interest_change": false,
+      "profile_fact_candidate": "Eligibility implementation defect: this job should not pass the >30 driving-mile fully-remote constraint."
+    },
+    {
+      "case_id": "FI-024",
+      "section": "Work arrangement",
+      "title": "Likes remote work",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Remote AI Strategy Director",
+        "employer": "Westhaven Group"
+      },
+      "decision": "interested",
+      "original_feedback": "I like being fully remote and could focus on the client work.",
+      "expected_interpretations": [
+        {
+          "dimension": "work_arrangement",
+          "feature": "fully remote",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "arrangement",
+            "value": "fully_remote"
+          },
+          "evidence_quote": "like being fully remote"
+        },
+        {
+          "dimension": "role_responsibilities",
+          "feature": "client work",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "client_facing"
+          },
+          "evidence_quote": "focus on the client work"
+        }
+      ],
+      "prohibited_inferences": [
+        "Create remote-only hard rule"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-025",
+      "section": "Work arrangement",
+      "title": "Night and weekend schedule",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "title": "Technology PM Consultant",
+        "employer": "Vista Partners"
+      },
+      "decision": "rejected",
+      "original_feedback": "The required night and weekend coverage would interfere with my personal time.",
+      "expected_interpretations": [
+        {
+          "dimension": "work_arrangement",
+          "feature": "night/weekend coverage",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "schedule",
+            "value": "night_weekend"
+          },
+          "evidence_quote": "night and weekend coverage would interfere with my personal time"
+        }
+      ],
+      "prohibited_inferences": [
+        "Reject all W2 contracts"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-026",
+      "section": "Work arrangement",
+      "title": "Nearby hybrid convenience",
+      "job_context": {
+        "employment_type": "permanent",
+        "distance_miles": 6,
+        "arrangement": "hybrid",
+        "title": "Hybrid AI Product Director",
+        "employer": "Greenwood Labs"
+      },
+      "decision": "interested",
+      "original_feedback": "Hybrid is appealing at this nearby office, only six miles from home.",
+      "expected_interpretations": [
+        {
+          "dimension": "work_arrangement",
+          "feature": "nearby hybrid",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "location_arrangement",
+            "value": "hybrid_nearby"
+          },
+          "evidence_quote": "Hybrid is appealing at this nearby office"
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer hybrid acceptable 40 miles away"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-027",
+      "section": "Work arrangement",
+      "title": "Weekly travel burden",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "National Client Delivery Lead",
+        "employer": "Roxton Advisory"
+      },
+      "decision": "rejected",
+      "original_feedback": "Flying every week would wear me out, though occasional trips are okay.",
+      "expected_interpretations": [
+        {
+          "dimension": "work_arrangement",
+          "feature": "weekly air travel",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "travel_frequency",
+            "value": "weekly_flights"
+          },
+          "evidence_quote": "Flying every week would wear me out"
+        },
+        {
+          "dimension": "work_arrangement",
+          "feature": "occasional business travel",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "travel_frequency",
+            "value": "occasional"
+          },
+          "evidence_quote": "occasional trips are okay"
+        }
+      ],
+      "prohibited_inferences": [
+        "Create no-travel hard rule",
+        "Reject all travel"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-028",
+      "section": "Work arrangement",
+      "title": "20-mile M/F onsite violates rule",
+      "job_context": {
+        "employment_type": "permanent",
+        "distance_miles": 20,
+        "arrangement": "onsite_mon_fri",
+        "title": "Onsite Portfolio Manager",
+        "employer": "Brookvale Group"
+      },
+      "decision": "rejected",
+      "original_feedback": "I would have to be onsite Mondays and Fridays, and it is 20 miles away.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Infer general onsite aversion",
+        "Alter location rule"
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+      "expected_category_interest_change": false,
+      "profile_fact_candidate": "Eligibility defect: jobs 10–30 driving miles away must be remote Monday and Friday."
+    },
+    {
+      "case_id": "FI-029",
+      "section": "Work arrangement",
+      "title": "Unclear commute concern",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Digital Transformation Manager",
+        "employer": "Maplewood Systems"
+      },
+      "decision": "rejected",
+      "original_feedback": "The commute is a problem.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Invent distance threshold",
+        "Infer dislike of hybrid vs onsite"
+      ],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "clarification_question": "Is the concern driving distance, traffic/time, required office days, or something else?"
+    },
+    {
+      "case_id": "FI-030",
+      "section": "Seniority and scope",
+      "title": "Hands-on expert role",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Senior AI Technical Advisor",
+        "employer": "Brightworks"
+      },
+      "decision": "interested",
+      "original_feedback": "I like being the trusted hands-on expert without managing a large team.",
+      "expected_interpretations": [
+        {
+          "dimension": "seniority_scope",
+          "feature": "hands-on expert responsibility",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "seniority_feature",
+            "value": "hands_on_expert"
+          },
+          "evidence_quote": "trusted hands-on expert"
+        },
+        {
+          "dimension": "seniority_scope",
+          "feature": "large-team people management",
+          "polarity": "negative",
+          "strength": "mild",
+          "scope": {
+            "type": "seniority_feature",
+            "value": "large_team_management"
+          },
+          "evidence_quote": "without managing a large team"
+        }
+      ],
+      "prohibited_inferences": [
+        "Assume dislike of all leadership roles"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-031",
+      "section": "Seniority and scope",
+      "title": "Too much people management",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "PMO Director",
+        "employer": "Heritage Holdings"
+      },
+      "decision": "rejected",
+      "original_feedback": "Directly managing 20 people is not what I want to spend my time doing.",
+      "expected_interpretations": [
+        {
+          "dimension": "seniority_scope",
+          "feature": "large direct-report responsibility",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "seniority_feature",
+            "value": "many_direct_reports"
+          },
+          "evidence_quote": "Directly managing 20 people is not what I want"
+        }
+      ],
+      "prohibited_inferences": [
+        "Reject every Director title"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-032",
+      "section": "Seniority and scope",
+      "title": "Stretch into bigger scope",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "VP AI Transformation",
+        "employer": "Peregrine Labs"
+      },
+      "decision": "interested",
+      "original_feedback": "Owning a larger AI transformation portfolio is exactly the stretch I want.",
+      "expected_interpretations": [
+        {
+          "dimension": "seniority_scope",
+          "feature": "larger AI transformation portfolio ownership",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "seniority_feature",
+            "value": "large_portfolio_ownership"
+          },
+          "evidence_quote": "larger AI transformation portfolio is exactly the stretch I want"
+        }
+      ],
+      "prohibited_inferences": [
+        "Treat missing qualifications as met",
+        "Relax mandatory qualification"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-033",
+      "section": "Seniority and scope",
+      "title": "Junior responsibility mismatch",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "title": "Project Manager",
+        "employer": "Redstone Systems"
+      },
+      "decision": "rejected",
+      "original_feedback": "This is too junior; I would have almost no decision-making autonomy.",
+      "expected_interpretations": [
+        {
+          "dimension": "seniority_scope",
+          "feature": "limited decision-making autonomy",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "seniority_feature",
+            "value": "low_autonomy"
+          },
+          "evidence_quote": "almost no decision-making autonomy"
+        }
+      ],
+      "prohibited_inferences": [
+        "Reject all individual-contributor roles"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-034",
+      "section": "Seniority and scope",
+      "title": "Ambiguous seniority concern",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Chief Program Officer",
+        "employer": "Midland Global"
+      },
+      "decision": "rejected",
+      "original_feedback": "The role seems too senior for me.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Infer aversion to leadership",
+        "Infer missing credential"
+      ],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "clarification_question": "Is the concern qualifications, accountability, workload, people management, or something else?"
+    },
+    {
+      "case_id": "FI-035",
+      "section": "Qualifications",
+      "title": "Interest despite training gap",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "AI Solutions Architect",
+        "employer": "Openfield AI"
+      },
+      "decision": "interested",
+      "original_feedback": "I want to move into AI solution architecture, even though I would need to learn the tooling.",
+      "expected_interpretations": [
+        {
+          "dimension": "career_category",
+          "feature": "AI solution architecture",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "career_category",
+            "value": "ai_solution_architecture"
+          },
+          "evidence_quote": "want to move into AI solution architecture"
+        },
+        {
+          "dimension": "growth_purpose",
+          "feature": "training and skill development",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "skill_development"
+          },
+          "evidence_quote": "even though I would need to learn the tooling"
+        }
+      ],
+      "prohibited_inferences": [
+        "Assume already skilled in AI solution architecture",
+        "Override essential qualification requirements"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": true
+    },
+    {
+      "case_id": "FI-036",
+      "section": "Qualifications",
+      "title": "Specific contract qualification gap",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "title": "SAP Integration Delivery Lead",
+        "employer": "Brookvale Group"
+      },
+      "decision": "rejected",
+      "original_feedback": "I do not have the hands-on SAP integration experience this contract needs.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Infer dislike of SAP as a career",
+        "Rewrite verified qualifications"
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "profile_fact_candidate": "Potential explicit missing-skill statement: user reports no hands-on SAP integration experience. Validate profile fact separately."
+    },
+    {
+      "case_id": "FI-037",
+      "section": "Qualifications",
+      "title": "Too much coding is a work preference",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Python Engineering Manager",
+        "employer": "Softline Cloud"
+      },
+      "decision": "rejected",
+      "original_feedback": "I do not want my daily work to consist mostly of writing Python code.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "mostly daily Python coding",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "coding_heavy"
+          },
+          "evidence_quote": "do not want my daily work to consist mostly of writing Python code"
+        }
+      ],
+      "prohibited_inferences": [
+        "Claim user cannot write Python",
+        "Reject all technical leadership jobs"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-038",
+      "section": "Qualifications",
+      "title": "Claims prior migration experience",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "title": "Data Migration Program Manager",
+        "employer": "Bridgewell Tech"
+      },
+      "decision": "interested",
+      "original_feedback": "I could do this project; I have already delivered these migrations.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Treat this as proven resume evidence without profile review",
+        "Assume user prefers every migration contract"
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "profile_fact_candidate": "User-reported delivered migration experience; verify against imported resume or explicit profile confirmation."
+    },
+    {
+      "case_id": "FI-039",
+      "section": "Career category",
+      "title": "Explicit AI evangelism interest",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "AI Evangelist",
+        "employer": "Beacon Digital"
+      },
+      "decision": "interested",
+      "original_feedback": "AI evangelist roles genuinely excite me as a career direction.",
+      "expected_interpretations": [
+        {
+          "dimension": "career_category",
+          "feature": "AI evangelism",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "career_category",
+            "value": "ai_evangelism"
+          },
+          "evidence_quote": "AI evangelist roles genuinely excite me as a career direction"
+        }
+      ],
+      "prohibited_inferences": [
+        "Assume user will accept a sales quota"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": true
+    },
+    {
+      "case_id": "FI-040",
+      "section": "Career category",
+      "title": "General sales career aversion",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Regional Sales Director",
+        "employer": "Inland Systems"
+      },
+      "decision": "rejected",
+      "original_feedback": "I do not want a career in quota-carrying sales.",
+      "expected_interpretations": [
+        {
+          "dimension": "career_category",
+          "feature": "quota-carrying sales careers",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "career_category",
+            "value": "quota_sales"
+          },
+          "evidence_quote": "do not want a career in quota-carrying sales"
+        }
+      ],
+      "prohibited_inferences": [
+        "Make sales a hard exclusion without user rule change"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": true
+    },
+    {
+      "case_id": "FI-041",
+      "section": "Career category",
+      "title": "Employer reason should not lower category",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "AI Strategy Advisor",
+        "employer": "Trustline AI"
+      },
+      "decision": "rejected",
+      "original_feedback": "This is a terrific AI advisor role, but I do not trust the employer.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "AI advisory responsibilities",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "ai_advisory"
+          },
+          "evidence_quote": "terrific AI advisor role"
+        },
+        {
+          "dimension": "employer",
+          "feature": "this employer",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "employer",
+            "value": "current_job_employer"
+          },
+          "evidence_quote": "do not trust the employer"
+        }
+      ],
+      "prohibited_inferences": [
+        "Lower AI advisor career-category interest"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-042",
+      "section": "Career category",
+      "title": "Liked category but disliked employer",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "AI Product Director",
+        "employer": "Omega Health"
+      },
+      "decision": "rejected",
+      "original_feedback": "I would love an AI product leadership career, just not at Omega Health.",
+      "expected_interpretations": [
+        {
+          "dimension": "career_category",
+          "feature": "AI product leadership",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "career_category",
+            "value": "ai_product_leadership"
+          },
+          "evidence_quote": "love an AI product leadership career"
+        },
+        {
+          "dimension": "employer",
+          "feature": "Omega Health",
+          "polarity": "negative",
+          "strength": "mild",
+          "scope": {
+            "type": "employer",
+            "value": "Omega Health"
+          },
+          "evidence_quote": "not at Omega Health"
+        }
+      ],
+      "prohibited_inferences": [
+        "Downgrade the AI product leadership category"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": true
+    },
+    {
+      "case_id": "FI-043",
+      "section": "Career category",
+      "title": "Category positive, salary negative",
+      "job_context": {
+        "employment_type": "c2c_contract",
+        "hourly_rate_usd": 105,
+        "title": "AI Advisor",
+        "employer": "Baytree Partners"
+      },
+      "decision": "rejected",
+      "original_feedback": "I love AI strategy consulting; this $105/hour C2C rate is not worthwhile.",
+      "expected_interpretations": [
+        {
+          "dimension": "career_category",
+          "feature": "AI strategy consulting",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "career_category",
+            "value": "ai_strategy_consulting"
+          },
+          "evidence_quote": "love AI strategy consulting"
+        },
+        {
+          "dimension": "compensation",
+          "feature": "C2C rate of $105",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "compensation_context",
+            "value": "c2c_105_hour"
+          },
+          "evidence_quote": "$105/hour C2C rate is not worthwhile"
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer minimum C2C rate",
+        "Reduce interest in AI strategy consulting"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": true
+    },
+    {
+      "case_id": "FI-044",
+      "section": "Career category",
+      "title": "Interested but vague",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "C2C AI Strategy Consultant",
+        "employer": "Valley Consulting"
+      },
+      "decision": "interested",
+      "original_feedback": "This looks promising to me.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Invent positive career-category interest",
+        "Infer which duties are attractive"
+      ],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "clarification_question": "What specifically makes this job worth considering—responsibilities, employer, career path, or another factor?"
+    },
+    {
+      "case_id": "FI-045",
+      "section": "Ambiguity and safeguards",
+      "title": "Vague overall rejection",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "title": "Transformation Strategy Director",
+        "employer": "Pioneer Systems"
+      },
+      "decision": "rejected",
+      "original_feedback": "Not my thing.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Assume dislike of position",
+        "Assume dissatisfaction with pay"
+      ],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "clarification_question": "What about this job makes it unattractive?"
+    },
+    {
+      "case_id": "FI-046",
+      "section": "Ambiguity and safeguards",
+      "title": "Culture concern without specifics",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Technology Portfolio Manager",
+        "employer": "Corelight Bank"
+      },
+      "decision": "rejected",
+      "original_feedback": "The culture feels off.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Assume employer has poor ethics",
+        "Reject this industry"
+      ],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "clarification_question": "What specifically about the employer or culture concerns you?"
+    },
+    {
+      "case_id": "FI-047",
+      "section": "Ambiguity and safeguards",
+      "title": "Pay acceptable but scope too junior",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Change Program Director",
+        "employer": "Northline Solutions"
+      },
+      "decision": "rejected",
+      "original_feedback": "The pay is fine, but it is not senior enough for the responsibility I want.",
+      "expected_interpretations": [
+        {
+          "dimension": "compensation",
+          "feature": "compensation in this job",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "compensation_context",
+            "value": "this_job_pay"
+          },
+          "evidence_quote": "pay is fine"
+        },
+        {
+          "dimension": "seniority_scope",
+          "feature": "insufficient seniority",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "seniority_feature",
+            "value": "not_senior_enough"
+          },
+          "evidence_quote": "not senior enough for the responsibility I want"
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer compensation below threshold",
+        "Downgrade role category"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-048",
+      "section": "Ambiguity and safeguards",
+      "title": "Negation inside job-description quotation",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Enterprise Delivery Director",
+        "employer": "Aspire Systems"
+      },
+      "decision": "rejected",
+      "original_feedback": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "sales-oriented work",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "sales_heavy"
+          },
+          "evidence_quote": "that's exactly what I want to avoid"
+        }
+      ],
+      "prohibited_inferences": [
+        "Interpret quoted must love sales as user preference",
+        "Assume user dislikes client interaction"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI-049",
+      "section": "Ambiguity and safeguards",
+      "title": "Partial explicit signal with unresolved rejection",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Client Solution Consultant",
+        "employer": "Starlight Analytics"
+      },
+      "decision": "rejected",
+      "original_feedback": "I like consulting as a career, but something about this opportunity feels wrong.",
+      "expected_interpretations": [
+        {
+          "dimension": "career_category",
+          "feature": "consulting as a career",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "career_category",
+            "value": "consulting"
+          },
+          "evidence_quote": "like consulting as a career"
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer negative preference for consulting",
+        "Invent reason for rejecting this employer"
+      ],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": true,
+      "clarification_question": "What specifically feels wrong about this opportunity? The positive consulting interest can be reviewed after clarification."
+    },
+    {
+      "case_id": "FI-050",
+      "section": "Ambiguity and safeguards",
+      "title": "Feedback apparently conflicts with hard salary floor",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "AI Business Transformation Lead",
+        "employer": "Prism Labs"
+      },
+      "decision": "interested",
+      "original_feedback": "I might take $165,000 base if the job were amazing; I want to reconsider my minimum.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "exceptional role attractiveness",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "exceptional_role"
+          },
+          "evidence_quote": "if the job were amazing"
+        }
+      ],
+      "prohibited_inferences": [
+        "Silently lower the $180000 permanent base minimum",
+        "Treat this job as eligible before a hard-rule change"
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+      "expected_category_interest_change": false,
+      "profile_fact_candidate": "Possible request to change permanent salary hard minimum; require distinct, explicit rule-change approval."
+    }
+  ]
+}
