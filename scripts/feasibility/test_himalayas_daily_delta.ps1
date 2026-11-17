@@ -28,7 +28,8 @@ function New-StringSet {
     foreach($item in @($Items)) {
         if(-not [string]::IsNullOrWhiteSpace([string]$item)) { [void]$set.Add([string]$item) }
     }
-    return $set
+    # PowerShell enumerates collection return values unless wrapped.
+    return ,$set
 }
 function Get-CountryClass {
     param([object]$Restrictions)
