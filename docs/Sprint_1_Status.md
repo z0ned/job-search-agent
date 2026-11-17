@@ -134,6 +134,21 @@ Completed; measured results recorded below. Selected next source for feasibility
 
 **Decision:** Greenhouse is technically valid as a per-employer feed, but **U.S.-eligible recent contract PM supply has not been demonstrated** in the five-board sample. Next source to test is **Lever**. Do not assume Greenhouse-wide absence. [Full measured report](./Sprint_1_Greenhouse_Contract_Overlap_2026-11-17.md).
 
+## Lever public five-board source validation — script committed (2026-11-17)
+
+After the Greenhouse contract-eligibility false positives, the user approved moving to **Lever** next. The public Lever Postings API documents unauthenticated GET lists per employer, including posting IDs, `categories.commitment`, `categories.location`, `country` and `workplaceType`. It supports `skip`/`limit` pagination but **cannot search full text across employers**. Documentation: https://github.com/Lever/postings-api.
+
+**Committed test:** [scripts/feasibility/test_lever_feed_volume.ps1](../scripts/feasibility/test_lever_feed_volume.ps1). Named public employer-site tokens: `lever`, `pointclickcare`, `idealistconsulting`, `compassx`, `protrials` (the selection intentionally includes contract-oriented organizations and is **not representative** of Lever overall). Read-only public GETs; paginated 100 postings per request; at most 12 pages per board, with a partial-status warning for the cap or duplicate page IDs. No keys, data persistence, individual job evaluation, application tracking, or Adzuna trial calls.
+
+**Output:** HTTP/access status, page and distinct posting counts, `createdAt` availability and recent-creation count, broad project/program/product/PMO title matches, explicit **commitment = contract/temporary/etc.** versus weaker **title-only hints**, their recent-created overlap, and US-country/remote label breakdown. Explicitly warns that `createdAt` is **posting creation**, **NOT confirmed first-publication**; a board can have recently published jobs with old creation dates. Country or remote labels do not prove US-worker eligibility.
+
+**Status:** Script committed; **not yet executed locally**, so **no Lever count is claimed**. Next user action from cloned repo root:
+
+    git pull origin main
+    powershell -NoProfile -File .\scripts\feasibility\test_lever_feed_volume.ps1
+
+After results: determine if Lever adds distinct technically accessible recent contract-role volume, and compare first-published versus created-date limitations. No production code has begun.
+
 ## Next actions
 
 1. **Adzuna U.S. direct authenticated feed is now verified.** Next measure its 30-day contract search volume and page retrieval limits. Continue unverified Greenhouse/Lever APIs in parallel.
