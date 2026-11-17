@@ -88,8 +88,16 @@ The user reports **419 job listings** on Adzuna's U.S. **website** when filterin
 - **Other selected public Ashby board API requests did not return usable data through this environment** (and the `ashby` board exceeded the browser tool's 4 MiB response limit). These are tool limitations, not observed proof of source downtime.
 - **Direct shell request from this environment failed DNS resolution**; this is not an upstream API failure.
 - Committed a **one-off, read-only feasibility tool** at [scripts/feasibility/test_ashby_feed_volume.ps1](../scripts/feasibility/test_ashby_feed_volume.ps1). It makes **one GET each** for five employer boards (Ramp, Juniper Square, GreenLight Workforce Solutions, Coder, Teamworks) and reports successfully parsed jobs, listed/unique job IDs, recent posting dates, basic contract-type metadata signals and HTTP status or failed board.
-- The script stores no job descriptions, credentials or personal commute address. It needs **no API key** and uses **zero Adzuna trial calls**. **Not yet executed on the user's home computer, so no cross-board volume totals are claimed.**
+- The script stores no job descriptions, credentials or personal commute address. It needs **no API key** and uses **zero Adzuna trial calls**. **Executed successfully on the user's home computer on 2026-11-17; see the verified measurements below.**
 - This is source **access and volume** validation only, not job quality or individual opportunity searching.
+
+## Ashby five-board direct API results — VERIFIED (2026-11-17)
+
+User-run PowerShell test at **2026-11-17 16:49:53 UTC** returned **HTTP 200 from all five boards**: Ramp 179 listed/66 recent, Juniper Square 52/22, Greenlight Workforce Solutions 23/13, Coder 27/16, Teamworks 11/3. **Total: 292 listed posts, 120 with publishedAt in last 30 days, zero unknown dates**, 292 IDs distinct **within their respective boards**. **16 title/employment-type contract signals** are a rough heuristic, **not 16 verified contracts**; only one record was tagged `Temporary` and employment-type labels were otherwise `FullTime` or `Intern`. The contract-signal/30-day intersection was not reported.
+
+**Scope:** Demonstrates accessible **feed volume at these five employer boards** with zero API credentials and no Adzuna calls. It does not measure Ashby-wide supply, repeat-day new postings, cross-provider deduplication, or sufficient **recent contract** volume.
+
+[Full measurements and interpretation](./Sprint_1_Ashby_Feed_Volume_2026-11-17.md).
 
 ## Next actions
 
