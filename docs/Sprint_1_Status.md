@@ -126,7 +126,13 @@ The user approved a **targeted follow-up on the same five validated Greenhouse b
     git pull origin main
     powershell -NoProfile -File .\scripts\feasibility\test_greenhouse_contract_overlap.ps1
 
-Then record the actual result and decide whether to expand Greenhouse boards or proceed to Lever.
+Completed; measured results recorded below. Selected next source for feasibility validation: Lever.
+
+## Greenhouse recent × role × contract follow-up — COMPLETED (2026-11-17)
+
+**User-run at 17:09:27 UTC:** Five of five Greenhouse boards succeeded. **722** non-prospect postings, **347** first published within 30 days, **175** broad target-role title signals, **254** contract-like title/metadata signals. **63** satisfied **recent ∩ role ∩ contract signals**, all from INFUSE. All 63 had both title and metadata signals. INFUSE type metadata comprised **247 Non-US Contractor, 3 UA Contractor, 17 US Employee, 1 INTL Employee, 1 APAC Employee**. The 250 contractor-type signals thus refer to international/UA contract categories, **not verified opportunities eligible for a U.S.-based applicant**. Two of 63 overlap records have Atlanta/Georgia literal location labels, but work eligibility remains unverified.
+
+**Decision:** Greenhouse is technically valid as a per-employer feed, but **U.S.-eligible recent contract PM supply has not been demonstrated** in the five-board sample. Next source to test is **Lever**. Do not assume Greenhouse-wide absence. [Full measured report](./Sprint_1_Greenhouse_Contract_Overlap_2026-11-17.md).
 
 ## Next actions
 
