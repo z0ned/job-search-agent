@@ -60,9 +60,23 @@ Sources:
 - Standard API overview: https://developer.adzuna.com/overview
 - Separate Intelligence API coverage note: https://developer.intelligence.adzuna.com/doc-593840
 
+## Adzuna authenticated U.S. source test — PASS (2026-11-17)
+
+**Evidence:** User executed a PowerShell one-request test locally using the Adzuna Pending Activation trial credential, with country path `/jobs/us/search/1`, keyword `project manager`, location `Atlanta`, and `results_per_page=20`. The user supplied a screenshot showing:
+
+- **API access: SUCCESS**
+- **Total US jobs matching search: 8509** (provider-reported estimate/inventory count for **that specific query**, not all U.S. jobs)
+- **Jobs returned: 20** (one response page)
+
+**Interpretation:** Authenticated programmatic access to U.S.-country Adzuna jobs is **VERIFIED** on the user's local Windows computer. This does **not** establish distinct inventory, actual 30-day freshness, usable page depth, contract category coverage, sustained rate limits, or daily reliability. The first local request appears to consume **1 of 25** user-reported trial calls, provided no other local requests were made.
+
+**Security:** Neither `ADZUNA_APP_ID` nor `ADZUNA_KEY` was disclosed or committed; both remain in the local ignored `.env`.
+
+**Next highest-value check:** One bounded `/jobs/us/search/1` call with `contract=1`, `max_days_old=30`, `where=Atlanta`, `what=project manager`, `results_per_page=20`; inspect aggregate `count`, returned count and presence of job identifiers, creation dates and pagination. Do not evaluate individuals' suitability.
+
 ## Next actions
 
-1. Get actual **direct HTTPS JSON feed responses** from each candidate provider; distinguish tool/network restrictions from source unavailability.
+1. **Adzuna U.S. direct authenticated feed is now verified.** Next measure its 30-day contract search volume and page retrieval limits. Continue unverified Greenhouse/Lever APIs in parallel.
 2. Measure accessible job **volumes** (total returned and unique IDs, page/cursor reach, count with reliable original post dates in last 30 days).
 3. Check broad keyword/location/work-type feed filter capabilities without reviewing postings for personal suitability.
 4. Test repeatability and provider quotas, access permissions, key/cost requirements.
