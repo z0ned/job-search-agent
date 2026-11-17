@@ -1,7 +1,7 @@
 # Sprint 1 — Live Source Feasibility Test Results
 
 **Test date:** 2026-11-17  
-**Status:** PARTIAL — One direct employer API feed was successfully retrieved; other sources need validation from a network-enabled environment.  
+**Status:** PARTIAL — Two independent providers (Ashby/Ramp and Himalayas) returned structured public API JSON. Neither has completed the 80/20 targeted relevance, 30-day coverage, repeat-day freshness, or complete integration-access gates.  
 **Source requirements:** [Source test portfolio](./Sprint_1_Source_Test_Search_Plan.md), [Eligibility decisions](./Sprint_1_Eligibility_Decisions_v1_0.md).
 
 ## 1. Executive Summary
@@ -14,7 +14,7 @@
 
 **Adzuna — personal job search is permitted in official terms; API key is required; no credentialed test was performed.** Official terms say free key is for evaluation, higher-volume plans depend on account and attribution obligations apply.
 
-**Himalayas — promising additional keyless remote-job API:** Official documentation currently allows filtered keyword/country/employment-type search with no key, once-per-day refresh, and attribution. Direct API search requests were inaccessible here, so relevance and actual counts remain UNVERIFIED.
+**Himalayas — second independent API feed SUCCESS:** The unfiltered public browse feed returned live JSON at https://himalayas.app/jobs/api?limit=20, with a page of 20 jobs and an API-reported totalCount of **117,346** (not independently audited). Each sample includes title, employer, employmentType, salary period/currency, locationRestrictions, pubDate, expiryDate, guid and applicationLink. The unfiltered search endpoint also returned JSON; **query-specific filtering with q=project manager/program manager was inaccessible** in this browsing environment. Do not mistake the claimed global feed total for relevant user jobs.
 
 ## 2. Endpoint Test Log
 
@@ -29,7 +29,9 @@ These were bounded public read-only GETs through available browsing. The browser
 | Greenhouse https://boards-api.greenhouse.io/v1/boards/gitlab/jobs?content=true | Tool could not access JSON | Unverified |
 | Greenhouse https://boards-api.greenhouse.io/v1/boards/vercel/jobs?content=true | Tool could not access JSON | Unverified |
 | Lever https://api.lever.co/v0/postings/lever?mode=json | Tool could not access JSON | Unverified |
-| Himalayas https://himalayas.app/jobs/api/search?q=project%20manager | Tool could not access JSON | Unverified |
+| Himalayas https://himalayas.app/jobs/api?limit=20 | **Actual JSON returned**, 20 jobs in page, API-reported totalCount 117346, nextCursor supplied | SECOND independent public API feed confirmed |
+| Himalayas https://himalayas.app/jobs/api/search (unfiltered) | **Actual JSON returned** | Search endpoint responds without q; filtering still unverified |
+| Himalayas https://himalayas.app/jobs/api/search?q=project%20manager | Filtered request inaccessible through this tool | Query-specific behavior unverified |
 | Himalayas keyword variants program manager, PMO | Tool could not access JSON | Unverified |
 | Remotive and Jobicy filtered JSON requests | Tool could not access JSON | Unverified |
 | Adzuna credentialed search | Not attempted; no API key | Pending |
@@ -64,7 +66,18 @@ The JSON visibly included: id, title, department, employmentType, location, seco
 
 These are **diagnostic examples**, intentionally chosen to exercise edge cases. They cannot be used to calculate a statistically meaningful relevance rate. For these individual HTML pages, posting timestamps were not consistently visible and **the 30-day ingestion rule cannot be verified** from index/crawl dates alone.
 
-## 5. Official Terms and Technology Findings
+## 5. Actual Himalayas Feed Evidence
+
+The successful response (https://himalayas.app/jobs/api?limit=20) included a **20-job page** and API-reported totalCount **117346**. This is evidence of accessible feed structure and an advertised global inventory, not a measured 30-day inventory or relevant PM-contract supply.
+
+- **Job 1:** Principal Product Manager, Insights Learning & Development Ltd, employmentType Full Time; country restriction **United Kingdom**; salary not given. Despite title relevance to product exploration, the available country restriction is outside the user-approved USA/Canada/Mexico scope; do not falsely label eligible.
+- **Job 3:** Key Account Specialist, SGS, country restriction **Canada**, annual USD pay **58100–77500**, Full Time. Comp is below the $180000 base floor and duties are customer account work, not a senior PMO role. Canada in the approved search-country set is not itself sufficient for job suitability.
+- **Schema issue from later visible job:** One posting's title says **Full-Time Contract** but feed employmentType says **Full Time**. Contract classification must look at job text rather than relying on a single provider field.
+- **Common data:** pubDate and expiryDate as Unix epoch seconds; companySlug; locationRestrictions; employmentType; currency; salaryPeriod (annual/monthly/etc); minSalary/maxSalary nullable; full description HTML; guid and applicationLink. Filter regions and pay using the field meanings rather than assuming US/USD/annual.
+- **Access limitation:** Filtering requests with q=project or q=project%20manager returned inaccessible in this environment. The unfiltered browse feed and unfiltered search endpoint succeeded. We cannot yet claim the ten targeted searches or 80/20 yield metrics work on this source.
+- **Terms:** The official API requires source credit and API-provided application links; cached results are updated roughly daily, so one scheduled discovery run per day is appropriate.
+
+## 6. Official Terms and Technology Findings
 
 - [Adzuna terms](https://developer.adzuna.com/docs/terms_of_service): personal search permitted; free evaluation key, account-specific limits/paid plans; attribution requirements.
 - [Greenhouse public job-board API](https://docs.greenhouse.io/job-board): public GET, employer board token, content=true full posting option.
@@ -73,7 +86,7 @@ These are **diagnostic examples**, intentionally chosen to exercise edge cases. 
 - [Himalayas public jobs API](https://himalayas.app/api): keyless filtered remote jobs, optional free key for higher limits; published terms require visible attribution and supplied application link, no onward job redistribution. [Detailed docs](https://himalayas.app/docs/remote-jobs-api) say cache refreshes about every 24 hours.
 - [Remotive remote jobs API](https://remotive.com/remote-jobs/api): additional keyless remote-only candidate, not yet validated; review API terms and staleness.
 
-## 6. Design Consequences
+## 7. Design Consequences
 
 1. Apply the **initial 30-day lookback independently to each newly added job source**, using source-published dates, not crawl/index timestamps.
 2. Differentiate **remote, hybrid, and geographic hiring eligibility**. A remote boolean alone is unsafe.
@@ -83,21 +96,22 @@ These are **diagnostic examples**, intentionally chosen to exercise edge cases. 
 6. Keep original job URLs/IDs and observation dates to prevent repeat new-job emails.
 7. Preserve the precise commute origin only in local private configuration, never in the public repo.
 
-## 7. Recommendation and Next Verification Step
+## 8. Recommendation and Next Verification Step
 
 **Recommended next trial:** Combine a keyless **Himalayas remote-source** search with employer-board tests on **Ashby and Greenhouse**; also provision the free **Adzuna evaluation key** for broad local/hybrid searches. A remote-only source is **not** a substitute for Atlanta onsite/hybrid coverage.
 
-We have one successful source API response, but **not two independently validated API feeds**, not measured search coverage or relevant-job count, and not a second-day freshness check. Do not approve production adapters or declare Sprint 1 completed yet.
+We now have **two independently validated public JSON feeds**: Ashby (one employer board) and Himalayas (unfiltered remote jobs). We still **do not** have verified targeted search yield, enough eligible contract PM examples, new-source 30-day coverage, or a second-day freshness check. Do not approve production adapters or declare Sprint 1 completed yet.
 
 To complete the missing access tests, use limited read-only HTTPS GETs on a network-enabled home computer or suitable test environment, with API keys held in local environment variables. One-off feasibility commands are acceptable; production source adapters, SQLite, dashboards and schedulers are not yet authorized.
 
-## 8. Sprint Exit Criteria
+## 9. Sprint Exit Criteria
 
 - [x] Research official provider docs/terms.
 - [x] Confirm at least one structured first-party employer API can return real jobs.
 - [x] Inspect public real job pages from other sources for missing-field/eligibility edge cases.
 - [x] Find keyless broad-remote data candidate.
-- [ ] Validate a second independent API feed with real results.
+- [x] Validate a second independent API feed with real results (**Himalayas unfiltered**).
+- [ ] Validate keyword-specific search and 80/20 source-query relevance, rather than only unfiltered browse.
 - [ ] Measure role-specific volume, field completeness, relevant postings and repeat-day freshness.
 - [ ] Verify Adzuna credential access or alternative broad local source.
 - [ ] Review material eligibility edge cases and approve initial source set.
