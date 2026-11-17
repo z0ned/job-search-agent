@@ -4,7 +4,7 @@
 
 ## Objective
 
-Validate that permitted job sources can supply relevant, sufficiently detailed new postings; finalize explicit user-specific eligibility requirements **before any application implementation**.
+**Current active task:** Verify that job feeds/APIs can be accessed programmatically, repeatedly, legally, and at sufficient **posting volume** to support the local agent. Job-specific desirability, suitability, pay, qualification gaps, and recommendations are **out of scope for the current source test**. Eligibility requirements have been collected separately; no implementation starts before design approval.
 
 ## Deliverables
 
@@ -12,9 +12,10 @@ Validate that permitted job sources can supply relevant, sufficiently detailed n
 - [Eligibility definition workbook](./Sprint_1_Eligibility_Definition.md) — existing confirmed criteria.
 - [Questionnaire with user answers](./Sprint_1_Remaining_Decisions_Questionnaire.md) — committed; read and preserved verbatim.
 - [Eligibility Decisions v1.0](./Sprint_1_Eligibility_Decisions_v1_0.md) — answers classified as confirmed, conditional, or open.
-- [Source Test Search Plan](./Sprint_1_Source_Test_Search_Plan.md) — representative 80% contract / 20% full-time validation queries.
+- [Feed Access and Volume Validation Plan v1.1](./Sprint_1_Source_Test_Search_Plan.md) — corrected feed-only scope, access/count/freshness test matrix.
 - [First live source validation results (2026-11-17)](./Sprint_1_Live_Source_Test_Results_2026-11-17.md) — **two independent public JSON feeds successfully retrieved**, remaining targeted source tests pending.
-- Actual comparison of live source results — not yet completed.
+- [Earlier targeted posting sample](./Sprint_1_Targeted_Posting_Sample_2026-11-17.md) — historical exploratory work **outside current feed-only test scope**; these individual HTML examples **do not** count toward feed verification.
+- Actual direct-feed count comparison across providers, sources and repeat runs — **not yet completed**.
 - Approved versioned eligibility rules and initial provider selection — not yet completed.
 
 ## Completed
@@ -30,12 +31,19 @@ Validate that permitted job sources can supply relevant, sufficiently detailed n
 9. Inspected public Greenhouse and Lever job posting pages as rule-test examples; direct API JSON feeds remain unverified, not declared down.
 10. Reviewed official Himalayas API terms, Adzuna personal-search terms and free-key access.
 
+## User scope correction (2026-11-17)
+
+**The user explicitly clarified:** “We are not searching for good jobs right now, we are only validating that we can access enough jobs though feeds.”
+
+This overrides any prior language implying that handpicked job pages, subjective role-fit review, or salary qualification checks are Sprint 1 feed-test deliverables. The 10 manually inspected posting examples remain historical notes only. **No individual job recommendation activity is authorized in the active feasibility test.**
+
 ## Next actions
 
-1. Complete targeted query tests for representative 80% contract/20% full-time searches, especially actual relevant postings (unfiltered feeds alone are inadequate).
-2. Confirm accessible live Greenhouse/Lever board APIs and a local/hybrid broad-source provider; Adzuna needs a personal evaluation key.
-3. Measure actual job relevance, source overlap, original posting age versus last-updated dates, salary and work arrangements, and revisit on another date for freshness.
-4. Resolve only material remaining Q18/C2C/foreign-hiring/TN-relocation edge cases, approve initial sources and eligibility before Sprint 2 implementation.
+1. Get actual **direct HTTPS JSON feed responses** from each candidate provider; distinguish tool/network restrictions from source unavailability.
+2. Measure accessible job **volumes** (total returned and unique IDs, page/cursor reach, count with reliable original post dates in last 30 days).
+3. Check broad keyword/location/work-type feed filter capabilities without reviewing postings for personal suitability.
+4. Test repeatability and provider quotas, access permissions, key/cost requirements.
+5. Present a quantified **feed access, volume, data fields, freshness and cost** comparison and recommend the smallest viable set. Final job-selection logic is a separate later task.
 
 ## Sprint naming correction
 
