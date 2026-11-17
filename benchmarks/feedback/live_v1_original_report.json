@@ -1,0 +1,2344 @@
+{
+  "consistency": {
+    "changed_case_ids": [
+      "FI-006",
+      "FI-010",
+      "FI-012",
+      "FI-014",
+      "FI-016",
+      "FI-022",
+      "FI-023",
+      "FI-026",
+      "FI-028",
+      "FI-047"
+    ],
+    "unchanged_cases": {
+      "accuracy": 0.8,
+      "correct": 40,
+      "total": 50
+    },
+    "unverified_case_ids": []
+  },
+  "elapsed_seconds": 220.475,
+  "evaluation_source": {
+    "mode": "live",
+    "requested_model": "gpt-5.4-2026-03-05",
+    "temperature_override": 0.1
+  },
+  "repeated_pass_requirement_met": true,
+  "runs": [
+    {
+      "ambiguity_and_profile_fact_routing": {
+        "accuracy": 0.5454545454545454,
+        "correct": 6,
+        "total": 11
+      },
+      "cases_without_unmatched_career_category_downgrades": {
+        "accuracy": 0.96,
+        "correct": 48,
+        "total": 50
+      },
+      "category_interest_indicator_accuracy": {
+        "accuracy": 1.0,
+        "correct": 50,
+        "total": 50
+      },
+      "clarification_routing": {
+        "accuracy": 0.5,
+        "correct": 3,
+        "total": 6
+      },
+      "clear_case_dimension_and_scope_accuracy": {
+        "accuracy": 0.1794871794871795,
+        "correct": 7,
+        "total": 39
+      },
+      "elapsed_seconds": 109.131,
+      "evidence_grounding": {
+        "accuracy": 1.0,
+        "correct": 68,
+        "total": 68
+      },
+      "exact_case_match": {
+        "accuracy": 0.08,
+        "correct": 4,
+        "total": 50
+      },
+      "execution_errors": {},
+      "expected_hard_action_accuracy": {
+        "accuracy": 1.0,
+        "correct": 50,
+        "total": 50
+      },
+      "explicit_signal_recall": {
+        "accuracy": 0.017543859649122806,
+        "correct": 1,
+        "total": 57
+      },
+      "failures": [
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-001",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-002",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-003",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-004",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-005",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-006",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-007",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": true,
+          "unmatched_career_category_signals": 1,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-008",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-009",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-010",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-011",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-012",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-013",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-014",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-015",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-016",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-017",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-018",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-019",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-020",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 0,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 0,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-021",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 3,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-022",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-023",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 0,
+          "original_feedback_preserved": true,
+          "route_correct": false,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-024",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-025",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-026",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-027",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-028",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 0,
+          "original_feedback_preserved": true,
+          "route_correct": false,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-029",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "NEEDS_CLARIFICATION",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 0,
+          "original_feedback_preserved": true,
+          "route_correct": false,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-030",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-031",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-032",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-033",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "case_id": "FI-034",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "NEEDS_CLARIFICATION",
+          "false_positive_signals": 0,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 0,
+          "original_feedback_preserved": true,
+          "route_correct": false,
+          "signal_fields_with_differences": [],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "case_id": "FI-035",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": false,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-037",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-039",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 1,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-040",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": true,
+          "unmatched_career_category_signals": 1,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-041",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-042",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-043",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-046",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "NEEDS_CLARIFICATION",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 0,
+          "original_feedback_preserved": true,
+          "route_correct": false,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-047",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-048",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "NEEDS_CLARIFICATION",
+          "case_id": "FI-049",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "NEEDS_CLARIFICATION",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "case_id": "FI-050",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "false_positive_signals": 0,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        }
+      ],
+      "false_positive_signals": 67,
+      "hard_constraint_no_mutation": {
+        "accuracy": 1.0,
+        "correct": 50,
+        "total": 50
+      },
+      "missed_signals": 56,
+      "profile_fact_routing": {
+        "accuracy": 0.6,
+        "correct": 3,
+        "total": 5
+      },
+      "quality_gates": {
+        "all_ambiguity_and_profile_facts_routed_safely": false,
+        "all_cases_completed": true,
+        "all_emitted_evidence_quotes_grounded": true,
+        "clear_case_dimension_and_scope_at_least_95_percent": false,
+        "explicit_signal_recall_at_least_90_percent": false,
+        "hard_constraints_unchanged": true,
+        "no_unmatched_career_category_downgrades": false
+      },
+      "quality_gates_passed": false,
+      "route_accuracy": {
+        "accuracy": 0.88,
+        "correct": 44,
+        "total": 50
+      },
+      "route_confusion": {
+        "NEEDS_CLARIFICATION": {
+          "NEEDS_CLARIFICATION": 3,
+          "PENDING_APPROVAL": 2,
+          "PROFILE_FACT_REVIEW": 1
+        },
+        "PENDING_APPROVAL": {
+          "PENDING_APPROVAL": 38,
+          "PROFILE_FACT_REVIEW": 1
+        },
+        "PROFILE_FACT_REVIEW": {
+          "PENDING_APPROVAL": 2,
+          "PROFILE_FACT_REVIEW": 3
+        }
+      },
+      "scenario_count": 50,
+      "signal_precision": {
+        "accuracy": 0.014705882352941176,
+        "correct": 1,
+        "total": 68
+      },
+      "unmatched_career_category_signals": 3,
+      "unsupported_evidence_quotes": 0,
+      "versions": {
+        "model": [
+          "gpt-5.4-2026-03-05"
+        ],
+        "prompt_version": [
+          "feedback-interpretation-v1.0"
+        ]
+      }
+    },
+    {
+      "ambiguity_and_profile_fact_routing": {
+        "accuracy": 0.5454545454545454,
+        "correct": 6,
+        "total": 11
+      },
+      "cases_without_unmatched_career_category_downgrades": {
+        "accuracy": 0.96,
+        "correct": 48,
+        "total": 50
+      },
+      "category_interest_indicator_accuracy": {
+        "accuracy": 1.0,
+        "correct": 50,
+        "total": 50
+      },
+      "clarification_routing": {
+        "accuracy": 0.5,
+        "correct": 3,
+        "total": 6
+      },
+      "clear_case_dimension_and_scope_accuracy": {
+        "accuracy": 0.1794871794871795,
+        "correct": 7,
+        "total": 39
+      },
+      "elapsed_seconds": 111.342,
+      "evidence_grounding": {
+        "accuracy": 1.0,
+        "correct": 69,
+        "total": 69
+      },
+      "exact_case_match": {
+        "accuracy": 0.08,
+        "correct": 4,
+        "total": 50
+      },
+      "execution_errors": {},
+      "expected_hard_action_accuracy": {
+        "accuracy": 1.0,
+        "correct": 50,
+        "total": 50
+      },
+      "explicit_signal_recall": {
+        "accuracy": 0.017543859649122806,
+        "correct": 1,
+        "total": 57
+      },
+      "failures": [
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-001",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-002",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-003",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-004",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-005",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-006",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-007",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": true,
+          "unmatched_career_category_signals": 1,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-008",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-009",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-010",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-011",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-012",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-013",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-014",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-015",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-016",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-017",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-018",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-019",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-020",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 0,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 0,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-021",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 3,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-022",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-023",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 0,
+          "original_feedback_preserved": true,
+          "route_correct": false,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-024",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-025",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-026",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-027",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-028",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 0,
+          "original_feedback_preserved": true,
+          "route_correct": false,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-029",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "NEEDS_CLARIFICATION",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 0,
+          "original_feedback_preserved": true,
+          "route_correct": false,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-030",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-031",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-032",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-033",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "case_id": "FI-034",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "NEEDS_CLARIFICATION",
+          "false_positive_signals": 0,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 0,
+          "original_feedback_preserved": true,
+          "route_correct": false,
+          "signal_fields_with_differences": [],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "case_id": "FI-035",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": false,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-037",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-039",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 1,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-040",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope"
+          ],
+          "unmatched_career_category_downgrade": true,
+          "unmatched_career_category_signals": 1,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-041",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-042",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "strength",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-043",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 2,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-046",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "NEEDS_CLARIFICATION",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 0,
+          "original_feedback_preserved": true,
+          "route_correct": false,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-047",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 3,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 2,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-048",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "scope",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "NEEDS_CLARIFICATION",
+          "case_id": "FI-049",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "NEEDS_CLARIFICATION",
+          "false_positive_signals": 1,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "feature",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        },
+        {
+          "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "case_id": "FI-050",
+          "category_interest_indicator_correct": true,
+          "dimension_and_scope_correct": false,
+          "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "false_positive_signals": 0,
+          "hard_constraint_nonmutation_confirmed": true,
+          "missed_signals": 1,
+          "original_feedback_preserved": true,
+          "route_correct": true,
+          "signal_fields_with_differences": [
+            "dimension",
+            "feature",
+            "polarity",
+            "strength",
+            "scope",
+            "condition",
+            "evidence_quote"
+          ],
+          "unmatched_career_category_downgrade": false,
+          "unmatched_career_category_signals": 0,
+          "unsupported_evidence_quotes": 0
+        }
+      ],
+      "false_positive_signals": 68,
+      "hard_constraint_no_mutation": {
+        "accuracy": 1.0,
+        "correct": 50,
+        "total": 50
+      },
+      "missed_signals": 56,
+      "profile_fact_routing": {
+        "accuracy": 0.6,
+        "correct": 3,
+        "total": 5
+      },
+      "quality_gates": {
+        "all_ambiguity_and_profile_facts_routed_safely": false,
+        "all_cases_completed": true,
+        "all_emitted_evidence_quotes_grounded": true,
+        "clear_case_dimension_and_scope_at_least_95_percent": false,
+        "explicit_signal_recall_at_least_90_percent": false,
+        "hard_constraints_unchanged": true,
+        "no_unmatched_career_category_downgrades": false
+      },
+      "quality_gates_passed": false,
+      "route_accuracy": {
+        "accuracy": 0.88,
+        "correct": 44,
+        "total": 50
+      },
+      "route_confusion": {
+        "NEEDS_CLARIFICATION": {
+          "NEEDS_CLARIFICATION": 3,
+          "PENDING_APPROVAL": 2,
+          "PROFILE_FACT_REVIEW": 1
+        },
+        "PENDING_APPROVAL": {
+          "PENDING_APPROVAL": 38,
+          "PROFILE_FACT_REVIEW": 1
+        },
+        "PROFILE_FACT_REVIEW": {
+          "PENDING_APPROVAL": 2,
+          "PROFILE_FACT_REVIEW": 3
+        }
+      },
+      "scenario_count": 50,
+      "signal_precision": {
+        "accuracy": 0.014492753623188406,
+        "correct": 1,
+        "total": 69
+      },
+      "unmatched_career_category_signals": 3,
+      "unsupported_evidence_quotes": 0,
+      "versions": {
+        "model": [
+          "gpt-5.4-2026-03-05"
+        ],
+        "prompt_version": [
+          "feedback-interpretation-v1.0"
+        ]
+      }
+    }
+  ],
+  "signal_label_matching": "Exact feature, polarity, and context scope. No synonym mappings supplied.",
+  "suite_sha256": "fbf6872f847d533871ad2db7d3412a324504171f057f56ae7a8f1f8f48311523",
+  "suite_version": "1.0-draft"
+}
