@@ -62,26 +62,26 @@ foreach ($board in $Boards) {
         $rows += [pscustomobject]@{
             Board=$board; Status="OK"; HTTP=[int]$response.StatusCode
             Returned=$jobs.Count; Listed=$listed.Count; UniqueIDs=$ids.Count
-            Recent30=$recent; DateUnknown=$unknownDate; ContractSignal=$contractSignals
+            Recent=$recent; DateUnknown=$unknownDate; ContractSignal=$contractSignals
             Types=$types; Seconds=[math]::Round($sw.Elapsed.TotalSeconds,1)
         }
     } catch {
         $sw.Stop()
         $rows += [pscustomobject]@{
             Board=$board; Status="FAILED"; HTTP=""
-            Returned=""; Listed=""; UniqueIDs=""; Recent30=""; DateUnknown=""
+            Returned=""; Listed=""; UniqueIDs=""; Recent=""; DateUnknown=""
             ContractSignal=""; Types=""; Seconds=[math]::Round($sw.Elapsed.TotalSeconds,1)
         }
         Write-Warning ("Failed to retrieve {0} ({1})" -f $board,$_.Exception.GetType().Name)
     }
 }
 Write-Host ""
-$rows | Format-Table Board,Status,HTTP,Returned,Listed,UniqueIDs,Recent30,DateUnknown,ContractSignal,Seconds -AutoSize
+$rows | Format-Table Board,Status,HTTP,Returned,Listed,UniqueIDs,Recent,DateUnknown,ContractSignal,Seconds -AutoSize
 Write-Host "Employment-type labels from feeds:"
 foreach($row in $rows) { Write-Host ("{0}: {1}" -f $row.Board,$row.Types) }
 $valid=@($rows | Where-Object {$_.Status -eq "OK"})
 Write-Host ("Successful boards: {0} / {1}" -f $valid.Count,$rows.Count)
 Write-Host ("Listed postings across boards: {0}" -f (($valid | Measure-Object Listed -Sum).Sum))
-Write-Host ("Published in last {0} days: {1}" -f $Days,(($valid | Measure-Object Recent30 -Sum).Sum))
+Write-Host ("Published in last {0} days: {1}" -f $Days,(($valid | Measure-Object Recent -Sum).Sum))
 Write-Host ("Contract title/type signals: {0}" -f (($valid | Measure-Object ContractSignal -Sum).Sum))
 Write-Host "Not all Ashby jobs. Contract signals can undercount. Run again another day to test stability."
