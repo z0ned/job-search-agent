@@ -82,6 +82,15 @@ The user reports **419 job listings** on Adzuna's U.S. **website** when filterin
 
 **Implication:** A meaningful volume signal worth testing, but not proof that hundreds of recent contract PM jobs can be programmatically accessed. Contract filtering is now confirmed by the user: **11 of 419** are contract-filtered results (approximately **2.6%**, based on displayed counts only). This reinforces the importance of finding multiple contract job sources. The annual-equivalent $150K cutoff is close to but somewhat higher than $70/hour at 2,080 paid hours ($145,600/year), and can exclude contracts without compensation information; the website is not a substitute for a pay-neutral contract volume check. Reserve API calls for limited feed/website parity tests.
 
+## Ashby direct-feed volume test — prepared (2026-11-17)
+
+- **Live public JSON read succeeded** for the Ramp board through the browser-based source test.
+- **Other selected public Ashby board API requests did not return usable data through this environment** (and the `ashby` board exceeded the browser tool's 4 MiB response limit). These are tool limitations, not observed proof of source downtime.
+- **Direct shell request from this environment failed DNS resolution**; this is not an upstream API failure.
+- Committed a **one-off, read-only feasibility tool** at [scripts/feasibility/test_ashby_feed_volume.ps1](../scripts/feasibility/test_ashby_feed_volume.ps1). It makes **one GET each** for five employer boards (Ramp, Juniper Square, GreenLight Workforce Solutions, Coder, Teamworks) and reports successfully parsed jobs, listed/unique job IDs, recent posting dates, basic contract-type metadata signals and HTTP status or failed board.
+- The script stores no job descriptions, credentials or personal commute address. It needs **no API key** and uses **zero Adzuna trial calls**. **Not yet executed on the user's home computer, so no cross-board volume totals are claimed.**
+- This is source **access and volume** validation only, not job quality or individual opportunity searching.
+
 ## Next actions
 
 1. **Adzuna U.S. direct authenticated feed is now verified.** Next measure its 30-day contract search volume and page retrieval limits. Continue unverified Greenhouse/Lever APIs in parallel.
