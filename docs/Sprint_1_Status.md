@@ -104,8 +104,16 @@ User-run PowerShell test at **2026-11-17 16:49:53 UTC** returned **HTTP 200 from
 - Committed [scripts/feasibility/test_greenhouse_feed_volume.ps1](../scripts/feasibility/test_greenhouse_feed_volume.ps1) to test five named public Greenhouse board tokens: **gitlab, vercel, openmined, infuse, crunchyroll**.
 - Script makes **one unauthenticated GET per board** against official public `GET /v1/boards/{board_token}/jobs`, with the compact list response (no `content=true`). It counts total postings, non-prospect jobs (`internal_job_id` present), unique job-post IDs, broad role-title signals, and **contract title/custom-metadata heuristic signals (unverified)**.
 - **Critical date distinction:** The Greenhouse list API documents `updated_at`; `first_published` is documented on the individual job GET response. The script counts first-published dates **only if present on the list records**. The updated-in-30-days number is **not** a count of newly published jobs. No one-request-per-posting enrichment is attempted.
-- **Not yet run locally.** No verified Greenhouse feed counts available yet; unsuccessful direct fetches in the assistant's restricted environment are not treated as source outages.
+- **Executed successfully locally on 2026-11-17; actual measurements below supersede this pre-test note.**
 - Requires **no keys** and **zero Adzuna trial calls**. This is a feasibility probe, not production code or job suitability evaluation.
+
+## Greenhouse five-board direct API results — VERIFIED (2026-11-17)
+
+The user ran the read-only Greenhouse script locally at **2026-11-17 16:59:01 UTC**. **All 5/5 board feeds returned HTTP 200**: GitLab **252** non-prospect jobs (**114 first-published within 30 days**), Vercel **87/18**, OpenMined **15/15** (16 raw postings; 1 excluded prospect), INFUSE **269/165**, Crunchyroll **98/34**. **Totals: 721 non-prospect jobs (722 raw board postings), 346 first published within 30 days, 721 readable first-published timestamps and unique per-board IDs**. Separately **623** were updated within 30 days, which is **not** a new-posting count.
+
+Of the 721, **175** titles match broad project/program/product/portfolio/PMO/transformation/delivery keywords; **254** triggered the rough contract title/metadata heuristic (**250 from INFUSE alone**). **Crucial: these are not confirmed contracts and neither the recent+contract+role intersection nor US geographic suitability has been measured.** Do not conflate the provider's many recent update timestamps with original postings or infer provider-wide market totals. No keys or Adzuna trial calls consumed.
+
+[Full five-board source-volume report](./Sprint_1_Greenhouse_Feed_Volume_2026-11-17.md). Recommended next action: probe recent **contract ∩ role** inventory and validate INFUSE contract classification, then test Lever. No production application code has been started.
 
 ## Next actions
 
