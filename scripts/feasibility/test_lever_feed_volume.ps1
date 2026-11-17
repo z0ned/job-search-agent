@@ -127,6 +127,7 @@ foreach($board in $Boards) {
         Write-Host ("{0}: {1} unique IDs in {2} page(s), {3} recent-created" -f $board,$r.UniqueIDs,$r.Pages,$r.CreatedRecent)
         if($r.DuplicateIDs -gt 0) { Write-Warning ("{0}: duplicate IDs found across pages" -f $board) }
         if($r.Truncated) { Write-Warning ("{0}: page cap reached; not complete" -f $board) }
+        if($r.Truncated -or $r.DuplicateIDs -gt 0) { $r.Status = "PARTIAL" }
     }
     catch {
         $r.Status = "FAILED"
@@ -160,7 +161,7 @@ foreach($row in $rows) { Write-Host ("{0}: {1}" -f $row.Board,$labels[$row.Board
 
 $ok = @($rows | Where-Object { $_.Status -eq "OK" })
 Write-Host ""
-Write-Host ("Successful boards: {0}/{1}" -f $ok.Count,$rows.Count)
+Write-Host ("Complete and successful boards: {0}/{1}; PARTIAL boards not included in totals" -f $ok.Count,$rows.Count)
 Write-Host ("Unique IDs within boards: {0}" -f (($ok | Measure-Object UniqueIDs -Sum).Sum))
 Write-Host ("CreatedAt known: {0}; created in last {1} days: {2}" -f (($ok | Measure-Object CreatedKnown -Sum).Sum),$Days,(($ok | Measure-Object CreatedRecent -Sum).Sum))
 Write-Host ("Broad target-role title signals: {0}" -f (($ok | Measure-Object Role -Sum).Sum))
