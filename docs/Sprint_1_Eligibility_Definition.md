@@ -52,7 +52,14 @@ This user correction supersedes treating the senior financial-services/PMO leade
 - Do **not** exclude contract jobs based solely on stated overnight travel expectations or invent a 10% or 25% cap.
 - Display advertised travel requirements when available. Mark absent or vague travel details as **not specified**, rather than inventing a commitment.
 - Keep the approximately 40-hour workweek as a **separate expressed preference** for practical PM/program-management contract roles; flexible travel does not imply approval of unlimited weekly work hours.
-- **Full-time-role travel expectations remain OPEN** and should be elicited separately.
+- **Full-time-role travel expectations are now confirmed FLEXIBLE (Option D, 2026-11-17).** Neither contract nor full-time postings should be hard-excluded based on an arbitrary overnight travel percentage or night count. Preserve advertised travel information for the user's review. This does not eliminate the distinct preference for approximately 40 hours/week in contracts.
+
+## Confirmed travel policy for both tracks (2026-11-17)
+
+- **Contract travel:** Flexible; no hard maximum on overnight travel (Option D).
+- **Full-time leadership travel:** Flexible; no hard maximum on overnight travel (Option D).
+- Preserve advertised travel requirements for display and later feedback-based preference learning.
+- Do not confuse travel flexibility with approval of long weekly working hours or with a waiver of onsite-location constraints.
 
 ## Confirmed location and onsite rules (user clarifications through 2026-11-17)
 
