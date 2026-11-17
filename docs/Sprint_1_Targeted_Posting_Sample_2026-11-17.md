@@ -1,5 +1,8 @@
 # Sprint 1 — Targeted Job-Posting Source Sample
 
+> **SCOPE NOTE (2026-11-17):** This is historical exploratory research only. The user clarified that Sprint 1 is **exclusively** validating that enough jobs can be accessed through programmatic feeds/APIs. Individual job-page hunts, eligibility assessments and judgments of whether these are good jobs are **not** the current objective, and the examples below do **not** count toward successful direct-feed volume validation. See [the corrected feed-access plan](./Sprint_1_Source_Test_Search_Plan.md).
+
+
 **Test date:** 2026-11-17 (one-day snapshot)  
 **Status:** PARTIAL SOURCE-FIT TEST, NOT PRODUCTION SOURCE ACCEPTANCE  
 **Objective:** Compare ten user-derived search categories (**8 contract / 2 full-time**), test eligibility logic on actual employer-hosted descriptions, and identify remaining provider API barriers without writing product code.
