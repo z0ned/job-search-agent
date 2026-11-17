@@ -4,6 +4,17 @@
 **Status:** PARTIAL — Two independent providers (Ashby/Ramp and Himalayas) returned structured public API JSON. Neither has completed the 80/20 targeted relevance, 30-day coverage, repeat-day freshness, or complete integration-access gates.  
 **Source requirements:** [Source test portfolio](./Sprint_1_Source_Test_Search_Plan.md), [Eligibility decisions](./Sprint_1_Eligibility_Decisions_v1_0.md).
 
+## Update: User-run Adzuna authenticated U.S. query — 2026-11-17
+
+**Result: SUCCESS.** From their own Windows PowerShell shell, the user supplied a screenshot of one authenticated GET against the **U.S.** Adzuna search endpoint for **Project Manager / Atlanta**, with **20 results returned** and **8509 total matches reported by the API**.
+
+- This is independently **stronger than documentation evidence**: it proves that the **user's Pending Activation Adzuna credentials can access a U.S. search feed** and retrieve actual listing records.
+- This query-level count is **not** the number of unique, recently posted, qualifying contract jobs, nor is it a verified count across all U.S. jobs.
+- A single successful call is **not** proof of pagination depth, daily repeatability, or paid/free quota sufficiency.
+- Follow-up feed-only test: request `contract=1` and `max_days_old=30` (bounded 20-item response), then report the API count and returned item count. Do not inspect jobs for user fit.
+
+This addendum **supersedes** earlier text in this file stating the Adzuna credentialed endpoint had not been tested; it does not change the older descriptions of tests that had been completed at that time.
+
 ## 1. Executive Summary
 
 **Ashby — single-board technical PASS:** Actual JSON returned from the Ramp employer board, including posting IDs, title, employment type, full description, location, workplace type, posting date, job/apply URLs and structured compensation for some jobs. This does **not** demonstrate comprehensive or representative user-relevant coverage.
