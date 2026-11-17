@@ -74,6 +74,14 @@ Sources:
 
 **Next highest-value check:** One bounded `/jobs/us/search/1` call with `contract=1`, `max_days_old=30`, `where=Atlanta`, `what=project manager`, `results_per_page=20`; inspect aggregate `count`, returned count and presence of job identifiers, creation dates and pagination. Do not evaluate individuals' suitability.
 
+## Adzuna website volume observation (user-reported, 2026-11-17)
+
+The user reports **419 job listings** on Adzuna's U.S. **website** when filtering to jobs **posted within the last 7 days**, **within 25 miles** of their Atlanta-area search, and **minimum $150,000 equivalent**. The previous browsing context was a Project Manager search in Atlanta, but **the exact keyword/query and whether the Contract employment-type filter was applied have not yet been reconfirmed**.
+
+**Evidence tier:** User-reported website displayed count; **NOT an authenticated API count**, unique job count, or verified original-post-date count. The figure may include permanent jobs and duplicate postings, and website inventory/filter semantics may differ from API search. No new Adzuna trial API calls consumed.
+
+**Implication:** A meaningful volume signal worth testing, but not proof that hundreds of recent contract PM jobs can be programmatically accessed. The next question is whether the **Contract** filter was applied to this 419 count. Test comparable website filters first and reserve API calls for small feed/website parity tests.
+
 ## Next actions
 
 1. **Adzuna U.S. direct authenticated feed is now verified.** Next measure its 30-day contract search volume and page retrieval limits. Continue unverified Greenhouse/Lever APIs in parallel.
