@@ -184,6 +184,25 @@ User ran `scripts/feasibility/test_himalayas_feed_volume.ps1` locally at **2026-
 
 [Himalayas detailed measured result](./Sprint_1_Himalayas_Filtered_Feed_Volume_2026-11-17.md). The next recommended low-cost step is a **2-query second-page pagination check** (Project Manager + Program Manager) and repeat a narrow query after the daily data refresh, avoiding a full feed crawl. Individual job suitability remains out of scope.
 
+## Himalayas page-two and daily new-GUID test — COMMITTED (2026-11-17)
+
+After the user accepted the next two low-cost Himalayas checks, committed [scripts/feasibility/test_himalayas_daily_delta.ps1](../scripts/feasibility/test_himalayas_daily_delta.ps1). Also added a root [.gitignore](../.gitignore) to protect local `.env` and `.local-test-data/` files from accidental commits (the repo previously had no root `.gitignore`).
+
+**What this test does:** Each run makes exactly **four unauthenticated GETs**: `country=US&employment_type=Contractor,Temporary&sort=recent`, `q=project manager` and `q=program manager`, both **pages 1 and 2**. It checks for duplicate GUIDs across pages of the same query, mismatched contractor/temporary type, and disallowed non-U.S. location restrictions. It shows page counts, query-reported totals, distinct IDs across both queries, title-level role signals, and **last-updated** within 30 days. It aborts without overwriting local data when any request/validation fails.
+
+**Baseline/compare design:** First run captures only GUID sets, per-query provider counts, query signature and UTC time in `.local-test-data/himalayas_pm_contract_page_samples.json` (Git-ignored, local only). Subsequent runs compare new-to-sample and no-longer-in-sample GUIDs; only after **24+ hours** will the test advance the rolling baseline. Earlier repeat runs compare but deliberately leave the baseline intact. To reset, use the explicit `-ResetBaseline` flag. No job descriptions or user credentials saved.
+
+**Important:** The feed is sorted by last update (`pubDate`), not verified original posting date. A new GUID appearing in the **top 40 sample** may reflect a previously existing job moving into the window due to an edit; it is **not necessarily a newly published vacancy**. The four requests cover only 40 sampled jobs per query, not the 231/131 reported query totals. Detecting stable *new feed arrival rates* may eventually require broader pagination or provider origin dates.
+
+**Status:** Script has been committed to GitHub but **not yet executed from the user's Windows machine**. The assistant environment lacks PowerShell and cannot exercise its local JSON snapshot. **Do not claim page-two or day-over-day validation passed yet.**
+
+**Run from local repo root (same command today and on a later day):**
+
+    git pull origin main
+    powershell -NoProfile -File .\scripts\feasibility\test_himalayas_daily_delta.ps1
+
+No Adzuna Pending Activation calls consumed, no production application implementation.
+
 ## Next actions
 
 1. **Adzuna U.S. direct authenticated feed is now verified.** Next measure its 30-day contract search volume and page retrieval limits. Continue unverified Greenhouse/Lever APIs in parallel.
