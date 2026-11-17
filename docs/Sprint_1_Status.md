@@ -165,7 +165,7 @@ The five selected employers are not representative of all Lever employers. The r
 
 **Committed one-off script:** [scripts/feasibility/test_himalayas_feed_volume.ps1](../scripts/feasibility/test_himalayas_feed_volume.ps1). Tests eight US remote Contractor/Temporary slices (one unfiltered role baseline plus project manager, program manager, product manager, PMO, portfolio manager, implementation manager, transformation). One first-page request per slice by default (8 keyless requests), optional bounded page-two sampling with `-MaxPages 2`. Reports API-reported matching counts **separately** from fetched unique GUIDs, sample type/country validation, broad role-title hints, salary presence, expired-posting count, and last-updated-within-30-days samples. Does not filter pay, because unknown pay is allowed. Fails/flags query results when type or country restrictions contradict filter expectations. **Do not add keyword search counts**: overlaps are unknown.
 
-**Execution status:** Script committed; **not yet run on the user's home PC**, so no filtered Himalayas search volumes are claimed. Direct filtered search was inaccessible through the assistant's web browsing environment, which does not establish an upstream API problem. Requires **no credentials** and consumes **zero Adzuna trial calls**.
+**Execution status:** Script was successfully executed on the user's home PC on 2026-11-17; see results below. Direct filtered search was inaccessible through the assistant's web browsing environment, which does not establish an upstream API problem. Requires **no credentials** and consumes **zero Adzuna trial calls**.
 
 **Run from repo root:**
 
@@ -173,6 +173,16 @@ The five selected employers are not representative of all Lever employers. The r
     powershell -NoProfile -File .\scripts\feasibility\test_himalayas_feed_volume.ps1
 
 **Remaining risk:** Distinguish true original posting-date freshness from API update recency; estimate US-eligible contract target-role volume with repeat-day unique IDs, source overlaps and suitability testing deferred. No production agent implementation started.
+
+## Himalayas U.S. remote Contractor/Temporary search — VERIFIED (2026-11-17)
+
+User ran `scripts/feasibility/test_himalayas_feed_volume.ps1` locally at **2026-11-17 18:31:36 UTC**. **All 8/8** filtered country+employment-type search requests succeeded (HTTP 200) and returned parseable jobs with GUIDs. Provider-reported filtered total counts: **6,325** remote US/worldwide Contractor/Temporary jobs (no keywords); Project Manager **231**, Program Manager **131**, Product Manager **93**, PMO **6**, Portfolio Manager **18**, Implementation Manager **32**, Transformation **65**. **Query totals overlap and cannot be summed.**
+
+**Actual retrieved sample:** 144 response-job appearances across 8 query slices; **118 distinct GUIDs across slices**; no per-query duplicate or missing GUIDs. The sample had **0 incorrect employment types, 0 disallowed non-US-only country restrictions, 0 expired items**; five worldwide matches in baseline, otherwise US-explicit restricted. **129/144 sample appearances** had `pubDate` in last 30 days but this is the **last-update** date, not original publication. **58** sampled appearances had broad target-role words in the title; Project Manager search had only **9/20** title-role signals, so keyword count ≠ job-title relevance. **44** sample appearances had compensation data; pay-unknown postings were intentionally retained.
+
+**Interpretation:** First broad aggregator to show a substantial **provider-reported** US/worldwide remote contract inventory with verified country and type filtering. It does NOT establish that 6,325 jobs are uniquely retrieved, newly published, or available to a Georgia-based worker; nor does it include local hybrid/onsite roles. API terms include visible attribution and `applicationLink` usage. Need **bounded page-two consistency checks and daily new-GUID deltas** before declaring adequate supply. No API credentials or Adzuna calls were used.
+
+[Himalayas detailed measured result](./Sprint_1_Himalayas_Filtered_Feed_Volume_2026-11-17.md). The next recommended low-cost step is a **2-query second-page pagination check** (Project Manager + Program Manager) and repeat a narrow query after the daily data refresh, avoiding a full feed crawl. Individual job suitability remains out of scope.
 
 ## Next actions
 
