@@ -1,5 +1,8 @@
 # Sprint 1: Job-Source Feasibility Assessment
 
+> **Scope correction (2026-11-17):** Active feasibility tests measure **programmatic feed access, accessible posting volume, freshness, pagination, basic metadata, permission and cost**. They do **not** assess individual jobs for the user or perform salary/seniority/qualification screening. Earlier posting examples are contextual only; direct feed/API responses are required to prove source accessibility. See [current feed-only test plan](./Sprint_1_Source_Test_Search_Plan.md) and [live API evidence](./Sprint_1_Live_Source_Test_Results_2026-11-17.md).
+
+
 **Date:** 2026-11-16
 **Status:** IN PROGRESS — official API documentation reviewed; real live responses unverified
 **Boundary:** Requirements and feasibility research only; do not build production application components.
