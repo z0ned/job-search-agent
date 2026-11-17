@@ -4,13 +4,18 @@ import argparse
 from collections import Counter, defaultdict
 from collections.abc import Mapping
 from dataclasses import dataclass
+from datetime import UTC, datetime
 import hashlib
 import json
 from pathlib import Path
 import sys
 from time import perf_counter
 
-from .feedback import FeedbackProviderError, OpenAIFeedbackProvider, interpret_feedback
+from .feedback import (
+    PROMPT_VERSION, _INSTRUCTIONS, _PROPOSAL_SCHEMA, FeedbackProviderError, OpenAIFeedbackProvider, interpret_feedback,
+)
+from .feedback_semantic_evaluation import compare_signals, consistency_signature
+from .feedback_taxonomy import TAXONOMY_VERSION
 
 GOLD_FILE = Path("feedback_interpretation_gold_cases_v1.json")
 RULE_ASSUMPTIONS = (
@@ -35,6 +40,12 @@ ACTION_VALUES = {
 SIGNAL_FIELDS = ("dimension", "feature", "polarity", "strength", "scope", "condition", "evidence_quote")
 PROTOCOL_FIELDS = ("feature", "polarity", "scope")
 DIMENSION_SCOPE_FIELDS = ("dimension", "scope")
+BENCHMARK_VERSION = "2.0"
+PREDICTION_FIELDS = {
+    "decision", "original_feedback", "review_status", "interpretations", "clarification_question",
+    "profile_fact_candidate", "hard_constraint_action", "hard_constraints_mutated", "model", "prompt_version",
+}
+SIGNAL_FIELD_SET = set(SIGNAL_FIELDS)
 
 
 @dataclass(frozen=True)
@@ -138,7 +149,7 @@ def load_suite(path: str | Path, *, expected_count: int = 50) -> GoldSuite:
     return GoldSuite(raw["suite_version"], hashlib.sha256(data).hexdigest(), cases, hard_rules)
 
 
-def collect_predictions(suite, interpret):
+def collect_predictions(suite, interpret, *, on_case_complete=None):
     """Pass only original inputs to the supplied interpreter, in official case order."""
     predictions = {}
     for case in suite.cases:
@@ -149,6 +160,8 @@ def collect_predictions(suite, interpret):
         except Exception as exc:
             result = {"evaluation_error": type(exc).__name__}
         predictions[case["case_id"]] = result
+        if on_case_complete is not None:
+            on_case_complete(case["case_id"])
     return predictions
 
 
@@ -180,6 +193,47 @@ def _route_matches(expected, result):
     return question_matches and candidate_matches
 
 
+def _within_prediction_contract(result, signals):
+    return result.keys() <= PREDICTION_FIELDS and all(
+        signal.keys() <= SIGNAL_FIELD_SET and signal["scope"].keys() <= {"type", "value"}
+        for signal in signals
+    )
+
+
+def _semantic_summary(counts, legacy_gates, semantic_cases):
+    total = len(semantic_cases)
+    scope = _ratio(counts["semantic_clear_scope_correct"], counts["clear_cases"])
+    recall = _ratio(counts["semantic_matched"], counts["expected_signals"])
+    precision = _ratio(counts["semantic_matched"], counts["emitted_signals"])
+    gates = {
+        "all_cases_completed": legacy_gates["all_cases_completed"],
+        "hard_constraints_unchanged": legacy_gates["hard_constraints_unchanged"],
+        "all_hard_rule_actions_authorized": counts["authorized_rule_action"] == total,
+        "no_unsupported_career_category_downgrades": counts["semantic_downgrade_cases_clear"] == total,
+        "clear_case_dimension_and_scope_at_least_95_percent": (scope["accuracy"] or 0) >= 0.95,
+        "explicit_signal_recall_at_least_90_percent": (recall["accuracy"] or 0) >= 0.90,
+        "all_ambiguity_and_profile_facts_routed_safely": legacy_gates["all_ambiguity_and_profile_facts_routed_safely"],
+        "all_emitted_evidence_quotes_grounded": legacy_gates["all_emitted_evidence_quotes_grounded"],
+    }
+    return {
+        "clear_case_dimension_and_scope_accuracy": scope,
+        "explicit_signal_recall": recall,
+        "signal_precision": precision,
+        "missed_signals": counts["expected_signals"] - counts["semantic_matched"],
+        "extra_signals": counts["emitted_signals"] - counts["semantic_matched"],
+        "incorrectly_scoped_signals": counts["semantic_wrong_scope"],
+        "incorrectly_conditioned_signals": counts["semantic_wrong_condition"],
+        "unsupported_career_category_downgrades": counts["semantic_unsupported_downgrades"],
+        "cases_without_unsupported_career_category_downgrades": _ratio(
+            counts["semantic_downgrade_cases_clear"], total,
+        ),
+        "authorized_hard_rule_actions": _ratio(counts["authorized_rule_action"], total),
+        "quality_gates": gates,
+        "quality_gates_passed": all(gates.values()),
+        "cases": semantic_cases,
+    }
+
+
 def evaluate(suite: GoldSuite, predictions: Mapping):
     """Score a complete prediction set without exposing original feedback in the report."""
     ids = {case["case_id"] for case in suite.cases}
@@ -190,6 +244,7 @@ def evaluate(suite: GoldSuite, predictions: Mapping):
     errors = Counter()
     versions = defaultdict(set)
     failures = []
+    semantic_cases = []
     for case in suite.cases:
         case_id = case["case_id"]
         expected = case["expected_interpretations"]
@@ -259,30 +314,69 @@ def evaluate(suite: GoldSuite, predictions: Mapping):
             and original_preserved and _signals(expected, SIGNAL_FIELDS) == _signals(actual, SIGNAL_FIELDS)
         )
         counts["exact_cases"] += bool(exact)
+        failure = {
+            "case_id": case_id,
+            "expected_route": expected_route,
+            "actual_route": result.get("review_status"),
+            "route_correct": route_correct,
+            "expected_hard_action": expected_action,
+            "actual_hard_action": (
+                actual_action if isinstance(actual_action, str) and actual_action in ACTION_VALUES else None
+            ),
+            "hard_constraint_nonmutation_confirmed": no_hard_mutation,
+            "category_interest_indicator_correct": category_correct and not error,
+            "unmatched_career_category_signals": len(unmatched_categories),
+            "unmatched_career_category_downgrade": unmatched_downgrade,
+            "dimension_and_scope_correct": dimension_scope_correct,
+            "missed_signals": missed,
+            "false_positive_signals": extra,
+            "unsupported_evidence_quotes": unsupported_evidence,
+            "signal_fields_with_differences": mismatched_fields,
+            "original_feedback_preserved": original_preserved,
+        }
+        if error:
+            failure["execution_error"] = error
         if not exact:
-            failure = {
-                "case_id": case_id,
-                "expected_route": expected_route,
-                "actual_route": result.get("review_status"),
-                "route_correct": route_correct,
-                "expected_hard_action": expected_action,
-                "actual_hard_action": (
-                    actual_action if isinstance(actual_action, str) and actual_action in ACTION_VALUES else None
-                ),
-                "hard_constraint_nonmutation_confirmed": no_hard_mutation,
-                "category_interest_indicator_correct": category_correct and not error,
-                "unmatched_career_category_signals": len(unmatched_categories),
-                "unmatched_career_category_downgrade": unmatched_downgrade,
-                "dimension_and_scope_correct": dimension_scope_correct,
-                "missed_signals": missed,
-                "false_positive_signals": extra,
-                "unsupported_evidence_quotes": unsupported_evidence,
-                "signal_fields_with_differences": mismatched_fields,
-                "original_feedback_preserved": original_preserved,
-            }
-            if error:
-                failure["execution_error"] = error
             failures.append(failure)
+
+        semantic = compare_signals(expected, actual, case["original_feedback"])
+        unsupported_downgrades = semantic["unsupported_career_category_downgrades"]
+        authorized_rule_action = (
+            action_correct and no_hard_mutation and _within_prediction_contract(result, actual)
+            and (actual_action != "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION"
+                 or result.get("review_status") == PROFILE_FACT)
+        )
+        counts["semantic_matched"] += len(semantic["correct_signals"])
+        counts["semantic_wrong_scope"] += len(semantic["incorrectly_scoped_signals"])
+        counts["semantic_wrong_condition"] += len(semantic["incorrectly_conditioned_signals"])
+        counts["semantic_unsupported_downgrades"] += len(unsupported_downgrades)
+        counts["semantic_downgrade_cases_clear"] += not error and not unsupported_downgrades
+        counts["semantic_clear_scope_correct"] += expected_route == CLEAR and semantic["dimension_and_scope_correct"]
+        counts["authorized_rule_action"] += authorized_rule_action
+        classifications = [name for name, detected in (
+            ("route_mismatch", not route_correct),
+            ("unauthorized_hard_rule_action", not authorized_rule_action),
+            ("unsupported_career_category_downgrade", unsupported_downgrades),
+            ("unsupported_evidence", unsupported_evidence),
+            ("missed_signal", semantic["missed_signals"]),
+            ("extra_signal", semantic["extra_signals"]),
+            ("incorrect_scope", semantic["incorrectly_scoped_signals"]),
+            ("incorrect_condition", semantic["incorrectly_conditioned_signals"]),
+            ("changed_feedback", not original_preserved),
+        ) if detected]
+        semantic_cases.append({
+            "case_id": case_id,
+            "literal_case_match": bool(exact),
+            "expected_route": expected_route,
+            "actual_route": result.get("review_status"),
+            "expected_hard_action": expected_action,
+            "actual_hard_action": failure["actual_hard_action"],
+            "hard_rule_action_authorized": authorized_rule_action,
+            "validation_status": "execution_error" if error else "accepted",
+            "failure_classifications": ["execution_error"] if error else classifications,
+            **({"execution_error": error} if error else {}),
+            **semantic,
+        })
 
     total = len(suite.cases)
     expected_total = counts["expected_signals"]
@@ -330,10 +424,11 @@ def evaluate(suite: GoldSuite, predictions: Mapping):
         "execution_errors": dict(errors),
         "versions": {name: sorted(values) for name, values in versions.items()},
         "failures": failures,
+        "semantic": _semantic_summary(counts, gates, semantic_cases),
     }
 
 
-def _consistency(suite, predictions):
+def _consistency(suite, predictions, *, semantic=False):
     changed, unverified = [], []
     for case in suite.cases:
         case_id = case["case_id"]
@@ -349,7 +444,7 @@ def _consistency(suite, predictions):
                 break
             signatures.append((
                 result["review_status"], result.get("hard_constraint_action"),
-                _signals(signals, SIGNAL_FIELDS[:-1]),
+                consistency_signature(signals) if semantic else _signals(signals, SIGNAL_FIELDS[:-1]),
             ))
         else:
             if any(signature != signatures[0] for signature in signatures[1:]):
@@ -362,12 +457,48 @@ def _consistency(suite, predictions):
     }
 
 
+class _RecordingProvider:
+    def __init__(self, provider):
+        self._provider = provider
+        self.model = provider.model
+        self.proposals = {}
+        self._current_proposal = None
+
+    def propose(self, decision, feedback, job_context, hard_rules):
+        self._current_proposal = self._provider.propose(decision, feedback, job_context, hard_rules)
+        return self._current_proposal
+
+    def finish_case(self, case_id):
+        self.proposals[case_id] = self._current_proposal
+        self._current_proposal = None
+
+
+def _save_json(path, value):
+    data = (json.dumps(value, indent=2, sort_keys=True, ensure_ascii=False) + "\n").encode("utf-8")
+    with path.open("xb") as file:
+        file.write(data)
+    return hashlib.sha256(data).hexdigest()
+
+
+def _prompt_fingerprints():
+    schema = json.dumps(_PROPOSAL_SCHEMA, sort_keys=True, separators=(",", ":")).encode()
+    return {
+        "instructions_sha256": hashlib.sha256(_INSTRUCTIONS.encode()).hexdigest(),
+        "proposal_schema_sha256": hashlib.sha256(schema).hexdigest(),
+    }
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("scenarios", nargs="?", type=Path, default=GOLD_FILE)
     parser.add_argument("--model", help="OpenAI model, otherwise read from the environment")
     parser.add_argument("--temperature", type=float, help="Override sampling temperature for supported models")
     parser.add_argument("--runs", type=int, default=2, help="Number of live passes (default: 2)")
+    parser.add_argument("--expected-count", type=int, default=50, help="Case count for a separate fixture")
+    parser.add_argument(
+        "--save-predictions", type=Path,
+        help="Write validated predictions, raw structured proposals and configuration to a new directory",
+    )
     parser.add_argument(
         "--predictions", type=Path, action="append",
         help="Score saved predictions by case ID. Repeat for separate passes.",
@@ -375,13 +506,29 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if args.runs < 1:
         parser.error("--runs must be positive")
-    if args.predictions and (args.model or args.temperature is not None):
-        parser.error("--model and --temperature apply to live evaluation only")
+    if args.expected_count < 1:
+        parser.error("--expected-count must be positive")
+    if args.scenarios.name == GOLD_FILE.name and args.expected_count != 50:
+        parser.error("the original gold suite requires 50 scenarios")
+    if args.predictions and (args.model or args.temperature is not None or args.save_predictions):
+        parser.error("--model, --temperature and --save-predictions apply to live evaluation only")
 
     started = perf_counter()
+    started_at = datetime.now(UTC).isoformat(timespec="seconds")
     try:
-        suite = load_suite(args.scenarios)
+        suite = load_suite(args.scenarios, expected_count=args.expected_count)
         predictions, reports = [], []
+        configuration = {
+            "benchmark_version": BENCHMARK_VERSION,
+            "taxonomy_version": TAXONOMY_VERSION,
+            "suite_file": str(args.scenarios),
+            "suite_version": suite.version,
+            "suite_sha256": suite.sha256,
+            "scenario_count": len(suite.cases),
+            "hard_rules": suite.hard_rules,
+            "started_at_utc": started_at,
+            "python_version": sys.version.split()[0],
+        }
         if args.predictions:
             for path in args.predictions:
                 run_started = perf_counter()
@@ -390,21 +537,47 @@ def main(argv=None):
                 reports[-1]["elapsed_seconds"] = round(perf_counter() - run_started, 3)
                 reports[-1]["predictions_sha256"] = hashlib.sha256(data).hexdigest()
                 predictions.append(prediction)
-            source = {"mode": "replay"}
+            source = {"mode": "replay", "passes": len(predictions)}
         else:
             provider = OpenAIFeedbackProvider(model=args.model, temperature=args.temperature)
-            source = {"mode": "live", "requested_model": provider.model, "temperature_override": args.temperature}
+            source = {
+                "mode": "live", "requested_model": provider.model, "temperature_override": args.temperature,
+                "prompt_version": PROMPT_VERSION, "passes": args.runs, **_prompt_fingerprints(),
+            }
+            if args.save_predictions:
+                args.save_predictions.mkdir(parents=True)
+                _save_json(args.save_predictions / "configuration.json", {**configuration, "evaluation_source": source})
 
-            def run(decision, feedback, context):
-                return interpret_feedback(decision, feedback, context, provider=provider, hard_rules=suite.hard_rules)
+            for pass_number in range(1, args.runs + 1):
+                recorder = _RecordingProvider(provider) if args.save_predictions else None
+                live_provider = recorder or provider
 
-            for _ in range(args.runs):
+                def run(decision, feedback, context):
+                    return interpret_feedback(
+                        decision, feedback, context, provider=live_provider, hard_rules=suite.hard_rules,
+                    )
+
+                on_complete = recorder.finish_case if recorder else None
                 run_started = perf_counter()
-                prediction = collect_predictions(suite, run)
-                reports.append(evaluate(suite, prediction))
-                reports[-1]["elapsed_seconds"] = round(perf_counter() - run_started, 3)
+                prediction = collect_predictions(suite, run, on_case_complete=on_complete)
+                metadata = {}
+                if recorder:
+                    predictions_file = f"pass-{pass_number}.json"
+                    proposals_file = f"pass-{pass_number}.proposals.json"
+                    metadata["capture_files"] = {
+                        "predictions": predictions_file,
+                        "proposals": proposals_file,
+                    }
+                    metadata["predictions_sha256"] = _save_json(
+                        args.save_predictions / predictions_file, prediction,
+                    )
+                    metadata["proposals_sha256"] = _save_json(
+                        args.save_predictions / proposals_file, recorder.proposals,
+                    )
+                report = evaluate(suite, prediction)
+                reports.append({**report, **metadata, "elapsed_seconds": round(perf_counter() - run_started, 3)})
                 predictions.append(prediction)
-    except (ValueError, FeedbackProviderError) as exc:
+    except (ValueError, OSError, FeedbackProviderError) as exc:
         print(f"Evaluation could not start. {exc}", file=sys.stderr)
         return 2
 
@@ -413,15 +586,18 @@ def main(argv=None):
     report = {
         "suite_version": suite.version,
         "suite_sha256": suite.sha256,
+        "configuration": configuration,
         "signal_label_matching": "Exact feature, polarity, and context scope. No synonym mappings supplied.",
+        "semantic_signal_matching": "Dimension, canonical feature, polarity, canonical context scope, and exact condition.",
         "evaluation_source": source,
         "runs": reports,
         "repeated_pass_requirement_met": full_protocol,
         "consistency": _consistency(suite, predictions) if repeated else None,
+        "semantic_consistency": _consistency(suite, predictions, semantic=True) if repeated else None,
         "elapsed_seconds": round(perf_counter() - started, 3),
     }
     print(json.dumps(report, indent=2, sort_keys=True))
-    return int(not full_protocol or not all(report["quality_gates_passed"] for report in reports))
+    return int(not full_protocol or not all(report["semantic"]["quality_gates_passed"] for report in reports))
 
 
 if __name__ == "__main__":

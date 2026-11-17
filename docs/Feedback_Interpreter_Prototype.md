@@ -24,9 +24,11 @@ python -m job_search_agent.feedback < feedback.json
 ```bash
 PYTHONPATH=src python -m unittest discover -s tests -v
 PYTHONPATH=src python -m job_search_agent.feedback_evaluation \
-  feedback_interpretation_gold_cases_v1.json --temperature 0.1 > feedback-results.json
+  feedback_interpretation_gold_cases_v1.json \
+  --model gpt-5.4-2026-03-05 --temperature 0.1 \
+  --save-predictions feedback-capture > feedback-results.json
 ```
 
 In PowerShell, set `$env:PYTHONPATH = "src"` before running the Python commands. Select a model that supports the temperature setting or let it use its default sampling configuration.
 
-The benchmark defaults to two runs. It sends inputs and grounding rules to the interpreter and uses the original annotations for scoring. It records the suite version and file hash, exact signal recall and precision, dimension and scope agreement, routing, evidence, hard-rule actions, category differences, and changes between runs. Exact matching includes the free-form feature and scope labels, so reviewers should check apparent misses for valid synonyms before changing the taxonomy or labels. The reported mutation gate checks that proposals cannot apply rule changes. The gold suite's compensation assumptions are evaluation inputs. [Gold-standard fixture](../feedback_interpretation_gold_cases_v1.json)
+The benchmark defaults to two passes. It scores the frozen annotations using both literal labels and the versioned canonical vocabulary. It also records routing, evidence, hard-rule actions, case-level mismatches, and changes between passes. Use a new directory for each capture. [Benchmark specification](Feedback_Interpreter_Benchmark_Spec_v2.md) · [Gold-standard fixture](../feedback_interpretation_gold_cases_v1.json)

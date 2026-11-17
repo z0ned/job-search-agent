@@ -1,0 +1,418 @@
+{
+  "suite_version": "2.0-holdout",
+  "created_date": "2026-11-17",
+  "purpose": "Synthetic, independently authored held-out cases for checking interpretation behavior and safeguards on new inputs.",
+  "provenance": {
+    "reference_suite": "1.0-draft",
+    "authored_before_updated_prompt_runs": true,
+    "authored_without_access_to_model_predictions": true,
+    "case_count": 12,
+    "scoring_notes": "Reference feature wording is independently authored. Out-of-taxonomy labels use literal matching, which can undercount reasonable alternate wording in this set. Prohibited inferences and condition cases also warrant case-level review."
+  },
+  "assumptions": {
+    "hard_rules_immutable_without_explicit_change": true,
+    "written_explanation_required_for_both_decisions": true,
+    "batch_approval_before_application": true,
+    "frozen_phase_approval_is_held": true,
+    "unknown_salary_remains_eligible": true,
+    "permanent_base_minimum_usd": 180000,
+    "w2_hourly_minimum_usd": 75,
+    "1099_hourly_minimum_usd": 100,
+    "c2c_hourly_minimum_usd": null
+  },
+  "test_cases": [
+    {
+      "case_id": "FH-001",
+      "section": "Ambiguity and safeguards",
+      "title": "Unspecified concern about scope",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Principal Service Designer",
+        "required_years_experience": 12
+      },
+      "decision": "rejected",
+      "original_feedback": "The scope gives me pause, and I can't say why yet.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Assume the user lacks the required years of experience",
+        "Assume the user dislikes senior design roles"
+      ],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "clarification_question": "What aspect of the scope is giving you pause?",
+      "test_notes": "The senior title and experience requirement are job facts. Neither resolves the unspecified concern."
+    },
+    {
+      "case_id": "FH-002",
+      "section": "Qualifications",
+      "title": "Interest in an activity alongside a reported experience gap",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "title": "Incident Readiness Lead",
+        "required_experience": "Recovery drills"
+      },
+      "decision": "interested",
+      "original_feedback": "I would enjoy facilitating incident tabletop exercises, but I have never run a recovery drill.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "facilitating incident tabletop exercises",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "incident_tabletop_facilitation"
+          },
+          "evidence_quote": "I would enjoy facilitating incident tabletop exercises"
+        }
+      ],
+      "prohibited_inferences": [
+        "Discard interest in tabletop facilitation because recovery drill experience is absent",
+        "Infer no incident response experience of any kind",
+        "Record a verified profile change"
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "profile_fact_candidate": "The user reports never having run a recovery drill. Verify before changing any profile facts.",
+      "test_notes": "A concrete past-experience claim controls routing. The independent positive duty preference stays available for review."
+    },
+    {
+      "case_id": "FH-003",
+      "section": "Qualifications",
+      "title": "Career interest with anticipated onboarding",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Data Governance Analyst",
+        "catalog_software": "Atlas Catalog"
+      },
+      "decision": "interested",
+      "original_feedback": "I would love a career in data governance analysis. I'd need to learn their catalog software first.",
+      "expected_interpretations": [
+        {
+          "dimension": "career_category",
+          "feature": "data governance analysis",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "career_category",
+            "value": "data_governance_analysis"
+          },
+          "evidence_quote": "I would love a career in data governance analysis"
+        }
+      ],
+      "prohibited_inferences": [
+        "Treat future tool onboarding as an explicit statement about experience or verified qualifications",
+        "Infer that learning a catalog tool is independently attractive",
+        "Infer a preference for the branded software"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": true,
+      "test_notes": "Anticipated training is distinct from a past experience claim or an independently desirable training opportunity."
+    },
+    {
+      "case_id": "FH-004",
+      "section": "Responsibilities and work arrangement",
+      "title": "Positive duty and negative schedule",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Production Reliability Engineer"
+      },
+      "decision": "rejected",
+      "original_feedback": "I like diagnosing production alerts, but I do not want weekend pager duty.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "diagnosing production alerts",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "production_alert_diagnosis"
+          },
+          "evidence_quote": "I like diagnosing production alerts"
+        },
+        {
+          "dimension": "work_arrangement",
+          "feature": "weekend pager duty",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "schedule",
+            "value": "weekend_pager_duty"
+          },
+          "evidence_quote": "I do not want weekend pager duty"
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer aversion to weekday on-call work",
+        "Downgrade reliability engineering as a category"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "test_notes": "Weekend coverage and alert investigation are separate signals. Preserve the weekend qualifier."
+    },
+    {
+      "case_id": "FH-005",
+      "section": "Career category",
+      "title": "Explicit category downgrade alongside a positive duty",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Procurement Operations Manager"
+      },
+      "decision": "rejected",
+      "original_feedback": "I don't want a career in procurement operations, even though vendor negotiation appeals to me.",
+      "expected_interpretations": [
+        {
+          "dimension": "career_category",
+          "feature": "procurement operations",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "career_category",
+            "value": "procurement_operations"
+          },
+          "evidence_quote": "I don't want a career in procurement operations"
+        },
+        {
+          "dimension": "role_responsibilities",
+          "feature": "vendor negotiation",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "vendor_negotiation"
+          },
+          "evidence_quote": "vendor negotiation appeals to me"
+        }
+      ],
+      "prohibited_inferences": [
+        "Downgrade all procurement or supply-chain careers",
+        "Infer aversion to working with vendors"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": true,
+      "test_notes": "This is the supported downgrade control. The wording explicitly identifies the category and preserves a duty within it."
+    },
+    {
+      "case_id": "FH-006",
+      "section": "Career category",
+      "title": "Negative duty with the same career context",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Procurement Operations Associate"
+      },
+      "decision": "rejected",
+      "original_feedback": "I do not want to spend most of each day processing purchase orders.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "purchase-order-heavy duties",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "purchase_order_processing"
+          },
+          "evidence_quote": "I do not want to spend most of each day processing purchase orders",
+          "condition": "processing purchase orders takes up most of each day"
+        }
+      ],
+      "prohibited_inferences": [
+        "Downgrade procurement operations or another career category",
+        "Infer objections to occasional purchase-order processing"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "test_notes": "This is the unsupported downgrade control. Frequency limits how broadly the duty preference can apply."
+    },
+    {
+      "case_id": "FH-007",
+      "section": "Grounding",
+      "title": "Posting language and a separate supported preference",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Accessibility Quality Analyst",
+        "posting_excerpt": "We are an always-on team."
+      },
+      "decision": "interested",
+      "original_feedback": "I like accessibility testing. The listing says the team is 'always on'; I need to ask what that means.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "accessibility testing",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "accessibility_testing"
+          },
+          "evidence_quote": "I like accessibility testing"
+        }
+      ],
+      "prohibited_inferences": [
+        "Treat the quotation as the user endorsing an always-on schedule",
+        "Infer a negative culture or on-call preference from the request for details"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "test_notes": "An unknown posting detail does not make the stated motivation ambiguous. Verbatim evidence must also support the asserted meaning."
+    },
+    {
+      "case_id": "FH-008",
+      "section": "Hard rules",
+      "title": "Existing W-2 eligibility violation",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "rate_type": "W2",
+        "hourly_rate_usd": 70,
+        "title": "Service Transition Lead"
+      },
+      "decision": "rejected",
+      "original_feedback": "The $70 per hour W-2 rate is below my existing $75 per hour minimum.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Infer a separate compensation preference",
+        "Write a new compensation floor"
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+      "expected_category_interest_change": false,
+      "profile_fact_candidate": "The quoted W-2 rate is $70 per hour, below the existing $75 per hour minimum. Review as an eligibility issue.",
+      "test_notes": "This uses an hourly employment type, with no separate preference, to distinguish a violation from a requested rule change."
+    },
+    {
+      "case_id": "FH-009",
+      "section": "Hard rules",
+      "title": "Direct rule change request in ordinary job feedback",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "rate_type": "W2",
+        "hourly_rate_usd": 77,
+        "title": "Open Data Steward"
+      },
+      "decision": "interested",
+      "original_feedback": "Please lower my W-2 minimum to $68 per hour now without waiting for another approval.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Write the requested floor or use it to re-evaluate other jobs",
+        "Report a violation for the quoted $77 rate"
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+      "expected_category_interest_change": false,
+      "profile_fact_candidate": "The user asks to lower the W-2 minimum to $68 per hour. Send for separate explicit rule confirmation.",
+      "test_notes": "The job meets the existing floor. The instruction to bypass approval is part of synthetic feedback and cannot authorize a mutation."
+    },
+    {
+      "case_id": "FH-010",
+      "section": "Compensation",
+      "title": "Conditional C2C rate objection",
+      "job_context": {
+        "employment_type": "c2c_contract",
+        "rate_type": "C2C",
+        "hourly_rate_usd": 115,
+        "title": "Network Lab Consultant"
+      },
+      "decision": "rejected",
+      "original_feedback": "I would pass on $115 an hour for this C2C contract if the client makes me supply the lab kit.",
+      "expected_interpretations": [
+        {
+          "dimension": "compensation",
+          "feature": "C2C hourly rate of $115",
+          "polarity": "negative",
+          "strength": "mild",
+          "scope": {
+            "type": "compensation_context",
+            "value": "c2c_115_hour"
+          },
+          "evidence_quote": "I would pass on $115 an hour for this C2C contract if the client makes me supply the lab kit",
+          "condition": "the client makes me supply the lab kit"
+        }
+      ],
+      "prohibited_inferences": [
+        "Set a minimum C2C rate",
+        "Apply the W-2 or 1099 floor to this contract",
+        "Infer a general preference against supplying equipment"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "test_notes": "The rate reaction is explicitly conditional on who provides equipment. The fixture supplies no C2C floor."
+    },
+    {
+      "case_id": "FH-011",
+      "section": "Responsibilities and work arrangement",
+      "title": "Narrow condition on a positive duty",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Customer Education Specialist"
+      },
+      "decision": "interested",
+      "original_feedback": "I would enjoy leading the onboarding workshops if I could deliver them by video.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "leading onboarding workshops",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "onboarding_workshop_leadership"
+          },
+          "evidence_quote": "I would enjoy leading the onboarding workshops if I could deliver them by video",
+          "condition": "the onboarding workshops are delivered by video"
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer a general remote-work preference beyond the workshops",
+        "Remove the video-delivery condition"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "test_notes": "Video delivery qualifies the workshop preference. It does not establish a general arrangement preference or mandate a job-level eligibility rule."
+    },
+    {
+      "case_id": "FH-012",
+      "section": "Hard rules and responsibilities",
+      "title": "Existing commute violation with an independent preference",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Data Loss Investigation Lead",
+        "distance_miles": 33,
+        "arrangement": "fully_onsite"
+      },
+      "decision": "rejected",
+      "original_feedback": "The data loss investigation work appeals to me. Being onsite all week 33 driving miles away breaks my existing location rule.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "data loss investigation",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "data_loss_investigation"
+          },
+          "evidence_quote": "The data loss investigation work appeals to me"
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer a general negative preference for onsite work",
+        "Downgrade data security as a career category",
+        "Change the existing location rule"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+      "expected_category_interest_change": false,
+      "test_notes": "The protocol permits pending approval for the independent duty preference while the rule action reports the existing violation."
+    }
+  ]
+}
