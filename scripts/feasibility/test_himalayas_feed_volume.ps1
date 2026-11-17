@@ -168,6 +168,11 @@ foreach ($search in $searches) {
             $r.HTTP = [int]$_.Exception.Response.StatusCode
         }
         Write-Warning ("{0}: API fetch/parse failed: {1}" -f $search.Name,$_.Exception.Message)
+        if ($r.HTTP -eq 429) {
+            $rows += $r
+            Write-Warning "Himalayas rate limited this client (HTTP 429): stopping all remaining queries."
+            break
+        }
     }
     $rows += $r
 }
@@ -183,7 +188,7 @@ Write-Host "ACTUAL SAMPLE: LAST-UPDATED AGE AND METADATA:"
 $rows | Format-Table Search,UpdatedKnown,UpdatedRecent,ExpiredSample,SalaryDisclosed,RepeatedIDs,MissingIDs -AutoSize
 
 $good = @($rows | Where-Object { $_.Status -eq "OK" })
-Write-Host ("Validated filtered queries: {0}/{1}" -f $good.Count,$rows.Count)
+Write-Host ("Validated filtered queries: {0}/{1}; queries attempted: {2}" -f $good.Count,$searches.Count,$rows.Count)
 Write-Host ("Distinct GUIDs observed across ALL sampled query slices: {0}" -f $allIds.Count)
 Write-Host "Do NOT sum ReportedMatches: keyword queries overlap and only samples were fetched."
 Write-Host "UpdatedRecent is NOT a verified newly published count. No first-published field provided."
