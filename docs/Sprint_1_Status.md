@@ -159,6 +159,21 @@ The five selected employers are not representative of all Lever employers. The r
 
 **Next hardest-risk check:** Test the already verified Himalayas public remote-jobs feed with targeted count/filters for U.S. contract project/program roles, using original-date caution and without scoring individual jobs. Preserve Adzuna trial quota. After this, choose broad aggregation vs systematic employer-board discovery.
 
+## Himalayas targeted U.S. remote contractor-volume probe — prepared (2026-11-17)
+
+**Current source facts (verified in official public documentation):** Unauthenticated `GET https://himalayas.app/jobs/api/search` supports `q`, `country=US`, `employment_type=Contractor,Temporary`, `sort=recent`, and 1-based `page` pagination. `totalCount` is provider-reported search volume. Country filtering includes worldwide postings by default unless explicitly excluded. **`pubDate` means last updated, NOT first publication** per the current Himalayas docs; don't count it as actual fresh original postings. The service's remote inventory is not a local/hybrid solution. Cache is refreshed daily, and keyless users share a public request allowance. API terms require source credit and using the provided `applicationLink` for Apply actions in any future dashboard.
+
+**Committed one-off script:** [scripts/feasibility/test_himalayas_feed_volume.ps1](../scripts/feasibility/test_himalayas_feed_volume.ps1). Tests eight US remote Contractor/Temporary slices (one unfiltered role baseline plus project manager, program manager, product manager, PMO, portfolio manager, implementation manager, transformation). One first-page request per slice by default (8 keyless requests), optional bounded page-two sampling with `-MaxPages 2`. Reports API-reported matching counts **separately** from fetched unique GUIDs, sample type/country validation, broad role-title hints, salary presence, expired-posting count, and last-updated-within-30-days samples. Does not filter pay, because unknown pay is allowed. Fails/flags query results when type or country restrictions contradict filter expectations. **Do not add keyword search counts**: overlaps are unknown.
+
+**Execution status:** Script committed; **not yet run on the user's home PC**, so no filtered Himalayas search volumes are claimed. Direct filtered search was inaccessible through the assistant's web browsing environment, which does not establish an upstream API problem. Requires **no credentials** and consumes **zero Adzuna trial calls**.
+
+**Run from repo root:**
+
+    git pull origin main
+    powershell -NoProfile -File .\scripts\feasibility\test_himalayas_feed_volume.ps1
+
+**Remaining risk:** Distinguish true original posting-date freshness from API update recency; estimate US-eligible contract target-role volume with repeat-day unique IDs, source overlaps and suitability testing deferred. No production agent implementation started.
+
 ## Next actions
 
 1. **Adzuna U.S. direct authenticated feed is now verified.** Next measure its 30-day contract search volume and page retrieval limits. Continue unverified Greenhouse/Lever APIs in parallel.
