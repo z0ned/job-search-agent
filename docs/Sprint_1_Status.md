@@ -99,6 +99,14 @@ User-run PowerShell test at **2026-11-17 16:49:53 UTC** returned **HTTP 200 from
 
 [Full measurements and interpretation](./Sprint_1_Ashby_Feed_Volume_2026-11-17.md).
 
+## Greenhouse five-board read-only feed probe — prepared (2026-11-17)
+
+- Committed [scripts/feasibility/test_greenhouse_feed_volume.ps1](../scripts/feasibility/test_greenhouse_feed_volume.ps1) to test five named public Greenhouse board tokens: **gitlab, vercel, openmined, infuse, crunchyroll**.
+- Script makes **one unauthenticated GET per board** against official public `GET /v1/boards/{board_token}/jobs`, with the compact list response (no `content=true`). It counts total postings, non-prospect jobs (`internal_job_id` present), unique job-post IDs, broad role-title signals, and **contract title/custom-metadata heuristic signals (unverified)**.
+- **Critical date distinction:** The Greenhouse list API documents `updated_at`; `first_published` is documented on the individual job GET response. The script counts first-published dates **only if present on the list records**. The updated-in-30-days number is **not** a count of newly published jobs. No one-request-per-posting enrichment is attempted.
+- **Not yet run locally.** No verified Greenhouse feed counts available yet; unsuccessful direct fetches in the assistant's restricted environment are not treated as source outages.
+- Requires **no keys** and **zero Adzuna trial calls**. This is a feasibility probe, not production code or job suitability evaluation.
+
 ## Next actions
 
 1. **Adzuna U.S. direct authenticated feed is now verified.** Next measure its 30-day contract search volume and page retrieval limits. Continue unverified Greenhouse/Lever APIs in parallel.
