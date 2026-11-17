@@ -37,6 +37,16 @@
 
 This overrides any prior language implying that handpicked job pages, subjective role-fit review, or salary qualification checks are Sprint 1 feed-test deliverables. The 10 manually inspected posting examples remain historical notes only. **No individual job recommendation activity is authorized in the active feasibility test.**
 
+## Adzuna access update (2026-11-17)
+
+The user has created a local untracked `.env` in the repository root with their Adzuna credentials and reports **Pending Activation — 25 test API calls**. According to their provider account notice, the **API Access** tier offers 5,000 calls/month and 500/day, while **Pro** offers 20,000 calls/month; prices shown when selecting a plan. **These numbers are user-reported account conditions, not tested quotas or approved paid subscriptions.**
+
+- Credentials are **not** in GitHub; this repository does not contain the user's app ID/key.
+- **Trial call budget:** 25 total test requests (reported), with zero confirmed executed from the user's local key so far.
+- First local test should use **one bounded search request** and report only status, API-reported total, returned count and whether pagination is visible. Never publish key, full request URL with credentials, or proprietary response dumps.
+- Prioritize a small handful of high-information searches that answer **feed access and total accessible job volume**, then stop before exhausting the trial balance. No automatic loops or broad paging during the trial.
+- Full paid activation requires an explicit cost/terms decision, **not** an automatic next step.
+
 ## Next actions
 
 1. Get actual **direct HTTPS JSON feed responses** from each candidate provider; distinguish tool/network restrictions from source unavailability.
