@@ -76,11 +76,11 @@ Sources:
 
 ## Adzuna website volume observation (user-reported, 2026-11-17)
 
-The user reports **419 job listings** on Adzuna's U.S. **website** when filtering to jobs **posted within the last 7 days**, **within 25 miles** of their Atlanta-area search, and **minimum $150,000 equivalent**. The previous browsing context was a Project Manager search in Atlanta, but **the exact keyword/query and whether the Contract employment-type filter was applied have not yet been reconfirmed**.
+The user reports **419 job listings** on Adzuna's U.S. **website** when filtering to jobs **posted within the last 7 days**, **within 25 miles** of their Atlanta-area search, and **minimum $150,000 equivalent**. **Applying the Contract filter reduces the displayed count to 11 jobs** with the other website criteria unchanged. The earlier browsing context was a Project Manager search in Atlanta; exact query wording and how the website derives estimated salary-equivalents remain unverified.
 
-**Evidence tier:** User-reported website displayed count; **NOT an authenticated API count**, unique job count, or verified original-post-date count. The figure may include permanent jobs and duplicate postings, and website inventory/filter semantics may differ from API search. No new Adzuna trial API calls consumed.
+**Evidence tier:** User-reported website displayed count; **NOT an authenticated API count**, unique job count, or verified original-post-date count. The **419** figure includes contract and/or permanent job results (not a contract-only count); the **11** figure is contract-filtered. These are website counts, may include duplicates, and website inventory/filter semantics may differ from API search. No new Adzuna trial API calls consumed.
 
-**Implication:** A meaningful volume signal worth testing, but not proof that hundreds of recent contract PM jobs can be programmatically accessed. The next question is whether the **Contract** filter was applied to this 419 count. Test comparable website filters first and reserve API calls for small feed/website parity tests.
+**Implication:** A meaningful volume signal worth testing, but not proof that hundreds of recent contract PM jobs can be programmatically accessed. Contract filtering is now confirmed by the user: **11 of 419** are contract-filtered results (approximately **2.6%**, based on displayed counts only). This reinforces the importance of finding multiple contract job sources. The annual-equivalent $150K cutoff is close to but somewhat higher than $70/hour at 2,080 paid hours ($145,600/year), and can exclude contracts without compensation information; the website is not a substitute for a pay-neutral contract volume check. Reserve API calls for limited feed/website parity tests.
 
 ## Next actions
 
