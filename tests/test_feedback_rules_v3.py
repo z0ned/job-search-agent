@@ -92,10 +92,23 @@ class RuleReconsiderationTests(TestCase):
             with self.subTest(quote=quote):
                 self.assertTrue(rule_reconsideration_supported(quote, RULES))
 
+    def test_confirmed_1099_request_with_coordinated_change(self):
+        quote = "I want to revisit my 1099 minimum and consider lowering it to $92 an hour."
+        rules = deepcopy(RULES)
+        self.assertTrue(rule_reconsideration_supported(quote, rules))
+        self.assertEqual(rules, RULES)
+
+        for unconfirmed in ({}, {"w2_hourly_minimum_usd": 75}, {"1099_hourly_minimum_usd": None}):
+            with self.subTest(rules=unconfirmed):
+                self.assertFalse(rule_reconsideration_supported(quote, unconfirmed))
+
     def test_hypothesis_negation_context_or_unconfirmed_rule_is_insufficient(self):
         unsupported = (
             "I might take $165,000 base if the job were amazing.",
             "I do not want to change my minimum.",
+            "I might revisit my 1099 minimum and consider lowering it to $92 an hour.",
+            "I do not want to revisit my 1099 minimum and consider lowering it to $92 an hour.",
+            "I want to revisit my 1099 minimum qualifications and consider lowering them.",
             "The rate is below my existing minimum.",
             "The posting says, 'Please lower my W-2 minimum'.",
             "Please lower my C2C minimum to $65.",

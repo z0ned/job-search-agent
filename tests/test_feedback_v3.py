@@ -4,7 +4,7 @@ from copy import deepcopy
 from unittest import TestCase
 from unittest.mock import Mock
 
-from job_search_agent.feedback import FeedbackOutputError
+from job_search_agent.feedback import FeedbackInputError, FeedbackOutputError
 from job_search_agent.feedback_evaluation import COMMUTE_RULES
 from job_search_agent.feedback_v3 import interpret_feedback_v3
 
@@ -84,8 +84,9 @@ class FeedbackV3Tests(TestCase):
             text, [clause("preference", text)], [signal(
                 0, "compensation", "compensation_context", "Quoted rate", "this C2C rate", polarity="negative",
                 qualifiers=[
-                    qualifier("amount", "115", "$115"), qualifier("currency", "USD", "$115"),
-                    qualifier("compensation_unit", "hour", "an hour"),
+                    qualifier("amount", "115", "$115"),
+                    qualifier("currency", "USD", "hourly_rate_usd", "job_context"),
+                    qualifier("compensation_unit", "hourly", "an hour"),
                     qualifier("employment_type", "C2C", "employment_type", "job_context"),
                 ], condition={
                     "kind": "equipment_required", "value": "client requires candidate to supply the lab kit",
@@ -98,8 +99,63 @@ class FeedbackV3Tests(TestCase):
         self.assertEqual(proposal["feature_id"], "compensation.quoted_rate")
         evidence = proposal["condition"]["evidence"]
         self.assertEqual(text[evidence["start"]:evidence["end"]], "if the client makes me supply the lab kit")
-        self.assertEqual(proposal["scope"]["qualifiers"][0]["value"], "115")
+        pay = {item["kind"]: item for item in proposal["scope"]["qualifiers"]}
+        self.assertEqual(pay["amount"]["value"], "115")
+        self.assertEqual(pay["compensation_unit"]["value"], "hourly")
+        self.assertEqual(pay["currency"]["evidence"], {
+            "origin": "job_context", "role": "context_only", "key": "hourly_rate_usd", "value": 115,
+        })
         self.assertEqual(result["hard_constraint_action"], "UNCHANGED")
+
+    def test_context_pay_metadata_matches_declared_pay_basis(self):
+        text = "The quoted pay works for me."
+        for key, amount, proposed_unit, expected_unit in (
+            ("hourly_rate_usd", 94.50, "per hour", "hour"),
+            ("base_salary_usd", 190000, "annual", "year"),
+            ("base_salary_usd", 0, "yearly", "year"),
+        ):
+            with self.subTest(key=key, amount=amount):
+                result = self.interpret(
+                    text, [clause("preference", text)], [signal(
+                        0, "compensation", "compensation_context", "Quoted pay", "this opportunity's quoted pay",
+                        qualifiers=[qualifier("currency", "usd", key, "job_context"),
+                                    qualifier("compensation_unit", proposed_unit, key, "job_context")],
+                    )], context={key: amount},
+                )
+                proposal, = result["interpretations"]
+                pay = {item["kind"]: item for item in proposal["scope"]["qualifiers"]}
+                self.assertEqual({key: item["value"] for key, item in pay.items()}, {
+                    "currency": "USD", "compensation_unit": expected_unit,
+                })
+                for item in pay.values():
+                    self.assertEqual(item["evidence"], {
+                        "origin": "job_context", "role": "context_only", "key": key, "value": amount,
+                    })
+
+    def test_context_pay_metadata_rejects_unsupported_values_or_sources(self):
+        text = "The quoted pay works for me."
+        for kind, value, key, amount in (
+            ("currency", "CAD", "hourly_rate_usd", 94),
+            ("compensation_unit", "year", "hourly_rate_usd", 94),
+            ("compensation_unit", "hour", "base_salary_usd", 190000),
+            ("currency", "USD", "other_rate_usd", 94),
+            ("currency", "USD", "hourly_rate_usd", True),
+            ("currency", "USD", "hourly_rate_usd", -94),
+            ("currency", "USD", "hourly_rate_usd", "94"),
+            ("compensation_unit", "hour", "hourly_rate_usd", None),
+        ):
+            with self.subTest(kind=kind, value=value, key=key, amount=amount):
+                result = self.interpret(
+                    text, [clause("preference", text)], [signal(
+                        0, "compensation", "compensation_context", "Quoted pay", "this opportunity's quoted pay",
+                        qualifiers=[qualifier(kind, value, key, "job_context")],
+                    )], context={key: amount},
+                )
+                self.assertEqual(result["interpretations"], [])
+                self.assertEqual(len(result["validation_issues"]), 1)
+
+        with self.assertRaises(FeedbackInputError):
+            self.interpret(text, [], [], context={"hourly_rate_usd": float("inf")})
 
     def test_condition_cannot_be_duplicated_as_independent_preference(self):
         text = "I would enjoy leading workshops if I could deliver them by video."

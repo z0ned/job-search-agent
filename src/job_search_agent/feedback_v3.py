@@ -35,8 +35,15 @@ from .feedback_rules_v3 import eligibility_violation, rule_reconsideration_suppo
 from .feedback_taxonomy import _VOCABULARY, canonicalize_signal
 
 
+_PAY_CONTEXT_UNITS = {"base_salary_usd": "year", "hourly_rate_usd": "hour"}
+_COMPENSATION_UNITS = {
+    "hour": "hour", "hourly": "hour", "per hour": "hour",
+    "year": "year", "yearly": "year", "annual": "year", "annually": "year", "per year": "year",
+}
 _CONTEXT_QUALIFIERS = {
-    "amount": {"base_salary_usd", "hourly_rate_usd"},
+    "amount": _PAY_CONTEXT_UNITS.keys(),
+    "currency": _PAY_CONTEXT_UNITS.keys(),
+    "compensation_unit": _PAY_CONTEXT_UNITS.keys(),
     "employment_type": {"employment_type", "rate_type"},
     "work_mode": {"arrangement"},
     "distance": {"distance_miles"},
@@ -135,6 +142,7 @@ def _qualifier(raw, feedback, revision, assertion, context):
     kind, value, source, quote = (raw[key] for key in ("kind", "value", "source", "quote"))
     if kind not in QUALIFIER_KINDS or not _nonblank(value) or not _nonblank(quote):
         raise FeedbackOutputError("Invalid qualifier kind, value, or evidence.")
+    normalized = value.strip()
     if source == "feedback":
         evidence = _span(feedback, quote, "qualifier", revision, within=assertion)
         if kind == "amount":
@@ -145,18 +153,27 @@ def _qualifier(raw, feedback, revision, assertion, context):
         known = context.get(quote)
         if isinstance(known, bool) or not isinstance(known, (int, float, str)):
             raise FeedbackOutputError("Qualifier names an unavailable structured posting field.")
-        known_key, value_key = _label_key(str(known)), _label_key(value)
+        known_key, value_key = _label_key(str(known)), _label_key(normalized)
         if kind == "employment_type":
             known_key = _EMPLOYMENT_TYPES.get(known_key, known_key)
             value_key = _EMPLOYMENT_TYPES.get(value_key, value_key)
-        if kind == "amount":
+        elif kind == "amount":
             known_key, value_key = _number(known), _number(value)
+        elif kind in ("currency", "compensation_unit"):
+            if type(known) not in (int, float) or _number(known) is None:
+                raise FeedbackOutputError("Pay metadata requires a finite nonnegative structured amount.")
+            if kind == "currency":
+                known_key, normalized = "usd", "USD"
+            else:
+                known_key = _PAY_CONTEXT_UNITS[quote]
+                normalized = value_key = _COMPENSATION_UNITS.get(value_key, value_key)
         if kind != "distance" and (known_key is None or known_key != value_key):
             raise FeedbackOutputError("Qualifier disagrees with structured posting evidence.")
         evidence = {"origin": "job_context", "role": "context_only", "key": quote, "value": known}
     else:
         raise FeedbackOutputError("Qualifier source must be feedback or a matching structured posting field.")
-    normalized = _distance_value(value, quote, context) if kind == "distance" else value.strip()
+    if kind == "distance":
+        normalized = _distance_value(value, quote, context)
     return dict(raw, value=normalized, evidence=evidence)
 
 

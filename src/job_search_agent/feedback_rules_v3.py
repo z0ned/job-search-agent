@@ -47,7 +47,9 @@ _PERMANENT = r"permanent|full[ -]time|annual base|base salary|base pay"
 _C2C = r"c2c|corp[ -]to[ -]corp"
 _PAY_TARGET = re.compile(
     _TARGET_PREFIX + rf"(?:(?:{_W2}|1099|{_C2C}|{_PERMANENT}|pay|salary|compensation|hourly rate)\s+)?"
-    r"(?:minimum(?:\s+(?:pay|salary|rate))?|floor)\b(?=\s*(?:$|,|(?:to|from|for|now|temporarily|altogether)\b))",
+    r"(?:minimum(?:\s+(?:pay|salary|rate))?|floor)\b"
+    r"(?=\s*(?:$|,|(?:to|from|for|now|temporarily|altogether)\b|"
+    r"and\s+consider\s+(?:lowering|raising|adjusting|changing)\s+it\b))",
     re.IGNORECASE,
 )
 _PAY_TARGET_FOR = re.compile(r"\s+for\s+(.*?)(?=\s+(?:to|from|now)\b|,|$)", re.IGNORECASE)
