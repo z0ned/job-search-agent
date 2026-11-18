@@ -1,0 +1,197 @@
+{
+  "suite_version": "3.0-extraction-trial-novel",
+  "provenance": {
+    "scenario_count": 5,
+    "authored_without_candidate_prompt_or_outputs": true,
+    "frozen_before_trial_inference": true,
+    "reference_basis": "Synthetic counterparts for the approved targeted extraction evaluation. Case labels are author references and stay with the evaluator."
+  },
+  "assumptions": {
+    "hard_rules_immutable_without_explicit_change": true,
+    "written_explanation_required_for_both_decisions": true,
+    "batch_approval_before_application": true,
+    "frozen_phase_approval_is_held": true,
+    "unknown_salary_remains_eligible": true,
+    "permanent_base_minimum_usd": 180000,
+    "w2_hourly_minimum_usd": 75,
+    "1099_hourly_minimum_usd": 100,
+    "c2c_hourly_minimum_usd": null
+  },
+  "test_cases": [
+    {
+      "case_id": "FT-001",
+      "trial_focus": "FI-033 counterpart. Preserve the degree and the particular decisions affected by a lack of autonomy.",
+      "decision": "rejected",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Environmental Permit Reviewer"
+      },
+      "original_feedback": "Having virtually no say over which permits I review first would be a deal-breaker.",
+      "expected_interpretations": [
+        {
+          "dimension": "seniority_scope",
+          "feature": "virtually no discretion over permit review order",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "seniority_feature",
+            "value": "very_low_autonomy_over_permit_review_order"
+          },
+          "evidence_quote": "Having virtually no say over which permits I review first would be a deal-breaker"
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer a dislike of any oversight or review process",
+        "Infer a particular job grade or a competence claim",
+        "Omit which decisions the low autonomy affects"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FT-002",
+      "trial_focus": "FI-048 counterpart. Preserve a strong duty emphasis and distinguish posting attribution from the user reaction.",
+      "decision": "rejected",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Equipment Safety Coordinator",
+        "posting_excerpt": "The heart of the role is giving safety briefings."
+      },
+      "original_feedback": "The posting describes safety briefings as 'the heart of the role'. I want to steer clear of jobs built around giving those briefings.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "work centered on delivering safety briefings",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "safety_briefing_heavy_duties"
+          },
+          "evidence_quote": "The posting describes safety briefings as 'the heart of the role'. I want to steer clear of jobs built around giving those briefings",
+          "qualifiers": [
+            {
+              "kind": "intensity",
+              "value": "strong"
+            }
+          ]
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer a dislike of occasional briefings or all safety work",
+        "Treat words attributed to the posting as the user’s preference",
+        "Drop the strong emphasis on the duty"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FT-003",
+      "trial_focus": "FH3-010 counterpart. Preserve an upper-bound frequency condition on one duty.",
+      "decision": "interested",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Community Studio Technician"
+      },
+      "original_feedback": "I would enjoy leading ceramics demonstrations as long as I had to do them no more than twice per month.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "leading ceramics demonstrations",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "leading_ceramics_demonstrations"
+          },
+          "evidence_quote": "I would enjoy leading ceramics demonstrations as long as I had to do them no more than twice per month",
+          "condition": "leading ceramics demonstrations is required at most twice per month"
+        }
+      ],
+      "prohibited_inferences": [
+        "Record a preference for a whole-job schedule",
+        "Create a second preference from the frequency condition",
+        "Interpret the upper bound as a minimum or an exact required number"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FT-004",
+      "trial_focus": "FI-041 counterpart. Retain two independent reactions and scope praise to the particular opening.",
+      "decision": "rejected",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Collection Analyst",
+        "employer": "Station Heritage Trust"
+      },
+      "original_feedback": "This particular Collection Analyst opening would be terrific. I have no trust in the organization that's hiring.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "this Collection Analyst posting as a whole",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "posting_role",
+            "value": "current_posting_role"
+          },
+          "evidence_quote": "This particular Collection Analyst opening would be terrific"
+        },
+        {
+          "dimension": "employer",
+          "feature": "this hiring organization",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "employer",
+            "value": "current_job_employer"
+          },
+          "evidence_quote": "I have no trust in the organization that's hiring"
+        }
+      ],
+      "prohibited_inferences": [
+        "Let the employer objection overwrite the separate praise",
+        "Generalize praise to collections careers or specific tasks",
+        "Infer distrust of an industry"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FT-005",
+      "trial_focus": "FH-005 contrast. Keep a directly stated career downgrade and recognize a referenced duty as context only.",
+      "decision": "rejected",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Warehouse Operations Supervisor"
+      },
+      "original_feedback": "I do not want a career in warehouse operations. The inventory reconciliation in the listing is how I recognized it as that kind of job.",
+      "expected_interpretations": [
+        {
+          "dimension": "career_category",
+          "feature": "warehouse operations career",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "career_category",
+            "value": "warehouse_operations"
+          },
+          "evidence_quote": "I do not want a career in warehouse operations"
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer that inventory reconciliation is liked or disliked independently",
+        "Extend the downgrade to all logistics careers",
+        "Set a hard exclusion"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": true
+    }
+  ]
+}
