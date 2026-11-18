@@ -1,0 +1,375 @@
+{
+  "arms": {
+    "baseline": {
+      "cases": {
+        "FH-005": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The narrow career downgrade has direct support. Extraction treats the distinctly positive vendor negotiation duty as context, so that preference is absent before and after validation.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FH3-010": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "notes": "Raw and validated scope retain the one-shift-per-week maximum as a grounded workload qualifier. Both leave the explicit applicability condition empty, so the conditional preference does not match the reference.",
+          "raw_equivalent_pairs": [],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-033": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [],
+          "evidence_grounded": false,
+          "notes": "Validation drops the raw posting-level summary. The surviving positive reaction to generic autonomy omits the material near-zero limit and changes the polarity of the scoped objection. The anchor states a shortfall, without supporting a general positive reaction to autonomy at any level.",
+          "raw_equivalent_pairs": [],
+          "raw_evidence_grounded": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-041": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [
+            [
+              2,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Employer distrust is grounded and identifies the current employer. Extraction assigned the independent positive AI advisor posting reaction to context, so neither signal list preserves it.",
+          "raw_equivalent_pairs": [
+            [
+              2,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-048": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [],
+          "evidence_grounded": false,
+          "notes": "The quote supports avoiding strongly sales-focused work. Both raw and validated machine scopes target sales without the material degree of emphasis, which is present only in the display label and evidence.",
+          "raw_equivalent_pairs": [],
+          "raw_evidence_grounded": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-001": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The machine referent retains virtually no say and ties it to permit review order despite the affirmative display label. Validation preserves the raw match.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-002": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The machine referent itself confines the objection to jobs built around giving safety briefings. The quote joins posting and reaction, and validation preserves the raw match.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-003": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "notes": "The activity and frequency qualifier are supported and the upper bound survives validation. The signal omits the required condition on the positive preference.",
+          "raw_equivalent_pairs": [],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-004": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [],
+          "evidence_grounded": false,
+          "notes": "The raw output marks the independent posting praise as context and labels employer distrust as culture. The quote supports distrust of the employer without evidence about workplace culture. Validation leaves both failures in place.",
+          "raw_equivalent_pairs": [],
+          "raw_evidence_grounded": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-005": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The raw output confines the career objection to warehouse operations. Inventory reconciliation explains recognition of the category and supports no independent preference. Validation preserves the raw match.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        }
+      },
+      "predictions_sha256": "316d3d6f18fc161c6bcc4b01c154977ce74d6e7118b19fdb714db50dcf6d1395",
+      "raw_proposals_sha256": "c7174fae922dfd8aea7b48dab0e988724309c1d6dfe71fddcff2f01e25839f8f"
+    },
+    "candidate": {
+      "cases": {
+        "FH-005": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Both raw and validated signals keep negative procurement operations career interest and positive vendor negotiation duty interest independent. The career downgrade has direct career-level evidence.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FH3-010": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "notes": "Raw and validated scope retain the one-shift-per-week maximum as a grounded workload qualifier. Both leave the explicit applicability condition empty, so the conditional preference does not match the reference.",
+          "raw_equivalent_pairs": [],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-033": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The second raw signal captures negative near-zero autonomy through “almost no” in machine scope. Validation drops the first signal, whose negative “More senior role scope” label conflicts with the too-junior evidence and duplicates the same objection. The grounded low-autonomy signal remains.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-041": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [
+            [
+              2,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Employer distrust is grounded and identifies the current employer. Extraction assigned the independent positive AI advisor posting reaction to context, so neither signal list preserves it.",
+          "raw_equivalent_pairs": [
+            [
+              2,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-048": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [],
+          "evidence_grounded": false,
+          "notes": "The quote supports avoiding strongly sales-focused work. Both raw and validated machine scopes target sales without the material degree of emphasis, which is present only in the display label and evidence.",
+          "raw_equivalent_pairs": [],
+          "raw_evidence_grounded": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-001": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Both the referent and intensity qualifier retain virtually no say over the order of permit reviews. Validation preserves the raw match.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-002": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The intensity qualifier limits the objection to jobs built around giving safety briefings. The quote joins the posting language to the user reaction, and validation preserves the raw match.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-003": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "notes": "The activity and frequency qualifier are supported and the upper bound survives validation. The signal omits the required condition on the positive preference.",
+          "raw_equivalent_pairs": [],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-004": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The raw output retains both posting-specific praise and distrust of the hiring employer as separate scoped signals. Validation retains both.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-005": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The raw output confines the career objection to warehouse operations. Inventory reconciliation explains recognition of the category and supports no independent preference. Validation preserves the raw match.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        }
+      },
+      "predictions_sha256": "189721610ff5b53d0848a41118c54176d3f7adc521545f3f61e36f5b52ac7c33",
+      "raw_proposals_sha256": "c156faf7313649086875bebecdd2d95f1cbc5e1a8fe749ec29e52eac32acc3c2"
+    }
+  },
+  "configuration_sha256": "15ccacd1bac038d4a786bc7107fd633f4a28377fc1aea5c55849ec20d935e320",
+  "ordered_references_sha256": "f9709a5f915f6cda44bfe9dfb5901f55bb188bab60464bbfdf5254919a8e8cd6",
+  "reviewer": "Codex masked semantic review"
+}

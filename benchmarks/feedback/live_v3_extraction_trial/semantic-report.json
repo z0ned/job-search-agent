@@ -1,0 +1,937 @@
+{
+  "adjudications_sha256": "b3ed51a8fb262d1e68334850a1abbddd8d816f1b3c13ef2e91d8b96bdf9f740e",
+  "advance_to_full_benchmark": false,
+  "arms": {
+    "baseline": {
+      "cases": [
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-033",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [],
+          "evidence_grounded": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [
+            1
+          ],
+          "group": "known",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [
+            1
+          ],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": false,
+          "notes": "Validation drops the raw posting-level summary. The surviving positive reaction to generic autonomy omits the material near-zero limit and changes the polarity of the scoped objection. The anchor states a shortfall, without supporting a general positive reaction to autonomy at any level.",
+          "preference_case_match": false,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 1
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-048",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [],
+          "evidence_grounded": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [
+            1
+          ],
+          "group": "known",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [
+            1
+          ],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The quote supports avoiding strongly sales-focused work. Both raw and validated machine scopes target sales without the material degree of emphasis, which is present only in the display label and evidence.",
+          "preference_case_match": false,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH3-010",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [
+            1
+          ],
+          "group": "known",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [
+            1
+          ],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "Raw and validated scope retain the one-shift-per-week maximum as a grounded workload qualifier. Both leave the explicit applicability condition empty, so the conditional preference does not match the reference.",
+          "preference_case_match": false,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-041",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              2,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 2,
+          "extra_signal_indices": [],
+          "group": "known",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [
+            1
+          ],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "Employer distrust is grounded and identifies the current employer. Extraction assigned the independent positive AI advisor posting reaction to context, so neither signal list preserves it.",
+          "preference_case_match": false,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-005",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 2,
+          "extra_signal_indices": [],
+          "group": "known",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [
+            2
+          ],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The narrow career downgrade has direct support. Extraction treats the distinctly positive vendor negotiation duty as context, so that preference is absent before and after validation.",
+          "preference_case_match": false,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-001",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [],
+          "group": "novel",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The machine referent retains virtually no say and ties it to permit review order despite the affirmative display label. Validation preserves the raw match.",
+          "preference_case_match": true,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-002",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [],
+          "group": "novel",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The machine referent itself confines the objection to jobs built around giving safety briefings. The quote joins posting and reaction, and validation preserves the raw match.",
+          "preference_case_match": true,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-003",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [
+            1
+          ],
+          "group": "novel",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [
+            1
+          ],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The activity and frequency qualifier are supported and the upper bound survives validation. The signal omits the required condition on the positive preference.",
+          "preference_case_match": false,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-004",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [],
+          "evidence_grounded": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 2,
+          "extra_signal_indices": [
+            1
+          ],
+          "group": "novel",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [
+            1,
+            2
+          ],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The raw output marks the independent posting praise as context and labels employer distrust as culture. The quote supports distrust of the employer without evidence about workplace culture. Validation leaves both failures in place.",
+          "preference_case_match": false,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-005",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [],
+          "group": "novel",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The raw output confines the career objection to warehouse operations. Inventory reconciliation explains recognition of the category and supports no independent preference. Validation preserves the raw match.",
+          "preference_case_match": true,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        }
+      ],
+      "clear_case_false_escalation_case_ids": [],
+      "clear_case_false_escalations": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 10
+      },
+      "clear_dimension_scope_accuracy": {
+        "accuracy": 0.3,
+        "correct": 3,
+        "total": 10
+      },
+      "extra_signals": 5,
+      "hard_action_accuracy": {
+        "accuracy": 1.0,
+        "correct": 10,
+        "total": 10
+      },
+      "high_risk_routing_controls": {},
+      "missed_signals": 8,
+      "predictions_sha256": "316d3d6f18fc161c6bcc4b01c154977ce74d6e7118b19fdb714db50dcf6d1395",
+      "quality_gates": {
+        "all_cases_completed": true,
+        "all_designated_high_risk_routes_correct": true,
+        "all_evidence_grounded": false,
+        "all_hard_rule_actions_authorized": true,
+        "all_hard_rules_unchanged": true,
+        "all_predictions_without_validation_issues": false,
+        "all_special_routes_resolved_adequately": true,
+        "clear_dimension_scope_at_least_95_percent": false,
+        "no_unsupported_career_downgrades": true,
+        "semantic_precision_at_least_90_percent": false,
+        "semantic_recall_at_least_90_percent": false
+      },
+      "quality_gates_passed": false,
+      "raw_case_matches": 3,
+      "raw_cases": {
+        "FH-005": {
+          "case_match": false,
+          "emitted_signals": 1,
+          "equivalent_signals": 1,
+          "expected_signals": 2
+        },
+        "FH3-010": {
+          "case_match": false,
+          "emitted_signals": 1,
+          "equivalent_signals": 0,
+          "expected_signals": 1
+        },
+        "FI-033": {
+          "case_match": false,
+          "emitted_signals": 2,
+          "equivalent_signals": 0,
+          "expected_signals": 1
+        },
+        "FI-041": {
+          "case_match": false,
+          "emitted_signals": 1,
+          "equivalent_signals": 1,
+          "expected_signals": 2
+        },
+        "FI-048": {
+          "case_match": false,
+          "emitted_signals": 1,
+          "equivalent_signals": 0,
+          "expected_signals": 1
+        },
+        "FT-001": {
+          "case_match": true,
+          "emitted_signals": 1,
+          "equivalent_signals": 1,
+          "expected_signals": 1
+        },
+        "FT-002": {
+          "case_match": true,
+          "emitted_signals": 1,
+          "equivalent_signals": 1,
+          "expected_signals": 1
+        },
+        "FT-003": {
+          "case_match": false,
+          "emitted_signals": 1,
+          "equivalent_signals": 0,
+          "expected_signals": 1
+        },
+        "FT-004": {
+          "case_match": false,
+          "emitted_signals": 1,
+          "equivalent_signals": 0,
+          "expected_signals": 2
+        },
+        "FT-005": {
+          "case_match": true,
+          "emitted_signals": 1,
+          "equivalent_signals": 1,
+          "expected_signals": 1
+        }
+      },
+      "raw_emitted_signals": 11,
+      "raw_matching_signals": 5,
+      "raw_proposals_sha256": "c7174fae922dfd8aea7b48dab0e988724309c1d6dfe71fddcff2f01e25839f8f",
+      "reviewer": "Codex masked semantic review",
+      "route_accuracy": {
+        "accuracy": 1.0,
+        "correct": 10,
+        "total": 10
+      },
+      "safe_special_routing": {
+        "accuracy": null,
+        "correct": 0,
+        "total": 0
+      },
+      "scenario_count": 10,
+      "semantic_precision": {
+        "accuracy": 0.5,
+        "correct": 5,
+        "total": 10
+      },
+      "semantic_recall": {
+        "accuracy": 0.38461538461538464,
+        "correct": 5,
+        "total": 13
+      },
+      "suite_sha256": "f9709a5f915f6cda44bfe9dfb5901f55bb188bab60464bbfdf5254919a8e8cd6",
+      "validated_case_matches": 3
+    },
+    "candidate": {
+      "cases": [
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-033",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [],
+          "group": "known",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": false,
+          "notes": "The second raw signal captures negative near-zero autonomy through “almost no” in machine scope. Validation drops the first signal, whose negative “More senior role scope” label conflicts with the too-junior evidence and duplicates the same objection. The grounded low-autonomy signal remains.",
+          "preference_case_match": true,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 1
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-048",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [],
+          "evidence_grounded": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [
+            1
+          ],
+          "group": "known",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [
+            1
+          ],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The quote supports avoiding strongly sales-focused work. Both raw and validated machine scopes target sales without the material degree of emphasis, which is present only in the display label and evidence.",
+          "preference_case_match": false,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH3-010",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [
+            1
+          ],
+          "group": "known",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [
+            1
+          ],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "Raw and validated scope retain the one-shift-per-week maximum as a grounded workload qualifier. Both leave the explicit applicability condition empty, so the conditional preference does not match the reference.",
+          "preference_case_match": false,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-041",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              2,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 2,
+          "extra_signal_indices": [],
+          "group": "known",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [
+            1
+          ],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "Employer distrust is grounded and identifies the current employer. Extraction assigned the independent positive AI advisor posting reaction to context, so neither signal list preserves it.",
+          "preference_case_match": false,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-005",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 2,
+          "extra_signal_indices": [],
+          "group": "known",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "Both raw and validated signals keep negative procurement operations career interest and positive vendor negotiation duty interest independent. The career downgrade has direct career-level evidence.",
+          "preference_case_match": true,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-001",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [],
+          "group": "novel",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "Both the referent and intensity qualifier retain virtually no say over the order of permit reviews. Validation preserves the raw match.",
+          "preference_case_match": true,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-002",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [],
+          "group": "novel",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The intensity qualifier limits the objection to jobs built around giving safety briefings. The quote joins the posting language to the user reaction, and validation preserves the raw match.",
+          "preference_case_match": true,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-003",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [
+            1
+          ],
+          "group": "novel",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [
+            1
+          ],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The activity and frequency qualifier are supported and the upper bound survives validation. The signal omits the required condition on the positive preference.",
+          "preference_case_match": false,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-004",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 2,
+          "extra_signal_indices": [],
+          "group": "novel",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The raw output retains both posting-specific praise and distrust of the hiring employer as separate scoped signals. Validation retains both.",
+          "preference_case_match": true,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-005",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [],
+          "group": "novel",
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The raw output confines the career objection to warehouse operations. Inventory reconciliation explains recognition of the category and supports no independent preference. Validation preserves the raw match.",
+          "preference_case_match": true,
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validation_issue_count": 0
+        }
+      ],
+      "clear_case_false_escalation_case_ids": [],
+      "clear_case_false_escalations": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 10
+      },
+      "clear_dimension_scope_accuracy": {
+        "accuracy": 0.6,
+        "correct": 6,
+        "total": 10
+      },
+      "extra_signals": 3,
+      "hard_action_accuracy": {
+        "accuracy": 1.0,
+        "correct": 10,
+        "total": 10
+      },
+      "high_risk_routing_controls": {},
+      "missed_signals": 4,
+      "predictions_sha256": "189721610ff5b53d0848a41118c54176d3f7adc521545f3f61e36f5b52ac7c33",
+      "quality_gates": {
+        "all_cases_completed": true,
+        "all_designated_high_risk_routes_correct": true,
+        "all_evidence_grounded": false,
+        "all_hard_rule_actions_authorized": true,
+        "all_hard_rules_unchanged": true,
+        "all_predictions_without_validation_issues": false,
+        "all_special_routes_resolved_adequately": true,
+        "clear_dimension_scope_at_least_95_percent": false,
+        "no_unsupported_career_downgrades": true,
+        "semantic_precision_at_least_90_percent": false,
+        "semantic_recall_at_least_90_percent": false
+      },
+      "quality_gates_passed": false,
+      "raw_case_matches": 5,
+      "raw_cases": {
+        "FH-005": {
+          "case_match": true,
+          "emitted_signals": 2,
+          "equivalent_signals": 2,
+          "expected_signals": 2
+        },
+        "FH3-010": {
+          "case_match": false,
+          "emitted_signals": 1,
+          "equivalent_signals": 0,
+          "expected_signals": 1
+        },
+        "FI-033": {
+          "case_match": false,
+          "emitted_signals": 2,
+          "equivalent_signals": 1,
+          "expected_signals": 1
+        },
+        "FI-041": {
+          "case_match": false,
+          "emitted_signals": 1,
+          "equivalent_signals": 1,
+          "expected_signals": 2
+        },
+        "FI-048": {
+          "case_match": false,
+          "emitted_signals": 1,
+          "equivalent_signals": 0,
+          "expected_signals": 1
+        },
+        "FT-001": {
+          "case_match": true,
+          "emitted_signals": 1,
+          "equivalent_signals": 1,
+          "expected_signals": 1
+        },
+        "FT-002": {
+          "case_match": true,
+          "emitted_signals": 1,
+          "equivalent_signals": 1,
+          "expected_signals": 1
+        },
+        "FT-003": {
+          "case_match": false,
+          "emitted_signals": 1,
+          "equivalent_signals": 0,
+          "expected_signals": 1
+        },
+        "FT-004": {
+          "case_match": true,
+          "emitted_signals": 2,
+          "equivalent_signals": 2,
+          "expected_signals": 2
+        },
+        "FT-005": {
+          "case_match": true,
+          "emitted_signals": 1,
+          "equivalent_signals": 1,
+          "expected_signals": 1
+        }
+      },
+      "raw_emitted_signals": 13,
+      "raw_matching_signals": 9,
+      "raw_proposals_sha256": "c156faf7313649086875bebecdd2d95f1cbc5e1a8fe749ec29e52eac32acc3c2",
+      "reviewer": "Codex masked semantic review",
+      "route_accuracy": {
+        "accuracy": 1.0,
+        "correct": 10,
+        "total": 10
+      },
+      "safe_special_routing": {
+        "accuracy": null,
+        "correct": 0,
+        "total": 0
+      },
+      "scenario_count": 10,
+      "semantic_precision": {
+        "accuracy": 0.75,
+        "correct": 9,
+        "total": 12
+      },
+      "semantic_recall": {
+        "accuracy": 0.6923076923076923,
+        "correct": 9,
+        "total": 13
+      },
+      "suite_sha256": "f9709a5f915f6cda44bfe9dfb5901f55bb188bab60464bbfdf5254919a8e8cd6",
+      "validated_case_matches": 6
+    }
+  },
+  "configuration_sha256": "15ccacd1bac038d4a786bc7107fd633f4a28377fc1aea5c55849ec20d935e320",
+  "ordered_references_sha256": "f9709a5f915f6cda44bfe9dfb5901f55bb188bab60464bbfdf5254919a8e8cd6",
+  "trial_gates": {
+    "candidate_raw_preferences_complete": false,
+    "candidate_recovers_a_known_miss": true,
+    "candidate_routing_and_safety": false,
+    "candidate_validated_preferences_complete": false
+  }
+}

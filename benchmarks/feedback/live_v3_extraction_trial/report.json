@@ -1,0 +1,333 @@
+{
+  "arms": {
+    "baseline": {
+      "cases": [
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-033",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": [
+            {
+              "field": "signals",
+              "index": 0,
+              "message": "Invalid signal label, dimension, scope, polarity, or strength."
+            }
+          ]
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-048",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH3-010",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-041",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-005",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-001",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-002",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-003",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-004",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-005",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        }
+      ],
+      "execution_errors": {},
+      "hard_actions": {
+        "UNCHANGED": 10
+      },
+      "raw_proposals_file": "baseline.proposals.json",
+      "raw_proposals_sha256": "c7174fae922dfd8aea7b48dab0e988724309c1d6dfe71fddcff2f01e25839f8f",
+      "routes": {
+        "PENDING_APPROVAL": 10
+      },
+      "validated_file": "baseline.json",
+      "validated_sha256": "316d3d6f18fc161c6bcc4b01c154977ce74d6e7118b19fdb714db50dcf6d1395",
+      "validation_issue_count": 1
+    },
+    "candidate": {
+      "cases": [
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-033",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": [
+            {
+              "field": "signals",
+              "index": 0,
+              "message": "Invalid signal label, dimension, scope, polarity, or strength."
+            }
+          ]
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-048",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH3-010",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FI-041",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FH-005",
+          "emitted_signals": 2,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-001",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-002",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-003",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-004",
+          "emitted_signals": 2,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "case_id": "FT-005",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "validation_issues": []
+        }
+      ],
+      "execution_errors": {},
+      "hard_actions": {
+        "UNCHANGED": 10
+      },
+      "raw_proposals_file": "candidate.proposals.json",
+      "raw_proposals_sha256": "c156faf7313649086875bebecdd2d95f1cbc5e1a8fe749ec29e52eac32acc3c2",
+      "routes": {
+        "PENDING_APPROVAL": 10
+      },
+      "validated_file": "candidate.json",
+      "validated_sha256": "189721610ff5b53d0848a41118c54176d3f7adc521545f3f61e36f5b52ac7c33",
+      "validation_issue_count": 1
+    }
+  },
+  "configuration_sha256": "15ccacd1bac038d4a786bc7107fd633f4a28377fc1aea5c55849ec20d935e320",
+  "request_log": [
+    {
+      "arm": "baseline",
+      "case_id": "FI-033",
+      "elapsed_seconds": 3.674
+    },
+    {
+      "arm": "candidate",
+      "case_id": "FI-033",
+      "elapsed_seconds": 2.93
+    },
+    {
+      "arm": "candidate",
+      "case_id": "FI-048",
+      "elapsed_seconds": 2.004
+    },
+    {
+      "arm": "baseline",
+      "case_id": "FI-048",
+      "elapsed_seconds": 2.326
+    },
+    {
+      "arm": "baseline",
+      "case_id": "FH3-010",
+      "elapsed_seconds": 2.391
+    },
+    {
+      "arm": "candidate",
+      "case_id": "FH3-010",
+      "elapsed_seconds": 3.695
+    },
+    {
+      "arm": "candidate",
+      "case_id": "FI-041",
+      "elapsed_seconds": 2.654
+    },
+    {
+      "arm": "baseline",
+      "case_id": "FI-041",
+      "elapsed_seconds": 2.403
+    },
+    {
+      "arm": "baseline",
+      "case_id": "FH-005",
+      "elapsed_seconds": 2.316
+    },
+    {
+      "arm": "candidate",
+      "case_id": "FH-005",
+      "elapsed_seconds": 2.923
+    },
+    {
+      "arm": "candidate",
+      "case_id": "FT-001",
+      "elapsed_seconds": 2.416
+    },
+    {
+      "arm": "baseline",
+      "case_id": "FT-001",
+      "elapsed_seconds": 2.308
+    },
+    {
+      "arm": "baseline",
+      "case_id": "FT-002",
+      "elapsed_seconds": 2.227
+    },
+    {
+      "arm": "candidate",
+      "case_id": "FT-002",
+      "elapsed_seconds": 2.315
+    },
+    {
+      "arm": "candidate",
+      "case_id": "FT-003",
+      "elapsed_seconds": 2.109
+    },
+    {
+      "arm": "baseline",
+      "case_id": "FT-003",
+      "elapsed_seconds": 2.172
+    },
+    {
+      "arm": "baseline",
+      "case_id": "FT-004",
+      "elapsed_seconds": 2.834
+    },
+    {
+      "arm": "candidate",
+      "case_id": "FT-004",
+      "elapsed_seconds": 2.66
+    },
+    {
+      "arm": "candidate",
+      "case_id": "FT-005",
+      "elapsed_seconds": 2.398
+    },
+    {
+      "arm": "baseline",
+      "case_id": "FT-005",
+      "elapsed_seconds": 2.273
+    }
+  ],
+  "requests_completed": 20,
+  "score_status": "automated_diagnostics_only"
+}

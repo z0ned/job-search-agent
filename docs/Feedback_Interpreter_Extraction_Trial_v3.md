@@ -29,3 +29,41 @@ PYTHONPATH=src python -m job_search_agent.feedback_extraction_trial_v3 \
 ```
 
 Use a new output directory. The configuration records the paired cases, input and instruction fingerprints, and arm order. Each arm has a raw proposal file and a validated prediction file.
+
+## Trial results
+
+**Decision for review.** The candidate improved validated case matches from **3/10 to 6/10**. It missed the frozen promotion criteria, so keep it experimental and defer the full benchmark. [Semantic scorecard](../benchmarks/feedback/live_v3_extraction_trial/semantic-report.json)
+
+The fixtures, candidate instructions, and trial protocol were committed in `068ea41abe8bd3553df9c637fb795b5134f5de8a` before inference. All 20 requests completed in 51.0 seconds of summed request time with zero API errors. Masked Codex reviewers scored knowledge of the original case wording, raw proposals, and validated records against the same references. They reviewed each variant separately from its prompt identity. [Configuration](../benchmarks/feedback/live_v3_extraction_trial/configuration.json) · [Masked review verdicts](../benchmarks/feedback/live_v3_extraction_trial/adjudications.json)
+
+| Measure | Current prompt | Candidate |
+| --- | ---: | ---: |
+| Full raw case matches | 3/10 | 5/10 |
+| Full validated case matches | 3/10 | 6/10 |
+| Known validated case matches | 0/5 | 2/5 |
+| Novel validated case matches | 3/5 | 4/5 |
+| Validated semantic recall | 5/13 | 9/13 |
+| Validated semantic precision | 5/10 | 9/12 |
+| Expected review routes | 10/10 | 10/10 |
+| Expected hard-rule actions | 10/10 | 10/10 |
+| Rejected raw signal records | 1 | 1 |
+
+Both arms held every accepted signal for review. The adjudication found no unsupported career downgrade or unauthorized hard-rule action. Each arm had one invalid scope record on FI-033. Every case in this trial expects `PENDING_APPROVAL` and an unchanged hard-rule action. The routing comparison covers that tested scope. [Live diagnostics](../benchmarks/feedback/live_v3_extraction_trial/report.json)
+
+### What improved
+
+- **FI-033.** The candidate grounds the objection in **almost no decision-making autonomy** and preserves the limit in machine scope. Its extra posting-level signal fails validation, so the case matches only after validation.
+- **FH-005.** The candidate preserves the positive vendor-negotiation duty alongside the explicit negative procurement-operations career preference in both raw and validated output.
+- **FT-004.** The candidate retains posting-specific praise and employer distrust as two separately scoped reactions.
+- **FT-005.** Both arms keep the career objection and treat its explanation as context. This guards against creating a second preference merely because a phrase accompanies the first.
+
+### What remains
+
+| Case | Finding in both arms |
+| --- | --- |
+| FI-048 | The scope is generic sales. Strong sales emphasis appears in display text and evidence only. |
+| FH3-010 | The bound of one shift per week appears as a scope qualifier. The explicit applicability condition is absent. |
+| FI-041 | The independent positive reaction to the specific posting is omitted during extraction. |
+| FT-003 | The new conditional example also preserves its frequency bound and omits its applicability condition. |
+
+The raw proposals locate these four remaining misses in extraction. The next comparison should verify explicit condition fields and independently evaluated targets before another full run. Learning integration remains on hold.
