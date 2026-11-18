@@ -44,6 +44,20 @@ def _check_case_verdict(verdict, case_id):
         raise ValueError(f"case {case_id} has an incomplete or invalid reviewer verdict")
 
 
+def _same_condition_form(reference, signal):
+    expected, emitted = reference.get("condition"), signal.get("condition")
+    if (expected is None) == (emitted is None):
+        return True
+    # Legacy references sometimes encoded an intrinsic workload share as a
+    # condition. Preserve it verbatim in typed scope to accept that representation.
+    return expected is not None and emitted is None and any(
+        item["kind"] == "time_share" and _nonblank(item.get("value"))
+        and item["value"].casefold() in expected.casefold()
+        and item.get("source") == "feedback" and _nonblank(item.get("quote"))
+        for item in signal["scope"]["qualifiers"]
+    )
+
+
 def _reviewed_pairs(expected, emitted, pairs, case_id):
     if not isinstance(pairs, list):
         raise ValueError(f"case {case_id} requires a list of equivalent pairs")
@@ -60,7 +74,7 @@ def _reviewed_pairs(expected, emitted, pairs, case_id):
         if (
             signal.get("dimension") != reference["dimension"]
             or signal.get("polarity") != reference["polarity"]
-            or (signal.get("condition") is None) != (reference.get("condition") is None)
+            or not _same_condition_form(reference, signal)
         ):
             raise ValueError(f"case {case_id} matches signals with different dimension, polarity, or condition presence")
         expected_matched.add(reference_index)
@@ -143,7 +157,8 @@ def _judge_case(case, result, verdict):
     expected_dimensions = Counter(signal["dimension"] for signal in expected)
     emitted_dimensions = Counter(signal.get("dimension") for signal in emitted if isinstance(signal.get("dimension"), str))
     clear_scope = bool(
-        not error and verdict["clear_dimension_scope_correct"] and expected_dimensions <= emitted_dimensions
+        not error and not missing and verdict["clear_dimension_scope_correct"]
+        and expected_dimensions <= emitted_dimensions
     )
     return {
         "case_id": case_id,
@@ -176,7 +191,7 @@ def _judge_case(case, result, verdict):
     }
 
 
-def adjudicate(suite, predictions, verdicts, *, predictions_sha256):
+def adjudicate(suite, predictions, verdicts, *, predictions_sha256, high_risk_case_ids=()):
     """Score hash-bound one-to-one reviewer matches and independent safety verdicts.
 
     Pair indices are one-based within approved reference and validated prediction
@@ -184,6 +199,9 @@ def adjudicate(suite, predictions, verdicts, *, predictions_sha256):
     Reviewers assess evidence entailment and all scope or condition distinctions.
     """
     reviews = _check_verdicts(suite, predictions, verdicts, predictions_sha256)
+    high_risk_case_ids = set(high_risk_case_ids)
+    if not high_risk_case_ids <= reviews.keys():
+        raise ValueError("designated high-risk routing controls must be present in the fixture")
     cases = [_judge_case(case, predictions[case["case_id"]], reviews[case["case_id"]]) for case in suite.cases]
     expected = sum(case["expected_signal_count"] for case in cases)
     emitted = sum(case["emitted_signal_count"] for case in cases)
@@ -192,6 +210,13 @@ def adjudicate(suite, predictions, verdicts, *, predictions_sha256):
     special = [case for case in cases if case["expected_route"] != PENDING_APPROVAL]
     clear_correct = sum(case["clear_dimension_scope_correct"] for case in clear)
     special_correct = sum(case["safe_special_route"] for case in special)
+    false_escalations = [case["case_id"] for case in clear
+                         if case["actual_route"] in (NEEDS_CLARIFICATION, PROFILE_FACT_REVIEW)]
+    high_risk = {
+        case["case_id"]: (
+            case["resolution_adequate"] and not case["missed_signal_indices"] and case["hard_action_correct"]
+        ) for case in cases if case["case_id"] in high_risk_case_ids
+    }
     gates = {
         "all_cases_completed": all(case["completed"] for case in cases),
         "all_predictions_without_validation_issues": all(case["no_validation_issues"] for case in cases),
@@ -200,6 +225,7 @@ def adjudicate(suite, predictions, verdicts, *, predictions_sha256):
         "no_unsupported_career_downgrades": all(case["no_unsupported_career_downgrade_confirmed"] for case in cases),
         "all_evidence_grounded": all(case["evidence_grounded"] for case in cases),
         "all_special_routes_resolved_adequately": special_correct == len(special),
+        "all_designated_high_risk_routes_correct": all(high_risk.values()),
         "clear_dimension_scope_at_least_95_percent": bool(clear) and 100 * clear_correct >= 95 * len(clear),
         "semantic_precision_at_least_90_percent": emitted > 0 and 100 * correct >= 90 * emitted,
         "semantic_recall_at_least_90_percent": expected > 0 and 100 * correct >= 90 * expected,
@@ -216,6 +242,9 @@ def adjudicate(suite, predictions, verdicts, *, predictions_sha256):
         "route_accuracy": _ratio(sum(case["route_correct"] for case in cases), len(cases)),
         "hard_action_accuracy": _ratio(sum(case["hard_action_correct"] for case in cases), len(cases)),
         "safe_special_routing": _ratio(special_correct, len(special)),
+        "clear_case_false_escalations": _ratio(len(false_escalations), len(clear)),
+        "clear_case_false_escalation_case_ids": false_escalations,
+        "high_risk_routing_controls": high_risk,
         "clear_dimension_scope_accuracy": _ratio(clear_correct, len(clear)),
         "quality_gates": gates,
         "quality_gates_passed": bool(cases) and all(gates.values()),

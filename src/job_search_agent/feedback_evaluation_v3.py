@@ -23,6 +23,11 @@ from .feedback_v3 import _feature_id, _label_key, interpret_feedback_v3
 
 
 SUITE_COUNTS = {"gold": 50, "regression": 12, "holdout": 12}
+HIGH_RISK_CASE_IDS = {
+    "gold": ("FI-012", "FI-016", "FI-035"),
+    "regression": ("FH-003", "FH-007", "FH-012"),
+    "holdout": ("FH3-001", "FH3-002", "FH3-006", "FH3-007", "FH3-008", "FH3-012"),
+}
 PASS_COUNT = 2
 BENCHMARK_VERSION = "3.0"
 
@@ -102,11 +107,14 @@ def _valid_anchor(anchor, case, revision, *, assertion=False):
     if anchor.get("origin") == "job_context" and not assertion:
         context = case["job_context"]
         key = anchor.get("key")
-        return isinstance(key, str) and key in context and anchor.get("value") == context[key]
+        return (anchor.get("role") == "context_only" and isinstance(key, str) and key in context
+                and type(anchor.get("value")) is type(context[key])
+                and anchor["value"] == context[key])
     start, end = anchor.get("start"), anchor.get("end")
     feedback = case["original_feedback"]
     return (
         anchor.get("origin") == "feedback" and anchor.get("source_revision") == revision
+        and (not assertion or anchor.get("role") == "preference")
         and type(start) is int and type(end) is int and 0 <= start < end <= len(feedback)
         and feedback[start:end] == anchor.get("quote")
     )
@@ -123,13 +131,19 @@ def _structured_signal(signal):
         or not _nonblank(scope.get("referent")) or not isinstance(scope.get("qualifiers"), list)
         or signal.get("polarity") not in ("positive", "negative", "uncertain")
         or signal.get("strength") not in ("strong", "mild") or (feature is not None and not _nonblank(feature))
+        or signal.get("identity_status") != ("registered" if feature else "candidate")
+        or signal.get("application_status") != "held_for_review"
         or not isinstance(evidence, list) or not evidence or not isinstance(evidence[0], Mapping)
-        or (condition is not None and (not isinstance(condition, Mapping) or not _nonblank(condition.get("quote"))))
+        or (condition is not None and (not isinstance(condition, Mapping)
+                                     or not all(_nonblank(condition.get(key)) for key in ("kind", "value", "quote"))))
     ):
         return False
-    return all(
+    qualifiers_valid = all(
         isinstance(qualifier, Mapping) and _nonblank(qualifier.get("kind")) and _has_value(qualifier.get("value"))
         for qualifier in scope["qualifiers"]
+    )
+    return qualifiers_valid and feature == _feature_id(
+        signal["dimension"], signal["display_label"], scope, signal["polarity"],
     )
 
 
@@ -207,12 +221,16 @@ def evaluate_v3(suite, prediction):
     emitted = sum(case["emitted_signals"] for case in cases)
     literal = sum(case["literal_matches"] for case in cases)
     canonical = sum(case["registered_identity_matches"] for case in cases)
+    clear = [case for case in cases if case["expected_route"] == CLEAR]
+    false_escalations = [case["case_id"] for case in clear if case["actual_route"] in (CLARIFY, PROFILE_FACT)]
     return {
         "score_status": "provisional_automation",
         "scenario_count": len(cases),
         "route_accuracy": _ratio(sum(case["route_correct"] for case in cases), len(cases)),
         "hard_action_accuracy": _ratio(sum(case["action_correct"] for case in cases), len(cases)),
         "routes_with_required_resolution_fields": _ratio(sum(case["resolution_shape_ok"] for case in cases), len(cases)),
+        "clear_case_false_escalations": _ratio(len(false_escalations), len(clear)),
+        "clear_case_false_escalation_case_ids": false_escalations,
         "literal_exact_case_match": _ratio(sum(case["literal_exact_case_match"] for case in cases), len(cases)),
         "literal_signal_precision": _ratio(literal, emitted),
         "literal_signal_recall": _ratio(literal, expected),
@@ -261,16 +279,64 @@ def _live_configuration(args, suite, started_at):
         "benchmark_version": BENCHMARK_VERSION, "taxonomy_version": TAXONOMY_VERSION,
         "suite_kind": args.suite, "suite_file": str(args.scenarios), "suite_version": suite.version,
         "suite_sha256": suite.sha256, "scenario_count": len(suite.cases), "hard_rules": suite.hard_rules,
+        "high_risk_routing_case_ids": HIGH_RISK_CASE_IDS[args.suite],
         "hard_rules_sha256": _fingerprint(suite.hard_rules), "started_at_utc": started_at,
         "python_version": sys.version.split()[0],
         "inputs": {
             case["case_id"]: {
                 "original_feedback_sha256": sha256(case["original_feedback"].encode()).hexdigest(),
                 "job_context_sha256": _fingerprint(case["job_context"]),
+                "case_input_sha256": _fingerprint({
+                    "decision": case["decision"], "original_feedback": case["original_feedback"],
+                    "job_context": case["job_context"], "hard_rules": suite.hard_rules,
+                }),
             } for case in suite.cases
         },
     }
     return configuration
+
+
+def _pass_stability(suite, predictions, reports):
+    if len(predictions) != PASS_COUNT:
+        return None
+    not_verified = {
+        case["case_id"] for report in reports for case in report["cases"]
+        if case.get("execution_error") or case["validation_issues"]
+    }
+    literal_changes, registered_changes = [], []
+    for case in suite.cases:
+        case_id = case["case_id"]
+        if case_id in not_verified:
+            continue
+        literal, registered = [], []
+        for pred in predictions:
+            result = pred[case_id]
+            route = result["review_status"], result["hard_constraint_action"]
+            signal_literals, signal_registry = Counter(), Counter()
+            for signal in result["interpretations"]:
+                exact = _exact_identity(signal, reference=False)
+                condition = signal.get("condition")
+                typed_condition = (condition.get("kind"), condition.get("value")) if condition else None
+                literal_key = (*exact[:6], typed_condition, exact[-1])
+                registry_key = _canonical_identity(signal, reference=False)
+                signal_literals[literal_key] += 1
+                signal_registry[("candidate", literal_key) if registry_key is None else (
+                    "registered", *registry_key[:-1], typed_condition, signal["strength"],
+                )] += 1
+            literal.append((route, signal_literals))
+            registered.append((route, signal_registry))
+        if literal[0] != literal[1]:
+            literal_changes.append(case_id)
+        if registered[0] != registered[1]:
+            registered_changes.append(case_id)
+    total = len(suite.cases)
+    return {
+        "score_status": "provisional_automation",
+        "literal_unchanged": _ratio(total - len(not_verified) - len(literal_changes), total),
+        "registered_identity_unchanged": _ratio(total - len(not_verified) - len(registered_changes), total),
+        "literal_changed_case_ids": literal_changes, "registered_identity_changed_case_ids": registered_changes,
+        "unverified_case_ids": sorted(not_verified),
+    }
 
 
 def main(argv=None):
@@ -295,7 +361,7 @@ def main(argv=None):
 
     started = perf_counter()
     started_at = datetime.now(UTC).isoformat(timespec="seconds")
-    reports = []
+    reports, all_predictions = [], []
     try:
         suite = load_v3_suite(args.scenarios, args.suite)
         configuration = _live_configuration(args, suite, started_at)
@@ -309,15 +375,21 @@ def main(argv=None):
                     from .feedback_adjudication_v3 import adjudicate
 
                     verdict_data, verdicts = _read_json(args.adjudications[number - 1])
-                    report["adjudication"] = adjudicate(suite, predictions, verdicts, predictions_sha256=prediction_hash)
+                    report["adjudication"] = adjudicate(
+                        suite, predictions, verdicts, predictions_sha256=prediction_hash,
+                        high_risk_case_ids=HIGH_RISK_CASE_IDS[args.suite],
+                    )
                     report["adjudications_sha256"] = sha256(verdict_data).hexdigest()
                 reports.append(report)
+                all_predictions.append(predictions)
         else:
             first_provider = OpenAIFeedbackProviderV3(args.model, temperature=args.temperature)
             source = {
                 "mode": "live", "requested_model": first_provider.model, "temperature_override": args.temperature,
                 "prompt_version": extraction.PROMPT_VERSION, "passes": PASS_COUNT,
                 "extraction_source_sha256": sha256(Path(extraction.__file__).read_bytes()).hexdigest(),
+                "instructions_sha256": sha256(extraction._INSTRUCTIONS.encode()).hexdigest(),
+                "proposal_schema_sha256": _fingerprint(extraction._PROPOSAL_SCHEMA),
             }
             args.save_predictions.mkdir(parents=True)
             configuration_hash = _save_json(args.save_predictions / "configuration.json", {
@@ -328,17 +400,20 @@ def main(argv=None):
                             else OpenAIFeedbackProviderV3(first_provider.model, temperature=args.temperature))
                 predictions, metadata = _capture_pass(suite, provider, number, args.save_predictions)
                 reports.append({**evaluate_v3(suite, predictions), **metadata})
+                all_predictions.append(predictions)
             configuration["capture_configuration_sha256"] = configuration_hash
     except (ValueError, OSError, FeedbackProviderError) as error:
         print(f"Benchmark could not complete. {error}", file=sys.stderr)
         return 2
 
-    repeated = len(reports) == PASS_COUNT and all(not report["execution_errors"] for report in reports)
+    completed = len(reports) == PASS_COUNT and all(not report["execution_errors"] for report in reports)
+    repeated = completed and all(not report["validation_issue_count"] for report in reports)
     adjudicated = bool(args.adjudications)
     passed = repeated and adjudicated and all(report["adjudication"]["quality_gates_passed"] for report in reports)
     result = {
         "configuration": configuration, "evaluation_source": source, "runs": reports,
-        "elapsed_seconds": round(perf_counter() - started, 3), "repeated_pass_requirement_met": repeated,
+        "elapsed_seconds": round(perf_counter() - started, 3), "two_complete_passes": completed,
+        "repeated_pass_requirement_met": repeated, "automated_stability": _pass_stability(suite, all_predictions, reports),
         "score_status": "adjudicated" if adjudicated else "provisional_automation",
         "quality_gates_passed": passed,
     }

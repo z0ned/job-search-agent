@@ -1,0 +1,1558 @@
+{
+  "FI-001": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I would spend my days creating status decks. That is not the work I want.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Does not want work focused on creating status decks",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "time_share",
+              "quote": "spend my days creating status decks",
+              "source": "feedback",
+              "value": "my days"
+            }
+          ],
+          "referent": "creating status decks",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-002": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I love solving client problems",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "running AI solution workshops.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Solving client problems",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "solving client problems",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Running AI solution workshops",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "running AI solution workshops",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-003": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "The advisory work appeals to me",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "but I do not want a sales quota.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Advisory work",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "advisory work",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Sales quota",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "sales quota",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-004": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I enjoy delivering concrete transformation milestones on short contracts.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "growth_purpose",
+        "display_label": "Enjoys delivering concrete transformation milestones",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "employment_type",
+              "quote": "short contracts",
+              "source": "feedback",
+              "value": "short contracts"
+            }
+          ],
+          "referent": "delivering concrete transformation milestones",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      },
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "contract_terms",
+        "display_label": "Prefers short contracts",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "short contracts",
+          "type": "contract_term"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FI-005": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I do not want to return to contact-center operations roles.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Does not want contact-center operations roles",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "contact-center operations roles",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-006": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "AI enablement is a career direction I would love to explore, even if I need training.",
+        "role": "preference"
+      },
+      {
+        "detail": "Openness despite needing training",
+        "quote": "even if I need training.",
+        "role": "context"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Interest in AI enablement career direction",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "AI enablement",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-007": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I am not interested in another core-banking replacement transformation.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Not interested in core-banking replacement transformation work",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "career_context",
+              "quote": "another",
+              "source": "feedback",
+              "value": "another"
+            }
+          ],
+          "referent": "core-banking replacement transformation",
+          "type": "project_type"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-008": {
+    "clauses": [
+      {
+        "detail": "Acknowledges the role title positively without a separate concrete preference target.",
+        "quote": "The title sounds fine,",
+        "role": "context"
+      },
+      {
+        "detail": null,
+        "quote": "rotating overnight on-call duties would be draining.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Dislikes rotating overnight on-call duties",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "schedule",
+              "quote": "overnight on-call",
+              "source": "feedback",
+              "value": "overnight on-call"
+            },
+            {
+              "kind": "frequency",
+              "quote": "rotating",
+              "source": "feedback",
+              "value": "rotating"
+            }
+          ],
+          "referent": "rotating overnight on-call duties",
+          "type": "schedule"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FI-009": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I like the client-facing AI work",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "$110/hour is too low for this C2C job.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Likes client-facing AI work",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "client-facing AI work",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "compensation",
+        "display_label": "$110/hour too low for this C2C job",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "amount",
+              "quote": "$110/hour",
+              "source": "feedback",
+              "value": "110"
+            },
+            {
+              "kind": "currency",
+              "quote": "hourly_rate_usd",
+              "source": "job_context",
+              "value": "USD"
+            },
+            {
+              "kind": "compensation_unit",
+              "quote": "$110/hour",
+              "source": "feedback",
+              "value": "hour"
+            },
+            {
+              "kind": "employment_type",
+              "quote": "C2C job",
+              "source": "feedback",
+              "value": "C2C"
+            }
+          ],
+          "referent": "$110/hour for this C2C job",
+          "type": "compensation_context"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-010": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "The $140/hour C2C rate works for this opportunity",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "the scope is attractive.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "compensation",
+        "display_label": "$140/hour C2C rate for this opportunity",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "amount",
+              "quote": "$140/hour",
+              "source": "feedback",
+              "value": "140"
+            },
+            {
+              "kind": "currency",
+              "quote": "hourly_rate_usd",
+              "source": "job_context",
+              "value": "USD"
+            },
+            {
+              "kind": "compensation_unit",
+              "quote": "$140/hour",
+              "source": "feedback",
+              "value": "hour"
+            },
+            {
+              "kind": "employment_type",
+              "quote": "C2C",
+              "source": "feedback",
+              "value": "C2C"
+            }
+          ],
+          "referent": "$140/hour C2C rate for this opportunity",
+          "type": "compensation_context"
+        },
+        "strength": "mild"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "scope of this role",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "scope of this role",
+          "type": "posting_role"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FI-011": {
+    "clauses": [
+      {
+        "detail": "User accepts the posted rate for this opportunity.",
+        "quote": "The $80/hour rate is fine.",
+        "role": "context"
+      },
+      {
+        "detail": null,
+        "quote": "I only dislike the onsite schedule.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Dislikes onsite schedule",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "onsite schedule",
+          "type": "schedule"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-012": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "The $190,000 base salary is acceptable;",
+        "role": "preference"
+      },
+      {
+        "detail": "Verify the bonus details for this opportunity.",
+        "quote": "I would need details on the bonus.",
+        "role": "posting_verification"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "compensation",
+        "display_label": "Accepts this job's $190,000 base salary",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "amount",
+              "quote": "$190,000",
+              "source": "feedback",
+              "value": "190000"
+            },
+            {
+              "kind": "currency",
+              "quote": "$190,000",
+              "source": "feedback",
+              "value": "USD"
+            },
+            {
+              "kind": "compensation_unit",
+              "quote": "base_salary_usd",
+              "source": "job_context",
+              "value": "annual"
+            }
+          ],
+          "referent": "this opportunity's base salary",
+          "type": "compensation_context"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FI-013": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "This could be fun,",
+        "role": "context"
+      },
+      {
+        "detail": null,
+        "quote": "but $175,000 base is below my established minimum.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "compensation",
+        "display_label": "Base salary below established minimum for this permanent role",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "amount",
+              "quote": "$175,000",
+              "source": "feedback",
+              "value": "175000"
+            },
+            {
+              "kind": "currency",
+              "quote": "$175,000",
+              "source": "feedback",
+              "value": "USD"
+            },
+            {
+              "kind": "compensation_unit",
+              "quote": "base_salary_usd",
+              "source": "job_context",
+              "value": "annual"
+            },
+            {
+              "kind": "employment_type",
+              "quote": "employment_type",
+              "source": "job_context",
+              "value": "permanent"
+            }
+          ],
+          "referent": "base salary for this permanent role",
+          "type": "compensation_context"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-014": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "At $120/hour I still worry about months without billable work.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "contract_terms",
+        "display_label": "Concern about gaps in billable work on contract engagements",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "amount",
+              "quote": "$120",
+              "source": "feedback",
+              "value": "120"
+            },
+            {
+              "kind": "currency",
+              "quote": "$120",
+              "source": "feedback",
+              "value": "USD"
+            },
+            {
+              "kind": "compensation_unit",
+              "quote": "/hour",
+              "source": "feedback",
+              "value": "hourly"
+            }
+          ],
+          "referent": "months without billable work",
+          "type": "contract_term"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FI-015": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I do not want to invest time with employers who refuse to disclose base salary.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "compensation",
+        "display_label": "Opposes employers that refuse to disclose base salary",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "base salary disclosure by employers",
+          "type": "compensation_transparency"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-016": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "The mission really resonates with me.",
+        "role": "preference"
+      },
+      {
+        "detail": "Whether the opportunity's compensation is acceptable or disclosed.",
+        "quote": "I would need to confirm compensation.",
+        "role": "posting_verification"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "growth_purpose",
+        "display_label": "Resonates with the mission",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "the posting's mission",
+          "type": "mission"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-017": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I am uncomfortable with Northstar Tech after its recent layoffs.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Discomfort with Northstar Tech",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Northstar Tech",
+          "type": "employer"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FI-018": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I do not want to work in the tobacco industry.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "industry",
+        "display_label": "Tobacco industry",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "tobacco industry",
+          "type": "industry"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-019": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "Helping small nonprofits apply AI would be meaningful to me.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "growth_purpose",
+        "display_label": "Meaningful work helping small nonprofits apply AI",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "organization_size",
+              "quote": "small nonprofits",
+              "source": "feedback",
+              "value": "small"
+            }
+          ],
+          "referent": "helping small nonprofits apply AI",
+          "type": "mission"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FI-020": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I would hate a manager who micromanages every decision.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "culture_environment",
+        "display_label": "Dislikes micromanaging manager",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "manager who micromanages every decision",
+          "type": "culture_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-021": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I admire Verity Labs because the technical team seems thoughtful and collaborative.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "culture_environment",
+        "display_label": "Positive reaction to thoughtful and collaborative technical team culture at Verity Labs",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Verity Labs",
+          "type": "employer"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FI-022": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I would do this job for a different firm, but not for Ridgetop Bank.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Not interested in Ridgetop Bank for this job",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "career_context",
+              "quote": "this job",
+              "source": "feedback",
+              "value": "this job"
+            }
+          ],
+          "referent": "Ridgetop Bank",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-023": {
+    "clauses": [
+      {
+        "detail": "Reports a conflict between the job's hybrid on-site distance and the user's confirmed commute rule.",
+        "quote": "The three-days-in-office arrangement 45 miles away breaks my distance rule.",
+        "role": "job_fact"
+      }
+    ],
+    "signals": []
+  },
+  "FI-024": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I like being fully remote",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "could focus on the client work.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Likes fully remote work",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "work_mode",
+              "quote": "fully remote",
+              "source": "feedback",
+              "value": "remote"
+            }
+          ],
+          "referent": "fully remote",
+          "type": "arrangement"
+        },
+        "strength": "mild"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Interested in focusing on client work",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "client work",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FI-025": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "The required night and weekend coverage would interfere with my personal time.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Dislikes required night and weekend coverage",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "schedule",
+              "quote": "night and weekend coverage",
+              "source": "feedback",
+              "value": "night and weekend coverage"
+            }
+          ],
+          "referent": "required night and weekend coverage",
+          "type": "schedule"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-026": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "Hybrid is appealing at this nearby office, only six miles from home.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Appeal of hybrid arrangement at nearby office",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "distance",
+              "quote": "six miles from home",
+              "source": "feedback",
+              "value": "6"
+            }
+          ],
+          "referent": "hybrid at this nearby office",
+          "type": "arrangement"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FI-027": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "Flying every week would wear me out",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "occasional trips are okay.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Frequent weekly travel",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "frequency",
+              "quote": "every week",
+              "source": "feedback",
+              "value": "every week"
+            },
+            {
+              "kind": "travel_mode",
+              "quote": "Flying",
+              "source": "feedback",
+              "value": "flying"
+            }
+          ],
+          "referent": "flying",
+          "type": "travel_frequency"
+        },
+        "strength": "strong"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Occasional travel",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "frequency",
+              "quote": "occasional",
+              "source": "feedback",
+              "value": "occasional"
+            }
+          ],
+          "referent": "trips",
+          "type": "travel_frequency"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FI-028": {
+    "clauses": [
+      {
+        "detail": "Reports the job's onsite schedule and commute distance.",
+        "quote": "I would have to be onsite Mondays and Fridays, and it is 20 miles away.",
+        "role": "job_fact"
+      }
+    ],
+    "signals": []
+  },
+  "FI-029": {
+    "clauses": [
+      {
+        "detail": "What about the commute is the problem—distance, time, traffic, cost, or required onsite frequency?",
+        "quote": "The commute is a problem.",
+        "role": "vague_reaction"
+      }
+    ],
+    "signals": []
+  },
+  "FI-030": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I like being the trusted hands-on expert without managing a large team.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "seniority_scope",
+        "display_label": "Prefers individual-expert scope over managing a large team",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "organization_size",
+              "quote": "large team",
+              "source": "feedback",
+              "value": "large team"
+            }
+          ],
+          "referent": "being the trusted hands-on expert without managing a large team",
+          "type": "seniority_feature"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FI-031": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "Directly managing 20 people is not what I want to spend my time doing.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "seniority_scope",
+        "display_label": "Does not want direct management of a 20-person team",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "quantity",
+              "quote": "20 people",
+              "source": "feedback",
+              "value": "20"
+            }
+          ],
+          "referent": "directly managing 20 people",
+          "type": "seniority_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-032": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "Owning a larger AI transformation portfolio is exactly the stretch I want.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "growth_purpose",
+        "display_label": "Wants stretch through owning a larger AI transformation portfolio",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "owning a larger AI transformation portfolio",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-033": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "This is too junior;",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "I would have almost no decision-making autonomy.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "seniority_scope",
+        "display_label": "Too junior",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Project Manager role at Redstone Systems",
+          "type": "posting_role"
+        },
+        "strength": "strong"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "seniority_scope",
+        "display_label": "Decision-making autonomy",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "decision-making autonomy",
+          "type": "seniority_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-034": {
+    "clauses": [
+      {
+        "detail": "What specifically makes it feel too senior—scope, leadership expectations, years of experience, or title level?",
+        "quote": "The role seems too senior for me.",
+        "role": "vague_reaction"
+      }
+    ],
+    "signals": []
+  },
+  "FI-035": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I want to move into AI solution architecture",
+        "role": "preference"
+      },
+      {
+        "detail": "Learning need noted as a qualification-related caveat, not a current capability claim.",
+        "quote": "even though I would need to learn the tooling.",
+        "role": "context"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Move into AI solution architecture",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "AI solution architecture",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-036": {
+    "clauses": [
+      {
+        "detail": "Reports lacking hands-on SAP integration experience required by this contract.",
+        "quote": "I do not have the hands-on SAP integration experience this contract needs.",
+        "role": "profile_fact"
+      }
+    ],
+    "signals": []
+  },
+  "FI-037": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I do not want my daily work to consist mostly of writing Python code.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Daily work mostly writing Python code",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "time_share",
+              "quote": "mostly",
+              "source": "feedback",
+              "value": "mostly"
+            },
+            {
+              "kind": "schedule",
+              "quote": "daily work",
+              "source": "feedback",
+              "value": "daily"
+            }
+          ],
+          "referent": "daily work consisting mostly of writing Python code",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-038": {
+    "clauses": [
+      {
+        "detail": "States ability/fit for this specific project without a checkable capability detail.",
+        "quote": "I could do this project;",
+        "role": "context"
+      },
+      {
+        "detail": "Reports prior experience delivering migrations.",
+        "quote": "I have already delivered these migrations.",
+        "role": "profile_fact"
+      }
+    ],
+    "signals": []
+  },
+  "FI-039": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "AI evangelist roles genuinely excite me as a career direction.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Interest in AI evangelist roles",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "AI evangelist roles",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-040": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I do not want a career in quota-carrying sales.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Quota-carrying sales career",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "quota-carrying sales",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-041": {
+    "clauses": [
+      {
+        "detail": "Positive assessment of the specific role.",
+        "quote": "This is a terrific AI advisor role,",
+        "role": "context"
+      },
+      {
+        "detail": null,
+        "quote": "but I do not trust the employer.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Distrust of this employer",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Trustline AI",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-042": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I would love an AI product leadership career",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "just not at Omega Health.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "AI product leadership career",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "AI product leadership career",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Omega Health",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "career_context",
+              "quote": "AI product leadership career",
+              "source": "feedback",
+              "value": "AI product leadership career"
+            }
+          ],
+          "referent": "Omega Health",
+          "type": "employer"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FI-043": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I love AI strategy consulting;",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "this $105/hour C2C rate is not worthwhile.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "AI strategy consulting",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "AI strategy consulting",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "compensation",
+        "display_label": "$105/hour C2C rate for this opportunity",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "amount",
+              "quote": "$105/hour",
+              "source": "feedback",
+              "value": "105"
+            },
+            {
+              "kind": "currency",
+              "quote": "hourly_rate_usd",
+              "source": "job_context",
+              "value": "USD"
+            },
+            {
+              "kind": "compensation_unit",
+              "quote": "$105/hour",
+              "source": "feedback",
+              "value": "hour"
+            },
+            {
+              "kind": "employment_type",
+              "quote": "C2C",
+              "source": "feedback",
+              "value": "c2c_contract"
+            }
+          ],
+          "referent": "$105/hour C2C rate for this opportunity",
+          "type": "compensation_context"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-044": {
+    "clauses": [
+      {
+        "detail": "What specifically looks promising about this opportunity?",
+        "quote": "This looks promising to me.",
+        "role": "vague_reaction"
+      }
+    ],
+    "signals": []
+  },
+  "FI-045": {
+    "clauses": [
+      {
+        "detail": "What specifically about this opportunity was not your thing?",
+        "quote": "Not my thing.",
+        "role": "vague_reaction"
+      }
+    ],
+    "signals": []
+  },
+  "FI-046": {
+    "clauses": [
+      {
+        "detail": "What specifically about the culture felt off?",
+        "quote": "The culture feels off.",
+        "role": "vague_reaction"
+      }
+    ],
+    "signals": []
+  },
+  "FI-047": {
+    "clauses": [
+      {
+        "detail": "User indicates no pay objection to this opportunity.",
+        "quote": "The pay is fine,",
+        "role": "context"
+      },
+      {
+        "detail": null,
+        "quote": "it is not senior enough for the responsibility I want.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "seniority_scope",
+        "display_label": "Wants a more senior level of responsibility",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "seniority level relative to desired responsibility",
+          "type": "seniority_feature"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FI-048": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Avoid sales-focused work",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "sales",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-049": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I like consulting as a career",
+        "role": "preference"
+      },
+      {
+        "detail": "What specifically about this opportunity feels wrong?",
+        "quote": "but something about this opportunity feels wrong.",
+        "role": "vague_reaction"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Consulting career",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "consulting",
+          "type": "career_category"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FI-050": {
+    "clauses": [
+      {
+        "detail": "Tentative willingness tied to this opportunity under a quality condition; not a standalone preference or rule change.",
+        "quote": "I might take $165,000 base if the job were amazing;",
+        "role": "context"
+      },
+      {
+        "detail": "Requests review of the confirmed permanent base minimum rule, tentatively in light of possibly accepting $165,000 base for an amazing job.",
+        "quote": "I want to reconsider my minimum.",
+        "role": "rule_reconsideration"
+      }
+    ],
+    "signals": []
+  }
+}

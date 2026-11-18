@@ -1,0 +1,82 @@
+{
+  "benchmark_version": "3.0",
+  "evaluation_source": {
+    "extraction_source_sha256": "a7697c6a9bca257f85b3f88c6813c9563855198f061fb4e6a89a7373007bfce1",
+    "mode": "live",
+    "passes": 2,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "requested_model": "gpt-5.4-2026-03-05",
+    "temperature_override": 0.1
+  },
+  "hard_rules": {
+    "1099_hourly_minimum_usd": 100,
+    "c2c_hourly_minimum_usd": null,
+    "commute_rules": [
+      "Within 10 driving miles: onsite acceptable.",
+      "Greater than 10 and less than 30 driving miles: Mondays and Fridays must be remote. Unknown days require verification.",
+      "At least 30 driving miles: regular work must be fully remote. Occasional visits or business trips are allowed."
+    ],
+    "permanent_base_minimum_usd": 180000,
+    "unknown_salary_remains_eligible": true,
+    "w2_hourly_minimum_usd": 75
+  },
+  "hard_rules_sha256": "949c019e2bd8122cbf7d05b6d1227e2302fe2437416ee995a647890dffbeb6c4",
+  "inputs": {
+    "FH-001": {
+      "job_context_sha256": "5fa551f73235b498fde2168cc2ea630c67f756900d6c5bb5bbf8f3aab289aec9",
+      "original_feedback_sha256": "07442c728cccd18bf964f2f80fe772ee82bfe0383223f78f52aeffff574833f3"
+    },
+    "FH-002": {
+      "job_context_sha256": "6f7080ade8a3332cde10fb64728c934990d017f95f28cfea40f663f157885fe5",
+      "original_feedback_sha256": "8f73d0b9334aa05b86691e867c98692ce26eb13493f14f6bf51dc1a1b96d61ca"
+    },
+    "FH-003": {
+      "job_context_sha256": "b906844caecd1f5cf1cdf7d51435a7436a7099cce913d968a2d4602686cba50d",
+      "original_feedback_sha256": "fa3a791d8a4879ed7b8ec29157b78f063b3abf632cdb5e9040bdbe9bf3a856f2"
+    },
+    "FH-004": {
+      "job_context_sha256": "cfe626c07260634d1417a232dee187b5e955b2dc8f098f405e157a875023bb14",
+      "original_feedback_sha256": "415b9e013ac9218d949667ef3533621eb910734b05b52bb66c7152ccc1407f7a"
+    },
+    "FH-005": {
+      "job_context_sha256": "794c0261293e415550219567bc7d38b4ad8f76a4feb1b941bc8e2cdaee5d2133",
+      "original_feedback_sha256": "0174efcdd1e33951f9732145875992d4965491ab20d51452bb25dcbceb43b2dd"
+    },
+    "FH-006": {
+      "job_context_sha256": "0562f88d9833475c6155f406703e0e0c72dfa09a670e5de915a6531411351ffa",
+      "original_feedback_sha256": "38ebc1ce13d7366c3e6ad429a45d6a8c1b3e6f4e0b0dc45cbbcc63c616f6da26"
+    },
+    "FH-007": {
+      "job_context_sha256": "7c2297736d402859e939ac9102d15ae4d53f32351634a90570801ce890adb56b",
+      "original_feedback_sha256": "1c7e42da0e7ae8346ad99951641de01647b1f3cb5fae888191fe920e33f9465c"
+    },
+    "FH-008": {
+      "job_context_sha256": "dd52c497d7e4140754fe3475acb9b008c6c1a6e5e84b98c4f5a99f42bd9586d8",
+      "original_feedback_sha256": "bd5a9f7bb8ddca55021e3f40d2ebf78bffee3211b26781e160f582fe05d0da01"
+    },
+    "FH-009": {
+      "job_context_sha256": "65066e46cd2e444c251411732b4cf3d3ed74a7c80440394b6f83ced2bab1e9ac",
+      "original_feedback_sha256": "3c639cc74b96a4c66b0abed0bef842dba46372d64bcb06bcc3c70ecf6fc511d9"
+    },
+    "FH-010": {
+      "job_context_sha256": "da6b4fa8096789aecc25e8d603862eca722520669fe5e6dda3f5f07de11183cc",
+      "original_feedback_sha256": "f0950ab034a200376a15007c11b9fdb09a891bc77f473e8f3cfafe1c62a5d46f"
+    },
+    "FH-011": {
+      "job_context_sha256": "1543c31167f9ceb74f8fc17575c2de6e88d331ca4bc0dffb6286b839ac215748",
+      "original_feedback_sha256": "18ada31ccee5eb32c5a1bec92e49a8af3a64bc8a3cf9abcdb2337955c9f3b1d8"
+    },
+    "FH-012": {
+      "job_context_sha256": "0df1966465ce560e6724a5be15c1a57a47846524c98645ccbf552787bc24fbd4",
+      "original_feedback_sha256": "f2ed95f2c15e2a5b8ee5071a2d4cf29ba75e7cf291843d4b25eebccaed69cf00"
+    }
+  },
+  "python_version": "3.12.14",
+  "scenario_count": 12,
+  "started_at_utc": "2026-11-18T16:30:45+00:00",
+  "suite_file": "benchmarks/feedback/holdout_cases_v2.json",
+  "suite_kind": "regression",
+  "suite_sha256": "c38ff4c44d7cd0110e198b0682833da8f7c70c15e1cfd04489075858ef099393",
+  "suite_version": "2.0-holdout",
+  "taxonomy_version": "feedback-taxonomy-v2.0"
+}

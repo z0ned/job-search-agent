@@ -1,0 +1,3445 @@
+{
+  "FI-001": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 73,
+          "origin": "feedback",
+          "quote": "I would spend my days creating status decks. That is not the work I want.",
+          "role": "preference",
+          "source_revision": "69a96be1a7647749893017e2d7d10f45f4845f6b1a75ad28d5cd78f9f65a1a4d",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Does not want work centered on creating status decks",
+        "evidence": [
+          {
+            "end": 73,
+            "origin": "feedback",
+            "quote": "I would spend my days creating status decks. That is not the work I want.",
+            "role": "preference",
+            "source_revision": "69a96be1a7647749893017e2d7d10f45f4845f6b1a75ad28d5cd78f9f65a1a4d",
+            "start": 0
+          },
+          {
+            "end": 43,
+            "origin": "feedback",
+            "quote": "spend my days creating status decks",
+            "role": "qualifier",
+            "source_revision": "69a96be1a7647749893017e2d7d10f45f4845f6b1a75ad28d5cd78f9f65a1a4d",
+            "start": 8
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 43,
+                "origin": "feedback",
+                "quote": "spend my days creating status decks",
+                "role": "qualifier",
+                "source_revision": "69a96be1a7647749893017e2d7d10f45f4845f6b1a75ad28d5cd78f9f65a1a4d",
+                "start": 8
+              },
+              "kind": "time_share",
+              "quote": "spend my days creating status decks",
+              "source": "feedback",
+              "value": "my days"
+            }
+          ],
+          "referent": "creating status decks",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would spend my days creating status decks. That is not the work I want.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-002": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 30,
+          "origin": "feedback",
+          "quote": "I love solving client problems",
+          "role": "preference",
+          "source_revision": "6adbcf2b639138b405b54b87d5706e864dc6c65a369e373a7b83fddc4e52508f",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 65,
+          "origin": "feedback",
+          "quote": "running AI solution workshops.",
+          "role": "preference",
+          "source_revision": "6adbcf2b639138b405b54b87d5706e864dc6c65a369e373a7b83fddc4e52508f",
+          "start": 35
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Solving client problems",
+        "evidence": [
+          {
+            "end": 30,
+            "origin": "feedback",
+            "quote": "I love solving client problems",
+            "role": "preference",
+            "source_revision": "6adbcf2b639138b405b54b87d5706e864dc6c65a369e373a7b83fddc4e52508f",
+            "start": 0
+          }
+        ],
+        "feature_id": "role.client_problem_solving",
+        "identity_status": "registered",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "solving client problems",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Running AI solution workshops",
+        "evidence": [
+          {
+            "end": 65,
+            "origin": "feedback",
+            "quote": "running AI solution workshops.",
+            "role": "preference",
+            "source_revision": "6adbcf2b639138b405b54b87d5706e864dc6c65a369e373a7b83fddc4e52508f",
+            "start": 35
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "running AI solution workshops",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I love solving client problems and running AI solution workshops.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-003": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 31,
+          "origin": "feedback",
+          "quote": "The advisory work appeals to me",
+          "role": "preference",
+          "source_revision": "c26ce4ebdbe407c34c15718b62a925cc7ba874a723e79fd34ffbed2122d1b967",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 65,
+          "origin": "feedback",
+          "quote": "but I do not want a sales quota.",
+          "role": "preference",
+          "source_revision": "c26ce4ebdbe407c34c15718b62a925cc7ba874a723e79fd34ffbed2122d1b967",
+          "start": 33
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Advisory work",
+        "evidence": [
+          {
+            "end": 31,
+            "origin": "feedback",
+            "quote": "The advisory work appeals to me",
+            "role": "preference",
+            "source_revision": "c26ce4ebdbe407c34c15718b62a925cc7ba874a723e79fd34ffbed2122d1b967",
+            "start": 0
+          }
+        ],
+        "feature_id": "role.advisory_work",
+        "identity_status": "registered",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "advisory work",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Sales quota",
+        "evidence": [
+          {
+            "end": 65,
+            "origin": "feedback",
+            "quote": "but I do not want a sales quota.",
+            "role": "preference",
+            "source_revision": "c26ce4ebdbe407c34c15718b62a925cc7ba874a723e79fd34ffbed2122d1b967",
+            "start": 33
+          }
+        ],
+        "feature_id": "role.sales_quota_responsibilities",
+        "identity_status": "registered",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "sales quota",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The advisory work appeals to me, but I do not want a sales quota.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-004": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 73,
+          "origin": "feedback",
+          "quote": "I enjoy delivering concrete transformation milestones on short contracts.",
+          "role": "preference",
+          "source_revision": "81daab3b71671bf1ba360b6352977b1a5d8d412caffb32469f71bd8cf4cd43f0",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "growth_purpose",
+        "display_label": "Enjoys delivering concrete transformation milestones",
+        "evidence": [
+          {
+            "end": 73,
+            "origin": "feedback",
+            "quote": "I enjoy delivering concrete transformation milestones on short contracts.",
+            "role": "preference",
+            "source_revision": "81daab3b71671bf1ba360b6352977b1a5d8d412caffb32469f71bd8cf4cd43f0",
+            "start": 0
+          },
+          {
+            "end": 72,
+            "origin": "feedback",
+            "quote": "short contracts",
+            "role": "qualifier",
+            "source_revision": "81daab3b71671bf1ba360b6352977b1a5d8d412caffb32469f71bd8cf4cd43f0",
+            "start": 57
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 72,
+                "origin": "feedback",
+                "quote": "short contracts",
+                "role": "qualifier",
+                "source_revision": "81daab3b71671bf1ba360b6352977b1a5d8d412caffb32469f71bd8cf4cd43f0",
+                "start": 57
+              },
+              "kind": "duration",
+              "quote": "short contracts",
+              "source": "feedback",
+              "value": "short"
+            }
+          ],
+          "referent": "delivering concrete transformation milestones",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I enjoy delivering concrete transformation milestones on short contracts.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": [
+      {
+        "field": "signals",
+        "index": 1,
+        "message": "A single preference assertion may support only one signal."
+      }
+    ]
+  },
+  "FI-005": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 59,
+          "origin": "feedback",
+          "quote": "I do not want to return to contact-center operations roles.",
+          "role": "preference",
+          "source_revision": "38a3be20c5880110e3cdd1273d8a8b93a94977bcf9e5be56b99199809cdd13cc",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": "explicit_scope_cue",
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Does not want contact-center operations roles",
+        "evidence": [
+          {
+            "end": 59,
+            "origin": "feedback",
+            "quote": "I do not want to return to contact-center operations roles.",
+            "role": "preference",
+            "source_revision": "38a3be20c5880110e3cdd1273d8a8b93a94977bcf9e5be56b99199809cdd13cc",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "contact-center operations roles",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I do not want to return to contact-center operations roles.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-006": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 85,
+          "origin": "feedback",
+          "quote": "AI enablement is a career direction I would love to explore, even if I need training.",
+          "role": "preference",
+          "source_revision": "b2dd6d971a0e38832675eecf43c2e4ef81d6500f5785cc18e77edf53f32e1fd5",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Interest in AI enablement career direction",
+        "evidence": [
+          {
+            "end": 85,
+            "origin": "feedback",
+            "quote": "AI enablement is a career direction I would love to explore, even if I need training.",
+            "role": "preference",
+            "source_revision": "b2dd6d971a0e38832675eecf43c2e4ef81d6500f5785cc18e77edf53f32e1fd5",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "AI enablement",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "AI enablement is a career direction I would love to explore, even if I need training.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-007": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 71,
+          "origin": "feedback",
+          "quote": "I am not interested in another core-banking replacement transformation.",
+          "role": "preference",
+          "source_revision": "ef540cfd7be16d98f992d6e3f3555f9680969a5f2e0d2f0a637f72049bf5a6e7",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Not interested in core-banking replacement transformation work",
+        "evidence": [
+          {
+            "end": 71,
+            "origin": "feedback",
+            "quote": "I am not interested in another core-banking replacement transformation.",
+            "role": "preference",
+            "source_revision": "ef540cfd7be16d98f992d6e3f3555f9680969a5f2e0d2f0a637f72049bf5a6e7",
+            "start": 0
+          },
+          {
+            "end": 30,
+            "origin": "feedback",
+            "quote": "another",
+            "role": "qualifier",
+            "source_revision": "ef540cfd7be16d98f992d6e3f3555f9680969a5f2e0d2f0a637f72049bf5a6e7",
+            "start": 23
+          }
+        ],
+        "feature_id": "role.core_banking_replacement_project",
+        "identity_status": "registered",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 30,
+                "origin": "feedback",
+                "quote": "another",
+                "role": "qualifier",
+                "source_revision": "ef540cfd7be16d98f992d6e3f3555f9680969a5f2e0d2f0a637f72049bf5a6e7",
+                "start": 23
+              },
+              "kind": "career_context",
+              "quote": "another",
+              "source": "feedback",
+              "value": "another"
+            }
+          ],
+          "referent": "core-banking replacement transformation",
+          "type": "project_type"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I am not interested in another core-banking replacement transformation.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-008": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "Acknowledges the role title positively without a separate concrete preference target.",
+        "evidence": {
+          "end": 22,
+          "origin": "feedback",
+          "quote": "The title sounds fine,",
+          "role": "context",
+          "source_revision": "2d3981b0cf7543370a31dce0e880c969b0fc97f0dcc26af1fa17c47736fbe170",
+          "start": 0
+        },
+        "index": 0,
+        "role": "context"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 79,
+          "origin": "feedback",
+          "quote": "rotating overnight on-call duties would be draining.",
+          "role": "preference",
+          "source_revision": "2d3981b0cf7543370a31dce0e880c969b0fc97f0dcc26af1fa17c47736fbe170",
+          "start": 27
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Dislikes rotating overnight on-call duties",
+        "evidence": [
+          {
+            "end": 79,
+            "origin": "feedback",
+            "quote": "rotating overnight on-call duties would be draining.",
+            "role": "preference",
+            "source_revision": "2d3981b0cf7543370a31dce0e880c969b0fc97f0dcc26af1fa17c47736fbe170",
+            "start": 27
+          },
+          {
+            "end": 53,
+            "origin": "feedback",
+            "quote": "overnight on-call",
+            "role": "qualifier",
+            "source_revision": "2d3981b0cf7543370a31dce0e880c969b0fc97f0dcc26af1fa17c47736fbe170",
+            "start": 36
+          },
+          {
+            "end": 35,
+            "origin": "feedback",
+            "quote": "rotating",
+            "role": "qualifier",
+            "source_revision": "2d3981b0cf7543370a31dce0e880c969b0fc97f0dcc26af1fa17c47736fbe170",
+            "start": 27
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 53,
+                "origin": "feedback",
+                "quote": "overnight on-call",
+                "role": "qualifier",
+                "source_revision": "2d3981b0cf7543370a31dce0e880c969b0fc97f0dcc26af1fa17c47736fbe170",
+                "start": 36
+              },
+              "kind": "schedule",
+              "quote": "overnight on-call",
+              "source": "feedback",
+              "value": "overnight on-call"
+            },
+            {
+              "evidence": {
+                "end": 35,
+                "origin": "feedback",
+                "quote": "rotating",
+                "role": "qualifier",
+                "source_revision": "2d3981b0cf7543370a31dce0e880c969b0fc97f0dcc26af1fa17c47736fbe170",
+                "start": 27
+              },
+              "kind": "frequency",
+              "quote": "rotating",
+              "source": "feedback",
+              "value": "rotating"
+            }
+          ],
+          "referent": "rotating overnight on-call duties",
+          "type": "schedule"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The title sounds fine, but rotating overnight on-call duties would be draining.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-009": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 32,
+          "origin": "feedback",
+          "quote": "I like the client-facing AI work",
+          "role": "preference",
+          "source_revision": "757eaa36bcd34f768dbaff4e3e5e5c34aad5225acefcc3cf6a08b61a37521a2e",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 76,
+          "origin": "feedback",
+          "quote": "$110/hour is too low for this C2C job.",
+          "role": "preference",
+          "source_revision": "757eaa36bcd34f768dbaff4e3e5e5c34aad5225acefcc3cf6a08b61a37521a2e",
+          "start": 38
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Client-facing AI work",
+        "evidence": [
+          {
+            "end": 32,
+            "origin": "feedback",
+            "quote": "I like the client-facing AI work",
+            "role": "preference",
+            "source_revision": "757eaa36bcd34f768dbaff4e3e5e5c34aad5225acefcc3cf6a08b61a37521a2e",
+            "start": 0
+          }
+        ],
+        "feature_id": "role.client_facing_ai_work",
+        "identity_status": "registered",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "client-facing AI work",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I like the client-facing AI work, but $110/hour is too low for this C2C job.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": [
+      {
+        "field": "signals",
+        "index": 1,
+        "message": "Qualifier source must be feedback or a matching structured posting field."
+      }
+    ]
+  },
+  "FI-010": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 49,
+          "origin": "feedback",
+          "quote": "The $140/hour C2C rate works for this opportunity",
+          "role": "preference",
+          "source_revision": "9f4be6ae9afc741f8d21dd2738fd87a720e3494426dd33d9305e9aa1a2766cd6",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 78,
+          "origin": "feedback",
+          "quote": "the scope is attractive.",
+          "role": "preference",
+          "source_revision": "9f4be6ae9afc741f8d21dd2738fd87a720e3494426dd33d9305e9aa1a2766cd6",
+          "start": 54
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Scope of this role",
+        "evidence": [
+          {
+            "end": 78,
+            "origin": "feedback",
+            "quote": "the scope is attractive.",
+            "role": "preference",
+            "source_revision": "9f4be6ae9afc741f8d21dd2738fd87a720e3494426dd33d9305e9aa1a2766cd6",
+            "start": 54
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "scope of this opportunity",
+          "type": "posting_role"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The $140/hour C2C rate works for this opportunity and the scope is attractive.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": [
+      {
+        "field": "signals",
+        "index": 0,
+        "message": "Qualifier source must be feedback or a matching structured posting field."
+      }
+    ]
+  },
+  "FI-011": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "User accepts the posted rate for this opportunity.",
+        "evidence": {
+          "end": 26,
+          "origin": "feedback",
+          "quote": "The $80/hour rate is fine.",
+          "role": "context",
+          "source_revision": "9dda2e2855291fd3da2cf4d4186e42e27d23de8f64575e9828e14069a0d7c065",
+          "start": 0
+        },
+        "index": 0,
+        "role": "context"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 62,
+          "origin": "feedback",
+          "quote": "I only dislike the onsite schedule.",
+          "role": "preference",
+          "source_revision": "9dda2e2855291fd3da2cf4d4186e42e27d23de8f64575e9828e14069a0d7c065",
+          "start": 27
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Dislikes onsite schedule",
+        "evidence": [
+          {
+            "end": 62,
+            "origin": "feedback",
+            "quote": "I only dislike the onsite schedule.",
+            "role": "preference",
+            "source_revision": "9dda2e2855291fd3da2cf4d4186e42e27d23de8f64575e9828e14069a0d7c065",
+            "start": 27
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "onsite schedule",
+          "type": "schedule"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The $80/hour rate is fine. I only dislike the onsite schedule.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-012": {
+    "clarification_question": "What specifically influenced your reaction to this opportunity?",
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 39,
+          "origin": "feedback",
+          "quote": "The $190,000 base salary is acceptable;",
+          "role": "preference",
+          "source_revision": "4fc56bea3fc8881c35cf3c5aca9e7cbbc35fb87774f50c31ca9e13cdbe17a419",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "What bonus compensation details are offered for this opportunity?",
+        "evidence": {
+          "end": 74,
+          "origin": "feedback",
+          "quote": "I would need details on the bonus.",
+          "role": "posting_verification",
+          "source_revision": "4fc56bea3fc8881c35cf3c5aca9e7cbbc35fb87774f50c31ca9e13cdbe17a419",
+          "start": 40
+        },
+        "index": 1,
+        "role": "posting_verification"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The $190,000 base salary is acceptable; I would need details on the bonus.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": [
+      {
+        "field": "signals",
+        "index": 0,
+        "message": "Qualifier source must be feedback or a matching structured posting field."
+      }
+    ]
+  },
+  "FI-013": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "Positive aside about the opportunity without a specific independent preference target.",
+        "evidence": {
+          "end": 22,
+          "origin": "feedback",
+          "quote": "This could be fun, but",
+          "role": "context",
+          "source_revision": "6bc0a6a08a30bc15120270a4ee2441ff8fbe3b288ec1eb2678bd2a6ab7cc2991",
+          "start": 0
+        },
+        "index": 0,
+        "role": "context"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 69,
+          "origin": "feedback",
+          "quote": "$175,000 base is below my established minimum.",
+          "role": "preference",
+          "source_revision": "6bc0a6a08a30bc15120270a4ee2441ff8fbe3b288ec1eb2678bd2a6ab7cc2991",
+          "start": 23
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": "The confirmed annual base of $175,000 per year is below the $180,000 per year minimum.",
+    "hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "This could be fun, but $175,000 base is below my established minimum.",
+    "profile_fact_candidate": "The confirmed annual base of $175,000 per year is below the $180,000 per year minimum.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": [
+      {
+        "field": "signals",
+        "index": 0,
+        "message": "An eligibility violation alone cannot support a preference."
+      }
+    ]
+  },
+  "FI-014": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 62,
+          "origin": "feedback",
+          "quote": "At $120/hour I still worry about months without billable work.",
+          "role": "preference",
+          "source_revision": "c1354e2ec0841f3f66024af4eeb6f8d8b29ad3736c4b228f1cdaee817388db99",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "contract_terms",
+        "display_label": "Concern about gaps in billable work on contract engagement",
+        "evidence": [
+          {
+            "end": 62,
+            "origin": "feedback",
+            "quote": "At $120/hour I still worry about months without billable work.",
+            "role": "preference",
+            "source_revision": "c1354e2ec0841f3f66024af4eeb6f8d8b29ad3736c4b228f1cdaee817388db99",
+            "start": 0
+          },
+          {
+            "end": 12,
+            "origin": "feedback",
+            "quote": "$120/hour",
+            "role": "qualifier",
+            "source_revision": "c1354e2ec0841f3f66024af4eeb6f8d8b29ad3736c4b228f1cdaee817388db99",
+            "start": 3
+          },
+          {
+            "end": 12,
+            "origin": "feedback",
+            "quote": "$120/hour",
+            "role": "qualifier",
+            "source_revision": "c1354e2ec0841f3f66024af4eeb6f8d8b29ad3736c4b228f1cdaee817388db99",
+            "start": 3
+          },
+          {
+            "end": 12,
+            "origin": "feedback",
+            "quote": "$120/hour",
+            "role": "qualifier",
+            "source_revision": "c1354e2ec0841f3f66024af4eeb6f8d8b29ad3736c4b228f1cdaee817388db99",
+            "start": 3
+          },
+          {
+            "key": "employment_type",
+            "origin": "job_context",
+            "role": "context_only",
+            "value": "c2c_contract"
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 12,
+                "origin": "feedback",
+                "quote": "$120/hour",
+                "role": "qualifier",
+                "source_revision": "c1354e2ec0841f3f66024af4eeb6f8d8b29ad3736c4b228f1cdaee817388db99",
+                "start": 3
+              },
+              "kind": "amount",
+              "quote": "$120/hour",
+              "source": "feedback",
+              "value": "120"
+            },
+            {
+              "evidence": {
+                "end": 12,
+                "origin": "feedback",
+                "quote": "$120/hour",
+                "role": "qualifier",
+                "source_revision": "c1354e2ec0841f3f66024af4eeb6f8d8b29ad3736c4b228f1cdaee817388db99",
+                "start": 3
+              },
+              "kind": "currency",
+              "quote": "$120/hour",
+              "source": "feedback",
+              "value": "USD"
+            },
+            {
+              "evidence": {
+                "end": 12,
+                "origin": "feedback",
+                "quote": "$120/hour",
+                "role": "qualifier",
+                "source_revision": "c1354e2ec0841f3f66024af4eeb6f8d8b29ad3736c4b228f1cdaee817388db99",
+                "start": 3
+              },
+              "kind": "compensation_unit",
+              "quote": "$120/hour",
+              "source": "feedback",
+              "value": "hourly"
+            },
+            {
+              "evidence": {
+                "key": "employment_type",
+                "origin": "job_context",
+                "role": "context_only",
+                "value": "c2c_contract"
+              },
+              "kind": "employment_type",
+              "quote": "employment_type",
+              "source": "job_context",
+              "value": "c2c_contract"
+            }
+          ],
+          "referent": "months without billable work",
+          "type": "contract_term"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "At $120/hour I still worry about months without billable work.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-015": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 79,
+          "origin": "feedback",
+          "quote": "I do not want to invest time with employers who refuse to disclose base salary.",
+          "role": "preference",
+          "source_revision": "ed0bc548e77634274382cd0631ff16283d6ca09ce8c4e4230ce16d69d2498f8b",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "compensation",
+        "display_label": "Dislikes employers that refuse to disclose base salary",
+        "evidence": [
+          {
+            "end": 79,
+            "origin": "feedback",
+            "quote": "I do not want to invest time with employers who refuse to disclose base salary.",
+            "role": "preference",
+            "source_revision": "ed0bc548e77634274382cd0631ff16283d6ca09ce8c4e4230ce16d69d2498f8b",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "base salary disclosure",
+          "type": "compensation_transparency"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I do not want to invest time with employers who refuse to disclose base salary.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-016": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 37,
+          "origin": "feedback",
+          "quote": "The mission really resonates with me.",
+          "role": "preference",
+          "source_revision": "ecd55ac754ffee32456f3aec10bdd89c9f80dbfd2148860a99cdd0eaf148d178",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "Whether the opportunity's compensation is acceptable or disclosed.",
+        "evidence": {
+          "end": 75,
+          "origin": "feedback",
+          "quote": "I would need to confirm compensation.",
+          "role": "posting_verification",
+          "source_revision": "ecd55ac754ffee32456f3aec10bdd89c9f80dbfd2148860a99cdd0eaf148d178",
+          "start": 38
+        },
+        "index": 1,
+        "role": "posting_verification"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "growth_purpose",
+        "display_label": "Resonates with the mission",
+        "evidence": [
+          {
+            "end": 37,
+            "origin": "feedback",
+            "quote": "The mission really resonates with me.",
+            "role": "preference",
+            "source_revision": "ecd55ac754ffee32456f3aec10bdd89c9f80dbfd2148860a99cdd0eaf148d178",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "the posting's mission",
+          "type": "mission"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The mission really resonates with me. I would need to confirm compensation.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-017": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 64,
+          "origin": "feedback",
+          "quote": "I am uncomfortable with Northstar Tech after its recent layoffs.",
+          "role": "preference",
+          "source_revision": "e7e50e69713e02271e12d924a922bad2bc7c0354d669ab1d798aa10ae2fe973a",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Discomfort with Northstar Tech",
+        "evidence": [
+          {
+            "end": 64,
+            "origin": "feedback",
+            "quote": "I am uncomfortable with Northstar Tech after its recent layoffs.",
+            "role": "preference",
+            "source_revision": "e7e50e69713e02271e12d924a922bad2bc7c0354d669ab1d798aa10ae2fe973a",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Northstar Tech",
+          "type": "employer"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I am uncomfortable with Northstar Tech after its recent layoffs.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-018": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 46,
+          "origin": "feedback",
+          "quote": "I do not want to work in the tobacco industry.",
+          "role": "preference",
+          "source_revision": "fe150f1a1dabc4ced53f1dc2a45e3fc4e02b298fc87794d79416e9957db13452",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "industry",
+        "display_label": "Tobacco industry",
+        "evidence": [
+          {
+            "end": 46,
+            "origin": "feedback",
+            "quote": "I do not want to work in the tobacco industry.",
+            "role": "preference",
+            "source_revision": "fe150f1a1dabc4ced53f1dc2a45e3fc4e02b298fc87794d79416e9957db13452",
+            "start": 0
+          }
+        ],
+        "feature_id": "industry.tobacco_industry",
+        "identity_status": "registered",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "tobacco industry",
+          "type": "industry"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I do not want to work in the tobacco industry.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-019": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 60,
+          "origin": "feedback",
+          "quote": "Helping small nonprofits apply AI would be meaningful to me.",
+          "role": "preference",
+          "source_revision": "e081dd8f616ee42cd66d432dd743ae852192acaf602bf10d66ce9bec753344dd",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "growth_purpose",
+        "display_label": "Meaningful work helping small nonprofits apply AI",
+        "evidence": [
+          {
+            "end": 60,
+            "origin": "feedback",
+            "quote": "Helping small nonprofits apply AI would be meaningful to me.",
+            "role": "preference",
+            "source_revision": "e081dd8f616ee42cd66d432dd743ae852192acaf602bf10d66ce9bec753344dd",
+            "start": 0
+          },
+          {
+            "end": 24,
+            "origin": "feedback",
+            "quote": "small nonprofits",
+            "role": "qualifier",
+            "source_revision": "e081dd8f616ee42cd66d432dd743ae852192acaf602bf10d66ce9bec753344dd",
+            "start": 8
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 24,
+                "origin": "feedback",
+                "quote": "small nonprofits",
+                "role": "qualifier",
+                "source_revision": "e081dd8f616ee42cd66d432dd743ae852192acaf602bf10d66ce9bec753344dd",
+                "start": 8
+              },
+              "kind": "organization_size",
+              "quote": "small nonprofits",
+              "source": "feedback",
+              "value": "small"
+            }
+          ],
+          "referent": "helping small nonprofits apply AI",
+          "type": "mission"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Helping small nonprofits apply AI would be meaningful to me.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-020": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 55,
+          "origin": "feedback",
+          "quote": "I would hate a manager who micromanages every decision.",
+          "role": "preference",
+          "source_revision": "12a83bea88a68007ab3b621ea08ad7e5f1c146b64105a29c9c6b6ef680d8c22f",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "culture_environment",
+        "display_label": "Dislikes micromanaging manager",
+        "evidence": [
+          {
+            "end": 55,
+            "origin": "feedback",
+            "quote": "I would hate a manager who micromanages every decision.",
+            "role": "preference",
+            "source_revision": "12a83bea88a68007ab3b621ea08ad7e5f1c146b64105a29c9c6b6ef680d8c22f",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "manager who micromanages every decision",
+          "type": "culture_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would hate a manager who micromanages every decision.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-021": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 83,
+          "origin": "feedback",
+          "quote": "I admire Verity Labs because the technical team seems thoughtful and collaborative.",
+          "role": "preference",
+          "source_revision": "59aea9d09c51795a75906c337029ea621a94933e1c5c84eda23b28caad908941",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "culture_environment",
+        "display_label": "Positive reaction to thoughtful and collaborative technical team culture at Verity Labs",
+        "evidence": [
+          {
+            "end": 83,
+            "origin": "feedback",
+            "quote": "I admire Verity Labs because the technical team seems thoughtful and collaborative.",
+            "role": "preference",
+            "source_revision": "59aea9d09c51795a75906c337029ea621a94933e1c5c84eda23b28caad908941",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Verity Labs",
+          "type": "employer"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I admire Verity Labs because the technical team seems thoughtful and collaborative.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-022": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 68,
+          "origin": "feedback",
+          "quote": "I would do this job for a different firm, but not for Ridgetop Bank.",
+          "role": "preference",
+          "source_revision": "e0e1fc117922a39a1d86ff3d7727b413d9ab08ebe72122b6a3e91c0202f6169b",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Not interested in Ridgetop Bank for this job",
+        "evidence": [
+          {
+            "end": 68,
+            "origin": "feedback",
+            "quote": "I would do this job for a different firm, but not for Ridgetop Bank.",
+            "role": "preference",
+            "source_revision": "e0e1fc117922a39a1d86ff3d7727b413d9ab08ebe72122b6a3e91c0202f6169b",
+            "start": 0
+          },
+          {
+            "end": 19,
+            "origin": "feedback",
+            "quote": "this job",
+            "role": "qualifier",
+            "source_revision": "e0e1fc117922a39a1d86ff3d7727b413d9ab08ebe72122b6a3e91c0202f6169b",
+            "start": 11
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 19,
+                "origin": "feedback",
+                "quote": "this job",
+                "role": "qualifier",
+                "source_revision": "e0e1fc117922a39a1d86ff3d7727b413d9ab08ebe72122b6a3e91c0202f6169b",
+                "start": 11
+              },
+              "kind": "career_context",
+              "quote": "this job",
+              "source": "feedback",
+              "value": "this job"
+            }
+          ],
+          "referent": "Ridgetop Bank",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would do this job for a different firm, but not for Ridgetop Bank.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-023": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "Reports a conflict between the job's hybrid commute requirement and the user's confirmed distance rule.",
+        "evidence": {
+          "end": 75,
+          "origin": "feedback",
+          "quote": "The three-days-in-office arrangement 45 miles away breaks my distance rule.",
+          "role": "job_fact",
+          "source_revision": "88dd444b0be25abf2562581b6e053fdd4922d18966fcbd63c729efef6f8680e9",
+          "start": 0
+        },
+        "index": 0,
+        "role": "job_fact"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": "Regular onsite attendance at 45 driving miles conflicts with the confirmed remote-work rule.",
+    "hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The three-days-in-office arrangement 45 miles away breaks my distance rule.",
+    "profile_fact_candidate": "Regular onsite attendance at 45 driving miles conflicts with the confirmed remote-work rule.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  },
+  "FI-024": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 25,
+          "origin": "feedback",
+          "quote": "I like being fully remote",
+          "role": "preference",
+          "source_revision": "c81599cf1eea9912cdc9853ce4284001b11e965a35168b82911834f74fb07722",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 61,
+          "origin": "feedback",
+          "quote": "could focus on the client work.",
+          "role": "preference",
+          "source_revision": "c81599cf1eea9912cdc9853ce4284001b11e965a35168b82911834f74fb07722",
+          "start": 30
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Likes fully remote work",
+        "evidence": [
+          {
+            "end": 25,
+            "origin": "feedback",
+            "quote": "I like being fully remote",
+            "role": "preference",
+            "source_revision": "c81599cf1eea9912cdc9853ce4284001b11e965a35168b82911834f74fb07722",
+            "start": 0
+          },
+          {
+            "end": 25,
+            "origin": "feedback",
+            "quote": "fully remote",
+            "role": "qualifier",
+            "source_revision": "c81599cf1eea9912cdc9853ce4284001b11e965a35168b82911834f74fb07722",
+            "start": 13
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 25,
+                "origin": "feedback",
+                "quote": "fully remote",
+                "role": "qualifier",
+                "source_revision": "c81599cf1eea9912cdc9853ce4284001b11e965a35168b82911834f74fb07722",
+                "start": 13
+              },
+              "kind": "work_mode",
+              "quote": "fully remote",
+              "source": "feedback",
+              "value": "remote"
+            }
+          ],
+          "referent": "fully remote",
+          "type": "arrangement"
+        },
+        "strength": "mild"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Interested in focusing on client work",
+        "evidence": [
+          {
+            "end": 61,
+            "origin": "feedback",
+            "quote": "could focus on the client work.",
+            "role": "preference",
+            "source_revision": "c81599cf1eea9912cdc9853ce4284001b11e965a35168b82911834f74fb07722",
+            "start": 30
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "client work",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I like being fully remote and could focus on the client work.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-025": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 78,
+          "origin": "feedback",
+          "quote": "The required night and weekend coverage would interfere with my personal time.",
+          "role": "preference",
+          "source_revision": "6ae8ec37c228e7d8eb19e6a9909dca3be54dbba8857899693d4e64ade46b89b7",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Dislikes required night and weekend coverage",
+        "evidence": [
+          {
+            "end": 78,
+            "origin": "feedback",
+            "quote": "The required night and weekend coverage would interfere with my personal time.",
+            "role": "preference",
+            "source_revision": "6ae8ec37c228e7d8eb19e6a9909dca3be54dbba8857899693d4e64ade46b89b7",
+            "start": 0
+          },
+          {
+            "end": 39,
+            "origin": "feedback",
+            "quote": "night and weekend coverage",
+            "role": "qualifier",
+            "source_revision": "6ae8ec37c228e7d8eb19e6a9909dca3be54dbba8857899693d4e64ade46b89b7",
+            "start": 13
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 39,
+                "origin": "feedback",
+                "quote": "night and weekend coverage",
+                "role": "qualifier",
+                "source_revision": "6ae8ec37c228e7d8eb19e6a9909dca3be54dbba8857899693d4e64ade46b89b7",
+                "start": 13
+              },
+              "kind": "schedule",
+              "quote": "night and weekend coverage",
+              "source": "feedback",
+              "value": "night and weekend coverage"
+            }
+          ],
+          "referent": "required night and weekend coverage",
+          "type": "schedule"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The required night and weekend coverage would interfere with my personal time.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-026": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 68,
+          "origin": "feedback",
+          "quote": "Hybrid is appealing at this nearby office, only six miles from home.",
+          "role": "preference",
+          "source_revision": "8cbe657cd657976644de8d22f8179c6d58739767cf86486777ddd19b14bf60b8",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Appeal of hybrid arrangement at nearby office",
+        "evidence": [
+          {
+            "end": 68,
+            "origin": "feedback",
+            "quote": "Hybrid is appealing at this nearby office, only six miles from home.",
+            "role": "preference",
+            "source_revision": "8cbe657cd657976644de8d22f8179c6d58739767cf86486777ddd19b14bf60b8",
+            "start": 0
+          },
+          {
+            "end": 67,
+            "origin": "feedback",
+            "quote": "six miles from home",
+            "role": "qualifier",
+            "source_revision": "8cbe657cd657976644de8d22f8179c6d58739767cf86486777ddd19b14bf60b8",
+            "start": 48
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 67,
+                "origin": "feedback",
+                "quote": "six miles from home",
+                "role": "qualifier",
+                "source_revision": "8cbe657cd657976644de8d22f8179c6d58739767cf86486777ddd19b14bf60b8",
+                "start": 48
+              },
+              "kind": "distance",
+              "quote": "six miles from home",
+              "source": "feedback",
+              "value": "6 miles"
+            }
+          ],
+          "referent": "hybrid at this nearby office",
+          "type": "arrangement"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Hybrid is appealing at this nearby office, only six miles from home.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-027": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 35,
+          "origin": "feedback",
+          "quote": "Flying every week would wear me out",
+          "role": "preference",
+          "source_revision": "32ff13c902093f622c2587e653f238b71dcd386af5baceb70ae59b48a33a291f",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 70,
+          "origin": "feedback",
+          "quote": "occasional trips are okay.",
+          "role": "preference",
+          "source_revision": "32ff13c902093f622c2587e653f238b71dcd386af5baceb70ae59b48a33a291f",
+          "start": 44
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Frequent weekly travel",
+        "evidence": [
+          {
+            "end": 35,
+            "origin": "feedback",
+            "quote": "Flying every week would wear me out",
+            "role": "preference",
+            "source_revision": "32ff13c902093f622c2587e653f238b71dcd386af5baceb70ae59b48a33a291f",
+            "start": 0
+          },
+          {
+            "end": 17,
+            "origin": "feedback",
+            "quote": "every week",
+            "role": "qualifier",
+            "source_revision": "32ff13c902093f622c2587e653f238b71dcd386af5baceb70ae59b48a33a291f",
+            "start": 7
+          },
+          {
+            "end": 6,
+            "origin": "feedback",
+            "quote": "Flying",
+            "role": "qualifier",
+            "source_revision": "32ff13c902093f622c2587e653f238b71dcd386af5baceb70ae59b48a33a291f",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 17,
+                "origin": "feedback",
+                "quote": "every week",
+                "role": "qualifier",
+                "source_revision": "32ff13c902093f622c2587e653f238b71dcd386af5baceb70ae59b48a33a291f",
+                "start": 7
+              },
+              "kind": "frequency",
+              "quote": "every week",
+              "source": "feedback",
+              "value": "every week"
+            },
+            {
+              "evidence": {
+                "end": 6,
+                "origin": "feedback",
+                "quote": "Flying",
+                "role": "qualifier",
+                "source_revision": "32ff13c902093f622c2587e653f238b71dcd386af5baceb70ae59b48a33a291f",
+                "start": 0
+              },
+              "kind": "travel_mode",
+              "quote": "Flying",
+              "source": "feedback",
+              "value": "flying"
+            }
+          ],
+          "referent": "flying",
+          "type": "travel_frequency"
+        },
+        "strength": "strong"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Occasional travel",
+        "evidence": [
+          {
+            "end": 70,
+            "origin": "feedback",
+            "quote": "occasional trips are okay.",
+            "role": "preference",
+            "source_revision": "32ff13c902093f622c2587e653f238b71dcd386af5baceb70ae59b48a33a291f",
+            "start": 44
+          },
+          {
+            "end": 54,
+            "origin": "feedback",
+            "quote": "occasional",
+            "role": "qualifier",
+            "source_revision": "32ff13c902093f622c2587e653f238b71dcd386af5baceb70ae59b48a33a291f",
+            "start": 44
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 54,
+                "origin": "feedback",
+                "quote": "occasional",
+                "role": "qualifier",
+                "source_revision": "32ff13c902093f622c2587e653f238b71dcd386af5baceb70ae59b48a33a291f",
+                "start": 44
+              },
+              "kind": "frequency",
+              "quote": "occasional",
+              "source": "feedback",
+              "value": "occasional"
+            }
+          ],
+          "referent": "trips",
+          "type": "travel_frequency"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Flying every week would wear me out, though occasional trips are okay.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-028": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "Reports the job's onsite schedule and commute distance.",
+        "evidence": {
+          "end": 71,
+          "origin": "feedback",
+          "quote": "I would have to be onsite Mondays and Fridays, and it is 20 miles away.",
+          "role": "job_fact",
+          "source_revision": "654c7e74e5e575827f597bea116ef06b1157decc0f2ee03ab796c8fab6d9cb2f",
+          "start": 0
+        },
+        "index": 0,
+        "role": "job_fact"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": "Required onsite attendance on Monday and Friday at 20 driving miles conflicts with the confirmed commute rule.",
+    "hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would have to be onsite Mondays and Fridays, and it is 20 miles away.",
+    "profile_fact_candidate": "Required onsite attendance on Monday and Friday at 20 driving miles conflicts with the confirmed commute rule.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  },
+  "FI-029": {
+    "clarification_question": "What about the commute is the problem—distance, time, traffic, cost, or required onsite frequency?",
+    "clauses": [
+      {
+        "detail": "What about the commute is the problem—distance, time, traffic, cost, or required onsite frequency?",
+        "evidence": {
+          "end": 25,
+          "origin": "feedback",
+          "quote": "The commute is a problem.",
+          "role": "vague_reaction",
+          "source_revision": "51bcf2e718ff6450a0c023da5eea224ca6444da3266173a28868a3869f1fef01",
+          "start": 0
+        },
+        "index": 0,
+        "role": "vague_reaction"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The commute is a problem.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": []
+  },
+  "FI-030": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 40,
+          "origin": "feedback",
+          "quote": "I like being the trusted hands-on expert",
+          "role": "preference",
+          "source_revision": "68a0d51967b695d71512c833e1f0665de5fef66eb88069de649fee7424af84a5",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 71,
+          "origin": "feedback",
+          "quote": "without managing a large team.",
+          "role": "preference",
+          "source_revision": "68a0d51967b695d71512c833e1f0665de5fef66eb88069de649fee7424af84a5",
+          "start": 41
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "seniority_scope",
+        "display_label": "Trusted hands-on expert role",
+        "evidence": [
+          {
+            "end": 40,
+            "origin": "feedback",
+            "quote": "I like being the trusted hands-on expert",
+            "role": "preference",
+            "source_revision": "68a0d51967b695d71512c833e1f0665de5fef66eb88069de649fee7424af84a5",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "being the trusted hands-on expert",
+          "type": "seniority_feature"
+        },
+        "strength": "mild"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "seniority_scope",
+        "display_label": "Managing a large team",
+        "evidence": [
+          {
+            "end": 71,
+            "origin": "feedback",
+            "quote": "without managing a large team.",
+            "role": "preference",
+            "source_revision": "68a0d51967b695d71512c833e1f0665de5fef66eb88069de649fee7424af84a5",
+            "start": 41
+          },
+          {
+            "end": 70,
+            "origin": "feedback",
+            "quote": "large team",
+            "role": "qualifier",
+            "source_revision": "68a0d51967b695d71512c833e1f0665de5fef66eb88069de649fee7424af84a5",
+            "start": 60
+          }
+        ],
+        "feature_id": "seniority_scope.large_team_people_management",
+        "identity_status": "registered",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 70,
+                "origin": "feedback",
+                "quote": "large team",
+                "role": "qualifier",
+                "source_revision": "68a0d51967b695d71512c833e1f0665de5fef66eb88069de649fee7424af84a5",
+                "start": 60
+              },
+              "kind": "quantity",
+              "quote": "large team",
+              "source": "feedback",
+              "value": "large"
+            }
+          ],
+          "referent": "managing a large team",
+          "type": "seniority_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I like being the trusted hands-on expert without managing a large team.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-031": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 70,
+          "origin": "feedback",
+          "quote": "Directly managing 20 people is not what I want to spend my time doing.",
+          "role": "preference",
+          "source_revision": "46e118d0b4ea534edbe8a67d1aa96a1f9b056490c6088021f80371ec00e5f03b",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "seniority_scope",
+        "display_label": "Does not want direct people management of a 20-person team",
+        "evidence": [
+          {
+            "end": 70,
+            "origin": "feedback",
+            "quote": "Directly managing 20 people is not what I want to spend my time doing.",
+            "role": "preference",
+            "source_revision": "46e118d0b4ea534edbe8a67d1aa96a1f9b056490c6088021f80371ec00e5f03b",
+            "start": 0
+          },
+          {
+            "end": 27,
+            "origin": "feedback",
+            "quote": "20 people",
+            "role": "qualifier",
+            "source_revision": "46e118d0b4ea534edbe8a67d1aa96a1f9b056490c6088021f80371ec00e5f03b",
+            "start": 18
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 27,
+                "origin": "feedback",
+                "quote": "20 people",
+                "role": "qualifier",
+                "source_revision": "46e118d0b4ea534edbe8a67d1aa96a1f9b056490c6088021f80371ec00e5f03b",
+                "start": 18
+              },
+              "kind": "quantity",
+              "quote": "20 people",
+              "source": "feedback",
+              "value": "20"
+            }
+          ],
+          "referent": "directly managing 20 people",
+          "type": "seniority_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Directly managing 20 people is not what I want to spend my time doing.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-032": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 74,
+          "origin": "feedback",
+          "quote": "Owning a larger AI transformation portfolio is exactly the stretch I want.",
+          "role": "preference",
+          "source_revision": "1b8a1b287b23f3df59eca1159d71a1f8b35b41d270ba9baac9c8cf7770409eff",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "growth_purpose",
+        "display_label": "Wants stretch through owning a larger AI transformation portfolio",
+        "evidence": [
+          {
+            "end": 74,
+            "origin": "feedback",
+            "quote": "Owning a larger AI transformation portfolio is exactly the stretch I want.",
+            "role": "preference",
+            "source_revision": "1b8a1b287b23f3df59eca1159d71a1f8b35b41d270ba9baac9c8cf7770409eff",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "owning a larger AI transformation portfolio",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Owning a larger AI transformation portfolio is exactly the stretch I want.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-033": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 19,
+          "origin": "feedback",
+          "quote": "This is too junior;",
+          "role": "preference",
+          "source_revision": "52b793ab7f5fc6a0ededb83aab9934fc430689ca58cdbdd9a50ef01461f43625",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 68,
+          "origin": "feedback",
+          "quote": "I would have almost no decision-making autonomy.",
+          "role": "preference",
+          "source_revision": "52b793ab7f5fc6a0ededb83aab9934fc430689ca58cdbdd9a50ef01461f43625",
+          "start": 20
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "seniority_scope",
+        "display_label": "Decision-making autonomy",
+        "evidence": [
+          {
+            "end": 68,
+            "origin": "feedback",
+            "quote": "I would have almost no decision-making autonomy.",
+            "role": "preference",
+            "source_revision": "52b793ab7f5fc6a0ededb83aab9934fc430689ca58cdbdd9a50ef01461f43625",
+            "start": 20
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "decision-making autonomy",
+          "type": "seniority_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "This is too junior; I would have almost no decision-making autonomy.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": [
+      {
+        "field": "signals",
+        "index": 0,
+        "message": "Invalid signal label, dimension, scope, polarity, or strength."
+      }
+    ]
+  },
+  "FI-034": {
+    "clarification_question": "What aspect of the seniority felt too advanced for you—scope, leadership level, years of experience, or decision-making responsibility?",
+    "clauses": [
+      {
+        "detail": "What aspect of the seniority felt too advanced for you—scope, leadership level, years of experience, or decision-making responsibility?",
+        "evidence": {
+          "end": 33,
+          "origin": "feedback",
+          "quote": "The role seems too senior for me.",
+          "role": "vague_reaction",
+          "source_revision": "c28b6d84e4c585155b618c1e8b3b8951d9edaedb190914d118e7a4412a9c4c51",
+          "start": 0
+        },
+        "index": 0,
+        "role": "vague_reaction"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The role seems too senior for me.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": []
+  },
+  "FI-035": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 44,
+          "origin": "feedback",
+          "quote": "I want to move into AI solution architecture",
+          "role": "preference",
+          "source_revision": "ac5c40b8b93885ebef99041c4f8d4f42e06b7586f26ee33d857bab5fc652e612",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "Acknowledges a learning need as a qualification caveat, not a current capability claim or separate learning preference.",
+        "evidence": {
+          "end": 92,
+          "origin": "feedback",
+          "quote": "even though I would need to learn the tooling.",
+          "role": "context",
+          "source_revision": "ac5c40b8b93885ebef99041c4f8d4f42e06b7586f26ee33d857bab5fc652e612",
+          "start": 46
+        },
+        "index": 1,
+        "role": "context"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Move into AI solution architecture",
+        "evidence": [
+          {
+            "end": 44,
+            "origin": "feedback",
+            "quote": "I want to move into AI solution architecture",
+            "role": "preference",
+            "source_revision": "ac5c40b8b93885ebef99041c4f8d4f42e06b7586f26ee33d857bab5fc652e612",
+            "start": 0
+          }
+        ],
+        "feature_id": "career.ai_solution_architecture",
+        "identity_status": "registered",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "AI solution architecture",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I want to move into AI solution architecture, even though I would need to learn the tooling.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-036": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "Reports lacking hands-on SAP integration experience required by this contract.",
+        "evidence": {
+          "end": 74,
+          "origin": "feedback",
+          "quote": "I do not have the hands-on SAP integration experience this contract needs.",
+          "role": "profile_fact",
+          "source_revision": "188b367937a2f6b2436885cd02b8c910fef998eac9979c903ce03345b003ec16",
+          "start": 0
+        },
+        "index": 0,
+        "role": "profile_fact"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I do not have the hands-on SAP integration experience this contract needs.",
+    "profile_fact_candidate": "I do not have the hands-on SAP integration experience this contract needs.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  },
+  "FI-037": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 69,
+          "origin": "feedback",
+          "quote": "I do not want my daily work to consist mostly of writing Python code.",
+          "role": "preference",
+          "source_revision": "a05602a975ca63bc2d68e0dfe4371bdc3c775fafd593e2c637948f815cb42a5a",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Avoid roles where daily work is mostly writing Python code",
+        "evidence": [
+          {
+            "end": 69,
+            "origin": "feedback",
+            "quote": "I do not want my daily work to consist mostly of writing Python code.",
+            "role": "preference",
+            "source_revision": "a05602a975ca63bc2d68e0dfe4371bdc3c775fafd593e2c637948f815cb42a5a",
+            "start": 0
+          },
+          {
+            "end": 45,
+            "origin": "feedback",
+            "quote": "mostly",
+            "role": "qualifier",
+            "source_revision": "a05602a975ca63bc2d68e0dfe4371bdc3c775fafd593e2c637948f815cb42a5a",
+            "start": 39
+          },
+          {
+            "end": 27,
+            "origin": "feedback",
+            "quote": "daily work",
+            "role": "qualifier",
+            "source_revision": "a05602a975ca63bc2d68e0dfe4371bdc3c775fafd593e2c637948f815cb42a5a",
+            "start": 17
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 45,
+                "origin": "feedback",
+                "quote": "mostly",
+                "role": "qualifier",
+                "source_revision": "a05602a975ca63bc2d68e0dfe4371bdc3c775fafd593e2c637948f815cb42a5a",
+                "start": 39
+              },
+              "kind": "time_share",
+              "quote": "mostly",
+              "source": "feedback",
+              "value": "mostly"
+            },
+            {
+              "evidence": {
+                "end": 27,
+                "origin": "feedback",
+                "quote": "daily work",
+                "role": "qualifier",
+                "source_revision": "a05602a975ca63bc2d68e0dfe4371bdc3c775fafd593e2c637948f815cb42a5a",
+                "start": 17
+              },
+              "kind": "schedule",
+              "quote": "daily work",
+              "source": "feedback",
+              "value": "daily"
+            }
+          ],
+          "referent": "daily work consisting mostly of writing Python code",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I do not want my daily work to consist mostly of writing Python code.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-038": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "States ability/fit for this specific project without a checkable capability detail.",
+        "evidence": {
+          "end": 24,
+          "origin": "feedback",
+          "quote": "I could do this project;",
+          "role": "context",
+          "source_revision": "8525984f120bc108e7941420788f1a6e252ed3fb91e4aa9c2a6953d7a656befa",
+          "start": 0
+        },
+        "index": 0,
+        "role": "context"
+      },
+      {
+        "detail": "Reports prior experience delivering migrations.",
+        "evidence": {
+          "end": 67,
+          "origin": "feedback",
+          "quote": "I have already delivered these migrations.",
+          "role": "profile_fact",
+          "source_revision": "8525984f120bc108e7941420788f1a6e252ed3fb91e4aa9c2a6953d7a656befa",
+          "start": 25
+        },
+        "index": 1,
+        "role": "profile_fact"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I could do this project; I have already delivered these migrations.",
+    "profile_fact_candidate": "I have already delivered these migrations.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  },
+  "FI-039": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 62,
+          "origin": "feedback",
+          "quote": "AI evangelist roles genuinely excite me as a career direction.",
+          "role": "preference",
+          "source_revision": "d6116da1702f2dd452f9ee40ab34ffa0cde51b31c4e6274da3324abd6452fcaa",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Interest in AI evangelist roles",
+        "evidence": [
+          {
+            "end": 62,
+            "origin": "feedback",
+            "quote": "AI evangelist roles genuinely excite me as a career direction.",
+            "role": "preference",
+            "source_revision": "d6116da1702f2dd452f9ee40ab34ffa0cde51b31c4e6274da3324abd6452fcaa",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "AI evangelist roles",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "AI evangelist roles genuinely excite me as a career direction.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-040": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 47,
+          "origin": "feedback",
+          "quote": "I do not want a career in quota-carrying sales.",
+          "role": "preference",
+          "source_revision": "8e4e956e0f5ebdf3b47ddbef3745cd1b29a7b4a0608272bb92af0c9cbc529d24",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": "explicit_scope_cue",
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Quota-carrying sales career",
+        "evidence": [
+          {
+            "end": 47,
+            "origin": "feedback",
+            "quote": "I do not want a career in quota-carrying sales.",
+            "role": "preference",
+            "source_revision": "8e4e956e0f5ebdf3b47ddbef3745cd1b29a7b4a0608272bb92af0c9cbc529d24",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "quota-carrying sales",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I do not want a career in quota-carrying sales.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-041": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "Positive aside about the role before the stated objection.",
+        "evidence": {
+          "end": 39,
+          "origin": "feedback",
+          "quote": "This is a terrific AI advisor role, but",
+          "role": "context",
+          "source_revision": "f1ee1d9b12b60d29e4f65a9e9d9e8e34cb926abdde40ccb06f4b36502e47e508",
+          "start": 0
+        },
+        "index": 0,
+        "role": "context"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 68,
+          "origin": "feedback",
+          "quote": "I do not trust the employer.",
+          "role": "preference",
+          "source_revision": "f1ee1d9b12b60d29e4f65a9e9d9e8e34cb926abdde40ccb06f4b36502e47e508",
+          "start": 40
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Distrust of this employer",
+        "evidence": [
+          {
+            "end": 68,
+            "origin": "feedback",
+            "quote": "I do not trust the employer.",
+            "role": "preference",
+            "source_revision": "f1ee1d9b12b60d29e4f65a9e9d9e8e34cb926abdde40ccb06f4b36502e47e508",
+            "start": 40
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Trustline AI",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "This is a terrific AI advisor role, but I do not trust the employer.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-042": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 44,
+          "origin": "feedback",
+          "quote": "I would love an AI product leadership career",
+          "role": "preference",
+          "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 71,
+          "origin": "feedback",
+          "quote": "just not at Omega Health.",
+          "role": "preference",
+          "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+          "start": 46
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "AI product leadership career",
+        "evidence": [
+          {
+            "end": 44,
+            "origin": "feedback",
+            "quote": "I would love an AI product leadership career",
+            "role": "preference",
+            "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+            "start": 0
+          }
+        ],
+        "feature_id": "career.ai_product_leadership",
+        "identity_status": "registered",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "AI product leadership career",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would love an AI product leadership career, just not at Omega Health.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": [
+      {
+        "field": "signals",
+        "index": 1,
+        "message": "Evidence quote must locate a unique original feedback span."
+      }
+    ]
+  },
+  "FI-043": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 30,
+          "origin": "feedback",
+          "quote": "I love AI strategy consulting;",
+          "role": "preference",
+          "source_revision": "f7f7cd7691050c7b9da74972719a199b8ab75c296fe2e27c29dc603d46ddf6a0",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 73,
+          "origin": "feedback",
+          "quote": "this $105/hour C2C rate is not worthwhile.",
+          "role": "preference",
+          "source_revision": "f7f7cd7691050c7b9da74972719a199b8ab75c296fe2e27c29dc603d46ddf6a0",
+          "start": 31
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "AI strategy consulting",
+        "evidence": [
+          {
+            "end": 30,
+            "origin": "feedback",
+            "quote": "I love AI strategy consulting;",
+            "role": "preference",
+            "source_revision": "f7f7cd7691050c7b9da74972719a199b8ab75c296fe2e27c29dc603d46ddf6a0",
+            "start": 0
+          }
+        ],
+        "feature_id": "career.ai_strategy_consulting",
+        "identity_status": "registered",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "AI strategy consulting",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I love AI strategy consulting; this $105/hour C2C rate is not worthwhile.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": [
+      {
+        "field": "signals",
+        "index": 1,
+        "message": "Qualifier source must be feedback or a matching structured posting field."
+      }
+    ]
+  },
+  "FI-044": {
+    "clarification_question": "What specifically looks promising about this opportunity?",
+    "clauses": [
+      {
+        "detail": "What specifically looks promising about this opportunity?",
+        "evidence": {
+          "end": 27,
+          "origin": "feedback",
+          "quote": "This looks promising to me.",
+          "role": "vague_reaction",
+          "source_revision": "900dc2ed7e9cfa8a5918185d89a6b28177906c3abfac42f8fc440fa195b75a1d",
+          "start": 0
+        },
+        "index": 0,
+        "role": "vague_reaction"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "This looks promising to me.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": []
+  },
+  "FI-045": {
+    "clarification_question": "What specifically about this opportunity was not your thing?",
+    "clauses": [
+      {
+        "detail": "What specifically about this opportunity was not your thing?",
+        "evidence": {
+          "end": 13,
+          "origin": "feedback",
+          "quote": "Not my thing.",
+          "role": "vague_reaction",
+          "source_revision": "7cb81b565c11abb9a213751d4e0a18eebd4fab5aee7a244a48f969bbc671a5e4",
+          "start": 0
+        },
+        "index": 0,
+        "role": "vague_reaction"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Not my thing.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": []
+  },
+  "FI-046": {
+    "clarification_question": "What specifically about the culture felt off?",
+    "clauses": [
+      {
+        "detail": "What specifically about the culture felt off?",
+        "evidence": {
+          "end": 22,
+          "origin": "feedback",
+          "quote": "The culture feels off.",
+          "role": "vague_reaction",
+          "source_revision": "d8d0d5310e133819ab947ab9a691348e56cc2bdb00ab73c5f7851d0d672246a4",
+          "start": 0
+        },
+        "index": 0,
+        "role": "vague_reaction"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The culture feels off.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": []
+  },
+  "FI-047": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "User indicates no pay objection to this opportunity.",
+        "evidence": {
+          "end": 16,
+          "origin": "feedback",
+          "quote": "The pay is fine,",
+          "role": "context",
+          "source_revision": "f7dc6b546248e38b468a80d2f11c31b08aeb63d470c58140026273175e25808a",
+          "start": 0
+        },
+        "index": 0,
+        "role": "context"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 75,
+          "origin": "feedback",
+          "quote": "it is not senior enough for the responsibility I want.",
+          "role": "preference",
+          "source_revision": "f7dc6b546248e38b468a80d2f11c31b08aeb63d470c58140026273175e25808a",
+          "start": 21
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "seniority_scope",
+        "display_label": "Wants a more senior level of responsibility",
+        "evidence": [
+          {
+            "end": 75,
+            "origin": "feedback",
+            "quote": "it is not senior enough for the responsibility I want.",
+            "role": "preference",
+            "source_revision": "f7dc6b546248e38b468a80d2f11c31b08aeb63d470c58140026273175e25808a",
+            "start": 21
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "seniority level relative to desired responsibility",
+          "type": "seniority_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The pay is fine, but it is not senior enough for the responsibility I want.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-048": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 72,
+          "origin": "feedback",
+          "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+          "role": "preference",
+          "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Avoid sales-focused work",
+        "evidence": [
+          {
+            "end": 72,
+            "origin": "feedback",
+            "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+            "role": "preference",
+            "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "sales",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-049": {
+    "clarification_question": "What specifically about this opportunity feels wrong?",
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 29,
+          "origin": "feedback",
+          "quote": "I like consulting as a career",
+          "role": "preference",
+          "source_revision": "aec5f7f351177010904ea39cdcc9d673089b13cdcda645c24bc655f3cfe3c853",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "What specifically about this opportunity feels wrong?",
+        "evidence": {
+          "end": 80,
+          "origin": "feedback",
+          "quote": "but something about this opportunity feels wrong.",
+          "role": "vague_reaction",
+          "source_revision": "aec5f7f351177010904ea39cdcc9d673089b13cdcda645c24bc655f3cfe3c853",
+          "start": 31
+        },
+        "index": 1,
+        "role": "vague_reaction"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Consulting career",
+        "evidence": [
+          {
+            "end": 29,
+            "origin": "feedback",
+            "quote": "I like consulting as a career",
+            "role": "preference",
+            "source_revision": "aec5f7f351177010904ea39cdcc9d673089b13cdcda645c24bc655f3cfe3c853",
+            "start": 0
+          }
+        ],
+        "feature_id": "career.consulting",
+        "identity_status": "registered",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "consulting",
+          "type": "career_category"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I like consulting as a career, but something about this opportunity feels wrong.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": []
+  },
+  "FI-050": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "Tentative concession tied to this opportunity's quality and pay.",
+        "evidence": {
+          "end": 51,
+          "origin": "feedback",
+          "quote": "I might take $165,000 base if the job were amazing;",
+          "role": "context",
+          "source_revision": "0b6b5d237a1e5392dda6067203d463c59a48c7a27dad22760e243c134619c95d",
+          "start": 0
+        },
+        "index": 0,
+        "role": "context"
+      },
+      {
+        "detail": "User explicitly proposes reviewing the confirmed minimum compensation rule; no new floor established.",
+        "evidence": {
+          "end": 84,
+          "origin": "feedback",
+          "quote": "I want to reconsider my minimum.",
+          "role": "rule_reconsideration",
+          "source_revision": "0b6b5d237a1e5392dda6067203d463c59a48c7a27dad22760e243c134619c95d",
+          "start": 52
+        },
+        "index": 1,
+        "role": "rule_reconsideration"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I might take $165,000 base if the job were amazing; I want to reconsider my minimum.",
+    "profile_fact_candidate": "I might take $165,000 base if the job were amazing; I want to reconsider my minimum.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  }
+}

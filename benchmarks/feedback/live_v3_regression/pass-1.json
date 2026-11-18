@@ -1,0 +1,757 @@
+{
+  "FH-001": {
+    "clarification_question": "What about the scope gives you pause?",
+    "clauses": [
+      {
+        "detail": "What about the scope gives you pause?",
+        "evidence": {
+          "end": 50,
+          "origin": "feedback",
+          "quote": "The scope gives me pause, and I can't say why yet.",
+          "role": "vague_reaction",
+          "source_revision": "07442c728cccd18bf964f2f80fe772ee82bfe0383223f78f52aeffff574833f3",
+          "start": 0
+        },
+        "index": 0,
+        "role": "vague_reaction"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The scope gives me pause, and I can't say why yet.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": []
+  },
+  "FH-002": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 54,
+          "origin": "feedback",
+          "quote": "I would enjoy facilitating incident tabletop exercises",
+          "role": "preference",
+          "source_revision": "8f73d0b9334aa05b86691e867c98692ce26eb13493f14f6bf51dc1a1b96d61ca",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "No prior experience running recovery drills.",
+        "evidence": {
+          "end": 94,
+          "origin": "feedback",
+          "quote": "I have never run a recovery drill.",
+          "role": "profile_fact",
+          "source_revision": "8f73d0b9334aa05b86691e867c98692ce26eb13493f14f6bf51dc1a1b96d61ca",
+          "start": 60
+        },
+        "index": 1,
+        "role": "profile_fact"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Facilitating incident tabletop exercises",
+        "evidence": [
+          {
+            "end": 54,
+            "origin": "feedback",
+            "quote": "I would enjoy facilitating incident tabletop exercises",
+            "role": "preference",
+            "source_revision": "8f73d0b9334aa05b86691e867c98692ce26eb13493f14f6bf51dc1a1b96d61ca",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "facilitating incident tabletop exercises",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would enjoy facilitating incident tabletop exercises, but I have never run a recovery drill.",
+    "profile_fact_candidate": "I have never run a recovery drill.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  },
+  "FH-003": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 50,
+          "origin": "feedback",
+          "quote": "I would love a career in data governance analysis.",
+          "role": "preference",
+          "source_revision": "fa3a791d8a4879ed7b8ec29157b78f063b3abf632cdb5e9040bdbe9bf3a856f2",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "Would need to learn the employer's catalog software before doing the role.",
+        "evidence": {
+          "end": 98,
+          "origin": "feedback",
+          "quote": "I'd need to learn their catalog software first.",
+          "role": "context",
+          "source_revision": "fa3a791d8a4879ed7b8ec29157b78f063b3abf632cdb5e9040bdbe9bf3a856f2",
+          "start": 51
+        },
+        "index": 1,
+        "role": "context"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Career in data governance analysis",
+        "evidence": [
+          {
+            "end": 50,
+            "origin": "feedback",
+            "quote": "I would love a career in data governance analysis.",
+            "role": "preference",
+            "source_revision": "fa3a791d8a4879ed7b8ec29157b78f063b3abf632cdb5e9040bdbe9bf3a856f2",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "data governance analysis",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would love a career in data governance analysis. I'd need to learn their catalog software first.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH-004": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 35,
+          "origin": "feedback",
+          "quote": "I like diagnosing production alerts",
+          "role": "preference",
+          "source_revision": "415b9e013ac9218d949667ef3533621eb910734b05b52bb66c7152ccc1407f7a",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 74,
+          "origin": "feedback",
+          "quote": "but I do not want weekend pager duty.",
+          "role": "preference",
+          "source_revision": "415b9e013ac9218d949667ef3533621eb910734b05b52bb66c7152ccc1407f7a",
+          "start": 37
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Diagnosing production alerts",
+        "evidence": [
+          {
+            "end": 35,
+            "origin": "feedback",
+            "quote": "I like diagnosing production alerts",
+            "role": "preference",
+            "source_revision": "415b9e013ac9218d949667ef3533621eb910734b05b52bb66c7152ccc1407f7a",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "diagnosing production alerts",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Weekend pager duty",
+        "evidence": [
+          {
+            "end": 74,
+            "origin": "feedback",
+            "quote": "but I do not want weekend pager duty.",
+            "role": "preference",
+            "source_revision": "415b9e013ac9218d949667ef3533621eb910734b05b52bb66c7152ccc1407f7a",
+            "start": 37
+          },
+          {
+            "end": 62,
+            "origin": "feedback",
+            "quote": "weekend",
+            "role": "qualifier",
+            "source_revision": "415b9e013ac9218d949667ef3533621eb910734b05b52bb66c7152ccc1407f7a",
+            "start": 55
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 62,
+                "origin": "feedback",
+                "quote": "weekend",
+                "role": "qualifier",
+                "source_revision": "415b9e013ac9218d949667ef3533621eb910734b05b52bb66c7152ccc1407f7a",
+                "start": 55
+              },
+              "kind": "schedule",
+              "quote": "weekend",
+              "source": "feedback",
+              "value": "weekend"
+            }
+          ],
+          "referent": "weekend pager duty",
+          "type": "schedule"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I like diagnosing production alerts, but I do not want weekend pager duty.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH-005": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 94,
+          "origin": "feedback",
+          "quote": "I don't want a career in procurement operations, even though vendor negotiation appeals to me.",
+          "role": "preference",
+          "source_revision": "0174efcdd1e33951f9732145875992d4965491ab20d51452bb25dcbceb43b2dd",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "Concession explaining the broader career rejection; not a separate preference about this opportunity.",
+        "evidence": {
+          "end": 94,
+          "origin": "feedback",
+          "quote": "even though vendor negotiation appeals to me.",
+          "role": "context",
+          "source_revision": "0174efcdd1e33951f9732145875992d4965491ab20d51452bb25dcbceb43b2dd",
+          "start": 49
+        },
+        "index": 1,
+        "role": "context"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": "explicit_scope_cue",
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Procurement operations career",
+        "evidence": [
+          {
+            "end": 94,
+            "origin": "feedback",
+            "quote": "I don't want a career in procurement operations, even though vendor negotiation appeals to me.",
+            "role": "preference",
+            "source_revision": "0174efcdd1e33951f9732145875992d4965491ab20d51452bb25dcbceb43b2dd",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "procurement operations",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I don't want a career in procurement operations, even though vendor negotiation appeals to me.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH-006": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 67,
+          "origin": "feedback",
+          "quote": "I do not want to spend most of each day processing purchase orders.",
+          "role": "preference",
+          "source_revision": "38ebc1ce13d7366c3e6ad429a45d6a8c1b3e6f4e0b0dc45cbbcc63c616f6da26",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Dislikes spending most of the day processing purchase orders",
+        "evidence": [
+          {
+            "end": 67,
+            "origin": "feedback",
+            "quote": "I do not want to spend most of each day processing purchase orders.",
+            "role": "preference",
+            "source_revision": "38ebc1ce13d7366c3e6ad429a45d6a8c1b3e6f4e0b0dc45cbbcc63c616f6da26",
+            "start": 0
+          },
+          {
+            "end": 39,
+            "origin": "feedback",
+            "quote": "most of each day",
+            "role": "qualifier",
+            "source_revision": "38ebc1ce13d7366c3e6ad429a45d6a8c1b3e6f4e0b0dc45cbbcc63c616f6da26",
+            "start": 23
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 39,
+                "origin": "feedback",
+                "quote": "most of each day",
+                "role": "qualifier",
+                "source_revision": "38ebc1ce13d7366c3e6ad429a45d6a8c1b3e6f4e0b0dc45cbbcc63c616f6da26",
+                "start": 23
+              },
+              "kind": "time_share",
+              "quote": "most of each day",
+              "source": "feedback",
+              "value": "most of each day"
+            }
+          ],
+          "referent": "processing purchase orders",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I do not want to spend most of each day processing purchase orders.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH-007": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 29,
+          "origin": "feedback",
+          "quote": "I like accessibility testing.",
+          "role": "preference",
+          "source_revision": "1c7e42da0e7ae8346ad99951641de01647b1f3cb5fae888191fe920e33f9465c",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "Verify what 'always on' means for the team.",
+        "evidence": {
+          "end": 102,
+          "origin": "feedback",
+          "quote": "The listing says the team is 'always on'; I need to ask what that means.",
+          "role": "posting_verification",
+          "source_revision": "1c7e42da0e7ae8346ad99951641de01647b1f3cb5fae888191fe920e33f9465c",
+          "start": 30
+        },
+        "index": 1,
+        "role": "posting_verification"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Accessibility testing",
+        "evidence": [
+          {
+            "end": 29,
+            "origin": "feedback",
+            "quote": "I like accessibility testing.",
+            "role": "preference",
+            "source_revision": "1c7e42da0e7ae8346ad99951641de01647b1f3cb5fae888191fe920e33f9465c",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "accessibility testing",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I like accessibility testing. The listing says the team is 'always on'; I need to ask what that means.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH-008": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 68,
+          "origin": "feedback",
+          "quote": "The $70 per hour W-2 rate is below my existing $75 per hour minimum.",
+          "role": "preference",
+          "source_revision": "bd5a9f7bb8ddca55021e3f40d2ebf78bffee3211b26781e160f582fe05d0da01",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": "The confirmed W-2 rate of $70 per hour is below the $75 per hour minimum.",
+    "hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The $70 per hour W-2 rate is below my existing $75 per hour minimum.",
+    "profile_fact_candidate": "The confirmed W-2 rate of $70 per hour is below the $75 per hour minimum.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": [
+      {
+        "field": "signals",
+        "index": 0,
+        "message": "An eligibility violation alone cannot support a preference."
+      }
+    ]
+  },
+  "FH-009": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "Requests reconsideration of the confirmed W-2 hourly minimum rule to 68 USD/hour immediately.",
+        "evidence": {
+          "end": 85,
+          "origin": "feedback",
+          "quote": "Please lower my W-2 minimum to $68 per hour now without waiting for another approval.",
+          "role": "rule_reconsideration",
+          "source_revision": "3c639cc74b96a4c66b0abed0bef842dba46372d64bcb06bcc3c70ecf6fc511d9",
+          "start": 0
+        },
+        "index": 0,
+        "role": "rule_reconsideration"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Please lower my W-2 minimum to $68 per hour now without waiting for another approval.",
+    "profile_fact_candidate": "Please lower my W-2 minimum to $68 per hour now without waiting for another approval.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  },
+  "FH-010": {
+    "clarification_question": "What specifically influenced your reaction to this opportunity?",
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 93,
+          "origin": "feedback",
+          "quote": "I would pass on $115 an hour for this C2C contract if the client makes me supply the lab kit.",
+          "role": "preference",
+          "source_revision": "f0950ab034a200376a15007c11b9fdb09a891bc77f473e8f3cfafe1c62a5d46f",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would pass on $115 an hour for this C2C contract if the client makes me supply the lab kit.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": [
+      {
+        "field": "signals",
+        "index": 0,
+        "message": "Qualifier source must be feedback or a matching structured posting field."
+      }
+    ]
+  },
+  "FH-011": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 80,
+          "origin": "feedback",
+          "quote": "I would enjoy leading the onboarding workshops if I could deliver them by video.",
+          "role": "preference",
+          "source_revision": "18ada31ccee5eb32c5a1bec92e49a8af3a64bc8a3cf9abcdb2337955c9f3b1d8",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": {
+          "evidence": {
+            "end": 79,
+            "origin": "feedback",
+            "quote": "if I could deliver them by video",
+            "role": "condition",
+            "source_revision": "18ada31ccee5eb32c5a1bec92e49a8af3a64bc8a3cf9abcdb2337955c9f3b1d8",
+            "start": 47
+          },
+          "kind": "delivery_mode_available",
+          "quote": "if I could deliver them by video",
+          "value": "deliver them by video"
+        },
+        "dimension": "role_responsibilities",
+        "display_label": "Leading onboarding workshops",
+        "evidence": [
+          {
+            "end": 80,
+            "origin": "feedback",
+            "quote": "I would enjoy leading the onboarding workshops if I could deliver them by video.",
+            "role": "preference",
+            "source_revision": "18ada31ccee5eb32c5a1bec92e49a8af3a64bc8a3cf9abcdb2337955c9f3b1d8",
+            "start": 0
+          },
+          {
+            "end": 79,
+            "origin": "feedback",
+            "quote": "if I could deliver them by video",
+            "role": "condition",
+            "source_revision": "18ada31ccee5eb32c5a1bec92e49a8af3a64bc8a3cf9abcdb2337955c9f3b1d8",
+            "start": 47
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "leading the onboarding workshops",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would enjoy leading the onboarding workshops if I could deliver them by video.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH-012": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 47,
+          "origin": "feedback",
+          "quote": "The data loss investigation work appeals to me.",
+          "role": "preference",
+          "source_revision": "f2ed95f2c15e2a5b8ee5071a2d4cf29ba75e7cf291843d4b25eebccaed69cf00",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "Reports a conflict between this job's onsite arrangement at 33 driving miles and the user's confirmed location rule.",
+        "evidence": {
+          "end": 125,
+          "origin": "feedback",
+          "quote": "Being onsite all week 33 driving miles away breaks my existing location rule.",
+          "role": "job_fact",
+          "source_revision": "f2ed95f2c15e2a5b8ee5071a2d4cf29ba75e7cf291843d4b25eebccaed69cf00",
+          "start": 48
+        },
+        "index": 1,
+        "role": "job_fact"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": "Regular onsite attendance at 33 driving miles conflicts with the confirmed remote-work rule.",
+    "hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Data loss investigation work",
+        "evidence": [
+          {
+            "end": 47,
+            "origin": "feedback",
+            "quote": "The data loss investigation work appeals to me.",
+            "role": "preference",
+            "source_revision": "f2ed95f2c15e2a5b8ee5071a2d4cf29ba75e7cf291843d4b25eebccaed69cf00",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "data loss investigation work",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The data loss investigation work appeals to me. Being onsite all week 33 driving miles away breaks my existing location rule.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  }
+}

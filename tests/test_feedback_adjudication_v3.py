@@ -4,7 +4,7 @@ from copy import deepcopy
 from hashlib import sha256
 import unittest
 
-from job_search_agent.feedback_adjudication_v3 import adjudicate
+from job_search_agent.feedback_adjudication_v3 import _same_condition_form, adjudicate
 from job_search_agent.feedback_evaluation import GoldSuite
 
 
@@ -70,12 +70,22 @@ def _document(**cases):
     return {"suite_sha256": SUITE_HASH, "predictions_sha256": PREDICTIONS_HASH, "reviewer": "Reviewer", "cases": cases}
 
 
-def _score(cases, predictions, verdicts):
+def _score(cases, predictions, verdicts, *, high_risk_case_ids=()):
     suite = GoldSuite("fixture", SUITE_HASH, cases, {})
-    return adjudicate(suite, predictions, verdicts, predictions_sha256=PREDICTIONS_HASH)
+    return adjudicate(suite, predictions, verdicts, predictions_sha256=PREDICTIONS_HASH,
+                      high_risk_case_ids=high_risk_case_ids)
 
 
 class AdjudicationTests(unittest.TestCase):
+    def test_legacy_workload_condition_can_be_preserved_as_a_typed_scope_limit(self):
+        reference = {"condition": "processing orders takes up most of each day"}
+        qualifier = {"kind": "time_share", "value": "most of each day",
+                     "source": "feedback", "quote": "most of each day"}
+        signal = {"condition": None, "scope": {"qualifiers": [qualifier]}}
+        self.assertTrue(_same_condition_form(reference, signal))
+        self.assertFalse(_same_condition_form(reference, {"condition": None, "scope": {"qualifiers": []}}))
+        self.assertFalse(_same_condition_form({"condition": "the employer supplies equipment"}, signal))
+
     def test_credits_reviewed_equivalence_for_supported_held_candidate(self):
         case = _case()
         report = _score([case], {"clear": _prediction(case)}, _document(clear=_verdict()))
@@ -145,16 +155,28 @@ class AdjudicationTests(unittest.TestCase):
         predictions = {case["case_id"]: _prediction(case) for case in cases}
         reviews = {case["case_id"]: _verdict() for case in cases}
         reviews["clear0"] = _verdict(pairs=[], clear_dimension_scope_correct=False)
-        reviews["clear1"] = _verdict(pairs=[])
         report = _score(cases, predictions, _document(**reviews))
         self.assertTrue(report["quality_gates_passed"])
-        self.assertEqual(report["semantic_recall"]["accuracy"], 0.90)
+        self.assertEqual(report["semantic_recall"]["accuracy"], 0.95)
         self.assertEqual(report["clear_dimension_scope_accuracy"]["accuracy"], 0.95)
 
-        predictions["clear1"]["interpretations"] = []
+        reviews["clear1"] = _verdict(pairs=[])
         report = _score(cases, predictions, _document(**reviews))
         self.assertFalse(report["quality_gates"]["clear_dimension_scope_at_least_95_percent"])
         self.assertEqual(report["clear_dimension_scope_accuracy"]["correct"], 18)
+        self.assertTrue(report["quality_gates"]["semantic_recall_at_least_90_percent"])
+        self.assertTrue(report["quality_gates"]["semantic_precision_at_least_90_percent"])
+
+    def test_designated_clear_controls_fail_on_false_escalation(self):
+        case = _case()
+        output = _prediction(case, review_status="NEEDS_CLARIFICATION", clarification_question="Is that right?")
+        document = _document(clear=_verdict())
+        report = _score([case], {"clear": output}, document, high_risk_case_ids=("clear",))
+        self.assertFalse(report["quality_gates"]["all_designated_high_risk_routes_correct"])
+        self.assertEqual(report["high_risk_routing_controls"], {"clear": False})
+        self.assertEqual(report["clear_case_false_escalation_case_ids"], ["clear"])
+        with self.assertRaisesRegex(ValueError, "must be present"):
+            _score([case], {"clear": output}, document, high_risk_case_ids=("missing",))
 
 
 if __name__ == "__main__":

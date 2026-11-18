@@ -1,0 +1,741 @@
+{
+  "configuration": {
+    "benchmark_version": "3.0",
+    "capture_configuration_sha256": "b14a9780f3f534dfb70b0017aef89e25d6fa8bac513c0d1d41488a8590f3803a",
+    "hard_rules": {
+      "1099_hourly_minimum_usd": 100,
+      "c2c_hourly_minimum_usd": null,
+      "commute_rules": [
+        "Within 10 driving miles: onsite acceptable.",
+        "Greater than 10 and less than 30 driving miles: Mondays and Fridays must be remote. Unknown days require verification.",
+        "At least 30 driving miles: regular work must be fully remote. Occasional visits or business trips are allowed."
+      ],
+      "permanent_base_minimum_usd": 180000,
+      "unknown_salary_remains_eligible": true,
+      "w2_hourly_minimum_usd": 75
+    },
+    "hard_rules_sha256": "949c019e2bd8122cbf7d05b6d1227e2302fe2437416ee995a647890dffbeb6c4",
+    "inputs": {
+      "FH3-001": {
+        "job_context_sha256": "fd11d265382f002978e44380118be0a698f2caa696055aa7b597d51ff245e18d",
+        "original_feedback_sha256": "70185e23a2a922e368b2a7b04a0802ff3312227726ed92e6c8ddd5d57c76cfcb"
+      },
+      "FH3-002": {
+        "job_context_sha256": "24dbdf9304a30ea7906f6b92ee26d859d1a19f27d9146ec96ee779f703478843",
+        "original_feedback_sha256": "695933bd510885ca176396cc3ccdf82a9f009bc18ecf574c02c53d0c6119f3f8"
+      },
+      "FH3-003": {
+        "job_context_sha256": "0378e92cdd142259b370d4f1144638c0335e052f7a0d2b2ee41f83df58673c77",
+        "original_feedback_sha256": "839c6120efcc77dfd5ae619941795186e06675f1cde6b9d79256ec0b9ed311ed"
+      },
+      "FH3-004": {
+        "job_context_sha256": "5bbcf9bdb9bae55ca77c0630c732f0debdb830872919cf6c8d5ca05a79e5ea9c",
+        "original_feedback_sha256": "1d7c79963e4b4f4d8d02fa74b5470159363119a88145692065d5bcdaa7506e5d"
+      },
+      "FH3-005": {
+        "job_context_sha256": "868447e9f25e66854a0c7bb30da82f3c5d208f9aba956c8c88792c5db4d89f74",
+        "original_feedback_sha256": "a81ad14a943dbfd596fc46c8542776733859483ee2a2afee4b0bd31f435afd7c"
+      },
+      "FH3-006": {
+        "job_context_sha256": "5500b6f5d06dd537147977e253cc5781173750f068ad8446babd6c751bcf5f4a",
+        "original_feedback_sha256": "e14920e66ae1af28d07fb464b4782d021e98b0d5b735d727f7039a4fcde0dd67"
+      },
+      "FH3-007": {
+        "job_context_sha256": "7b25b4293c049d7e705740ef162ce9ce8028c1ea4d853193d0e40f2714694f5b",
+        "original_feedback_sha256": "a47fe307f980a1df127d3787dcae1dc955435f12988cf29198c89f280593ecc9"
+      },
+      "FH3-008": {
+        "job_context_sha256": "c51535366e724f314d1ddb3d05213f680af0e67a1985b14714a69c85d063b0d0",
+        "original_feedback_sha256": "d5aea688c360383dd2fbf2735e4cb9bd996c3d12e27d7b2d16efbaf70687a26d"
+      },
+      "FH3-009": {
+        "job_context_sha256": "6812ce36de2d69f59952c1eed47dd8c7022833363825774425fad87e74f93694",
+        "original_feedback_sha256": "5a16bd9367025a57ca183902151628131fb23059130fcd173cac85bf78733a1b"
+      },
+      "FH3-010": {
+        "job_context_sha256": "5647a9f9d36b5da2706d66db161cf1579c7c1b307445f0fb68ff0527ccb135a8",
+        "original_feedback_sha256": "1e0a4e6b082ebbf11c6c54d4c6fc82b33c12fe311284a7b92ff2fe83fb0926ef"
+      },
+      "FH3-011": {
+        "job_context_sha256": "e6bb246cff7bc0157c77f5ff9d4c73aaa76f21cb3aec62a2bbfe9d18564339c7",
+        "original_feedback_sha256": "11db9005993b08ec963189879908f5e633bab4a49c7a22a6bc770726af12f127"
+      },
+      "FH3-012": {
+        "job_context_sha256": "56ddbb48c7b396c6ddeadcef1ad7b1e7aeaeb7dc7a52e02bb777c279ac3f0200",
+        "original_feedback_sha256": "4bcf7af4f6b4f6f58733724e4680a87677bed659641ecfda758a8e24702bff8b"
+      }
+    },
+    "python_version": "3.12.14",
+    "scenario_count": 12,
+    "started_at_utc": "2026-11-18T16:30:45+00:00",
+    "suite_file": "benchmarks/feedback/holdout_cases_v3.json",
+    "suite_kind": "holdout",
+    "suite_sha256": "e3c046bcbc6e5012e09fa5e8404211ab4a2938f2e7599681283c28b1253caa96",
+    "suite_version": "3.0-holdout",
+    "taxonomy_version": "feedback-taxonomy-v2.0"
+  },
+  "elapsed_seconds": 69.124,
+  "evaluation_source": {
+    "extraction_source_sha256": "a7697c6a9bca257f85b3f88c6813c9563855198f061fb4e6a89a7373007bfce1",
+    "mode": "live",
+    "passes": 2,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "requested_model": "gpt-5.4-2026-03-05",
+    "temperature_override": 0.1
+  },
+  "quality_gates_passed": false,
+  "repeated_pass_requirement_met": true,
+  "runs": [
+    {
+      "capture_files": {
+        "predictions": "pass-1.json",
+        "proposals": "pass-1.proposals.json"
+      },
+      "capture_id": "b173bd8d9dad450fbd426facd3bb459e",
+      "cases": [
+        {
+          "action_correct": true,
+          "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "anchors_verified_signals": 0,
+          "case_id": "FH3-001",
+          "emitted_signals": 0,
+          "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signals": 0,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": true,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": false,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "NEEDS_CLARIFICATION",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-002",
+          "emitted_signals": 1,
+          "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": false,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 2,
+          "case_id": "FH3-003",
+          "emitted_signals": 2,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 2,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 2,
+          "case_id": "FH3-004",
+          "emitted_signals": 2,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 2,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [
+            1
+          ],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-005",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-006",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-007",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-008",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-009",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-010",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-011",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 2,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "NEEDS_CLARIFICATION",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-012",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "NEEDS_CLARIFICATION",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        }
+      ],
+      "elapsed_seconds": 35.172,
+      "execution_errors": {},
+      "hard_action_accuracy": {
+        "accuracy": 0.9166666666666666,
+        "correct": 11,
+        "total": 12
+      },
+      "literal_exact_case_match": {
+        "accuracy": 0.08333333333333333,
+        "correct": 1,
+        "total": 12
+      },
+      "literal_signal_precision": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 13
+      },
+      "literal_signal_recall": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 14
+      },
+      "mechanical_evidence_grounding": {
+        "accuracy": 1.0,
+        "correct": 13,
+        "total": 13
+      },
+      "negative_career_proposals_requiring_review": 1,
+      "pass_number": 1,
+      "predictions_sha256": "d33d5b2060e3a1edcdcd71ea19a722291d384413e1ebacb2a045e043bd73621d",
+      "proposals_sha256": "cbd24dc7a250cbe78fc1e594806e60939d2f346a9c5258563aa561e4a9cce57d",
+      "registered_identity_precision": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 13
+      },
+      "registered_identity_recall": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 14
+      },
+      "registry_coverage": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 13
+      },
+      "route_accuracy": {
+        "accuracy": 0.9166666666666666,
+        "correct": 11,
+        "total": 12
+      },
+      "routes_with_required_resolution_fields": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "scenario_count": 12,
+      "score_status": "provisional_automation",
+      "validation_issue_count": 0
+    },
+    {
+      "capture_files": {
+        "predictions": "pass-2.json",
+        "proposals": "pass-2.proposals.json"
+      },
+      "capture_id": "60c3cdbe47a34cb08c37305f64052ed7",
+      "cases": [
+        {
+          "action_correct": true,
+          "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "anchors_verified_signals": 0,
+          "case_id": "FH3-001",
+          "emitted_signals": 0,
+          "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signals": 0,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": true,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": false,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "NEEDS_CLARIFICATION",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-002",
+          "emitted_signals": 1,
+          "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": false,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 2,
+          "case_id": "FH3-003",
+          "emitted_signals": 2,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 2,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 2,
+          "case_id": "FH3-004",
+          "emitted_signals": 2,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 2,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [
+            1
+          ],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-005",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-006",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-007",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-008",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "NEEDS_CLARIFICATION",
+          "anchors_verified_signals": 0,
+          "case_id": "FH3-009",
+          "emitted_signals": 0,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": false,
+          "validation_issues": [
+            {
+              "field": "signals",
+              "index": 0,
+              "message": "Qualifier source must be feedback or a matching structured posting field."
+            }
+          ]
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-010",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-011",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 2,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "NEEDS_CLARIFICATION",
+          "anchors_verified_signals": 1,
+          "case_id": "FH3-012",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "NEEDS_CLARIFICATION",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        }
+      ],
+      "elapsed_seconds": 33.948,
+      "execution_errors": {},
+      "hard_action_accuracy": {
+        "accuracy": 0.9166666666666666,
+        "correct": 11,
+        "total": 12
+      },
+      "literal_exact_case_match": {
+        "accuracy": 0.08333333333333333,
+        "correct": 1,
+        "total": 12
+      },
+      "literal_signal_precision": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 12
+      },
+      "literal_signal_recall": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 14
+      },
+      "mechanical_evidence_grounding": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "negative_career_proposals_requiring_review": 1,
+      "pass_number": 2,
+      "predictions_sha256": "f44a85d1e957224301957952fcb04eac7c686df81d15e5df9158f293968667d6",
+      "proposals_sha256": "61a5b78613d1424111ce1920d187fe73683f2dc72dda3c2178e1e785adfd232a",
+      "registered_identity_precision": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 12
+      },
+      "registered_identity_recall": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 14
+      },
+      "registry_coverage": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 12
+      },
+      "route_accuracy": {
+        "accuracy": 0.8333333333333334,
+        "correct": 10,
+        "total": 12
+      },
+      "routes_with_required_resolution_fields": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "scenario_count": 12,
+      "score_status": "provisional_automation",
+      "validation_issue_count": 1
+    }
+  ],
+  "score_status": "provisional_automation"
+}

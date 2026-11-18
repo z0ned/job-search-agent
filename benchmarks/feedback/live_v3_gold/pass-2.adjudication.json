@@ -1,0 +1,628 @@
+{
+  "cases": {
+    "FI-001": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The typed work-share wording and the label preserve work dominated by status-deck creation.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-002": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The original sentence shares positive sentiment across two independently extracted duties.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-003": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "Advisory work and the quota requirement retain their separate polarity and duty scope.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-004": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": false,
+      "notes": "Delivering milestones is a duty. The declared growth-purpose dimension lacks evidence. The validator held back an unsupported standalone short-contract preference.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-005": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The objection directly identifies contact-center operations roles and supports the career-level scope.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-006": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The AI enablement career preference is explicit. The willingness to train remains context.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-007": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The proposal is scoped to projects replacing core banking. The extra career-context value “another” is redundant and adds no career referent.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-008": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The scope and typed qualifiers retain overnight on-call rotation. The title acknowledgment remains context.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-009": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The surviving client-facing AI duty is grounded. The validator rejected the separate C2C rate signal on the structured source used for USD.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-010": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          2,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The surviving proposal correctly refers to the scope of this posting. The validator rejected the $140/hour C2C signal on the structured source used for USD.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-011": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          2,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The structured schedule referent preserves onsite work. The accepted $80/hour W-2 signal was omitted.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-012": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The validator rejected the annual base-salary signal and left no accepted emissions. The bonus was a posting detail to verify and the generic clarification route is incorrect.",
+      "resolution_adequate": false,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-013": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The confirmed $175,000 versus $180,000 conflict is reported for profile review. The validator blocked a preference derived only from that conflict.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-014": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The referent keeps months without billable work and the scope retains C2C. Putting the quoted rate in the preference scope narrows the proposal. The contextual rate and narrower proposition have evidence.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-015": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The structured label identifies employer refusal to disclose base salary as the target and the scope identifies the base-salary disclosure topic.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-016": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The proposal is limited to the posting’s mission. The compensation verification request does not change the approval route.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-017": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The proposal is employer-specific and the quoted layoffs are the user’s stated reason.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-018": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "Negative reaction remains scoped to work in the tobacco industry. No formal exclusion is proposed.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-019": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The mission and organization-size qualifier preserve helping small nonprofits apply AI.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-020": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The structured culture referent retains “micromanages every decision,” preserving pervasive intensity without a separate qualifier.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-021": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          2,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The named employer scope and technical-team traits support the culture signal. The separately positive employer reaction is absent as a signal.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-022": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The negative Ridgetop Bank target is grounded. The job-specific career-context qualifier restricts applicability to this posting, narrower than the approved employer preference.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-023": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The detail identifies the 45-driving-mile onsite conflict with the confirmed remote-work rule. Correct advisory action and no preference.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-024": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": false,
+      "notes": "Fully remote is preserved by the structured referent. The added positive client-work duty treats the benefit of focused remote work as a separate preference.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-025": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The coverage scope preserves the required schedule and both night and weekend periods.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-026": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "Although the scope type is arrangement, the structured referent names hybrid work at this nearby office and separately retains the six-mile distance.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-027": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The flying referent and mode plus every-week frequency preserve the narrower negative signal. Occasional trips remain independently positive.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-028": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The detail identifies Monday and Friday onsite at 20 driving miles and limits the result to the existing commute-rule conflict. No preference is inferred.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-029": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The question asks which part of the commute is a problem and gives neutral examples without inferring the answer.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-030": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "Trusted hands-on expert work and large-team management are separately captured with the proper polarities. Large remains qualitative.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-031": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The directly managed team is scoped to 20 people without inventing a general cutoff.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-032": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The supported ownership preference is assigned to growth purpose rather than seniority scope. The proposal retains the larger AI transformation portfolio as the subject of the reaction.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-033": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": false,
+      "notes": "The emitted negative target is generic decision-making autonomy. The quote supports dislike of almost no autonomy, reversing the meaning if the amount is dropped. A separate signal failed validation.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-034": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The question seeks the reason for the seniority concern without inventing a preference or qualification claim.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-035": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The career preference is explicit. Learning the tooling is a future hurdle and no training preference was added.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-036": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "Profile review preserves the specific self-reported lack of hands-on SAP integration experience.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-037": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The structured referent identifies Python coding, and the structured mostly and daily qualifiers together preserve most of the workday.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-038": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "Profile review identifies the prior migration experience the user reports, with no inferred preference.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-039": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "AI evangelist roles and AI evangelism describe the same explicit career direction.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-040": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The explicit negative career preference is scoped to quota-carrying sales.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-041": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          2,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "Misses positive interest in this posting as a whole. Trustline AI is the current employer in the supplied context, and the user explicitly distrusts that employer.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-042": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The career preference is retained. The scoped employer objection was proposed but rejected because its career-context quote lies outside its linked clause.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-043": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The consulting interest is retained. The scoped C2C rate objection was proposed but rejected because its USD qualifier used a context key that the validator would not accept for currency.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-044": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The question asks what makes the opportunity promising without inventing a reason.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-045": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The question asks what failed to fit without assigning a cause.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-046": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The question focuses on the unclear culture concern without inventing details.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-047": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "Misses acceptable pay. The seniority proposal is a supported positive paraphrase about wanting more responsibility, but the reference requires a negative reaction to insufficient seniority for the desired responsibility.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-048": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": false,
+      "notes": "The quote and display label preserve the sales emphasis. The structured referent is unrestricted sales and has no intensity qualifier, making the negative signal broader than the stated objection.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-049": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "Retains the independent consulting career preference and asks what about this opportunity feels wrong.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FI-050": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The review preserves the tentative $165,000 base exception and exceptional-role condition. The explicit request supports separate rule confirmation and the rule was not changed.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    }
+  },
+  "predictions_sha256": "f734aa81382a9ed553ff6449c4a6b32f23696af54c1aaf2ab85f021076200c08",
+  "reviewer": "Codex masked semantic reviewers",
+  "suite_sha256": "600677336c0ddcbc6dfe67a2532426a083300661100d8a8ea507680903177bbe"
+}
