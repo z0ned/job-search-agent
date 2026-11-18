@@ -1,0 +1,115 @@
+{
+  "benchmark_version": "3.0",
+  "evaluation_source": {
+    "archive_configuration_sha256": "b14a9780f3f534dfb70b0017aef89e25d6fa8bac513c0d1d41488a8590f3803a",
+    "archive_directory": "benchmarks/feedback/live_v3_holdout",
+    "archive_live_report_sha256": "bc7fdce6128af5ddf926e2e9ab8327d0c96d4352f880f18ce49fa41861fc6c25",
+    "inference_requests": 0,
+    "mode": "offline_raw_revalidation",
+    "original_evaluation_source": {
+      "extraction_source_sha256": "a7697c6a9bca257f85b3f88c6813c9563855198f061fb4e6a89a7373007bfce1",
+      "mode": "live",
+      "passes": 2,
+      "prompt_version": "feedback-interpretation-v3.0",
+      "requested_model": "gpt-5.4-2026-03-05",
+      "temperature_override": 0.1
+    },
+    "validator_sources_sha256": {
+      "feedback_extraction_v3.py": "a7697c6a9bca257f85b3f88c6813c9563855198f061fb4e6a89a7373007bfce1",
+      "feedback_rules_v3.py": "c9b20f588a946a23fbe8064052b8f190710c602917272a5e4a533d08307b771b",
+      "feedback_taxonomy.py": "a8753ce50757a97550932f4e2a45f5be0d897a9332355d4c95b68f116377ef62",
+      "feedback_v3.py": "6c48091aeaf4f84eff53175e020ff2fd248d62b705be22dbb804e2cb37c7dda9"
+    }
+  },
+  "hard_rules": {
+    "1099_hourly_minimum_usd": 100,
+    "c2c_hourly_minimum_usd": null,
+    "commute_rules": [
+      "Within 10 driving miles: onsite acceptable.",
+      "Greater than 10 and less than 30 driving miles: Mondays and Fridays must be remote. Unknown days require verification.",
+      "At least 30 driving miles: regular work must be fully remote. Occasional visits or business trips are allowed."
+    ],
+    "permanent_base_minimum_usd": 180000,
+    "unknown_salary_remains_eligible": true,
+    "w2_hourly_minimum_usd": 75
+  },
+  "hard_rules_sha256": "949c019e2bd8122cbf7d05b6d1227e2302fe2437416ee995a647890dffbeb6c4",
+  "high_risk_routing_case_ids": [
+    "FH3-001",
+    "FH3-002",
+    "FH3-006",
+    "FH3-007",
+    "FH3-008",
+    "FH3-012"
+  ],
+  "inputs": {
+    "FH3-001": {
+      "case_input_sha256": "69a93fe720210f9cc3dca405c2bc670f9111a7e4ba13d7f1a7d1f5cf00ca2566",
+      "job_context_sha256": "fd11d265382f002978e44380118be0a698f2caa696055aa7b597d51ff245e18d",
+      "original_feedback_sha256": "70185e23a2a922e368b2a7b04a0802ff3312227726ed92e6c8ddd5d57c76cfcb"
+    },
+    "FH3-002": {
+      "case_input_sha256": "981826270a4572a66f44ae9ecb4bc4c87ac87059c60760a9a07bd0f1c970585e",
+      "job_context_sha256": "24dbdf9304a30ea7906f6b92ee26d859d1a19f27d9146ec96ee779f703478843",
+      "original_feedback_sha256": "695933bd510885ca176396cc3ccdf82a9f009bc18ecf574c02c53d0c6119f3f8"
+    },
+    "FH3-003": {
+      "case_input_sha256": "c24cbd551edf8139b23ecd58c481cac768f1aa8ad2b901196f8dd7747af0e1e1",
+      "job_context_sha256": "0378e92cdd142259b370d4f1144638c0335e052f7a0d2b2ee41f83df58673c77",
+      "original_feedback_sha256": "839c6120efcc77dfd5ae619941795186e06675f1cde6b9d79256ec0b9ed311ed"
+    },
+    "FH3-004": {
+      "case_input_sha256": "0655806b66893a54dd5289bb0cb461eccf3b89223f545cf3db672769f3a2266d",
+      "job_context_sha256": "5bbcf9bdb9bae55ca77c0630c732f0debdb830872919cf6c8d5ca05a79e5ea9c",
+      "original_feedback_sha256": "1d7c79963e4b4f4d8d02fa74b5470159363119a88145692065d5bcdaa7506e5d"
+    },
+    "FH3-005": {
+      "case_input_sha256": "43483e8d5e253b5c67b52405656b76cea3e6f96f649943ee9652016f5bde2300",
+      "job_context_sha256": "868447e9f25e66854a0c7bb30da82f3c5d208f9aba956c8c88792c5db4d89f74",
+      "original_feedback_sha256": "a81ad14a943dbfd596fc46c8542776733859483ee2a2afee4b0bd31f435afd7c"
+    },
+    "FH3-006": {
+      "case_input_sha256": "a367e1e67c02a41092b478ac622783125ef2e1503a49c47cc6be8e6d05cb30d9",
+      "job_context_sha256": "5500b6f5d06dd537147977e253cc5781173750f068ad8446babd6c751bcf5f4a",
+      "original_feedback_sha256": "e14920e66ae1af28d07fb464b4782d021e98b0d5b735d727f7039a4fcde0dd67"
+    },
+    "FH3-007": {
+      "case_input_sha256": "2a2d0c99125dfdf16c04e86416ba3a03aee2a924721ce24cf6a5d5651130cca2",
+      "job_context_sha256": "7b25b4293c049d7e705740ef162ce9ce8028c1ea4d853193d0e40f2714694f5b",
+      "original_feedback_sha256": "a47fe307f980a1df127d3787dcae1dc955435f12988cf29198c89f280593ecc9"
+    },
+    "FH3-008": {
+      "case_input_sha256": "c319f7a837e9bd3642d98fac23eebc6b17738d51739375181c045de299c1776e",
+      "job_context_sha256": "c51535366e724f314d1ddb3d05213f680af0e67a1985b14714a69c85d063b0d0",
+      "original_feedback_sha256": "d5aea688c360383dd2fbf2735e4cb9bd996c3d12e27d7b2d16efbaf70687a26d"
+    },
+    "FH3-009": {
+      "case_input_sha256": "c20da8ad3771b23419469dd306749596cee9036abb418925958f105c57b35f40",
+      "job_context_sha256": "6812ce36de2d69f59952c1eed47dd8c7022833363825774425fad87e74f93694",
+      "original_feedback_sha256": "5a16bd9367025a57ca183902151628131fb23059130fcd173cac85bf78733a1b"
+    },
+    "FH3-010": {
+      "case_input_sha256": "e4da8892f613dd1dd0671da1774ab542cf6dac16d68574c129b2e1cb5214495e",
+      "job_context_sha256": "5647a9f9d36b5da2706d66db161cf1579c7c1b307445f0fb68ff0527ccb135a8",
+      "original_feedback_sha256": "1e0a4e6b082ebbf11c6c54d4c6fc82b33c12fe311284a7b92ff2fe83fb0926ef"
+    },
+    "FH3-011": {
+      "case_input_sha256": "cb73cdb3ec6b33e74254b6a48467dd2fe8dcd4adc24ee5d124e04d4bff25b42e",
+      "job_context_sha256": "e6bb246cff7bc0157c77f5ff9d4c73aaa76f21cb3aec62a2bbfe9d18564339c7",
+      "original_feedback_sha256": "11db9005993b08ec963189879908f5e633bab4a49c7a22a6bc770726af12f127"
+    },
+    "FH3-012": {
+      "case_input_sha256": "b4145b958b7ae2cfca390e55962558828d223525c472a618b2ffc8dd9e478883",
+      "job_context_sha256": "56ddbb48c7b396c6ddeadcef1ad7b1e7aeaeb7dc7a52e02bb777c279ac3f0200",
+      "original_feedback_sha256": "4bcf7af4f6b4f6f58733724e4680a87677bed659641ecfda758a8e24702bff8b"
+    }
+  },
+  "python_version": "3.12.14",
+  "scenario_count": 12,
+  "started_at_utc": "2026-11-18T20:35:27+00:00",
+  "suite_file": "benchmarks/feedback/holdout_cases_v3.json",
+  "suite_kind": "holdout",
+  "suite_sha256": "e3c046bcbc6e5012e09fa5e8404211ab4a2938f2e7599681283c28b1253caa96",
+  "suite_version": "3.0-holdout",
+  "taxonomy_version": "feedback-taxonomy-v2.0"
+}

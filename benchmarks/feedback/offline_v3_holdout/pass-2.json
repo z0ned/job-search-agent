@@ -1,0 +1,1093 @@
+{
+  "FH3-001": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "Reports a pay mismatch for this opportunity, including short duration, 1099 structure, and current minimum.",
+        "evidence": {
+          "end": 97,
+          "origin": "feedback",
+          "quote": "Even for a three-week engagement, the $98 an hour on 1099 falls short of my current $100 minimum.",
+          "role": "job_fact",
+          "source_revision": "70185e23a2a922e368b2a7b04a0802ff3312227726ed92e6c8ddd5d57c76cfcb",
+          "start": 0
+        },
+        "index": 0,
+        "role": "job_fact"
+      },
+      {
+        "detail": "Administrative request about the posting.",
+        "evidence": {
+          "end": 122,
+          "origin": "feedback",
+          "quote": "Please flag the listing.",
+          "role": "context",
+          "source_revision": "70185e23a2a922e368b2a7b04a0802ff3312227726ed92e6c8ddd5d57c76cfcb",
+          "start": 98
+        },
+        "index": 1,
+        "role": "context"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": "The confirmed 1099 rate of $98 per hour is below the $100 per hour minimum.",
+    "hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Even for a three-week engagement, the $98 an hour on 1099 falls short of my current $100 minimum. Please flag the listing.",
+    "profile_fact_candidate": "The confirmed 1099 rate of $98 per hour is below the $100 per hour minimum.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  },
+  "FH3-002": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 46,
+          "origin": "feedback",
+          "quote": "I enjoy untangling conflicting vendor clauses.",
+          "role": "preference",
+          "source_revision": "695933bd510885ca176396cc3ccdf82a9f009bc18ecf574c02c53d0c6119f3f8",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "Reconsider confirmed 1099 hourly minimum, tentatively to $92/hour.",
+        "evidence": {
+          "end": 121,
+          "origin": "feedback",
+          "quote": "I want to revisit my 1099 minimum and consider lowering it to $92 an hour.",
+          "role": "rule_reconsideration",
+          "source_revision": "695933bd510885ca176396cc3ccdf82a9f009bc18ecf574c02c53d0c6119f3f8",
+          "start": 47
+        },
+        "index": 1,
+        "role": "rule_reconsideration"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Untangling conflicting vendor clauses",
+        "evidence": [
+          {
+            "end": 46,
+            "origin": "feedback",
+            "quote": "I enjoy untangling conflicting vendor clauses.",
+            "role": "preference",
+            "source_revision": "695933bd510885ca176396cc3ccdf82a9f009bc18ecf574c02c53d0c6119f3f8",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "untangling conflicting vendor clauses",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I enjoy untangling conflicting vendor clauses. I want to revisit my 1099 minimum and consider lowering it to $92 an hour.",
+    "profile_fact_candidate": "I want to revisit my 1099 minimum and consider lowering it to $92 an hour.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  },
+  "FH3-003": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 44,
+          "origin": "feedback",
+          "quote": "A train trip every week is more than I want.",
+          "role": "preference",
+          "source_revision": "839c6120efcc77dfd5ae619941795186e06675f1cde6b9d79256ec0b9ed311ed",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 87,
+          "origin": "feedback",
+          "quote": "I am fine taking a flight once in a while.",
+          "role": "preference",
+          "source_revision": "839c6120efcc77dfd5ae619941795186e06675f1cde6b9d79256ec0b9ed311ed",
+          "start": 45
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Dislikes weekly train travel",
+        "evidence": [
+          {
+            "end": 44,
+            "origin": "feedback",
+            "quote": "A train trip every week is more than I want.",
+            "role": "preference",
+            "source_revision": "839c6120efcc77dfd5ae619941795186e06675f1cde6b9d79256ec0b9ed311ed",
+            "start": 0
+          },
+          {
+            "end": 23,
+            "origin": "feedback",
+            "quote": "every week",
+            "role": "qualifier",
+            "source_revision": "839c6120efcc77dfd5ae619941795186e06675f1cde6b9d79256ec0b9ed311ed",
+            "start": 13
+          },
+          {
+            "end": 7,
+            "origin": "feedback",
+            "quote": "train",
+            "role": "qualifier",
+            "source_revision": "839c6120efcc77dfd5ae619941795186e06675f1cde6b9d79256ec0b9ed311ed",
+            "start": 2
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 23,
+                "origin": "feedback",
+                "quote": "every week",
+                "role": "qualifier",
+                "source_revision": "839c6120efcc77dfd5ae619941795186e06675f1cde6b9d79256ec0b9ed311ed",
+                "start": 13
+              },
+              "kind": "frequency",
+              "quote": "every week",
+              "source": "feedback",
+              "value": "every week"
+            },
+            {
+              "evidence": {
+                "end": 7,
+                "origin": "feedback",
+                "quote": "train",
+                "role": "qualifier",
+                "source_revision": "839c6120efcc77dfd5ae619941795186e06675f1cde6b9d79256ec0b9ed311ed",
+                "start": 2
+              },
+              "kind": "travel_mode",
+              "quote": "train",
+              "source": "feedback",
+              "value": "train"
+            }
+          ],
+          "referent": "train trip",
+          "type": "travel_frequency"
+        },
+        "strength": "strong"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Open to occasional flights",
+        "evidence": [
+          {
+            "end": 87,
+            "origin": "feedback",
+            "quote": "I am fine taking a flight once in a while.",
+            "role": "preference",
+            "source_revision": "839c6120efcc77dfd5ae619941795186e06675f1cde6b9d79256ec0b9ed311ed",
+            "start": 45
+          },
+          {
+            "end": 86,
+            "origin": "feedback",
+            "quote": "once in a while",
+            "role": "qualifier",
+            "source_revision": "839c6120efcc77dfd5ae619941795186e06675f1cde6b9d79256ec0b9ed311ed",
+            "start": 71
+          },
+          {
+            "end": 70,
+            "origin": "feedback",
+            "quote": "flight",
+            "role": "qualifier",
+            "source_revision": "839c6120efcc77dfd5ae619941795186e06675f1cde6b9d79256ec0b9ed311ed",
+            "start": 64
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 86,
+                "origin": "feedback",
+                "quote": "once in a while",
+                "role": "qualifier",
+                "source_revision": "839c6120efcc77dfd5ae619941795186e06675f1cde6b9d79256ec0b9ed311ed",
+                "start": 71
+              },
+              "kind": "frequency",
+              "quote": "once in a while",
+              "source": "feedback",
+              "value": "once in a while"
+            },
+            {
+              "evidence": {
+                "end": 70,
+                "origin": "feedback",
+                "quote": "flight",
+                "role": "qualifier",
+                "source_revision": "839c6120efcc77dfd5ae619941795186e06675f1cde6b9d79256ec0b9ed311ed",
+                "start": 64
+              },
+              "kind": "travel_mode",
+              "quote": "flight",
+              "source": "feedback",
+              "value": "flight"
+            }
+          ],
+          "referent": "flight",
+          "type": "travel_frequency"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "A train trip every week is more than I want. I am fine taking a flight once in a while.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH3-004": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 50,
+          "origin": "feedback",
+          "quote": "I never want a career managing museum collections.",
+          "role": "preference",
+          "source_revision": "1d7c79963e4b4f4d8d02fa74b5470159363119a88145692065d5bcdaa7506e5d",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 98,
+          "origin": "feedback",
+          "quote": "Cataloguing incoming loans still appeals to me.",
+          "role": "preference",
+          "source_revision": "1d7c79963e4b4f4d8d02fa74b5470159363119a88145692065d5bcdaa7506e5d",
+          "start": 51
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": "explicit_scope_cue",
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Career managing museum collections",
+        "evidence": [
+          {
+            "end": 50,
+            "origin": "feedback",
+            "quote": "I never want a career managing museum collections.",
+            "role": "preference",
+            "source_revision": "1d7c79963e4b4f4d8d02fa74b5470159363119a88145692065d5bcdaa7506e5d",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "career managing museum collections",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Cataloguing incoming loans",
+        "evidence": [
+          {
+            "end": 98,
+            "origin": "feedback",
+            "quote": "Cataloguing incoming loans still appeals to me.",
+            "role": "preference",
+            "source_revision": "1d7c79963e4b4f4d8d02fa74b5470159363119a88145692065d5bcdaa7506e5d",
+            "start": 51
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "cataloguing incoming loans",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I never want a career managing museum collections. Cataloguing incoming loans still appeals to me.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH3-005": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 86,
+          "origin": "feedback",
+          "quote": "I do not want to spend half of every shift typing accession records into the database.",
+          "role": "preference",
+          "source_revision": "a81ad14a943dbfd596fc46c8542776733859483ee2a2afee4b0bd31f435afd7c",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Heavy shift time spent typing accession records into the database",
+        "evidence": [
+          {
+            "end": 86,
+            "origin": "feedback",
+            "quote": "I do not want to spend half of every shift typing accession records into the database.",
+            "role": "preference",
+            "source_revision": "a81ad14a943dbfd596fc46c8542776733859483ee2a2afee4b0bd31f435afd7c",
+            "start": 0
+          },
+          {
+            "end": 42,
+            "origin": "feedback",
+            "quote": "half of every shift",
+            "role": "qualifier",
+            "source_revision": "a81ad14a943dbfd596fc46c8542776733859483ee2a2afee4b0bd31f435afd7c",
+            "start": 23
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 42,
+                "origin": "feedback",
+                "quote": "half of every shift",
+                "role": "qualifier",
+                "source_revision": "a81ad14a943dbfd596fc46c8542776733859483ee2a2afee4b0bd31f435afd7c",
+                "start": 23
+              },
+              "kind": "time_share",
+              "quote": "half of every shift",
+              "source": "feedback",
+              "value": "half of every shift"
+            }
+          ],
+          "referent": "typing accession records into the database",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I do not want to spend half of every shift typing accession records into the database.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH3-006": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 56,
+          "origin": "feedback",
+          "quote": "I love helping translators resolve terminology disputes.",
+          "role": "preference",
+          "source_revision": "e14920e66ae1af28d07fb464b4782d021e98b0d5b735d727f7039a4fcde0dd67",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "No prior use of translation memory systems reported.",
+        "evidence": {
+          "end": 103,
+          "origin": "feedback",
+          "quote": "I have never used a translation memory system.",
+          "role": "profile_fact",
+          "source_revision": "e14920e66ae1af28d07fb464b4782d021e98b0d5b735d727f7039a4fcde0dd67",
+          "start": 57
+        },
+        "index": 1,
+        "role": "profile_fact"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Helping translators resolve terminology disputes",
+        "evidence": [
+          {
+            "end": 56,
+            "origin": "feedback",
+            "quote": "I love helping translators resolve terminology disputes.",
+            "role": "preference",
+            "source_revision": "e14920e66ae1af28d07fb464b4782d021e98b0d5b735d727f7039a4fcde0dd67",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "helping translators resolve terminology disputes",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I love helping translators resolve terminology disputes. I have never used a translation memory system.",
+    "profile_fact_candidate": "I have never used a translation memory system.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  },
+  "FH3-007": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 56,
+          "origin": "feedback",
+          "quote": "Digitizing handwritten field notebooks sounds rewarding.",
+          "role": "preference",
+          "source_revision": "a47fe307f980a1df127d3787dcae1dc955435f12988cf29198c89f280593ecc9",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "Would need to learn the employer's scan software if hired.",
+        "evidence": {
+          "end": 118,
+          "origin": "feedback",
+          "quote": "If hired, I expect to get up to speed on their scan software.",
+          "role": "context",
+          "source_revision": "a47fe307f980a1df127d3787dcae1dc955435f12988cf29198c89f280593ecc9",
+          "start": 57
+        },
+        "index": 1,
+        "role": "context"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "growth_purpose",
+        "display_label": "Finds digitizing handwritten field notebooks rewarding",
+        "evidence": [
+          {
+            "end": 56,
+            "origin": "feedback",
+            "quote": "Digitizing handwritten field notebooks sounds rewarding.",
+            "role": "preference",
+            "source_revision": "a47fe307f980a1df127d3787dcae1dc955435f12988cf29198c89f280593ecc9",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "digitizing handwritten field notebooks",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Digitizing handwritten field notebooks sounds rewarding. If hired, I expect to get up to speed on their scan software.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH3-008": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 86,
+          "origin": "feedback",
+          "quote": "The ad lists 'field troubleshooting' as a duty. That's exactly the part I would enjoy.",
+          "role": "preference",
+          "source_revision": "d5aea688c360383dd2fbf2735e4cb9bd996c3d12e27d7b2d16efbaf70687a26d",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "Verify what 'Pacific coverage' refers to in this opportunity.",
+        "evidence": {
+          "end": 121,
+          "origin": "feedback",
+          "quote": "What does 'Pacific coverage' mean?",
+          "role": "posting_verification",
+          "source_revision": "d5aea688c360383dd2fbf2735e4cb9bd996c3d12e27d7b2d16efbaf70687a26d",
+          "start": 87
+        },
+        "index": 1,
+        "role": "posting_verification"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Enjoys field troubleshooting duties",
+        "evidence": [
+          {
+            "end": 86,
+            "origin": "feedback",
+            "quote": "The ad lists 'field troubleshooting' as a duty. That's exactly the part I would enjoy.",
+            "role": "preference",
+            "source_revision": "d5aea688c360383dd2fbf2735e4cb9bd996c3d12e27d7b2d16efbaf70687a26d",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "field troubleshooting",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The ad lists 'field troubleshooting' as a duty. That's exactly the part I would enjoy. What does 'Pacific coverage' mean?",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH3-009": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 91,
+          "origin": "feedback",
+          "quote": "I would accept $94 an hour on W-2 if the staffing agency pays for the safety certification.",
+          "role": "preference",
+          "source_revision": "5a16bd9367025a57ca183902151628131fb23059130fcd173cac85bf78733a1b",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": {
+          "evidence": {
+            "end": 90,
+            "origin": "feedback",
+            "quote": "if the staffing agency pays for the safety certification",
+            "role": "condition",
+            "source_revision": "5a16bd9367025a57ca183902151628131fb23059130fcd173cac85bf78733a1b",
+            "start": 34
+          },
+          "kind": "other",
+          "quote": "if the staffing agency pays for the safety certification",
+          "value": "staffing agency pays for the safety certification"
+        },
+        "dimension": "compensation",
+        "display_label": "Accepts $94/hour on W-2 if agency covers safety certification",
+        "evidence": [
+          {
+            "end": 91,
+            "origin": "feedback",
+            "quote": "I would accept $94 an hour on W-2 if the staffing agency pays for the safety certification.",
+            "role": "preference",
+            "source_revision": "5a16bd9367025a57ca183902151628131fb23059130fcd173cac85bf78733a1b",
+            "start": 0
+          },
+          {
+            "end": 18,
+            "origin": "feedback",
+            "quote": "$94",
+            "role": "qualifier",
+            "source_revision": "5a16bd9367025a57ca183902151628131fb23059130fcd173cac85bf78733a1b",
+            "start": 15
+          },
+          {
+            "key": "hourly_rate_usd",
+            "origin": "job_context",
+            "role": "context_only",
+            "value": 94
+          },
+          {
+            "end": 26,
+            "origin": "feedback",
+            "quote": "an hour",
+            "role": "qualifier",
+            "source_revision": "5a16bd9367025a57ca183902151628131fb23059130fcd173cac85bf78733a1b",
+            "start": 19
+          },
+          {
+            "end": 33,
+            "origin": "feedback",
+            "quote": "on W-2",
+            "role": "qualifier",
+            "source_revision": "5a16bd9367025a57ca183902151628131fb23059130fcd173cac85bf78733a1b",
+            "start": 27
+          },
+          {
+            "end": 90,
+            "origin": "feedback",
+            "quote": "if the staffing agency pays for the safety certification",
+            "role": "condition",
+            "source_revision": "5a16bd9367025a57ca183902151628131fb23059130fcd173cac85bf78733a1b",
+            "start": 34
+          }
+        ],
+        "feature_id": "compensation.quoted_rate",
+        "identity_status": "registered",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 18,
+                "origin": "feedback",
+                "quote": "$94",
+                "role": "qualifier",
+                "source_revision": "5a16bd9367025a57ca183902151628131fb23059130fcd173cac85bf78733a1b",
+                "start": 15
+              },
+              "kind": "amount",
+              "quote": "$94",
+              "source": "feedback",
+              "value": "94"
+            },
+            {
+              "evidence": {
+                "key": "hourly_rate_usd",
+                "origin": "job_context",
+                "role": "context_only",
+                "value": 94
+              },
+              "kind": "currency",
+              "quote": "hourly_rate_usd",
+              "source": "job_context",
+              "value": "USD"
+            },
+            {
+              "evidence": {
+                "end": 26,
+                "origin": "feedback",
+                "quote": "an hour",
+                "role": "qualifier",
+                "source_revision": "5a16bd9367025a57ca183902151628131fb23059130fcd173cac85bf78733a1b",
+                "start": 19
+              },
+              "kind": "compensation_unit",
+              "quote": "an hour",
+              "source": "feedback",
+              "value": "hourly"
+            },
+            {
+              "evidence": {
+                "end": 33,
+                "origin": "feedback",
+                "quote": "on W-2",
+                "role": "qualifier",
+                "source_revision": "5a16bd9367025a57ca183902151628131fb23059130fcd173cac85bf78733a1b",
+                "start": 27
+              },
+              "kind": "employment_type",
+              "quote": "on W-2",
+              "source": "feedback",
+              "value": "W-2"
+            }
+          ],
+          "referent": "$94 an hour on W-2",
+          "type": "compensation_context"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would accept $94 an hour on W-2 if the staffing agency pays for the safety certification.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH3-010": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 86,
+          "origin": "feedback",
+          "quote": "I would enjoy calibrating spectrometers, provided it takes at most one shift per week.",
+          "role": "preference",
+          "source_revision": "1e0a4e6b082ebbf11c6c54d4c6fc82b33c12fe311284a7b92ff2fe83fb0926ef",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Calibrating spectrometers",
+        "evidence": [
+          {
+            "end": 86,
+            "origin": "feedback",
+            "quote": "I would enjoy calibrating spectrometers, provided it takes at most one shift per week.",
+            "role": "preference",
+            "source_revision": "1e0a4e6b082ebbf11c6c54d4c6fc82b33c12fe311284a7b92ff2fe83fb0926ef",
+            "start": 0
+          },
+          {
+            "end": 85,
+            "origin": "feedback",
+            "quote": "at most one shift per week",
+            "role": "qualifier",
+            "source_revision": "1e0a4e6b082ebbf11c6c54d4c6fc82b33c12fe311284a7b92ff2fe83fb0926ef",
+            "start": 59
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 85,
+                "origin": "feedback",
+                "quote": "at most one shift per week",
+                "role": "qualifier",
+                "source_revision": "1e0a4e6b082ebbf11c6c54d4c6fc82b33c12fe311284a7b92ff2fe83fb0926ef",
+                "start": 59
+              },
+              "kind": "frequency",
+              "quote": "at most one shift per week",
+              "source": "feedback",
+              "value": "at most one shift per week"
+            }
+          ],
+          "referent": "calibrating spectrometers",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would enjoy calibrating spectrometers, provided it takes at most one shift per week.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH3-011": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "Positive reaction to this specific opening.",
+        "evidence": {
+          "end": 49,
+          "origin": "feedback",
+          "quote": "I love this particular Controls Designer opening.",
+          "role": "context",
+          "source_revision": "11db9005993b08ec963189879908f5e633bab4a49c7a22a6bc770726af12f127",
+          "start": 0
+        },
+        "index": 0,
+        "role": "context"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 123,
+          "origin": "feedback",
+          "quote": "I do not want to take on another hospital fire-alarm replacement project.",
+          "role": "preference",
+          "source_revision": "11db9005993b08ec963189879908f5e633bab4a49c7a22a6bc770726af12f127",
+          "start": 50
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Avoid hospital fire-alarm replacement projects",
+        "evidence": [
+          {
+            "end": 123,
+            "origin": "feedback",
+            "quote": "I do not want to take on another hospital fire-alarm replacement project.",
+            "role": "preference",
+            "source_revision": "11db9005993b08ec963189879908f5e633bab4a49c7a22a6bc770726af12f127",
+            "start": 50
+          },
+          {
+            "end": 82,
+            "origin": "feedback",
+            "quote": "another",
+            "role": "qualifier",
+            "source_revision": "11db9005993b08ec963189879908f5e633bab4a49c7a22a6bc770726af12f127",
+            "start": 75
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 82,
+                "origin": "feedback",
+                "quote": "another",
+                "role": "qualifier",
+                "source_revision": "11db9005993b08ec963189879908f5e633bab4a49c7a22a6bc770726af12f127",
+                "start": 75
+              },
+              "kind": "career_context",
+              "quote": "another",
+              "source": "feedback",
+              "value": "another"
+            }
+          ],
+          "referent": "hospital fire-alarm replacement project",
+          "type": "project_type"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I love this particular Controls Designer opening. I do not want to take on another hospital fire-alarm replacement project.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH3-012": {
+    "clarification_question": "What specifically about this opening is nagging at you?",
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 46,
+          "origin": "feedback",
+          "quote": "I enjoy tracing worn parts back to a supplier.",
+          "role": "preference",
+          "source_revision": "4bcf7af4f6b4f6f58733724e4680a87677bed659641ecfda758a8e24702bff8b",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "What specifically about this opening is nagging at you?",
+        "evidence": {
+          "end": 111,
+          "origin": "feedback",
+          "quote": "This opening still nags at me, and I can't put my finger on why.",
+          "role": "vague_reaction",
+          "source_revision": "4bcf7af4f6b4f6f58733724e4680a87677bed659641ecfda758a8e24702bff8b",
+          "start": 47
+        },
+        "index": 1,
+        "role": "vague_reaction"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Tracing worn parts back to a supplier",
+        "evidence": [
+          {
+            "end": 46,
+            "origin": "feedback",
+            "quote": "I enjoy tracing worn parts back to a supplier.",
+            "role": "preference",
+            "source_revision": "4bcf7af4f6b4f6f58733724e4680a87677bed659641ecfda758a8e24702bff8b",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "tracing worn parts back to a supplier",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I enjoy tracing worn parts back to a supplier. This opening still nags at me, and I can't put my finger on why.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": []
+  }
+}

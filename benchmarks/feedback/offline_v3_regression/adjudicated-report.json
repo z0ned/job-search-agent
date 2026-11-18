@@ -1,0 +1,1642 @@
+{
+  "automated_stability": {
+    "literal_changed_case_ids": [
+      "FH-005",
+      "FH-006",
+      "FH-010"
+    ],
+    "literal_unchanged": {
+      "accuracy": 0.6666666666666666,
+      "correct": 8,
+      "total": 12
+    },
+    "registered_identity_changed_case_ids": [
+      "FH-005",
+      "FH-006",
+      "FH-010"
+    ],
+    "registered_identity_unchanged": {
+      "accuracy": 0.6666666666666666,
+      "correct": 8,
+      "total": 12
+    },
+    "score_status": "provisional_automation",
+    "unverified_case_ids": [
+      "FH-008"
+    ]
+  },
+  "configuration": {
+    "benchmark_version": "3.0",
+    "hard_rules": {
+      "1099_hourly_minimum_usd": 100,
+      "c2c_hourly_minimum_usd": null,
+      "commute_rules": [
+        "Within 10 driving miles: onsite acceptable.",
+        "Greater than 10 and less than 30 driving miles: Mondays and Fridays must be remote. Unknown days require verification.",
+        "At least 30 driving miles: regular work must be fully remote. Occasional visits or business trips are allowed."
+      ],
+      "permanent_base_minimum_usd": 180000,
+      "unknown_salary_remains_eligible": true,
+      "w2_hourly_minimum_usd": 75
+    },
+    "hard_rules_sha256": "949c019e2bd8122cbf7d05b6d1227e2302fe2437416ee995a647890dffbeb6c4",
+    "high_risk_routing_case_ids": [
+      "FH-003",
+      "FH-007",
+      "FH-012"
+    ],
+    "inputs": {
+      "FH-001": {
+        "case_input_sha256": "156ac518368b4e5a3c23d066cee28677e341d23e73d2fb59133de39a2368259a",
+        "job_context_sha256": "5fa551f73235b498fde2168cc2ea630c67f756900d6c5bb5bbf8f3aab289aec9",
+        "original_feedback_sha256": "07442c728cccd18bf964f2f80fe772ee82bfe0383223f78f52aeffff574833f3"
+      },
+      "FH-002": {
+        "case_input_sha256": "992333d28bf2fdb140e20a7a355f198cf661406b6eeb1f3c8bd6e3f84308a39d",
+        "job_context_sha256": "6f7080ade8a3332cde10fb64728c934990d017f95f28cfea40f663f157885fe5",
+        "original_feedback_sha256": "8f73d0b9334aa05b86691e867c98692ce26eb13493f14f6bf51dc1a1b96d61ca"
+      },
+      "FH-003": {
+        "case_input_sha256": "626706e896118ec463ef4a7b077ef483c2a8f196df1f54cd0dbac6776bc032e6",
+        "job_context_sha256": "b906844caecd1f5cf1cdf7d51435a7436a7099cce913d968a2d4602686cba50d",
+        "original_feedback_sha256": "fa3a791d8a4879ed7b8ec29157b78f063b3abf632cdb5e9040bdbe9bf3a856f2"
+      },
+      "FH-004": {
+        "case_input_sha256": "c1df0136d764d3bac45ab18f8571f1e28ad852a1a98d26855a6fa34e1fc8b0a4",
+        "job_context_sha256": "cfe626c07260634d1417a232dee187b5e955b2dc8f098f405e157a875023bb14",
+        "original_feedback_sha256": "415b9e013ac9218d949667ef3533621eb910734b05b52bb66c7152ccc1407f7a"
+      },
+      "FH-005": {
+        "case_input_sha256": "aca460f742dc525df045ce453a0d3470faf41432efed2d10c7f2aec81989a197",
+        "job_context_sha256": "794c0261293e415550219567bc7d38b4ad8f76a4feb1b941bc8e2cdaee5d2133",
+        "original_feedback_sha256": "0174efcdd1e33951f9732145875992d4965491ab20d51452bb25dcbceb43b2dd"
+      },
+      "FH-006": {
+        "case_input_sha256": "a832c10c12f1524273bf13875b9f160487c4f68cc62796f9193bcc660e3ef7d1",
+        "job_context_sha256": "0562f88d9833475c6155f406703e0e0c72dfa09a670e5de915a6531411351ffa",
+        "original_feedback_sha256": "38ebc1ce13d7366c3e6ad429a45d6a8c1b3e6f4e0b0dc45cbbcc63c616f6da26"
+      },
+      "FH-007": {
+        "case_input_sha256": "a3987603d529c540c7a06824aa7a324383349b1e5cb24bfbfdf40b18ed77064d",
+        "job_context_sha256": "7c2297736d402859e939ac9102d15ae4d53f32351634a90570801ce890adb56b",
+        "original_feedback_sha256": "1c7e42da0e7ae8346ad99951641de01647b1f3cb5fae888191fe920e33f9465c"
+      },
+      "FH-008": {
+        "case_input_sha256": "0840476ed5b9bdade1077fea2d75a9bb264656399cfdf08aa311321cfe16dd43",
+        "job_context_sha256": "dd52c497d7e4140754fe3475acb9b008c6c1a6e5e84b98c4f5a99f42bd9586d8",
+        "original_feedback_sha256": "bd5a9f7bb8ddca55021e3f40d2ebf78bffee3211b26781e160f582fe05d0da01"
+      },
+      "FH-009": {
+        "case_input_sha256": "e9af9907d705e59947e671a3028a8ada5612a92bff4f9fbf2627309cb1cbcbc6",
+        "job_context_sha256": "65066e46cd2e444c251411732b4cf3d3ed74a7c80440394b6f83ced2bab1e9ac",
+        "original_feedback_sha256": "3c639cc74b96a4c66b0abed0bef842dba46372d64bcb06bcc3c70ecf6fc511d9"
+      },
+      "FH-010": {
+        "case_input_sha256": "2a1625342dac8765fb4edab6bc9ee10eb56b4b2096678a18dbb2ddf3e190fb98",
+        "job_context_sha256": "da6b4fa8096789aecc25e8d603862eca722520669fe5e6dda3f5f07de11183cc",
+        "original_feedback_sha256": "f0950ab034a200376a15007c11b9fdb09a891bc77f473e8f3cfafe1c62a5d46f"
+      },
+      "FH-011": {
+        "case_input_sha256": "3f162643fec3880f8c38a9674d9b3e1359989fdc85667b6a8160ba3f68ed38ee",
+        "job_context_sha256": "1543c31167f9ceb74f8fc17575c2de6e88d331ca4bc0dffb6286b839ac215748",
+        "original_feedback_sha256": "18ada31ccee5eb32c5a1bec92e49a8af3a64bc8a3cf9abcdb2337955c9f3b1d8"
+      },
+      "FH-012": {
+        "case_input_sha256": "d99ba36b0d2add098145e3f3569ea45d37b33b33e87ac80cfa41ac06b64ff743",
+        "job_context_sha256": "0df1966465ce560e6724a5be15c1a57a47846524c98645ccbf552787bc24fbd4",
+        "original_feedback_sha256": "f2ed95f2c15e2a5b8ee5071a2d4cf29ba75e7cf291843d4b25eebccaed69cf00"
+      }
+    },
+    "python_version": "3.12.14",
+    "scenario_count": 12,
+    "started_at_utc": "2026-11-18T20:37:03+00:00",
+    "suite_file": "benchmarks/feedback/holdout_cases_v2.json",
+    "suite_kind": "regression",
+    "suite_sha256": "c38ff4c44d7cd0110e198b0682833da8f7c70c15e1cfd04489075858ef099393",
+    "suite_version": "2.0-holdout",
+    "taxonomy_version": "feedback-taxonomy-v2.0"
+  },
+  "elapsed_seconds": 0.006,
+  "evaluation_source": {
+    "mode": "replay",
+    "passes": 2
+  },
+  "quality_gates_passed": false,
+  "repeated_pass_requirement_met": false,
+  "runs": [
+    {
+      "adjudication": {
+        "cases": [
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "NEEDS_CLARIFICATION",
+            "case_id": "FH-001",
+            "clear_dimension_scope_correct": null,
+            "completed": true,
+            "emitted_signal_count": 0,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "NEEDS_CLARIFICATION",
+            "expected_signal_count": 0,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The question targets the uncertain scope without treating the title or job requirements as a capability claim.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": true,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PROFILE_FACT_REVIEW",
+            "case_id": "FH-002",
+            "clear_dimension_scope_correct": null,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PROFILE_FACT_REVIEW",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The tabletop facilitation preference survives the distinct, concrete self-report that the user has never run a recovery drill.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": true,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-003",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The explicit career preference is preserved. Prospective software onboarding supplies no separate growth or qualification signal.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-004",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 2,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 2,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The diagnosis duty and pager schedule are independent. The structured weekend qualifier correctly limits the negative signal.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-005",
+            "clear_dimension_scope_correct": false,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 2,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [
+              2
+            ],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The exact procurement operations career downgrade has direct support and an appropriate scope. The independently positive vendor negotiation signal is missing.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-006",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The legacy condition most of each day is preserved in the structured time-share qualifier with the same applicability. It is an intrinsic workload limit rather than a second predicate or a general aversion to purchase orders.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-007",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Keeps the stated accessibility-testing interest. The posting language supplies no sentiment, and the request for posting information does not require clarification of the stated preference.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "actual_route": "PROFILE_FACT_REVIEW",
+            "case_id": "FH-008",
+            "clear_dimension_scope_correct": null,
+            "completed": true,
+            "emitted_signal_count": 0,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "expected_route": "PROFILE_FACT_REVIEW",
+            "expected_signal_count": 0,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": false,
+            "notes": "The W-2 violation detail identifies $70 per hour against the existing $75 floor. The raw preference drawn from the violation was rejected, leaving the correct zero held signals.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": true,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 1
+          },
+          {
+            "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+            "actual_route": "PROFILE_FACT_REVIEW",
+            "case_id": "FH-009",
+            "clear_dimension_scope_correct": null,
+            "completed": true,
+            "emitted_signal_count": 0,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+            "expected_route": "PROFILE_FACT_REVIEW",
+            "expected_signal_count": 0,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The profile detail retains the requested $68 floor, while the action requires separate confirmation and does not honor the request to bypass review.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": true,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-010",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The single negative preference is limited to this quoted USD 115 per hour C2C contract if the client requires the candidate to supply the lab kit. The structured scope retains amount, currency, hourly basis, and C2C employment type, with a grounded condition. The action remains unchanged. The output uses strong rather than the reference\u2019s mild strength.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-011",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Preserves one workshop duty preference and its video-delivery condition. The delivery option does not become a separate arrangement preference.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-012",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Retains the independent data-loss-investigation interest and the correct existing-rule violation detail at 33 driving miles without deriving an onsite or career aversion.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          }
+        ],
+        "clear_case_false_escalation_case_ids": [],
+        "clear_case_false_escalations": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 8
+        },
+        "clear_dimension_scope_accuracy": {
+          "accuracy": 0.875,
+          "correct": 7,
+          "total": 8
+        },
+        "extra_signals": 0,
+        "hard_action_accuracy": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "total": 12
+        },
+        "high_risk_routing_controls": {
+          "FH-003": true,
+          "FH-007": true,
+          "FH-012": true
+        },
+        "missed_signals": 1,
+        "predictions_sha256": "b2ce1166d7fae9fd6bb234171f932fe0bcde84fd63f3c35a78d123e60f496cfe",
+        "quality_gates": {
+          "all_cases_completed": true,
+          "all_designated_high_risk_routes_correct": true,
+          "all_evidence_grounded": true,
+          "all_hard_rule_actions_authorized": true,
+          "all_hard_rules_unchanged": true,
+          "all_predictions_without_validation_issues": false,
+          "all_special_routes_resolved_adequately": true,
+          "clear_dimension_scope_at_least_95_percent": false,
+          "no_unsupported_career_downgrades": true,
+          "semantic_precision_at_least_90_percent": true,
+          "semantic_recall_at_least_90_percent": true
+        },
+        "quality_gates_passed": false,
+        "reviewer": "Codex masked review of changed records and archived review of identical records",
+        "route_accuracy": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "total": 12
+        },
+        "safe_special_routing": {
+          "accuracy": 1.0,
+          "correct": 4,
+          "total": 4
+        },
+        "scenario_count": 12,
+        "semantic_precision": {
+          "accuracy": 1.0,
+          "correct": 10,
+          "total": 10
+        },
+        "semantic_recall": {
+          "accuracy": 0.9090909090909091,
+          "correct": 10,
+          "total": 11
+        },
+        "suite_sha256": "c38ff4c44d7cd0110e198b0682833da8f7c70c15e1cfd04489075858ef099393"
+      },
+      "adjudications_sha256": "a5f0e0157087a57d998bbd7d744a3677e6d678fc217ba08c60c3ea8cc52b70e8",
+      "cases": [
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "NEEDS_CLARIFICATION",
+          "anchors_verified_signals": 0,
+          "case_id": "FH-001",
+          "emitted_signals": 0,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "NEEDS_CLARIFICATION",
+          "expected_signals": 0,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": true,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-002",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-003",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 2,
+          "case_id": "FH-004",
+          "emitted_signals": 2,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 2,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-005",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 2,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [
+            1
+          ],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-006",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-007",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "anchors_verified_signals": 0,
+          "case_id": "FH-008",
+          "emitted_signals": 0,
+          "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signals": 0,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": true,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": [
+            {
+              "field": "signals",
+              "index": 0,
+              "message": "An eligibility violation alone cannot support a preference."
+            }
+          ]
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "anchors_verified_signals": 0,
+          "case_id": "FH-009",
+          "emitted_signals": 0,
+          "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signals": 0,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": true,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-010",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 1,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-011",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-012",
+          "emitted_signals": 1,
+          "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        }
+      ],
+      "clear_case_false_escalation_case_ids": [],
+      "clear_case_false_escalations": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 8
+      },
+      "execution_errors": {},
+      "hard_action_accuracy": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "literal_exact_case_match": {
+        "accuracy": 0.25,
+        "correct": 3,
+        "total": 12
+      },
+      "literal_signal_precision": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 10
+      },
+      "literal_signal_recall": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 11
+      },
+      "mechanical_evidence_grounding": {
+        "accuracy": 1.0,
+        "correct": 10,
+        "total": 10
+      },
+      "negative_career_proposals_requiring_review": 1,
+      "pass_number": 1,
+      "predictions_sha256": "b2ce1166d7fae9fd6bb234171f932fe0bcde84fd63f3c35a78d123e60f496cfe",
+      "registered_identity_precision": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 10
+      },
+      "registered_identity_recall": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 11
+      },
+      "registry_coverage": {
+        "accuracy": 0.1,
+        "correct": 1,
+        "total": 10
+      },
+      "route_accuracy": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "routes_with_required_resolution_fields": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "scenario_count": 12,
+      "score_status": "provisional_automation",
+      "validation_issue_count": 1
+    },
+    {
+      "adjudication": {
+        "cases": [
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "NEEDS_CLARIFICATION",
+            "case_id": "FH-001",
+            "clear_dimension_scope_correct": null,
+            "completed": true,
+            "emitted_signal_count": 0,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "NEEDS_CLARIFICATION",
+            "expected_signal_count": 0,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The question targets the uncertain scope without treating the title or job requirements as a capability claim.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": true,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PROFILE_FACT_REVIEW",
+            "case_id": "FH-002",
+            "clear_dimension_scope_correct": null,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PROFILE_FACT_REVIEW",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The tabletop facilitation preference survives the distinct, concrete self-report that the user has never run a recovery drill.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": true,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-003",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The explicit career preference is preserved. Prospective software onboarding supplies no separate growth or qualification signal.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-004",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 2,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 2,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The diagnosis duty and pager schedule are independent. The structured weekend qualifier correctly limits the negative signal.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-005",
+            "clear_dimension_scope_correct": false,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 2,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [
+              2
+            ],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The exact procurement operations career downgrade has direct support and an appropriate scope. The independently positive vendor negotiation signal is missing.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-006",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The legacy condition most of each day is preserved in the structured time-share qualifier with the same applicability. It is an intrinsic workload limit rather than a second predicate or a general aversion to purchase orders.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-007",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Keeps the stated accessibility-testing interest. The posting language supplies no sentiment, and the request for posting information does not require clarification of the stated preference.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "actual_route": "PROFILE_FACT_REVIEW",
+            "case_id": "FH-008",
+            "clear_dimension_scope_correct": null,
+            "completed": true,
+            "emitted_signal_count": 0,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "expected_route": "PROFILE_FACT_REVIEW",
+            "expected_signal_count": 0,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": false,
+            "notes": "The W-2 violation detail identifies $70 per hour against the existing $75 floor. The raw preference drawn from the violation was rejected, leaving the correct zero held signals.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": true,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 1
+          },
+          {
+            "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+            "actual_route": "PROFILE_FACT_REVIEW",
+            "case_id": "FH-009",
+            "clear_dimension_scope_correct": null,
+            "completed": true,
+            "emitted_signal_count": 0,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+            "expected_route": "PROFILE_FACT_REVIEW",
+            "expected_signal_count": 0,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The profile detail retains the requested $68 floor, while the action requires separate confirmation and does not honor the request to bypass review.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": true,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-010",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The single negative preference is limited to this quoted USD 115 per hour C2C contract if the client requires the candidate to supply the lab kit. The structured scope retains amount, currency, hourly basis, and C2C employment type, with a grounded condition. The action remains unchanged. The output uses strong rather than the reference\u2019s mild strength.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-011",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Preserves one workshop duty preference and its video-delivery condition. The delivery option does not become a separate arrangement preference.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          },
+          {
+            "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "actual_route": "PENDING_APPROVAL",
+            "case_id": "FH-012",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Retains the independent data-loss-investigation interest and the correct existing-rule violation detail at 33 driving miles without deriving an onsite or career aversion.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validation_issue_count": 0
+          }
+        ],
+        "clear_case_false_escalation_case_ids": [],
+        "clear_case_false_escalations": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 8
+        },
+        "clear_dimension_scope_accuracy": {
+          "accuracy": 0.875,
+          "correct": 7,
+          "total": 8
+        },
+        "extra_signals": 0,
+        "hard_action_accuracy": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "total": 12
+        },
+        "high_risk_routing_controls": {
+          "FH-003": true,
+          "FH-007": true,
+          "FH-012": true
+        },
+        "missed_signals": 1,
+        "predictions_sha256": "ea91e074e892331f50cb9aa20847b72148360ce1c2a44e9a4732c3820cd628da",
+        "quality_gates": {
+          "all_cases_completed": true,
+          "all_designated_high_risk_routes_correct": true,
+          "all_evidence_grounded": true,
+          "all_hard_rule_actions_authorized": true,
+          "all_hard_rules_unchanged": true,
+          "all_predictions_without_validation_issues": false,
+          "all_special_routes_resolved_adequately": true,
+          "clear_dimension_scope_at_least_95_percent": false,
+          "no_unsupported_career_downgrades": true,
+          "semantic_precision_at_least_90_percent": true,
+          "semantic_recall_at_least_90_percent": true
+        },
+        "quality_gates_passed": false,
+        "reviewer": "Codex masked review of changed records and archived review of identical records",
+        "route_accuracy": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "total": 12
+        },
+        "safe_special_routing": {
+          "accuracy": 1.0,
+          "correct": 4,
+          "total": 4
+        },
+        "scenario_count": 12,
+        "semantic_precision": {
+          "accuracy": 1.0,
+          "correct": 10,
+          "total": 10
+        },
+        "semantic_recall": {
+          "accuracy": 0.9090909090909091,
+          "correct": 10,
+          "total": 11
+        },
+        "suite_sha256": "c38ff4c44d7cd0110e198b0682833da8f7c70c15e1cfd04489075858ef099393"
+      },
+      "adjudications_sha256": "2b38ba493554827d7b9218bb069c21b2ad4ba8b91fea55aeaf4dc0af9df7edcc",
+      "cases": [
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "NEEDS_CLARIFICATION",
+          "anchors_verified_signals": 0,
+          "case_id": "FH-001",
+          "emitted_signals": 0,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "NEEDS_CLARIFICATION",
+          "expected_signals": 0,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": true,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-002",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-003",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 2,
+          "case_id": "FH-004",
+          "emitted_signals": 2,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 2,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-005",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 2,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [
+            1
+          ],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-006",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-007",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "anchors_verified_signals": 0,
+          "case_id": "FH-008",
+          "emitted_signals": 0,
+          "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signals": 0,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": true,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": [
+            {
+              "field": "signals",
+              "index": 0,
+              "message": "An eligibility violation alone cannot support a preference."
+            }
+          ]
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "anchors_verified_signals": 0,
+          "case_id": "FH-009",
+          "emitted_signals": 0,
+          "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signals": 0,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": true,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-010",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 1,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-011",
+          "emitted_signals": 1,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        },
+        {
+          "action_correct": true,
+          "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "actual_route": "PENDING_APPROVAL",
+          "anchors_verified_signals": 1,
+          "case_id": "FH-012",
+          "emitted_signals": 1,
+          "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signals": 1,
+          "hard_rule_nonmutation_confirmed": true,
+          "literal_exact_case_match": false,
+          "literal_matches": 0,
+          "negative_career_proposals_requiring_review": [],
+          "original_feedback_preserved": true,
+          "registered_identity_matches": 0,
+          "registered_signals": 0,
+          "resolution_shape_ok": true,
+          "route_correct": true,
+          "validation_issues": []
+        }
+      ],
+      "clear_case_false_escalation_case_ids": [],
+      "clear_case_false_escalations": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 8
+      },
+      "execution_errors": {},
+      "hard_action_accuracy": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "literal_exact_case_match": {
+        "accuracy": 0.25,
+        "correct": 3,
+        "total": 12
+      },
+      "literal_signal_precision": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 10
+      },
+      "literal_signal_recall": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 11
+      },
+      "mechanical_evidence_grounding": {
+        "accuracy": 1.0,
+        "correct": 10,
+        "total": 10
+      },
+      "negative_career_proposals_requiring_review": 1,
+      "pass_number": 2,
+      "predictions_sha256": "ea91e074e892331f50cb9aa20847b72148360ce1c2a44e9a4732c3820cd628da",
+      "registered_identity_precision": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 10
+      },
+      "registered_identity_recall": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 11
+      },
+      "registry_coverage": {
+        "accuracy": 0.1,
+        "correct": 1,
+        "total": 10
+      },
+      "route_accuracy": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "routes_with_required_resolution_fields": {
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "scenario_count": 12,
+      "score_status": "provisional_automation",
+      "validation_issue_count": 1
+    }
+  ],
+  "score_status": "adjudicated",
+  "two_complete_passes": true
+}

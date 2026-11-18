@@ -1,0 +1,163 @@
+{
+  "cases": {
+    "FH3-001": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "Correct profile review for the verified $98 1099 rate below the current $100 floor. Flagging the listing adds neither a preference nor a new rule.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH3-002": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The vendor-clause duty preference is retained separately. The review candidate preserves the tentative $92 hourly 1099 request and requires separate explicit confirmation.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH3-003": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "Train every week and flight once in a while preserve the two modes, cadences, and directions separately.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH3-004": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The negative career signal stays within museum collections management and the independent positive cataloguing duty is retained.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH3-005": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The combined structured time-share value retains half of every shift and the referent stays at accession-record entry.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH3-006": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The current experience gap routes to profile review with a grounded statement and the independent terminology duty stays positive.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH3-007": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": false,
+      "notes": "The route correctly stays in approval and the response adds no software fact. The asserted positive reaction is to a named duty and provides no separate growth-purpose preference.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH3-008": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The quote names the posting duty and links the user’s reaction to it. The request to define Pacific coverage creates no inferred preference or review escalation.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH3-009": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The quoted W-2 rate, price, hourly unit, payer, and condition are preserved. The output uses a dollar symbol in display and referent but has no structured currency qualifier identifying USD.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH3-010": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The structured frequency retains the upper bound and correct activity. The separate condition required by the reference is absent.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH3-011": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          2,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The negative signal stays at the recurring hospital fire-alarm replacement project type. The career-context field is unnecessary for “another.” The independent praise of this particular Controls Designer posting is missing.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH3-012": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The focused clarification asks about the unexplained residual concern and preserves the positive supplier-tracing duty.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    }
+  },
+  "predictions_sha256": "323e5a0ff03c9adfdb73b1a87f15961bb6b9a608733cc4ae707da6adc044404f",
+  "reviewer": "Codex masked review of changed records and archived review of identical records",
+  "suite_sha256": "e3c046bcbc6e5012e09fa5e8404211ab4a2938f2e7599681283c28b1253caa96"
+}

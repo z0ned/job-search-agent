@@ -1,0 +1,164 @@
+{
+  "cases": {
+    "FH-001": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The question targets the uncertain scope without treating the title or job requirements as a capability claim.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH-002": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The tabletop facilitation preference survives the distinct, concrete self-report that the user has never run a recovery drill.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH-003": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The explicit career preference is preserved. Prospective software onboarding supplies no separate growth or qualification signal.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH-004": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The diagnosis duty and pager schedule are independent. The structured weekend qualifier correctly limits the negative signal.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH-005": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The exact procurement operations career downgrade has direct support and an appropriate scope. The independently positive vendor negotiation signal is missing.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH-006": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The legacy condition most of each day is preserved in the structured time-share qualifier with the same applicability. It is an intrinsic workload limit rather than a second predicate or a general aversion to purchase orders.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH-007": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "Keeps the stated accessibility-testing interest. The posting language supplies no sentiment, and the request for posting information does not require clarification of the stated preference.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH-008": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The W-2 violation detail identifies $70 per hour against the existing $75 floor. The raw preference drawn from the violation was rejected, leaving the correct zero held signals.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH-009": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [],
+      "evidence_grounded": true,
+      "notes": "The profile detail retains the requested $68 floor, while the action requires separate confirmation and does not honor the request to bypass review.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH-010": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The single negative preference is limited to this quoted USD 115 per hour C2C contract if the client requires the candidate to supply the lab kit. The structured scope retains amount, currency, hourly basis, and C2C employment type, with a grounded condition. The action remains unchanged. The output uses strong rather than the reference’s mild strength.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH-011": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "Preserves one workshop duty preference and its video-delivery condition. The delivery option does not become a separate arrangement preference.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "FH-012": {
+      "clear_dimension_scope_correct": true,
+      "equivalent_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "Retains the independent data-loss-investigation interest and the correct existing-rule violation detail at 33 driving miles without deriving an onsite or career aversion.",
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    }
+  },
+  "predictions_sha256": "b2ce1166d7fae9fd6bb234171f932fe0bcde84fd63f3c35a78d123e60f496cfe",
+  "reviewer": "Codex masked review of changed records and archived review of identical records",
+  "suite_sha256": "c38ff4c44d7cd0110e198b0682833da8f7c70c15e1cfd04489075858ef099393"
+}
