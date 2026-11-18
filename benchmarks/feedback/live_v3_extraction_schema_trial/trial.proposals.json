@@ -1,0 +1,226 @@
+{
+  "FI-033": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "This is too junior;",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "I would have almost no decision-making autonomy.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "seniority_scope",
+        "display_label": "Junior role level",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "junior level",
+          "type": "seniority_feature"
+        },
+        "strength": "strong"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "seniority_scope",
+        "display_label": "Decision-making autonomy",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "intensity",
+              "quote": "almost no",
+              "source": "feedback",
+              "value": "near_zero"
+            }
+          ],
+          "referent": "decision-making autonomy",
+          "type": "seniority_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-041": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "This is a terrific AI advisor role,",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "but I do not trust the employer.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Positive reaction to this AI advisor role",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "AI Strategy Advisor",
+          "type": "posting_role"
+        },
+        "strength": "strong"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Distrust of this employer",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Trustline AI",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-048": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Avoid sales-heavy work",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "intensity",
+              "quote": "must love sales",
+              "source": "feedback",
+              "value": "strong"
+            }
+          ],
+          "referent": "sales",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FT-002": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "The posting describes safety briefings as 'the heart of the role'. I want to steer clear of jobs built around giving those briefings.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Roles built around giving safety briefings",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "intensity",
+              "quote": "'the heart of the role'",
+              "source": "feedback",
+              "value": "dominant"
+            }
+          ],
+          "referent": "giving safety briefings",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FT-004": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "This particular Collection Analyst opening would be terrific.",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "I have no trust in the organization that's hiring.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Positive reaction to this Collection Analyst opening",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "This particular Collection Analyst opening",
+          "type": "posting_role"
+        },
+        "strength": "strong"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Distrust of the hiring organization",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Station Heritage Trust",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FT-005": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I do not want a career in warehouse operations.",
+        "role": "preference"
+      },
+      {
+        "detail": "Explains how the user identified the role as warehouse operations.",
+        "quote": "The inventory reconciliation in the listing is how I recognized it as that kind of job.",
+        "role": "context"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Warehouse operations careers",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "warehouse operations",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ]
+  }
+}

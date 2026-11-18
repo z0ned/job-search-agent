@@ -1,0 +1,298 @@
+{
+  "arms": {
+    "control": {
+      "cases": {
+        "FI-033": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Raw signal 2 preserves near-zero decision-making autonomy. Raw signal 1 makes the lead-in a separate preference with an invalid seniority scope. Validation discards it and retains the autonomy signal.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-041": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The praise is scoped to this AI advisor posting. Employer distrust remains an independent negative signal about Trustline AI.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-048": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The sales referent and strong intensity qualifier preserve the objection to sales-emphasized work. Their anchor and the full quote distinguish the posting requirement from the user reaction.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-002": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "notes": "The raw signal expresses the correct safety-briefing objection with two grounded anchors for the same dominant intensity. The repeated qualifier is invalid, so validation discards the entire signal and routes to generic clarification.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": false,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-004": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The positive signal stays within this posting. The separate employer signal retains distrust of the hiring organization.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-005": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The negative career preference is limited to warehouse operations. The inventory reconciliation clause explains category recognition and yields no separate signal.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        }
+      },
+      "predictions_sha256": "9b70e62132f660af4c3b290ab969dac3806355ee10fc3ed980653a70566a14bb",
+      "raw_proposals_sha256": "1d70dae0f730bd55a3e95e9d433fabc439a1439b85f6c3d35bebcef9ad1af170"
+    },
+    "trial": {
+      "cases": {
+        "FI-033": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "evidence_grounded": false,
+          "notes": "Signal 2 preserves near-zero decision-making autonomy. Signal 1 makes the posting-specific lead-in a separate and broader junior-level objection. Validation retains the unsupported extra.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-041": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The praise is scoped to this AI advisor posting. Employer distrust remains an independent negative signal about Trustline AI.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-048": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The sales referent and strong intensity qualifier preserve the objection to sales-emphasized work. Their anchor and the full quote distinguish the posting requirement from the user reaction.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-002": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The dominant intensity qualifier narrows the scope to duties centered on giving safety briefings. The full quote anchors the posting description and the user reaction together.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-004": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The positive signal is limited to this Collection Analyst posting. The separate distrust signal resolves to Station Heritage Trust from the current job context.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-005": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The negative career preference is limited to warehouse operations. The inventory reconciliation clause explains category recognition and yields no separate signal.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        }
+      },
+      "predictions_sha256": "72c0a623261d32b30e9ba0e5f29d4cb48ec60369cc145114746e15d1aac68ddc",
+      "raw_proposals_sha256": "f52f9de45be11b145ddddcb5f4a3922803688ade1e9fdaf1936c8092e109e08c"
+    }
+  },
+  "configuration_sha256": "6ac0c00dcf97f5c32a6f6e113692951893af8531918ad6339f52e7bb4691a689",
+  "reference_sha256": "e1bac27cf52c02809a984b32033181343c9661455a11b308770b06f19bf22286",
+  "reviewer": "Codex masked semantic review"
+}

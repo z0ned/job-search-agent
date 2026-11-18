@@ -43,3 +43,7 @@ The trial compared the current v3 instructions with one candidate across five kn
 ## V3 evidence replay and follow-up
 
 An offline replay of the 20 extraction-trial proposals restored explicit conditions in both arms. Six separate live evidence-review requests tested the remaining target cases and controls. The archive includes replay provenance, raw and validated follow-up captures, masked verdicts, and the combined scorecard. [Evidence review findings](../../docs/Feedback_Interpreter_Evidence_Review_v3.md) · [Offline replay](offline_v3_extraction_evidence/report.json) · [Semantic scorecard](live_v3_extraction_followup/semantic-report.json)
+
+## V3 response-schema trial
+
+The isolated trial compared the current schema with compatible dimension and scope pairs and controlled intensity values. It used one request per arm on each of six known evidence-review inputs with identical instructions, inputs, model settings, validator, and routing. The captures include exact hashes, paired traces, and masked semantic verdicts. [Schema trial protocol and results](../../docs/Feedback_Interpreter_Schema_Trial_v3.md) · [Semantic scorecard](live_v3_extraction_schema_trial/semantic-report.json)

@@ -1,0 +1,74 @@
+[
+  {
+    "arm": "control",
+    "case_id": "FI-033",
+    "elapsed_seconds": 3.228,
+    "input_sha256": "f688eca76914681f6c7bdf6724f52d47644182cd38c742a6c963160fbfa95d76",
+    "raw_record_sha256": "d98857a7e6b8de433d3fcfb2a226e7f6a53f5dfeb9c91ce8a839f105eba49d69",
+    "request_number": 1,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "schema_issues": [
+      {
+        "field": "signals",
+        "index": 0,
+        "message": "Incompatible dimension and scope type."
+      }
+    ],
+    "validated_record_sha256": "9c4620c0d4b4783372c46efa172dfca748b40a5bd9ef5253259957d391ef7288"
+  },
+  {
+    "arm": "control",
+    "case_id": "FI-048",
+    "elapsed_seconds": 2.111,
+    "input_sha256": "0a7ae92aedff935d7fa29edab8879a75a9b1279b546badf0ab5e1870a638a7c0",
+    "raw_record_sha256": "12d882e9c7c58b8b7f323459a198bd2a833558d2fb9cdc65d3635f2179518123",
+    "request_number": 4,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "schema_issues": [],
+    "validated_record_sha256": "792099cc122460336c75f501c0dd35115e9ef1315a3f81c4d97d961c9e555858"
+  },
+  {
+    "arm": "control",
+    "case_id": "FI-041",
+    "elapsed_seconds": 2.306,
+    "input_sha256": "a4dd1ed67b24664bbe1bfb983deedb672f443613ec903c3405722e9c0df4f28c",
+    "raw_record_sha256": "60ce3444b7fb4c9d580e4ac32ef8d5a2c4ace127b6c1d9f07918b71c6025ce11",
+    "request_number": 5,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "schema_issues": [],
+    "validated_record_sha256": "2461d714a4ab69d920af12524807576623c88eaf1626422801e3938d686031b7"
+  },
+  {
+    "arm": "control",
+    "case_id": "FT-002",
+    "elapsed_seconds": 2.631,
+    "input_sha256": "4aa4d8492dd310bfb9a7e275b7d19c5a424d6cb727e754c1d5ba916e2e30c469",
+    "raw_record_sha256": "c112620b78b25641c19d37b864c08fa46e3210d13facdee23c4f80ac2af33755",
+    "request_number": 8,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "schema_issues": [],
+    "validated_record_sha256": "8803217b5564111956110aa2f26f2e103e4149bb7fd2d5ba2d0374c8df88b913"
+  },
+  {
+    "arm": "control",
+    "case_id": "FT-004",
+    "elapsed_seconds": 2.779,
+    "input_sha256": "3a3df4dcb283d8ff86efcf3737bb93f93f8479e3b7fa87fb8e28a88135a76944",
+    "raw_record_sha256": "540845e5008d0bddb6463bc3886880659be5773eb4c15f471dc8abd30e83febe",
+    "request_number": 9,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "schema_issues": [],
+    "validated_record_sha256": "6fb1dc8c8f8909b3d63e9831531480f157e9a8145f2e1a178f819416924132fd"
+  },
+  {
+    "arm": "control",
+    "case_id": "FT-005",
+    "elapsed_seconds": 1.896,
+    "input_sha256": "99fdbebf751e221c6b36a6c32e5000e5a2e114da4193cf6a9c99c29b566dc00a",
+    "raw_record_sha256": "17e486e9639d28fac6502452ff339bd09497b0682452a244f2ffc01b18617a7e",
+    "request_number": 12,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "schema_issues": [],
+    "validated_record_sha256": "842d4ca19b2b5cc6bcbebc2fa4b157de4ed48de18839040adff80a3439186493"
+  }
+]
