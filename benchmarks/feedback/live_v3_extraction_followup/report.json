@@ -1,0 +1,79 @@
+{
+  "cases": [
+    {
+      "actual_hard_action": "UNCHANGED",
+      "actual_route": "PENDING_APPROVAL",
+      "case_id": "FI-033",
+      "emitted_signals": 1,
+      "expected_hard_action": "UNCHANGED",
+      "expected_route": "PENDING_APPROVAL",
+      "validation_issues": [
+        {
+          "field": "signals",
+          "index": 0,
+          "message": "Invalid signal label, dimension, scope, polarity, or strength."
+        }
+      ]
+    },
+    {
+      "actual_hard_action": "UNCHANGED",
+      "actual_route": "PENDING_APPROVAL",
+      "case_id": "FI-048",
+      "emitted_signals": 1,
+      "expected_hard_action": "UNCHANGED",
+      "expected_route": "PENDING_APPROVAL",
+      "validation_issues": []
+    },
+    {
+      "actual_hard_action": "UNCHANGED",
+      "actual_route": "PENDING_APPROVAL",
+      "case_id": "FI-041",
+      "emitted_signals": 2,
+      "expected_hard_action": "UNCHANGED",
+      "expected_route": "PENDING_APPROVAL",
+      "validation_issues": []
+    },
+    {
+      "actual_hard_action": "UNCHANGED",
+      "actual_route": "PENDING_APPROVAL",
+      "case_id": "FT-002",
+      "emitted_signals": 1,
+      "expected_hard_action": "UNCHANGED",
+      "expected_route": "PENDING_APPROVAL",
+      "validation_issues": []
+    },
+    {
+      "actual_hard_action": "UNCHANGED",
+      "actual_route": "PENDING_APPROVAL",
+      "case_id": "FT-004",
+      "emitted_signals": 2,
+      "expected_hard_action": "UNCHANGED",
+      "expected_route": "PENDING_APPROVAL",
+      "validation_issues": []
+    },
+    {
+      "actual_hard_action": "UNCHANGED",
+      "actual_route": "PENDING_APPROVAL",
+      "case_id": "FT-005",
+      "emitted_signals": 1,
+      "expected_hard_action": "UNCHANGED",
+      "expected_route": "PENDING_APPROVAL",
+      "validation_issues": []
+    }
+  ],
+  "configuration_sha256": "2b6a9353257761b7cece3ecb195d4c5be8d0a0f196b26097ec0abe89d15def3e",
+  "execution_errors": {},
+  "hard_actions": {
+    "UNCHANGED": 6
+  },
+  "raw_proposals_file": "followup.proposals.json",
+  "raw_proposals_sha256": "14199746283d3c1b8a5e3abcb424d6a35610d571e751f2b693e9d810b33e1dcf",
+  "requests_completed": 6,
+  "routes": {
+    "PENDING_APPROVAL": 6
+  },
+  "score_status": "automated_diagnostics_only",
+  "validated_file": "followup.json",
+  "validated_sha256": "d052c10bb62182341fa50fd988d4ffbf040178028f07318ba194e7bea490e591",
+  "validation_issue_count": 1
+}

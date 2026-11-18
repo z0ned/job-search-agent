@@ -39,3 +39,7 @@ The deterministic repair replayed all 148 original raw proposals without API req
 ## Targeted v3 extraction trial
 
 The trial compared the current v3 instructions with one candidate across five known failures and five independently written cases. It used 20 live requests with matched model settings, schema, validation, routing, and case inputs. The archive contains both arms' raw and validated outputs, input fingerprints, and masked adjudication. [Trial protocol and findings](../../docs/Feedback_Interpreter_Extraction_Trial_v3.md) · [Semantic scorecard](live_v3_extraction_trial/semantic-report.json)
+
+## V3 evidence replay and follow-up
+
+An offline replay of the 20 extraction-trial proposals restored explicit conditions in both arms. Six separate live evidence-review requests tested the remaining target cases and controls. The archive includes replay provenance, raw and validated follow-up captures, masked verdicts, and the combined scorecard. [Evidence review findings](../../docs/Feedback_Interpreter_Evidence_Review_v3.md) · [Offline replay](offline_v3_extraction_evidence/report.json) · [Semantic scorecard](live_v3_extraction_followup/semantic-report.json)

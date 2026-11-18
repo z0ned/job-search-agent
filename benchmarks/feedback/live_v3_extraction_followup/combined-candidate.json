@@ -1,0 +1,920 @@
+{
+  "FH-005": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 47,
+          "origin": "feedback",
+          "quote": "I don't want a career in procurement operations",
+          "role": "preference",
+          "source_revision": "0174efcdd1e33951f9732145875992d4965491ab20d51452bb25dcbceb43b2dd",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 94,
+          "origin": "feedback",
+          "quote": "vendor negotiation appeals to me.",
+          "role": "preference",
+          "source_revision": "0174efcdd1e33951f9732145875992d4965491ab20d51452bb25dcbceb43b2dd",
+          "start": 61
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": "explicit_scope_cue",
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Procurement operations careers",
+        "evidence": [
+          {
+            "end": 47,
+            "origin": "feedback",
+            "quote": "I don't want a career in procurement operations",
+            "role": "preference",
+            "source_revision": "0174efcdd1e33951f9732145875992d4965491ab20d51452bb25dcbceb43b2dd",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "procurement operations",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Vendor negotiation work",
+        "evidence": [
+          {
+            "end": 94,
+            "origin": "feedback",
+            "quote": "vendor negotiation appeals to me.",
+            "role": "preference",
+            "source_revision": "0174efcdd1e33951f9732145875992d4965491ab20d51452bb25dcbceb43b2dd",
+            "start": 61
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "vendor negotiation",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I don't want a career in procurement operations, even though vendor negotiation appeals to me.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH3-010": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 86,
+          "origin": "feedback",
+          "quote": "I would enjoy calibrating spectrometers, provided it takes at most one shift per week.",
+          "role": "preference",
+          "source_revision": "1e0a4e6b082ebbf11c6c54d4c6fc82b33c12fe311284a7b92ff2fe83fb0926ef",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "condition_recoveries": [
+      {
+        "clause_index": 0,
+        "evidence": {
+          "end": 85,
+          "origin": "feedback",
+          "quote": "provided it takes at most one shift per week",
+          "role": "condition",
+          "source_revision": "1e0a4e6b082ebbf11c6c54d4c6fc82b33c12fe311284a7b92ff2fe83fb0926ef",
+          "start": 41
+        },
+        "signal_index": 0
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": {
+          "evidence": {
+            "end": 85,
+            "origin": "feedback",
+            "quote": "provided it takes at most one shift per week",
+            "role": "condition",
+            "source_revision": "1e0a4e6b082ebbf11c6c54d4c6fc82b33c12fe311284a7b92ff2fe83fb0926ef",
+            "start": 41
+          },
+          "kind": "other",
+          "quote": "provided it takes at most one shift per week",
+          "value": "it takes at most one shift per week"
+        },
+        "dimension": "role_responsibilities",
+        "display_label": "Calibrating spectrometers",
+        "evidence": [
+          {
+            "end": 86,
+            "origin": "feedback",
+            "quote": "I would enjoy calibrating spectrometers, provided it takes at most one shift per week.",
+            "role": "preference",
+            "source_revision": "1e0a4e6b082ebbf11c6c54d4c6fc82b33c12fe311284a7b92ff2fe83fb0926ef",
+            "start": 0
+          },
+          {
+            "end": 85,
+            "origin": "feedback",
+            "quote": "provided it takes at most one shift per week",
+            "role": "condition",
+            "source_revision": "1e0a4e6b082ebbf11c6c54d4c6fc82b33c12fe311284a7b92ff2fe83fb0926ef",
+            "start": 41
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "calibrating spectrometers",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would enjoy calibrating spectrometers, provided it takes at most one shift per week.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-033": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 19,
+          "origin": "feedback",
+          "quote": "This is too junior;",
+          "role": "preference",
+          "source_revision": "52b793ab7f5fc6a0ededb83aab9934fc430689ca58cdbdd9a50ef01461f43625",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 68,
+          "origin": "feedback",
+          "quote": "I would have almost no decision-making autonomy.",
+          "role": "preference",
+          "source_revision": "52b793ab7f5fc6a0ededb83aab9934fc430689ca58cdbdd9a50ef01461f43625",
+          "start": 20
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "seniority_scope",
+        "display_label": "Decision-making autonomy",
+        "evidence": [
+          {
+            "end": 68,
+            "origin": "feedback",
+            "quote": "I would have almost no decision-making autonomy.",
+            "role": "preference",
+            "source_revision": "52b793ab7f5fc6a0ededb83aab9934fc430689ca58cdbdd9a50ef01461f43625",
+            "start": 20
+          },
+          {
+            "end": 42,
+            "origin": "feedback",
+            "quote": "almost no",
+            "role": "qualifier",
+            "source_revision": "52b793ab7f5fc6a0ededb83aab9934fc430689ca58cdbdd9a50ef01461f43625",
+            "start": 33
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 42,
+                "origin": "feedback",
+                "quote": "almost no",
+                "role": "qualifier",
+                "source_revision": "52b793ab7f5fc6a0ededb83aab9934fc430689ca58cdbdd9a50ef01461f43625",
+                "start": 33
+              },
+              "kind": "intensity",
+              "quote": "almost no",
+              "source": "feedback",
+              "value": "almost no"
+            }
+          ],
+          "referent": "decision-making autonomy",
+          "type": "seniority_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "This is too junior; I would have almost no decision-making autonomy.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": [
+      {
+        "field": "signals",
+        "index": 0,
+        "message": "Invalid signal label, dimension, scope, polarity, or strength."
+      }
+    ]
+  },
+  "FI-041": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 35,
+          "origin": "feedback",
+          "quote": "This is a terrific AI advisor role,",
+          "role": "preference",
+          "source_revision": "f1ee1d9b12b60d29e4f65a9e9d9e8e34cb926abdde40ccb06f4b36502e47e508",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 68,
+          "origin": "feedback",
+          "quote": "but I do not trust the employer.",
+          "role": "preference",
+          "source_revision": "f1ee1d9b12b60d29e4f65a9e9d9e8e34cb926abdde40ccb06f4b36502e47e508",
+          "start": 36
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Positive reaction to this role",
+        "evidence": [
+          {
+            "end": 35,
+            "origin": "feedback",
+            "quote": "This is a terrific AI advisor role,",
+            "role": "preference",
+            "source_revision": "f1ee1d9b12b60d29e4f65a9e9d9e8e34cb926abdde40ccb06f4b36502e47e508",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "AI Strategy Advisor",
+          "type": "posting_role"
+        },
+        "strength": "strong"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Distrust of this employer",
+        "evidence": [
+          {
+            "end": 68,
+            "origin": "feedback",
+            "quote": "but I do not trust the employer.",
+            "role": "preference",
+            "source_revision": "f1ee1d9b12b60d29e4f65a9e9d9e8e34cb926abdde40ccb06f4b36502e47e508",
+            "start": 36
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Trustline AI",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "This is a terrific AI advisor role, but I do not trust the employer.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FI-048": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 72,
+          "origin": "feedback",
+          "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+          "role": "preference",
+          "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "evidence_findings": [
+      {
+        "clause_index": 0,
+        "code": "duty_emphasis_lost",
+        "evidence": [
+          {
+            "end": 72,
+            "origin": "feedback",
+            "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+            "role": "preference",
+            "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+            "start": 0
+          }
+        ],
+        "message": "The machine scope omits the duty emphasis present in the evidence and display label.",
+        "severity": "blocking",
+        "signal_index": 0
+      }
+    ],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Avoid sales-heavy work",
+        "evidence": [
+          {
+            "end": 72,
+            "origin": "feedback",
+            "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+            "role": "preference",
+            "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+            "start": 0
+          },
+          {
+            "end": 33,
+            "origin": "feedback",
+            "quote": "must love sales",
+            "role": "qualifier",
+            "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+            "start": 18
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 33,
+                "origin": "feedback",
+                "quote": "must love sales",
+                "role": "qualifier",
+                "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                "start": 18
+              },
+              "kind": "intensity",
+              "quote": "must love sales",
+              "source": "feedback",
+              "value": "must love"
+            }
+          ],
+          "referent": "sales",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FT-001": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 82,
+          "origin": "feedback",
+          "quote": "Having virtually no say over which permits I review first would be a deal-breaker.",
+          "role": "preference",
+          "source_revision": "cefa99f7646506f896711bb0f9c044d0963724b11ee8ba0dd4499493b05bc764",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "seniority_scope",
+        "display_label": "Control over review prioritization",
+        "evidence": [
+          {
+            "end": 82,
+            "origin": "feedback",
+            "quote": "Having virtually no say over which permits I review first would be a deal-breaker.",
+            "role": "preference",
+            "source_revision": "cefa99f7646506f896711bb0f9c044d0963724b11ee8ba0dd4499493b05bc764",
+            "start": 0
+          },
+          {
+            "end": 23,
+            "origin": "feedback",
+            "quote": "virtually no say",
+            "role": "qualifier",
+            "source_revision": "cefa99f7646506f896711bb0f9c044d0963724b11ee8ba0dd4499493b05bc764",
+            "start": 7
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 23,
+                "origin": "feedback",
+                "quote": "virtually no say",
+                "role": "qualifier",
+                "source_revision": "cefa99f7646506f896711bb0f9c044d0963724b11ee8ba0dd4499493b05bc764",
+                "start": 7
+              },
+              "kind": "intensity",
+              "quote": "virtually no say",
+              "source": "feedback",
+              "value": "virtually no"
+            }
+          ],
+          "referent": "having virtually no say over which permits I review first",
+          "type": "seniority_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Having virtually no say over which permits I review first would be a deal-breaker.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FT-002": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 133,
+          "origin": "feedback",
+          "quote": "The posting describes safety briefings as 'the heart of the role'. I want to steer clear of jobs built around giving those briefings.",
+          "role": "preference",
+          "source_revision": "1d063333622974ca2c8183756a63cbb6b8f3dfe605a6b932e0051d0b1f5e65ff",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Jobs built around giving safety briefings",
+        "evidence": [
+          {
+            "end": 133,
+            "origin": "feedback",
+            "quote": "The posting describes safety briefings as 'the heart of the role'. I want to steer clear of jobs built around giving those briefings.",
+            "role": "preference",
+            "source_revision": "1d063333622974ca2c8183756a63cbb6b8f3dfe605a6b932e0051d0b1f5e65ff",
+            "start": 0
+          },
+          {
+            "end": 132,
+            "origin": "feedback",
+            "quote": "built around giving those briefings",
+            "role": "qualifier",
+            "source_revision": "1d063333622974ca2c8183756a63cbb6b8f3dfe605a6b932e0051d0b1f5e65ff",
+            "start": 97
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 132,
+                "origin": "feedback",
+                "quote": "built around giving those briefings",
+                "role": "qualifier",
+                "source_revision": "1d063333622974ca2c8183756a63cbb6b8f3dfe605a6b932e0051d0b1f5e65ff",
+                "start": 97
+              },
+              "kind": "intensity",
+              "quote": "built around giving those briefings",
+              "source": "feedback",
+              "value": "built around"
+            }
+          ],
+          "referent": "giving safety briefings",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The posting describes safety briefings as 'the heart of the role'. I want to steer clear of jobs built around giving those briefings.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FT-003": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 103,
+          "origin": "feedback",
+          "quote": "I would enjoy leading ceramics demonstrations as long as I had to do them no more than twice per month.",
+          "role": "preference",
+          "source_revision": "7fcd3fae29cbea64bb08cfcea276704bde05dd3e509b982cdfb64543ed45bd02",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "condition_recoveries": [
+      {
+        "clause_index": 0,
+        "evidence": {
+          "end": 102,
+          "origin": "feedback",
+          "quote": "as long as I had to do them no more than twice per month",
+          "role": "condition",
+          "source_revision": "7fcd3fae29cbea64bb08cfcea276704bde05dd3e509b982cdfb64543ed45bd02",
+          "start": 46
+        },
+        "signal_index": 0
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": {
+          "evidence": {
+            "end": 102,
+            "origin": "feedback",
+            "quote": "as long as I had to do them no more than twice per month",
+            "role": "condition",
+            "source_revision": "7fcd3fae29cbea64bb08cfcea276704bde05dd3e509b982cdfb64543ed45bd02",
+            "start": 46
+          },
+          "kind": "other",
+          "quote": "as long as I had to do them no more than twice per month",
+          "value": "I had to do them no more than twice per month"
+        },
+        "dimension": "role_responsibilities",
+        "display_label": "Leading ceramics demonstrations",
+        "evidence": [
+          {
+            "end": 103,
+            "origin": "feedback",
+            "quote": "I would enjoy leading ceramics demonstrations as long as I had to do them no more than twice per month.",
+            "role": "preference",
+            "source_revision": "7fcd3fae29cbea64bb08cfcea276704bde05dd3e509b982cdfb64543ed45bd02",
+            "start": 0
+          },
+          {
+            "end": 102,
+            "origin": "feedback",
+            "quote": "as long as I had to do them no more than twice per month",
+            "role": "condition",
+            "source_revision": "7fcd3fae29cbea64bb08cfcea276704bde05dd3e509b982cdfb64543ed45bd02",
+            "start": 46
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "leading ceramics demonstrations",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would enjoy leading ceramics demonstrations as long as I had to do them no more than twice per month.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FT-004": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 61,
+          "origin": "feedback",
+          "quote": "This particular Collection Analyst opening would be terrific.",
+          "role": "preference",
+          "source_revision": "d8a4f1c941d440020158fb0dc04c91ae2a5ba62ec067ae75ac430dff441a359b",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 112,
+          "origin": "feedback",
+          "quote": "I have no trust in the organization that's hiring.",
+          "role": "preference",
+          "source_revision": "d8a4f1c941d440020158fb0dc04c91ae2a5ba62ec067ae75ac430dff441a359b",
+          "start": 62
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Positive reaction to this Collection Analyst opening",
+        "evidence": [
+          {
+            "end": 61,
+            "origin": "feedback",
+            "quote": "This particular Collection Analyst opening would be terrific.",
+            "role": "preference",
+            "source_revision": "d8a4f1c941d440020158fb0dc04c91ae2a5ba62ec067ae75ac430dff441a359b",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "This particular Collection Analyst opening",
+          "type": "posting_role"
+        },
+        "strength": "strong"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Distrust of the hiring organization",
+        "evidence": [
+          {
+            "end": 112,
+            "origin": "feedback",
+            "quote": "I have no trust in the organization that's hiring.",
+            "role": "preference",
+            "source_revision": "d8a4f1c941d440020158fb0dc04c91ae2a5ba62ec067ae75ac430dff441a359b",
+            "start": 62
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "the organization that's hiring",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "This particular Collection Analyst opening would be terrific. I have no trust in the organization that's hiring.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FT-005": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 47,
+          "origin": "feedback",
+          "quote": "I do not want a career in warehouse operations.",
+          "role": "preference",
+          "source_revision": "4ca08cacb57ed82380515ad5c5014ef174fc833699321a5a32756458b8ab3560",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "Explains how the user identified the role as warehouse operations.",
+        "evidence": {
+          "end": 135,
+          "origin": "feedback",
+          "quote": "The inventory reconciliation in the listing is how I recognized it as that kind of job.",
+          "role": "context",
+          "source_revision": "4ca08cacb57ed82380515ad5c5014ef174fc833699321a5a32756458b8ab3560",
+          "start": 48
+        },
+        "index": 1,
+        "role": "context"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": "explicit_scope_cue",
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Warehouse operations careers",
+        "evidence": [
+          {
+            "end": 47,
+            "origin": "feedback",
+            "quote": "I do not want a career in warehouse operations.",
+            "role": "preference",
+            "source_revision": "4ca08cacb57ed82380515ad5c5014ef174fc833699321a5a32756458b8ab3560",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "warehouse operations",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I do not want a career in warehouse operations. The inventory reconciliation in the listing is how I recognized it as that kind of job.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  }
+}

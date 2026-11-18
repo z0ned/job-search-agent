@@ -1,0 +1,21 @@
+{
+  "addendum_sha256": "dedd744fc022b2cc530e6d36891a27185b38be6e77d2bc7a73a9de3391b228e7",
+  "archived_candidate_raw_sha256": "c156faf7313649086875bebecdd2d95f1cbc5e1a8fe749ec29e52eac32acc3c2",
+  "case_ids": [
+    "FI-033",
+    "FI-048",
+    "FI-041",
+    "FT-002",
+    "FT-004",
+    "FT-005"
+  ],
+  "expected_requests": 6,
+  "instructions_sha256": "2046cac86694de46c2171d4e76d8a8a6779418c9640d59e34b020000fc88c25c",
+  "mode": "targeted_evidence_review_followup",
+  "model": "gpt-5.4-2026-03-05",
+  "offline_replay_report_sha256": "0a7e23eaaf757660a2fb5784318e3fe91058907d6c903711e05382e566b3bb85",
+  "original_archive_configuration_sha256": "15ccacd1bac038d4a786bc7107fd633f4a28377fc1aea5c55849ec20d935e320",
+  "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+  "source_sha256": "82ece8267b31ecd8af7161f51a9138dfdb19379872cb547a1d4cf6ed5f23683f",
+  "temperature": 0.1
+}
