@@ -1,0 +1,17 @@
+For each signal, choose a scope type allowed for its dimension. A posting-level
+reaction uses the posting scope only when the user independently evaluates the
+posting as a whole. A clause that summarizes a narrower supported reaction
+belongs with that reaction. Keep independently evaluated subjects separate.
+
+When the evidence states an intensity that materially limits the preference,
+use an intensity qualifier in machine scope and retain its exact evidence.
+Use the following values for that qualifier.
+- none for the complete absence of the scoped attribute
+- near_zero for almost none
+- low, moderate, or high for an explicitly supported level of the attribute
+- strong for strong emphasis on a duty or attribute
+- dominant when the evidence makes the duty central or predominant
+Treat the values as qualitative. Preserve the amount of the attribute and
+the strength of the user's reaction separately. Use the original words for
+the qualifier's evidence quote. Leave the intensity qualifier out when the
+feedback gives no supported level.
