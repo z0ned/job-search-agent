@@ -369,16 +369,22 @@ class OpenAIFeedbackProvider:
     def propose(
         self, decision: str, feedback: str, job_context: Mapping, hard_rules: Mapping,
     ) -> Mapping:
+        return self._request_proposal(
+            _model_input(decision, feedback, job_context, hard_rules),
+            instructions=_INSTRUCTIONS, schema_name="feedback_interpretation", schema=_PROPOSAL_SCHEMA,
+        )
+
+    def _request_proposal(self, model_input, *, instructions, schema_name, schema):
         payload = {
             "model": self.model,
             "store": False,
-            "instructions": _INSTRUCTIONS,
-            "input": json.dumps(_model_input(decision, feedback, job_context, hard_rules)),
+            "instructions": instructions,
+            "input": json.dumps(model_input),
             "text": {"format": {
                 "type": "json_schema",
-                "name": "feedback_interpretation",
+                "name": schema_name,
                 "strict": True,
-                "schema": _PROPOSAL_SCHEMA,
+                "schema": schema,
             }},
         }
         if self._temperature is not None:

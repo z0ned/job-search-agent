@@ -1,0 +1,513 @@
+{
+  "suite_version": "3.0-holdout",
+  "created_date": "2026-11-18",
+  "purpose": "Sealed synthetic holdout for the staged v3 feedback interpreter. These independent annotations are reviewer references.",
+  "provenance": {
+    "authored_from": "Approved staged design and original financial and commute assumptions",
+    "authored_independently_of_v3_implementation_prompt_and_predictions": true,
+    "frozen_before_v3_live_inference": true,
+    "case_count": 12,
+    "scoring_notes": "Judge one-to-one equivalence by evidence and meaning. Names and qualifier values are reviewer-readable reference spellings. Check evidence attribution, preserved limits, separate confirmation, and no unsupported career downgrade regardless of identity coverage."
+  },
+  "assumptions": {
+    "hard_rules_immutable_without_explicit_change": true,
+    "written_explanation_required_for_both_decisions": true,
+    "batch_approval_before_application": true,
+    "frozen_phase_approval_is_held": true,
+    "unknown_salary_remains_eligible": true,
+    "permanent_base_minimum_usd": 180000,
+    "w2_hourly_minimum_usd": 75,
+    "1099_hourly_minimum_usd": 100,
+    "c2c_hourly_minimum_usd": null
+  },
+  "test_cases": [
+    {
+      "case_id": "FH3-001",
+      "section": "Hard rules",
+      "title": "Short engagement with a reported floor violation",
+      "job_context": {
+        "employment_type": "1099_contract",
+        "rate_type": "1099",
+        "hourly_rate_usd": 98,
+        "duration_weeks": 3,
+        "title": "Document Conversion Lead"
+      },
+      "decision": "rejected",
+      "original_feedback": "Even for a three-week engagement, the $98 an hour on 1099 falls short of my current $100 minimum. Please flag the listing.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Treat flagging a listing as a request for a new rule",
+        "Infer an objection to short engagements",
+        "Infer a new pay preference from the existing floor"
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+      "expected_category_interest_change": false,
+      "test_notes": "This is a current rule violation. The duration is a concession and carries no separate signal.",
+      "profile_fact_candidate": "The three-week 1099 engagement quotes $98 per hour. The existing 1099 minimum is $100 per hour."
+    },
+    {
+      "case_id": "FH3-002",
+      "section": "Hard rules and responsibilities",
+      "title": "Request to reconsider a floor with independent interest",
+      "job_context": {
+        "employment_type": "1099_contract",
+        "rate_type": "1099",
+        "hourly_rate_usd": 111,
+        "title": "Commercial Contract Specialist"
+      },
+      "decision": "interested",
+      "original_feedback": "I enjoy untangling conflicting vendor clauses. I want to revisit my 1099 minimum and consider lowering it to $92 an hour.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "resolving conflicting vendor clauses",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "resolving_conflicting_vendor_clauses"
+          },
+          "evidence_quote": "I enjoy untangling conflicting vendor clauses"
+        }
+      ],
+      "prohibited_inferences": [
+        "Change the 1099 minimum",
+        "Report this $111 engagement as below the current floor",
+        "Drop the independent duty preference"
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+      "expected_category_interest_change": false,
+      "test_notes": "A request to reconsider a confirmed floor requires separate confirmation and preserves unrelated duty interest.",
+      "profile_fact_candidate": "User asks to reconsider the 1099 hourly minimum and weigh $92 per hour. Keep the confirmed floor until separate confirmation."
+    },
+    {
+      "case_id": "FH3-003",
+      "section": "Work arrangement",
+      "title": "Weekly rail and occasional air travel",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Supplier Audit Lead",
+        "travel": "Weekly rail trip and occasional flights"
+      },
+      "decision": "rejected",
+      "original_feedback": "A train trip every week is more than I want. I am fine taking a flight once in a while.",
+      "expected_interpretations": [
+        {
+          "dimension": "work_arrangement",
+          "feature": "weekly rail travel",
+          "polarity": "negative",
+          "strength": "mild",
+          "scope": {
+            "type": "travel_frequency",
+            "value": "weekly_rail_travel"
+          },
+          "evidence_quote": "A train trip every week is more than I want",
+          "qualifiers": [
+            {
+              "kind": "mode",
+              "value": "rail"
+            },
+            {
+              "kind": "frequency",
+              "value": "weekly"
+            }
+          ]
+        },
+        {
+          "dimension": "work_arrangement",
+          "feature": "occasional air travel",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "travel_frequency",
+            "value": "occasional_air_travel"
+          },
+          "evidence_quote": "I am fine taking a flight once in a while",
+          "qualifiers": [
+            {
+              "kind": "mode",
+              "value": "air"
+            },
+            {
+              "kind": "frequency",
+              "value": "occasional"
+            }
+          ]
+        }
+      ],
+      "prohibited_inferences": [
+        "Assign either reaction to all business travel",
+        "Infer a preference about weekly flying or occasional rail travel",
+        "Reverse the mode and frequency pairing"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "test_notes": "Mode and frequency independently limit each of two opinions. Accepting occasional flights expresses tolerance, with mild strength."
+    },
+    {
+      "case_id": "FH3-004",
+      "section": "Career category and responsibilities",
+      "title": "Explicit career downgrade with a positive duty",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Collections Operations Manager",
+        "industry": "Museums"
+      },
+      "decision": "rejected",
+      "original_feedback": "I never want a career managing museum collections. Cataloguing incoming loans still appeals to me.",
+      "expected_interpretations": [
+        {
+          "dimension": "career_category",
+          "feature": "museum collections management career",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "career_category",
+            "value": "museum_collections_management"
+          },
+          "evidence_quote": "I never want a career managing museum collections"
+        },
+        {
+          "dimension": "role_responsibilities",
+          "feature": "cataloguing incoming loans",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "cataloguing_incoming_loans"
+          },
+          "evidence_quote": "Cataloguing incoming loans still appeals to me"
+        }
+      ],
+      "prohibited_inferences": [
+        "Downgrade the entire museum industry",
+        "Infer an aversion to cataloguing loans",
+        "Create an exclusion rule"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": true,
+      "test_notes": "The negative reaction expressly applies to a career category. The stated cataloguing duty is separately positive."
+    },
+    {
+      "case_id": "FH3-005",
+      "section": "Responsibilities and safeguards",
+      "title": "Accession data entry only at material workload share",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Museum Collections Operations Coordinator",
+        "industry": "Museums"
+      },
+      "decision": "rejected",
+      "original_feedback": "I do not want to spend half of every shift typing accession records into the database.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "accession record data entry for half of every shift",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "accession_record_data_entry"
+          },
+          "evidence_quote": "I do not want to spend half of every shift typing accession records into the database",
+          "qualifiers": [
+            {
+              "kind": "time_share",
+              "value": "half"
+            },
+            {
+              "kind": "period",
+              "value": "shift"
+            }
+          ]
+        }
+      ],
+      "prohibited_inferences": [
+        "Downgrade museum collections as a career",
+        "Infer that occasional accession data entry is unwelcome",
+        "Apply the negative reaction to all database work"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "test_notes": "The share of each shift is an intrinsic scope limit. The title and industry identify context only."
+    },
+    {
+      "case_id": "FH3-006",
+      "section": "Qualifications and responsibilities",
+      "title": "Explicit technical experience gap alongside interest",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "hourly_rate_usd": 88,
+        "title": "Localization Quality Lead",
+        "required_experience": "Translation memory systems"
+      },
+      "decision": "interested",
+      "original_feedback": "I love helping translators resolve terminology disputes. I have never used a translation memory system.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "helping translators resolve terminology disputes",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "resolving_translation_terminology_disputes"
+          },
+          "evidence_quote": "I love helping translators resolve terminology disputes"
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer a dislike of software",
+        "Infer a lack of all localization experience",
+        "Discard the independent terminology duty interest"
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "test_notes": "Never having used a named class of systems is a checkable experience claim and leaves the duty preference intact.",
+      "profile_fact_candidate": "User reports never having used a translation memory system. Review this as a self-reported experience fact."
+    },
+    {
+      "case_id": "FH3-007",
+      "section": "Qualifications and responsibilities",
+      "title": "Prospective familiarity with a tool",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Special Collections Imaging Technician",
+        "imaging_tool": "LedgerScan"
+      },
+      "decision": "interested",
+      "original_feedback": "Digitizing handwritten field notebooks sounds rewarding. If hired, I expect to get up to speed on their scan software.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "digitizing handwritten field notebooks",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "digitizing_handwritten_field_notebooks"
+          },
+          "evidence_quote": "Digitizing handwritten field notebooks sounds rewarding"
+        }
+      ],
+      "prohibited_inferences": [
+        "Record a verified software qualification or skills gap",
+        "Create a positive preference for training or the tool",
+        "Attach a hiring contingency to the duty interest"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "test_notes": "Getting up to speed is a prediction about onboarding. There is no present skill claim or stated value for training."
+    },
+    {
+      "case_id": "FH3-008",
+      "section": "Evidence attribution and posting verification",
+      "title": "Quoted work plus a question about another posting term",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Water Instrumentation Specialist",
+        "posting_excerpt": "Duties include field troubleshooting and Pacific coverage."
+      },
+      "decision": "interested",
+      "original_feedback": "The ad lists 'field troubleshooting' as a duty. That's exactly the part I would enjoy. What does 'Pacific coverage' mean?",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "field troubleshooting",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "field_troubleshooting"
+          },
+          "evidence_quote": "The ad lists 'field troubleshooting' as a duty. That's exactly the part I would enjoy"
+        }
+      ],
+      "prohibited_inferences": [
+        "Treat wording from the posting as user sentiment",
+        "Invent an on-call, time-zone, or travel concern from the request for information",
+        "Require clarification of the already explicit duty preference"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "test_notes": "The quoted phrase identifies the antecedent. The reaction in the second sentence independently establishes the preference. The question concerns posting facts."
+    },
+    {
+      "case_id": "FH3-009",
+      "section": "Conditional compensation",
+      "title": "A quoted W-2 rate with a certification cost condition",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "rate_type": "W2",
+        "hourly_rate_usd": 94,
+        "title": "Industrial Access Inspector"
+      },
+      "decision": "interested",
+      "original_feedback": "I would accept $94 an hour on W-2 if the staffing agency pays for the safety certification.",
+      "expected_interpretations": [
+        {
+          "dimension": "compensation",
+          "feature": "W-2 rate of $94 per hour",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "compensation_context",
+            "value": "w2_94_hour"
+          },
+          "evidence_quote": "I would accept $94 an hour on W-2 if the staffing agency pays for the safety certification",
+          "condition": "the staffing agency pays for the safety certification",
+          "qualifiers": [
+            {
+              "kind": "amount",
+              "value": "94"
+            },
+            {
+              "kind": "currency",
+              "value": "USD"
+            },
+            {
+              "kind": "unit",
+              "value": "hour"
+            },
+            {
+              "kind": "employment_type",
+              "value": "w2_contract"
+            }
+          ]
+        }
+      ],
+      "prohibited_inferences": [
+        "Generalize the reaction to every $94 offer",
+        "Set a W-2 floor or report a violation",
+        "Treat certification interest as an independent preference",
+        "Reverse which party pays"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "test_notes": "The user values the named rate under an employer-paid cost condition. The scope identifies the amount and employment basis separately from that condition."
+    },
+    {
+      "case_id": "FH3-010",
+      "section": "Conditional responsibilities",
+      "title": "Duty interest subject to a weekly workload cap",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Laboratory Instrumentation Analyst"
+      },
+      "decision": "interested",
+      "original_feedback": "I would enjoy calibrating spectrometers, provided it takes at most one shift per week.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "calibrating spectrometers",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "spectrometer_calibration"
+          },
+          "evidence_quote": "I would enjoy calibrating spectrometers, provided it takes at most one shift per week",
+          "condition": "calibrating spectrometers takes at most one shift per week"
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer a preference for part-time employment",
+        "Make a second work schedule signal from the condition",
+        "Turn an upper bound into an exact or minimum frequency"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "test_notes": "The workload cap is a condition on interest in this one duty. The whole job has no stated weekly limit."
+    },
+    {
+      "case_id": "FH3-011",
+      "section": "Posting and project type",
+      "title": "Positive specific posting and negative repeat project type",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Controls Designer",
+        "project_type": "Hospital fire-alarm replacement",
+        "employer": "Clearwell Controls"
+      },
+      "decision": "rejected",
+      "original_feedback": "I love this particular Controls Designer opening. I do not want to take on another hospital fire-alarm replacement project.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "this particular Controls Designer opening",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "posting_role",
+            "value": "current_controls_designer_posting"
+          },
+          "evidence_quote": "I love this particular Controls Designer opening"
+        },
+        {
+          "dimension": "role_responsibilities",
+          "feature": "hospital fire-alarm replacement projects",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "project_type",
+            "value": "hospital_fire_alarm_replacement"
+          },
+          "evidence_quote": "I do not want to take on another hospital fire-alarm replacement project"
+        }
+      ],
+      "prohibited_inferences": [
+        "Generalize the praise to all controls design careers",
+        "Downgrade the hospital or controls design field",
+        "Infer any particular loved duty from the posting praise"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "test_notes": "The general posting reaction is anchored to a named current role. A separate sentence objects to repeating a specific project type."
+    },
+    {
+      "case_id": "FH3-012",
+      "section": "Clarification with an independent preference",
+      "title": "Clear investigative duty interest and an unresolved rejection",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Supplier Quality Investigator"
+      },
+      "decision": "rejected",
+      "original_feedback": "I enjoy tracing worn parts back to a supplier. This opening still nags at me, and I can't put my finger on why.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "tracing worn parts to their supplier",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "tracing_worn_parts_to_supplier"
+          },
+          "evidence_quote": "I enjoy tracing worn parts back to a supplier"
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer a negative employer, career, or industry preference",
+        "Attribute the vague concern to qualifications",
+        "Drop the independently named investigative duty preference"
+      ],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "test_notes": "The negative reason is unresolved. The separate, named duty preference remains held for review.",
+      "clarification_question": "What about this specific opening makes you hesitate?"
+    }
+  ]
+}
