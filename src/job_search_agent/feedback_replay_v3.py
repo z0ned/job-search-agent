@@ -113,10 +113,11 @@ class _ArchivedProposalProvider:
         return self._proposal
 
 
-def revalidate_pass(suite, proposals, source):
+def revalidate_pass(suite, proposals, source, *, recover_explicit_conditions=None):
     """Run only the deterministic v3 pipeline against a complete archived pass."""
     if not isinstance(proposals, Mapping) or proposals.keys() != {case["case_id"] for case in suite.cases}:
         raise ValueError("archived proposal IDs must match the entire selected fixture")
+    options = {} if recover_explicit_conditions is None else {"recover_explicit_conditions": recover_explicit_conditions}
     predictions = {}
     for case in suite.cases:
         case_id = case["case_id"]
@@ -128,7 +129,7 @@ def revalidate_pass(suite, proposals, source):
         try:
             prediction = feedback_v3.interpret_feedback_v3(
                 case["decision"], case["original_feedback"], case["job_context"],
-                provider=provider, hard_rules=suite.hard_rules,
+                provider=provider, hard_rules=suite.hard_rules, **options,
             )
         except Exception as error:
             prediction = {"evaluation_error": type(error).__name__}

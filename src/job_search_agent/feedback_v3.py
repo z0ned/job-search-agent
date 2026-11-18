@@ -31,6 +31,8 @@ from .feedback_extraction_v3 import (
     QUALIFIER_KINDS,
     OpenAIFeedbackProviderV3,
 )
+from .feedback_conditions_v3 import recover_condition
+from .feedback_evidence_checks_v3 import evidence_findings
 from .feedback_rules_v3 import eligibility_violation, rule_reconsideration_supported
 from .feedback_taxonomy import _VOCABULARY, canonicalize_signal
 
@@ -208,7 +210,7 @@ def _feature_id(dimension, label, scope, polarity):
     return f"{namespace}.{canonical.feature_id}"
 
 
-def _signal(raw, clauses, feedback, revision, context, violation):
+def _signal(raw, clauses, feedback, revision, context, violation, *, recover_explicit_conditions):
     _object(raw, {"clause_index", "dimension", "display_label", "polarity", "strength", "scope", "condition"},
             "signal")
     index = raw["clause_index"]
@@ -233,9 +235,11 @@ def _signal(raw, clauses, feedback, revision, context, violation):
     qualifier_kinds = [item["kind"] for item in qualifiers]
     if len(qualifier_kinds) != len(set(qualifier_kinds)):
         raise FeedbackOutputError("A scope cannot repeat a qualifier kind.")
+    condition = _condition(raw["condition"], feedback, revision, assertion)
+    if recover_explicit_conditions:
+        condition, qualifiers = recover_condition(condition, qualifiers, assertion, feedback, revision)
     scope = {"type": scope["type"], "referent": scope["referent"].strip(), "qualifiers": qualifiers}
     label = label.strip()
-    condition = _condition(raw["condition"], feedback, revision, assertion)
     feature_id = _feature_id(dimension, label, scope, polarity)
     career_review = dimension == "career_category" and polarity == "negative"
     career_scope_cue = bool(_CAREER_SCOPE.search(assertion["quote"]) and _NEGATIVE_REACTION.search(assertion["quote"]))
@@ -251,7 +255,7 @@ def _signal(raw, clauses, feedback, revision, context, violation):
     }
 
 
-def _validated_proposal(raw, feedback, context, violation):
+def _validated_proposal(raw, feedback, context, violation, *, recover_explicit_conditions):
     _object(raw, {"clauses", "signals"}, "extraction proposal")
     if not isinstance(raw["clauses"], list) or not isinstance(raw["signals"], list):
         raise FeedbackOutputError("Clauses and signals must be arrays.")
@@ -267,7 +271,10 @@ def _validated_proposal(raw, feedback, context, violation):
     used_clauses, used_evidence, identities = set(), set(), set()
     for index, item in enumerate(raw["signals"]):
         try:
-            signal = _signal(item, clauses, feedback, revision, context, violation)
+            signal = _signal(
+                item, clauses, feedback, revision, context, violation,
+                recover_explicit_conditions=recover_explicit_conditions,
+            )
             clause_index = signal["clause_index"]
             quote = clauses[clause_index]["evidence"]["quote"]
             if clause_index in used_clauses or quote in used_evidence:
@@ -292,7 +299,7 @@ def _validated_proposal(raw, feedback, context, violation):
 
     condition_spans = [(index, signal["condition"]["evidence"])
                        for index, signal in signals if signal["condition"]]
-    independent = []
+    independent, recoveries = [], []
     for index, signal in signals:
         assertion = signal["evidence"][0]
         if any(
@@ -303,7 +310,12 @@ def _validated_proposal(raw, feedback, context, violation):
                            "message": "A condition cannot also be emitted as an independent preference."})
         else:
             independent.append(signal)
-    return [clause for clause in clauses if clause is not None], independent, issues
+            if recover_explicit_conditions and raw["signals"][index]["condition"] is None and signal["condition"]:
+                recoveries.append({
+                    "signal_index": index, "clause_index": signal["clause_index"],
+                    "evidence": signal["condition"]["evidence"],
+                })
+    return [clause for clause in clauses if clause is not None], independent, issues, recoveries
 
 
 def _review(clauses, signals, violation, rules):
@@ -335,7 +347,9 @@ def _review(clauses, signals, violation, rules):
     return PENDING_APPROVAL, action, None, None
 
 
-def interpret_feedback_v3(decision, feedback, job_context=None, *, provider, hard_rules=None):
+def interpret_feedback_v3(
+    decision, feedback, job_context=None, *, provider, hard_rules=None, recover_explicit_conditions=False,
+):
     """Return a read-only v3 interpretation, retaining validated review evidence."""
     decision = decision.strip().lower() if isinstance(decision, str) else ""
     if decision == "rejected_archived":
@@ -348,15 +362,21 @@ def interpret_feedback_v3(decision, feedback, job_context=None, *, provider, har
     rules = _json_context(hard_rules, "Hard rules")
     violation = eligibility_violation(context, rules)
     raw = provider.propose(decision, feedback, context, rules)
-    clauses, signals, issues = _validated_proposal(raw, feedback, context, violation)
+    clauses, signals, issues, recoveries = _validated_proposal(
+        raw, feedback, context, violation, recover_explicit_conditions=recover_explicit_conditions,
+    )
     review_status, action, question, fact = _review(clauses, signals, violation, rules)
-    return {
+    result = {
         "decision": decision, "original_feedback": feedback, "model": provider.model,
         "prompt_version": PROMPT_VERSION, "clauses": clauses, "interpretations": signals,
         "review_status": review_status, "clarification_question": question, "profile_fact_candidate": fact,
         "hard_constraint_action": action, "hard_constraints_mutated": False,
         "eligibility_violation": violation, "validation_issues": issues,
     }
+    if recover_explicit_conditions:
+        result["condition_recoveries"] = recoveries
+        result["evidence_findings"] = evidence_findings(clauses, signals)
+    return result
 
 
 def main(argv=None):
