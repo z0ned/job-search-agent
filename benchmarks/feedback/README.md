@@ -65,3 +65,7 @@ The follow-up uses the recorded disputed explanation links to flag both implicat
 ## Offline v3 validation and scope repair trial
 
 The replay reproduces 180 archived validation records and tests two narrow evidence-preserving repairs and two scope review checks. Its report retains the input hashes and the before-and-after fields for every changed case. [Trial findings](../../docs/Feedback_Interpreter_Validation_Repair_Trial_v3.md) · [Case-level replay](offline_v3_validation_repair/report.json)
+
+## Live v3 separate extraction trial
+
+The two-pass trial compares the standard one-call interpreter with a separate quote inventory followed by classification. The capture preserves 48 requests' stage traces, the raw and verified inventory, raw final proposals, validated records, and masked adjudications. [Trial protocol and findings](../../docs/Feedback_Interpreter_Separate_Extraction_Trial_v3.md) · [Semantic scorecard](live_v3_separate_extraction_trial/semantic-report.json)

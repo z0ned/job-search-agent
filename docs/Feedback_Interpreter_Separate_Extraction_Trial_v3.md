@@ -27,3 +27,36 @@ Run from the repository root with a new output directory.
 PYTHONPATH=src python -m job_search_agent.feedback_separate_extraction_trial_v3 \
   --output /tmp/feedback-v3-separate-extraction
 ```
+
+## Results
+
+**The separate extraction stage found all 20 expected preferences across the two passes. The final classifier still omitted the same known preference in both passes.** The two-call arm completed 12 of 16 cases, compared with 10 of 16 for the one-call arm. It fell short of the targeted gate. [Semantic scorecard](../benchmarks/feedback/live_v3_separate_extraction_trial/semantic-report.json)
+
+The inputs and scoring criteria were frozen at `2bb080a1b1c3c10d3d80d22b11689a2139cc1a24`. Inference ran from `012ff361bae4c1b8b8701104f381bc7c41288409`. All 48 requests completed without API or execution errors. Trace verification matched the two arms' original inputs and final response schemas and bound each response to its captured proposal. Separate masked reviewers scored each round's raw and validated outputs. A third reviewer independently scored the inventory spans. [Configuration](../benchmarks/feedback/live_v3_separate_extraction_trial/configuration.json) · [Request trace](../benchmarks/feedback/live_v3_separate_extraction_trial/request-trace.json) · [Masked adjudications](../benchmarks/feedback/live_v3_separate_extraction_trial/adjudications.json)
+
+| Measure over both passes | One call | Separate extraction |
+| --- | ---: | ---: |
+| Complete raw cases | 10/16 | 12/16 |
+| Complete validated cases | 10/16 | 12/16 |
+| Complete validated cases on fresh examples | 6/8 | 8/8 |
+| Validated recall on known cases | 8/12 | 7/12 |
+| Raw semantic precision | 14/18 | 15/18 |
+| Validated semantic precision | 14/16 | 15/18 |
+| Validated semantic recall | 14/20 | 15/20 |
+| Correct review routes | 16/16 | 16/16 |
+| Correct hard-rule actions | 16/16 | 16/16 |
+| Validator rejections | 2 | 0 |
+| Live requests | 16 | 32 |
+| Summed request time | 43.671 s | 66.302 s |
+
+Validated recall was 7/10 in both baseline passes and 7/10 and 8/10 in the separate arm. The 16 inventory requests took 25.863 seconds summed. All 20 inventoried preference spans had exact source anchors and matched the references. Both arms held every accepted preference for review and produced zero unsupported career downgrades or unauthorized hard-rule actions. [Capture diagnostics](../benchmarks/feedback/live_v3_separate_extraction_trial/report.json)
+
+| Case | Finding |
+| --- | --- |
+| FI-041 | Both inventories correctly identified “This is a terrific AI advisor role” as a preference. Both final classifiers in the split arm relabeled it as context, and the baseline also omitted it. In the first pass the split classifier also put employer distrust in the culture dimension. The reference assigns it to the employer dimension. |
+| FH3-011 | Both arms kept the positive reaction to this specific opening and the negative reaction to the project type on both passes. The contemporaneous baseline recovered the previously missed posting praise without the inventory. |
+| FH3-007 | Both arms classified digitizing handwritten field notebooks as a growth goal. The reference classifies the activity as a duty. The inventory tagged the prospective training expectation as a profile fact. The final classifier corrected that preliminary role and preserved the expected route in both passes. |
+| FS3-001 | Both baseline proposals anchored the posting praise and classified it with incompatible career and posting fields. Validation dropped it. The split arm correctly classified the praise as applying to this opening and preserved it alongside profile review in both passes. |
+| FH3-002 and FS3-002–004 | Both arms preserved the independently supported preferences, distinguished neutral source mentions, and kept the expected review routes and hard-rule actions. |
+
+The first stage showed that the missing praise can be found in the source. The handoff still allows a grounded reaction to disappear during classification. The next targeted change is to give each inventoried reaction a stable link and require the classifier to account for it as a signal or record why it needs review. Keep the stage-one roles provisional so a mistaken profile-fact label does not determine routing. The full live benchmark and learning integration remain gated.
