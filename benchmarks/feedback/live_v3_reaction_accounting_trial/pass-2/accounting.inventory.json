@@ -1,0 +1,130 @@
+{
+  "FH3-002": [
+    {
+      "end": 46,
+      "quote": "I enjoy untangling conflicting vendor clauses.",
+      "reaction_id": "r-1d7183b15d8a398e8fc8",
+      "role": "preference",
+      "start": 0
+    },
+    {
+      "end": 121,
+      "quote": "I want to revisit my 1099 minimum and consider lowering it to $92 an hour.",
+      "reaction_id": "r-d8ca4db6976eb38a5fda",
+      "role": "rule_reconsideration",
+      "start": 47
+    }
+  ],
+  "FH3-007": [
+    {
+      "end": 56,
+      "quote": "Digitizing handwritten field notebooks sounds rewarding.",
+      "reaction_id": "r-0686b98e53c2dd0aab05",
+      "role": "preference",
+      "start": 0
+    },
+    {
+      "end": 118,
+      "quote": "If hired, I expect to get up to speed on their scan software.",
+      "reaction_id": "r-93ec6a5c23b4097c3067",
+      "role": "profile_fact",
+      "start": 57
+    }
+  ],
+  "FH3-011": [
+    {
+      "end": 49,
+      "quote": "I love this particular Controls Designer opening.",
+      "reaction_id": "r-94f0ace40494ccf18160",
+      "role": "preference",
+      "start": 0
+    },
+    {
+      "end": 123,
+      "quote": "I do not want to take on another hospital fire-alarm replacement project.",
+      "reaction_id": "r-7f783dab0c0cdf8ca098",
+      "role": "preference",
+      "start": 50
+    }
+  ],
+  "FI-041": [
+    {
+      "end": 34,
+      "quote": "This is a terrific AI advisor role",
+      "reaction_id": "r-f17db7aad8d6c8a2edf2",
+      "role": "preference",
+      "start": 0
+    },
+    {
+      "end": 68,
+      "quote": "but I do not trust the employer.",
+      "reaction_id": "r-8131d2c33976d6791cfb",
+      "role": "preference",
+      "start": 36
+    }
+  ],
+  "FS3-001": [
+    {
+      "end": 71,
+      "quote": "This particular Archive Digitization Coordinator opening appeals to me.",
+      "reaction_id": "r-10f954c174cee4ed8d41",
+      "role": "preference",
+      "start": 0
+    },
+    {
+      "end": 119,
+      "quote": "I have never operated a planetary book scanner.",
+      "reaction_id": "r-c88864e4961d8d5ef27c",
+      "role": "profile_fact",
+      "start": 72
+    }
+  ],
+  "FS3-002": [
+    {
+      "end": 90,
+      "quote": "This Archive Digitization Coordinator opening involves operating a planetary book scanner.",
+      "reaction_id": "r-8039cb0afd47cc2f4a4b",
+      "role": "context",
+      "start": 0
+    },
+    {
+      "end": 138,
+      "quote": "I have never operated a planetary book scanner.",
+      "reaction_id": "r-b42fae6505807af359df",
+      "role": "profile_fact",
+      "start": 91
+    }
+  ],
+  "FS3-003": [
+    {
+      "end": 73,
+      "quote": "I would enjoy investigating discrepancies in cold-chain temperature logs.",
+      "reaction_id": "r-a7c1c5d11fdb71938fba",
+      "role": "preference",
+      "start": 0
+    },
+    {
+      "end": 136,
+      "quote": "I definitely do not want to work for Cinder Vale Cold Storage.",
+      "reaction_id": "r-d2200e9b0b5d9874c911",
+      "role": "preference",
+      "start": 74
+    }
+  ],
+  "FS3-004": [
+    {
+      "end": 114,
+      "quote": "I recognized the industry because the posting mentions investigating discrepancies in cold-chain temperature logs.",
+      "reaction_id": "r-4adc8eba4593a5508af7",
+      "role": "context",
+      "start": 0
+    },
+    {
+      "end": 177,
+      "quote": "I definitely do not want to work for Cinder Vale Cold Storage.",
+      "reaction_id": "r-89ac0b4d3b3f37d54f6c",
+      "role": "preference",
+      "start": 115
+    }
+  ]
+}

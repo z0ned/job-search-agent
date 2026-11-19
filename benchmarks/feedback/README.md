@@ -69,3 +69,7 @@ The replay reproduces 180 archived validation records and tests two narrow evide
 ## Live v3 separate extraction trial
 
 The two-pass trial compares the standard one-call interpreter with a separate quote inventory followed by classification. The capture preserves 48 requests' stage traces, the raw and verified inventory, raw final proposals, validated records, and masked adjudications. [Trial protocol and findings](../../docs/Feedback_Interpreter_Separate_Extraction_Trial_v3.md) · [Semantic scorecard](live_v3_separate_extraction_trial/semantic-report.json)
+
+## V3 reaction accounting replay and live trial
+
+The zero-request replay audits the earlier split classifier against the saved evidence. The live follow-up reuses both verified inventories and records one classifier disposition for each preliminary preference. The capture preserves full responses, projected proposals, validated records, and case-level audits. [Trial protocol and findings](../../docs/Feedback_Interpreter_Reaction_Accounting_Trial_v3.md) · [Offline audit capture](offline_v3_reaction_accounting/report.json) · [Semantic scorecard](live_v3_reaction_accounting_trial/semantic-report.json)

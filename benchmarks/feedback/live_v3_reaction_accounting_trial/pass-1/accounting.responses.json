@@ -1,0 +1,328 @@
+{
+  "FH3-002": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I enjoy untangling conflicting vendor clauses.",
+        "role": "preference"
+      },
+      {
+        "detail": "Reconsider confirmed 1099 hourly minimum, tentatively to $92/hour.",
+        "quote": "I want to revisit my 1099 minimum and consider lowering it to $92 an hour.",
+        "role": "rule_reconsideration"
+      }
+    ],
+    "reaction_dispositions": [
+      {
+        "reaction_id": "r-1d7183b15d8a398e8fc8",
+        "reason": null,
+        "signal_index": 0,
+        "status": "signal"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Enjoys resolving conflicting vendor clauses",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "untangling conflicting vendor clauses",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FH3-007": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "Digitizing handwritten field notebooks sounds rewarding.",
+        "role": "preference"
+      },
+      {
+        "detail": "Prospective learning expectation, not a current capability claim.",
+        "quote": "If hired, I expect to get up to speed on their scan software.",
+        "role": "context"
+      }
+    ],
+    "reaction_dispositions": [
+      {
+        "reaction_id": "r-0686b98e53c2dd0aab05",
+        "reason": null,
+        "signal_index": 0,
+        "status": "signal"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Digitizing handwritten field notebooks",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "digitizing handwritten field notebooks",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FH3-011": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I love this particular Controls Designer opening.",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "I do not want to take on another hospital fire-alarm replacement project.",
+        "role": "preference"
+      }
+    ],
+    "reaction_dispositions": [
+      {
+        "reaction_id": "r-94f0ace40494ccf18160",
+        "reason": null,
+        "signal_index": 0,
+        "status": "signal"
+      },
+      {
+        "reaction_id": "r-7f783dab0c0cdf8ca098",
+        "reason": null,
+        "signal_index": 1,
+        "status": "signal"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Positive about this Controls Designer opening",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Controls Designer opening at Clearwell Controls",
+          "type": "posting_role"
+        },
+        "strength": "strong"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Avoid hospital fire-alarm replacement projects",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "career_context",
+              "quote": "another",
+              "source": "feedback",
+              "value": "another"
+            }
+          ],
+          "referent": "hospital fire-alarm replacement project",
+          "type": "project_type"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-041": {
+    "clauses": [
+      {
+        "detail": "Positive assessment of the specific opportunity, but not a distinct preference target beyond the posting.",
+        "quote": "This is a terrific AI advisor role",
+        "role": "context"
+      },
+      {
+        "detail": null,
+        "quote": "but I do not trust the employer.",
+        "role": "preference"
+      }
+    ],
+    "reaction_dispositions": [
+      {
+        "reaction_id": "r-f17db7aad8d6c8a2edf2",
+        "reason": "Positive description of this specific role, but it functions as acknowledgment before the separate employer-trust objection rather than an independent preference with its own concrete target.",
+        "signal_index": null,
+        "status": "context"
+      },
+      {
+        "reaction_id": "r-8131d2c33976d6791cfb",
+        "reason": null,
+        "signal_index": 0,
+        "status": "signal"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "culture_environment",
+        "display_label": "Distrust of this employer",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Trustline AI",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FS3-001": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "This particular Archive Digitization Coordinator opening appeals to me.",
+        "role": "preference"
+      },
+      {
+        "detail": "No prior experience operating a planetary book scanner.",
+        "quote": "I have never operated a planetary book scanner.",
+        "role": "profile_fact"
+      }
+    ],
+    "reaction_dispositions": [
+      {
+        "reaction_id": "r-10f954c174cee4ed8d41",
+        "reason": null,
+        "signal_index": 0,
+        "status": "signal"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Appeal of this Archive Digitization Coordinator opening",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Archive Digitization Coordinator opening",
+          "type": "posting_role"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FS3-002": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "This Archive Digitization Coordinator opening involves operating a planetary book scanner.",
+        "role": "context"
+      },
+      {
+        "detail": "No prior experience operating a planetary book scanner.",
+        "quote": "I have never operated a planetary book scanner.",
+        "role": "profile_fact"
+      }
+    ],
+    "reaction_dispositions": [],
+    "signals": []
+  },
+  "FS3-003": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I would enjoy investigating discrepancies in cold-chain temperature logs.",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "I definitely do not want to work for Cinder Vale Cold Storage.",
+        "role": "preference"
+      }
+    ],
+    "reaction_dispositions": [
+      {
+        "reaction_id": "r-a7c1c5d11fdb71938fba",
+        "reason": null,
+        "signal_index": 0,
+        "status": "signal"
+      },
+      {
+        "reaction_id": "r-d2200e9b0b5d9874c911",
+        "reason": null,
+        "signal_index": 1,
+        "status": "signal"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Enjoys investigating discrepancies in cold-chain temperature logs",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "investigating discrepancies in cold-chain temperature logs",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Does not want to work for Cinder Vale Cold Storage",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Cinder Vale Cold Storage",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FS3-004": {
+    "clauses": [
+      {
+        "detail": "Recognized the industry from the posting task description.",
+        "quote": "I recognized the industry because the posting mentions investigating discrepancies in cold-chain temperature logs.",
+        "role": "context"
+      },
+      {
+        "detail": null,
+        "quote": "I definitely do not want to work for Cinder Vale Cold Storage.",
+        "role": "preference"
+      }
+    ],
+    "reaction_dispositions": [
+      {
+        "reaction_id": "r-89ac0b4d3b3f37d54f6c",
+        "reason": null,
+        "signal_index": 0,
+        "status": "signal"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Does not want to work for Cinder Vale Cold Storage",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Cinder Vale Cold Storage",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ]
+  }
+}

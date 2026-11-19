@@ -1,0 +1,824 @@
+{
+  "configuration_sha256": "a32b54abbd8a6d32129dc0601fb7ec3a864be3cdeb0a54ed4c98d87c605bca79",
+  "masked_packets_sha256": {
+    "review-pass-1.json": "d5ba37e0928d1640badc39645f9b57da2abb19ffae3853d79ce58de8f779b9e3",
+    "review-pass-2.json": "93ffb3f0702dd992d415b6b1e69d19523fd7a32aab63d98ca4636e19e8adf69f"
+  },
+  "passes": {
+    "1": {
+      "accounting_audit_sha256": "cb15055b4be24f5fd57daf6252d101be07d67babb526ba09c683097c02a4ecad",
+      "accounting_inventory_sha256": "556a56f65d44c685f23b30cabf3d8c6e6231bf3dbfa3771365809459b5ea5b2d",
+      "accounting_wire_sha256": "bc0628b4233c839d01b1401688e61cc6202d8908b3f0bce0b96d41b52b2d6bd2",
+      "archive_inventory_sha256": "007e68e182a05467113e5a39564aed3b264e5a34373fee4744a74a4487efc753",
+      "artifacts": {
+        "accounting": {
+          "raw_sha256": "0922258f5dd1c6ca07b2a967c30057322f8a0e9cf643167001ed572dda04f750",
+          "validated_sha256": "ce91d1cbf1dc0e7f5a3fa29b8bdded79e14924cdf0305b648b64ee8ba27e74f7"
+        },
+        "archived_split": {
+          "raw_sha256": "9c46e86eecf7f2adc88dd76135ce544c8f06055de473828f0fe6930e997f3f2a",
+          "validated_sha256": "e27a304d8d18d0ba0d9e815c01905e56b2b7819ecf04910c408285d7cf7b3501"
+        }
+      },
+      "mask": {
+        "FH3-002": {
+          "A": "archived_split",
+          "B": "accounting"
+        },
+        "FH3-007": {
+          "A": "archived_split",
+          "B": "accounting"
+        },
+        "FH3-011": {
+          "A": "accounting",
+          "B": "archived_split"
+        },
+        "FI-041": {
+          "A": "archived_split",
+          "B": "accounting"
+        },
+        "FS3-001": {
+          "A": "accounting",
+          "B": "archived_split"
+        },
+        "FS3-002": {
+          "A": "archived_split",
+          "B": "accounting"
+        },
+        "FS3-003": {
+          "A": "accounting",
+          "B": "archived_split"
+        },
+        "FS3-004": {
+          "A": "archived_split",
+          "B": "accounting"
+        }
+      },
+      "verdicts": {
+        "FH3-002": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both stages preserve the independent preference for resolving conflicting vendor clauses. The final fact names the tentative $92/hour 1099 minimum reconsideration and requires separate confirmation. The $111 engagement is eligible under the confirmed floor.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both stages preserve the independent preference for resolving conflicting vendor clauses. The final fact names the tentative $92/hour 1099 minimum reconsideration and requires separate confirmation. The $111 engagement is eligible under the confirmed floor.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "FH3-007": {
+          "A": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "Both stages retain the positive reaction to notebook digitization with an exact anchor and correct referent, but classify the duty as growth_purpose. The expected dimension is role_responsibilities. Prospective software onboarding stays contextual.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both stages correctly retain the positive notebook-digitizing duty without a hiring condition. Prospective software onboarding stays contextual.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "FH3-011": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both stages preserve strong praise scoped to the current Clearwell Controls opening and a strong objection scoped to repeating hospital fire-alarm replacement projects. The anchored career_context qualifier preserves “another” and creates no career-level inference.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both stages preserve strong praise scoped to the current Controls Designer opening and a strong objection scoped to repeating hospital fire-alarm replacement projects. The anchored quantity qualifier preserves “another.”",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "FI-041": {
+          "A": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "Both stages relegate explicit praise for the AI advisor posting to context and omit its signal. Exact evidence supports strong distrust of named employer Trustline AI, but the emitted dimension is culture_environment instead of employer. The employer scope stays narrow and no career downgrade appears.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "Both stages relegate explicit praise for the AI advisor posting to context and omit its signal. Exact evidence supports strong distrust of named employer Trustline AI, but the emitted dimension is culture_environment instead of employer. The employer scope stays narrow and no career downgrade appears.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "FS3-001": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both stages preserve positive interest in the current opening. The final profile-fact candidate specifically records never having operated a planetary book scanner.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both stages preserve positive interest in the current opening. The final profile-fact candidate specifically records never having operated a planetary book scanner.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "FS3-002": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "Both stages correctly produce zero preferences from the neutral duty mention and experience claim. The final profile-fact candidate specifically records never having operated a planetary book scanner.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "Both stages correctly produce zero preferences from the neutral duty mention and experience claim. The final profile-fact candidate specifically records never having operated a planetary book scanner.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "FS3-003": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both stages retain the positive temperature-log discrepancy duty reaction and the independent strong objection scoped to Cinder Vale Cold Storage.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both stages retain the positive temperature-log discrepancy duty reaction and the independent strong objection scoped to Cinder Vale Cold Storage.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "FS3-004": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both stages preserve the strong objection to Cinder Vale Cold Storage. Industry recognition from the posting duty remains context.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both stages preserve the strong objection to Cinder Vale Cold Storage. Industry recognition from the posting duty remains context.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        }
+      }
+    },
+    "2": {
+      "accounting_audit_sha256": "dae4cf3306f857fc0c392e81d71850e50b74f9944ead1a2c5e2b60a8d0ec2836",
+      "accounting_inventory_sha256": "556a56f65d44c685f23b30cabf3d8c6e6231bf3dbfa3771365809459b5ea5b2d",
+      "accounting_wire_sha256": "fbb18cf2f83f70ba5c778890d1fa8a0ee1776e58ccfcbae56cae581bc657a795",
+      "archive_inventory_sha256": "007e68e182a05467113e5a39564aed3b264e5a34373fee4744a74a4487efc753",
+      "artifacts": {
+        "accounting": {
+          "raw_sha256": "df482bb20269ecb9cb858b200e3c2e84c0c1ac57fb625b5b66e829331379321f",
+          "validated_sha256": "1e5438bdc98b68d9f49e8a7f5dc0eca657321243ccd51d65e80900f0f94e1bab"
+        },
+        "archived_split": {
+          "raw_sha256": "2b8c583c7e4697d7c4657e57332f953cd97ba0cc850763b4c9ccfa4fa507753d",
+          "validated_sha256": "04625d79e2d7736bd5b5eaa3f2be2a9a8079b5ab5a902a77685f6e90c5128359"
+        }
+      },
+      "mask": {
+        "FH3-002": {
+          "A": "archived_split",
+          "B": "accounting"
+        },
+        "FH3-007": {
+          "A": "archived_split",
+          "B": "accounting"
+        },
+        "FH3-011": {
+          "A": "accounting",
+          "B": "archived_split"
+        },
+        "FI-041": {
+          "A": "accounting",
+          "B": "archived_split"
+        },
+        "FS3-001": {
+          "A": "accounting",
+          "B": "archived_split"
+        },
+        "FS3-002": {
+          "A": "archived_split",
+          "B": "accounting"
+        },
+        "FS3-003": {
+          "A": "archived_split",
+          "B": "accounting"
+        },
+        "FS3-004": {
+          "A": "accounting",
+          "B": "archived_split"
+        }
+      },
+      "verdicts": {
+        "FH3-002": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Preserves the independent vendor-clause duty preference and routes tentative reconsideration of the 1099 floor at $92/hour for separate confirmation. The $111 posting remains eligible.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Preserves the independent vendor-clause duty preference and routes tentative reconsideration of the 1099 floor at $92/hour for separate confirmation. The $111 posting remains eligible.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "FH3-007": {
+          "A": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The grounded positive reaction to a specific notebook-digitizing duty is classified as growth_purpose. The software sentence remains prospective onboarding context.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Captures interest in the notebook-digitizing duty without a hiring condition. The software sentence remains prospective onboarding context.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "FH3-011": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Keeps praise for the current opening and aversion to repeating the named project type. The posting employer is supported by job context, and “another” is an exact, non-conditional qualifier.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Keeps praise for the current opening and aversion to the named project type. “Another” remains in the evidence. Omitting it as a separate qualifier leaves the same preference about future projects of that type.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "FI-041": {
+          "A": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "Omits explicit praise of the specific opening. The employer distrust has exact evidence and named-employer scope, but culture_environment misclassifies it.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [
+              [
+                2,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Captures grounded, named-employer distrust. Treating the other clause as context drops explicit praise of the current posting even though the user gave no specific duty as a reason.",
+            "raw_equivalent_pairs": [
+              [
+                2,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "FS3-001": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Preserves interest in the specific opening and routes the self-reported planetary book scanner experience gap for profile review.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Preserves interest in the specific opening and routes the self-reported planetary book scanner experience gap for profile review.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "FS3-002": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "Correctly emits zero signals from a neutral duty description and routes the self-reported planetary book scanner experience gap for profile review.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "Correctly emits zero signals from a neutral duty description and routes the self-reported planetary book scanner experience gap for profile review.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "FS3-003": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Preserves the grounded positive duty signal and the separate negative signal scoped to the named employer.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Preserves the grounded positive duty signal and the separate negative signal scoped to the named employer.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "FS3-004": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Treats recognition of the sector as context and captures the objection to the named employer.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Treats recognition of the sector as context and captures the objection to the named employer.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        }
+      }
+    }
+  },
+  "reference_sha256": "ab77e2cac4563ec4df1e6407144ea38d6bd06cc49936b6b2bb639bc4b3033e4c"
+}

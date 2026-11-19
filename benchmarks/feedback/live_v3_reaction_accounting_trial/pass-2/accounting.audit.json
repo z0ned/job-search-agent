@@ -1,0 +1,161 @@
+{
+  "FH3-002": {
+    "issues": [],
+    "reactions": [
+      {
+        "end": 46,
+        "flagged": false,
+        "quote": "I enjoy untangling conflicting vendor clauses.",
+        "reaction_id": "r-1d7183b15d8a398e8fc8",
+        "reason": null,
+        "role": "preference",
+        "signal_index": 0,
+        "start": 0,
+        "status": "signal",
+        "validated_signal_index": 0
+      }
+    ]
+  },
+  "FH3-007": {
+    "issues": [],
+    "reactions": [
+      {
+        "end": 56,
+        "flagged": false,
+        "quote": "Digitizing handwritten field notebooks sounds rewarding.",
+        "reaction_id": "r-0686b98e53c2dd0aab05",
+        "reason": null,
+        "role": "preference",
+        "signal_index": 0,
+        "start": 0,
+        "status": "signal",
+        "validated_signal_index": 0
+      }
+    ]
+  },
+  "FH3-011": {
+    "issues": [],
+    "reactions": [
+      {
+        "end": 49,
+        "flagged": false,
+        "quote": "I love this particular Controls Designer opening.",
+        "reaction_id": "r-94f0ace40494ccf18160",
+        "reason": null,
+        "role": "preference",
+        "signal_index": 0,
+        "start": 0,
+        "status": "signal",
+        "validated_signal_index": 0
+      },
+      {
+        "end": 123,
+        "flagged": false,
+        "quote": "I do not want to take on another hospital fire-alarm replacement project.",
+        "reaction_id": "r-7f783dab0c0cdf8ca098",
+        "reason": null,
+        "role": "preference",
+        "signal_index": 1,
+        "start": 50,
+        "status": "signal",
+        "validated_signal_index": 1
+      }
+    ]
+  },
+  "FI-041": {
+    "issues": [],
+    "reactions": [
+      {
+        "end": 34,
+        "flagged": true,
+        "quote": "This is a terrific AI advisor role",
+        "reaction_id": "r-f17db7aad8d6c8a2edf2",
+        "reason": "This positive aside describes the role but mainly contrasts with the separate employer-based objection; it does not state an independent preference beyond this posting evaluation.",
+        "role": "preference",
+        "signal_index": null,
+        "start": 0,
+        "status": "context",
+        "validated_signal_index": null
+      },
+      {
+        "end": 68,
+        "flagged": false,
+        "quote": "but I do not trust the employer.",
+        "reaction_id": "r-8131d2c33976d6791cfb",
+        "reason": null,
+        "role": "preference",
+        "signal_index": 0,
+        "start": 36,
+        "status": "signal",
+        "validated_signal_index": 0
+      }
+    ]
+  },
+  "FS3-001": {
+    "issues": [],
+    "reactions": [
+      {
+        "end": 71,
+        "flagged": false,
+        "quote": "This particular Archive Digitization Coordinator opening appeals to me.",
+        "reaction_id": "r-10f954c174cee4ed8d41",
+        "reason": null,
+        "role": "preference",
+        "signal_index": 0,
+        "start": 0,
+        "status": "signal",
+        "validated_signal_index": 0
+      }
+    ]
+  },
+  "FS3-002": {
+    "issues": [],
+    "reactions": []
+  },
+  "FS3-003": {
+    "issues": [],
+    "reactions": [
+      {
+        "end": 73,
+        "flagged": false,
+        "quote": "I would enjoy investigating discrepancies in cold-chain temperature logs.",
+        "reaction_id": "r-a7c1c5d11fdb71938fba",
+        "reason": null,
+        "role": "preference",
+        "signal_index": 0,
+        "start": 0,
+        "status": "signal",
+        "validated_signal_index": 0
+      },
+      {
+        "end": 136,
+        "flagged": false,
+        "quote": "I definitely do not want to work for Cinder Vale Cold Storage.",
+        "reaction_id": "r-d2200e9b0b5d9874c911",
+        "reason": null,
+        "role": "preference",
+        "signal_index": 1,
+        "start": 74,
+        "status": "signal",
+        "validated_signal_index": 1
+      }
+    ]
+  },
+  "FS3-004": {
+    "issues": [],
+    "reactions": [
+      {
+        "end": 177,
+        "flagged": false,
+        "quote": "I definitely do not want to work for Cinder Vale Cold Storage.",
+        "reaction_id": "r-89ac0b4d3b3f37d54f6c",
+        "reason": null,
+        "role": "preference",
+        "signal_index": 0,
+        "start": 115,
+        "status": "signal",
+        "validated_signal_index": 0
+      }
+    ]
+  }
+}
