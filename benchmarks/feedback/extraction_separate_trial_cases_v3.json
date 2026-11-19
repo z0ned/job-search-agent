@@ -1,0 +1,152 @@
+{
+  "suite_version": "3.0-separate-extraction-trial",
+  "provenance": {
+    "scenario_count": 4,
+    "authored_without_trial_prompt_or_outputs": true,
+    "design": "Two pairs of synthetic cases hold the posting and decision fixed while varying whether the user evaluates an additional target."
+  },
+  "assumptions": {
+    "hard_rules_immutable_without_explicit_change": true,
+    "written_explanation_required_for_both_decisions": true,
+    "batch_approval_before_application": true,
+    "frozen_phase_approval_is_held": true,
+    "unknown_salary_remains_eligible": true,
+    "permanent_base_minimum_usd": 180000,
+    "w2_hourly_minimum_usd": 75,
+    "1099_hourly_minimum_usd": 100,
+    "c2c_hourly_minimum_usd": null
+  },
+  "test_cases": [
+    {
+      "case_id": "FS3-001",
+      "trial_focus": "An explicit positive reaction to this opening appears alongside a specific experience gap.",
+      "decision": "interested",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Archive Digitization Coordinator",
+        "posting_excerpt": "Coordinate archival scanning and operate a planetary book scanner."
+      },
+      "original_feedback": "This particular Archive Digitization Coordinator opening appeals to me. I have never operated a planetary book scanner.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "this particular Archive Digitization Coordinator opening",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "posting_role",
+            "value": "current_archive_digitization_coordinator_posting"
+          },
+          "evidence_quote": "This particular Archive Digitization Coordinator opening appeals to me"
+        }
+      ],
+      "prohibited_inferences": [
+        "Drop the positive posting reaction because the user stated an experience gap",
+        "Infer a positive or negative preference for operating a book scanner",
+        "Generalize the positive posting reaction to all archive digitization careers"
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "profile_fact_candidate": "The user reports never operating a planetary book scanner."
+    },
+    {
+      "case_id": "FS3-002",
+      "trial_focus": "A neutral reference to the same opening accompanies the same experience gap.",
+      "decision": "interested",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Archive Digitization Coordinator",
+        "posting_excerpt": "Coordinate archival scanning and operate a planetary book scanner."
+      },
+      "original_feedback": "This Archive Digitization Coordinator opening involves operating a planetary book scanner. I have never operated a planetary book scanner.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Infer posting praise or interest in operating a scanner from the Interested decision",
+        "Infer aversion to operating a scanner from the reported experience gap",
+        "Infer a broader qualification gap in archive digitization"
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "profile_fact_candidate": "The user reports never operating a planetary book scanner."
+    },
+    {
+      "case_id": "FS3-003",
+      "trial_focus": "A positive reaction to one specific duty and a separate named-employer objection both survive rejection.",
+      "decision": "rejected",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Cold-Chain Quality Coordinator",
+        "employer": "Cinder Vale Cold Storage",
+        "posting_excerpt": "Investigate discrepancies in cold-chain temperature logs and report findings."
+      },
+      "original_feedback": "I would enjoy investigating discrepancies in cold-chain temperature logs. I definitely do not want to work for Cinder Vale Cold Storage.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "investigating discrepancies in cold-chain temperature logs",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "cold_chain_temperature_log_discrepancy_investigation"
+          },
+          "evidence_quote": "I would enjoy investigating discrepancies in cold-chain temperature logs"
+        },
+        {
+          "dimension": "employer",
+          "feature": "working for Cinder Vale Cold Storage",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "employer",
+            "value": "Cinder Vale Cold Storage"
+          },
+          "evidence_quote": "I definitely do not want to work for Cinder Vale Cold Storage"
+        }
+      ],
+      "prohibited_inferences": [
+        "Drop the explicitly positive duty reaction because of the employer objection",
+        "Generalize the duty reaction to the whole opening or cold-chain careers",
+        "Generalize the employer objection to the cold storage industry"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FS3-004",
+      "trial_focus": "The same duty explains recognition of an industry and only the named-employer objection is evaluated.",
+      "decision": "rejected",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Cold-Chain Quality Coordinator",
+        "employer": "Cinder Vale Cold Storage",
+        "posting_excerpt": "Investigate discrepancies in cold-chain temperature logs and report findings."
+      },
+      "original_feedback": "I recognized the industry because the posting mentions investigating discrepancies in cold-chain temperature logs. I definitely do not want to work for Cinder Vale Cold Storage.",
+      "expected_interpretations": [
+        {
+          "dimension": "employer",
+          "feature": "working for Cinder Vale Cold Storage",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "employer",
+            "value": "Cinder Vale Cold Storage"
+          },
+          "evidence_quote": "I definitely do not want to work for Cinder Vale Cold Storage"
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer a preference for or against the mentioned duty",
+        "Infer an industry or career preference from industry recognition",
+        "Generalize the employer objection to the cold storage industry"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    }
+  ]
+}
