@@ -1,0 +1,1375 @@
+{
+  "adjudication_sha256": "35b081446649da6b129c231eb7dedd87bdd20e442939fa8e50cb3af4d1affebc",
+  "arms": {
+    "control": {
+      "cases": [
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "blocking_evidence_findings": [],
+          "case_id": "FI-033",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "evidence_grounded": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [
+            1
+          ],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "Signal 2 preserves near-zero decision-making autonomy. Signal 1 converts the posting-specific lead-in into a separate, broader junior-level objection. The quote does not support that independent scope, and validation retains the extra.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "blocking_evidence_findings": [],
+          "case_id": "FI-048",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The sales referent and anchored strong intensity qualifier preserve the objection to sales-emphasized work. The full evidence distinguishes the quoted posting requirement from the user reaction.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": true,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "blocking_evidence_findings": [],
+          "case_id": "FI-041",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 2,
+          "extra_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "Praise remains limited to the current AI advisor posting and distrust stays an independent negative signal about the hiring employer.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": true,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "blocking_evidence_findings": [],
+          "case_id": "FT-002",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The dominant intensity qualifier confines the objection to jobs centered on giving safety briefings. The evidence joins the posting description to the user reaction.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": true,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "blocking_evidence_findings": [],
+          "case_id": "FT-004",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 2,
+          "extra_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The positive signal concerns this particular Collection Analyst opening, and the separate negative signal concerns the hiring organization.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": true,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "blocking_evidence_findings": [],
+          "case_id": "FT-005",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The negative career preference stays limited to warehouse operations. Inventory reconciliation explains how the user identified the category and supports no separate preference.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": true,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "blocking_evidence_findings": [],
+          "case_id": "FI3X-001",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "evidence_grounded": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [
+            1
+          ],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The second signal preserves the objection to near-zero say over the order of inspections, with the correct negative polarity, seniority scope, and anchored intensity. The first signal elevates the introductory objection about limited authority into a separate, broader preference. The word “Specifically” links the two as summary and explanation. Both anchors are exact, but the first does not support an independent broad preference when read in context. Approval routing is correct.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "blocking_evidence_findings": [],
+          "case_id": "FI3X-002",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 2,
+          "extra_signal_indices": [
+            2
+          ],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [
+            2
+          ],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The first signal preserves the anchored near-zero objection about inspection order. The model also preserves the independent budget objection, with exact evidence and an anchored qualifier for no budget responsibility. It labels that objection role_responsibilities/role_feature, where the frozen reference expects seniority_scope/seniority_feature for the level of budget responsibility. Budget responsibility can also read as an assigned duty, so this is a dimension and scope disagreement with the reference, rather than omitted evidence or a fabricated preference. Approval routing is correct.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "blocking_evidence_findings": [],
+          "case_id": "FI3X-003",
+          "clear_dimension_scope_correct": null,
+          "completed": true,
+          "emitted_signal_count": 0,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signal_count": 0,
+          "extra_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The profile fact accurately captures the lack of experience running a product recall simulation and triggers profile review. The posting’s mention of debrief facilitation supplies context without expressing preference or reporting another qualification gap. No signal is expected or emitted.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": true,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": true,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "blocking_evidence_findings": [],
+          "case_id": "FI3X-004",
+          "clear_dimension_scope_correct": null,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The debrief quote supplies an independent, mild positive preference for facilitating the debrief. “The simulation” resolves to the product recall simulation in the preceding sentence, and the referent stays confined to debrief facilitation. The accurate profile fact about never running a product recall simulation still triggers profile review alongside that signal.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": true,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": true,
+          "validation_issue_count": 0
+        }
+      ],
+      "clear_case_false_escalation_case_ids": [],
+      "clear_case_false_escalations": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 8
+      },
+      "clear_dimension_scope_accuracy": {
+        "accuracy": 0.625,
+        "correct": 5,
+        "total": 8
+      },
+      "extra_signals": 3,
+      "hard_action_accuracy": {
+        "accuracy": 1.0,
+        "correct": 10,
+        "total": 10
+      },
+      "high_risk_routing_controls": {},
+      "missed_signals": 1,
+      "predictions_sha256": "55ac755c679ada1e51fbc6a65eab3bd5f50427316e9e28d526d3434357d873fc",
+      "quality_gates": {
+        "all_cases_completed": true,
+        "all_designated_high_risk_routes_correct": true,
+        "all_evidence_grounded": false,
+        "all_hard_rule_actions_authorized": true,
+        "all_hard_rules_unchanged": true,
+        "all_predictions_without_validation_issues": true,
+        "all_special_routes_resolved_adequately": true,
+        "clear_dimension_scope_at_least_95_percent": false,
+        "no_unsupported_career_downgrades": true,
+        "semantic_precision_at_least_90_percent": false,
+        "semantic_recall_at_least_90_percent": true
+      },
+      "quality_gates_passed": false,
+      "raw_cases": {
+        "FI-033": {
+          "case_match": false,
+          "emitted": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "evidence_grounded": false,
+          "expected": 1,
+          "extra_signal_indices": [
+            1
+          ],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        },
+        "FI-041": {
+          "case_match": true,
+          "emitted": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected": 2,
+          "extra_signal_indices": [],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        },
+        "FI-048": {
+          "case_match": true,
+          "emitted": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected": 1,
+          "extra_signal_indices": [],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        },
+        "FI3X-001": {
+          "case_match": false,
+          "emitted": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "evidence_grounded": false,
+          "expected": 1,
+          "extra_signal_indices": [
+            1
+          ],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        },
+        "FI3X-002": {
+          "case_match": false,
+          "emitted": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected": 2,
+          "extra_signal_indices": [
+            2
+          ],
+          "missed_signal_indices": [
+            2
+          ],
+          "schema_issues": []
+        },
+        "FI3X-003": {
+          "case_match": true,
+          "emitted": 0,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "expected": 0,
+          "extra_signal_indices": [],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        },
+        "FI3X-004": {
+          "case_match": true,
+          "emitted": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected": 1,
+          "extra_signal_indices": [],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        },
+        "FT-002": {
+          "case_match": true,
+          "emitted": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected": 1,
+          "extra_signal_indices": [],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        },
+        "FT-004": {
+          "case_match": true,
+          "emitted": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected": 2,
+          "extra_signal_indices": [],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        },
+        "FT-005": {
+          "case_match": true,
+          "emitted": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected": 1,
+          "extra_signal_indices": [],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        }
+      },
+      "raw_proposals_sha256": "9932d9dced765b3e446a6e5987660a9f2b7bef7a66befd56ab6b5698f88ae9bf",
+      "results": {
+        "all": {
+          "adequate_resolutions": 10,
+          "cases": 10,
+          "hard_actions_correct": 10,
+          "raw": {
+            "complete_cases": 7,
+            "emitted": 14,
+            "expected": 12,
+            "matches": 11,
+            "precision": {
+              "denominator": 14,
+              "numerator": 11
+            },
+            "recall": {
+              "denominator": 12,
+              "numerator": 11
+            }
+          },
+          "raw_schema_violations": 0,
+          "routes_correct": 10,
+          "validated": {
+            "complete_cases": 7,
+            "emitted": 14,
+            "expected": 12,
+            "matches": 11,
+            "precision": {
+              "denominator": 14,
+              "numerator": 11
+            },
+            "recall": {
+              "denominator": 12,
+              "numerator": 11
+            }
+          },
+          "validation_issues": 0
+        },
+        "known": {
+          "adequate_resolutions": 6,
+          "cases": 6,
+          "hard_actions_correct": 6,
+          "raw": {
+            "complete_cases": 5,
+            "emitted": 9,
+            "expected": 8,
+            "matches": 8,
+            "precision": {
+              "denominator": 9,
+              "numerator": 8
+            },
+            "recall": {
+              "denominator": 8,
+              "numerator": 8
+            }
+          },
+          "raw_schema_violations": 0,
+          "routes_correct": 6,
+          "validated": {
+            "complete_cases": 5,
+            "emitted": 9,
+            "expected": 8,
+            "matches": 8,
+            "precision": {
+              "denominator": 9,
+              "numerator": 8
+            },
+            "recall": {
+              "denominator": 8,
+              "numerator": 8
+            }
+          },
+          "validation_issues": 0
+        },
+        "synthetic": {
+          "adequate_resolutions": 4,
+          "cases": 4,
+          "hard_actions_correct": 4,
+          "raw": {
+            "complete_cases": 2,
+            "emitted": 5,
+            "expected": 4,
+            "matches": 3,
+            "precision": {
+              "denominator": 5,
+              "numerator": 3
+            },
+            "recall": {
+              "denominator": 4,
+              "numerator": 3
+            }
+          },
+          "raw_schema_violations": 0,
+          "routes_correct": 4,
+          "validated": {
+            "complete_cases": 2,
+            "emitted": 5,
+            "expected": 4,
+            "matches": 3,
+            "precision": {
+              "denominator": 5,
+              "numerator": 3
+            },
+            "recall": {
+              "denominator": 4,
+              "numerator": 3
+            }
+          },
+          "validation_issues": 0
+        }
+      },
+      "reviewer": "Codex masked semantic review",
+      "route_accuracy": {
+        "accuracy": 1.0,
+        "correct": 10,
+        "total": 10
+      },
+      "safe_special_routing": {
+        "accuracy": 1.0,
+        "correct": 2,
+        "total": 2
+      },
+      "scenario_count": 10,
+      "semantic_precision": {
+        "accuracy": 0.7857142857142857,
+        "correct": 11,
+        "total": 14
+      },
+      "semantic_recall": {
+        "accuracy": 0.9166666666666666,
+        "correct": 11,
+        "total": 12
+      },
+      "suite_sha256": "439a75b85c44882099f94410c72824f57fb2bffa95b6dba6382194d7405785d0",
+      "target_intensity_preserved": {
+        "FI-033": true,
+        "FI-048": true
+      }
+    },
+    "treatment": {
+      "cases": [
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "blocking_evidence_findings": [],
+          "case_id": "FI-033",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "evidence_grounded": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [
+            1
+          ],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "Signal 2 preserves near-zero decision-making autonomy. Signal 1 converts the posting-specific lead-in into a separate, broader junior-level objection. The quote does not support that independent scope, and validation retains the extra.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "blocking_evidence_findings": [],
+          "case_id": "FI-048",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The sales referent and anchored strong intensity qualifier preserve the objection to sales-emphasized work. The full evidence distinguishes the quoted posting requirement from the user reaction.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": true,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "blocking_evidence_findings": [],
+          "case_id": "FI-041",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 2,
+          "extra_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "Praise remains limited to the current AI advisor posting and distrust stays an independent negative signal about the hiring employer.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": true,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "NEEDS_CLARIFICATION",
+          "blocking_evidence_findings": [],
+          "case_id": "FT-002",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 0,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [
+            1
+          ],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": false,
+          "notes": "The raw signal expresses the intended safety-briefing focus with two grounded anchors for the same dominant intensity. The duplicate qualifier makes validation drop the whole signal and route the case to generic clarification.",
+          "resolution_adequate": false,
+          "route_correct": false,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": false,
+          "validation_issue_count": 1
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "blocking_evidence_findings": [],
+          "case_id": "FT-004",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 2,
+          "extra_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [
+            2
+          ],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": false,
+          "notes": "The posting-specific praise matches and survives. Raw signal 2 adds a Collection Analyst career-context qualifier to employer distrust. The separate praise clause does not limit distrust to that role or career, and validation drops the employer signal.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": false,
+          "validation_issue_count": 1
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "blocking_evidence_findings": [],
+          "case_id": "FT-005",
+          "clear_dimension_scope_correct": true,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The negative career preference stays limited to warehouse operations. Inventory reconciliation explains how the user identified the category and supports no separate preference.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": true,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "blocking_evidence_findings": [],
+          "case_id": "FI3X-001",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "evidence_grounded": false,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [
+            1
+          ],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The second signal preserves the objection to near-zero say over the order of inspections, with the correct negative polarity, seniority scope, and anchored intensity. The first signal elevates the introductory objection about limited authority into a separate, broader preference. The word “Specifically” links the two as summary and explanation. Both anchors are exact, but the first does not support an independent broad preference when read in context. Approval routing is correct.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PENDING_APPROVAL",
+          "blocking_evidence_findings": [],
+          "case_id": "FI3X-002",
+          "clear_dimension_scope_correct": false,
+          "completed": true,
+          "emitted_signal_count": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PENDING_APPROVAL",
+          "expected_signal_count": 2,
+          "extra_signal_indices": [
+            2
+          ],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [
+            2
+          ],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The first signal preserves the anchored near-zero objection about inspection order. The model also preserves the independent budget objection, with exact evidence and an anchored qualifier for no budget responsibility. It labels that objection role_responsibilities/role_feature, where the frozen reference expects seniority_scope/seniority_feature for the level of budget responsibility. Budget responsibility can also read as an assigned duty, so this is a dimension and scope disagreement with the reference, rather than omitted evidence or a fabricated preference. Approval routing is correct.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": null,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": false,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "blocking_evidence_findings": [],
+          "case_id": "FI3X-003",
+          "clear_dimension_scope_correct": null,
+          "completed": true,
+          "emitted_signal_count": 0,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signal_count": 0,
+          "extra_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The profile fact accurately captures the lack of experience running a product recall simulation and triggers profile review. The posting’s mention of debrief facilitation supplies context without expressing preference or reporting another qualification gap. No signal is expected or emitted.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": true,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": true,
+          "validation_issue_count": 0
+        },
+        {
+          "actual_hard_action": "UNCHANGED",
+          "actual_route": "PROFILE_FACT_REVIEW",
+          "blocking_evidence_findings": [],
+          "case_id": "FI3X-004",
+          "clear_dimension_scope_correct": null,
+          "completed": true,
+          "emitted_signal_count": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected_hard_action": "UNCHANGED",
+          "expected_route": "PROFILE_FACT_REVIEW",
+          "expected_signal_count": 1,
+          "extra_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_unchanged": true,
+          "hard_rule_action_authorized": true,
+          "missed_signal_indices": [],
+          "no_unsupported_career_downgrade_confirmed": true,
+          "no_validation_issues": true,
+          "notes": "The debrief quote supplies an independent, mild positive preference for facilitating the debrief. “The simulation” resolves to the product recall simulation in the preceding sentence, and the referent stays confined to debrief facilitation. The accurate profile fact about never running a product recall simulation still triggers profile review alongside that signal.",
+          "resolution_adequate": true,
+          "route_correct": true,
+          "safe_special_route": true,
+          "unsupported_career_downgrade": false,
+          "validated_case_match": true,
+          "validation_issue_count": 0
+        }
+      ],
+      "clear_case_false_escalation_case_ids": [
+        "FT-002"
+      ],
+      "clear_case_false_escalations": {
+        "accuracy": 0.125,
+        "correct": 1,
+        "total": 8
+      },
+      "clear_dimension_scope_accuracy": {
+        "accuracy": 0.375,
+        "correct": 3,
+        "total": 8
+      },
+      "extra_signals": 3,
+      "hard_action_accuracy": {
+        "accuracy": 1.0,
+        "correct": 10,
+        "total": 10
+      },
+      "high_risk_routing_controls": {},
+      "missed_signals": 3,
+      "predictions_sha256": "d8c8eadfa39ea26674f26091f59eb076fa9ffa1f88e1ed6b9c899e9ff6a46c6c",
+      "quality_gates": {
+        "all_cases_completed": true,
+        "all_designated_high_risk_routes_correct": true,
+        "all_evidence_grounded": false,
+        "all_hard_rule_actions_authorized": true,
+        "all_hard_rules_unchanged": true,
+        "all_predictions_without_validation_issues": false,
+        "all_special_routes_resolved_adequately": true,
+        "clear_dimension_scope_at_least_95_percent": false,
+        "no_unsupported_career_downgrades": true,
+        "semantic_precision_at_least_90_percent": false,
+        "semantic_recall_at_least_90_percent": false
+      },
+      "quality_gates_passed": false,
+      "raw_cases": {
+        "FI-033": {
+          "case_match": false,
+          "emitted": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "evidence_grounded": false,
+          "expected": 1,
+          "extra_signal_indices": [
+            1
+          ],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        },
+        "FI-041": {
+          "case_match": true,
+          "emitted": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected": 2,
+          "extra_signal_indices": [],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        },
+        "FI-048": {
+          "case_match": true,
+          "emitted": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected": 1,
+          "extra_signal_indices": [],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        },
+        "FI3X-001": {
+          "case_match": false,
+          "emitted": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "evidence_grounded": false,
+          "expected": 1,
+          "extra_signal_indices": [
+            1
+          ],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        },
+        "FI3X-002": {
+          "case_match": false,
+          "emitted": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected": 2,
+          "extra_signal_indices": [
+            2
+          ],
+          "missed_signal_indices": [
+            2
+          ],
+          "schema_issues": []
+        },
+        "FI3X-003": {
+          "case_match": true,
+          "emitted": 0,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "expected": 0,
+          "extra_signal_indices": [],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        },
+        "FI3X-004": {
+          "case_match": true,
+          "emitted": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected": 1,
+          "extra_signal_indices": [],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        },
+        "FT-002": {
+          "case_match": true,
+          "emitted": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected": 1,
+          "extra_signal_indices": [],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        },
+        "FT-004": {
+          "case_match": false,
+          "emitted": 2,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": false,
+          "expected": 2,
+          "extra_signal_indices": [
+            2
+          ],
+          "missed_signal_indices": [
+            2
+          ],
+          "schema_issues": []
+        },
+        "FT-005": {
+          "case_match": true,
+          "emitted": 1,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "expected": 1,
+          "extra_signal_indices": [],
+          "missed_signal_indices": [],
+          "schema_issues": []
+        }
+      },
+      "raw_proposals_sha256": "e4ccb59badac0eb9a3b111eb38a19895360b89675365870e19c3892e077127f4",
+      "results": {
+        "all": {
+          "adequate_resolutions": 9,
+          "cases": 10,
+          "hard_actions_correct": 10,
+          "raw": {
+            "complete_cases": 6,
+            "emitted": 14,
+            "expected": 12,
+            "matches": 10,
+            "precision": {
+              "denominator": 14,
+              "numerator": 10
+            },
+            "recall": {
+              "denominator": 12,
+              "numerator": 10
+            }
+          },
+          "raw_schema_violations": 0,
+          "routes_correct": 9,
+          "validated": {
+            "complete_cases": 5,
+            "emitted": 12,
+            "expected": 12,
+            "matches": 9,
+            "precision": {
+              "denominator": 12,
+              "numerator": 9
+            },
+            "recall": {
+              "denominator": 12,
+              "numerator": 9
+            }
+          },
+          "validation_issues": 2
+        },
+        "known": {
+          "adequate_resolutions": 5,
+          "cases": 6,
+          "hard_actions_correct": 6,
+          "raw": {
+            "complete_cases": 4,
+            "emitted": 9,
+            "expected": 8,
+            "matches": 7,
+            "precision": {
+              "denominator": 9,
+              "numerator": 7
+            },
+            "recall": {
+              "denominator": 8,
+              "numerator": 7
+            }
+          },
+          "raw_schema_violations": 0,
+          "routes_correct": 5,
+          "validated": {
+            "complete_cases": 3,
+            "emitted": 7,
+            "expected": 8,
+            "matches": 6,
+            "precision": {
+              "denominator": 7,
+              "numerator": 6
+            },
+            "recall": {
+              "denominator": 8,
+              "numerator": 6
+            }
+          },
+          "validation_issues": 2
+        },
+        "synthetic": {
+          "adequate_resolutions": 4,
+          "cases": 4,
+          "hard_actions_correct": 4,
+          "raw": {
+            "complete_cases": 2,
+            "emitted": 5,
+            "expected": 4,
+            "matches": 3,
+            "precision": {
+              "denominator": 5,
+              "numerator": 3
+            },
+            "recall": {
+              "denominator": 4,
+              "numerator": 3
+            }
+          },
+          "raw_schema_violations": 0,
+          "routes_correct": 4,
+          "validated": {
+            "complete_cases": 2,
+            "emitted": 5,
+            "expected": 4,
+            "matches": 3,
+            "precision": {
+              "denominator": 5,
+              "numerator": 3
+            },
+            "recall": {
+              "denominator": 4,
+              "numerator": 3
+            }
+          },
+          "validation_issues": 0
+        }
+      },
+      "reviewer": "Codex masked semantic review",
+      "route_accuracy": {
+        "accuracy": 0.9,
+        "correct": 9,
+        "total": 10
+      },
+      "safe_special_routing": {
+        "accuracy": 1.0,
+        "correct": 2,
+        "total": 2
+      },
+      "scenario_count": 10,
+      "semantic_precision": {
+        "accuracy": 0.75,
+        "correct": 9,
+        "total": 12
+      },
+      "semantic_recall": {
+        "accuracy": 0.75,
+        "correct": 9,
+        "total": 12
+      },
+      "suite_sha256": "439a75b85c44882099f94410c72824f57fb2bffa95b6dba6382194d7405785d0",
+      "target_intensity_preserved": {
+        "FI-033": true,
+        "FI-048": true
+      }
+    }
+  },
+  "configuration_sha256": "6c64ed10fc801aa519a63b2789ab36f59789d150ae7548c445ef60aed90351be",
+  "fi_033_treatment_improved_raw_case_match": false,
+  "gates": {
+    "all_routes_resolved_adequately": false,
+    "all_treatment_raw_cases_semantically_complete": false,
+    "all_treatment_raw_proposals_conform": true,
+    "all_treatment_validated_cases_complete": false,
+    "all_validation_and_safety_checks_pass": false,
+    "paired_requests_complete": true,
+    "target_intensity_values_anchored": true
+  },
+  "reference_sha256": "439a75b85c44882099f94410c72824f57fb2bffa95b6dba6382194d7405785d0",
+  "targeted_gate_passed": false
+}

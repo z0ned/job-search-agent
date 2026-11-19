@@ -1,0 +1,480 @@
+{
+  "arm_mask_by_case": {
+    "FI-033": {
+      "A": "control",
+      "B": "treatment"
+    },
+    "FI-041": {
+      "A": "treatment",
+      "B": "control"
+    },
+    "FI-048": {
+      "A": "treatment",
+      "B": "control"
+    },
+    "FI3X-001": {
+      "A": "treatment",
+      "B": "control"
+    },
+    "FI3X-002": {
+      "A": "control",
+      "B": "treatment"
+    },
+    "FI3X-003": {
+      "A": "treatment",
+      "B": "control"
+    },
+    "FI3X-004": {
+      "A": "control",
+      "B": "treatment"
+    },
+    "FT-002": {
+      "A": "treatment",
+      "B": "control"
+    },
+    "FT-004": {
+      "A": "control",
+      "B": "treatment"
+    },
+    "FT-005": {
+      "A": "treatment",
+      "B": "control"
+    }
+  },
+  "arms": {
+    "control": {
+      "cases": {
+        "FI-033": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "evidence_grounded": false,
+          "notes": "Signal 2 preserves near-zero decision-making autonomy. Signal 1 converts the posting-specific lead-in into a separate, broader junior-level objection. The quote does not support that independent scope, and validation retains the extra.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-041": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Praise remains limited to the current AI advisor posting and distrust stays an independent negative signal about the hiring employer.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-048": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The sales referent and anchored strong intensity qualifier preserve the objection to sales-emphasized work. The full evidence distinguishes the quoted posting requirement from the user reaction.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI3X-001": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "evidence_grounded": false,
+          "notes": "The second signal preserves the objection to near-zero say over the order of inspections, with the correct negative polarity, seniority scope, and anchored intensity. The first signal elevates the introductory objection about limited authority into a separate, broader preference. The word “Specifically” links the two as summary and explanation. Both anchors are exact, but the first does not support an independent broad preference when read in context. Approval routing is correct.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI3X-002": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The first signal preserves the anchored near-zero objection about inspection order. The model also preserves the independent budget objection, with exact evidence and an anchored qualifier for no budget responsibility. It labels that objection role_responsibilities/role_feature, where the frozen reference expects seniority_scope/seniority_feature for the level of budget responsibility. Budget responsibility can also read as an assigned duty, so this is a dimension and scope disagreement with the reference, rather than omitted evidence or a fabricated preference. Approval routing is correct.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI3X-003": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "notes": "The profile fact accurately captures the lack of experience running a product recall simulation and triggers profile review. The posting’s mention of debrief facilitation supplies context without expressing preference or reporting another qualification gap. No signal is expected or emitted.",
+          "raw_equivalent_pairs": [],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI3X-004": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The debrief quote supplies an independent, mild positive preference for facilitating the debrief. “The simulation” resolves to the product recall simulation in the preceding sentence, and the referent stays confined to debrief facilitation. The accurate profile fact about never running a product recall simulation still triggers profile review alongside that signal.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-002": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The dominant intensity qualifier confines the objection to jobs centered on giving safety briefings. The evidence joins the posting description to the user reaction.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-004": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The positive signal concerns this particular Collection Analyst opening, and the separate negative signal concerns the hiring organization.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-005": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The negative career preference stays limited to warehouse operations. Inventory reconciliation explains how the user identified the category and supports no separate preference.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        }
+      },
+      "predictions_sha256": "55ac755c679ada1e51fbc6a65eab3bd5f50427316e9e28d526d3434357d873fc",
+      "raw_proposals_sha256": "9932d9dced765b3e446a6e5987660a9f2b7bef7a66befd56ab6b5698f88ae9bf"
+    },
+    "treatment": {
+      "cases": {
+        "FI-033": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "evidence_grounded": false,
+          "notes": "Signal 2 preserves near-zero decision-making autonomy. Signal 1 converts the posting-specific lead-in into a separate, broader junior-level objection. The quote does not support that independent scope, and validation retains the extra.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-041": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Praise remains limited to the current AI advisor posting and distrust stays an independent negative signal about the hiring employer.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-048": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The sales referent and anchored strong intensity qualifier preserve the objection to sales-emphasized work. The full evidence distinguishes the quoted posting requirement from the user reaction.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI3X-001": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "evidence_grounded": false,
+          "notes": "The second signal preserves the objection to near-zero say over the order of inspections, with the correct negative polarity, seniority scope, and anchored intensity. The first signal elevates the introductory objection about limited authority into a separate, broader preference. The word “Specifically” links the two as summary and explanation. Both anchors are exact, but the first does not support an independent broad preference when read in context. Approval routing is correct.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI3X-002": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The first signal preserves the anchored near-zero objection about inspection order. The model also preserves the independent budget objection, with exact evidence and an anchored qualifier for no budget responsibility. It labels that objection role_responsibilities/role_feature, where the frozen reference expects seniority_scope/seniority_feature for the level of budget responsibility. Budget responsibility can also read as an assigned duty, so this is a dimension and scope disagreement with the reference, rather than omitted evidence or a fabricated preference. Approval routing is correct.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI3X-003": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "notes": "The profile fact accurately captures the lack of experience running a product recall simulation and triggers profile review. The posting’s mention of debrief facilitation supplies context without expressing preference or reporting another qualification gap. No signal is expected or emitted.",
+          "raw_equivalent_pairs": [],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI3X-004": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The debrief quote supplies an independent, mild positive preference for facilitating the debrief. “The simulation” resolves to the product recall simulation in the preceding sentence, and the referent stays confined to debrief facilitation. The accurate profile fact about never running a product recall simulation still triggers profile review alongside that signal.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-002": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "notes": "The raw signal expresses the intended safety-briefing focus with two grounded anchors for the same dominant intensity. The duplicate qualifier makes validation drop the whole signal and route the case to generic clarification.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": false,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-004": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The posting-specific praise matches and survives. Raw signal 2 adds a Collection Analyst career-context qualifier to employer distrust. The separate praise clause does not limit distrust to that role or career, and validation drops the employer signal.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FT-005": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "The negative career preference stays limited to warehouse operations. Inventory reconciliation explains how the user identified the category and supports no separate preference.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        }
+      },
+      "predictions_sha256": "d8c8eadfa39ea26674f26091f59eb076fa9ffa1f88e1ed6b9c899e9ff6a46c6c",
+      "raw_proposals_sha256": "e4ccb59badac0eb9a3b111eb38a19895360b89675365870e19c3892e077127f4"
+    }
+  },
+  "configuration_sha256": "6c64ed10fc801aa519a63b2789ab36f59789d150ae7548c445ef60aed90351be",
+  "reference_sha256": "439a75b85c44882099f94410c72824f57fb2bffa95b6dba6382194d7405785d0",
+  "reviewer": "Codex masked semantic review"
+}
