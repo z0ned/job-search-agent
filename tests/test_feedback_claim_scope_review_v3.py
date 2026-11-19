@@ -50,6 +50,32 @@ class ClaimScopeReviewTests(unittest.TestCase):
         self.assertEqual(case["decisions"], sorted(self.judgments, key=lambda row: row["signal_index"]))
         self.assertEqual({field: case[field] for field in METADATA}, METADATA)
 
+    def test_disputed_explanation_flags_both_sides_and_preserves_separate_judgments(self):
+        self.judgments[0]["disputed_explanation_target_indices"] = [2, 5]
+        self.judgments[3]["scope_status"] = "supported"
+        self.judgments[4]["scope_status"] = "supported"
+
+        case = _project_case(self.prediction, self.judgments, "example")
+
+        self.assertEqual(case["visible_signal_indices"], [2, 3, 4, 5])
+        self.assertEqual(case["flagged_signal_indices"], [2, 3, 5])
+        self.assertEqual(case["unflagged_signal_indices"], [4])
+        self.assertEqual(case["unresolved_signal_indices"], [3])
+        self.assertEqual(case["explanatory_signal_indices"], [1])
+        self.assertEqual(case["decisions"], sorted(self.judgments, key=lambda row: row["signal_index"]))
+        self.assertEqual({field: case[field] for field in METADATA}, METADATA)
+
+    def test_rejects_invalid_disputed_explanation_targets(self):
+        for source_index, targets in (
+            (0, None), (0, 2), (0, []), (0, [True]), (0, [2.0]), (0, [[2]]),
+            (0, [1]), (0, [3]), (0, [0]), (0, [6]), (0, [2, 2]), (3, [2]),
+        ):
+            with self.subTest(source_index=source_index, targets=targets):
+                decisions = deepcopy(self.judgments)
+                decisions[source_index]["disputed_explanation_target_indices"] = targets
+                with self.assertRaisesRegex(ValueError, "invalid disputed explanation targets"):
+                    _project_case(self.prediction, decisions, "example")
+
     def test_rejects_invalid_scope_and_explanatory_target(self):
         for row_index, change in (
             (0, {"scope_status": "unknown"}),

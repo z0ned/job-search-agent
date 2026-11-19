@@ -60,3 +60,13 @@ PYTHONPATH=src python -m job_search_agent.feedback_claim_scope_review_v3 \
   --decisions benchmarks/feedback/offline_v3_claim_scope_review/decisions.json \
   --output /tmp/feedback-v3-claim-scope-review.json
 ```
+
+## Follow-up on disputed relationships
+
+The approved follow-up carries explicit links from the existing reviewers' disagreement about FI-033 into the replay. In each saved arm, one reviewer said the specific autonomy statement explains the broader “too junior” claim. The other left that relationship unresolved. The new record links both candidates for review and retains each candidate's existing scope judgment. The replay validates that every link refers to a visible claim in the same case. [Link provenance](../benchmarks/feedback/offline_v3_disputed_claim_review/link-provenance.json) · [Replayed decisions](../benchmarks/feedback/offline_v3_disputed_claim_review/decisions.json)
+
+**The follow-up passed the targeted review test.** Both FI-033 claims stayed visible and both were flagged in both arms. All 20 previously matched signals stayed visible. The other 18 saved records reproduced exactly, including the FI-048 sales flags, the qualification controls, and the original routing and hard-rule actions. [Case-level scorecard](../benchmarks/feedback/offline_v3_disputed_claim_review/comparison.json) · [Replay projection](../benchmarks/feedback/offline_v3_disputed_claim_review/replay.json)
+
+The unflagged list still has one reference mismatch per arm. The model and the source-only reviewers treated the budget objection in FI3X-002 as a duty, while the frozen reference classifies it as level of responsibility. Two proposals in the treatment were already lost during validation. This test establishes how to surface a recorded disagreement on saved cases. Reliability on new feedback and readiness for learning still require the full benchmark gates. The replay used zero benchmark API requests.
+
+To reproduce the follow-up, use the command above with `benchmarks/feedback/offline_v3_disputed_claim_review/decisions.json` and a fresh output path.

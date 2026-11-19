@@ -1,0 +1,23 @@
+{
+  "added_links_by_masked_record": {
+    "R08": {
+      "arm": "treatment",
+      "case_id": "FI-033",
+      "source_signal_index": 2,
+      "target_signal_indices": [
+        1
+      ]
+    },
+    "R09": {
+      "arm": "control",
+      "case_id": "FI-033",
+      "source_signal_index": 2,
+      "target_signal_indices": [
+        1
+      ]
+    }
+  },
+  "source_comparison_sha256": "7d63bda7554468241f3a15992f517e384da4ecd7594c2a004ec3aba233d20365",
+  "source_decisions_sha256": "01a5ef80550802dd0a5b792a2a3607362f1b2ee6ff7a77ab45843084022e15ad",
+  "source_reviews_sha256": "a89bb483901b5c780193aabea81d3ba3e0f0f917bc211fa4b942608f294de20b"
+}

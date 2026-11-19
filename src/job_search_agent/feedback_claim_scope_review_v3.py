@@ -18,7 +18,8 @@ from .feedback_claim_review_v3 import _project_case as _project_claim_case, _rep
 from .feedback_evaluation import _nonblank, _save_json
 
 
-_SCOPE_FIELDS = {"scope_status", "scope_rationale"}
+_DISPUTED_TARGETS_FIELD = "disputed_explanation_target_indices"
+_SCOPE_REVIEW_FIELDS = {"scope_status", "scope_rationale", _DISPUTED_TARGETS_FIELD}
 _SCOPE_STATUSES = ("supported", "unsupported", "unresolved")
 
 
@@ -38,6 +39,22 @@ def _check_archived_route(projected, case_id):
         raise ValueError(f"{case_id} has inconsistent archived review authority")
 
 
+def _disputed_explanation_targets(decisions, case_id):
+    visible_indices = {item["signal_index"] for item in decisions if item["disposition"] != "explanatory"}
+    disputed_targets = set()
+    for item in decisions:
+        if _DISPUTED_TARGETS_FIELD not in item:
+            continue
+        targets = item[_DISPUTED_TARGETS_FIELD]
+        index = item["signal_index"]
+        if (item["disposition"] != "unresolved" or not isinstance(targets, list) or not targets
+                or any(type(target) is not int or target == index or target not in visible_indices for target in targets)
+                or len(set(targets)) != len(targets)):
+            raise ValueError(f"{case_id} signal {index} has invalid disputed explanation targets")
+        disputed_targets.update(targets)
+    return disputed_targets
+
+
 def _project_case(result, reviewed, case_id):
     if not isinstance(reviewed, list):
         raise ValueError(f"{case_id} requires one claim and scope judgment per validated signal")
@@ -46,18 +63,19 @@ def _project_case(result, reviewed, case_id):
         if (not isinstance(item, dict) or item.get("scope_status") not in _SCOPE_STATUSES
                 or not _nonblank(item.get("scope_rationale"))):
             raise ValueError(f"{case_id} has an invalid scope judgment")
-        claim_decisions.append({key: value for key, value in item.items() if key not in _SCOPE_FIELDS})
+        claim_decisions.append({key: value for key, value in item.items() if key not in _SCOPE_REVIEW_FIELDS})
 
     projected = _project_claim_case(result, claim_decisions, case_id)
     _check_archived_route(projected, case_id)
     decisions = sorted(reviewed, key=itemgetter("signal_index"))
+    disputed_targets = _disputed_explanation_targets(decisions, case_id)
     visible, flagged, unflagged = [], [], []
     for item in decisions:
         if item["disposition"] == "explanatory":
             continue
         index = item["signal_index"]
         visible.append(index)
-        if item["disposition"] == "unresolved" or item["scope_status"] != "supported":
+        if item["disposition"] == "unresolved" or item["scope_status"] != "supported" or index in disputed_targets:
             flagged.append(index)
         else:
             unflagged.append(index)
