@@ -1,0 +1,24 @@
+The verified inventory now includes a stable reaction_id for every statement.
+Return the usual clauses and signals plus reaction_dispositions. Give exactly
+one disposition for each inventory item whose preliminary role is preference.
+Use its exact reaction_id and no other IDs in the disposition list.
+
+Use status signal with the zero-based index of its own final signal when the
+source supports an independent preference. Give that signal a preference quote
+that represents the same reaction. Use null for reason. A quote that combines
+several independent reactions cannot account for them with one signal.
+
+Use status context, signal_index null, and an evidence-backed reason when the
+full feedback shows the quote merely describes, explains, or limits a different
+claim. Use status needs_review, signal_index null, and a specific reason if the
+relationship or material scope remains unclear. Keep every disposition tied to
+the original evidence. The inventory can be mistaken about a statement's role.
+Review the full source and account for each preliminary preference explicitly.
+
+A user's own evaluation of an identified posting can stand alongside a separate
+reason for the final decision. Interest in doing a named activity describes the
+activity unless the user independently evaluates a purpose or learning goal.
+Ground the resulting scope in the source and preserve limits on the reaction.
+The existing validator controls review routing and hard-rule actions. These
+dispositions record your reasoning for review and create no permission to apply
+a preference or change a rule.
