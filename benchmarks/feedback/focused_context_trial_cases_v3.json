@@ -1,0 +1,183 @@
+{
+  "suite_version": "3.0-focused-context-trial",
+  "provenance": {
+    "scenario_count": 4,
+    "authored_without_trial_prompt_or_outputs": true,
+    "design": "A matched posting praise and neutral-description pair, a supporting benefit, and vague approval with no stated driver."
+  },
+  "assumptions": {
+    "hard_rules_immutable_without_explicit_change": true,
+    "written_explanation_required_for_both_decisions": true,
+    "batch_approval_before_application": true,
+    "frozen_phase_approval_is_held": true,
+    "unknown_salary_remains_eligible": true,
+    "permanent_base_minimum_usd": 180000,
+    "w2_hourly_minimum_usd": 75,
+    "1099_hourly_minimum_usd": 100,
+    "c2c_hourly_minimum_usd": null
+  },
+  "test_cases": [
+    {
+      "case_id": "FC3-001",
+      "trial_focus": "Explicit praise of this opening stands alongside an objection to the named employer.",
+      "decision": "rejected",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Rail Signal Testing Technician",
+        "employer": "Aster Spur Systems",
+        "posting_excerpt": "Check interlock relays and document field test results."
+      },
+      "original_feedback": "This particular Rail Signal Testing Technician opening sounds excellent. I do not want to work for Aster Spur Systems.",
+      "focus_quotes": [
+        {
+          "quote": "This particular Rail Signal Testing Technician opening sounds excellent",
+          "expected_roles": ["preference"]
+        },
+        {
+          "quote": "I do not want to work for Aster Spur Systems",
+          "expected_roles": ["preference"]
+        }
+      ],
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "this particular Rail Signal Testing Technician opening",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "posting_role",
+            "value": "current_rail_signal_testing_technician_posting"
+          },
+          "evidence_quote": "This particular Rail Signal Testing Technician opening sounds excellent"
+        },
+        {
+          "dimension": "employer",
+          "feature": "working for Aster Spur Systems",
+          "polarity": "negative",
+          "strength": "mild",
+          "scope": {
+            "type": "employer",
+            "value": "Aster Spur Systems"
+          },
+          "evidence_quote": "I do not want to work for Aster Spur Systems"
+        }
+      ],
+      "prohibited_inferences": [
+        "Drop the independently positive reaction to this opening because the employer is rejected",
+        "Infer an interest in all rail signal testing careers",
+        "Infer a specific objection to the employer's culture"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FC3-002",
+      "trial_focus": "A neutral description of the same opening accompanies the same employer objection.",
+      "decision": "rejected",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Rail Signal Testing Technician",
+        "employer": "Aster Spur Systems",
+        "posting_excerpt": "Check interlock relays and document field test results."
+      },
+      "original_feedback": "This Rail Signal Testing Technician opening involves checking interlock relays. I do not want to work for Aster Spur Systems.",
+      "focus_quotes": [
+        {
+          "quote": "This Rail Signal Testing Technician opening involves checking interlock relays",
+          "expected_roles": ["context", "job_fact"]
+        },
+        {
+          "quote": "I do not want to work for Aster Spur Systems",
+          "expected_roles": ["preference"]
+        }
+      ],
+      "expected_interpretations": [
+        {
+          "dimension": "employer",
+          "feature": "working for Aster Spur Systems",
+          "polarity": "negative",
+          "strength": "mild",
+          "scope": {
+            "type": "employer",
+            "value": "Aster Spur Systems"
+          },
+          "evidence_quote": "I do not want to work for Aster Spur Systems"
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer a positive or negative reaction to the opening or relay testing from the neutral job description",
+        "Generalize the named-employer objection to other organizations or the industry"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FC3-003",
+      "trial_focus": "A factual benefit explains the value of a duty the user expressly enjoys.",
+      "decision": "interested",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Irrigation Maintenance Technician",
+        "posting_excerpt": "Test and repair wiring and switches in irrigation-control cabinets."
+      },
+      "original_feedback": "I would enjoy diagnosing voltage drops in irrigation-control cabinets. That work helps maintenance crews locate damaged wiring.",
+      "focus_quotes": [
+        {
+          "quote": "I would enjoy diagnosing voltage drops in irrigation-control cabinets",
+          "expected_roles": ["preference"]
+        },
+        {
+          "quote": "That work helps maintenance crews locate damaged wiring",
+          "expected_roles": ["context"]
+        }
+      ],
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "diagnosing voltage drops in irrigation-control cabinets",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "diagnosing_irrigation_control_cabinet_voltage_drops"
+          },
+          "evidence_quote": "I would enjoy diagnosing voltage drops in irrigation-control cabinets"
+        }
+      ],
+      "prohibited_inferences": [
+        "Treat its beneficial effect as an independent preference for helping maintenance crews or finding damaged wiring",
+        "Generalize interest in this duty to the whole posting or maintenance careers"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FC3-004",
+      "trial_focus": "Vague approval gives no specific reason even when the posting has a detailed title and duties.",
+      "decision": "interested",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Seawater Sampling Coordinator",
+        "posting_excerpt": "Schedule sampling trips and maintain the sample chain of custody."
+      },
+      "original_feedback": "Seems pretty good so far.",
+      "focus_quotes": [
+        {
+          "quote": "Seems pretty good so far",
+          "expected_roles": ["vague_reaction"]
+        }
+      ],
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Infer interest in seawater sampling or one of the posting's duties from the vague impression",
+        "Treat the decision or the title in context as an explicitly stated preference"
+      ],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    }
+  ]
+}
