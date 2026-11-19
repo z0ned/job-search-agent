@@ -1,0 +1,1118 @@
+{
+  "arms": {
+    "control": {
+      "cases": {
+        "FI-033": {
+          "archived_profile_fact": null,
+          "archived_route": "PENDING_APPROVAL",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "expected_signals": 1,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [
+            2
+          ],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "independent",
+            "2": "unresolved"
+          },
+          "matched_but_flagged_indices": [
+            2
+          ],
+          "original_signal_indices": [
+            1,
+            2
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "supported",
+            "2": "supported"
+          },
+          "unflagged_equivalent_pairs": [],
+          "unflagged_reference_extra_indices": [
+            1
+          ],
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "visible_signal_indices": [
+            1,
+            2
+          ]
+        },
+        "FI-041": {
+          "archived_profile_fact": null,
+          "archived_route": "PENDING_APPROVAL",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "expected_signals": 2,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "independent",
+            "2": "independent"
+          },
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [
+            1,
+            2
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "supported",
+            "2": "supported"
+          },
+          "unflagged_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [
+            1,
+            2
+          ],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "visible_signal_indices": [
+            1,
+            2
+          ]
+        },
+        "FI-048": {
+          "archived_profile_fact": null,
+          "archived_route": "PENDING_APPROVAL",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "expected_signals": 1,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [
+            1
+          ],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "independent"
+          },
+          "matched_but_flagged_indices": [
+            1
+          ],
+          "original_signal_indices": [
+            1
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "unresolved"
+          },
+          "unflagged_equivalent_pairs": [],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "visible_signal_indices": [
+            1
+          ]
+        },
+        "FI3X-001": {
+          "archived_profile_fact": null,
+          "archived_route": "PENDING_APPROVAL",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "expected_signals": 1,
+          "explanatory_signal_indices": [
+            1
+          ],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "explanatory",
+            "2": "independent"
+          },
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [
+            1,
+            2
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "supported",
+            "2": "supported"
+          },
+          "unflagged_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [
+            2
+          ],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "visible_signal_indices": [
+            2
+          ]
+        },
+        "FI3X-002": {
+          "archived_profile_fact": null,
+          "archived_route": "PENDING_APPROVAL",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "expected_signals": 2,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "independent",
+            "2": "independent"
+          },
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [
+            1,
+            2
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "supported",
+            "2": "supported"
+          },
+          "unflagged_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "unflagged_reference_extra_indices": [
+            2
+          ],
+          "unflagged_signal_indices": [
+            1,
+            2
+          ],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "visible_signal_indices": [
+            1,
+            2
+          ]
+        },
+        "FI3X-003": {
+          "archived_profile_fact": "I have never run a product recall simulation before.",
+          "archived_route": "PROFILE_FACT_REVIEW",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [],
+          "expected_signals": 0,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {},
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {},
+          "unflagged_equivalent_pairs": [],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [],
+          "visible_signal_indices": []
+        },
+        "FI3X-004": {
+          "archived_profile_fact": "I have never run a product recall simulation before.",
+          "archived_route": "PROFILE_FACT_REVIEW",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "expected_signals": 1,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "independent"
+          },
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [
+            1
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "supported"
+          },
+          "unflagged_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "visible_signal_indices": [
+            1
+          ]
+        },
+        "FT-002": {
+          "archived_profile_fact": null,
+          "archived_route": "PENDING_APPROVAL",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "expected_signals": 1,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "independent"
+          },
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [
+            1
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "supported"
+          },
+          "unflagged_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "visible_signal_indices": [
+            1
+          ]
+        },
+        "FT-004": {
+          "archived_profile_fact": null,
+          "archived_route": "PENDING_APPROVAL",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "expected_signals": 2,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "independent",
+            "2": "independent"
+          },
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [
+            1,
+            2
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "supported",
+            "2": "supported"
+          },
+          "unflagged_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [
+            1,
+            2
+          ],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "visible_signal_indices": [
+            1,
+            2
+          ]
+        },
+        "FT-005": {
+          "archived_profile_fact": null,
+          "archived_route": "PENDING_APPROVAL",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "expected_signals": 1,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "independent"
+          },
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [
+            1
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "supported"
+          },
+          "unflagged_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "visible_signal_indices": [
+            1
+          ]
+        }
+      },
+      "gates": {
+        "all_previously_matched_signals_visible": true,
+        "archived_routes_actions_and_safety_preserved": true,
+        "fi_033_broad_claim_not_unflagged": false,
+        "fi_048_scope_disagreement_flagged_while_visible": true,
+        "no_scope_or_relationship_flag_leakage": true,
+        "profile_review_cases_preserved": true,
+        "synthetic_independent_reactions_preserved": true,
+        "synthetic_summary_demoted_and_specific_claim_visible": true
+      },
+      "summary": {
+        "archived_validator_rejections": 0,
+        "correct_hard_rule_actions": 10,
+        "correct_routes": 10,
+        "explanatory_signal_count": 1,
+        "flagged_reference_extra_count": 0,
+        "flagged_signal_count": 2,
+        "matched_but_flagged_count": 2,
+        "original": {
+          "precision": {
+            "denominator": 14,
+            "numerator": 11
+          },
+          "recall": {
+            "denominator": 12,
+            "numerator": 11
+          }
+        },
+        "previously_matched_hidden_count": 0,
+        "prior_single_judgment_independent_recall": {
+          "denominator": 12,
+          "numerator": 9
+        },
+        "unflagged": {
+          "precision": {
+            "denominator": 11,
+            "numerator": 9
+          },
+          "recall": {
+            "denominator": 12,
+            "numerator": 9
+          }
+        },
+        "unflagged_reference_extra_count": 2,
+        "visible": {
+          "precision": {
+            "denominator": 13,
+            "numerator": 11
+          },
+          "recall": {
+            "denominator": 12,
+            "numerator": 11
+          }
+        }
+      }
+    },
+    "treatment": {
+      "cases": {
+        "FI-033": {
+          "archived_profile_fact": null,
+          "archived_route": "PENDING_APPROVAL",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "expected_signals": 1,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [
+            2
+          ],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "independent",
+            "2": "unresolved"
+          },
+          "matched_but_flagged_indices": [
+            2
+          ],
+          "original_signal_indices": [
+            1,
+            2
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "supported",
+            "2": "supported"
+          },
+          "unflagged_equivalent_pairs": [],
+          "unflagged_reference_extra_indices": [
+            1
+          ],
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "visible_signal_indices": [
+            1,
+            2
+          ]
+        },
+        "FI-041": {
+          "archived_profile_fact": null,
+          "archived_route": "PENDING_APPROVAL",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "expected_signals": 2,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "independent",
+            "2": "independent"
+          },
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [
+            1,
+            2
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "supported",
+            "2": "supported"
+          },
+          "unflagged_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [
+            1,
+            2
+          ],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "visible_signal_indices": [
+            1,
+            2
+          ]
+        },
+        "FI-048": {
+          "archived_profile_fact": null,
+          "archived_route": "PENDING_APPROVAL",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "expected_signals": 1,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [
+            1
+          ],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "independent"
+          },
+          "matched_but_flagged_indices": [
+            1
+          ],
+          "original_signal_indices": [
+            1
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "unsupported"
+          },
+          "unflagged_equivalent_pairs": [],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "visible_signal_indices": [
+            1
+          ]
+        },
+        "FI3X-001": {
+          "archived_profile_fact": null,
+          "archived_route": "PENDING_APPROVAL",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "expected_signals": 1,
+          "explanatory_signal_indices": [
+            1
+          ],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "explanatory",
+            "2": "independent"
+          },
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [
+            1,
+            2
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "supported",
+            "2": "supported"
+          },
+          "unflagged_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [
+            2
+          ],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "visible_signal_indices": [
+            2
+          ]
+        },
+        "FI3X-002": {
+          "archived_profile_fact": null,
+          "archived_route": "PENDING_APPROVAL",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "expected_signals": 2,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "independent",
+            "2": "independent"
+          },
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [
+            1,
+            2
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "supported",
+            "2": "supported"
+          },
+          "unflagged_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "unflagged_reference_extra_indices": [
+            2
+          ],
+          "unflagged_signal_indices": [
+            1,
+            2
+          ],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "visible_signal_indices": [
+            1,
+            2
+          ]
+        },
+        "FI3X-003": {
+          "archived_profile_fact": "I have never run a product recall simulation before.",
+          "archived_route": "PROFILE_FACT_REVIEW",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [],
+          "expected_signals": 0,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {},
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {},
+          "unflagged_equivalent_pairs": [],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [],
+          "visible_signal_indices": []
+        },
+        "FI3X-004": {
+          "archived_profile_fact": "I have never run a product recall simulation before.",
+          "archived_route": "PROFILE_FACT_REVIEW",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "expected_signals": 1,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "independent"
+          },
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [
+            1
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "supported"
+          },
+          "unflagged_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "visible_signal_indices": [
+            1
+          ]
+        },
+        "FT-002": {
+          "archived_profile_fact": null,
+          "archived_route": "NEEDS_CLARIFICATION",
+          "archived_validator_rejections": 1,
+          "baseline_equivalent_pairs": [],
+          "expected_signals": 1,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {},
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [],
+          "previously_matched_hidden_indices": [],
+          "route_correct": false,
+          "scope_status_by_signal": {},
+          "unflagged_equivalent_pairs": [],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [],
+          "visible_signal_indices": []
+        },
+        "FT-004": {
+          "archived_profile_fact": null,
+          "archived_route": "PENDING_APPROVAL",
+          "archived_validator_rejections": 1,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "expected_signals": 2,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "independent"
+          },
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [
+            1
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "supported"
+          },
+          "unflagged_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "visible_signal_indices": [
+            1
+          ]
+        },
+        "FT-005": {
+          "archived_profile_fact": null,
+          "archived_route": "PENDING_APPROVAL",
+          "archived_validator_rejections": 0,
+          "baseline_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "expected_signals": 1,
+          "explanatory_signal_indices": [],
+          "flagged_reference_extra_indices": [],
+          "flagged_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independence_status_by_signal": {
+            "1": "independent"
+          },
+          "matched_but_flagged_indices": [],
+          "original_signal_indices": [
+            1
+          ],
+          "previously_matched_hidden_indices": [],
+          "route_correct": true,
+          "scope_status_by_signal": {
+            "1": "supported"
+          },
+          "unflagged_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "unflagged_reference_extra_indices": [],
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unsupported_career_downgrade": false,
+          "visible_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "visible_signal_indices": [
+            1
+          ]
+        }
+      },
+      "gates": {
+        "all_previously_matched_signals_visible": true,
+        "archived_routes_actions_and_safety_preserved": true,
+        "fi_033_broad_claim_not_unflagged": false,
+        "fi_048_scope_disagreement_flagged_while_visible": true,
+        "no_scope_or_relationship_flag_leakage": true,
+        "profile_review_cases_preserved": true,
+        "synthetic_independent_reactions_preserved": true,
+        "synthetic_summary_demoted_and_specific_claim_visible": true
+      },
+      "summary": {
+        "archived_validator_rejections": 2,
+        "correct_hard_rule_actions": 10,
+        "correct_routes": 9,
+        "explanatory_signal_count": 1,
+        "flagged_reference_extra_count": 0,
+        "flagged_signal_count": 2,
+        "matched_but_flagged_count": 2,
+        "original": {
+          "precision": {
+            "denominator": 12,
+            "numerator": 9
+          },
+          "recall": {
+            "denominator": 12,
+            "numerator": 9
+          }
+        },
+        "previously_matched_hidden_count": 0,
+        "prior_single_judgment_independent_recall": {
+          "denominator": 12,
+          "numerator": 7
+        },
+        "unflagged": {
+          "precision": {
+            "denominator": 9,
+            "numerator": 7
+          },
+          "recall": {
+            "denominator": 12,
+            "numerator": 7
+          }
+        },
+        "unflagged_reference_extra_count": 2,
+        "visible": {
+          "precision": {
+            "denominator": 11,
+            "numerator": 9
+          },
+          "recall": {
+            "denominator": 12,
+            "numerator": 9
+          }
+        }
+      }
+    }
+  },
+  "decisions_sha256": "01a5ef80550802dd0a5b792a2a3607362f1b2ee6ff7a77ab45843084022e15ad",
+  "inference_requests": 0,
+  "mode": "separate_manual_claim_and_scope_diagnostics",
+  "prior_single_judgment_comparison_sha256": "39c6b0d1e1f432229589213c8f8083beed1b93badbe6ad6a06be8d6462099351",
+  "replay_sha256": "331dffa5410181768f538609942fff64fafba5c64fb3a7399f969a91127206e3",
+  "review_agreements_by_axis": {
+    "relationship": 24,
+    "scope": 26
+  },
+  "reviews_sha256": "a89bb483901b5c780193aabea81d3ba3e0f0f917bc211fa4b942608f294de20b",
+  "source_semantic_report_sha256": "32cd92030e83404148b3f1802470d98befda9725ddef2cfbe196667e6980c9d6",
+  "targeted_gate_passed": false
+}

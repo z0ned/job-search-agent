@@ -1,0 +1,726 @@
+{
+  "archive_configuration_sha256": "6c64ed10fc801aa519a63b2789ab36f59789d150ae7548c445ef60aed90351be",
+  "archive_report_sha256": "c86ca60753d6d5f83ef200da57d2552a03feb0e21a380e002a38749c46022be8",
+  "arms": {
+    "control": {
+      "cases": {
+        "FI-033": {
+          "clarification_question": null,
+          "decision": "rejected",
+          "decisions": [
+            {
+              "disposition": "independent",
+              "rationale": "Calling the role too junior directly evaluates its level.",
+              "scope_rationale": "“This is too junior” expresses a negative assessment of the Project Manager posting’s level of seniority.",
+              "scope_status": "supported",
+              "signal_index": 1
+            },
+            {
+              "disposition": "unresolved",
+              "rationale": "Reviewer one (unresolved) — The autonomy statement could give the reason the role feels too junior or express a separate concern about decision-making. Reviewer two (explanatory) — The adjoining clause describes the autonomy the speaker expects to have, explaining what makes the role too junior. The speaker gives no separate appraisal of autonomy.",
+              "scope_rationale": "The rejection pairs “too junior” with having “almost no decision-making autonomy,” giving the lack of decision-making latitude a negative valence and specifying a near-zero level.",
+              "scope_status": "supported",
+              "signal_index": 2
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [
+            2
+          ],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            1
+          ],
+          "profile_fact_candidate": null,
+          "review_status": "PENDING_APPROVAL",
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unresolved_signal_indices": [
+            2
+          ],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            1,
+            2
+          ]
+        },
+        "FI-041": {
+          "clarification_question": null,
+          "decision": "rejected",
+          "decisions": [
+            {
+              "disposition": "independent",
+              "rationale": "The writer praises the AI advisor role itself.",
+              "scope_rationale": "“This is a terrific AI advisor role” praises the specific AI Strategy Advisor posting. The employer criticism is directed at Trustline AI and leaves the positive assessment of the role intact.",
+              "scope_status": "supported",
+              "signal_index": 1
+            },
+            {
+              "disposition": "independent",
+              "rationale": "The writer explicitly distrusts the employer, a reaction directed at the hiring organization.",
+              "scope_rationale": "“I do not trust the employer” expresses a negative view of the hiring employer, identified in this posting as Trustline AI.",
+              "scope_status": "supported",
+              "signal_index": 2
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            1,
+            2
+          ],
+          "profile_fact_candidate": null,
+          "review_status": "PENDING_APPROVAL",
+          "unflagged_signal_indices": [
+            1,
+            2
+          ],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            1,
+            2
+          ]
+        },
+        "FI-048": {
+          "clarification_question": null,
+          "decision": "rejected",
+          "decisions": [
+            {
+              "disposition": "independent",
+              "rationale": "The writer uses the quoted sales requirement to identify what they explicitly want to avoid.",
+              "scope_rationale": "“Must love sales” makes enthusiasm for sales an explicit hiring expectation. “Sales-focused work” could capture that prominence in how the role is presented, or it could mean that sales is central to the actual duties. The feedback and Enterprise Delivery Director job context leave the role’s duties open.",
+              "scope_status": "unresolved",
+              "signal_index": 1
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [
+            1
+          ],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            1
+          ],
+          "profile_fact_candidate": null,
+          "review_status": "PENDING_APPROVAL",
+          "unflagged_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            1
+          ]
+        },
+        "FI3X-001": {
+          "clarification_question": null,
+          "decision": "rejected",
+          "decisions": [
+            {
+              "disposition": "explanatory",
+              "explains_signal_index": 2,
+              "rationale": "“Specifically” introduces inspection order as the authority issue summarized here.",
+              "scope_rationale": "“The limited authority is what puts me off” expressly identifies limited authority as a negative seniority feature of the posting. The next sentence specifies the inspection-order decision at issue.",
+              "scope_status": "supported",
+              "signal_index": 1
+            },
+            {
+              "disposition": "independent",
+              "rationale": "The writer explicitly objects to having almost no say in the order of inspections.",
+              "scope_rationale": "“Specifically, I do not want to have almost no say in the order of inspections” explicitly rejects near-zero decision-making latitude over that specific duty.",
+              "scope_status": "supported",
+              "signal_index": 2
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [
+            1
+          ],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            2
+          ],
+          "profile_fact_candidate": null,
+          "review_status": "PENDING_APPROVAL",
+          "unflagged_signal_indices": [
+            2
+          ],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            2
+          ]
+        },
+        "FI3X-002": {
+          "clarification_question": null,
+          "decision": "rejected",
+          "decisions": [
+            {
+              "disposition": "independent",
+              "rationale": "The writer explicitly objects to having almost no say in the order of inspections.",
+              "scope_rationale": "The user explicitly rejects having “almost no say” in the order of inspections, which sets a near-zero threshold for autonomy over that specific decision.",
+              "scope_status": "supported",
+              "signal_index": 1
+            },
+            {
+              "disposition": "independent",
+              "rationale": "“I also do not want” introduces a separate objection to having no responsibility for the inspection budget.",
+              "scope_rationale": "The user explicitly rejects a role with “no responsibility” for the inspection budget. The negative assessment applies to the absence of that particular duty.",
+              "scope_status": "supported",
+              "signal_index": 2
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            1,
+            2
+          ],
+          "profile_fact_candidate": null,
+          "review_status": "PENDING_APPROVAL",
+          "unflagged_signal_indices": [
+            1,
+            2
+          ],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            1,
+            2
+          ]
+        },
+        "FI3X-003": {
+          "clarification_question": null,
+          "decision": "interested",
+          "decisions": [],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [],
+          "profile_fact_candidate": "I have never run a product recall simulation before.",
+          "review_status": "PROFILE_FACT_REVIEW",
+          "unflagged_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": []
+        },
+        "FI3X-004": {
+          "clarification_question": null,
+          "decision": "interested",
+          "decisions": [
+            {
+              "disposition": "independent",
+              "rationale": "The writer says they would enjoy facilitating the debrief.",
+              "scope_rationale": "The user says they would enjoy facilitating the debrief after the product recall simulation, matching the named duty in the posting. The prior-experience statement concerns running the simulation.",
+              "scope_status": "supported",
+              "signal_index": 1
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            1
+          ],
+          "profile_fact_candidate": "I have never run a product recall simulation before.",
+          "review_status": "PROFILE_FACT_REVIEW",
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            1
+          ]
+        },
+        "FT-002": {
+          "clarification_question": null,
+          "decision": "rejected",
+          "decisions": [
+            {
+              "disposition": "independent",
+              "rationale": "The writer explicitly wants to avoid jobs built around giving safety briefings.",
+              "scope_rationale": "The feedback and posting call giving safety briefings “the heart of the role,” and the user wants to avoid jobs “built around” that duty. Those phrases support dominance by centrality to the job.",
+              "scope_status": "supported",
+              "signal_index": 1
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            1
+          ],
+          "profile_fact_candidate": null,
+          "review_status": "PENDING_APPROVAL",
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            1
+          ]
+        },
+        "FT-004": {
+          "clarification_question": null,
+          "decision": "rejected",
+          "decisions": [
+            {
+              "disposition": "independent",
+              "rationale": "The writer praises this particular Collection Analyst opening.",
+              "scope_rationale": "“This particular Collection Analyst opening would be terrific” expresses a positive assessment of the specific opening. The next sentence directs the distrust at the hiring organization.",
+              "scope_status": "supported",
+              "signal_index": 1
+            },
+            {
+              "disposition": "independent",
+              "rationale": "The writer explicitly distrusts the hiring organization, a separate target from the opening.",
+              "scope_rationale": "“I have no trust in the organization that’s hiring” expresses distrust of this posting’s employer, Station Heritage Trust. The reference to the hiring organization identifies the same entity.",
+              "scope_status": "supported",
+              "signal_index": 2
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            1,
+            2
+          ],
+          "profile_fact_candidate": null,
+          "review_status": "PENDING_APPROVAL",
+          "unflagged_signal_indices": [
+            1,
+            2
+          ],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            1,
+            2
+          ]
+        },
+        "FT-005": {
+          "clarification_question": null,
+          "decision": "rejected",
+          "decisions": [
+            {
+              "disposition": "independent",
+              "rationale": "The writer rejects a career in warehouse operations and cites inventory reconciliation as how they recognized that kind of work.",
+              "scope_rationale": "The user explicitly wants to avoid a career in warehouse operations. Inventory reconciliation identifies the career category in the posting.",
+              "scope_status": "supported",
+              "signal_index": 1
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            1
+          ],
+          "profile_fact_candidate": null,
+          "review_status": "PENDING_APPROVAL",
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            1
+          ]
+        }
+      },
+      "validated_file": "control.json",
+      "validated_sha256": "55ac755c679ada1e51fbc6a65eab3bd5f50427316e9e28d526d3434357d873fc"
+    },
+    "treatment": {
+      "cases": {
+        "FI-033": {
+          "clarification_question": null,
+          "decision": "rejected",
+          "decisions": [
+            {
+              "disposition": "independent",
+              "rationale": "Calling the role too junior directly evaluates its level.",
+              "scope_rationale": "“This is too junior” expresses a negative assessment of the Project Manager posting’s level of seniority.",
+              "scope_status": "supported",
+              "signal_index": 1
+            },
+            {
+              "disposition": "unresolved",
+              "rationale": "Reviewer one (unresolved) — The autonomy statement could give the reason the role feels too junior or express a separate concern about decision-making. Reviewer two (explanatory) — The adjoining clause describes the autonomy the speaker expects to have, explaining what makes the role too junior. The speaker gives no separate appraisal of autonomy.",
+              "scope_rationale": "The rejection pairs “too junior” with having “almost no decision-making autonomy,” giving the lack of decision-making latitude a negative valence and specifying a near-zero level.",
+              "scope_status": "supported",
+              "signal_index": 2
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [
+            2
+          ],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            1
+          ],
+          "profile_fact_candidate": null,
+          "review_status": "PENDING_APPROVAL",
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unresolved_signal_indices": [
+            2
+          ],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            1,
+            2
+          ]
+        },
+        "FI-041": {
+          "clarification_question": null,
+          "decision": "rejected",
+          "decisions": [
+            {
+              "disposition": "independent",
+              "rationale": "The writer praises the AI advisor role itself.",
+              "scope_rationale": "“This is a terrific AI advisor role” praises the specific AI Strategy Advisor posting. The employer criticism is directed at Trustline AI and leaves the positive assessment of the role intact.",
+              "scope_status": "supported",
+              "signal_index": 1
+            },
+            {
+              "disposition": "independent",
+              "rationale": "The writer explicitly distrusts the employer, a reaction directed at the hiring organization.",
+              "scope_rationale": "“I do not trust the employer” expresses a negative view of the hiring employer, identified in this posting as Trustline AI.",
+              "scope_status": "supported",
+              "signal_index": 2
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            1,
+            2
+          ],
+          "profile_fact_candidate": null,
+          "review_status": "PENDING_APPROVAL",
+          "unflagged_signal_indices": [
+            1,
+            2
+          ],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            1,
+            2
+          ]
+        },
+        "FI-048": {
+          "clarification_question": null,
+          "decision": "rejected",
+          "decisions": [
+            {
+              "disposition": "independent",
+              "rationale": "The writer uses the quoted sales requirement to identify what they explicitly want to avoid.",
+              "scope_rationale": "“Must love sales” establishes an expectation of enthusiasm for sales, which the user explicitly wants to avoid. “Sales-heavy work” also claims that sales would form a substantial share of the duties, which the feedback and job context leave unspecified.",
+              "scope_status": "unsupported",
+              "signal_index": 1
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [
+            1
+          ],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            1
+          ],
+          "profile_fact_candidate": null,
+          "review_status": "PENDING_APPROVAL",
+          "unflagged_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            1
+          ]
+        },
+        "FI3X-001": {
+          "clarification_question": null,
+          "decision": "rejected",
+          "decisions": [
+            {
+              "disposition": "explanatory",
+              "explains_signal_index": 2,
+              "rationale": "“Specifically” introduces inspection order as the authority issue summarized here.",
+              "scope_rationale": "“The limited authority is what puts me off” expressly identifies limited authority as a negative seniority feature of the posting. The next sentence specifies the inspection-order decision at issue.",
+              "scope_status": "supported",
+              "signal_index": 1
+            },
+            {
+              "disposition": "independent",
+              "rationale": "The writer explicitly objects to having almost no say in the order of inspections.",
+              "scope_rationale": "“Specifically, I do not want to have almost no say in the order of inspections” explicitly rejects near-zero decision-making latitude over that specific duty.",
+              "scope_status": "supported",
+              "signal_index": 2
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [
+            1
+          ],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            2
+          ],
+          "profile_fact_candidate": null,
+          "review_status": "PENDING_APPROVAL",
+          "unflagged_signal_indices": [
+            2
+          ],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            2
+          ]
+        },
+        "FI3X-002": {
+          "clarification_question": null,
+          "decision": "rejected",
+          "decisions": [
+            {
+              "disposition": "independent",
+              "rationale": "The writer explicitly objects to having almost no say in the order of inspections.",
+              "scope_rationale": "The user explicitly rejects having “almost no say” in the order of inspections, which sets a near-zero threshold for autonomy over that specific decision.",
+              "scope_status": "supported",
+              "signal_index": 1
+            },
+            {
+              "disposition": "independent",
+              "rationale": "“I also do not want” introduces a separate objection to having no responsibility for the inspection budget.",
+              "scope_rationale": "The user explicitly rejects a role with “no responsibility” for the inspection budget. The negative assessment applies to the absence of that particular duty.",
+              "scope_status": "supported",
+              "signal_index": 2
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            1,
+            2
+          ],
+          "profile_fact_candidate": null,
+          "review_status": "PENDING_APPROVAL",
+          "unflagged_signal_indices": [
+            1,
+            2
+          ],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            1,
+            2
+          ]
+        },
+        "FI3X-003": {
+          "clarification_question": null,
+          "decision": "interested",
+          "decisions": [],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [],
+          "profile_fact_candidate": "I have never run a product recall simulation before.",
+          "review_status": "PROFILE_FACT_REVIEW",
+          "unflagged_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": []
+        },
+        "FI3X-004": {
+          "clarification_question": null,
+          "decision": "interested",
+          "decisions": [
+            {
+              "disposition": "independent",
+              "rationale": "The writer says they would enjoy facilitating the debrief.",
+              "scope_rationale": "The user says they would enjoy facilitating the debrief after the product recall simulation, matching the named duty in the posting. The prior-experience statement concerns running the simulation.",
+              "scope_status": "supported",
+              "signal_index": 1
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            1
+          ],
+          "profile_fact_candidate": "I have never run a product recall simulation before.",
+          "review_status": "PROFILE_FACT_REVIEW",
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            1
+          ]
+        },
+        "FT-002": {
+          "clarification_question": "What specifically influenced your reaction to this opportunity?",
+          "decision": "rejected",
+          "decisions": [],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [],
+          "profile_fact_candidate": null,
+          "review_status": "NEEDS_CLARIFICATION",
+          "unflagged_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "validation_issues": [
+            {
+              "field": "signals",
+              "index": 0,
+              "message": "A scope cannot repeat a qualifier kind."
+            }
+          ],
+          "visible_signal_indices": []
+        },
+        "FT-004": {
+          "clarification_question": null,
+          "decision": "rejected",
+          "decisions": [
+            {
+              "disposition": "independent",
+              "rationale": "The writer praises this particular Collection Analyst opening.",
+              "scope_rationale": "“This particular Collection Analyst opening would be terrific” expresses a positive assessment of the specific opening. The next sentence directs the distrust at the hiring organization.",
+              "scope_status": "supported",
+              "signal_index": 1
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            1
+          ],
+          "profile_fact_candidate": null,
+          "review_status": "PENDING_APPROVAL",
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unresolved_signal_indices": [],
+          "validation_issues": [
+            {
+              "field": "signals",
+              "index": 1,
+              "message": "Evidence quote must locate a unique original feedback span."
+            }
+          ],
+          "visible_signal_indices": [
+            1
+          ]
+        },
+        "FT-005": {
+          "clarification_question": null,
+          "decision": "rejected",
+          "decisions": [
+            {
+              "disposition": "independent",
+              "rationale": "The writer rejects a career in warehouse operations and cites inventory reconciliation as how they recognized that kind of work.",
+              "scope_rationale": "The user explicitly wants to avoid a career in warehouse operations. Inventory reconciliation identifies the career category in the posting.",
+              "scope_status": "supported",
+              "signal_index": 1
+            }
+          ],
+          "eligibility_violation": null,
+          "evidence_findings": [],
+          "explanatory_signal_indices": [],
+          "flagged_signal_indices": [],
+          "hard_constraint_action": "UNCHANGED",
+          "hard_constraints_mutated": false,
+          "independent_signal_indices": [
+            1
+          ],
+          "profile_fact_candidate": null,
+          "review_status": "PENDING_APPROVAL",
+          "unflagged_signal_indices": [
+            1
+          ],
+          "unresolved_signal_indices": [],
+          "validation_issues": [],
+          "visible_signal_indices": [
+            1
+          ]
+        }
+      },
+      "validated_file": "treatment.json",
+      "validated_sha256": "d8c8eadfa39ea26674f26091f59eb076fa9ffa1f88e1ed6b9c899e9ff6a46c6c"
+    }
+  },
+  "decisions_sha256": "01a5ef80550802dd0a5b792a2a3607362f1b2ee6ff7a77ab45843084022e15ad",
+  "inference_requests": 0,
+  "mode": "offline_manual_claim_scope_review",
+  "reviewer": "Independent Codex source reviews of claim relationships and proposed scopes"
+}

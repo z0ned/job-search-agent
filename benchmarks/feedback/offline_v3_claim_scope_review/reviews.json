@@ -1,0 +1,871 @@
+{
+  "relationship": {
+    "agreements": 24,
+    "disagreements": [
+      {
+        "record_id": "R08",
+        "signal_index": 2
+      },
+      {
+        "record_id": "R09",
+        "signal_index": 2
+      }
+    ],
+    "mapping": {
+      "R01": {
+        "arm": "treatment",
+        "case_id": "FI3X-003"
+      },
+      "R02": {
+        "arm": "treatment",
+        "case_id": "FI3X-004"
+      },
+      "R03": {
+        "arm": "control",
+        "case_id": "FI3X-001"
+      },
+      "R04": {
+        "arm": "treatment",
+        "case_id": "FT-002"
+      },
+      "R05": {
+        "arm": "control",
+        "case_id": "FT-002"
+      },
+      "R06": {
+        "arm": "treatment",
+        "case_id": "FT-004"
+      },
+      "R07": {
+        "arm": "control",
+        "case_id": "FT-004"
+      },
+      "R08": {
+        "arm": "treatment",
+        "case_id": "FI-033"
+      },
+      "R09": {
+        "arm": "control",
+        "case_id": "FI-033"
+      },
+      "R10": {
+        "arm": "control",
+        "case_id": "FI-048"
+      },
+      "R11": {
+        "arm": "treatment",
+        "case_id": "FI3X-001"
+      },
+      "R12": {
+        "arm": "treatment",
+        "case_id": "FI-048"
+      },
+      "R13": {
+        "arm": "control",
+        "case_id": "FI3X-003"
+      },
+      "R14": {
+        "arm": "control",
+        "case_id": "FI-041"
+      },
+      "R15": {
+        "arm": "treatment",
+        "case_id": "FT-005"
+      },
+      "R16": {
+        "arm": "control",
+        "case_id": "FI3X-002"
+      },
+      "R17": {
+        "arm": "control",
+        "case_id": "FT-005"
+      },
+      "R18": {
+        "arm": "treatment",
+        "case_id": "FI-041"
+      },
+      "R19": {
+        "arm": "treatment",
+        "case_id": "FI3X-002"
+      },
+      "R20": {
+        "arm": "control",
+        "case_id": "FI3X-004"
+      }
+    },
+    "packet_sha256": "f905a21374335ca547159d3b5217d059d4285dccf10af13b01212ec44b544bab",
+    "reviewers": {
+      "one": {
+        "R01": [],
+        "R02": [
+          {
+            "disposition": "independent",
+            "rationale": "The writer says they would enjoy facilitating the debrief.",
+            "signal_index": 1
+          }
+        ],
+        "R03": [
+          {
+            "disposition": "explanatory",
+            "explains_signal_index": 2,
+            "rationale": "“Specifically” introduces inspection order as the authority issue summarized here.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "The writer explicitly objects to having almost no say in the order of inspections.",
+            "signal_index": 2
+          }
+        ],
+        "R04": [],
+        "R05": [
+          {
+            "disposition": "independent",
+            "rationale": "The writer explicitly wants to avoid jobs built around giving safety briefings.",
+            "signal_index": 1
+          }
+        ],
+        "R06": [
+          {
+            "disposition": "independent",
+            "rationale": "The writer praises this particular Collection Analyst opening.",
+            "signal_index": 1
+          }
+        ],
+        "R07": [
+          {
+            "disposition": "independent",
+            "rationale": "The writer praises this particular Collection Analyst opening.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "The writer explicitly distrusts the hiring organization, a separate target from the opening.",
+            "signal_index": 2
+          }
+        ],
+        "R08": [
+          {
+            "disposition": "independent",
+            "rationale": "Calling the role too junior directly evaluates its level.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "unresolved",
+            "rationale": "The autonomy statement could give the reason the role feels too junior or express a separate concern about decision-making.",
+            "signal_index": 2
+          }
+        ],
+        "R09": [
+          {
+            "disposition": "independent",
+            "rationale": "Calling the role too junior directly evaluates its level.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "unresolved",
+            "rationale": "The autonomy statement could give the reason the role feels too junior or express a separate concern about decision-making.",
+            "signal_index": 2
+          }
+        ],
+        "R10": [
+          {
+            "disposition": "independent",
+            "rationale": "The writer uses the quoted sales requirement to identify what they explicitly want to avoid.",
+            "signal_index": 1
+          }
+        ],
+        "R11": [
+          {
+            "disposition": "explanatory",
+            "explains_signal_index": 2,
+            "rationale": "“Specifically” introduces inspection order as the authority issue summarized here.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "The writer explicitly objects to having almost no say in the order of inspections.",
+            "signal_index": 2
+          }
+        ],
+        "R12": [
+          {
+            "disposition": "independent",
+            "rationale": "The writer uses the quoted sales requirement to identify what they explicitly want to avoid.",
+            "signal_index": 1
+          }
+        ],
+        "R13": [],
+        "R14": [
+          {
+            "disposition": "independent",
+            "rationale": "The writer praises the AI advisor role itself.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "The writer explicitly distrusts the employer, a reaction directed at the hiring organization.",
+            "signal_index": 2
+          }
+        ],
+        "R15": [
+          {
+            "disposition": "independent",
+            "rationale": "The writer rejects a career in warehouse operations and cites inventory reconciliation as how they recognized that kind of work.",
+            "signal_index": 1
+          }
+        ],
+        "R16": [
+          {
+            "disposition": "independent",
+            "rationale": "The writer explicitly objects to having almost no say in the order of inspections.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "“I also do not want” introduces a separate objection to having no responsibility for the inspection budget.",
+            "signal_index": 2
+          }
+        ],
+        "R17": [
+          {
+            "disposition": "independent",
+            "rationale": "The writer rejects a career in warehouse operations and cites inventory reconciliation as how they recognized that kind of work.",
+            "signal_index": 1
+          }
+        ],
+        "R18": [
+          {
+            "disposition": "independent",
+            "rationale": "The writer praises the AI advisor role itself.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "The writer explicitly distrusts the employer, a reaction directed at the hiring organization.",
+            "signal_index": 2
+          }
+        ],
+        "R19": [
+          {
+            "disposition": "independent",
+            "rationale": "The writer explicitly objects to having almost no say in the order of inspections.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "“I also do not want” introduces a separate objection to having no responsibility for the inspection budget.",
+            "signal_index": 2
+          }
+        ],
+        "R20": [
+          {
+            "disposition": "independent",
+            "rationale": "The writer says they would enjoy facilitating the debrief.",
+            "signal_index": 1
+          }
+        ]
+      },
+      "two": {
+        "R01": [],
+        "R02": [
+          {
+            "disposition": "independent",
+            "rationale": "The speaker says they would enjoy facilitating the debrief. Their lack of prior simulation experience is background.",
+            "signal_index": 1
+          }
+        ],
+        "R03": [
+          {
+            "disposition": "explanatory",
+            "explains_signal_index": 2,
+            "rationale": "The broad reaction to limited authority summarizes the concern specified in the next sentence. No other authority concern is given.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "The speaker explicitly rejects having almost no say in the order of inspections. “Specifically” identifies this as the concrete concern behind the preceding summary.",
+            "signal_index": 2
+          }
+        ],
+        "R04": [],
+        "R05": [
+          {
+            "disposition": "independent",
+            "rationale": "The speaker explicitly wants to avoid jobs built around giving safety briefings. The posting supplies the description to which they react.",
+            "signal_index": 1
+          }
+        ],
+        "R06": [
+          {
+            "disposition": "independent",
+            "rationale": "The speaker praises the particular opening, an evaluation that stands alongside their distrust of the hiring organization.",
+            "signal_index": 1
+          }
+        ],
+        "R07": [
+          {
+            "disposition": "independent",
+            "rationale": "The speaker praises the particular opening, an evaluation that stands alongside their distrust of the hiring organization.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "The speaker expressly distrusts the organization, which is a separate judgment from their favorable evaluation of the opening.",
+            "signal_index": 2
+          }
+        ],
+        "R08": [
+          {
+            "disposition": "independent",
+            "rationale": "“Too junior” explicitly evaluates the level of the role.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "explanatory",
+            "explains_signal_index": 1,
+            "rationale": "The adjoining clause describes the autonomy the speaker expects to have, explaining what makes the role too junior. The speaker gives no separate appraisal of autonomy.",
+            "signal_index": 2
+          }
+        ],
+        "R09": [
+          {
+            "disposition": "independent",
+            "rationale": "“Too junior” explicitly evaluates the level of the role.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "explanatory",
+            "explains_signal_index": 1,
+            "rationale": "The adjoining clause describes the autonomy the speaker expects to have, explaining what makes the role too junior. The speaker gives no separate appraisal of autonomy.",
+            "signal_index": 2
+          }
+        ],
+        "R10": [
+          {
+            "disposition": "independent",
+            "rationale": "The speaker explicitly wants to avoid the quoted requirement. The posting supplies the referent of that aversion.",
+            "signal_index": 1
+          }
+        ],
+        "R11": [
+          {
+            "disposition": "explanatory",
+            "explains_signal_index": 2,
+            "rationale": "The broad reaction to limited authority summarizes the concern specified in the next sentence. No other authority concern is given.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "The speaker explicitly rejects having almost no say in the order of inspections. “Specifically” identifies this as the concrete concern behind the preceding summary.",
+            "signal_index": 2
+          }
+        ],
+        "R12": [
+          {
+            "disposition": "independent",
+            "rationale": "The speaker explicitly wants to avoid the quoted requirement. The posting supplies the referent of that aversion.",
+            "signal_index": 1
+          }
+        ],
+        "R13": [],
+        "R14": [
+          {
+            "disposition": "independent",
+            "rationale": "The speaker praises the AI advisor role in its own right. Their distrust concerns a different target, the employer.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "The speaker explicitly distrusts the employer even though they praise the role.",
+            "signal_index": 2
+          }
+        ],
+        "R15": [
+          {
+            "disposition": "independent",
+            "rationale": "The speaker explicitly rejects a career in warehouse operations. Inventory reconciliation is how they identified the kind of job.",
+            "signal_index": 1
+          }
+        ],
+        "R16": [
+          {
+            "disposition": "independent",
+            "rationale": "The speaker explicitly objects to almost no say over inspection order, a separate concern from budget responsibility.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "“I also do not want” adds an explicit concern about having no inspection budget responsibility.",
+            "signal_index": 2
+          }
+        ],
+        "R17": [
+          {
+            "disposition": "independent",
+            "rationale": "The speaker explicitly rejects a career in warehouse operations. Inventory reconciliation is how they identified the kind of job.",
+            "signal_index": 1
+          }
+        ],
+        "R18": [
+          {
+            "disposition": "independent",
+            "rationale": "The speaker praises the AI advisor role in its own right. Their distrust concerns a different target, the employer.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "The speaker explicitly distrusts the employer even though they praise the role.",
+            "signal_index": 2
+          }
+        ],
+        "R19": [
+          {
+            "disposition": "independent",
+            "rationale": "The speaker explicitly objects to almost no say over inspection order, a separate concern from budget responsibility.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "“I also do not want” adds an explicit concern about having no inspection budget responsibility.",
+            "signal_index": 2
+          }
+        ],
+        "R20": [
+          {
+            "disposition": "independent",
+            "rationale": "The speaker says they would enjoy facilitating the debrief. Their lack of prior simulation experience is background.",
+            "signal_index": 1
+          }
+        ]
+      }
+    }
+  },
+  "scope": {
+    "agreements": 26,
+    "disagreements": [],
+    "mapping": {
+      "S01": {
+        "arm": "treatment",
+        "case_id": "FT-002"
+      },
+      "S02": {
+        "arm": "control",
+        "case_id": "FI-041"
+      },
+      "S03": {
+        "arm": "control",
+        "case_id": "FT-005"
+      },
+      "S04": {
+        "arm": "control",
+        "case_id": "FT-002"
+      },
+      "S05": {
+        "arm": "treatment",
+        "case_id": "FI3X-003"
+      },
+      "S06": {
+        "arm": "treatment",
+        "case_id": "FI-048"
+      },
+      "S07": {
+        "arm": "treatment",
+        "case_id": "FI3X-004"
+      },
+      "S08": {
+        "arm": "control",
+        "case_id": "FI-033"
+      },
+      "S09": {
+        "arm": "treatment",
+        "case_id": "FI-033"
+      },
+      "S10": {
+        "arm": "control",
+        "case_id": "FI3X-004"
+      },
+      "S11": {
+        "arm": "control",
+        "case_id": "FT-004"
+      },
+      "S12": {
+        "arm": "treatment",
+        "case_id": "FT-004"
+      },
+      "S13": {
+        "arm": "control",
+        "case_id": "FI3X-002"
+      },
+      "S14": {
+        "arm": "treatment",
+        "case_id": "FI-041"
+      },
+      "S15": {
+        "arm": "treatment",
+        "case_id": "FT-005"
+      },
+      "S16": {
+        "arm": "treatment",
+        "case_id": "FI3X-002"
+      },
+      "S17": {
+        "arm": "control",
+        "case_id": "FI3X-003"
+      },
+      "S18": {
+        "arm": "treatment",
+        "case_id": "FI3X-001"
+      },
+      "S19": {
+        "arm": "control",
+        "case_id": "FI-048"
+      },
+      "S20": {
+        "arm": "control",
+        "case_id": "FI3X-001"
+      }
+    },
+    "packet_sha256": "6349a64627831e1e13066e0e51c9f966daf0baebfc2391b8348fb17330ae3f43",
+    "reviewers": {
+      "one": {
+        "S01": [],
+        "S02": [
+          {
+            "scope_rationale": "“This is a terrific AI advisor role” praises the specific AI Strategy Advisor posting. The employer criticism is directed at Trustline AI and leaves the positive assessment of the role intact.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "“I do not trust the employer” expresses a negative view of the hiring employer, identified in this posting as Trustline AI.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S03": [
+          {
+            "scope_rationale": "The user explicitly wants to avoid a career in warehouse operations. Inventory reconciliation identifies the career category in the posting.",
+            "scope_status": "supported",
+            "signal_index": 1
+          }
+        ],
+        "S04": [
+          {
+            "scope_rationale": "The feedback and posting call giving safety briefings “the heart of the role,” and the user wants to avoid jobs “built around” that duty. Those phrases support dominance by centrality to the job.",
+            "scope_status": "supported",
+            "signal_index": 1
+          }
+        ],
+        "S05": [],
+        "S06": [
+          {
+            "scope_rationale": "“Must love sales” establishes an expectation of enthusiasm for sales, which the user explicitly wants to avoid. “Sales-heavy work” also claims that sales would form a substantial share of the duties, which the feedback and job context leave unspecified.",
+            "scope_status": "unsupported",
+            "signal_index": 1
+          }
+        ],
+        "S07": [
+          {
+            "scope_rationale": "The user says they would enjoy facilitating the debrief after the product recall simulation, matching the named duty in the posting. The prior-experience statement concerns running the simulation.",
+            "scope_status": "supported",
+            "signal_index": 1
+          }
+        ],
+        "S08": [
+          {
+            "scope_rationale": "“This is too junior” expresses a negative assessment of the Project Manager posting’s level of seniority.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "The rejection pairs “too junior” with having “almost no decision-making autonomy,” giving the lack of decision-making latitude a negative valence and specifying a near-zero level.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S09": [
+          {
+            "scope_rationale": "“This is too junior” expresses a negative assessment of the Project Manager posting’s level of seniority.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "The rejection pairs “too junior” with having “almost no decision-making autonomy,” giving the lack of decision-making latitude a negative valence and specifying a near-zero level.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S10": [
+          {
+            "scope_rationale": "The user says they would enjoy facilitating the debrief after the product recall simulation, matching the named duty in the posting. The prior-experience statement concerns running the simulation.",
+            "scope_status": "supported",
+            "signal_index": 1
+          }
+        ],
+        "S11": [
+          {
+            "scope_rationale": "“This particular Collection Analyst opening would be terrific” expresses a positive assessment of the specific opening. The next sentence directs the distrust at the hiring organization.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "“I have no trust in the organization that’s hiring” expresses distrust of this posting’s employer, Station Heritage Trust. The reference to the hiring organization identifies the same entity.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S12": [
+          {
+            "scope_rationale": "“This particular Collection Analyst opening would be terrific” expresses a positive assessment of the specific opening. The next sentence directs the distrust at the hiring organization.",
+            "scope_status": "supported",
+            "signal_index": 1
+          }
+        ],
+        "S13": [
+          {
+            "scope_rationale": "The user explicitly rejects having “almost no say” in the order of inspections, which sets a near-zero threshold for autonomy over that specific decision.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "The user explicitly rejects a role with “no responsibility” for the inspection budget. The negative assessment applies to the absence of that particular duty.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S14": [
+          {
+            "scope_rationale": "“This is a terrific AI advisor role” praises the specific AI Strategy Advisor posting. The employer criticism is directed at Trustline AI and leaves the positive assessment of the role intact.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "“I do not trust the employer” expresses a negative view of the hiring employer, identified in this posting as Trustline AI.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S15": [
+          {
+            "scope_rationale": "The user explicitly wants to avoid a career in warehouse operations. Inventory reconciliation identifies the career category in the posting.",
+            "scope_status": "supported",
+            "signal_index": 1
+          }
+        ],
+        "S16": [
+          {
+            "scope_rationale": "The user explicitly rejects having “almost no say” in the order of inspections, which sets a near-zero threshold for autonomy over that specific decision.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "The user explicitly rejects a role with “no responsibility” for the inspection budget. The negative assessment applies to the absence of that particular duty.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S17": [],
+        "S18": [
+          {
+            "scope_rationale": "“The limited authority is what puts me off” expressly identifies limited authority as a negative seniority feature of the posting. The next sentence specifies the inspection-order decision at issue.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "“Specifically, I do not want to have almost no say in the order of inspections” explicitly rejects near-zero decision-making latitude over that specific duty.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S19": [
+          {
+            "scope_rationale": "“Must love sales” makes enthusiasm for sales an explicit hiring expectation. “Sales-focused work” could capture that prominence in how the role is presented, or it could mean that sales is central to the actual duties. The feedback and Enterprise Delivery Director job context leave the role’s duties open.",
+            "scope_status": "unresolved",
+            "signal_index": 1
+          }
+        ],
+        "S20": [
+          {
+            "scope_rationale": "“The limited authority is what puts me off” expressly identifies limited authority as a negative seniority feature of the posting. The next sentence specifies the inspection-order decision at issue.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "“Specifically, I do not want to have almost no say in the order of inspections” explicitly rejects near-zero decision-making latitude over that specific duty.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ]
+      },
+      "two": {
+        "S01": [],
+        "S02": [
+          {
+            "scope_rationale": "The user calls this specific AI advisor opening terrific. The posting-role scope keeps the positive reaction tied to the named opening.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "The user directly distrusts the hiring employer, identified in the context as Trustline AI.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S03": [
+          {
+            "scope_rationale": "The user explicitly rejects a career in warehouse operations and uses inventory reconciliation to identify the career category.",
+            "scope_status": "supported",
+            "signal_index": 1
+          }
+        ],
+        "S04": [
+          {
+            "scope_rationale": "The user wants to avoid roles built around giving safety briefings, and 'the heart of the role' supports the dominant-duty qualifier.",
+            "scope_status": "supported",
+            "signal_index": 1
+          }
+        ],
+        "S05": [],
+        "S06": [
+          {
+            "scope_rationale": "The posting makes enthusiasm for sales a strong requirement. Neither the feedback nor the context establishes the substantial share of duties implied by 'sales-heavy work.'",
+            "scope_status": "unsupported",
+            "signal_index": 1
+          }
+        ],
+        "S07": [
+          {
+            "scope_rationale": "The user explicitly says they would enjoy facilitating the debrief after the product recall simulation. The referent and posting context identify that debrief.",
+            "scope_status": "supported",
+            "signal_index": 1
+          }
+        ],
+        "S08": [
+          {
+            "scope_rationale": "Calling the role 'too junior' directly supports a negative assessment of the junior seniority level.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "'Almost no decision-making autonomy' supplies the seniority feature and its near-zero qualifier. The user's rejection of the role as too junior establishes the negative reaction.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S09": [
+          {
+            "scope_rationale": "Calling the role 'too junior' directly supports a negative assessment of the junior seniority level.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "'Almost no decision-making autonomy' supplies the seniority feature and its near-zero qualifier. The user's rejection of the role as too junior establishes the negative reaction.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S10": [
+          {
+            "scope_rationale": "The user explicitly says they would enjoy facilitating the debrief after the product recall simulation. The referent and posting context identify that debrief.",
+            "scope_status": "supported",
+            "signal_index": 1
+          }
+        ],
+        "S11": [
+          {
+            "scope_rationale": "The user calls this particular Collection Analyst opening terrific, supporting a positive reaction scoped to the opening.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "The user directly expresses distrust of the hiring organization, identified in context as Station Heritage Trust.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S12": [
+          {
+            "scope_rationale": "The user calls this particular Collection Analyst opening terrific, supporting a positive reaction scoped to the opening.",
+            "scope_status": "supported",
+            "signal_index": 1
+          }
+        ],
+        "S13": [
+          {
+            "scope_rationale": "The user explicitly wants to avoid having almost no say in the order of inspections. The referent and near-zero qualifier preserve the affected decision and its degree.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "The user wants to avoid a role with no responsibility for the inspection budget. The signal targets that specific duty and preserves the zero-responsibility qualifier.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S14": [
+          {
+            "scope_rationale": "The user calls this specific AI advisor opening terrific. The posting-role scope keeps the positive reaction tied to the named opening.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "The user directly distrusts the hiring employer, identified in the context as Trustline AI.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S15": [
+          {
+            "scope_rationale": "The user explicitly rejects a career in warehouse operations and uses inventory reconciliation to identify the career category.",
+            "scope_status": "supported",
+            "signal_index": 1
+          }
+        ],
+        "S16": [
+          {
+            "scope_rationale": "The user explicitly wants to avoid having almost no say in the order of inspections. The referent and near-zero qualifier preserve the affected decision and its degree.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "The user wants to avoid a role with no responsibility for the inspection budget. The signal targets that specific duty and preserves the zero-responsibility qualifier.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S17": [],
+        "S18": [
+          {
+            "scope_rationale": "The user directly says the limited authority puts them off and identifies inspection-order autonomy as the specific limitation.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "The user explicitly wants to avoid having almost no say in the order of inspections. The referent and near-zero qualifier preserve the affected decision and its degree.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ],
+        "S19": [
+          {
+            "scope_rationale": "'Sales-focused' can describe the strong sales emphasis in the stated hiring requirement or the focus of the duties themselves. 'Must love sales' establishes the hiring requirement, and the duties are unspecified.",
+            "scope_status": "unresolved",
+            "signal_index": 1
+          }
+        ],
+        "S20": [
+          {
+            "scope_rationale": "The user directly says the limited authority puts them off and identifies inspection-order autonomy as the specific limitation.",
+            "scope_status": "supported",
+            "signal_index": 1
+          },
+          {
+            "scope_rationale": "The user explicitly wants to avoid having almost no say in the order of inspections. The referent and near-zero qualifier preserve the affected decision and its degree.",
+            "scope_status": "supported",
+            "signal_index": 2
+          }
+        ]
+      }
+    }
+  }
+}

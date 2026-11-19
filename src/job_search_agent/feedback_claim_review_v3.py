@@ -57,6 +57,10 @@ def _project_case(result, reviewed, case_id):
 
 def replay_claim_reviews(archive, decisions_file):
     """Validate decisions against their original capture and return an index projection."""
+    return _replay_review(archive, decisions_file, project_case=_project_case, mode="offline_manual_claim_review")
+
+
+def _replay_review(archive, decisions_file, *, project_case, mode):
     report, report_hash = _read_archive_json(archive / "report.json")
     configuration_hash = report.get("configuration_sha256")
     if not _nonblank(configuration_hash):
@@ -95,11 +99,11 @@ def replay_claim_reviews(archive, decisions_file):
             raise ValueError(f"{arm} capture and decisions must cover every archived case")
         projected[arm] = {
             "validated_file": validated_file, "validated_sha256": validated_hash,
-            "cases": {case_id: _project_case(result, cases[case_id], case_id) for case_id, result in predictions.items()},
+            "cases": {case_id: project_case(result, cases[case_id], case_id) for case_id, result in predictions.items()},
         }
 
     return {
-        "mode": "offline_manual_claim_review", "inference_requests": 0, "reviewer": reviewer,
+        "mode": mode, "inference_requests": 0, "reviewer": reviewer,
         "archive_report_sha256": report_hash, "archive_configuration_sha256": configuration_hash,
         "decisions_sha256": decisions_hash, "arms": projected,
     }

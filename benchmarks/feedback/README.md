@@ -55,3 +55,7 @@ The paired trial tested an instruction to verify independent support for each si
 ## Offline v3 claim-review replay
 
 Two source-only reviewers assigned claim dispositions to the 20 saved validated records from the signal-independence trial. The replay applies the consensus decisions by signal index and preserves the original capture and routing. Its comparison reports supported signals held for review separately from explanatory extras. [Replay protocol and findings](../../docs/Feedback_Interpreter_Claim_Review_Replay_v3.md) · [Case-level comparison](offline_v3_claim_review/comparison.json)
+
+## Offline v3 claim independence and scope trial
+
+Separate blinded reviewers judged claim relationships and proposed scopes on the same 20 validated records. The archived projection keeps flagged claims visible and retains each signal's original evidence and review authority through its capture and index. The scorecard reports visible and unflagged lists separately against the frozen adjudications. [Trial protocol and findings](../../docs/Feedback_Interpreter_Claim_Scope_Trial_v3.md) · [Case-level scorecard](offline_v3_claim_scope_review/comparison.json)
