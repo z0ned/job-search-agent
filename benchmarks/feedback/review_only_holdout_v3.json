@@ -1,0 +1,574 @@
+{
+  "suite_version": "3.0-review-only-holdout",
+  "created_date": "2026-11-19",
+  "purpose": "Fresh synthetic job review scenarios for the review-only feedback interpretation benchmark.",
+  "provenance": {
+    "authorship": "Feedback, employers, posting contexts, and reference judgments were authored for this fixture. The scenarios are fictitious.",
+    "assumptions_source": "benchmarks/feedback/gold_cases_v3.json",
+    "reference_rationale": {
+      "RO3-001": "Two complete statements support opposite reactions to distinct duties. Each applies to its own activity, and the selection supplies no additional preference.",
+      "RO3-002": "The reviewer gave a genuine reaction but supplied no object for it. A useful follow-up asks what prompted the concern without assuming a reason.",
+      "RO3-003": "Leading audits is a clear independent preference. The funding question is a posting detail to check and does not block review of that preference.",
+      "RO3-004": "The only expressed concern is uncertainty about a posting fact. Resolve the schedule question before treating the selection as a preference.",
+      "RO3-005": "The stated certification belongs in profile fact review. The separate statement about coaching independently supports a preference and stays available for review.",
+      "RO3-006": "The reviewer explicitly proposes lowering the confirmed W-2 floor from $75 to $72 per hour for future searches. Route the proposal for separate confirmation. The listing rate is unknown.",
+      "RO3-007": "The structured rate and employment type establish a conflict with the approved $100 hourly 1099 minimum. Report that existing violation through fact review and leave the rule untouched.",
+      "RO3-008": "The first sentence directly states a general career decision. The second independently preserves interest in a particular duty that could occur in other roles.",
+      "RO3-009": "The employer objection and the workload objection stand on their own. The shared title with RO3-008 supplies context but does not justify an additional career signal.",
+      "RO3-010": "Remote delivery gates interest in this specific facilitation duty. The condition applies to running the sessions and does not describe a standalone preference about the posting or future jobs.",
+      "RO3-011": "The reviewer explicitly accepts a quarterly overnight trip and rejects weekly overnight travel. The limits identify two different scopes for the same work-arrangement feature.",
+      "RO3-012": "Preserve the independently supported positive duty and ask about the unresolved reason for rejection. The general concern gives no basis for a negative signal."
+    },
+    "high_risk_routing_selection": "Designated before capture. Includes vague feedback, pure verification, a clear preference with a posting verification question, a profile fact with a separate preference, explicit rule confirmation, and a verified eligibility violation."
+  },
+  "assumptions": {
+    "hard_rules_immutable_without_explicit_change": true,
+    "written_explanation_required_for_both_decisions": true,
+    "batch_approval_before_application": true,
+    "frozen_phase_approval_is_held": true,
+    "unknown_salary_remains_eligible": true,
+    "permanent_base_minimum_usd": 180000,
+    "w2_hourly_minimum_usd": 75,
+    "1099_hourly_minimum_usd": 100,
+    "c2c_hourly_minimum_usd": null
+  },
+  "schema": {
+    "expected_review_status": {
+      "PENDING_APPROVAL": "Clear preference evidence can enter batch approval; nothing applied.",
+      "NEEDS_CLARIFICATION": "Clarification required before proposal approval/application.",
+      "PROFILE_FACT_REVIEW": "Detected statement about verified facts, existing rules, or a proposed hard-rule change; separate path, not learned automatically."
+    },
+    "polarity": [
+      "positive",
+      "negative",
+      "uncertain"
+    ],
+    "strength": [
+      "mild",
+      "strong"
+    ],
+    "dimension": [
+      "career_category",
+      "compensation",
+      "contract_terms",
+      "culture_environment",
+      "employer",
+      "growth_purpose",
+      "industry",
+      "qualifications_fit",
+      "role_responsibilities",
+      "seniority_scope",
+      "work_arrangement"
+    ],
+    "scope_types": [
+      "arrangement",
+      "career_category",
+      "compensation_context",
+      "compensation_transparency",
+      "contract_term",
+      "culture_feature",
+      "employer",
+      "employment_type",
+      "industry",
+      "location_arrangement",
+      "mission",
+      "posting_role",
+      "project_type",
+      "role_feature",
+      "schedule",
+      "seniority_feature",
+      "travel_frequency"
+    ],
+    "expected_signal_qualifiers": {
+      "shape": [
+        {
+          "kind": "string",
+          "value": "string"
+        }
+      ],
+      "meaning": "Optional material scope details. Use the written feedback and structured job facts that identify the referent. Preserve the stated precision and unit."
+    },
+    "expected_signal_condition": "Optional condition text for a separate condition on the preference.",
+    "reference_notes": "Optional reference-only notes about context, verification, or rule evidence."
+  },
+  "high_risk_case_ids": [
+    "RO3-002",
+    "RO3-003",
+    "RO3-004",
+    "RO3-005",
+    "RO3-006",
+    "RO3-007",
+    "RO3-012"
+  ],
+  "test_cases": [
+    {
+      "case_id": "RO3-001",
+      "section": "Mixed preferences",
+      "title": "Discovery interviews and renewal forecasts",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Customer Programs Lead",
+        "employer": "Latchwater Civic"
+      },
+      "decision": "interested",
+      "original_feedback": "I'd be happy to run discovery interviews. I really don't want to own the renewal forecast.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "running discovery interviews",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "discovery_interviews"
+          },
+          "evidence_quote": "I'd be happy to run discovery interviews"
+        },
+        {
+          "dimension": "role_responsibilities",
+          "feature": "owning the renewal forecast",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "renewal_forecast_ownership"
+          },
+          "evidence_quote": "I really don't want to own the renewal forecast"
+        }
+      ],
+      "prohibited_inferences": [
+        "Read the Interested selection as approval of all listed duties.",
+        "Expand renewal forecast ownership to all customer success work."
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "RO3-002",
+      "section": "Clarification",
+      "title": "Unspecified concern",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Implementation Manager",
+        "employer": "Norravane Tools"
+      },
+      "decision": "rejected",
+      "original_feedback": "Hmm. Something about this one doesn't sit right with me.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Assign the concern to culture, work duties, the employer, or the career category."
+      ],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "clarification_question": "What part of the opportunity doesn't sit right with you?",
+      "reference_notes": [
+        {
+          "role": "vague_reaction",
+          "evidence_quote": "Something about this one doesn't sit right with me",
+          "note": "No specific concern is stated."
+        }
+      ]
+    },
+    {
+      "case_id": "RO3-003",
+      "section": "Posting verification",
+      "title": "Accessibility audits with a funding question",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Accessibility Program Lead",
+        "employer": "Fenquill Mobility"
+      },
+      "decision": "interested",
+      "original_feedback": "I'd love to lead the accessibility audits. Can you check whether the position is funded past September?",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "leading accessibility audits",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "accessibility_audit_leadership"
+          },
+          "evidence_quote": "I'd love to lead the accessibility audits"
+        }
+      ],
+      "prohibited_inferences": [
+        "Create a funding preference, a job-security rule, or a confirmed funding fact.",
+        "Treat the funding question as a condition on the audit preference."
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "reference_notes": [
+        {
+          "role": "posting_verification",
+          "evidence_quote": "Can you check whether the position is funded past September?",
+          "note": "Confirm funding beyond the stated month. No result is established by the feedback."
+        }
+      ]
+    },
+    {
+      "case_id": "RO3-004",
+      "section": "Posting verification",
+      "title": "Unclear overnight schedule",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Incident Response Lead",
+        "employer": "Tallowmere Data"
+      },
+      "decision": "rejected",
+      "original_feedback": "I can't tell from the listing if the overnight shift is once in a while or the usual schedule. Can you find out which?",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Read the scheduling question as a dislike of overnight work.",
+        "Assert an overnight frequency or a confirmed eligibility conflict."
+      ],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "clarification_question": "Is the overnight shift a regular part of this job or only occasional?",
+      "reference_notes": [
+        {
+          "role": "posting_verification",
+          "evidence_quote": "I can't tell from the listing if the overnight shift is once in a while or the usual schedule",
+          "note": "Verify whether overnight duty is regular or occasional."
+        }
+      ]
+    },
+    {
+      "case_id": "RO3-005",
+      "section": "Profile facts",
+      "title": "Certification and coaching",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Delivery Enablement Lead",
+        "employer": "Ochrelark Systems"
+      },
+      "decision": "interested",
+      "original_feedback": "My PMP certification is current. I love coaching new team leads.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "coaching new team leads",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "coaching_new_team_leads"
+          },
+          "evidence_quote": "I love coaching new team leads"
+        }
+      ],
+      "prohibited_inferences": [
+        "Apply the certification claim as a verified profile update.",
+        "Infer a preference for certification requirements or for a career in people management."
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "profile_fact_candidate": "The reviewer reports that their PMP certification is current.",
+      "reference_notes": [
+        {
+          "role": "profile_fact",
+          "evidence_quote": "My PMP certification is current",
+          "note": "Current certification is a user-profile claim for review."
+        }
+      ]
+    },
+    {
+      "case_id": "RO3-006",
+      "section": "Eligibility rules",
+      "title": "Explicit W-2 minimum change request",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "title": "Service Design Lead",
+        "employer": "West Gannet Studio"
+      },
+      "decision": "interested",
+      "original_feedback": "They haven't posted a rate. Could we lower my W-2 minimum to $72 an hour for future searches?",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Apply the new W-2 minimum from this feedback.",
+        "Treat $72 per hour as the posting rate or alter any other pay minimum.",
+        "Learn a compensation-transparency preference from the first sentence."
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+      "expected_category_interest_change": false,
+      "profile_fact_candidate": "The reviewer asks to lower the W-2 minimum to $72 per hour for future searches. Separate explicit rule confirmation is required.",
+      "reference_notes": [
+        {
+          "role": "job_fact",
+          "evidence_quote": "They haven't posted a rate",
+          "note": "No offered hourly rate is established."
+        },
+        {
+          "role": "rule_reconsideration",
+          "evidence_quote": "Could we lower my W-2 minimum to $72 an hour for future searches?",
+          "note": "A proposed change to a confirmed rule requires separate confirmation."
+        }
+      ]
+    },
+    {
+      "case_id": "RO3-007",
+      "section": "Eligibility rules",
+      "title": "Confirmed 1099 rate below the existing floor",
+      "job_context": {
+        "employment_type": "1099_contract",
+        "title": "Data Migration Lead",
+        "employer": "Dovekiln Labs",
+        "rate_type": "1099",
+        "hourly_rate_usd": 94
+      },
+      "decision": "rejected",
+      "original_feedback": "They confirmed $94 an hour on a 1099. That's below my existing $100 minimum.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Learn a new compensation preference or minimum.",
+        "Treat the existing threshold as a proposed change."
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+      "expected_category_interest_change": false,
+      "profile_fact_candidate": "The confirmed 1099 rate of $94 per hour is below the existing $100 hourly minimum.",
+      "reference_notes": [
+        {
+          "role": "job_fact",
+          "evidence_quote": "They confirmed $94 an hour on a 1099. That's below my existing $100 minimum",
+          "note": "The structured rate and employment type verify this existing policy conflict."
+        }
+      ]
+    },
+    {
+      "case_id": "RO3-008",
+      "section": "Career scope",
+      "title": "Leaving product operations as a career",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Product Operations Manager",
+        "employer": "Redfern Span Analytics"
+      },
+      "decision": "rejected",
+      "original_feedback": "I'm done pursuing product operations as a career. I do still like planning launch rehearsals.",
+      "expected_interpretations": [
+        {
+          "dimension": "career_category",
+          "feature": "product operations as a career",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "career_category",
+            "value": "product_operations"
+          },
+          "evidence_quote": "I'm done pursuing product operations as a career"
+        },
+        {
+          "dimension": "role_responsibilities",
+          "feature": "planning launch rehearsals",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "launch_rehearsal_planning"
+          },
+          "evidence_quote": "I do still like planning launch rehearsals"
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer that the reviewer dislikes this employer or the launch rehearsal duty.",
+        "Expand the career preference to all product roles."
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": true
+    },
+    {
+      "case_id": "RO3-009",
+      "section": "Career scope",
+      "title": "Employer and workload objections",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Product Operations Manager",
+        "employer": "Cairnquill Systems"
+      },
+      "decision": "rejected",
+      "original_feedback": "I wouldn't apply to Cairnquill Systems again. And I don't want to spend all day reconciling release checklists.",
+      "expected_interpretations": [
+        {
+          "dimension": "employer",
+          "feature": "Cairnquill Systems",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "employer",
+            "value": "cairnquill_systems"
+          },
+          "evidence_quote": "I wouldn't apply to Cairnquill Systems again"
+        },
+        {
+          "dimension": "role_responsibilities",
+          "feature": "reconciling release checklists all day",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "role_feature",
+            "value": "release_checklist_reconciliation"
+          },
+          "evidence_quote": "I don't want to spend all day reconciling release checklists",
+          "qualifiers": [
+            {
+              "kind": "time_share",
+              "value": "all day"
+            }
+          ]
+        }
+      ],
+      "prohibited_inferences": [
+        "Infer a product operations career downgrade from the posting title.",
+        "Expand an all-day workload objection to any time spent on a release checklist."
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "RO3-010",
+      "section": "Conditional preferences",
+      "title": "Remote facilitation of planning sessions",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Portfolio Workshop Lead",
+        "employer": "Merewhorl Works"
+      },
+      "decision": "interested",
+      "original_feedback": "I'd be interested in facilitating the planning sessions, but only if I can run them remotely.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "facilitating planning sessions",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "planning_session_facilitation"
+          },
+          "evidence_quote": "I'd be interested in facilitating the planning sessions, but only if I can run them remotely",
+          "condition": "only if I can run them remotely"
+        }
+      ],
+      "prohibited_inferences": [
+        "Learn a general remote-work preference.",
+        "Record unconditional interest in facilitating the planning sessions."
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "RO3-011",
+      "section": "Qualified preferences",
+      "title": "Quarterly and weekly overnight travel",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Field Enablement Manager",
+        "employer": "Amberkestrel Machinery"
+      },
+      "decision": "rejected",
+      "original_feedback": "One overnight trip a quarter works for me. Weekly overnight travel would be a dealbreaker.",
+      "expected_interpretations": [
+        {
+          "dimension": "work_arrangement",
+          "feature": "overnight travel once a quarter",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "travel_frequency",
+            "value": "overnight_travel"
+          },
+          "evidence_quote": "One overnight trip a quarter works for me",
+          "qualifiers": [
+            {
+              "kind": "frequency",
+              "value": "one trip a quarter"
+            },
+            {
+              "kind": "duration",
+              "value": "overnight"
+            }
+          ]
+        },
+        {
+          "dimension": "work_arrangement",
+          "feature": "weekly overnight travel",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "travel_frequency",
+            "value": "overnight_travel"
+          },
+          "evidence_quote": "Weekly overnight travel would be a dealbreaker",
+          "qualifiers": [
+            {
+              "kind": "frequency",
+              "value": "weekly"
+            },
+            {
+              "kind": "duration",
+              "value": "overnight"
+            }
+          ]
+        }
+      ],
+      "prohibited_inferences": [
+        "Generalize to all overnight travel or all travel.",
+        "Convert a strongly expressed review preference into a confirmed hard rule."
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "RO3-012",
+      "section": "Clarification",
+      "title": "Clear intake duty with unresolved concern",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Service Operations Lead",
+        "employer": "Birchvein Services"
+      },
+      "decision": "rejected",
+      "original_feedback": "I like the chance to build the intake process from scratch. The rest of the job gives me pause, but I can't put my finger on why.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "building an intake process from scratch",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "building_intake_process_from_scratch"
+          },
+          "evidence_quote": "I like the chance to build the intake process from scratch"
+        }
+      ],
+      "prohibited_inferences": [
+        "Turn the unspecified concern into a negative preference for a particular duty, this employer, or the career category.",
+        "Drop the supported positive reaction to building an intake process from scratch."
+      ],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "clarification_question": "What about the rest of this job gives you pause?",
+      "reference_notes": [
+        {
+          "role": "vague_reaction",
+          "evidence_quote": "The rest of the job gives me pause, but I can't put my finger on why",
+          "note": "The concern is material to the reaction and the object remains unspecified."
+        }
+      ]
+    }
+  ]
+}

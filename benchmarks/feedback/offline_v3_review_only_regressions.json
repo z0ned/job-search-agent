@@ -1,0 +1,273 @@
+{
+  "cases": {
+    "FC3-002": {
+      "changed_fields": [],
+      "expected_route": "PENDING_APPROVAL",
+      "hard_action": "UNCHANGED",
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [],
+        "joined_employer_exception": false,
+        "new_scope_findings": []
+      },
+      "routes": [
+        "PENDING_APPROVAL",
+        "PENDING_APPROVAL"
+      ],
+      "signal_counts": [
+        1,
+        1
+      ],
+      "source_file": "benchmarks/feedback/live_v3_focused_context_trial/pass-1/focused.proposals.json",
+      "source_file_sha256": "d2d2455a53b7fed9a2f8e720a8be4c592b8d79cf646998febc0c77dc88fd21d2",
+      "validation_issue_counts": [
+        0,
+        0
+      ]
+    },
+    "FC3-004": {
+      "changed_fields": [],
+      "expected_route": "NEEDS_CLARIFICATION",
+      "hard_action": "UNCHANGED",
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [],
+        "joined_employer_exception": false,
+        "new_scope_findings": []
+      },
+      "routes": [
+        "PENDING_APPROVAL",
+        "PENDING_APPROVAL"
+      ],
+      "signal_counts": [
+        1,
+        1
+      ],
+      "source_file": "benchmarks/feedback/live_v3_focused_context_trial/pass-1/focused.proposals.json",
+      "source_file_sha256": "d2d2455a53b7fed9a2f8e720a8be4c592b8d79cf646998febc0c77dc88fd21d2",
+      "validation_issue_counts": [
+        0,
+        0
+      ]
+    },
+    "FH3-002": {
+      "changed_fields": [],
+      "expected_route": "PROFILE_FACT_REVIEW",
+      "hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [],
+        "joined_employer_exception": false,
+        "new_scope_findings": []
+      },
+      "routes": [
+        "PROFILE_FACT_REVIEW",
+        "PROFILE_FACT_REVIEW"
+      ],
+      "signal_counts": [
+        1,
+        1
+      ],
+      "source_file": "benchmarks/feedback/live_v3_reaction_accounting_trial/pass-1/accounting.proposals.json",
+      "source_file_sha256": "0922258f5dd1c6ca07b2a967c30057322f8a0e9cf643167001ed572dda04f750",
+      "validation_issue_counts": [
+        0,
+        0
+      ]
+    },
+    "FH3-010": {
+      "changed_fields": [
+        "condition_recoveries",
+        "interpretations"
+      ],
+      "expected_route": "PENDING_APPROVAL",
+      "hard_action": "UNCHANGED",
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [
+          {
+            "clause_index": 0,
+            "evidence": {
+              "end": 85,
+              "origin": "feedback",
+              "quote": "provided it takes at most one shift per week",
+              "role": "condition",
+              "source_revision": "1e0a4e6b082ebbf11c6c54d4c6fc82b33c12fe311284a7b92ff2fe83fb0926ef",
+              "start": 41
+            },
+            "signal_index": 0
+          }
+        ],
+        "joined_employer_exception": false,
+        "new_scope_findings": []
+      },
+      "routes": [
+        "PENDING_APPROVAL",
+        "PENDING_APPROVAL"
+      ],
+      "signal_counts": [
+        1,
+        1
+      ],
+      "source_file": "benchmarks/feedback/live_v3_extraction_trial/candidate.proposals.json",
+      "source_file_sha256": "c156faf7313649086875bebecdd2d95f1cbc5e1a8fe749ec29e52eac32acc3c2",
+      "validation_issue_counts": [
+        0,
+        0
+      ]
+    },
+    "FI-042": {
+      "changed_fields": [
+        "clauses",
+        "interpretations",
+        "validation_issues"
+      ],
+      "expected_route": "PENDING_APPROVAL",
+      "hard_action": "UNCHANGED",
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [],
+        "joined_employer_exception": true,
+        "new_scope_findings": []
+      },
+      "routes": [
+        "PENDING_APPROVAL",
+        "PENDING_APPROVAL"
+      ],
+      "signal_counts": [
+        1,
+        2
+      ],
+      "source_file": "benchmarks/feedback/live_v3_gold/pass-1.proposals.json",
+      "source_file_sha256": "1f0ba8ed30fcb687bc93cd2ff93b3f6536be5561385cbd304b5a4498daf6338d",
+      "validation_issue_counts": [
+        1,
+        0
+      ]
+    },
+    "FT-002": {
+      "changed_fields": [
+        "clarification_question",
+        "interpretations",
+        "review_status",
+        "validation_issues"
+      ],
+      "expected_route": "PENDING_APPROVAL",
+      "hard_action": "UNCHANGED",
+      "repairs": {
+        "coalesced_intensity_clause_indices": [
+          0
+        ],
+        "condition_recoveries": [],
+        "joined_employer_exception": false,
+        "new_scope_findings": []
+      },
+      "routes": [
+        "NEEDS_CLARIFICATION",
+        "PENDING_APPROVAL"
+      ],
+      "signal_counts": [
+        0,
+        1
+      ],
+      "source_file": "benchmarks/feedback/live_v3_extraction_independence_trial/treatment.proposals.json",
+      "source_file_sha256": "e4ccb59badac0eb9a3b111eb38a19895360b89675365870e19c3892e077127f4",
+      "validation_issue_counts": [
+        1,
+        0
+      ]
+    },
+    "FT-003": {
+      "changed_fields": [
+        "condition_recoveries",
+        "interpretations"
+      ],
+      "expected_route": "PENDING_APPROVAL",
+      "hard_action": "UNCHANGED",
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [
+          {
+            "clause_index": 0,
+            "evidence": {
+              "end": 102,
+              "origin": "feedback",
+              "quote": "as long as I had to do them no more than twice per month",
+              "role": "condition",
+              "source_revision": "7fcd3fae29cbea64bb08cfcea276704bde05dd3e509b982cdfb64543ed45bd02",
+              "start": 46
+            },
+            "signal_index": 0
+          }
+        ],
+        "joined_employer_exception": false,
+        "new_scope_findings": []
+      },
+      "routes": [
+        "PENDING_APPROVAL",
+        "PENDING_APPROVAL"
+      ],
+      "signal_counts": [
+        1,
+        1
+      ],
+      "source_file": "benchmarks/feedback/live_v3_extraction_trial/candidate.proposals.json",
+      "source_file_sha256": "c156faf7313649086875bebecdd2d95f1cbc5e1a8fe749ec29e52eac32acc3c2",
+      "validation_issue_counts": [
+        0,
+        0
+      ]
+    },
+    "FT-004": {
+      "changed_fields": [],
+      "expected_route": "PENDING_APPROVAL",
+      "hard_action": "UNCHANGED",
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [],
+        "joined_employer_exception": false,
+        "new_scope_findings": []
+      },
+      "routes": [
+        "PENDING_APPROVAL",
+        "PENDING_APPROVAL"
+      ],
+      "signal_counts": [
+        1,
+        1
+      ],
+      "source_file": "benchmarks/feedback/live_v3_extraction_independence_trial/treatment.proposals.json",
+      "source_file_sha256": "e4ccb59badac0eb9a3b111eb38a19895360b89675365870e19c3892e077127f4",
+      "validation_issue_counts": [
+        1,
+        1
+      ]
+    },
+    "FT-005": {
+      "changed_fields": [],
+      "expected_route": "PENDING_APPROVAL",
+      "hard_action": "UNCHANGED",
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [],
+        "joined_employer_exception": false,
+        "new_scope_findings": []
+      },
+      "routes": [
+        "PENDING_APPROVAL",
+        "PENDING_APPROVAL"
+      ],
+      "signal_counts": [
+        1,
+        1
+      ],
+      "source_file": "benchmarks/feedback/live_v3_extraction_independence_trial/treatment.proposals.json",
+      "source_file_sha256": "e4ccb59badac0eb9a3b111eb38a19895360b89675365870e19c3892e077127f4",
+      "validation_issue_counts": [
+        0,
+        0
+      ]
+    }
+  },
+  "inference_requests": 0
+}
