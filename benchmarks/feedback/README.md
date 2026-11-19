@@ -77,3 +77,7 @@ The zero-request replay audits the earlier split classifier against the saved ev
 ## Live v3 focused context check
 
 The two-pass trial presents one exact quote and the original feedback per request. The assembled proposals go through the existing validator. The capture records all 22 quote decisions, assembled proposals, validated case outcomes, and independent adjudications. [Trial protocol and findings](../../docs/Feedback_Interpreter_Focused_Context_Trial_v3.md) · [Semantic scorecard](live_v3_focused_context_trial/semantic-report.json)
+
+## Live v3 review-only benchmark
+
+The baseline and candidate use identical one-call model inputs on 12 new full comments over two passes. The candidate applies the verified deterministic repairs after inference. The archive includes the 48 request traces and outcomes, masked case-level adjudications, review workload counts, and an offline comparison of both validators on the same saved proposals. [Benchmark protocol and findings](../../docs/Feedback_Interpreter_Review_Only_Benchmark_v3.md) · [Semantic scorecard](live_v3_review_only_trial/semantic-report.json) · [Archived regression checks](offline_v3_review_only_regressions.json)

@@ -28,3 +28,33 @@ Run from the repository root with a new output directory.
 PYTHONPATH=src python -m job_search_agent.feedback_review_only_trial_v3 \
   --output /tmp/feedback-v3-review-only
 ```
+
+## Results
+
+**The candidate and baseline tied on both fresh passes, and both missed the agreed gates.** Each had 11/12 for semantic precision and recall on each pass. The two failures were a generic clarification question and a missing limit in a travel preference. The deterministic repairs produced no material output changes when applied to each of the 48 captured proposals. [Semantic scorecard](../benchmarks/feedback/live_v3_review_only_trial/semantic-report.json) · [Same-proposal replay](../benchmarks/feedback/live_v3_review_only_trial/deterministic-replay.json)
+
+The model settings, case references, protocol, and candidate were frozen at `001a8db78df18aa2fa3fefcebea0a831b68e7447` before inference. All 48 requests completed without API or execution errors in 107.18 seconds of summed model time. Request traces confirmed that the two arms used identical source, prompt, and schema. Four independent reviewers scored the raw and validated outputs with arm identity masked. One grounding disagreement for the identical travel output was reconciled against the original scope in both passes. The source evidence and original reviewer judgments are retained. [Configuration](../benchmarks/feedback/live_v3_review_only_trial/configuration.json) · [Request trace](../benchmarks/feedback/live_v3_review_only_trial/request-trace.json) · [Adjudications](../benchmarks/feedback/live_v3_review_only_trial/adjudications.json) · [Reconciliation](../benchmarks/feedback/live_v3_review_only_trial/review-reconciliation.json)
+
+| Measure across both passes | Baseline | Candidate |
+| --- | ---: | ---: |
+| Raw and validated semantic precision | 22/24 | 22/24 |
+| Raw and validated semantic recall | 22/24 | 22/24 |
+| Missed reference signals | 2 | 2 |
+| Extra signals outside the reference match | 2 | 2 |
+| Clear cases with all dimension and scope details correct | 10/12 | 10/12 |
+| Fully correct end-to-end records | 20/24 | 20/24 |
+| Correct route labels | 24/24 | 24/24 |
+| Adequate route resolutions | 22/24 | 22/24 |
+| Correct hard-rule actions | 24/24 | 24/24 |
+| Cases requiring further review | 12/24 | 12/24 |
+| Validation rejections, unsupported career downgrades, or unauthorized hard-rule actions and mutations | 0 | 0 |
+| Passes clearing all gates | 0/2 | 0/2 |
+
+The two misses and two extras per arm come from two instances of the same incomplete travel scope. Each instance is a missed exact semantic match and an extra, broader proposal. Each arm sent six records to clarification and six to profile or fact review, including two separate rule confirmations. The remaining 12 records went to routine approval, and all proposals stayed held. Exact-string case matching returned 4/12 each pass. Literal and registered-identity matching each credited zero signals. The independent semantic review is the accuracy measure for the agreed gates. [Capture diagnostics](../benchmarks/feedback/live_v3_review_only_trial/report.json)
+
+| Case | Failure in each arm and pass |
+| --- | --- |
+| RO3-004 | The model identified a posting verification about whether overnight work was occasional or the usual schedule. The validator kept that detail. The routing fallback asked what had influenced the user's reaction, losing the specific question. This failed the special-route and high-risk resolution criteria. |
+| RO3-011 | “One overnight trip a quarter works for me” became an acceptance of overnight travel with `frequency: a quarter`. The exact source quote remained attached. The proposal omitted the one-trip limit, so it failed the semantic and clear-scope match. The separate weekly overnight objection was correct. |
+
+The fresh benchmark supports keeping the interpreter review-only. It provides specific evidence about two boundaries of the existing pipeline. Passing a source-grounded verification question to the review route would address the first. Preserving quantity alongside frequency needs a separate scope check. The tested deterministic repairs remain useful on their archived controls. This trial provides no fresh evidence that they improve end-to-end results, and automatic learning remains on hold.

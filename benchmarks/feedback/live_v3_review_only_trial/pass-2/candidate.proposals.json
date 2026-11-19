@@ -1,0 +1,363 @@
+{
+  "RO3-001": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I'd be happy to run discovery interviews.",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "I really don't want to own the renewal forecast.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Running discovery interviews",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "run discovery interviews",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Owning the renewal forecast",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "own the renewal forecast",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "RO3-002": {
+    "clauses": [
+      {
+        "detail": "What specifically about this opportunity felt off to you?",
+        "quote": "Hmm. Something about this one doesn't sit right with me.",
+        "role": "vague_reaction"
+      }
+    ],
+    "signals": []
+  },
+  "RO3-003": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I'd love to lead the accessibility audits.",
+        "role": "preference"
+      },
+      {
+        "detail": "Whether the role's funding continues beyond September.",
+        "quote": "Can you check whether the position is funded past September?",
+        "role": "posting_verification"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Lead accessibility audits",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "leading the accessibility audits",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "RO3-004": {
+    "clauses": [
+      {
+        "detail": "Verify whether the overnight shift is occasional or the standard schedule.",
+        "quote": "I can't tell from the listing if the overnight shift is once in a while or the usual schedule. Can you find out which?",
+        "role": "posting_verification"
+      }
+    ],
+    "signals": []
+  },
+  "RO3-005": {
+    "clauses": [
+      {
+        "detail": "Current PMP certification.",
+        "quote": "My PMP certification is current.",
+        "role": "profile_fact"
+      },
+      {
+        "detail": "Positive reaction to coaching new team leads.",
+        "quote": "I love coaching new team leads.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Coaching new team leads",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "coaching new team leads",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "RO3-006": {
+    "clauses": [
+      {
+        "detail": "Compensation for this opportunity is not disclosed.",
+        "quote": "They haven't posted a rate.",
+        "role": "job_fact"
+      },
+      {
+        "detail": "User asks to reconsider the confirmed W-2 hourly minimum rule to 72 USD/hour for future searches.",
+        "quote": "Could we lower my W-2 minimum to $72 an hour for future searches?",
+        "role": "rule_reconsideration"
+      }
+    ],
+    "signals": []
+  },
+  "RO3-007": {
+    "clauses": [
+      {
+        "detail": "Reported pay and employment type for this opportunity.",
+        "quote": "They confirmed $94 an hour on a 1099.",
+        "role": "job_fact"
+      },
+      {
+        "detail": "Reported conflict with the user's existing minimum for 1099 hourly pay.",
+        "quote": "That's below my existing $100 minimum.",
+        "role": "job_fact"
+      }
+    ],
+    "signals": []
+  },
+  "RO3-008": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I'm done pursuing product operations as a career.",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "I do still like planning launch rehearsals.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Product operations career path",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "product operations",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Planning launch rehearsals",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "planning launch rehearsals",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "RO3-009": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I wouldn't apply to Cairnquill Systems again.",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "I don't want to spend all day reconciling release checklists.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Does not want to apply to Cairnquill Systems again",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "career_context",
+              "quote": "apply to Cairnquill Systems again",
+              "source": "feedback",
+              "value": "this applies to applying again"
+            }
+          ],
+          "referent": "Cairnquill Systems",
+          "type": "employer"
+        },
+        "strength": "strong"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Avoid spending all day reconciling release checklists",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "time_share",
+              "quote": "all day",
+              "source": "feedback",
+              "value": "all day"
+            }
+          ],
+          "referent": "reconciling release checklists",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "RO3-010": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I'd be interested in facilitating the planning sessions, but only if I can run them remotely.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": {
+          "kind": "delivery_mode_available",
+          "quote": "only if I can run them remotely",
+          "value": "can run them remotely"
+        },
+        "dimension": "role_responsibilities",
+        "display_label": "Interested in facilitating planning sessions",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "facilitating the planning sessions",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "RO3-011": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "One overnight trip a quarter works for me.",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "Weekly overnight travel would be a dealbreaker.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Accepts occasional overnight travel",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "frequency",
+              "quote": "a quarter",
+              "source": "feedback",
+              "value": "a quarter"
+            }
+          ],
+          "referent": "overnight travel",
+          "type": "travel_frequency"
+        },
+        "strength": "mild"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Rejects weekly overnight travel",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "frequency",
+              "quote": "Weekly",
+              "source": "feedback",
+              "value": "weekly"
+            }
+          ],
+          "referent": "overnight travel",
+          "type": "travel_frequency"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "RO3-012": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I like the chance to build the intake process from scratch.",
+        "role": "preference"
+      },
+      {
+        "detail": "What specifically about the rest of the job gave you pause?",
+        "quote": "The rest of the job gives me pause, but I can't put my finger on why.",
+        "role": "vague_reaction"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Building the intake process from scratch",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "build the intake process from scratch",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ]
+  }
+}

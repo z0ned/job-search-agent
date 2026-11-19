@@ -1,0 +1,365 @@
+{
+  "arms": {
+    "baseline": {
+      "recover_explicit_conditions": false
+    },
+    "candidate": {
+      "coalesce_anchored_duplicate_intensity": true,
+      "read_only_scope_findings": true,
+      "recover_explicit_conditions": true,
+      "repair_grounded_employer_context": true
+    }
+  },
+  "case_input_sha256": {
+    "RO3-001": "ba437ffed443a40a84d7124478ee1f0dab42bd2f89a0a61a6e226ba888db8105",
+    "RO3-002": "2dbdccd969a52ce57df09d3ac51a42b734e1c2a94bdcc3d400c19be4d88b253a",
+    "RO3-003": "ca7e49eb07860bad22b4abdfa87313d2d7881f149b6a81b4faad2ca129e93f08",
+    "RO3-004": "01ce92e476bf9a18de7deef112f17cc384e3b65bd7872cd4f1e4a0d0f9d6941f",
+    "RO3-005": "046ea403d6583f9244e835c30bd0a667ea4c8709f1238787db8c392f37fd119f",
+    "RO3-006": "d759cae4f7c2a9467613a2de2fbbba16c8ef219d39c77aa388af4f83ca9cf189",
+    "RO3-007": "46caea72bef8582f5ec6df961028996f2680e7cb770344e7f6ece072389496ab",
+    "RO3-008": "17e75fbd8ad8b9dda7da22010dd76d12f7ee49c8f40fd93c75c6d950dce58c7d",
+    "RO3-009": "12839891edfe39e9ef581086274591148504c35b63888e1ecd8d789eee30064b",
+    "RO3-010": "734c80e80ca2fb05e08cd69e88a4deccae37100aa89a1076ab325d1ebd03c4e9",
+    "RO3-011": "03e26a50b9daca11511ed91487c9797f9d7c38580151940cc5ae95c540caf6c9",
+    "RO3-012": "5b1c63c6526da50cd603b868be2b72196c2f3a84fd3b61d84bbc19b37f6b7977"
+  },
+  "expected_requests": 48,
+  "fixtures": {
+    "fresh": {
+      "file": "benchmarks/feedback/review_only_holdout_v3.json",
+      "sha256": "7eabb327ec7aed7b61e9a0f6ade44681ed747abba9db7f4c733af7c17c3f75b4",
+      "version": "3.0-review-only-holdout"
+    },
+    "gold": {
+      "file": "benchmarks/feedback/gold_cases_v3.json",
+      "sha256": "600677336c0ddcbc6dfe67a2532426a083300661100d8a8ea507680903177bbe",
+      "version": "3.0-gold"
+    }
+  },
+  "hard_rules_sha256": "949c019e2bd8122cbf7d05b6d1227e2302fe2437416ee995a647890dffbeb6c4",
+  "high_risk_case_ids": [
+    "RO3-002",
+    "RO3-003",
+    "RO3-004",
+    "RO3-005",
+    "RO3-006",
+    "RO3-007",
+    "RO3-012"
+  ],
+  "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+  "mode": "review_only_end_to_end_trial",
+  "model": "gpt-5.4-2026-03-05",
+  "planned_requests": [
+    {
+      "arm": "baseline",
+      "case_id": "RO3-001",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-001",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-002",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-002",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-003",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-003",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-004",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-004",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-005",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-005",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-006",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-006",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-007",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-007",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-008",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-008",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-009",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-009",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-010",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-010",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-011",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-011",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-012",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-012",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-001",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-001",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-002",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-002",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-003",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-003",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-004",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-004",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-005",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-005",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-006",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-006",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-007",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-007",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-008",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-008",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-009",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-009",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-010",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-010",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-011",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-011",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "baseline",
+      "case_id": "RO3-012",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "arm": "candidate",
+      "case_id": "RO3-012",
+      "pass_number": 2,
+      "stage": "classifier"
+    }
+  ],
+  "python_version": "3.12.14",
+  "response_schema_name": "feedback_extraction_v3",
+  "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+  "source_sha256": {
+    "feedback.py": "105f23392a2358e53db8699706ff7b7f14dd12a57075f86d6bc8cf3efe38db01",
+    "feedback_autonomy_review_v3.py": "b918d76b1ddc78fcd8bd3e5851ff411e6850158ca96cbb3e93f8cf9e2ff11795",
+    "feedback_conditions_v3.py": "089550696cbe0cb0a7e82f3e21689a150cccb625d92b051b0201b8a50a1bfbb9",
+    "feedback_employer_context_repair_v3.py": "77a7e27be66ee3094664a8bb3e153082e25cfa5f91c396045572ed9a6f4af0bd",
+    "feedback_enthusiasm_scope_v3.py": "a9af48018de711d037dd0fea4a3b43032ac3ba1932f18ad0f6661c5ebc93ae32",
+    "feedback_evidence_checks_v3.py": "05fbe3ec06285ae475c4f151673893fe78680d46eb717df45a3ddcd689ae4415",
+    "feedback_extraction_v3.py": "a7697c6a9bca257f85b3f88c6813c9563855198f061fb4e6a89a7373007bfce1",
+    "feedback_intensity_repair_v3.py": "ca4ff9ba3dddbec7d3aa214924a70c03f50cb7395cd8ace212bbb47f824384ff",
+    "feedback_replay_v3.py": "82f56979c4b4dd624e1b1d4973c3fc45d78ed07eb466c9a7824e56c3413a6cf7",
+    "feedback_review_only_trial_v3.py": "0176096fc3e37b079bca4308fecbc1a9e9e96e2a8d84dce0d8abe20f28f6f6a3",
+    "feedback_rules_v3.py": "c9b20f588a946a23fbe8064052b8f190710c602917272a5e4a533d08307b771b",
+    "feedback_taxonomy.py": "a8753ce50757a97550932f4e2a45f5be0d897a9332355d4c95b68f116377ef62",
+    "feedback_v3.py": "6f48aaec35bec351d293a1559c34024cdeb0e068daaf675f10f06dbac285b2b2",
+    "feedback_validation_repair_trial_v3.py": "581300d6a4e8abbae1138c90ebe9d55085c7afa6e7538ffc7d23438c8adba7e4"
+  },
+  "started_at_utc": "2026-11-19T23:47:46+00:00",
+  "temperature": 0.1,
+  "validator_prompt_version_field": "feedback-interpretation-v3.0"
+}

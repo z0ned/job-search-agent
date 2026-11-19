@@ -1,0 +1,1183 @@
+{
+  "capture_report_sha256": "d43f65a54c67b856836f8df94535c1764d37b4209183edba42b777d3a0753d21",
+  "configuration_sha256": "2351b0b0373d88781965f3aeca91f411eb03b977c7eb986edb1582e1593b8dfd",
+  "masked_packets_sha256": {
+    "review-pass-1-part-1.json": "10896aa951e7797682549ac9d5fb1883322137ae58198ef796d6236be3b3b098",
+    "review-pass-1-part-2.json": "53af00718b2fa3156bc008e69180ba939dae40653f8943268f7fee8a2d11350e",
+    "review-pass-2-part-1.json": "af5648bdc5c02dcd45099c9677049a343b614c844bac0eb69dd57a45ef67a7e0",
+    "review-pass-2-part-2.json": "9bf735a02a555445b2c4ffcdc933535d395cef0ff5a9f9289c701c44eb01fbd6"
+  },
+  "passes": {
+    "1": {
+      "artifacts": {
+        "baseline": {
+          "raw_sha256": "7c1e642b242b4b21ac2131038ad90956253bb241367c2d18f1f6e9187fe24ee6",
+          "validated_sha256": "2eb94c4c061fd5f497ba46a1c038060f2f5d121050cf564ebcfbc064630d3399"
+        },
+        "candidate": {
+          "raw_sha256": "a8ad734f2415cd53ebe5ce0121d5800c726363a823c2e83977a66b8beaf8bff0",
+          "validated_sha256": "00ffa187814dd9f11fa261ed2eac10d602350e3fd8f71ea4604c7ccf9f94f20f"
+        }
+      },
+      "mask": {
+        "RO3-001": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RO3-002": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RO3-003": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RO3-004": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RO3-005": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RO3-006": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RO3-007": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RO3-008": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RO3-009": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RO3-010": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RO3-011": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RO3-012": {
+          "A": "baseline",
+          "B": "candidate"
+        }
+      },
+      "repairs_sha256": "90b03ca29d802e94ba78e0b6ae2a864cef88bbb43d8feaefb57bd6cdd647b80d",
+      "verdicts": {
+        "RO3-001": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both role-feature preferences retain their polarity, strength, and scope.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both role-feature preferences retain their polarity, strength, and scope.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-002": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The question asks the reviewer to identify the unspecified concern.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The question asks the reviewer to identify the unspecified concern.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-003": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The audit preference is unconditional. The posting-verification clause retains the question about funding past September.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The audit preference is unconditional. The posting-verification clause retains the question about funding past September.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-004": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The posting-verification clause identifies the schedule issue, but the clarification question asks generally about the reaction and omits whether overnight work is regular or occasional.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The posting-verification clause identifies the schedule issue, but the clarification question asks generally about the reaction and omits whether overnight work is regular or occasional.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-005": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The coaching preference is preserved, and the current PMP certification is recorded as a candidate for profile review.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The coaching preference is preserved, and the current PMP certification is recorded as a candidate for profile review.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-006": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The $72-per-hour W-2 minimum proposal applies to future searches and is held for separate explicit confirmation. The posting rate is unknown.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The $72-per-hour W-2 minimum proposal applies to future searches and is held for separate explicit confirmation. The posting rate is unknown.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-007": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The exact job facts and confirmed 1099 rate support the reported conflict with the existing $100 hourly minimum. The profile fact captures that conflict and no preference signal is emitted.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The exact job facts and confirmed 1099 rate support the reported conflict with the existing $100 hourly minimum. The profile fact captures that conflict and no preference signal is emitted.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-008": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The strongly negative product operations career preference and mild positive launch rehearsal planning preference are both independently supported and held for approval.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The strongly negative product operations career preference and mild positive launch rehearsal planning preference are both independently supported and held for approval.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-009": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The employer objection and all-day checklist reconciliation objection are independently grounded. The time-share limit is explicit.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The employer objection and all-day checklist reconciliation objection are independently grounded. The time-share limit is explicit.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-010": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The narrow duty preference retains the necessary condition that the reviewer can facilitate the sessions remotely, with the condition anchored to the feedback.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The narrow duty preference retains the necessary condition that the reviewer can facilitate the sessions remotely, with the condition anchored to the feedback.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-011": {
+          "A": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": false,
+            "notes": "The weekly overnight rejection is equivalent, with overnight explicit in the referent. The positive label says occasional overnight travel and its frequency qualifier says only a quarter. The signal drops the explicit one-trip count and broadens the positive scope beyond what the exact evidence supports.",
+            "raw_equivalent_pairs": [
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": false,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": false,
+            "notes": "The weekly overnight rejection is equivalent, with overnight explicit in the referent. The positive label says occasional overnight travel and its frequency qualifier says only a quarter. The signal drops the explicit one-trip count and broadens the positive scope beyond what the exact evidence supports.",
+            "raw_equivalent_pairs": [
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": false,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-012": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The positive from-scratch intake duty is independently grounded. The clarification directly asks what about the remaining job caused concern and leaves its object open.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The positive from-scratch intake duty is independently grounded. The clarification directly asks what about the remaining job caused concern and leaves its object open.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        }
+      }
+    },
+    "2": {
+      "artifacts": {
+        "baseline": {
+          "raw_sha256": "7be87d5b61f2509c6cc24f833319a53401fa3c4e3e40c5bf3c0c33842c3d4375",
+          "validated_sha256": "bef8ec8b6f397e96c50b68d35f4e61e726971e8e4dd23f802675507c977edc5b"
+        },
+        "candidate": {
+          "raw_sha256": "0cc34728992c7cc3413646a637b4346ad6ea2fba2427cbc787f4abda2bbc4413",
+          "validated_sha256": "71c995064bcd57959612fedf9b8aa757c4e606cdb250abcac01af885fbee5a07"
+        }
+      },
+      "mask": {
+        "RO3-001": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RO3-002": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RO3-003": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RO3-004": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RO3-005": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RO3-006": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RO3-007": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RO3-008": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RO3-009": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RO3-010": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RO3-011": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RO3-012": {
+          "A": "candidate",
+          "B": "baseline"
+        }
+      },
+      "repairs_sha256": "90b03ca29d802e94ba78e0b6ae2a864cef88bbb43d8feaefb57bd6cdd647b80d",
+      "verdicts": {
+        "RO3-001": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The two preferences preserve the specific duties and opposite polarities. Both are grounded in the cited clauses and held for approval.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The two preferences preserve the specific duties and opposite polarities. Both are grounded in the cited clauses and held for approval.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-002": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The question asks the reviewer to identify the unspecified concern. The output assigns no specific preference.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The question asks the reviewer to identify the unspecified concern. The output assigns no specific preference.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-003": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The audit leadership preference remains unconditional. The posting verification detail asks whether funding continues past September and records no funding outcome.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The audit leadership preference remains unconditional. The posting verification detail asks whether funding continues past September and records no funding outcome.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-004": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The posting verification clause identifies the right issue. The returned clarification question asks generally about the reviewer's reaction and omits the distinction between regular and occasional overnight duty.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The posting verification clause identifies the right issue. The returned clarification question asks generally about the reviewer's reaction and omits the distinction between regular and occasional overnight duty.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-005": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The current PMP certification is captured as a self-reported candidate for profile review. The coaching preference retains its specific scope and is held for approval.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The current PMP certification is captured as a self-reported candidate for profile review. The coaching preference retains its specific scope and is held for approval.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-006": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The candidate preserves the proposed W-2 minimum of $72 per hour for future searches. The action requires separate explicit confirmation and records no mutation or posted rate.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The candidate preserves the proposed W-2 minimum of $72 per hour for future searches. The action requires separate explicit confirmation and records no mutation or posted rate.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-007": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The confirmed 1099 rate and existing floor support the specific profile fact and advisory eligibility report. Both outputs leave preference signals empty.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The confirmed 1099 rate and existing floor support the specific profile fact and advisory eligibility report. Both outputs leave preference signals empty.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-008": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The feedback expressly supports the product operations career downgrade and the separate interest in planning launch rehearsals. Both signals are held for review.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The feedback expressly supports the product operations career downgrade and the separate interest in planning launch rehearsals. Both signals are held for review.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-009": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The employer objection applies to Cairnquill Systems, and the checklist objection is limited to an all-day workload.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The reapplication qualifier restates the grounded objection to Cairnquill Systems. The checklist objection is limited to an all-day workload.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-010": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The condition preserves interest in facilitating the planning sessions only when the user can run those sessions remotely.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The condition preserves interest in facilitating the planning sessions only when the user can run those sessions remotely.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-011": {
+          "A": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": false,
+            "notes": "The evidence supports the coarser positive reading of occasional overnight travel on a quarterly cadence. The signal omits the explicit one-trip count, which is material to scope. The weekly overnight objection retains its frequency and duration, and remains advisory. Reconciled grounding assessment: the exact quote supports one overnight trip a quarter. The machine scope omits the amount and leaves acceptance open to an unspecified number of trips.",
+            "raw_equivalent_pairs": [
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": false,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": false,
+            "notes": "The evidence supports the coarser positive reading of occasional overnight travel on a quarterly cadence. The signal omits the explicit one-trip count, which is material to scope. The weekly overnight objection retains its frequency and duration, and remains advisory. Reconciled grounding assessment: the exact quote supports one overnight trip a quarter. The machine scope omits the amount and leaves acceptance open to an unspecified number of trips.",
+            "raw_equivalent_pairs": [
+              [
+                2,
+                2
+              ]
+            ],
+            "raw_evidence_grounded": false,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RO3-012": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The positive from-scratch intake duty is grounded. The clarification question specifically asks what about the rest of the job caused concern.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The positive from-scratch intake duty is grounded. The clarification question specifically asks what about the rest of the job caused concern.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        }
+      }
+    }
+  },
+  "reference_sha256": "7eabb327ec7aed7b61e9a0f6ade44681ed747abba9db7f4c733af7c17c3f75b4"
+}

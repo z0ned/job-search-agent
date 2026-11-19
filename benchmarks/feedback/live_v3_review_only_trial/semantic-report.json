@@ -1,0 +1,4865 @@
+{
+  "adjudications_sha256": "273c8a301f281732514525b5014aa3cad1520df51f38cdf74d60bfa0ea3fcfb2",
+  "candidate_passes_both_runs": false,
+  "capture_report_sha256": "d43f65a54c67b856836f8df94535c1764d37b4209183edba42b777d3a0753d21",
+  "configuration_sha256": "2351b0b0373d88781965f3aeca91f411eb03b977c7eb986edb1582e1593b8dfd",
+  "gates": {
+    "all_48_paired_requests_completed": true,
+    "candidate_pass_1_approved_v3_gates": false,
+    "candidate_pass_2_approved_v3_gates": false
+  },
+  "high_risk_case_ids": [
+    "RO3-002",
+    "RO3-003",
+    "RO3-004",
+    "RO3-005",
+    "RO3-006",
+    "RO3-007",
+    "RO3-012"
+  ],
+  "mode": "masked_review_only_end_to_end_comparison",
+  "passes": {
+    "1": {
+      "arms": {
+        "baseline": {
+          "approved_v3_score": {
+            "clear_case_false_escalation_case_ids": [],
+            "clear_case_false_escalations": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 6
+            },
+            "clear_dimension_scope_accuracy": {
+              "accuracy": 0.8333333333333334,
+              "correct": 5,
+              "total": 6
+            },
+            "extra_signals": 1,
+            "hard_action_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "high_risk_routing_controls": {
+              "RO3-002": true,
+              "RO3-003": true,
+              "RO3-004": false,
+              "RO3-005": true,
+              "RO3-006": true,
+              "RO3-007": true,
+              "RO3-012": true
+            },
+            "missed_signals": 1,
+            "predictions_sha256": "2eb94c4c061fd5f497ba46a1c038060f2f5d121050cf564ebcfbc064630d3399",
+            "quality_gates": {
+              "all_cases_completed": true,
+              "all_designated_high_risk_routes_correct": false,
+              "all_evidence_grounded": false,
+              "all_hard_rule_actions_authorized": true,
+              "all_hard_rules_unchanged": true,
+              "all_predictions_without_validation_issues": true,
+              "all_special_routes_resolved_adequately": false,
+              "clear_dimension_scope_at_least_95_percent": false,
+              "no_unsupported_career_downgrades": true,
+              "semantic_precision_at_least_90_percent": true,
+              "semantic_recall_at_least_90_percent": true
+            },
+            "quality_gates_passed": false,
+            "reviewer": "Independent arm-masked Codex semantic review",
+            "route_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "safe_special_routing": {
+              "accuracy": 0.8333333333333334,
+              "correct": 5,
+              "total": 6
+            },
+            "scenario_count": 12,
+            "semantic_precision": {
+              "accuracy": 0.9166666666666666,
+              "correct": 11,
+              "total": 12
+            },
+            "semantic_recall": {
+              "accuracy": 0.9166666666666666,
+              "correct": 11,
+              "total": 12
+            },
+            "suite_sha256": "7eabb327ec7aed7b61e9a0f6ade44681ed747abba9db7f4c733af7c17c3f75b4"
+          },
+          "automated_metrics": {
+            "cases": [
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-001",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-002",
+                "emitted_signals": 0,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-003",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-004",
+                "emitted_signals": 0,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-005",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-006",
+                "emitted_signals": 0,
+                "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-007",
+                "emitted_signals": 0,
+                "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-008",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [
+                  1
+                ],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-009",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-010",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-011",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-012",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              }
+            ],
+            "clear_case_false_escalation_case_ids": [],
+            "clear_case_false_escalations": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 6
+            },
+            "execution_errors": {},
+            "hard_action_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "literal_exact_case_match": {
+              "accuracy": 0.3333333333333333,
+              "correct": 4,
+              "total": 12
+            },
+            "literal_signal_precision": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "literal_signal_recall": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "mechanical_evidence_grounding": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "negative_career_proposals_requiring_review": 1,
+            "registered_identity_precision": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "registered_identity_recall": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "registry_coverage": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "route_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "routes_with_required_resolution_fields": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "scenario_count": 12,
+            "score_status": "provisional_automation",
+            "validation_issue_count": 0
+          },
+          "cases": {
+            "RO3-001": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-001",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "Both role-feature preferences retain their polarity, strength, and scope.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-002": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "case_id": "RO3-002",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The question asks the reviewer to identify the unspecified concern.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-003": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-003",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The audit preference is unconditional. The posting-verification clause retains the question about funding past September.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-004": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "case_id": "RO3-004",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": false,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The posting-verification clause identifies the schedule issue, but the clarification question asks generally about the reaction and omits whether overnight work is regular or occasional.",
+                "resolution_adequate": false,
+                "route_correct": true,
+                "safe_special_route": false,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-005": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "case_id": "RO3-005",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The coaching preference is preserved, and the current PMP certification is recorded as a candidate for profile review.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-006": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "case_id": "RO3-006",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The $72-per-hour W-2 minimum proposal applies to future searches and is held for separate explicit confirmation. The posting rate is unknown.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-007": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "case_id": "RO3-007",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The exact job facts and confirmed 1099 rate support the reported conflict with the existing $100 hourly minimum. The profile fact captures that conflict and no preference signal is emitted.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-008": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-008",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The strongly negative product operations career preference and mild positive launch rehearsal planning preference are both independently supported and held for approval.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-009": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-009",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The employer objection and all-day checklist reconciliation objection are independently grounded. The time-share limit is explicit.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-010": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-010",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The narrow duty preference retains the necessary condition that the reviewer can facilitate the sessions remotely, with the condition anchored to the feedback.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-011": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": false,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [
+                  1
+                ],
+                "missed_signal_indices": [
+                  1
+                ],
+                "raw_case_match": false,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-011",
+                "clear_dimension_scope_correct": false,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": false,
+                "equivalent_pairs": [
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": false,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [
+                  1
+                ],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [
+                  1
+                ],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The weekly overnight rejection is equivalent, with overnight explicit in the referent. The positive label says occasional overnight travel and its frequency qualifier says only a quarter. The signal drops the explicit one-trip count and broadens the positive scope beyond what the exact evidence supports.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": false,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-012": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "case_id": "RO3-012",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The positive from-scratch intake duty is independently grounded. The clarification directly asks what about the remaining job caused concern and leaves its object open.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            }
+          },
+          "review_burden": {
+            "additional_review_case_ids": [
+              "RO3-002",
+              "RO3-004",
+              "RO3-005",
+              "RO3-006",
+              "RO3-007",
+              "RO3-012"
+            ],
+            "additional_review_cases": 6,
+            "blocking_evidence_finding_case_ids": [],
+            "clarification_case_ids": [
+              "RO3-002",
+              "RO3-004",
+              "RO3-012"
+            ],
+            "evidence_finding_case_ids": [],
+            "ordinary_approval_case_ids": [
+              "RO3-001",
+              "RO3-003",
+              "RO3-008",
+              "RO3-009",
+              "RO3-010",
+              "RO3-011"
+            ],
+            "profile_fact_review_case_ids": [
+              "RO3-005",
+              "RO3-006",
+              "RO3-007"
+            ],
+            "rule_confirmation_case_ids": [
+              "RO3-006"
+            ],
+            "validation_issue_case_ids": []
+          },
+          "summary": {
+            "adequate_resolutions": 11,
+            "complete_end_to_end_cases": 10,
+            "hard_rule_actions_authorized": 12,
+            "hard_rule_actions_correct": 12,
+            "hard_rule_nonmutation_confirmed_cases": 12,
+            "raw": {
+              "emitted": 12,
+              "expected": 12,
+              "extra_signals": 1,
+              "grounded_cases": 11,
+              "matches": 11,
+              "missed_signals": 1,
+              "precision": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "recall": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "semantic_complete_cases": 11,
+              "unsupported_career_downgrade_cases": 0
+            },
+            "records": 12,
+            "routes_correct": 12,
+            "validated": {
+              "emitted": 12,
+              "expected": 12,
+              "extra_signals": 1,
+              "grounded_cases": 11,
+              "matches": 11,
+              "missed_signals": 1,
+              "precision": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "recall": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "semantic_complete_cases": 11,
+              "unsupported_career_downgrade_cases": 0
+            },
+            "validation_issues": 0
+          }
+        },
+        "candidate": {
+          "approved_v3_score": {
+            "clear_case_false_escalation_case_ids": [],
+            "clear_case_false_escalations": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 6
+            },
+            "clear_dimension_scope_accuracy": {
+              "accuracy": 0.8333333333333334,
+              "correct": 5,
+              "total": 6
+            },
+            "extra_signals": 1,
+            "hard_action_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "high_risk_routing_controls": {
+              "RO3-002": true,
+              "RO3-003": true,
+              "RO3-004": false,
+              "RO3-005": true,
+              "RO3-006": true,
+              "RO3-007": true,
+              "RO3-012": true
+            },
+            "missed_signals": 1,
+            "predictions_sha256": "00ffa187814dd9f11fa261ed2eac10d602350e3fd8f71ea4604c7ccf9f94f20f",
+            "quality_gates": {
+              "all_cases_completed": true,
+              "all_designated_high_risk_routes_correct": false,
+              "all_evidence_grounded": false,
+              "all_hard_rule_actions_authorized": true,
+              "all_hard_rules_unchanged": true,
+              "all_predictions_without_validation_issues": true,
+              "all_special_routes_resolved_adequately": false,
+              "clear_dimension_scope_at_least_95_percent": false,
+              "no_unsupported_career_downgrades": true,
+              "semantic_precision_at_least_90_percent": true,
+              "semantic_recall_at_least_90_percent": true
+            },
+            "quality_gates_passed": false,
+            "reviewer": "Independent arm-masked Codex semantic review",
+            "route_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "safe_special_routing": {
+              "accuracy": 0.8333333333333334,
+              "correct": 5,
+              "total": 6
+            },
+            "scenario_count": 12,
+            "semantic_precision": {
+              "accuracy": 0.9166666666666666,
+              "correct": 11,
+              "total": 12
+            },
+            "semantic_recall": {
+              "accuracy": 0.9166666666666666,
+              "correct": 11,
+              "total": 12
+            },
+            "suite_sha256": "7eabb327ec7aed7b61e9a0f6ade44681ed747abba9db7f4c733af7c17c3f75b4"
+          },
+          "automated_metrics": {
+            "cases": [
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-001",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-002",
+                "emitted_signals": 0,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-003",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-004",
+                "emitted_signals": 0,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-005",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-006",
+                "emitted_signals": 0,
+                "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-007",
+                "emitted_signals": 0,
+                "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-008",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [
+                  1
+                ],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-009",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-010",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-011",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-012",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              }
+            ],
+            "clear_case_false_escalation_case_ids": [],
+            "clear_case_false_escalations": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 6
+            },
+            "execution_errors": {},
+            "hard_action_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "literal_exact_case_match": {
+              "accuracy": 0.3333333333333333,
+              "correct": 4,
+              "total": 12
+            },
+            "literal_signal_precision": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "literal_signal_recall": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "mechanical_evidence_grounding": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "negative_career_proposals_requiring_review": 1,
+            "registered_identity_precision": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "registered_identity_recall": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "registry_coverage": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "route_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "routes_with_required_resolution_fields": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "scenario_count": 12,
+            "score_status": "provisional_automation",
+            "validation_issue_count": 0
+          },
+          "cases": {
+            "RO3-001": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-001",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "Both role-feature preferences retain their polarity, strength, and scope.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-002": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "case_id": "RO3-002",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The question asks the reviewer to identify the unspecified concern.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-003": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-003",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The audit preference is unconditional. The posting-verification clause retains the question about funding past September.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-004": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "case_id": "RO3-004",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": false,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The posting-verification clause identifies the schedule issue, but the clarification question asks generally about the reaction and omits whether overnight work is regular or occasional.",
+                "resolution_adequate": false,
+                "route_correct": true,
+                "safe_special_route": false,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-005": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "case_id": "RO3-005",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The coaching preference is preserved, and the current PMP certification is recorded as a candidate for profile review.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-006": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "case_id": "RO3-006",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The $72-per-hour W-2 minimum proposal applies to future searches and is held for separate explicit confirmation. The posting rate is unknown.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-007": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "case_id": "RO3-007",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The exact job facts and confirmed 1099 rate support the reported conflict with the existing $100 hourly minimum. The profile fact captures that conflict and no preference signal is emitted.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-008": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-008",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The strongly negative product operations career preference and mild positive launch rehearsal planning preference are both independently supported and held for approval.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-009": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-009",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The employer objection and all-day checklist reconciliation objection are independently grounded. The time-share limit is explicit.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-010": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-010",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The narrow duty preference retains the necessary condition that the reviewer can facilitate the sessions remotely, with the condition anchored to the feedback.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-011": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": false,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [
+                  1
+                ],
+                "missed_signal_indices": [
+                  1
+                ],
+                "raw_case_match": false,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-011",
+                "clear_dimension_scope_correct": false,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": false,
+                "equivalent_pairs": [
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": false,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [
+                  1
+                ],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [
+                  1
+                ],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The weekly overnight rejection is equivalent, with overnight explicit in the referent. The positive label says occasional overnight travel and its frequency qualifier says only a quarter. The signal drops the explicit one-trip count and broadens the positive scope beyond what the exact evidence supports.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": false,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-012": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "case_id": "RO3-012",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The positive from-scratch intake duty is independently grounded. The clarification directly asks what about the remaining job caused concern and leaves its object open.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            }
+          },
+          "review_burden": {
+            "additional_review_case_ids": [
+              "RO3-002",
+              "RO3-004",
+              "RO3-005",
+              "RO3-006",
+              "RO3-007",
+              "RO3-012"
+            ],
+            "additional_review_cases": 6,
+            "blocking_evidence_finding_case_ids": [],
+            "clarification_case_ids": [
+              "RO3-002",
+              "RO3-004",
+              "RO3-012"
+            ],
+            "evidence_finding_case_ids": [],
+            "ordinary_approval_case_ids": [
+              "RO3-001",
+              "RO3-003",
+              "RO3-008",
+              "RO3-009",
+              "RO3-010",
+              "RO3-011"
+            ],
+            "profile_fact_review_case_ids": [
+              "RO3-005",
+              "RO3-006",
+              "RO3-007"
+            ],
+            "rule_confirmation_case_ids": [
+              "RO3-006"
+            ],
+            "validation_issue_case_ids": []
+          },
+          "summary": {
+            "adequate_resolutions": 11,
+            "complete_end_to_end_cases": 10,
+            "hard_rule_actions_authorized": 12,
+            "hard_rule_actions_correct": 12,
+            "hard_rule_nonmutation_confirmed_cases": 12,
+            "raw": {
+              "emitted": 12,
+              "expected": 12,
+              "extra_signals": 1,
+              "grounded_cases": 11,
+              "matches": 11,
+              "missed_signals": 1,
+              "precision": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "recall": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "semantic_complete_cases": 11,
+              "unsupported_career_downgrade_cases": 0
+            },
+            "records": 12,
+            "routes_correct": 12,
+            "validated": {
+              "emitted": 12,
+              "expected": 12,
+              "extra_signals": 1,
+              "grounded_cases": 11,
+              "matches": 11,
+              "missed_signals": 1,
+              "precision": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "recall": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "semantic_complete_cases": 11,
+              "unsupported_career_downgrade_cases": 0
+            },
+            "validation_issues": 0
+          }
+        }
+      },
+      "paired_deltas": []
+    },
+    "2": {
+      "arms": {
+        "baseline": {
+          "approved_v3_score": {
+            "clear_case_false_escalation_case_ids": [],
+            "clear_case_false_escalations": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 6
+            },
+            "clear_dimension_scope_accuracy": {
+              "accuracy": 0.8333333333333334,
+              "correct": 5,
+              "total": 6
+            },
+            "extra_signals": 1,
+            "hard_action_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "high_risk_routing_controls": {
+              "RO3-002": true,
+              "RO3-003": true,
+              "RO3-004": false,
+              "RO3-005": true,
+              "RO3-006": true,
+              "RO3-007": true,
+              "RO3-012": true
+            },
+            "missed_signals": 1,
+            "predictions_sha256": "bef8ec8b6f397e96c50b68d35f4e61e726971e8e4dd23f802675507c977edc5b",
+            "quality_gates": {
+              "all_cases_completed": true,
+              "all_designated_high_risk_routes_correct": false,
+              "all_evidence_grounded": false,
+              "all_hard_rule_actions_authorized": true,
+              "all_hard_rules_unchanged": true,
+              "all_predictions_without_validation_issues": true,
+              "all_special_routes_resolved_adequately": false,
+              "clear_dimension_scope_at_least_95_percent": false,
+              "no_unsupported_career_downgrades": true,
+              "semantic_precision_at_least_90_percent": true,
+              "semantic_recall_at_least_90_percent": true
+            },
+            "quality_gates_passed": false,
+            "reviewer": "Independent arm-masked Codex semantic review",
+            "route_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "safe_special_routing": {
+              "accuracy": 0.8333333333333334,
+              "correct": 5,
+              "total": 6
+            },
+            "scenario_count": 12,
+            "semantic_precision": {
+              "accuracy": 0.9166666666666666,
+              "correct": 11,
+              "total": 12
+            },
+            "semantic_recall": {
+              "accuracy": 0.9166666666666666,
+              "correct": 11,
+              "total": 12
+            },
+            "suite_sha256": "7eabb327ec7aed7b61e9a0f6ade44681ed747abba9db7f4c733af7c17c3f75b4"
+          },
+          "automated_metrics": {
+            "cases": [
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-001",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-002",
+                "emitted_signals": 0,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-003",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-004",
+                "emitted_signals": 0,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-005",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-006",
+                "emitted_signals": 0,
+                "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-007",
+                "emitted_signals": 0,
+                "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-008",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [
+                  1
+                ],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-009",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-010",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-011",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-012",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              }
+            ],
+            "clear_case_false_escalation_case_ids": [],
+            "clear_case_false_escalations": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 6
+            },
+            "execution_errors": {},
+            "hard_action_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "literal_exact_case_match": {
+              "accuracy": 0.3333333333333333,
+              "correct": 4,
+              "total": 12
+            },
+            "literal_signal_precision": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "literal_signal_recall": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "mechanical_evidence_grounding": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "negative_career_proposals_requiring_review": 1,
+            "registered_identity_precision": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "registered_identity_recall": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "registry_coverage": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "route_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "routes_with_required_resolution_fields": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "scenario_count": 12,
+            "score_status": "provisional_automation",
+            "validation_issue_count": 0
+          },
+          "cases": {
+            "RO3-001": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-001",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The two preferences preserve the specific duties and opposite polarities. Both are grounded in the cited clauses and held for approval.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-002": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "case_id": "RO3-002",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The question asks the reviewer to identify the unspecified concern. The output assigns no specific preference.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-003": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-003",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The audit leadership preference remains unconditional. The posting verification detail asks whether funding continues past September and records no funding outcome.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-004": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "case_id": "RO3-004",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": false,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The posting verification clause identifies the right issue. The returned clarification question asks generally about the reviewer's reaction and omits the distinction between regular and occasional overnight duty.",
+                "resolution_adequate": false,
+                "route_correct": true,
+                "safe_special_route": false,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-005": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "case_id": "RO3-005",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The current PMP certification is captured as a self-reported candidate for profile review. The coaching preference retains its specific scope and is held for approval.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-006": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "case_id": "RO3-006",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The candidate preserves the proposed W-2 minimum of $72 per hour for future searches. The action requires separate explicit confirmation and records no mutation or posted rate.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-007": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "case_id": "RO3-007",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The confirmed 1099 rate and existing floor support the specific profile fact and advisory eligibility report. Both outputs leave preference signals empty.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-008": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-008",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The feedback expressly supports the product operations career downgrade and the separate interest in planning launch rehearsals. Both signals are held for review.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-009": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-009",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The employer objection applies to Cairnquill Systems, and the checklist objection is limited to an all-day workload.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-010": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-010",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The condition preserves interest in facilitating the planning sessions only when the user can run those sessions remotely.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-011": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": false,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [
+                  1
+                ],
+                "missed_signal_indices": [
+                  1
+                ],
+                "raw_case_match": false,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-011",
+                "clear_dimension_scope_correct": false,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": false,
+                "equivalent_pairs": [
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": false,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [
+                  1
+                ],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [
+                  1
+                ],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The evidence supports the coarser positive reading of occasional overnight travel on a quarterly cadence. The signal omits the explicit one-trip count, which is material to scope. The weekly overnight objection retains its frequency and duration, and remains advisory. Reconciled grounding assessment: the exact quote supports one overnight trip a quarter. The machine scope omits the amount and leaves acceptance open to an unspecified number of trips.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": false,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-012": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "case_id": "RO3-012",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The positive from-scratch intake duty is grounded. The clarification question specifically asks what about the rest of the job caused concern.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            }
+          },
+          "review_burden": {
+            "additional_review_case_ids": [
+              "RO3-002",
+              "RO3-004",
+              "RO3-005",
+              "RO3-006",
+              "RO3-007",
+              "RO3-012"
+            ],
+            "additional_review_cases": 6,
+            "blocking_evidence_finding_case_ids": [],
+            "clarification_case_ids": [
+              "RO3-002",
+              "RO3-004",
+              "RO3-012"
+            ],
+            "evidence_finding_case_ids": [],
+            "ordinary_approval_case_ids": [
+              "RO3-001",
+              "RO3-003",
+              "RO3-008",
+              "RO3-009",
+              "RO3-010",
+              "RO3-011"
+            ],
+            "profile_fact_review_case_ids": [
+              "RO3-005",
+              "RO3-006",
+              "RO3-007"
+            ],
+            "rule_confirmation_case_ids": [
+              "RO3-006"
+            ],
+            "validation_issue_case_ids": []
+          },
+          "summary": {
+            "adequate_resolutions": 11,
+            "complete_end_to_end_cases": 10,
+            "hard_rule_actions_authorized": 12,
+            "hard_rule_actions_correct": 12,
+            "hard_rule_nonmutation_confirmed_cases": 12,
+            "raw": {
+              "emitted": 12,
+              "expected": 12,
+              "extra_signals": 1,
+              "grounded_cases": 11,
+              "matches": 11,
+              "missed_signals": 1,
+              "precision": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "recall": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "semantic_complete_cases": 11,
+              "unsupported_career_downgrade_cases": 0
+            },
+            "records": 12,
+            "routes_correct": 12,
+            "validated": {
+              "emitted": 12,
+              "expected": 12,
+              "extra_signals": 1,
+              "grounded_cases": 11,
+              "matches": 11,
+              "missed_signals": 1,
+              "precision": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "recall": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "semantic_complete_cases": 11,
+              "unsupported_career_downgrade_cases": 0
+            },
+            "validation_issues": 0
+          }
+        },
+        "candidate": {
+          "approved_v3_score": {
+            "clear_case_false_escalation_case_ids": [],
+            "clear_case_false_escalations": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 6
+            },
+            "clear_dimension_scope_accuracy": {
+              "accuracy": 0.8333333333333334,
+              "correct": 5,
+              "total": 6
+            },
+            "extra_signals": 1,
+            "hard_action_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "high_risk_routing_controls": {
+              "RO3-002": true,
+              "RO3-003": true,
+              "RO3-004": false,
+              "RO3-005": true,
+              "RO3-006": true,
+              "RO3-007": true,
+              "RO3-012": true
+            },
+            "missed_signals": 1,
+            "predictions_sha256": "71c995064bcd57959612fedf9b8aa757c4e606cdb250abcac01af885fbee5a07",
+            "quality_gates": {
+              "all_cases_completed": true,
+              "all_designated_high_risk_routes_correct": false,
+              "all_evidence_grounded": false,
+              "all_hard_rule_actions_authorized": true,
+              "all_hard_rules_unchanged": true,
+              "all_predictions_without_validation_issues": true,
+              "all_special_routes_resolved_adequately": false,
+              "clear_dimension_scope_at_least_95_percent": false,
+              "no_unsupported_career_downgrades": true,
+              "semantic_precision_at_least_90_percent": true,
+              "semantic_recall_at_least_90_percent": true
+            },
+            "quality_gates_passed": false,
+            "reviewer": "Independent arm-masked Codex semantic review",
+            "route_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "safe_special_routing": {
+              "accuracy": 0.8333333333333334,
+              "correct": 5,
+              "total": 6
+            },
+            "scenario_count": 12,
+            "semantic_precision": {
+              "accuracy": 0.9166666666666666,
+              "correct": 11,
+              "total": 12
+            },
+            "semantic_recall": {
+              "accuracy": 0.9166666666666666,
+              "correct": 11,
+              "total": 12
+            },
+            "suite_sha256": "7eabb327ec7aed7b61e9a0f6ade44681ed747abba9db7f4c733af7c17c3f75b4"
+          },
+          "automated_metrics": {
+            "cases": [
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-001",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-002",
+                "emitted_signals": 0,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-003",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-004",
+                "emitted_signals": 0,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-005",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-006",
+                "emitted_signals": 0,
+                "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "anchors_verified_signals": 0,
+                "case_id": "RO3-007",
+                "emitted_signals": 0,
+                "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signals": 0,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": true,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-008",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [
+                  1
+                ],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-009",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-010",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "anchors_verified_signals": 2,
+                "case_id": "RO3-011",
+                "emitted_signals": 2,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signals": 2,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              },
+              {
+                "action_correct": true,
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "anchors_verified_signals": 1,
+                "case_id": "RO3-012",
+                "emitted_signals": 1,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signals": 1,
+                "hard_rule_nonmutation_confirmed": true,
+                "literal_exact_case_match": false,
+                "literal_matches": 0,
+                "negative_career_proposals_requiring_review": [],
+                "original_feedback_preserved": true,
+                "registered_identity_matches": 0,
+                "registered_signals": 0,
+                "resolution_shape_ok": true,
+                "route_correct": true,
+                "validation_issues": []
+              }
+            ],
+            "clear_case_false_escalation_case_ids": [],
+            "clear_case_false_escalations": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 6
+            },
+            "execution_errors": {},
+            "hard_action_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "literal_exact_case_match": {
+              "accuracy": 0.3333333333333333,
+              "correct": 4,
+              "total": 12
+            },
+            "literal_signal_precision": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "literal_signal_recall": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "mechanical_evidence_grounding": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "negative_career_proposals_requiring_review": 1,
+            "registered_identity_precision": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "registered_identity_recall": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "registry_coverage": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "total": 12
+            },
+            "route_accuracy": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "routes_with_required_resolution_fields": {
+              "accuracy": 1.0,
+              "correct": 12,
+              "total": 12
+            },
+            "scenario_count": 12,
+            "score_status": "provisional_automation",
+            "validation_issue_count": 0
+          },
+          "cases": {
+            "RO3-001": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-001",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The two preferences preserve the specific duties and opposite polarities. Both are grounded in the cited clauses and held for approval.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-002": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "case_id": "RO3-002",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The question asks the reviewer to identify the unspecified concern. The output assigns no specific preference.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-003": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-003",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The audit leadership preference remains unconditional. The posting verification detail asks whether funding continues past September and records no funding outcome.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-004": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "case_id": "RO3-004",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": false,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The posting verification clause identifies the right issue. The returned clarification question asks generally about the reviewer's reaction and omits the distinction between regular and occasional overnight duty.",
+                "resolution_adequate": false,
+                "route_correct": true,
+                "safe_special_route": false,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-005": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "case_id": "RO3-005",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The current PMP certification is captured as a self-reported candidate for profile review. The coaching preference retains its specific scope and is held for approval.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-006": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "case_id": "RO3-006",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The candidate preserves the proposed W-2 minimum of $72 per hour for future searches. The action requires separate explicit confirmation and records no mutation or posted rate.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-007": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 0,
+                "equivalent_pairs": [],
+                "evidence_grounded": true,
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "actual_route": "PROFILE_FACT_REVIEW",
+                "case_id": "RO3-007",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 0,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+                "expected_route": "PROFILE_FACT_REVIEW",
+                "expected_signal_count": 0,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The confirmed 1099 rate and existing floor support the specific profile fact and advisory eligibility report. Both outputs leave preference signals empty.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-008": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-008",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The feedback expressly supports the product operations career downgrade and the separate interest in planning launch rehearsals. Both signals are held for review.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-009": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-009",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The reapplication qualifier restates the grounded objection to Cairnquill Systems. The checklist objection is limited to an all-day workload.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-010": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-010",
+                "clear_dimension_scope_correct": true,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The condition preserves interest in facilitating the planning sessions only when the user can run those sessions remotely.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-011": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 2,
+                "equivalent_pairs": [
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_grounded": false,
+                "expected_signal_count": 2,
+                "extra_signal_indices": [
+                  1
+                ],
+                "missed_signal_indices": [
+                  1
+                ],
+                "raw_case_match": false,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "PENDING_APPROVAL",
+                "case_id": "RO3-011",
+                "clear_dimension_scope_correct": false,
+                "completed": true,
+                "emitted_signal_count": 2,
+                "end_to_end_case_match": false,
+                "equivalent_pairs": [
+                  [
+                    2,
+                    2
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": false,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "PENDING_APPROVAL",
+                "expected_signal_count": 2,
+                "extra_signal_indices": [
+                  1
+                ],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [
+                  1
+                ],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The evidence supports the coarser positive reading of occasional overnight travel on a quarterly cadence. The signal omits the explicit one-trip count, which is material to scope. The weekly overnight objection retains its frequency and duration, and remains advisory. Reconciled grounding assessment: the exact quote supports one overnight trip a quarter. The machine scope omits the amount and leaves acceptance open to an unspecified number of trips.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": null,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": false,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            },
+            "RO3-012": {
+              "raw": {
+                "anchors_valid": true,
+                "emitted_signal_count": 1,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_grounded": true,
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "missed_signal_indices": [],
+                "raw_case_match": true,
+                "unsupported_career_downgrade": false
+              },
+              "repair_diagnostics": {
+                "coalesced_intensity_clause_indices": [],
+                "condition_recoveries": [],
+                "joined_employer_exception": false,
+                "new_scope_findings": []
+              },
+              "validated": {
+                "actual_hard_action": "UNCHANGED",
+                "actual_route": "NEEDS_CLARIFICATION",
+                "case_id": "RO3-012",
+                "clear_dimension_scope_correct": null,
+                "completed": true,
+                "emitted_signal_count": 1,
+                "end_to_end_case_match": true,
+                "equivalent_pairs": [
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                "evidence_findings": [],
+                "evidence_grounded": true,
+                "expected_hard_action": "UNCHANGED",
+                "expected_route": "NEEDS_CLARIFICATION",
+                "expected_signal_count": 1,
+                "extra_signal_indices": [],
+                "hard_action_correct": true,
+                "hard_constraints_unchanged": true,
+                "hard_rule_action_authorized": true,
+                "missed_signal_indices": [],
+                "no_unsupported_career_downgrade_confirmed": true,
+                "no_validation_issues": true,
+                "notes": "The positive from-scratch intake duty is grounded. The clarification question specifically asks what about the rest of the job caused concern.",
+                "resolution_adequate": true,
+                "route_correct": true,
+                "safe_special_route": true,
+                "unsupported_career_downgrade": false,
+                "validated_case_match": true,
+                "validation_issue_count": 0
+              },
+              "validation_delta": {
+                "lost_reference_indices": [],
+                "recovered_reference_indices": []
+              }
+            }
+          },
+          "review_burden": {
+            "additional_review_case_ids": [
+              "RO3-002",
+              "RO3-004",
+              "RO3-005",
+              "RO3-006",
+              "RO3-007",
+              "RO3-012"
+            ],
+            "additional_review_cases": 6,
+            "blocking_evidence_finding_case_ids": [],
+            "clarification_case_ids": [
+              "RO3-002",
+              "RO3-004",
+              "RO3-012"
+            ],
+            "evidence_finding_case_ids": [],
+            "ordinary_approval_case_ids": [
+              "RO3-001",
+              "RO3-003",
+              "RO3-008",
+              "RO3-009",
+              "RO3-010",
+              "RO3-011"
+            ],
+            "profile_fact_review_case_ids": [
+              "RO3-005",
+              "RO3-006",
+              "RO3-007"
+            ],
+            "rule_confirmation_case_ids": [
+              "RO3-006"
+            ],
+            "validation_issue_case_ids": []
+          },
+          "summary": {
+            "adequate_resolutions": 11,
+            "complete_end_to_end_cases": 10,
+            "hard_rule_actions_authorized": 12,
+            "hard_rule_actions_correct": 12,
+            "hard_rule_nonmutation_confirmed_cases": 12,
+            "raw": {
+              "emitted": 12,
+              "expected": 12,
+              "extra_signals": 1,
+              "grounded_cases": 11,
+              "matches": 11,
+              "missed_signals": 1,
+              "precision": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "recall": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "semantic_complete_cases": 11,
+              "unsupported_career_downgrade_cases": 0
+            },
+            "records": 12,
+            "routes_correct": 12,
+            "validated": {
+              "emitted": 12,
+              "expected": 12,
+              "extra_signals": 1,
+              "grounded_cases": 11,
+              "matches": 11,
+              "missed_signals": 1,
+              "precision": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "recall": {
+                "denominator": 12,
+                "numerator": 11
+              },
+              "semantic_complete_cases": 11,
+              "unsupported_career_downgrade_cases": 0
+            },
+            "validation_issues": 0
+          }
+        }
+      },
+      "paired_deltas": []
+    }
+  },
+  "reference_sha256": "7eabb327ec7aed7b61e9a0f6ade44681ed747abba9db7f4c733af7c17c3f75b4",
+  "request_trace_sha256": "09bb6965d4fbb7e195b2aec25003c136b52c53e32f4e6b1d4eaa17d775bef316",
+  "summary": {
+    "baseline": {
+      "adequate_resolutions": 22,
+      "complete_end_to_end_cases": 20,
+      "hard_rule_actions_authorized": 24,
+      "hard_rule_actions_correct": 24,
+      "hard_rule_nonmutation_confirmed_cases": 24,
+      "raw": {
+        "emitted": 24,
+        "expected": 24,
+        "extra_signals": 2,
+        "grounded_cases": 22,
+        "matches": 22,
+        "missed_signals": 2,
+        "precision": {
+          "denominator": 24,
+          "numerator": 22
+        },
+        "recall": {
+          "denominator": 24,
+          "numerator": 22
+        },
+        "semantic_complete_cases": 22,
+        "unsupported_career_downgrade_cases": 0
+      },
+      "records": 24,
+      "review_burden": {
+        "additional_review_cases": 12,
+        "blocking_evidence_finding_cases": 0,
+        "clarification_cases": 6,
+        "evidence_finding_cases": 0,
+        "ordinary_approval_cases": 12,
+        "profile_fact_review_cases": 6,
+        "rule_confirmation_cases": 2,
+        "validation_issue_cases": 0
+      },
+      "routes_correct": 24,
+      "validated": {
+        "emitted": 24,
+        "expected": 24,
+        "extra_signals": 2,
+        "grounded_cases": 22,
+        "matches": 22,
+        "missed_signals": 2,
+        "precision": {
+          "denominator": 24,
+          "numerator": 22
+        },
+        "recall": {
+          "denominator": 24,
+          "numerator": 22
+        },
+        "semantic_complete_cases": 22,
+        "unsupported_career_downgrade_cases": 0
+      },
+      "validation_issues": 0
+    },
+    "candidate": {
+      "adequate_resolutions": 22,
+      "complete_end_to_end_cases": 20,
+      "hard_rule_actions_authorized": 24,
+      "hard_rule_actions_correct": 24,
+      "hard_rule_nonmutation_confirmed_cases": 24,
+      "raw": {
+        "emitted": 24,
+        "expected": 24,
+        "extra_signals": 2,
+        "grounded_cases": 22,
+        "matches": 22,
+        "missed_signals": 2,
+        "precision": {
+          "denominator": 24,
+          "numerator": 22
+        },
+        "recall": {
+          "denominator": 24,
+          "numerator": 22
+        },
+        "semantic_complete_cases": 22,
+        "unsupported_career_downgrade_cases": 0
+      },
+      "records": 24,
+      "review_burden": {
+        "additional_review_cases": 12,
+        "blocking_evidence_finding_cases": 0,
+        "clarification_cases": 6,
+        "evidence_finding_cases": 0,
+        "ordinary_approval_cases": 12,
+        "profile_fact_review_cases": 6,
+        "rule_confirmation_cases": 2,
+        "validation_issue_cases": 0
+      },
+      "routes_correct": 24,
+      "validated": {
+        "emitted": 24,
+        "expected": 24,
+        "extra_signals": 2,
+        "grounded_cases": 22,
+        "matches": 22,
+        "missed_signals": 2,
+        "precision": {
+          "denominator": 24,
+          "numerator": 22
+        },
+        "recall": {
+          "denominator": 24,
+          "numerator": 22
+        },
+        "semantic_complete_cases": 22,
+        "unsupported_career_downgrade_cases": 0
+      },
+      "validation_issues": 0
+    }
+  },
+  "transport": {
+    "all_paired_requests_completed": true,
+    "attempted": 48,
+    "by_pass_arm": {
+      "pass-1/baseline": {
+        "attempted": 12,
+        "completed": 12,
+        "model_seconds": 27.952,
+        "validation_seconds": 0.002
+      },
+      "pass-1/candidate": {
+        "attempted": 12,
+        "completed": 12,
+        "model_seconds": 26.5,
+        "validation_seconds": 0.004
+      },
+      "pass-2/baseline": {
+        "attempted": 12,
+        "completed": 12,
+        "model_seconds": 26.077,
+        "validation_seconds": 0.002
+      },
+      "pass-2/candidate": {
+        "attempted": 12,
+        "completed": 12,
+        "model_seconds": 26.65,
+        "validation_seconds": 0.004
+      }
+    },
+    "completed": 48,
+    "same_inputs_prompt_and_schema_verified": true
+  }
+}

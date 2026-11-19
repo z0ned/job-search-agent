@@ -1,0 +1,9 @@
+{
+  "capture_report_sha256": "d43f65a54c67b856836f8df94535c1764d37b4209183edba42b777d3a0753d21",
+  "changed_field_counts": {},
+  "changes": [],
+  "inference_requests": 0,
+  "proposals_with_any_changed_output": 0,
+  "replayed_proposals": 48,
+  "unavailable_proposals": []
+}

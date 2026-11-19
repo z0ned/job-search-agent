@@ -1,0 +1,98 @@
+{
+  "case_id": "RO3-011",
+  "original_verdict_file_sha256": "348f0f79b00ab6cea1050af5f58c6daeaa616c7c5ae2372ed11e813c22a45841",
+  "original_verdicts": {
+    "A": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          2,
+          2
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The evidence supports the coarser positive reading of occasional overnight travel on a quarterly cadence. The signal omits the explicit one-trip count, which is material to scope. The weekly overnight objection retains its frequency and duration, and remains advisory.",
+      "raw_equivalent_pairs": [
+        [
+          2,
+          2
+        ]
+      ],
+      "raw_evidence_grounded": true,
+      "raw_unsupported_career_downgrade": false,
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "B": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          2,
+          2
+        ]
+      ],
+      "evidence_grounded": true,
+      "notes": "The evidence supports the coarser positive reading of occasional overnight travel on a quarterly cadence. The signal omits the explicit one-trip count, which is material to scope. The weekly overnight objection retains its frequency and duration, and remains advisory.",
+      "raw_equivalent_pairs": [
+        [
+          2,
+          2
+        ]
+      ],
+      "raw_evidence_grounded": true,
+      "raw_unsupported_career_downgrade": false,
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    }
+  },
+  "pass_number": 2,
+  "reason": "The positive quarterly travel signal had the same display label and machine scope in both arms and passes. The source span was exact. The missing trip count broadens the machine scope, so semantic grounding follows the same judgment in both passes. Signal pairs, route and safety judgments are preserved.",
+  "scored_verdicts": {
+    "A": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          2,
+          2
+        ]
+      ],
+      "evidence_grounded": false,
+      "notes": "The evidence supports the coarser positive reading of occasional overnight travel on a quarterly cadence. The signal omits the explicit one-trip count, which is material to scope. The weekly overnight objection retains its frequency and duration, and remains advisory. Reconciled grounding assessment: the exact quote supports one overnight trip a quarter. The machine scope omits the amount and leaves acceptance open to an unspecified number of trips.",
+      "raw_equivalent_pairs": [
+        [
+          2,
+          2
+        ]
+      ],
+      "raw_evidence_grounded": false,
+      "raw_unsupported_career_downgrade": false,
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    },
+    "B": {
+      "clear_dimension_scope_correct": false,
+      "equivalent_pairs": [
+        [
+          2,
+          2
+        ]
+      ],
+      "evidence_grounded": false,
+      "notes": "The evidence supports the coarser positive reading of occasional overnight travel on a quarterly cadence. The signal omits the explicit one-trip count, which is material to scope. The weekly overnight objection retains its frequency and duration, and remains advisory. Reconciled grounding assessment: the exact quote supports one overnight trip a quarter. The machine scope omits the amount and leaves acceptance open to an unspecified number of trips.",
+      "raw_equivalent_pairs": [
+        [
+          2,
+          2
+        ]
+      ],
+      "raw_evidence_grounded": false,
+      "raw_unsupported_career_downgrade": false,
+      "resolution_adequate": true,
+      "unauthorized_hard_rule_action": false,
+      "unsupported_career_downgrade": false
+    }
+  }
+}

@@ -1,0 +1,888 @@
+{
+  "RO3-001": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 41,
+          "origin": "feedback",
+          "quote": "I'd be happy to run discovery interviews.",
+          "role": "preference",
+          "source_revision": "a0f543b2c3271569b0aef29bb1d16c1a9b50710ddc91bf55f3bad214ce8bbcb2",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 90,
+          "origin": "feedback",
+          "quote": "I really don't want to own the renewal forecast.",
+          "role": "preference",
+          "source_revision": "a0f543b2c3271569b0aef29bb1d16c1a9b50710ddc91bf55f3bad214ce8bbcb2",
+          "start": 42
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Running discovery interviews",
+        "evidence": [
+          {
+            "end": 41,
+            "origin": "feedback",
+            "quote": "I'd be happy to run discovery interviews.",
+            "role": "preference",
+            "source_revision": "a0f543b2c3271569b0aef29bb1d16c1a9b50710ddc91bf55f3bad214ce8bbcb2",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "run discovery interviews",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Owning the renewal forecast",
+        "evidence": [
+          {
+            "end": 90,
+            "origin": "feedback",
+            "quote": "I really don't want to own the renewal forecast.",
+            "role": "preference",
+            "source_revision": "a0f543b2c3271569b0aef29bb1d16c1a9b50710ddc91bf55f3bad214ce8bbcb2",
+            "start": 42
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "own the renewal forecast",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I'd be happy to run discovery interviews. I really don't want to own the renewal forecast.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "RO3-002": {
+    "clarification_question": "What specifically about this opportunity felt off to you?",
+    "clauses": [
+      {
+        "detail": "What specifically about this opportunity felt off to you?",
+        "evidence": {
+          "end": 56,
+          "origin": "feedback",
+          "quote": "Hmm. Something about this one doesn't sit right with me.",
+          "role": "vague_reaction",
+          "source_revision": "08d6e906c7656a4d86a52c6d37f523f9166b7d3cb6b155c82376b39c7d7b5a50",
+          "start": 0
+        },
+        "index": 0,
+        "role": "vague_reaction"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Hmm. Something about this one doesn't sit right with me.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": []
+  },
+  "RO3-003": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 42,
+          "origin": "feedback",
+          "quote": "I'd love to lead the accessibility audits.",
+          "role": "preference",
+          "source_revision": "129e869ee639ed49c001d45125bac5a478cb9d0628220510d586ce02a6d24491",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "Whether the role's funding continues beyond September.",
+        "evidence": {
+          "end": 103,
+          "origin": "feedback",
+          "quote": "Can you check whether the position is funded past September?",
+          "role": "posting_verification",
+          "source_revision": "129e869ee639ed49c001d45125bac5a478cb9d0628220510d586ce02a6d24491",
+          "start": 43
+        },
+        "index": 1,
+        "role": "posting_verification"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Lead accessibility audits",
+        "evidence": [
+          {
+            "end": 42,
+            "origin": "feedback",
+            "quote": "I'd love to lead the accessibility audits.",
+            "role": "preference",
+            "source_revision": "129e869ee639ed49c001d45125bac5a478cb9d0628220510d586ce02a6d24491",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "leading the accessibility audits",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I'd love to lead the accessibility audits. Can you check whether the position is funded past September?",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "RO3-004": {
+    "clarification_question": "What specifically influenced your reaction to this opportunity?",
+    "clauses": [
+      {
+        "detail": "Verify whether the overnight shift is occasional or the standard schedule.",
+        "evidence": {
+          "end": 118,
+          "origin": "feedback",
+          "quote": "I can't tell from the listing if the overnight shift is once in a while or the usual schedule. Can you find out which?",
+          "role": "posting_verification",
+          "source_revision": "0631f8abf2f4ec4ade0bb9d3757808abc7573e750998369fe992d0545b0eb418",
+          "start": 0
+        },
+        "index": 0,
+        "role": "posting_verification"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I can't tell from the listing if the overnight shift is once in a while or the usual schedule. Can you find out which?",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": []
+  },
+  "RO3-005": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "Current PMP certification.",
+        "evidence": {
+          "end": 32,
+          "origin": "feedback",
+          "quote": "My PMP certification is current.",
+          "role": "profile_fact",
+          "source_revision": "d8653a54877d2b8564e5ad1ad87cbd22c67492acdabf4a1143ccd8a90674eeab",
+          "start": 0
+        },
+        "index": 0,
+        "role": "profile_fact"
+      },
+      {
+        "detail": "Positive reaction to coaching new team leads.",
+        "evidence": {
+          "end": 64,
+          "origin": "feedback",
+          "quote": "I love coaching new team leads.",
+          "role": "preference",
+          "source_revision": "d8653a54877d2b8564e5ad1ad87cbd22c67492acdabf4a1143ccd8a90674eeab",
+          "start": 33
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Coaching new team leads",
+        "evidence": [
+          {
+            "end": 64,
+            "origin": "feedback",
+            "quote": "I love coaching new team leads.",
+            "role": "preference",
+            "source_revision": "d8653a54877d2b8564e5ad1ad87cbd22c67492acdabf4a1143ccd8a90674eeab",
+            "start": 33
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "coaching new team leads",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "My PMP certification is current. I love coaching new team leads.",
+    "profile_fact_candidate": "My PMP certification is current.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  },
+  "RO3-006": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "The posting does not disclose compensation.",
+        "evidence": {
+          "end": 27,
+          "origin": "feedback",
+          "quote": "They haven't posted a rate.",
+          "role": "job_fact",
+          "source_revision": "41e424f0de0a276953770ba9078620bf6c0b0f060898ff7c07841653be3c052e",
+          "start": 0
+        },
+        "index": 0,
+        "role": "job_fact"
+      },
+      {
+        "detail": "User explicitly asks to reconsider the confirmed W-2 hourly minimum rule to 72 USD per hour for future searches.",
+        "evidence": {
+          "end": 93,
+          "origin": "feedback",
+          "quote": "Could we lower my W-2 minimum to $72 an hour for future searches?",
+          "role": "rule_reconsideration",
+          "source_revision": "41e424f0de0a276953770ba9078620bf6c0b0f060898ff7c07841653be3c052e",
+          "start": 28
+        },
+        "index": 1,
+        "role": "rule_reconsideration"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "They haven't posted a rate. Could we lower my W-2 minimum to $72 an hour for future searches?",
+    "profile_fact_candidate": "Could we lower my W-2 minimum to $72 an hour for future searches?",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  },
+  "RO3-007": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "Reported pay and employment type for this opportunity.",
+        "evidence": {
+          "end": 37,
+          "origin": "feedback",
+          "quote": "They confirmed $94 an hour on a 1099.",
+          "role": "job_fact",
+          "source_revision": "72b09fcac810c705069f6b08563d721e3fa64de973c20822ffa34066c3976c18",
+          "start": 0
+        },
+        "index": 0,
+        "role": "job_fact"
+      },
+      {
+        "detail": "Reported conflict with the user's existing minimum for 1099 hourly pay.",
+        "evidence": {
+          "end": 76,
+          "origin": "feedback",
+          "quote": "That's below my existing $100 minimum.",
+          "role": "job_fact",
+          "source_revision": "72b09fcac810c705069f6b08563d721e3fa64de973c20822ffa34066c3976c18",
+          "start": 38
+        },
+        "index": 1,
+        "role": "job_fact"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": "The confirmed 1099 rate of $94 per hour is below the $100 per hour minimum.",
+    "hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "They confirmed $94 an hour on a 1099. That's below my existing $100 minimum.",
+    "profile_fact_candidate": "The confirmed 1099 rate of $94 per hour is below the $100 per hour minimum.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  },
+  "RO3-008": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 49,
+          "origin": "feedback",
+          "quote": "I'm done pursuing product operations as a career.",
+          "role": "preference",
+          "source_revision": "65ba44ab826ed07d4c094ca915fa7d2d1e01f50feb433f705441ece02a324cd7",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 93,
+          "origin": "feedback",
+          "quote": "I do still like planning launch rehearsals.",
+          "role": "preference",
+          "source_revision": "65ba44ab826ed07d4c094ca915fa7d2d1e01f50feb433f705441ece02a324cd7",
+          "start": 50
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": "needs_support_review",
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Product operations career path",
+        "evidence": [
+          {
+            "end": 49,
+            "origin": "feedback",
+            "quote": "I'm done pursuing product operations as a career.",
+            "role": "preference",
+            "source_revision": "65ba44ab826ed07d4c094ca915fa7d2d1e01f50feb433f705441ece02a324cd7",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "product operations",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Planning launch rehearsals",
+        "evidence": [
+          {
+            "end": 93,
+            "origin": "feedback",
+            "quote": "I do still like planning launch rehearsals.",
+            "role": "preference",
+            "source_revision": "65ba44ab826ed07d4c094ca915fa7d2d1e01f50feb433f705441ece02a324cd7",
+            "start": 50
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "planning launch rehearsals",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I'm done pursuing product operations as a career. I do still like planning launch rehearsals.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "RO3-009": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 45,
+          "origin": "feedback",
+          "quote": "I wouldn't apply to Cairnquill Systems again.",
+          "role": "preference",
+          "source_revision": "c21bdac7b7de259b461eacbe175f938fc305e35ddecae6db56312fd4e891df8f",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 111,
+          "origin": "feedback",
+          "quote": "I don't want to spend all day reconciling release checklists.",
+          "role": "preference",
+          "source_revision": "c21bdac7b7de259b461eacbe175f938fc305e35ddecae6db56312fd4e891df8f",
+          "start": 50
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Cairnquill Systems",
+        "evidence": [
+          {
+            "end": 45,
+            "origin": "feedback",
+            "quote": "I wouldn't apply to Cairnquill Systems again.",
+            "role": "preference",
+            "source_revision": "c21bdac7b7de259b461eacbe175f938fc305e35ddecae6db56312fd4e891df8f",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Cairnquill Systems",
+          "type": "employer"
+        },
+        "strength": "strong"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Spending all day reconciling release checklists",
+        "evidence": [
+          {
+            "end": 111,
+            "origin": "feedback",
+            "quote": "I don't want to spend all day reconciling release checklists.",
+            "role": "preference",
+            "source_revision": "c21bdac7b7de259b461eacbe175f938fc305e35ddecae6db56312fd4e891df8f",
+            "start": 50
+          },
+          {
+            "end": 79,
+            "origin": "feedback",
+            "quote": "all day",
+            "role": "qualifier",
+            "source_revision": "c21bdac7b7de259b461eacbe175f938fc305e35ddecae6db56312fd4e891df8f",
+            "start": 72
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 79,
+                "origin": "feedback",
+                "quote": "all day",
+                "role": "qualifier",
+                "source_revision": "c21bdac7b7de259b461eacbe175f938fc305e35ddecae6db56312fd4e891df8f",
+                "start": 72
+              },
+              "kind": "time_share",
+              "quote": "all day",
+              "source": "feedback",
+              "value": "all day"
+            }
+          ],
+          "referent": "spending all day reconciling release checklists",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I wouldn't apply to Cairnquill Systems again. And I don't want to spend all day reconciling release checklists.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "RO3-010": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 93,
+          "origin": "feedback",
+          "quote": "I'd be interested in facilitating the planning sessions, but only if I can run them remotely.",
+          "role": "preference",
+          "source_revision": "8101da16be117ceed7b1737382b7d22713ebd22125ce94b7ad6482379703ea47",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": {
+          "evidence": {
+            "end": 92,
+            "origin": "feedback",
+            "quote": "only if I can run them remotely",
+            "role": "condition",
+            "source_revision": "8101da16be117ceed7b1737382b7d22713ebd22125ce94b7ad6482379703ea47",
+            "start": 61
+          },
+          "kind": "delivery_mode_available",
+          "quote": "only if I can run them remotely",
+          "value": "can run them remotely"
+        },
+        "dimension": "role_responsibilities",
+        "display_label": "Interested in facilitating planning sessions",
+        "evidence": [
+          {
+            "end": 93,
+            "origin": "feedback",
+            "quote": "I'd be interested in facilitating the planning sessions, but only if I can run them remotely.",
+            "role": "preference",
+            "source_revision": "8101da16be117ceed7b1737382b7d22713ebd22125ce94b7ad6482379703ea47",
+            "start": 0
+          },
+          {
+            "end": 92,
+            "origin": "feedback",
+            "quote": "only if I can run them remotely",
+            "role": "condition",
+            "source_revision": "8101da16be117ceed7b1737382b7d22713ebd22125ce94b7ad6482379703ea47",
+            "start": 61
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "facilitating the planning sessions",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I'd be interested in facilitating the planning sessions, but only if I can run them remotely.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "RO3-011": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 42,
+          "origin": "feedback",
+          "quote": "One overnight trip a quarter works for me.",
+          "role": "preference",
+          "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 90,
+          "origin": "feedback",
+          "quote": "Weekly overnight travel would be a dealbreaker.",
+          "role": "preference",
+          "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+          "start": 43
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Accepts occasional overnight travel",
+        "evidence": [
+          {
+            "end": 42,
+            "origin": "feedback",
+            "quote": "One overnight trip a quarter works for me.",
+            "role": "preference",
+            "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+            "start": 0
+          },
+          {
+            "end": 28,
+            "origin": "feedback",
+            "quote": "a quarter",
+            "role": "qualifier",
+            "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+            "start": 19
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 28,
+                "origin": "feedback",
+                "quote": "a quarter",
+                "role": "qualifier",
+                "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                "start": 19
+              },
+              "kind": "frequency",
+              "quote": "a quarter",
+              "source": "feedback",
+              "value": "a quarter"
+            }
+          ],
+          "referent": "overnight travel",
+          "type": "travel_frequency"
+        },
+        "strength": "mild"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Rejects weekly overnight travel",
+        "evidence": [
+          {
+            "end": 90,
+            "origin": "feedback",
+            "quote": "Weekly overnight travel would be a dealbreaker.",
+            "role": "preference",
+            "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+            "start": 43
+          },
+          {
+            "end": 49,
+            "origin": "feedback",
+            "quote": "Weekly",
+            "role": "qualifier",
+            "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+            "start": 43
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 49,
+                "origin": "feedback",
+                "quote": "Weekly",
+                "role": "qualifier",
+                "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                "start": 43
+              },
+              "kind": "frequency",
+              "quote": "Weekly",
+              "source": "feedback",
+              "value": "weekly"
+            }
+          ],
+          "referent": "overnight travel",
+          "type": "travel_frequency"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "One overnight trip a quarter works for me. Weekly overnight travel would be a dealbreaker.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "RO3-012": {
+    "clarification_question": "What specifically about the rest of the job gave you pause?",
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 59,
+          "origin": "feedback",
+          "quote": "I like the chance to build the intake process from scratch.",
+          "role": "preference",
+          "source_revision": "eab5b90f4db1fad5647f8314582d1b68bf4c6f835a986b83538f2d6569caa044",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "What specifically about the rest of the job gave you pause?",
+        "evidence": {
+          "end": 129,
+          "origin": "feedback",
+          "quote": "The rest of the job gives me pause, but I can't put my finger on why.",
+          "role": "vague_reaction",
+          "source_revision": "eab5b90f4db1fad5647f8314582d1b68bf4c6f835a986b83538f2d6569caa044",
+          "start": 60
+        },
+        "index": 1,
+        "role": "vague_reaction"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Building the intake process from scratch",
+        "evidence": [
+          {
+            "end": 59,
+            "origin": "feedback",
+            "quote": "I like the chance to build the intake process from scratch.",
+            "role": "preference",
+            "source_revision": "eab5b90f4db1fad5647f8314582d1b68bf4c6f835a986b83538f2d6569caa044",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "build the intake process from scratch",
+          "type": "role_feature"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I like the chance to build the intake process from scratch. The rest of the job gives me pause, but I can't put my finger on why.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": []
+  }
+}
