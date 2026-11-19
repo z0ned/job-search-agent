@@ -1,0 +1,1230 @@
+{
+  "baseline_record_count": 180,
+  "batches": [
+    {
+      "baseline_predictions_sha256": "5ce1c75bd19eb5f3180f66b5f098fc36d70aa10e0122ed298b70681c82ffbc1a",
+      "baseline_report_sha256": "184533c39c6c026e3b7c8ece94890de85c8623e6f076272241b911e0f7e6c85f",
+      "baseline_reproduced": true,
+      "changes": {
+        "FI-033": {
+          "coalesced_intensity_clause_indices": [],
+          "expected_route": "PENDING_APPROVAL",
+          "fields": {
+            "evidence_findings": {
+              "after": [
+                {
+                  "clause_index": 1,
+                  "code": "near_zero_autonomy_bound_lost",
+                  "evidence": [
+                    {
+                      "end": 68,
+                      "origin": "feedback",
+                      "quote": "I would have almost no decision-making autonomy.",
+                      "role": "preference",
+                      "source_revision": "52b793ab7f5fc6a0ededb83aab9934fc430689ca58cdbdd9a50ef01461f43625",
+                      "start": 20
+                    }
+                  ],
+                  "message": "The evidence concerns almost no autonomy or authority. The proposed scope omits that limit.",
+                  "severity": "blocking",
+                  "signal_index": 0
+                }
+              ],
+              "before": null
+            }
+          },
+          "joined_employer_exception": false,
+          "new_scope_findings": [
+            {
+              "clause_index": 1,
+              "code": "near_zero_autonomy_bound_lost",
+              "evidence": [
+                {
+                  "end": 68,
+                  "origin": "feedback",
+                  "quote": "I would have almost no decision-making autonomy.",
+                  "role": "preference",
+                  "source_revision": "52b793ab7f5fc6a0ededb83aab9934fc430689ca58cdbdd9a50ef01461f43625",
+                  "start": 20
+                }
+              ],
+              "message": "The evidence concerns almost no autonomy or authority. The proposed scope omits that limit.",
+              "severity": "blocking",
+              "signal_index": 0
+            }
+          ],
+          "signal_count_after": 1,
+          "signal_count_before": 1
+        },
+        "FI-042": {
+          "coalesced_intensity_clause_indices": [],
+          "expected_route": "PENDING_APPROVAL",
+          "fields": {
+            "clauses": {
+              "after": [
+                {
+                  "detail": null,
+                  "evidence": {
+                    "end": 44,
+                    "origin": "feedback",
+                    "quote": "I would love an AI product leadership career",
+                    "role": "preference",
+                    "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                    "start": 0
+                  },
+                  "index": 0,
+                  "role": "preference"
+                },
+                {
+                  "detail": null,
+                  "evidence": {
+                    "end": 71,
+                    "origin": "feedback",
+                    "quote": "AI product leadership career, just not at Omega Health.",
+                    "role": "preference",
+                    "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                    "start": 16
+                  },
+                  "index": 1,
+                  "role": "preference"
+                }
+              ],
+              "before": [
+                {
+                  "detail": null,
+                  "evidence": {
+                    "end": 44,
+                    "origin": "feedback",
+                    "quote": "I would love an AI product leadership career",
+                    "role": "preference",
+                    "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                    "start": 0
+                  },
+                  "index": 0,
+                  "role": "preference"
+                },
+                {
+                  "detail": null,
+                  "evidence": {
+                    "end": 71,
+                    "origin": "feedback",
+                    "quote": "just not at Omega Health.",
+                    "role": "preference",
+                    "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                    "start": 46
+                  },
+                  "index": 1,
+                  "role": "preference"
+                }
+              ]
+            },
+            "interpretations": {
+              "after": [
+                {
+                  "application_status": "held_for_review",
+                  "career_evidence_review": null,
+                  "clause_index": 0,
+                  "condition": null,
+                  "dimension": "career_category",
+                  "display_label": "AI product leadership career",
+                  "evidence": [
+                    {
+                      "end": 44,
+                      "origin": "feedback",
+                      "quote": "I would love an AI product leadership career",
+                      "role": "preference",
+                      "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                      "start": 0
+                    }
+                  ],
+                  "feature_id": "career.ai_product_leadership",
+                  "identity_status": "registered",
+                  "polarity": "positive",
+                  "scope": {
+                    "qualifiers": [],
+                    "referent": "AI product leadership career",
+                    "type": "career_category"
+                  },
+                  "strength": "strong"
+                },
+                {
+                  "application_status": "held_for_review",
+                  "career_evidence_review": null,
+                  "clause_index": 1,
+                  "condition": null,
+                  "dimension": "employer",
+                  "display_label": "Omega Health",
+                  "evidence": [
+                    {
+                      "end": 71,
+                      "origin": "feedback",
+                      "quote": "AI product leadership career, just not at Omega Health.",
+                      "role": "preference",
+                      "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                      "start": 16
+                    },
+                    {
+                      "end": 44,
+                      "origin": "feedback",
+                      "quote": "AI product leadership career",
+                      "role": "qualifier",
+                      "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                      "start": 16
+                    }
+                  ],
+                  "feature_id": "employer.omega_health",
+                  "identity_status": "registered",
+                  "polarity": "negative",
+                  "scope": {
+                    "qualifiers": [
+                      {
+                        "evidence": {
+                          "end": 44,
+                          "origin": "feedback",
+                          "quote": "AI product leadership career",
+                          "role": "qualifier",
+                          "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                          "start": 16
+                        },
+                        "kind": "career_context",
+                        "quote": "AI product leadership career",
+                        "source": "feedback",
+                        "value": "AI product leadership career"
+                      }
+                    ],
+                    "referent": "Omega Health",
+                    "type": "employer"
+                  },
+                  "strength": "mild"
+                }
+              ],
+              "before": [
+                {
+                  "application_status": "held_for_review",
+                  "career_evidence_review": null,
+                  "clause_index": 0,
+                  "condition": null,
+                  "dimension": "career_category",
+                  "display_label": "AI product leadership career",
+                  "evidence": [
+                    {
+                      "end": 44,
+                      "origin": "feedback",
+                      "quote": "I would love an AI product leadership career",
+                      "role": "preference",
+                      "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                      "start": 0
+                    }
+                  ],
+                  "feature_id": "career.ai_product_leadership",
+                  "identity_status": "registered",
+                  "polarity": "positive",
+                  "scope": {
+                    "qualifiers": [],
+                    "referent": "AI product leadership career",
+                    "type": "career_category"
+                  },
+                  "strength": "strong"
+                }
+              ]
+            },
+            "validation_issues": {
+              "after": [],
+              "before": [
+                {
+                  "field": "signals",
+                  "index": 1,
+                  "message": "Evidence quote must locate a unique original feedback span."
+                }
+              ]
+            }
+          },
+          "joined_employer_exception": true,
+          "new_scope_findings": [],
+          "signal_count_after": 2,
+          "signal_count_before": 1
+        },
+        "FI-048": {
+          "coalesced_intensity_clause_indices": [],
+          "expected_route": "PENDING_APPROVAL",
+          "fields": {
+            "evidence_findings": {
+              "after": [
+                {
+                  "clause_index": 0,
+                  "code": "enthusiasm_does_not_establish_workload",
+                  "evidence": [
+                    {
+                      "end": 33,
+                      "origin": "feedback",
+                      "quote": "must love sales",
+                      "role": "context",
+                      "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                      "start": 18
+                    },
+                    {
+                      "end": 72,
+                      "origin": "feedback",
+                      "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+                      "role": "preference",
+                      "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                      "start": 0
+                    }
+                  ],
+                  "message": "The quoted enthusiasm requirement needs separate evidence for the proposed amount or centrality of the work.",
+                  "severity": "blocking",
+                  "signal_index": 0
+                }
+              ],
+              "before": null
+            }
+          },
+          "joined_employer_exception": false,
+          "new_scope_findings": [
+            {
+              "clause_index": 0,
+              "code": "enthusiasm_does_not_establish_workload",
+              "evidence": [
+                {
+                  "end": 33,
+                  "origin": "feedback",
+                  "quote": "must love sales",
+                  "role": "context",
+                  "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                  "start": 18
+                },
+                {
+                  "end": 72,
+                  "origin": "feedback",
+                  "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+                  "role": "preference",
+                  "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                  "start": 0
+                }
+              ],
+              "message": "The quoted enthusiasm requirement needs separate evidence for the proposed amount or centrality of the work.",
+              "severity": "blocking",
+              "signal_index": 0
+            }
+          ],
+          "signal_count_after": 1,
+          "signal_count_before": 1
+        }
+      },
+      "fixture_sha256": "600677336c0ddcbc6dfe67a2532426a083300661100d8a8ea507680903177bbe",
+      "id": "gold/pass-1",
+      "model": "gpt-5.4-2026-03-05",
+      "prompt_version": "feedback-interpretation-v3.0",
+      "raw_proposals_sha256": "1f0ba8ed30fcb687bc93cd2ff93b3f6536be5561385cbd304b5a4498daf6338d",
+      "record_count": 50,
+      "recover_explicit_conditions": false,
+      "source_configuration_sha256": "8b3fc0b2ef453f4061664c385430926e6f6a026852f95c3d68fe1f98d3bdffb8",
+      "source_report_sha256": "afe6c91213d841403e88d2578af33a477ca73587deea62778802201f403d93b0"
+    },
+    {
+      "baseline_predictions_sha256": "b168b3aef70a26a607c5bc932cb22b502b05ceaf2c91b21bda6bd9e15bdd5979",
+      "baseline_report_sha256": "184533c39c6c026e3b7c8ece94890de85c8623e6f076272241b911e0f7e6c85f",
+      "baseline_reproduced": true,
+      "changes": {
+        "FI-033": {
+          "coalesced_intensity_clause_indices": [],
+          "expected_route": "PENDING_APPROVAL",
+          "fields": {
+            "evidence_findings": {
+              "after": [
+                {
+                  "clause_index": 1,
+                  "code": "near_zero_autonomy_bound_lost",
+                  "evidence": [
+                    {
+                      "end": 68,
+                      "origin": "feedback",
+                      "quote": "I would have almost no decision-making autonomy.",
+                      "role": "preference",
+                      "source_revision": "52b793ab7f5fc6a0ededb83aab9934fc430689ca58cdbdd9a50ef01461f43625",
+                      "start": 20
+                    }
+                  ],
+                  "message": "The evidence concerns almost no autonomy or authority. The proposed scope omits that limit.",
+                  "severity": "blocking",
+                  "signal_index": 0
+                }
+              ],
+              "before": null
+            }
+          },
+          "joined_employer_exception": false,
+          "new_scope_findings": [
+            {
+              "clause_index": 1,
+              "code": "near_zero_autonomy_bound_lost",
+              "evidence": [
+                {
+                  "end": 68,
+                  "origin": "feedback",
+                  "quote": "I would have almost no decision-making autonomy.",
+                  "role": "preference",
+                  "source_revision": "52b793ab7f5fc6a0ededb83aab9934fc430689ca58cdbdd9a50ef01461f43625",
+                  "start": 20
+                }
+              ],
+              "message": "The evidence concerns almost no autonomy or authority. The proposed scope omits that limit.",
+              "severity": "blocking",
+              "signal_index": 0
+            }
+          ],
+          "signal_count_after": 1,
+          "signal_count_before": 1
+        },
+        "FI-042": {
+          "coalesced_intensity_clause_indices": [],
+          "expected_route": "PENDING_APPROVAL",
+          "fields": {
+            "clauses": {
+              "after": [
+                {
+                  "detail": null,
+                  "evidence": {
+                    "end": 44,
+                    "origin": "feedback",
+                    "quote": "I would love an AI product leadership career",
+                    "role": "preference",
+                    "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                    "start": 0
+                  },
+                  "index": 0,
+                  "role": "preference"
+                },
+                {
+                  "detail": null,
+                  "evidence": {
+                    "end": 71,
+                    "origin": "feedback",
+                    "quote": "AI product leadership career, just not at Omega Health.",
+                    "role": "preference",
+                    "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                    "start": 16
+                  },
+                  "index": 1,
+                  "role": "preference"
+                }
+              ],
+              "before": [
+                {
+                  "detail": null,
+                  "evidence": {
+                    "end": 44,
+                    "origin": "feedback",
+                    "quote": "I would love an AI product leadership career",
+                    "role": "preference",
+                    "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                    "start": 0
+                  },
+                  "index": 0,
+                  "role": "preference"
+                },
+                {
+                  "detail": null,
+                  "evidence": {
+                    "end": 71,
+                    "origin": "feedback",
+                    "quote": "just not at Omega Health.",
+                    "role": "preference",
+                    "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                    "start": 46
+                  },
+                  "index": 1,
+                  "role": "preference"
+                }
+              ]
+            },
+            "interpretations": {
+              "after": [
+                {
+                  "application_status": "held_for_review",
+                  "career_evidence_review": null,
+                  "clause_index": 0,
+                  "condition": null,
+                  "dimension": "career_category",
+                  "display_label": "AI product leadership career",
+                  "evidence": [
+                    {
+                      "end": 44,
+                      "origin": "feedback",
+                      "quote": "I would love an AI product leadership career",
+                      "role": "preference",
+                      "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                      "start": 0
+                    }
+                  ],
+                  "feature_id": "career.ai_product_leadership",
+                  "identity_status": "registered",
+                  "polarity": "positive",
+                  "scope": {
+                    "qualifiers": [],
+                    "referent": "AI product leadership career",
+                    "type": "career_category"
+                  },
+                  "strength": "strong"
+                },
+                {
+                  "application_status": "held_for_review",
+                  "career_evidence_review": null,
+                  "clause_index": 1,
+                  "condition": null,
+                  "dimension": "employer",
+                  "display_label": "Omega Health",
+                  "evidence": [
+                    {
+                      "end": 71,
+                      "origin": "feedback",
+                      "quote": "AI product leadership career, just not at Omega Health.",
+                      "role": "preference",
+                      "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                      "start": 16
+                    },
+                    {
+                      "end": 44,
+                      "origin": "feedback",
+                      "quote": "AI product leadership career",
+                      "role": "qualifier",
+                      "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                      "start": 16
+                    }
+                  ],
+                  "feature_id": "employer.omega_health",
+                  "identity_status": "registered",
+                  "polarity": "negative",
+                  "scope": {
+                    "qualifiers": [
+                      {
+                        "evidence": {
+                          "end": 44,
+                          "origin": "feedback",
+                          "quote": "AI product leadership career",
+                          "role": "qualifier",
+                          "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                          "start": 16
+                        },
+                        "kind": "career_context",
+                        "quote": "AI product leadership career",
+                        "source": "feedback",
+                        "value": "AI product leadership career"
+                      }
+                    ],
+                    "referent": "Omega Health",
+                    "type": "employer"
+                  },
+                  "strength": "mild"
+                }
+              ],
+              "before": [
+                {
+                  "application_status": "held_for_review",
+                  "career_evidence_review": null,
+                  "clause_index": 0,
+                  "condition": null,
+                  "dimension": "career_category",
+                  "display_label": "AI product leadership career",
+                  "evidence": [
+                    {
+                      "end": 44,
+                      "origin": "feedback",
+                      "quote": "I would love an AI product leadership career",
+                      "role": "preference",
+                      "source_revision": "d2b76544473745aefa40b8b7f04692fd9addb1ec6ea14d2bf6a4954497a12fca",
+                      "start": 0
+                    }
+                  ],
+                  "feature_id": "career.ai_product_leadership",
+                  "identity_status": "registered",
+                  "polarity": "positive",
+                  "scope": {
+                    "qualifiers": [],
+                    "referent": "AI product leadership career",
+                    "type": "career_category"
+                  },
+                  "strength": "strong"
+                }
+              ]
+            },
+            "validation_issues": {
+              "after": [],
+              "before": [
+                {
+                  "field": "signals",
+                  "index": 1,
+                  "message": "Evidence quote must locate a unique original feedback span."
+                }
+              ]
+            }
+          },
+          "joined_employer_exception": true,
+          "new_scope_findings": [],
+          "signal_count_after": 2,
+          "signal_count_before": 1
+        },
+        "FI-048": {
+          "coalesced_intensity_clause_indices": [],
+          "expected_route": "PENDING_APPROVAL",
+          "fields": {
+            "evidence_findings": {
+              "after": [
+                {
+                  "clause_index": 0,
+                  "code": "enthusiasm_does_not_establish_workload",
+                  "evidence": [
+                    {
+                      "end": 33,
+                      "origin": "feedback",
+                      "quote": "must love sales",
+                      "role": "context",
+                      "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                      "start": 18
+                    },
+                    {
+                      "end": 72,
+                      "origin": "feedback",
+                      "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+                      "role": "preference",
+                      "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                      "start": 0
+                    }
+                  ],
+                  "message": "The quoted enthusiasm requirement needs separate evidence for the proposed amount or centrality of the work.",
+                  "severity": "blocking",
+                  "signal_index": 0
+                }
+              ],
+              "before": null
+            }
+          },
+          "joined_employer_exception": false,
+          "new_scope_findings": [
+            {
+              "clause_index": 0,
+              "code": "enthusiasm_does_not_establish_workload",
+              "evidence": [
+                {
+                  "end": 33,
+                  "origin": "feedback",
+                  "quote": "must love sales",
+                  "role": "context",
+                  "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                  "start": 18
+                },
+                {
+                  "end": 72,
+                  "origin": "feedback",
+                  "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+                  "role": "preference",
+                  "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                  "start": 0
+                }
+              ],
+              "message": "The quoted enthusiasm requirement needs separate evidence for the proposed amount or centrality of the work.",
+              "severity": "blocking",
+              "signal_index": 0
+            }
+          ],
+          "signal_count_after": 1,
+          "signal_count_before": 1
+        }
+      },
+      "fixture_sha256": "600677336c0ddcbc6dfe67a2532426a083300661100d8a8ea507680903177bbe",
+      "id": "gold/pass-2",
+      "model": "gpt-5.4-2026-03-05",
+      "prompt_version": "feedback-interpretation-v3.0",
+      "raw_proposals_sha256": "62f07c566c246d87bd5349eb1f8a620ef38b7ee53013a8c9e926076bc04898ab",
+      "record_count": 50,
+      "recover_explicit_conditions": false,
+      "source_configuration_sha256": "8b3fc0b2ef453f4061664c385430926e6f6a026852f95c3d68fe1f98d3bdffb8",
+      "source_report_sha256": "afe6c91213d841403e88d2578af33a477ca73587deea62778802201f403d93b0"
+    },
+    {
+      "baseline_predictions_sha256": "b2ce1166d7fae9fd6bb234171f932fe0bcde84fd63f3c35a78d123e60f496cfe",
+      "baseline_report_sha256": "2534c3132fc93a7791e6d0142e9a54cdd2ca11ec78a95893b09c0023e5ba3fbe",
+      "baseline_reproduced": true,
+      "changes": {},
+      "fixture_sha256": "c38ff4c44d7cd0110e198b0682833da8f7c70c15e1cfd04489075858ef099393",
+      "id": "regression/pass-1",
+      "model": "gpt-5.4-2026-03-05",
+      "prompt_version": "feedback-interpretation-v3.0",
+      "raw_proposals_sha256": "34661d0e6e9fd43a1885d54f66c7263d4635ed7d63096f65485fbc4fdabc61de",
+      "record_count": 12,
+      "recover_explicit_conditions": false,
+      "source_configuration_sha256": "f20bd53eae0286d63cf94dea01fde04856667a51b2abce6dfb39a705bedecb34",
+      "source_report_sha256": "4b74787478eaff039834abe30b8477401687d1cac0e0bb63773ca102e62121aa"
+    },
+    {
+      "baseline_predictions_sha256": "ea91e074e892331f50cb9aa20847b72148360ce1c2a44e9a4732c3820cd628da",
+      "baseline_report_sha256": "2534c3132fc93a7791e6d0142e9a54cdd2ca11ec78a95893b09c0023e5ba3fbe",
+      "baseline_reproduced": true,
+      "changes": {},
+      "fixture_sha256": "c38ff4c44d7cd0110e198b0682833da8f7c70c15e1cfd04489075858ef099393",
+      "id": "regression/pass-2",
+      "model": "gpt-5.4-2026-03-05",
+      "prompt_version": "feedback-interpretation-v3.0",
+      "raw_proposals_sha256": "3f217c75b07dedd1665e36afe634d7fd3235d65bd492b4247e7963a99f2c6f21",
+      "record_count": 12,
+      "recover_explicit_conditions": false,
+      "source_configuration_sha256": "f20bd53eae0286d63cf94dea01fde04856667a51b2abce6dfb39a705bedecb34",
+      "source_report_sha256": "4b74787478eaff039834abe30b8477401687d1cac0e0bb63773ca102e62121aa"
+    },
+    {
+      "baseline_predictions_sha256": "323e5a0ff03c9adfdb73b1a87f15961bb6b9a608733cc4ae707da6adc044404f",
+      "baseline_report_sha256": "6c7b29dd0c86e53b956fa21233bc3f5f15e87249d9798798578db85053361180",
+      "baseline_reproduced": true,
+      "changes": {},
+      "fixture_sha256": "e3c046bcbc6e5012e09fa5e8404211ab4a2938f2e7599681283c28b1253caa96",
+      "id": "holdout/pass-1",
+      "model": "gpt-5.4-2026-03-05",
+      "prompt_version": "feedback-interpretation-v3.0",
+      "raw_proposals_sha256": "cbd24dc7a250cbe78fc1e594806e60939d2f346a9c5258563aa561e4a9cce57d",
+      "record_count": 12,
+      "recover_explicit_conditions": false,
+      "source_configuration_sha256": "b14a9780f3f534dfb70b0017aef89e25d6fa8bac513c0d1d41488a8590f3803a",
+      "source_report_sha256": "bc7fdce6128af5ddf926e2e9ab8327d0c96d4352f880f18ce49fa41861fc6c25"
+    },
+    {
+      "baseline_predictions_sha256": "28f90db6f74638e4a12d22e8305187b86482dd1ccb8cc4bb6a342ef92f4b63c9",
+      "baseline_report_sha256": "6c7b29dd0c86e53b956fa21233bc3f5f15e87249d9798798578db85053361180",
+      "baseline_reproduced": true,
+      "changes": {},
+      "fixture_sha256": "e3c046bcbc6e5012e09fa5e8404211ab4a2938f2e7599681283c28b1253caa96",
+      "id": "holdout/pass-2",
+      "model": "gpt-5.4-2026-03-05",
+      "prompt_version": "feedback-interpretation-v3.0",
+      "raw_proposals_sha256": "61a5b78613d1424111ce1920d187fe73683f2dc72dda3c2178e1e785adfd232a",
+      "record_count": 12,
+      "recover_explicit_conditions": false,
+      "source_configuration_sha256": "b14a9780f3f534dfb70b0017aef89e25d6fa8bac513c0d1d41488a8590f3803a",
+      "source_report_sha256": "bc7fdce6128af5ddf926e2e9ab8327d0c96d4352f880f18ce49fa41861fc6c25"
+    },
+    {
+      "baseline_predictions_sha256": "9b70e62132f660af4c3b290ab969dac3806355ee10fc3ed980653a70566a14bb",
+      "baseline_report_sha256": "30896243eb94b715b5b461cd21999be904825a2fc45dce354b98e319f4ea46d0",
+      "baseline_reproduced": true,
+      "changes": {
+        "FI-048": {
+          "coalesced_intensity_clause_indices": [],
+          "expected_route": "PENDING_APPROVAL",
+          "fields": {
+            "evidence_findings": {
+              "after": [
+                {
+                  "clause_index": 0,
+                  "code": "enthusiasm_does_not_establish_workload",
+                  "evidence": [
+                    {
+                      "end": 33,
+                      "origin": "feedback",
+                      "quote": "must love sales",
+                      "role": "context",
+                      "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                      "start": 18
+                    },
+                    {
+                      "end": 72,
+                      "origin": "feedback",
+                      "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+                      "role": "preference",
+                      "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                      "start": 0
+                    }
+                  ],
+                  "message": "The quoted enthusiasm requirement needs separate evidence for the proposed amount or centrality of the work.",
+                  "severity": "blocking",
+                  "signal_index": 0
+                }
+              ],
+              "before": []
+            }
+          },
+          "joined_employer_exception": false,
+          "new_scope_findings": [
+            {
+              "clause_index": 0,
+              "code": "enthusiasm_does_not_establish_workload",
+              "evidence": [
+                {
+                  "end": 33,
+                  "origin": "feedback",
+                  "quote": "must love sales",
+                  "role": "context",
+                  "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                  "start": 18
+                },
+                {
+                  "end": 72,
+                  "origin": "feedback",
+                  "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+                  "role": "preference",
+                  "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                  "start": 0
+                }
+              ],
+              "message": "The quoted enthusiasm requirement needs separate evidence for the proposed amount or centrality of the work.",
+              "severity": "blocking",
+              "signal_index": 0
+            }
+          ],
+          "signal_count_after": 1,
+          "signal_count_before": 1
+        },
+        "FT-002": {
+          "coalesced_intensity_clause_indices": [
+            0
+          ],
+          "expected_route": "PENDING_APPROVAL",
+          "fields": {
+            "clarification_question": {
+              "after": null,
+              "before": "What specifically influenced your reaction to this opportunity?"
+            },
+            "interpretations": {
+              "after": [
+                {
+                  "application_status": "held_for_review",
+                  "career_evidence_review": null,
+                  "clause_index": 0,
+                  "condition": null,
+                  "dimension": "role_responsibilities",
+                  "display_label": "Roles built around giving safety briefings",
+                  "evidence": [
+                    {
+                      "end": 133,
+                      "origin": "feedback",
+                      "quote": "The posting describes safety briefings as 'the heart of the role'. I want to steer clear of jobs built around giving those briefings.",
+                      "role": "preference",
+                      "source_revision": "1d063333622974ca2c8183756a63cbb6b8f3dfe605a6b932e0051d0b1f5e65ff",
+                      "start": 0
+                    },
+                    {
+                      "end": 64,
+                      "origin": "feedback",
+                      "quote": "the heart of the role",
+                      "role": "qualifier",
+                      "source_revision": "1d063333622974ca2c8183756a63cbb6b8f3dfe605a6b932e0051d0b1f5e65ff",
+                      "start": 43
+                    },
+                    {
+                      "end": 132,
+                      "origin": "feedback",
+                      "quote": "built around giving those briefings",
+                      "role": "qualifier",
+                      "source_revision": "1d063333622974ca2c8183756a63cbb6b8f3dfe605a6b932e0051d0b1f5e65ff",
+                      "start": 97
+                    }
+                  ],
+                  "feature_id": null,
+                  "identity_status": "candidate",
+                  "polarity": "negative",
+                  "scope": {
+                    "qualifiers": [
+                      {
+                        "evidence": {
+                          "end": 64,
+                          "origin": "feedback",
+                          "quote": "the heart of the role",
+                          "role": "qualifier",
+                          "source_revision": "1d063333622974ca2c8183756a63cbb6b8f3dfe605a6b932e0051d0b1f5e65ff",
+                          "start": 43
+                        },
+                        "kind": "intensity",
+                        "quote": "the heart of the role",
+                        "source": "feedback",
+                        "value": "dominant"
+                      }
+                    ],
+                    "referent": "giving safety briefings",
+                    "type": "role_feature"
+                  },
+                  "strength": "strong"
+                }
+              ],
+              "before": []
+            },
+            "review_status": {
+              "after": "PENDING_APPROVAL",
+              "before": "NEEDS_CLARIFICATION"
+            },
+            "validation_issues": {
+              "after": [],
+              "before": [
+                {
+                  "field": "signals",
+                  "index": 0,
+                  "message": "A scope cannot repeat a qualifier kind."
+                }
+              ]
+            }
+          },
+          "joined_employer_exception": false,
+          "new_scope_findings": [],
+          "signal_count_after": 1,
+          "signal_count_before": 0
+        }
+      },
+      "fixture_sha256": "2f1374e2afb41d4d57dd73c6a9dd8f1c2d492a76dac2d38cc07de0eeedf26b0d",
+      "id": "schema/control",
+      "model": "gpt-5.4-2026-03-05",
+      "prompt_version": "feedback-interpretation-v3.0",
+      "raw_proposals_sha256": "1d70dae0f730bd55a3e95e9d433fabc439a1439b85f6c3d35bebcef9ad1af170",
+      "record_count": 6,
+      "recover_explicit_conditions": true,
+      "source_configuration_sha256": "6ac0c00dcf97f5c32a6f6e113692951893af8531918ad6339f52e7bb4691a689",
+      "source_report_sha256": "30896243eb94b715b5b461cd21999be904825a2fc45dce354b98e319f4ea46d0"
+    },
+    {
+      "baseline_predictions_sha256": "72c0a623261d32b30e9ba0e5f29d4cb48ec60369cc145114746e15d1aac68ddc",
+      "baseline_report_sha256": "30896243eb94b715b5b461cd21999be904825a2fc45dce354b98e319f4ea46d0",
+      "baseline_reproduced": true,
+      "changes": {
+        "FI-048": {
+          "coalesced_intensity_clause_indices": [],
+          "expected_route": "PENDING_APPROVAL",
+          "fields": {
+            "evidence_findings": {
+              "after": [
+                {
+                  "clause_index": 0,
+                  "code": "enthusiasm_does_not_establish_workload",
+                  "evidence": [
+                    {
+                      "end": 33,
+                      "origin": "feedback",
+                      "quote": "must love sales",
+                      "role": "context",
+                      "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                      "start": 18
+                    },
+                    {
+                      "end": 72,
+                      "origin": "feedback",
+                      "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+                      "role": "preference",
+                      "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                      "start": 0
+                    }
+                  ],
+                  "message": "The quoted enthusiasm requirement needs separate evidence for the proposed amount or centrality of the work.",
+                  "severity": "blocking",
+                  "signal_index": 0
+                }
+              ],
+              "before": []
+            }
+          },
+          "joined_employer_exception": false,
+          "new_scope_findings": [
+            {
+              "clause_index": 0,
+              "code": "enthusiasm_does_not_establish_workload",
+              "evidence": [
+                {
+                  "end": 33,
+                  "origin": "feedback",
+                  "quote": "must love sales",
+                  "role": "context",
+                  "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                  "start": 18
+                },
+                {
+                  "end": 72,
+                  "origin": "feedback",
+                  "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+                  "role": "preference",
+                  "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                  "start": 0
+                }
+              ],
+              "message": "The quoted enthusiasm requirement needs separate evidence for the proposed amount or centrality of the work.",
+              "severity": "blocking",
+              "signal_index": 0
+            }
+          ],
+          "signal_count_after": 1,
+          "signal_count_before": 1
+        }
+      },
+      "fixture_sha256": "2f1374e2afb41d4d57dd73c6a9dd8f1c2d492a76dac2d38cc07de0eeedf26b0d",
+      "id": "schema/trial",
+      "model": "gpt-5.4-2026-03-05",
+      "prompt_version": "feedback-interpretation-v3.0",
+      "raw_proposals_sha256": "f52f9de45be11b145ddddcb5f4a3922803688ade1e9fdaf1936c8092e109e08c",
+      "record_count": 6,
+      "recover_explicit_conditions": true,
+      "source_configuration_sha256": "6ac0c00dcf97f5c32a6f6e113692951893af8531918ad6339f52e7bb4691a689",
+      "source_report_sha256": "30896243eb94b715b5b461cd21999be904825a2fc45dce354b98e319f4ea46d0"
+    },
+    {
+      "baseline_predictions_sha256": "55ac755c679ada1e51fbc6a65eab3bd5f50427316e9e28d526d3434357d873fc",
+      "baseline_report_sha256": "c86ca60753d6d5f83ef200da57d2552a03feb0e21a380e002a38749c46022be8",
+      "baseline_reproduced": true,
+      "changes": {
+        "FI-048": {
+          "coalesced_intensity_clause_indices": [],
+          "expected_route": "PENDING_APPROVAL",
+          "fields": {
+            "evidence_findings": {
+              "after": [
+                {
+                  "clause_index": 0,
+                  "code": "enthusiasm_does_not_establish_workload",
+                  "evidence": [
+                    {
+                      "end": 33,
+                      "origin": "feedback",
+                      "quote": "must love sales",
+                      "role": "context",
+                      "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                      "start": 18
+                    },
+                    {
+                      "end": 72,
+                      "origin": "feedback",
+                      "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+                      "role": "preference",
+                      "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                      "start": 0
+                    }
+                  ],
+                  "message": "The quoted enthusiasm requirement needs separate evidence for the proposed amount or centrality of the work.",
+                  "severity": "blocking",
+                  "signal_index": 0
+                }
+              ],
+              "before": []
+            }
+          },
+          "joined_employer_exception": false,
+          "new_scope_findings": [
+            {
+              "clause_index": 0,
+              "code": "enthusiasm_does_not_establish_workload",
+              "evidence": [
+                {
+                  "end": 33,
+                  "origin": "feedback",
+                  "quote": "must love sales",
+                  "role": "context",
+                  "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                  "start": 18
+                },
+                {
+                  "end": 72,
+                  "origin": "feedback",
+                  "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+                  "role": "preference",
+                  "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                  "start": 0
+                }
+              ],
+              "message": "The quoted enthusiasm requirement needs separate evidence for the proposed amount or centrality of the work.",
+              "severity": "blocking",
+              "signal_index": 0
+            }
+          ],
+          "signal_count_after": 1,
+          "signal_count_before": 1
+        }
+      },
+      "fixture_sha256": "439a75b85c44882099f94410c72824f57fb2bffa95b6dba6382194d7405785d0",
+      "id": "independence/control",
+      "model": "gpt-5.4-2026-03-05",
+      "prompt_version": "feedback-interpretation-v3.0",
+      "raw_proposals_sha256": "9932d9dced765b3e446a6e5987660a9f2b7bef7a66befd56ab6b5698f88ae9bf",
+      "record_count": 10,
+      "recover_explicit_conditions": true,
+      "source_configuration_sha256": "6c64ed10fc801aa519a63b2789ab36f59789d150ae7548c445ef60aed90351be",
+      "source_report_sha256": "c86ca60753d6d5f83ef200da57d2552a03feb0e21a380e002a38749c46022be8"
+    },
+    {
+      "baseline_predictions_sha256": "d8c8eadfa39ea26674f26091f59eb076fa9ffa1f88e1ed6b9c899e9ff6a46c6c",
+      "baseline_report_sha256": "c86ca60753d6d5f83ef200da57d2552a03feb0e21a380e002a38749c46022be8",
+      "baseline_reproduced": true,
+      "changes": {
+        "FI-048": {
+          "coalesced_intensity_clause_indices": [],
+          "expected_route": "PENDING_APPROVAL",
+          "fields": {
+            "evidence_findings": {
+              "after": [
+                {
+                  "clause_index": 0,
+                  "code": "enthusiasm_does_not_establish_workload",
+                  "evidence": [
+                    {
+                      "end": 33,
+                      "origin": "feedback",
+                      "quote": "must love sales",
+                      "role": "context",
+                      "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                      "start": 18
+                    },
+                    {
+                      "end": 72,
+                      "origin": "feedback",
+                      "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+                      "role": "preference",
+                      "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                      "start": 0
+                    }
+                  ],
+                  "message": "The quoted enthusiasm requirement needs separate evidence for the proposed amount or centrality of the work.",
+                  "severity": "blocking",
+                  "signal_index": 0
+                }
+              ],
+              "before": []
+            }
+          },
+          "joined_employer_exception": false,
+          "new_scope_findings": [
+            {
+              "clause_index": 0,
+              "code": "enthusiasm_does_not_establish_workload",
+              "evidence": [
+                {
+                  "end": 33,
+                  "origin": "feedback",
+                  "quote": "must love sales",
+                  "role": "context",
+                  "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                  "start": 18
+                },
+                {
+                  "end": 72,
+                  "origin": "feedback",
+                  "quote": "The posting says 'must love sales'; that's exactly what I want to avoid.",
+                  "role": "preference",
+                  "source_revision": "30c77af9ff470f0e95dc8eb678d5bcb96983f7983a8c31f976e43af3bebc4958",
+                  "start": 0
+                }
+              ],
+              "message": "The quoted enthusiasm requirement needs separate evidence for the proposed amount or centrality of the work.",
+              "severity": "blocking",
+              "signal_index": 0
+            }
+          ],
+          "signal_count_after": 1,
+          "signal_count_before": 1
+        },
+        "FT-002": {
+          "coalesced_intensity_clause_indices": [
+            0
+          ],
+          "expected_route": "PENDING_APPROVAL",
+          "fields": {
+            "clarification_question": {
+              "after": null,
+              "before": "What specifically influenced your reaction to this opportunity?"
+            },
+            "interpretations": {
+              "after": [
+                {
+                  "application_status": "held_for_review",
+                  "career_evidence_review": null,
+                  "clause_index": 0,
+                  "condition": null,
+                  "dimension": "role_responsibilities",
+                  "display_label": "Roles built around giving safety briefings",
+                  "evidence": [
+                    {
+                      "end": 133,
+                      "origin": "feedback",
+                      "quote": "The posting describes safety briefings as 'the heart of the role'. I want to steer clear of jobs built around giving those briefings.",
+                      "role": "preference",
+                      "source_revision": "1d063333622974ca2c8183756a63cbb6b8f3dfe605a6b932e0051d0b1f5e65ff",
+                      "start": 0
+                    },
+                    {
+                      "end": 64,
+                      "origin": "feedback",
+                      "quote": "the heart of the role",
+                      "role": "qualifier",
+                      "source_revision": "1d063333622974ca2c8183756a63cbb6b8f3dfe605a6b932e0051d0b1f5e65ff",
+                      "start": 43
+                    },
+                    {
+                      "end": 132,
+                      "origin": "feedback",
+                      "quote": "built around giving those briefings",
+                      "role": "qualifier",
+                      "source_revision": "1d063333622974ca2c8183756a63cbb6b8f3dfe605a6b932e0051d0b1f5e65ff",
+                      "start": 97
+                    }
+                  ],
+                  "feature_id": null,
+                  "identity_status": "candidate",
+                  "polarity": "negative",
+                  "scope": {
+                    "qualifiers": [
+                      {
+                        "evidence": {
+                          "end": 64,
+                          "origin": "feedback",
+                          "quote": "the heart of the role",
+                          "role": "qualifier",
+                          "source_revision": "1d063333622974ca2c8183756a63cbb6b8f3dfe605a6b932e0051d0b1f5e65ff",
+                          "start": 43
+                        },
+                        "kind": "intensity",
+                        "quote": "the heart of the role",
+                        "source": "feedback",
+                        "value": "dominant"
+                      }
+                    ],
+                    "referent": "giving safety briefings",
+                    "type": "role_feature"
+                  },
+                  "strength": "strong"
+                }
+              ],
+              "before": []
+            },
+            "review_status": {
+              "after": "PENDING_APPROVAL",
+              "before": "NEEDS_CLARIFICATION"
+            },
+            "validation_issues": {
+              "after": [],
+              "before": [
+                {
+                  "field": "signals",
+                  "index": 0,
+                  "message": "A scope cannot repeat a qualifier kind."
+                }
+              ]
+            }
+          },
+          "joined_employer_exception": false,
+          "new_scope_findings": [],
+          "signal_count_after": 1,
+          "signal_count_before": 0
+        }
+      },
+      "fixture_sha256": "439a75b85c44882099f94410c72824f57fb2bffa95b6dba6382194d7405785d0",
+      "id": "independence/treatment",
+      "model": "gpt-5.4-2026-03-05",
+      "prompt_version": "feedback-interpretation-v3.0",
+      "raw_proposals_sha256": "e4ccb59badac0eb9a3b111eb38a19895360b89675365870e19c3892e077127f4",
+      "record_count": 10,
+      "recover_explicit_conditions": true,
+      "source_configuration_sha256": "6c64ed10fc801aa519a63b2789ab36f59789d150ae7548c445ef60aed90351be",
+      "source_report_sha256": "c86ca60753d6d5f83ef200da57d2552a03feb0e21a380e002a38749c46022be8"
+    }
+  ],
+  "changed_record_count": 12,
+  "inference_requests": 0,
+  "mode": "offline_validation_and_scope_repair_trial",
+  "source_sha256": {
+    "feedback_autonomy_review_v3.py": "b918d76b1ddc78fcd8bd3e5851ff411e6850158ca96cbb3e93f8cf9e2ff11795",
+    "feedback_employer_context_repair_v3.py": "77a7e27be66ee3094664a8bb3e153082e25cfa5f91c396045572ed9a6f4af0bd",
+    "feedback_enthusiasm_scope_v3.py": "a9af48018de711d037dd0fea4a3b43032ac3ba1932f18ad0f6661c5ebc93ae32",
+    "feedback_intensity_repair_v3.py": "ca4ff9ba3dddbec7d3aa214924a70c03f50cb7395cd8ace212bbb47f824384ff",
+    "feedback_v3.py": "6f48aaec35bec351d293a1559c34024cdeb0e068daaf675f10f06dbac285b2b2",
+    "feedback_validation_repair_trial_v3.py": "581300d6a4e8abbae1138c90ebe9d55085c7afa6e7538ffc7d23438c8adba7e4"
+  }
+}

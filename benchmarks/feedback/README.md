@@ -61,3 +61,7 @@ Two source-only reviewers assigned claim dispositions to the 20 saved validated 
 Separate blinded reviewers judged claim relationships and proposed scopes on the same 20 validated records. The archived projection keeps flagged claims visible and retains each signal's original evidence and review authority through its capture and index. The scorecard reports visible and unflagged lists separately against the frozen adjudications. [Trial protocol and findings](../../docs/Feedback_Interpreter_Claim_Scope_Trial_v3.md) · [Case-level scorecard](offline_v3_claim_scope_review/comparison.json)
 
 The follow-up uses the recorded disputed explanation links to flag both implicated claims. Its decisions, projection, and case-level comparison preserve the source hashes and the results of the targeted checks. [Follow-up results](../../docs/Feedback_Interpreter_Claim_Scope_Trial_v3.md#follow-up-on-disputed-relationships) · [Case-level scorecard](offline_v3_disputed_claim_review/comparison.json)
+
+## Offline v3 validation and scope repair trial
+
+The replay reproduces 180 archived validation records and tests two narrow evidence-preserving repairs and two scope review checks. Its report retains the input hashes and the before-and-after fields for every changed case. [Trial findings](../../docs/Feedback_Interpreter_Validation_Repair_Trial_v3.md) · [Case-level replay](offline_v3_validation_repair/report.json)
