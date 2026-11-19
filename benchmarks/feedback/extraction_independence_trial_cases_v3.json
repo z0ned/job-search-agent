@@ -1,0 +1,150 @@
+{
+  "suite_version": "3.0-extraction-independence-trial",
+  "provenance": {
+    "scenario_count": 4,
+    "design": "Two synthetic contrast pairs with job context held fixed within each pair. Reference proposals were authored directly from the feedback before trial inference.",
+    "authored_without_trial_prompt_or_outputs": true,
+    "frozen_before_trial_inference": true,
+    "scoring_notes": "Pair atomic signals one to one. Score an umbrella restatement or a posting fact as an unsupported extra if emitted as a separate preference. Score an independently evaluated target as missing when omitted, including on a profile-fact route."
+  },
+  "assumptions": {
+    "hard_rules_immutable_without_explicit_change": true,
+    "written_explanation_required_for_both_decisions": true,
+    "batch_approval_before_application": true,
+    "frozen_phase_approval_is_held": true,
+    "unknown_salary_remains_eligible": true,
+    "permanent_base_minimum_usd": 180000,
+    "w2_hourly_minimum_usd": 75,
+    "1099_hourly_minimum_usd": 100,
+    "c2c_hourly_minimum_usd": null
+  },
+  "test_cases": [
+    {
+      "case_id": "FI3X-001",
+      "trial_focus": "An umbrella concern restates one specified autonomy problem.",
+      "decision": "rejected",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Facilities Inspection Coordinator"
+      },
+      "original_feedback": "The limited authority is what puts me off. Specifically, I do not want to have almost no say in the order of inspections.",
+      "expected_interpretations": [
+        {
+          "dimension": "seniority_scope",
+          "feature": "almost no discretion over inspection order",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "seniority_feature",
+            "value": "very_low_autonomy_over_inspection_order"
+          },
+          "evidence_quote": "I do not want to have almost no say in the order of inspections"
+        }
+      ],
+      "prohibited_inferences": [
+        "Make a separate negative signal for overall authority from the summary",
+        "Infer a particular job grade",
+        "Treat limited discretion over inspection order as aversion to all oversight"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI3X-002",
+      "trial_focus": "Two distinct responsibilities each receive a separate negative reaction.",
+      "decision": "rejected",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Facilities Inspection Coordinator"
+      },
+      "original_feedback": "I do not want to have almost no say in the order of inspections. I also do not want a role with no responsibility for the inspection budget.",
+      "expected_interpretations": [
+        {
+          "dimension": "seniority_scope",
+          "feature": "almost no discretion over inspection order",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "seniority_feature",
+            "value": "very_low_autonomy_over_inspection_order"
+          },
+          "evidence_quote": "I do not want to have almost no say in the order of inspections"
+        },
+        {
+          "dimension": "seniority_scope",
+          "feature": "no responsibility for the inspection budget",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {
+            "type": "seniority_feature",
+            "value": "no_inspection_budget_responsibility"
+          },
+          "evidence_quote": "I also do not want a role with no responsibility for the inspection budget"
+        }
+      ],
+      "prohibited_inferences": [
+        "Suppress the separate statement about budget responsibility",
+        "Combine both reactions into generic dislike of low authority",
+        "Infer a preference to control the entire organizational budget"
+      ],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "FI3X-003",
+      "trial_focus": "A referenced posting duty supplies context for a self-reported qualification gap.",
+      "decision": "interested",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Quality Readiness Specialist",
+        "posting_excerpt": "Run product recall simulations and facilitate the debrief after each simulation."
+      },
+      "original_feedback": "I have never run a product recall simulation before. The listing mentions facilitating the debrief after the simulation.",
+      "expected_interpretations": [],
+      "prohibited_inferences": [
+        "Infer positive debrief interest from the listing or the Interested decision",
+        "Infer a gap in facilitation experience",
+        "Treat the stated experience gap as an aversion"
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "profile_fact_candidate": "The user says they have never run a product recall simulation."
+    },
+    {
+      "case_id": "FI3X-004",
+      "trial_focus": "An independent duty preference appears next to the same self-reported qualification gap.",
+      "decision": "interested",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Quality Readiness Specialist",
+        "posting_excerpt": "Run product recall simulations and facilitate the debrief after each simulation."
+      },
+      "original_feedback": "I have never run a product recall simulation before. I would enjoy facilitating the debrief after the simulation.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "facilitating a product recall simulation debrief",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {
+            "type": "role_feature",
+            "value": "product_recall_simulation_debrief_facilitation"
+          },
+          "evidence_quote": "I would enjoy facilitating the debrief after the simulation"
+        }
+      ],
+      "prohibited_inferences": [
+        "Suppress the debrief preference because profile review is required",
+        "Infer experience running simulations or facilitating debriefs",
+        "Extend interest to running the entire simulation"
+      ],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "profile_fact_candidate": "The user says they have never run a product recall simulation."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+Check the independence of each proposed signal against the complete feedback.
+Identify the target, the user's evaluation of it, and what that evaluation
+adds. When a broad verdict serves only to introduce or restate a specific
+reaction, record the specific reaction once. Keep the broad wording in its
+supporting evidence or as context. A reason, benefit, example, concession, or
+condition supports another signal only when the feedback also independently
+evaluates that target. Apply this check even when punctuation splits the
+feedback into separate clauses or sentences.
+
+Keep each genuinely distinct evaluation. This includes separately expressed
+broad and narrow assessments, evaluations that agree in polarity, and
+evaluations that appear in the same sentence. Give each signal its own
+supporting clause and a distinct verbatim span. Allow spans to overlap when
+a shared predicate or antecedent is needed to identify what the user evaluates.
+Each span must support its own target and evaluation. Keep a separate review
+item in its appropriate clause role alongside any independently supported
+preference.
+
+Keep every supported qualifier and condition attached to the evaluation it
+limits. Preserve their original evidence and the existing structured scope
+requirements.
