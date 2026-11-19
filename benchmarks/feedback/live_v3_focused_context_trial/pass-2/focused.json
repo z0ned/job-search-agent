@@ -1,0 +1,463 @@
+{
+  "FC3-001": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 71,
+          "origin": "feedback",
+          "quote": "This particular Rail Signal Testing Technician opening sounds excellent",
+          "role": "preference",
+          "source_revision": "f02b187bbf31dde19610ddf6cb82b1eed236c1eae4784b647f9204d6f2065895",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 117,
+          "origin": "feedback",
+          "quote": "I do not want to work for Aster Spur Systems",
+          "role": "preference",
+          "source_revision": "f02b187bbf31dde19610ddf6cb82b1eed236c1eae4784b647f9204d6f2065895",
+          "start": 73
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Role responsibilities",
+        "evidence": [
+          {
+            "end": 71,
+            "origin": "feedback",
+            "quote": "This particular Rail Signal Testing Technician opening sounds excellent",
+            "role": "preference",
+            "source_revision": "f02b187bbf31dde19610ddf6cb82b1eed236c1eae4784b647f9204d6f2065895",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Rail Signal Testing Technician",
+          "type": "posting_role"
+        },
+        "strength": "strong"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Employer",
+        "evidence": [
+          {
+            "end": 117,
+            "origin": "feedback",
+            "quote": "I do not want to work for Aster Spur Systems",
+            "role": "preference",
+            "source_revision": "f02b187bbf31dde19610ddf6cb82b1eed236c1eae4784b647f9204d6f2065895",
+            "start": 73
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Aster Spur Systems",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "This particular Rail Signal Testing Technician opening sounds excellent. I do not want to work for Aster Spur Systems.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FC3-002": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "Neutral description of the opening's duties that sets up the separate employer objection in the full feedback.",
+        "evidence": {
+          "end": 78,
+          "origin": "feedback",
+          "quote": "This Rail Signal Testing Technician opening involves checking interlock relays",
+          "role": "context",
+          "source_revision": "a7cedac296c12f5e49617449f099719d1c699e0060f72011e0375a9f846ec681",
+          "start": 0
+        },
+        "index": 0,
+        "role": "context"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 124,
+          "origin": "feedback",
+          "quote": "I do not want to work for Aster Spur Systems",
+          "role": "preference",
+          "source_revision": "a7cedac296c12f5e49617449f099719d1c699e0060f72011e0375a9f846ec681",
+          "start": 80
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Aster Spur Systems",
+        "evidence": [
+          {
+            "end": 124,
+            "origin": "feedback",
+            "quote": "I do not want to work for Aster Spur Systems",
+            "role": "preference",
+            "source_revision": "a7cedac296c12f5e49617449f099719d1c699e0060f72011e0375a9f846ec681",
+            "start": 80
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Aster Spur Systems",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "This Rail Signal Testing Technician opening involves checking interlock relays. I do not want to work for Aster Spur Systems.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FC3-003": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 69,
+          "origin": "feedback",
+          "quote": "I would enjoy diagnosing voltage drops in irrigation-control cabinets",
+          "role": "preference",
+          "source_revision": "f132620f621c9ffaca0ebcbc015fa6e78dae879b8fd70a64c697f331546256c7",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "Supporting reason explaining why the cabinet diagnostic work is appealing in the prior sentence.",
+        "evidence": {
+          "end": 126,
+          "origin": "feedback",
+          "quote": "That work helps maintenance crews locate damaged wiring",
+          "role": "context",
+          "source_revision": "f132620f621c9ffaca0ebcbc015fa6e78dae879b8fd70a64c697f331546256c7",
+          "start": 71
+        },
+        "index": 1,
+        "role": "context"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Role responsibilities",
+        "evidence": [
+          {
+            "end": 69,
+            "origin": "feedback",
+            "quote": "I would enjoy diagnosing voltage drops in irrigation-control cabinets",
+            "role": "preference",
+            "source_revision": "f132620f621c9ffaca0ebcbc015fa6e78dae879b8fd70a64c697f331546256c7",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "diagnosing voltage drops in irrigation-control cabinets",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I would enjoy diagnosing voltage drops in irrigation-control cabinets. That work helps maintenance crews locate damaged wiring.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FC3-004": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 24,
+          "origin": "feedback",
+          "quote": "Seems pretty good so far",
+          "role": "preference",
+          "source_revision": "0d4e7218111c156cd3c47bdc9d169b47a6b148b2622a5290090a6f8c70283002",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Overall role",
+        "evidence": [
+          {
+            "end": 24,
+            "origin": "feedback",
+            "quote": "Seems pretty good so far",
+            "role": "preference",
+            "source_revision": "0d4e7218111c156cd3c47bdc9d169b47a6b148b2622a5290090a6f8c70283002",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Seawater Sampling Coordinator",
+          "type": "posting_role"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Seems pretty good so far.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "FH3-002": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 46,
+          "origin": "feedback",
+          "quote": "I enjoy untangling conflicting vendor clauses.",
+          "role": "preference",
+          "source_revision": "695933bd510885ca176396cc3ccdf82a9f009bc18ecf574c02c53d0c6119f3f8",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "Requests reconsideration of the current 1099 hourly minimum, proposing a lower threshold of $92/hour.",
+        "evidence": {
+          "end": 121,
+          "origin": "feedback",
+          "quote": "I want to revisit my 1099 minimum and consider lowering it to $92 an hour.",
+          "role": "rule_reconsideration",
+          "source_revision": "695933bd510885ca176396cc3ccdf82a9f009bc18ecf574c02c53d0c6119f3f8",
+          "start": 47
+        },
+        "index": 1,
+        "role": "rule_reconsideration"
+      }
+    ],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "hard_constraint_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Enjoys contract clause conflict resolution work",
+        "evidence": [
+          {
+            "end": 46,
+            "origin": "feedback",
+            "quote": "I enjoy untangling conflicting vendor clauses.",
+            "role": "preference",
+            "source_revision": "695933bd510885ca176396cc3ccdf82a9f009bc18ecf574c02c53d0c6119f3f8",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "untangling conflicting vendor clauses",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I enjoy untangling conflicting vendor clauses. I want to revisit my 1099 minimum and consider lowering it to $92 an hour.",
+    "profile_fact_candidate": "I want to revisit my 1099 minimum and consider lowering it to $92 an hour.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  },
+  "FI-041": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 34,
+          "origin": "feedback",
+          "quote": "This is a terrific AI advisor role",
+          "role": "preference",
+          "source_revision": "f1ee1d9b12b60d29e4f65a9e9d9e8e34cb926abdde40ccb06f4b36502e47e508",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "evidence": {
+          "end": 68,
+          "origin": "feedback",
+          "quote": "but I do not trust the employer.",
+          "role": "preference",
+          "source_revision": "f1ee1d9b12b60d29e4f65a9e9d9e8e34cb926abdde40ccb06f4b36502e47e508",
+          "start": 36
+        },
+        "index": 1,
+        "role": "preference"
+      }
+    ],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Role responsibilities",
+        "evidence": [
+          {
+            "end": 34,
+            "origin": "feedback",
+            "quote": "This is a terrific AI advisor role",
+            "role": "preference",
+            "source_revision": "f1ee1d9b12b60d29e4f65a9e9d9e8e34cb926abdde40ccb06f4b36502e47e508",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "AI Strategy Advisor",
+          "type": "posting_role"
+        },
+        "strength": "strong"
+      },
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Employer",
+        "evidence": [
+          {
+            "end": 68,
+            "origin": "feedback",
+            "quote": "but I do not trust the employer.",
+            "role": "preference",
+            "source_revision": "f1ee1d9b12b60d29e4f65a9e9d9e8e34cb926abdde40ccb06f4b36502e47e508",
+            "start": 36
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Trustline AI",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "This is a terrific AI advisor role, but I do not trust the employer.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  }
+}

@@ -1,0 +1,1429 @@
+{
+  "adjudications_sha256": "cf3a41ef6da5875fee40e7a7e64ba004706ba725ef8d2f2dd96e5662973f4ee9",
+  "capture_report_sha256": "a0651e00a05523ad006f6b9bdbe927cb9b997482cac092733e8aa2931a316b37",
+  "configuration_sha256": "b1ca752d4dd1e0ec1c232e87b3558e42e68cce3ff96a3c8cd25022a0e97d1bd2",
+  "gates": {
+    "all_expected_routes_and_hard_actions_safe_and_correct": false,
+    "all_quote_roles_correct_and_source_anchors_exact": false,
+    "all_raw_proposals_semantically_complete_and_grounded": false,
+    "all_validated_proposals_semantically_complete_and_grounded": false,
+    "both_fi_041_preference_scopes_correct_in_both_passes": true,
+    "both_passes_all_frozen_quote_requests_completed": true,
+    "no_validator_rejections_blocking_findings_or_unsupported_downgrades": true
+  },
+  "mode": "focused_context_semantic_review",
+  "passes": {
+    "1": {
+      "all": {
+        "adequate_resolutions": 5,
+        "fully_correct_cases": 5,
+        "hard_actions_correct": 6,
+        "quotes": {
+          "exact_source_anchors": 11,
+          "issues": 0,
+          "response_roles_correct": 10,
+          "total": 11,
+          "validated_roles_correct": 10,
+          "wrong_response_roles": {
+            "vague_reaction -> preference": 1
+          }
+        },
+        "raw": {
+          "complete_cases": 5,
+          "emitted": 8,
+          "expected": 7,
+          "matches": 7,
+          "precision": {
+            "denominator": 8,
+            "numerator": 7
+          },
+          "recall": {
+            "denominator": 7,
+            "numerator": 7
+          }
+        },
+        "raw_unsupported_career_downgrades": 0,
+        "records": 6,
+        "routes_correct": 5,
+        "validated": {
+          "complete_cases": 5,
+          "emitted": 8,
+          "expected": 7,
+          "matches": 7,
+          "precision": {
+            "denominator": 8,
+            "numerator": 7
+          },
+          "recall": {
+            "denominator": 7,
+            "numerator": 7
+          }
+        },
+        "validated_unsupported_career_downgrades": 0,
+        "validation_issues": 0
+      },
+      "cases": {
+        "FC3-001": {
+          "fully_correct": true,
+          "quotes": [
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "preference"
+              ],
+              "focus_index": 0,
+              "quote": "This particular Rail Signal Testing Technician opening sounds excellent",
+              "response_role": "preference",
+              "response_role_correct": true,
+              "validated_role": "preference",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            },
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "preference"
+              ],
+              "focus_index": 1,
+              "quote": "I do not want to work for Aster Spur Systems",
+              "response_role": "preference",
+              "response_role_correct": true,
+              "validated_role": "preference",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            }
+          ],
+          "raw": {
+            "anchors_valid": true,
+            "case_match": true,
+            "emitted": 2,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected": 2,
+            "extra_signal_indices": [],
+            "missed_signal_indices": [],
+            "unsupported_career_downgrade": false
+          },
+          "validated": {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "blocking_evidence_findings": [],
+            "case_id": "FC3-001",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 2,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 2,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Both outputs preserve the independent praise of this posting and the objection to the named employer. The employer strength is strong versus the reference's mild, with the same direction and scope. The validated output holds both for approval.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validated_case_match": true,
+            "validation_issue_count": 0
+          }
+        },
+        "FC3-002": {
+          "fully_correct": true,
+          "quotes": [
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "context",
+                "job_fact"
+              ],
+              "focus_index": 0,
+              "quote": "This Rail Signal Testing Technician opening involves checking interlock relays",
+              "response_role": "context",
+              "response_role_correct": true,
+              "validated_role": "context",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            },
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "preference"
+              ],
+              "focus_index": 1,
+              "quote": "I do not want to work for Aster Spur Systems",
+              "response_role": "preference",
+              "response_role_correct": true,
+              "validated_role": "preference",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            }
+          ],
+          "raw": {
+            "anchors_valid": true,
+            "case_match": true,
+            "emitted": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected": 1,
+            "extra_signal_indices": [],
+            "missed_signal_indices": [],
+            "unsupported_career_downgrade": false
+          },
+          "validated": {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "blocking_evidence_findings": [],
+            "case_id": "FC3-002",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Both outputs retain only the named-employer objection. The relay description remains context. The employer strength is strong versus the reference's mild, with the same direction and scope.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validated_case_match": true,
+            "validation_issue_count": 0
+          }
+        },
+        "FC3-003": {
+          "fully_correct": true,
+          "quotes": [
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "preference"
+              ],
+              "focus_index": 0,
+              "quote": "I would enjoy diagnosing voltage drops in irrigation-control cabinets",
+              "response_role": "preference",
+              "response_role_correct": true,
+              "validated_role": "preference",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            },
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "context"
+              ],
+              "focus_index": 1,
+              "quote": "That work helps maintenance crews locate damaged wiring",
+              "response_role": "context",
+              "response_role_correct": true,
+              "validated_role": "context",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            }
+          ],
+          "raw": {
+            "anchors_valid": true,
+            "case_match": true,
+            "emitted": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected": 1,
+            "extra_signal_indices": [],
+            "missed_signal_indices": [],
+            "unsupported_career_downgrade": false
+          },
+          "validated": {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "blocking_evidence_findings": [],
+            "case_id": "FC3-003",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Both outputs capture interest in diagnosing voltage drops in irrigation-control cabinets and keep the benefit to maintenance crews as context. The duty strength is strong versus the reference's mild, with the same direction and scope.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validated_case_match": true,
+            "validation_issue_count": 0
+          }
+        },
+        "FC3-004": {
+          "fully_correct": false,
+          "quotes": [
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "vague_reaction"
+              ],
+              "focus_index": 0,
+              "quote": "Seems pretty good so far",
+              "response_role": "preference",
+              "response_role_correct": false,
+              "validated_role": "preference",
+              "validated_role_correct": false,
+              "validated_source_anchor_exact": true
+            }
+          ],
+          "raw": {
+            "anchors_valid": true,
+            "case_match": false,
+            "emitted": 1,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "expected": 0,
+            "extra_signal_indices": [
+              1
+            ],
+            "missed_signal_indices": [],
+            "unsupported_career_downgrade": false
+          },
+          "validated": {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "blocking_evidence_findings": [],
+            "case_id": "FC3-004",
+            "clear_dimension_scope_correct": null,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "NEEDS_CLARIFICATION",
+            "expected_signal_count": 0,
+            "extra_signal_indices": [
+              1
+            ],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "The quote is exact and expresses a vague favorable impression. Both outputs infer a role-responsibilities preference without specific supporting feedback, yielding an extra signal against an empty reference. The validated output holds it for approval and omits the needed clarification question.",
+            "resolution_adequate": false,
+            "route_correct": false,
+            "safe_special_route": false,
+            "unsupported_career_downgrade": false,
+            "validated_case_match": false,
+            "validation_issue_count": 0
+          }
+        },
+        "FH3-002": {
+          "fully_correct": true,
+          "quotes": [
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "preference"
+              ],
+              "focus_index": 0,
+              "quote": "I enjoy untangling conflicting vendor clauses.",
+              "response_role": "preference",
+              "response_role_correct": true,
+              "validated_role": "preference",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            },
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "rule_reconsideration"
+              ],
+              "focus_index": 1,
+              "quote": "I want to revisit my 1099 minimum and consider lowering it to $92 an hour.",
+              "response_role": "rule_reconsideration",
+              "response_role_correct": true,
+              "validated_role": "rule_reconsideration",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            }
+          ],
+          "raw": {
+            "anchors_valid": true,
+            "case_match": true,
+            "emitted": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected": 1,
+            "extra_signal_indices": [],
+            "missed_signal_indices": [],
+            "unsupported_career_downgrade": false
+          },
+          "validated": {
+            "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+            "actual_route": "PROFILE_FACT_REVIEW",
+            "blocking_evidence_findings": [],
+            "case_id": "FH3-002",
+            "clear_dimension_scope_correct": null,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+            "expected_route": "PROFILE_FACT_REVIEW",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Both outputs preserve the independent preference for resolving conflicting vendor clauses. The duty strength is strong versus the reference's mild, with the same direction and scope. Profile fact review retains the proposed $92 hourly floor for separate explicit confirmation, leaves the confirmed floor intact, and records no eligibility violation for the $111 engagement.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": true,
+            "unsupported_career_downgrade": false,
+            "validated_case_match": true,
+            "validation_issue_count": 0
+          }
+        },
+        "FI-041": {
+          "fully_correct": true,
+          "quotes": [
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "preference"
+              ],
+              "focus_index": 0,
+              "quote": "This is a terrific AI advisor role",
+              "response_role": "preference",
+              "response_role_correct": true,
+              "validated_role": "preference",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            },
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "preference"
+              ],
+              "focus_index": 1,
+              "quote": "but I do not trust the employer.",
+              "response_role": "preference",
+              "response_role_correct": true,
+              "validated_role": "preference",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            }
+          ],
+          "raw": {
+            "anchors_valid": true,
+            "case_match": true,
+            "emitted": 2,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected": 2,
+            "extra_signal_indices": [],
+            "missed_signal_indices": [],
+            "unsupported_career_downgrade": false
+          },
+          "validated": {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "blocking_evidence_findings": [],
+            "case_id": "FI-041",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 2,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 2,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Both outputs retain praise for this AI Strategy Advisor posting and distrust of its employer, Trustline AI. The posting praise is strong versus the reference's mild, with the same direction and scope. The employer objection remains separate from career-category interest.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validated_case_match": true,
+            "validation_issue_count": 0
+          }
+        }
+      },
+      "fresh": {
+        "adequate_resolutions": 3,
+        "fully_correct_cases": 3,
+        "hard_actions_correct": 4,
+        "quotes": {
+          "exact_source_anchors": 7,
+          "issues": 0,
+          "response_roles_correct": 6,
+          "total": 7,
+          "validated_roles_correct": 6,
+          "wrong_response_roles": {
+            "vague_reaction -> preference": 1
+          }
+        },
+        "raw": {
+          "complete_cases": 3,
+          "emitted": 5,
+          "expected": 4,
+          "matches": 4,
+          "precision": {
+            "denominator": 5,
+            "numerator": 4
+          },
+          "recall": {
+            "denominator": 4,
+            "numerator": 4
+          }
+        },
+        "raw_unsupported_career_downgrades": 0,
+        "records": 4,
+        "routes_correct": 3,
+        "validated": {
+          "complete_cases": 3,
+          "emitted": 5,
+          "expected": 4,
+          "matches": 4,
+          "precision": {
+            "denominator": 5,
+            "numerator": 4
+          },
+          "recall": {
+            "denominator": 4,
+            "numerator": 4
+          }
+        },
+        "validated_unsupported_career_downgrades": 0,
+        "validation_issues": 0
+      },
+      "known": {
+        "adequate_resolutions": 2,
+        "fully_correct_cases": 2,
+        "hard_actions_correct": 2,
+        "quotes": {
+          "exact_source_anchors": 4,
+          "issues": 0,
+          "response_roles_correct": 4,
+          "total": 4,
+          "validated_roles_correct": 4,
+          "wrong_response_roles": {}
+        },
+        "raw": {
+          "complete_cases": 2,
+          "emitted": 3,
+          "expected": 3,
+          "matches": 3,
+          "precision": {
+            "denominator": 3,
+            "numerator": 3
+          },
+          "recall": {
+            "denominator": 3,
+            "numerator": 3
+          }
+        },
+        "raw_unsupported_career_downgrades": 0,
+        "records": 2,
+        "routes_correct": 2,
+        "validated": {
+          "complete_cases": 2,
+          "emitted": 3,
+          "expected": 3,
+          "matches": 3,
+          "precision": {
+            "denominator": 3,
+            "numerator": 3
+          },
+          "recall": {
+            "denominator": 3,
+            "numerator": 3
+          }
+        },
+        "validated_unsupported_career_downgrades": 0,
+        "validation_issues": 0
+      }
+    },
+    "2": {
+      "all": {
+        "adequate_resolutions": 5,
+        "fully_correct_cases": 5,
+        "hard_actions_correct": 6,
+        "quotes": {
+          "exact_source_anchors": 11,
+          "issues": 0,
+          "response_roles_correct": 10,
+          "total": 11,
+          "validated_roles_correct": 10,
+          "wrong_response_roles": {
+            "vague_reaction -> preference": 1
+          }
+        },
+        "raw": {
+          "complete_cases": 5,
+          "emitted": 8,
+          "expected": 7,
+          "matches": 7,
+          "precision": {
+            "denominator": 8,
+            "numerator": 7
+          },
+          "recall": {
+            "denominator": 7,
+            "numerator": 7
+          }
+        },
+        "raw_unsupported_career_downgrades": 0,
+        "records": 6,
+        "routes_correct": 5,
+        "validated": {
+          "complete_cases": 5,
+          "emitted": 8,
+          "expected": 7,
+          "matches": 7,
+          "precision": {
+            "denominator": 8,
+            "numerator": 7
+          },
+          "recall": {
+            "denominator": 7,
+            "numerator": 7
+          }
+        },
+        "validated_unsupported_career_downgrades": 0,
+        "validation_issues": 0
+      },
+      "cases": {
+        "FC3-001": {
+          "fully_correct": true,
+          "quotes": [
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "preference"
+              ],
+              "focus_index": 0,
+              "quote": "This particular Rail Signal Testing Technician opening sounds excellent",
+              "response_role": "preference",
+              "response_role_correct": true,
+              "validated_role": "preference",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            },
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "preference"
+              ],
+              "focus_index": 1,
+              "quote": "I do not want to work for Aster Spur Systems",
+              "response_role": "preference",
+              "response_role_correct": true,
+              "validated_role": "preference",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            }
+          ],
+          "raw": {
+            "anchors_valid": true,
+            "case_match": true,
+            "emitted": 2,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected": 2,
+            "extra_signal_indices": [],
+            "missed_signal_indices": [],
+            "unsupported_career_downgrade": false
+          },
+          "validated": {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "blocking_evidence_findings": [],
+            "case_id": "FC3-001",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 2,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 2,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Both stages retain the praise for this particular opening and the objection to Aster Spur Systems. The employer objection is rated strong in both stages and mild in the reference.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validated_case_match": true,
+            "validation_issue_count": 0
+          }
+        },
+        "FC3-002": {
+          "fully_correct": true,
+          "quotes": [
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "context",
+                "job_fact"
+              ],
+              "focus_index": 0,
+              "quote": "This Rail Signal Testing Technician opening involves checking interlock relays",
+              "response_role": "context",
+              "response_role_correct": true,
+              "validated_role": "context",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            },
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "preference"
+              ],
+              "focus_index": 1,
+              "quote": "I do not want to work for Aster Spur Systems",
+              "response_role": "preference",
+              "response_role_correct": true,
+              "validated_role": "preference",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            }
+          ],
+          "raw": {
+            "anchors_valid": true,
+            "case_match": true,
+            "emitted": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected": 1,
+            "extra_signal_indices": [],
+            "missed_signal_indices": [],
+            "unsupported_career_downgrade": false
+          },
+          "validated": {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "blocking_evidence_findings": [],
+            "case_id": "FC3-002",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Both stages use the job description as context and retain the named-employer objection. The objection is rated strong in both stages and mild in the reference.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validated_case_match": true,
+            "validation_issue_count": 0
+          }
+        },
+        "FC3-003": {
+          "fully_correct": true,
+          "quotes": [
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "preference"
+              ],
+              "focus_index": 0,
+              "quote": "I would enjoy diagnosing voltage drops in irrigation-control cabinets",
+              "response_role": "preference",
+              "response_role_correct": true,
+              "validated_role": "preference",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            },
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "context"
+              ],
+              "focus_index": 1,
+              "quote": "That work helps maintenance crews locate damaged wiring",
+              "response_role": "context",
+              "response_role_correct": true,
+              "validated_role": "context",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            }
+          ],
+          "raw": {
+            "anchors_valid": true,
+            "case_match": true,
+            "emitted": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected": 1,
+            "extra_signal_indices": [],
+            "missed_signal_indices": [],
+            "unsupported_career_downgrade": false
+          },
+          "validated": {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "blocking_evidence_findings": [],
+            "case_id": "FC3-003",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Both stages retain interest in the specific diagnostic duty and use its benefit to maintenance crews as context. The duty preference is rated strong in both stages and mild in the reference.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validated_case_match": true,
+            "validation_issue_count": 0
+          }
+        },
+        "FC3-004": {
+          "fully_correct": false,
+          "quotes": [
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "vague_reaction"
+              ],
+              "focus_index": 0,
+              "quote": "Seems pretty good so far",
+              "response_role": "preference",
+              "response_role_correct": false,
+              "validated_role": "preference",
+              "validated_role_correct": false,
+              "validated_source_anchor_exact": true
+            }
+          ],
+          "raw": {
+            "anchors_valid": true,
+            "case_match": false,
+            "emitted": 1,
+            "equivalent_pairs": [],
+            "evidence_grounded": false,
+            "expected": 0,
+            "extra_signal_indices": [
+              1
+            ],
+            "missed_signal_indices": [],
+            "unsupported_career_downgrade": false
+          },
+          "validated": {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "blocking_evidence_findings": [],
+            "case_id": "FC3-004",
+            "clear_dimension_scope_correct": null,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [],
+            "evidence_grounded": false,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "NEEDS_CLARIFICATION",
+            "expected_signal_count": 0,
+            "extra_signal_indices": [
+              1
+            ],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Both stages turn a tentative overall impression into an unsupported role-responsibilities preference. The exact quote gives no reason for the impression. The validated response goes to pending approval without asking what specifically seemed good about the opening.",
+            "resolution_adequate": false,
+            "route_correct": false,
+            "safe_special_route": false,
+            "unsupported_career_downgrade": false,
+            "validated_case_match": false,
+            "validation_issue_count": 0
+          }
+        },
+        "FH3-002": {
+          "fully_correct": true,
+          "quotes": [
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "preference"
+              ],
+              "focus_index": 0,
+              "quote": "I enjoy untangling conflicting vendor clauses.",
+              "response_role": "preference",
+              "response_role_correct": true,
+              "validated_role": "preference",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            },
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "rule_reconsideration"
+              ],
+              "focus_index": 1,
+              "quote": "I want to revisit my 1099 minimum and consider lowering it to $92 an hour.",
+              "response_role": "rule_reconsideration",
+              "response_role_correct": true,
+              "validated_role": "rule_reconsideration",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            }
+          ],
+          "raw": {
+            "anchors_valid": true,
+            "case_match": true,
+            "emitted": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected": 1,
+            "extra_signal_indices": [],
+            "missed_signal_indices": [],
+            "unsupported_career_downgrade": false
+          },
+          "validated": {
+            "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+            "actual_route": "PROFILE_FACT_REVIEW",
+            "blocking_evidence_findings": [],
+            "case_id": "FH3-002",
+            "clear_dimension_scope_correct": null,
+            "completed": true,
+            "emitted_signal_count": 1,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+            "expected_route": "PROFILE_FACT_REVIEW",
+            "expected_signal_count": 1,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Both stages retain the vendor-clause duty preference, rated strong compared with the reference's mild. The validated response records the proposed $92 hourly 1099 floor for review, requires separate confirmation, and preserves the $100 floor and the $111 engagement's eligibility.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": true,
+            "unsupported_career_downgrade": false,
+            "validated_case_match": true,
+            "validation_issue_count": 0
+          }
+        },
+        "FI-041": {
+          "fully_correct": true,
+          "quotes": [
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "preference"
+              ],
+              "focus_index": 0,
+              "quote": "This is a terrific AI advisor role",
+              "response_role": "preference",
+              "response_role_correct": true,
+              "validated_role": "preference",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            },
+            {
+              "exact_source_anchor": true,
+              "expected_roles": [
+                "preference"
+              ],
+              "focus_index": 1,
+              "quote": "but I do not trust the employer.",
+              "response_role": "preference",
+              "response_role_correct": true,
+              "validated_role": "preference",
+              "validated_role_correct": true,
+              "validated_source_anchor_exact": true
+            }
+          ],
+          "raw": {
+            "anchors_valid": true,
+            "case_match": true,
+            "emitted": 2,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected": 2,
+            "extra_signal_indices": [],
+            "missed_signal_indices": [],
+            "unsupported_career_downgrade": false
+          },
+          "validated": {
+            "actual_hard_action": "UNCHANGED",
+            "actual_route": "PENDING_APPROVAL",
+            "blocking_evidence_findings": [],
+            "case_id": "FI-041",
+            "clear_dimension_scope_correct": true,
+            "completed": true,
+            "emitted_signal_count": 2,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "evidence_grounded": true,
+            "expected_hard_action": "UNCHANGED",
+            "expected_route": "PENDING_APPROVAL",
+            "expected_signal_count": 2,
+            "extra_signal_indices": [],
+            "hard_action_correct": true,
+            "hard_constraints_unchanged": true,
+            "hard_rule_action_authorized": true,
+            "missed_signal_indices": [],
+            "no_unsupported_career_downgrade_confirmed": true,
+            "no_validation_issues": true,
+            "notes": "Both stages retain approval of the specific advisor opening and distrust of its employer, Trustline AI. The role approval is rated strong in both stages and mild in the reference.",
+            "resolution_adequate": true,
+            "route_correct": true,
+            "safe_special_route": null,
+            "unsupported_career_downgrade": false,
+            "validated_case_match": true,
+            "validation_issue_count": 0
+          }
+        }
+      },
+      "fresh": {
+        "adequate_resolutions": 3,
+        "fully_correct_cases": 3,
+        "hard_actions_correct": 4,
+        "quotes": {
+          "exact_source_anchors": 7,
+          "issues": 0,
+          "response_roles_correct": 6,
+          "total": 7,
+          "validated_roles_correct": 6,
+          "wrong_response_roles": {
+            "vague_reaction -> preference": 1
+          }
+        },
+        "raw": {
+          "complete_cases": 3,
+          "emitted": 5,
+          "expected": 4,
+          "matches": 4,
+          "precision": {
+            "denominator": 5,
+            "numerator": 4
+          },
+          "recall": {
+            "denominator": 4,
+            "numerator": 4
+          }
+        },
+        "raw_unsupported_career_downgrades": 0,
+        "records": 4,
+        "routes_correct": 3,
+        "validated": {
+          "complete_cases": 3,
+          "emitted": 5,
+          "expected": 4,
+          "matches": 4,
+          "precision": {
+            "denominator": 5,
+            "numerator": 4
+          },
+          "recall": {
+            "denominator": 4,
+            "numerator": 4
+          }
+        },
+        "validated_unsupported_career_downgrades": 0,
+        "validation_issues": 0
+      },
+      "known": {
+        "adequate_resolutions": 2,
+        "fully_correct_cases": 2,
+        "hard_actions_correct": 2,
+        "quotes": {
+          "exact_source_anchors": 4,
+          "issues": 0,
+          "response_roles_correct": 4,
+          "total": 4,
+          "validated_roles_correct": 4,
+          "wrong_response_roles": {}
+        },
+        "raw": {
+          "complete_cases": 2,
+          "emitted": 3,
+          "expected": 3,
+          "matches": 3,
+          "precision": {
+            "denominator": 3,
+            "numerator": 3
+          },
+          "recall": {
+            "denominator": 3,
+            "numerator": 3
+          }
+        },
+        "raw_unsupported_career_downgrades": 0,
+        "records": 2,
+        "routes_correct": 2,
+        "validated": {
+          "complete_cases": 2,
+          "emitted": 3,
+          "expected": 3,
+          "matches": 3,
+          "precision": {
+            "denominator": 3,
+            "numerator": 3
+          },
+          "recall": {
+            "denominator": 3,
+            "numerator": 3
+          }
+        },
+        "validated_unsupported_career_downgrades": 0,
+        "validation_issues": 0
+      }
+    }
+  },
+  "reference_sha256": "7f597bcc1f74248c4e687dbb1940e2a3d1853df05ca123f77ac72e878dc1f35e",
+  "request_trace_sha256": "5998c086dea7be9409ba373c041aaa2e236bbd190b691ab85501295ca9cda254",
+  "requests": {
+    "all_requests_completed": true,
+    "attempted": 22,
+    "completed": 22,
+    "elapsed_seconds": 42.038,
+    "passes": {
+      "1": {
+        "attempted": 11,
+        "completed": 11
+      },
+      "2": {
+        "attempted": 11,
+        "completed": 11
+      }
+    },
+    "planned": 22
+  },
+  "summary": {
+    "all": {
+      "adequate_resolutions": 10,
+      "fully_correct_cases": 10,
+      "hard_actions_correct": 12,
+      "quotes": {
+        "exact_source_anchors": 22,
+        "issues": 0,
+        "response_roles_correct": 20,
+        "total": 22,
+        "validated_roles_correct": 20,
+        "wrong_response_roles": {
+          "vague_reaction -> preference": 2
+        }
+      },
+      "raw": {
+        "complete_cases": 10,
+        "emitted": 16,
+        "expected": 14,
+        "matches": 14,
+        "precision": {
+          "denominator": 16,
+          "numerator": 14
+        },
+        "recall": {
+          "denominator": 14,
+          "numerator": 14
+        }
+      },
+      "raw_unsupported_career_downgrades": 0,
+      "records": 12,
+      "routes_correct": 10,
+      "validated": {
+        "complete_cases": 10,
+        "emitted": 16,
+        "expected": 14,
+        "matches": 14,
+        "precision": {
+          "denominator": 16,
+          "numerator": 14
+        },
+        "recall": {
+          "denominator": 14,
+          "numerator": 14
+        }
+      },
+      "validated_unsupported_career_downgrades": 0,
+      "validation_issues": 0
+    },
+    "fresh": {
+      "adequate_resolutions": 6,
+      "fully_correct_cases": 6,
+      "hard_actions_correct": 8,
+      "quotes": {
+        "exact_source_anchors": 14,
+        "issues": 0,
+        "response_roles_correct": 12,
+        "total": 14,
+        "validated_roles_correct": 12,
+        "wrong_response_roles": {
+          "vague_reaction -> preference": 2
+        }
+      },
+      "raw": {
+        "complete_cases": 6,
+        "emitted": 10,
+        "expected": 8,
+        "matches": 8,
+        "precision": {
+          "denominator": 10,
+          "numerator": 8
+        },
+        "recall": {
+          "denominator": 8,
+          "numerator": 8
+        }
+      },
+      "raw_unsupported_career_downgrades": 0,
+      "records": 8,
+      "routes_correct": 6,
+      "validated": {
+        "complete_cases": 6,
+        "emitted": 10,
+        "expected": 8,
+        "matches": 8,
+        "precision": {
+          "denominator": 10,
+          "numerator": 8
+        },
+        "recall": {
+          "denominator": 8,
+          "numerator": 8
+        }
+      },
+      "validated_unsupported_career_downgrades": 0,
+      "validation_issues": 0
+    },
+    "known": {
+      "adequate_resolutions": 4,
+      "fully_correct_cases": 4,
+      "hard_actions_correct": 4,
+      "quotes": {
+        "exact_source_anchors": 8,
+        "issues": 0,
+        "response_roles_correct": 8,
+        "total": 8,
+        "validated_roles_correct": 8,
+        "wrong_response_roles": {}
+      },
+      "raw": {
+        "complete_cases": 4,
+        "emitted": 6,
+        "expected": 6,
+        "matches": 6,
+        "precision": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "recall": {
+          "denominator": 6,
+          "numerator": 6
+        }
+      },
+      "raw_unsupported_career_downgrades": 0,
+      "records": 4,
+      "routes_correct": 4,
+      "validated": {
+        "complete_cases": 4,
+        "emitted": 6,
+        "expected": 6,
+        "matches": 6,
+        "precision": {
+          "denominator": 6,
+          "numerator": 6
+        },
+        "recall": {
+          "denominator": 6,
+          "numerator": 6
+        }
+      },
+      "validated_unsupported_career_downgrades": 0,
+      "validation_issues": 0
+    }
+  },
+  "targeted_gate_passed": false
+}

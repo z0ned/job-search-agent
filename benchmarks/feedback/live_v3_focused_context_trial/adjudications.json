@@ -1,0 +1,305 @@
+{
+  "capture_report_sha256": "a0651e00a05523ad006f6b9bdbe927cb9b997482cac092733e8aa2931a316b37",
+  "configuration_sha256": "b1ca752d4dd1e0ec1c232e87b3558e42e68cce3ff96a3c8cd25022a0e97d1bd2",
+  "packets": {
+    "review-pass-1.json": "79a1c91ee4f3dde6d5ab6b60ea6b04806e85f8818309702094a7f438e8aa308c",
+    "review-pass-2.json": "3f1bca0f616b78823a4d91e72230b5d215f0bf77ae5138f064ada22e73e024bd"
+  },
+  "passes": {
+    "1": {
+      "artifacts": {
+        "raw": "d2d2455a53b7fed9a2f8e720a8be4c592b8d79cf646998febc0c77dc88fd21d2",
+        "responses": "f1273fce121481edabb65a46ef289df9262819ea15018f10d48d311dd025847a",
+        "validated": "8abdbeacc6d9da08132efd12ddedf8e6928440bd112567ab4234a3e753908a0b"
+      },
+      "verdicts": {
+        "FC3-001": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Both outputs preserve the independent praise of this posting and the objection to the named employer. The employer strength is strong versus the reference's mild, with the same direction and scope. The validated output holds both for approval.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "raw_unsupported_career_downgrade": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FC3-002": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Both outputs retain only the named-employer objection. The relay description remains context. The employer strength is strong versus the reference's mild, with the same direction and scope.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "raw_unsupported_career_downgrade": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FC3-003": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Both outputs capture interest in diagnosing voltage drops in irrigation-control cabinets and keep the benefit to maintenance crews as context. The duty strength is strong versus the reference's mild, with the same direction and scope.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "raw_unsupported_career_downgrade": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FC3-004": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [],
+          "evidence_grounded": true,
+          "notes": "The quote is exact and expresses a vague favorable impression. Both outputs infer a role-responsibilities preference without specific supporting feedback, yielding an extra signal against an empty reference. The validated output holds it for approval and omits the needed clarification question.",
+          "raw_equivalent_pairs": [],
+          "raw_evidence_grounded": true,
+          "raw_unsupported_career_downgrade": false,
+          "resolution_adequate": false,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FH3-002": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Both outputs preserve the independent preference for resolving conflicting vendor clauses. The duty strength is strong versus the reference's mild, with the same direction and scope. Profile fact review retains the proposed $92 hourly floor for separate explicit confirmation, leaves the confirmed floor intact, and records no eligibility violation for the $111 engagement.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "raw_unsupported_career_downgrade": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-041": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Both outputs retain praise for this AI Strategy Advisor posting and distrust of its employer, Trustline AI. The posting praise is strong versus the reference's mild, with the same direction and scope. The employer objection remains separate from career-category interest.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "raw_unsupported_career_downgrade": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        }
+      }
+    },
+    "2": {
+      "artifacts": {
+        "raw": "255ef86016a77aef288db1f1970934d22899635c8235841035b700c9ad5e0d85",
+        "responses": "ebc4339bc7a5fdebe1f667fc2af76708bc5e443240650f78a372dacea8f3464a",
+        "validated": "cde8b8bf6a6bf93de72219d50593a71bd34b9ca095322d9bdb55084256ee0992"
+      },
+      "verdicts": {
+        "FC3-001": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Both stages retain the praise for this particular opening and the objection to Aster Spur Systems. The employer objection is rated strong in both stages and mild in the reference.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "raw_unsupported_career_downgrade": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FC3-002": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Both stages use the job description as context and retain the named-employer objection. The objection is rated strong in both stages and mild in the reference.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "raw_unsupported_career_downgrade": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FC3-003": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Both stages retain interest in the specific diagnostic duty and use its benefit to maintenance crews as context. The duty preference is rated strong in both stages and mild in the reference.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "raw_unsupported_career_downgrade": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FC3-004": {
+          "clear_dimension_scope_correct": false,
+          "equivalent_pairs": [],
+          "evidence_grounded": false,
+          "notes": "Both stages turn a tentative overall impression into an unsupported role-responsibilities preference. The exact quote gives no reason for the impression. The validated response goes to pending approval without asking what specifically seemed good about the opening.",
+          "raw_equivalent_pairs": [],
+          "raw_evidence_grounded": false,
+          "raw_unsupported_career_downgrade": false,
+          "resolution_adequate": false,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FH3-002": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Both stages retain the vendor-clause duty preference, rated strong compared with the reference's mild. The validated response records the proposed $92 hourly 1099 floor for review, requires separate confirmation, and preserves the $100 floor and the $111 engagement's eligibility.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "raw_unsupported_career_downgrade": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        },
+        "FI-041": {
+          "clear_dimension_scope_correct": true,
+          "equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "evidence_grounded": true,
+          "notes": "Both stages retain approval of the specific advisor opening and distrust of its employer, Trustline AI. The role approval is rated strong in both stages and mild in the reference.",
+          "raw_equivalent_pairs": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "raw_evidence_grounded": true,
+          "raw_unsupported_career_downgrade": false,
+          "resolution_adequate": true,
+          "unauthorized_hard_rule_action": false,
+          "unsupported_career_downgrade": false
+        }
+      }
+    }
+  },
+  "reference_sha256": "7f597bcc1f74248c4e687dbb1940e2a3d1853df05ca123f77ac72e878dc1f35e"
+}

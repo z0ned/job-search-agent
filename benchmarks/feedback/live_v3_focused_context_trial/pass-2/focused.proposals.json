@@ -1,0 +1,197 @@
+{
+  "FC3-001": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "This particular Rail Signal Testing Technician opening sounds excellent",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "I do not want to work for Aster Spur Systems",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Role responsibilities",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Rail Signal Testing Technician",
+          "type": "posting_role"
+        },
+        "strength": "strong"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Employer",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Aster Spur Systems",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FC3-002": {
+    "clauses": [
+      {
+        "detail": "Neutral description of the opening's duties that sets up the separate employer objection in the full feedback.",
+        "quote": "This Rail Signal Testing Technician opening involves checking interlock relays",
+        "role": "context"
+      },
+      {
+        "detail": null,
+        "quote": "I do not want to work for Aster Spur Systems",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Aster Spur Systems",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Aster Spur Systems",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FC3-003": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I would enjoy diagnosing voltage drops in irrigation-control cabinets",
+        "role": "preference"
+      },
+      {
+        "detail": "Supporting reason explaining why the cabinet diagnostic work is appealing in the prior sentence.",
+        "quote": "That work helps maintenance crews locate damaged wiring",
+        "role": "context"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Role responsibilities",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "diagnosing voltage drops in irrigation-control cabinets",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FC3-004": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "Seems pretty good so far",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Overall role",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Seawater Sampling Coordinator",
+          "type": "posting_role"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "FH3-002": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I enjoy untangling conflicting vendor clauses.",
+        "role": "preference"
+      },
+      {
+        "detail": "Requests reconsideration of the current 1099 hourly minimum, proposing a lower threshold of $92/hour.",
+        "quote": "I want to revisit my 1099 minimum and consider lowering it to $92 an hour.",
+        "role": "rule_reconsideration"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Enjoys contract clause conflict resolution work",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "untangling conflicting vendor clauses",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "FI-041": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "This is a terrific AI advisor role",
+        "role": "preference"
+      },
+      {
+        "detail": null,
+        "quote": "but I do not trust the employer.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Role responsibilities",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "AI Strategy Advisor",
+          "type": "posting_role"
+        },
+        "strength": "strong"
+      },
+      {
+        "clause_index": 1,
+        "condition": null,
+        "dimension": "employer",
+        "display_label": "Employer",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "Trustline AI",
+          "type": "employer"
+        },
+        "strength": "strong"
+      }
+    ]
+  }
+}

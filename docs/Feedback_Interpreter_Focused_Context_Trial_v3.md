@@ -26,3 +26,29 @@ Run from the repository root with a new output directory.
 PYTHONPATH=src python -m job_search_agent.feedback_focused_context_trial_v3 \
   --output /tmp/feedback-v3-focused-context
 ```
+
+## Results
+
+**The focused check recovered both AI advisor preferences in both passes. The trial missed its gate because it also turned vague approval into an unsupported posting preference in both passes.** [Semantic scorecard](../benchmarks/feedback/live_v3_focused_context_trial/semantic-report.json)
+
+The protocol and contrast cases were frozen at `8ad7ae2c7ba8b68e640ebca62cdac42d13e7378d`. Live inference used `497af3eaf9ffeed4f07a4dcdc2337e1ddaf0c992`. All 22 requests completed without API or execution errors, in 42.038 seconds of summed request time. The trace reproduces the source-only input fingerprints, each exact focus quote, and each raw response. Independent reviewers scored one final pass each against the frozen references. [Configuration](../benchmarks/feedback/live_v3_focused_context_trial/configuration.json) · [Request trace](../benchmarks/feedback/live_v3_focused_context_trial/request-trace.json) · [Adjudications](../benchmarks/feedback/live_v3_focused_context_trial/adjudications.json)
+
+| Measure across both passes | Result |
+| --- | ---: |
+| Correct quote roles | 20/22 |
+| Preference recall before and after validation | 14/14 |
+| Preference precision before and after validation | 14/16 |
+| Fully correct cases | 10/12 |
+| Correct review routes | 10/12 |
+| Correct hard-rule actions | 12/12 |
+| Validator rejections, unsupported career downgrades, and unauthorized hard-rule changes | 0 |
+
+| Case | Result across both passes |
+| --- | --- |
+| FI-041 | Recovered the positive evaluation of the specific AI advisor posting and the separate distrust of Trustline AI. Both preferences used the reference dimensions and scopes. The prior accounting classifier missed the praise and assigned the employer objection to culture in both passes. |
+| FH3-002 | Kept the positive vendor-clause duty and routed the proposed $92 hourly minimum to separate confirmation. The existing rules stayed intact. |
+| FC3-001 and FC3-002 | Kept explicit posting praise and the independent employer objection in the first case. The neutral description in the matched second case supplied context only. The employer objection survived in both. |
+| FC3-003 | Kept the voltage-diagnosis preference and treated its stated benefit as context. |
+| FC3-004 | The source said “Seems pretty good so far.” The check used the posting title to turn the vague impression into a preference for the whole opening. The existing validator accepted the structurally valid proposal, so no clarification was requested. |
+
+The result isolates the remaining failure at the point where the model decides whether the user supplied an identifiable target. Requiring an exact quote verifies the words and their location. It cannot establish that a vague reaction supports the particular target supplied by the posting. Before promoting this approach, test that target distinction on fresh examples. The focused trial used preselected quotes, so the full benchmark still needs to verify that the interpreter finds the evidence itself. The full benchmark and learning integration remain on hold.

@@ -1,0 +1,173 @@
+{
+  "configuration_sha256": "b1ca752d4dd1e0ec1c232e87b3558e42e68cce3ff96a3c8cd25022a0e97d1bd2",
+  "passes": [
+    {
+      "arms": {
+        "focused": {
+          "cases": [
+            {
+              "actual_hard_action": "UNCHANGED",
+              "actual_route": "PENDING_APPROVAL",
+              "case_id": "FI-041",
+              "emitted_signals": 2,
+              "expected_hard_action": "UNCHANGED",
+              "expected_route": "PENDING_APPROVAL",
+              "validation_issues": []
+            },
+            {
+              "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+              "actual_route": "PROFILE_FACT_REVIEW",
+              "case_id": "FH3-002",
+              "emitted_signals": 1,
+              "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+              "expected_route": "PROFILE_FACT_REVIEW",
+              "validation_issues": []
+            },
+            {
+              "actual_hard_action": "UNCHANGED",
+              "actual_route": "PENDING_APPROVAL",
+              "case_id": "FC3-001",
+              "emitted_signals": 2,
+              "expected_hard_action": "UNCHANGED",
+              "expected_route": "PENDING_APPROVAL",
+              "validation_issues": []
+            },
+            {
+              "actual_hard_action": "UNCHANGED",
+              "actual_route": "PENDING_APPROVAL",
+              "case_id": "FC3-002",
+              "emitted_signals": 1,
+              "expected_hard_action": "UNCHANGED",
+              "expected_route": "PENDING_APPROVAL",
+              "validation_issues": []
+            },
+            {
+              "actual_hard_action": "UNCHANGED",
+              "actual_route": "PENDING_APPROVAL",
+              "case_id": "FC3-003",
+              "emitted_signals": 1,
+              "expected_hard_action": "UNCHANGED",
+              "expected_route": "PENDING_APPROVAL",
+              "validation_issues": []
+            },
+            {
+              "actual_hard_action": "UNCHANGED",
+              "actual_route": "PENDING_APPROVAL",
+              "case_id": "FC3-004",
+              "emitted_signals": 1,
+              "expected_hard_action": "UNCHANGED",
+              "expected_route": "NEEDS_CLARIFICATION",
+              "validation_issues": []
+            }
+          ],
+          "execution_errors": {},
+          "hard_actions": {
+            "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION": 1,
+            "UNCHANGED": 5
+          },
+          "raw_proposals_file": "focused.proposals.json",
+          "raw_proposals_sha256": "d2d2455a53b7fed9a2f8e720a8be4c592b8d79cf646998febc0c77dc88fd21d2",
+          "routes": {
+            "PENDING_APPROVAL": 5,
+            "PROFILE_FACT_REVIEW": 1
+          },
+          "validated_file": "focused.json",
+          "validated_sha256": "8abdbeacc6d9da08132efd12ddedf8e6928440bd112567ab4234a3e753908a0b",
+          "validation_issue_count": 0
+        }
+      },
+      "directory": "pass-1",
+      "focus_result_issue_count": 0,
+      "pass_number": 1,
+      "responses_file": "focused.responses.json",
+      "responses_sha256": "f1273fce121481edabb65a46ef289df9262819ea15018f10d48d311dd025847a"
+    },
+    {
+      "arms": {
+        "focused": {
+          "cases": [
+            {
+              "actual_hard_action": "UNCHANGED",
+              "actual_route": "PENDING_APPROVAL",
+              "case_id": "FI-041",
+              "emitted_signals": 2,
+              "expected_hard_action": "UNCHANGED",
+              "expected_route": "PENDING_APPROVAL",
+              "validation_issues": []
+            },
+            {
+              "actual_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+              "actual_route": "PROFILE_FACT_REVIEW",
+              "case_id": "FH3-002",
+              "emitted_signals": 1,
+              "expected_hard_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+              "expected_route": "PROFILE_FACT_REVIEW",
+              "validation_issues": []
+            },
+            {
+              "actual_hard_action": "UNCHANGED",
+              "actual_route": "PENDING_APPROVAL",
+              "case_id": "FC3-001",
+              "emitted_signals": 2,
+              "expected_hard_action": "UNCHANGED",
+              "expected_route": "PENDING_APPROVAL",
+              "validation_issues": []
+            },
+            {
+              "actual_hard_action": "UNCHANGED",
+              "actual_route": "PENDING_APPROVAL",
+              "case_id": "FC3-002",
+              "emitted_signals": 1,
+              "expected_hard_action": "UNCHANGED",
+              "expected_route": "PENDING_APPROVAL",
+              "validation_issues": []
+            },
+            {
+              "actual_hard_action": "UNCHANGED",
+              "actual_route": "PENDING_APPROVAL",
+              "case_id": "FC3-003",
+              "emitted_signals": 1,
+              "expected_hard_action": "UNCHANGED",
+              "expected_route": "PENDING_APPROVAL",
+              "validation_issues": []
+            },
+            {
+              "actual_hard_action": "UNCHANGED",
+              "actual_route": "PENDING_APPROVAL",
+              "case_id": "FC3-004",
+              "emitted_signals": 1,
+              "expected_hard_action": "UNCHANGED",
+              "expected_route": "NEEDS_CLARIFICATION",
+              "validation_issues": []
+            }
+          ],
+          "execution_errors": {},
+          "hard_actions": {
+            "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION": 1,
+            "UNCHANGED": 5
+          },
+          "raw_proposals_file": "focused.proposals.json",
+          "raw_proposals_sha256": "255ef86016a77aef288db1f1970934d22899635c8235841035b700c9ad5e0d85",
+          "routes": {
+            "PENDING_APPROVAL": 5,
+            "PROFILE_FACT_REVIEW": 1
+          },
+          "validated_file": "focused.json",
+          "validated_sha256": "cde8b8bf6a6bf93de72219d50593a71bd34b9ca095322d9bdb55084256ee0992",
+          "validation_issue_count": 0
+        }
+      },
+      "directory": "pass-2",
+      "focus_result_issue_count": 0,
+      "pass_number": 2,
+      "responses_file": "focused.responses.json",
+      "responses_sha256": "ebc4339bc7a5fdebe1f667fc2af76708bc5e443240650f78a372dacea8f3464a"
+    }
+  ],
+  "request_errors": 0,
+  "request_trace_file": "request-trace.json",
+  "request_trace_sha256": "5998c086dea7be9409ba373c041aaa2e236bbd190b691ab85501295ca9cda254",
+  "requests_attempted": 22,
+  "requests_completed": 22,
+  "score_status": "automated_diagnostics_only"
+}

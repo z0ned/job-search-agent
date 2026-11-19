@@ -1,0 +1,224 @@
+{
+  "FC3-001": [
+    {
+      "expected_roles": [
+        "preference"
+      ],
+      "quote": "This particular Rail Signal Testing Technician opening sounds excellent",
+      "response": {
+        "detail": null,
+        "role": "preference",
+        "signal": {
+          "condition": null,
+          "dimension": "role_responsibilities",
+          "display_label": "Likes this Rail Signal Testing Technician opening",
+          "polarity": "positive",
+          "scope": {
+            "qualifiers": [],
+            "referent": "Rail Signal Testing Technician",
+            "type": "posting_role"
+          },
+          "strength": "strong"
+        }
+      }
+    },
+    {
+      "expected_roles": [
+        "preference"
+      ],
+      "quote": "I do not want to work for Aster Spur Systems",
+      "response": {
+        "detail": null,
+        "role": "preference",
+        "signal": {
+          "condition": null,
+          "dimension": "employer",
+          "display_label": "Employer",
+          "polarity": "negative",
+          "scope": {
+            "qualifiers": [],
+            "referent": "Aster Spur Systems",
+            "type": "employer"
+          },
+          "strength": "strong"
+        }
+      }
+    }
+  ],
+  "FC3-002": [
+    {
+      "expected_roles": [
+        "context",
+        "job_fact"
+      ],
+      "quote": "This Rail Signal Testing Technician opening involves checking interlock relays",
+      "response": {
+        "detail": "Neutral description of the opening's duties that sets up the separate employer objection in the full feedback.",
+        "role": "context",
+        "signal": null
+      }
+    },
+    {
+      "expected_roles": [
+        "preference"
+      ],
+      "quote": "I do not want to work for Aster Spur Systems",
+      "response": {
+        "detail": null,
+        "role": "preference",
+        "signal": {
+          "condition": null,
+          "dimension": "employer",
+          "display_label": "Aster Spur Systems",
+          "polarity": "negative",
+          "scope": {
+            "qualifiers": [],
+            "referent": "Aster Spur Systems",
+            "type": "employer"
+          },
+          "strength": "strong"
+        }
+      }
+    }
+  ],
+  "FC3-003": [
+    {
+      "expected_roles": [
+        "preference"
+      ],
+      "quote": "I would enjoy diagnosing voltage drops in irrigation-control cabinets",
+      "response": {
+        "detail": null,
+        "role": "preference",
+        "signal": {
+          "condition": null,
+          "dimension": "role_responsibilities",
+          "display_label": "Role responsibilities",
+          "polarity": "positive",
+          "scope": {
+            "qualifiers": [],
+            "referent": "diagnosing voltage drops in irrigation-control cabinets",
+            "type": "role_feature"
+          },
+          "strength": "strong"
+        }
+      }
+    },
+    {
+      "expected_roles": [
+        "context"
+      ],
+      "quote": "That work helps maintenance crews locate damaged wiring",
+      "response": {
+        "detail": "Supporting reason explaining why the cabinet diagnostic work is appealing in the prior sentence.",
+        "role": "context",
+        "signal": null
+      }
+    }
+  ],
+  "FC3-004": [
+    {
+      "expected_roles": [
+        "vague_reaction"
+      ],
+      "quote": "Seems pretty good so far",
+      "response": {
+        "detail": null,
+        "role": "preference",
+        "signal": {
+          "condition": null,
+          "dimension": "role_responsibilities",
+          "display_label": "Overall role",
+          "polarity": "positive",
+          "scope": {
+            "qualifiers": [],
+            "referent": "Seawater Sampling Coordinator",
+            "type": "posting_role"
+          },
+          "strength": "mild"
+        }
+      }
+    }
+  ],
+  "FH3-002": [
+    {
+      "expected_roles": [
+        "preference"
+      ],
+      "quote": "I enjoy untangling conflicting vendor clauses.",
+      "response": {
+        "detail": null,
+        "role": "preference",
+        "signal": {
+          "condition": null,
+          "dimension": "role_responsibilities",
+          "display_label": "Enjoys contract clause conflict resolution work",
+          "polarity": "positive",
+          "scope": {
+            "qualifiers": [],
+            "referent": "untangling conflicting vendor clauses",
+            "type": "role_feature"
+          },
+          "strength": "strong"
+        }
+      }
+    },
+    {
+      "expected_roles": [
+        "rule_reconsideration"
+      ],
+      "quote": "I want to revisit my 1099 minimum and consider lowering it to $92 an hour.",
+      "response": {
+        "detail": "Requests reconsideration of the current 1099 hourly minimum, proposing a lower threshold of $92/hour.",
+        "role": "rule_reconsideration",
+        "signal": null
+      }
+    }
+  ],
+  "FI-041": [
+    {
+      "expected_roles": [
+        "preference"
+      ],
+      "quote": "This is a terrific AI advisor role",
+      "response": {
+        "detail": null,
+        "role": "preference",
+        "signal": {
+          "condition": null,
+          "dimension": "role_responsibilities",
+          "display_label": "Role responsibilities",
+          "polarity": "positive",
+          "scope": {
+            "qualifiers": [],
+            "referent": "AI Strategy Advisor",
+            "type": "posting_role"
+          },
+          "strength": "strong"
+        }
+      }
+    },
+    {
+      "expected_roles": [
+        "preference"
+      ],
+      "quote": "but I do not trust the employer.",
+      "response": {
+        "detail": null,
+        "role": "preference",
+        "signal": {
+          "condition": null,
+          "dimension": "employer",
+          "display_label": "Employer",
+          "polarity": "negative",
+          "scope": {
+            "qualifiers": [],
+            "referent": "Trustline AI",
+            "type": "employer"
+          },
+          "strength": "strong"
+        }
+      }
+    }
+  ]
+}

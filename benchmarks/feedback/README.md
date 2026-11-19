@@ -73,3 +73,7 @@ The two-pass trial compares the standard one-call interpreter with a separate qu
 ## V3 reaction accounting replay and live trial
 
 The zero-request replay audits the earlier split classifier against the saved evidence. The live follow-up reuses both verified inventories and records one classifier disposition for each preliminary preference. The capture preserves full responses, projected proposals, validated records, and case-level audits. [Trial protocol and findings](../../docs/Feedback_Interpreter_Reaction_Accounting_Trial_v3.md) · [Offline audit capture](offline_v3_reaction_accounting/report.json) · [Semantic scorecard](live_v3_reaction_accounting_trial/semantic-report.json)
+
+## Live v3 focused context check
+
+The two-pass trial presents one exact quote and the original feedback per request. The assembled proposals go through the existing validator. The capture records all 22 quote decisions, assembled proposals, validated case outcomes, and independent adjudications. [Trial protocol and findings](../../docs/Feedback_Interpreter_Focused_Context_Trial_v3.md) · [Semantic scorecard](live_v3_focused_context_trial/semantic-report.json)
