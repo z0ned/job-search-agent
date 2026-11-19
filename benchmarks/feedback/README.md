@@ -51,3 +51,7 @@ The isolated trial compared the current schema with compatible dimension and sco
 ## V3 signal-independence trial
 
 The paired trial tested an instruction to verify independent support for each signal on six known evidence-review inputs and four frozen synthetic contrasts. Both arms used the stricter schema, the same source inputs within each pair, and the same validator and routing. The archive preserves 20 requests’ raw proposals and validated records, paired traces, and blinded case-level adjudication. [Trial protocol and findings](../../docs/Feedback_Interpreter_Independence_Trial_v3.md) · [Semantic scorecard](live_v3_extraction_independence_trial/semantic-report.json)
+
+## Offline v3 claim-review replay
+
+Two source-only reviewers assigned claim dispositions to the 20 saved validated records from the signal-independence trial. The replay applies the consensus decisions by signal index and preserves the original capture and routing. Its comparison reports supported signals held for review separately from explanatory extras. [Replay protocol and findings](../../docs/Feedback_Interpreter_Claim_Review_Replay_v3.md) · [Case-level comparison](offline_v3_claim_review/comparison.json)

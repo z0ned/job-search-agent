@@ -1,0 +1,184 @@
+{
+  "arms": {
+    "control": {
+      "cases": {
+        "FI-033": [
+          {
+            "disposition": "independent",
+            "rationale": "“Too junior” explicitly evaluates the seniority level as below what the author wants.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "unresolved",
+            "rationale": "Reviewer one (explanatory) — The forecast of almost no decision-making autonomy gives the reason the author judges the role too junior. Reviewer two (unresolved) — Having almost no autonomy could be a second objection or the evidence for calling the job too junior. The semicolon leaves that relation open.",
+            "signal_index": 2
+          }
+        ],
+        "FI-041": [
+          {
+            "disposition": "independent",
+            "rationale": "Calling this AI advisor role “terrific” expresses approval of the opening itself, alongside a separate employer judgment.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "The author explicitly distrusts the employer, Trustline AI, while praising the opening.",
+            "signal_index": 2
+          }
+        ],
+        "FI-048": [
+          {
+            "disposition": "unresolved",
+            "rationale": "Reviewer one (independent) — “That’s exactly what I want to avoid” directly rejects the quoted expectation that the role calls for loving sales. Reviewer two (unresolved) — “That” could refer to doing sales work or to the employer’s requirement to love sales. The wording establishes expected enthusiasm and leaves the amount of sales work open.",
+            "signal_index": 1
+          }
+        ],
+        "FI3X-001": [
+          {
+            "disposition": "explanatory",
+            "explains_signal_index": 2,
+            "rationale": "“Specifically” identifies the objection to near-zero say over inspection order as the meaning of the opening authority complaint in this feedback.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "The author directly says they want to avoid having almost no say over inspection order.",
+            "signal_index": 2
+          }
+        ],
+        "FI3X-002": [
+          {
+            "disposition": "independent",
+            "rationale": "The author explicitly objects to having almost no say over the order of inspections.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "“I also do not want” introduces a distinct objection to roles that exclude inspection budget responsibility.",
+            "signal_index": 2
+          }
+        ],
+        "FI3X-003": [],
+        "FI3X-004": [
+          {
+            "disposition": "independent",
+            "rationale": "“I would enjoy” directly evaluates the posted task of facilitating the debrief after a simulation.",
+            "signal_index": 1
+          }
+        ],
+        "FT-002": [
+          {
+            "disposition": "independent",
+            "rationale": "The author directly says they want to avoid roles built around giving the safety briefings that the posting describes as central.",
+            "signal_index": 1
+          }
+        ],
+        "FT-004": [
+          {
+            "disposition": "independent",
+            "rationale": "The author explicitly calls this particular Collection Analyst opening terrific and separately judges the hiring organization.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "“I have no trust” explicitly evaluates the hiring organization, Station Heritage Trust, independently of the praised opening.",
+            "signal_index": 2
+          }
+        ],
+        "FT-005": [
+          {
+            "disposition": "independent",
+            "rationale": "The author explicitly rules out a warehouse operations career and cites inventory reconciliation as the clue to that career category.",
+            "signal_index": 1
+          }
+        ]
+      },
+      "validated_sha256": "55ac755c679ada1e51fbc6a65eab3bd5f50427316e9e28d526d3434357d873fc"
+    },
+    "treatment": {
+      "cases": {
+        "FI-033": [
+          {
+            "disposition": "independent",
+            "rationale": "“Too junior” explicitly evaluates the seniority level as below what the author wants.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "unresolved",
+            "rationale": "Reviewer one (explanatory) — The forecast of almost no decision-making autonomy gives the reason the author judges the role too junior. Reviewer two (unresolved) — Having almost no autonomy could be a second objection or the evidence for calling the job too junior. The semicolon leaves that relation open.",
+            "signal_index": 2
+          }
+        ],
+        "FI-041": [
+          {
+            "disposition": "independent",
+            "rationale": "Calling this AI advisor role “terrific” expresses approval of the opening itself, alongside a separate employer judgment.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "The author explicitly distrusts the employer, Trustline AI, while praising the opening.",
+            "signal_index": 2
+          }
+        ],
+        "FI-048": [
+          {
+            "disposition": "unresolved",
+            "rationale": "Reviewer one (independent) — “That’s exactly what I want to avoid” directly rejects the quoted expectation that the role calls for loving sales. Reviewer two (unresolved) — “That” could refer to doing sales work or to the employer’s requirement to love sales. The wording establishes expected enthusiasm and leaves the amount of sales work open.",
+            "signal_index": 1
+          }
+        ],
+        "FI3X-001": [
+          {
+            "disposition": "explanatory",
+            "explains_signal_index": 2,
+            "rationale": "“Specifically” identifies the objection to near-zero say over inspection order as the meaning of the opening authority complaint in this feedback.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "The author directly says they want to avoid having almost no say over inspection order.",
+            "signal_index": 2
+          }
+        ],
+        "FI3X-002": [
+          {
+            "disposition": "independent",
+            "rationale": "The author explicitly objects to having almost no say over the order of inspections.",
+            "signal_index": 1
+          },
+          {
+            "disposition": "independent",
+            "rationale": "“I also do not want” introduces a distinct objection to roles that exclude inspection budget responsibility.",
+            "signal_index": 2
+          }
+        ],
+        "FI3X-003": [],
+        "FI3X-004": [
+          {
+            "disposition": "independent",
+            "rationale": "“I would enjoy” directly evaluates the posted task of facilitating the debrief after a simulation.",
+            "signal_index": 1
+          }
+        ],
+        "FT-002": [],
+        "FT-004": [
+          {
+            "disposition": "independent",
+            "rationale": "The author explicitly calls this particular Collection Analyst opening terrific and separately judges the hiring organization.",
+            "signal_index": 1
+          }
+        ],
+        "FT-005": [
+          {
+            "disposition": "independent",
+            "rationale": "The author explicitly rules out a warehouse operations career and cites inventory reconciliation as the clue to that career category.",
+            "signal_index": 1
+          }
+        ]
+      },
+      "validated_sha256": "d8c8eadfa39ea26674f26091f59eb076fa9ffa1f88e1ed6b9c899e9ff6a46c6c"
+    }
+  },
+  "reviewer": "Consensus of two independent Codex source reviewers"
+}

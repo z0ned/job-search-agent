@@ -1,0 +1,691 @@
+{
+  "arms": {
+    "control": {
+      "cases": {
+        "FI-033": {
+          "expected_signals": 1,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [
+            1
+          ],
+          "independent_missed_reference_indices": [
+            1
+          ],
+          "independent_signal_indices": [
+            1
+          ],
+          "original_case_complete": false,
+          "original_emitted_count": 2,
+          "original_match_count": 1,
+          "projected_signal_case_complete": false,
+          "retained_equivalent_pairs_original_indices": [],
+          "review_status": "PENDING_APPROVAL",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [
+            2
+          ],
+          "unresolved_signal_indices": [
+            2
+          ],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FI-041": {
+          "expected_signals": 2,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [],
+          "independent_signal_indices": [
+            1,
+            2
+          ],
+          "original_case_complete": true,
+          "original_emitted_count": 2,
+          "original_match_count": 2,
+          "projected_signal_case_complete": true,
+          "retained_equivalent_pairs_original_indices": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "review_status": "PENDING_APPROVAL",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FI-048": {
+          "expected_signals": 1,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [
+            1
+          ],
+          "independent_signal_indices": [],
+          "original_case_complete": true,
+          "original_emitted_count": 1,
+          "original_match_count": 1,
+          "projected_signal_case_complete": false,
+          "retained_equivalent_pairs_original_indices": [],
+          "review_status": "PENDING_APPROVAL",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [
+            1
+          ],
+          "unresolved_signal_indices": [
+            1
+          ],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FI3X-001": {
+          "expected_signals": 1,
+          "explanatory_extra_signal_indices": [
+            1
+          ],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [],
+          "independent_signal_indices": [
+            2
+          ],
+          "original_case_complete": false,
+          "original_emitted_count": 2,
+          "original_match_count": 1,
+          "projected_signal_case_complete": true,
+          "retained_equivalent_pairs_original_indices": [
+            [
+              1,
+              2
+            ]
+          ],
+          "review_status": "PENDING_APPROVAL",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FI3X-002": {
+          "expected_signals": 2,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [
+            2
+          ],
+          "independent_missed_reference_indices": [
+            2
+          ],
+          "independent_signal_indices": [
+            1,
+            2
+          ],
+          "original_case_complete": false,
+          "original_emitted_count": 2,
+          "original_match_count": 1,
+          "projected_signal_case_complete": false,
+          "retained_equivalent_pairs_original_indices": [
+            [
+              1,
+              1
+            ]
+          ],
+          "review_status": "PENDING_APPROVAL",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FI3X-003": {
+          "expected_signals": 0,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [],
+          "independent_signal_indices": [],
+          "original_case_complete": true,
+          "original_emitted_count": 0,
+          "original_match_count": 0,
+          "projected_signal_case_complete": true,
+          "retained_equivalent_pairs_original_indices": [],
+          "review_status": "PROFILE_FACT_REVIEW",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FI3X-004": {
+          "expected_signals": 1,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [],
+          "independent_signal_indices": [
+            1
+          ],
+          "original_case_complete": true,
+          "original_emitted_count": 1,
+          "original_match_count": 1,
+          "projected_signal_case_complete": true,
+          "retained_equivalent_pairs_original_indices": [
+            [
+              1,
+              1
+            ]
+          ],
+          "review_status": "PROFILE_FACT_REVIEW",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FT-002": {
+          "expected_signals": 1,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [],
+          "independent_signal_indices": [
+            1
+          ],
+          "original_case_complete": true,
+          "original_emitted_count": 1,
+          "original_match_count": 1,
+          "projected_signal_case_complete": true,
+          "retained_equivalent_pairs_original_indices": [
+            [
+              1,
+              1
+            ]
+          ],
+          "review_status": "PENDING_APPROVAL",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FT-004": {
+          "expected_signals": 2,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [],
+          "independent_signal_indices": [
+            1,
+            2
+          ],
+          "original_case_complete": true,
+          "original_emitted_count": 2,
+          "original_match_count": 2,
+          "projected_signal_case_complete": true,
+          "retained_equivalent_pairs_original_indices": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "review_status": "PENDING_APPROVAL",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FT-005": {
+          "expected_signals": 1,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [],
+          "independent_signal_indices": [
+            1
+          ],
+          "original_case_complete": true,
+          "original_emitted_count": 1,
+          "original_match_count": 1,
+          "projected_signal_case_complete": true,
+          "retained_equivalent_pairs_original_indices": [
+            [
+              1,
+              1
+            ]
+          ],
+          "review_status": "PENDING_APPROVAL",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        }
+      },
+      "summary": {
+        "archived_validator_rejections": 0,
+        "case_count": 10,
+        "complete_signal_cases_with_no_unresolved_claims": 7,
+        "explanatory_extra_signal_count": 1,
+        "explanatory_matched_signal_count": 0,
+        "hard_actions_correct": 10,
+        "hard_constraints_mutated": 0,
+        "independent_only_precision": {
+          "denominator": 11,
+          "numerator": 9
+        },
+        "independent_only_recall": {
+          "denominator": 12,
+          "numerator": 9
+        },
+        "original_complete_cases": 7,
+        "original_validated_precision": {
+          "denominator": 14,
+          "numerator": 11
+        },
+        "original_validated_recall": {
+          "denominator": 12,
+          "numerator": 11
+        },
+        "routes_correct": 10,
+        "unresolved_extra_signal_count": 0,
+        "unresolved_matched_signal_count": 2,
+        "unresolved_signal_count": 2,
+        "unsupported_career_downgrades": 0
+      }
+    },
+    "treatment": {
+      "cases": {
+        "FI-033": {
+          "expected_signals": 1,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [
+            1
+          ],
+          "independent_missed_reference_indices": [
+            1
+          ],
+          "independent_signal_indices": [
+            1
+          ],
+          "original_case_complete": false,
+          "original_emitted_count": 2,
+          "original_match_count": 1,
+          "projected_signal_case_complete": false,
+          "retained_equivalent_pairs_original_indices": [],
+          "review_status": "PENDING_APPROVAL",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [
+            2
+          ],
+          "unresolved_signal_indices": [
+            2
+          ],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FI-041": {
+          "expected_signals": 2,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [],
+          "independent_signal_indices": [
+            1,
+            2
+          ],
+          "original_case_complete": true,
+          "original_emitted_count": 2,
+          "original_match_count": 2,
+          "projected_signal_case_complete": true,
+          "retained_equivalent_pairs_original_indices": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "review_status": "PENDING_APPROVAL",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FI-048": {
+          "expected_signals": 1,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [
+            1
+          ],
+          "independent_signal_indices": [],
+          "original_case_complete": true,
+          "original_emitted_count": 1,
+          "original_match_count": 1,
+          "projected_signal_case_complete": false,
+          "retained_equivalent_pairs_original_indices": [],
+          "review_status": "PENDING_APPROVAL",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [
+            1
+          ],
+          "unresolved_signal_indices": [
+            1
+          ],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FI3X-001": {
+          "expected_signals": 1,
+          "explanatory_extra_signal_indices": [
+            1
+          ],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [],
+          "independent_signal_indices": [
+            2
+          ],
+          "original_case_complete": false,
+          "original_emitted_count": 2,
+          "original_match_count": 1,
+          "projected_signal_case_complete": true,
+          "retained_equivalent_pairs_original_indices": [
+            [
+              1,
+              2
+            ]
+          ],
+          "review_status": "PENDING_APPROVAL",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FI3X-002": {
+          "expected_signals": 2,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [
+            2
+          ],
+          "independent_missed_reference_indices": [
+            2
+          ],
+          "independent_signal_indices": [
+            1,
+            2
+          ],
+          "original_case_complete": false,
+          "original_emitted_count": 2,
+          "original_match_count": 1,
+          "projected_signal_case_complete": false,
+          "retained_equivalent_pairs_original_indices": [
+            [
+              1,
+              1
+            ]
+          ],
+          "review_status": "PENDING_APPROVAL",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FI3X-003": {
+          "expected_signals": 0,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [],
+          "independent_signal_indices": [],
+          "original_case_complete": true,
+          "original_emitted_count": 0,
+          "original_match_count": 0,
+          "projected_signal_case_complete": true,
+          "retained_equivalent_pairs_original_indices": [],
+          "review_status": "PROFILE_FACT_REVIEW",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FI3X-004": {
+          "expected_signals": 1,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [],
+          "independent_signal_indices": [
+            1
+          ],
+          "original_case_complete": true,
+          "original_emitted_count": 1,
+          "original_match_count": 1,
+          "projected_signal_case_complete": true,
+          "retained_equivalent_pairs_original_indices": [
+            [
+              1,
+              1
+            ]
+          ],
+          "review_status": "PROFILE_FACT_REVIEW",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        },
+        "FT-002": {
+          "expected_signals": 1,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [
+            1
+          ],
+          "independent_signal_indices": [],
+          "original_case_complete": false,
+          "original_emitted_count": 0,
+          "original_match_count": 0,
+          "projected_signal_case_complete": false,
+          "retained_equivalent_pairs_original_indices": [],
+          "review_status": "NEEDS_CLARIFICATION",
+          "route_correct": false,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": [
+            {
+              "field": "signals",
+              "index": 0,
+              "message": "A scope cannot repeat a qualifier kind."
+            }
+          ]
+        },
+        "FT-004": {
+          "expected_signals": 2,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [
+            2
+          ],
+          "independent_signal_indices": [
+            1
+          ],
+          "original_case_complete": false,
+          "original_emitted_count": 1,
+          "original_match_count": 1,
+          "projected_signal_case_complete": false,
+          "retained_equivalent_pairs_original_indices": [
+            [
+              1,
+              1
+            ]
+          ],
+          "review_status": "PENDING_APPROVAL",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": [
+            {
+              "field": "signals",
+              "index": 1,
+              "message": "Evidence quote must locate a unique original feedback span."
+            }
+          ]
+        },
+        "FT-005": {
+          "expected_signals": 1,
+          "explanatory_extra_signal_indices": [],
+          "explanatory_matched_signal_indices": [],
+          "hard_action_correct": true,
+          "hard_constraints_mutated": false,
+          "independent_extra_signal_indices": [],
+          "independent_missed_reference_indices": [],
+          "independent_signal_indices": [
+            1
+          ],
+          "original_case_complete": true,
+          "original_emitted_count": 1,
+          "original_match_count": 1,
+          "projected_signal_case_complete": true,
+          "retained_equivalent_pairs_original_indices": [
+            [
+              1,
+              1
+            ]
+          ],
+          "review_status": "PENDING_APPROVAL",
+          "route_correct": true,
+          "unresolved_extra_signal_indices": [],
+          "unresolved_matched_signal_indices": [],
+          "unresolved_signal_indices": [],
+          "unsupported_career_downgrade": false,
+          "validation_issues": []
+        }
+      },
+      "summary": {
+        "archived_validator_rejections": 2,
+        "case_count": 10,
+        "complete_signal_cases_with_no_unresolved_claims": 5,
+        "explanatory_extra_signal_count": 1,
+        "explanatory_matched_signal_count": 0,
+        "hard_actions_correct": 10,
+        "hard_constraints_mutated": 0,
+        "independent_only_precision": {
+          "denominator": 9,
+          "numerator": 7
+        },
+        "independent_only_recall": {
+          "denominator": 12,
+          "numerator": 7
+        },
+        "original_complete_cases": 5,
+        "original_validated_precision": {
+          "denominator": 12,
+          "numerator": 9
+        },
+        "original_validated_recall": {
+          "denominator": 12,
+          "numerator": 9
+        },
+        "routes_correct": 9,
+        "unresolved_extra_signal_count": 0,
+        "unresolved_matched_signal_count": 2,
+        "unresolved_signal_count": 2,
+        "unsupported_career_downgrades": 0
+      }
+    }
+  },
+  "automated_performance_measured": false,
+  "decision_sha256": "43cc8aada5cf0b2e42b5f1e402d4140caf88bed082c0936f0c5a051992ea1984",
+  "inference_requests": 0,
+  "mode": "manual_claim_review_offline_diagnostics",
+  "replay_sha256": "4ecf76d5045ab5f80828912b26aa94e834cc3a019f384cd7931e18f2de30c612",
+  "reviewer_agreements": 22,
+  "reviewer_disagreements": 4,
+  "reviewers_sha256": "490ce7680695b0cf9ce9550e5f769e5f2cea0ed48fb22b2ba071ea98247a5f51",
+  "source_semantic_report_sha256": "32cd92030e83404148b3f1802470d98befda9725ddef2cfbe196667e6980c9d6"
+}

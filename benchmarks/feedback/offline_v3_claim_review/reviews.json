@@ -1,0 +1,451 @@
+{
+  "agreements": 22,
+  "disagreements": [
+    {
+      "record_id": "R04",
+      "signal_index": 2
+    },
+    {
+      "record_id": "R10",
+      "signal_index": 1
+    },
+    {
+      "record_id": "R16",
+      "signal_index": 1
+    },
+    {
+      "record_id": "R20",
+      "signal_index": 2
+    }
+  ],
+  "masked_packet_sha256": "347da27b7af4786dfbbf0123c0ef8df56c3dcdb48fb434aa072cd0520239ab73",
+  "protocol": "Two independent Codex reviews with case IDs and arm labels masked and references withheld",
+  "record_mapping": {
+    "R01": {
+      "arm": "treatment",
+      "case_id": "FI3X-001"
+    },
+    "R02": {
+      "arm": "control",
+      "case_id": "FI-041"
+    },
+    "R03": {
+      "arm": "treatment",
+      "case_id": "FI3X-004"
+    },
+    "R04": {
+      "arm": "treatment",
+      "case_id": "FI-033"
+    },
+    "R05": {
+      "arm": "control",
+      "case_id": "FI3X-003"
+    },
+    "R06": {
+      "arm": "treatment",
+      "case_id": "FT-002"
+    },
+    "R07": {
+      "arm": "control",
+      "case_id": "FT-002"
+    },
+    "R08": {
+      "arm": "treatment",
+      "case_id": "FT-005"
+    },
+    "R09": {
+      "arm": "control",
+      "case_id": "FI3X-001"
+    },
+    "R10": {
+      "arm": "treatment",
+      "case_id": "FI-048"
+    },
+    "R11": {
+      "arm": "control",
+      "case_id": "FI3X-004"
+    },
+    "R12": {
+      "arm": "treatment",
+      "case_id": "FI-041"
+    },
+    "R13": {
+      "arm": "treatment",
+      "case_id": "FT-004"
+    },
+    "R14": {
+      "arm": "control",
+      "case_id": "FT-005"
+    },
+    "R15": {
+      "arm": "control",
+      "case_id": "FI3X-002"
+    },
+    "R16": {
+      "arm": "control",
+      "case_id": "FI-048"
+    },
+    "R17": {
+      "arm": "control",
+      "case_id": "FT-004"
+    },
+    "R18": {
+      "arm": "treatment",
+      "case_id": "FI3X-002"
+    },
+    "R19": {
+      "arm": "treatment",
+      "case_id": "FI3X-003"
+    },
+    "R20": {
+      "arm": "control",
+      "case_id": "FI-033"
+    }
+  },
+  "reviewers": {
+    "one": {
+      "R01": [
+        {
+          "disposition": "explanatory",
+          "explains_signal_index": 2,
+          "rationale": "“Specifically” identifies the objection to near-zero say over inspection order as the meaning of the opening authority complaint in this feedback.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "independent",
+          "rationale": "The author directly says they want to avoid having almost no say over inspection order.",
+          "signal_index": 2
+        }
+      ],
+      "R02": [
+        {
+          "disposition": "independent",
+          "rationale": "Calling this AI advisor role “terrific” expresses approval of the opening itself, alongside a separate employer judgment.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "independent",
+          "rationale": "The author explicitly distrusts the employer, Trustline AI, while praising the opening.",
+          "signal_index": 2
+        }
+      ],
+      "R03": [
+        {
+          "disposition": "independent",
+          "rationale": "“I would enjoy” directly evaluates the posted task of facilitating the debrief after a simulation.",
+          "signal_index": 1
+        }
+      ],
+      "R04": [
+        {
+          "disposition": "independent",
+          "rationale": "“Too junior” explicitly evaluates the seniority level as below what the author wants.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "explanatory",
+          "explains_signal_index": 1,
+          "rationale": "The forecast of almost no decision-making autonomy gives the reason the author judges the role too junior.",
+          "signal_index": 2
+        }
+      ],
+      "R05": [],
+      "R06": [],
+      "R07": [
+        {
+          "disposition": "independent",
+          "rationale": "The author directly says they want to avoid roles built around giving the safety briefings that the posting describes as central.",
+          "signal_index": 1
+        }
+      ],
+      "R08": [
+        {
+          "disposition": "independent",
+          "rationale": "The author explicitly rules out a warehouse operations career and cites inventory reconciliation as the clue to that career category.",
+          "signal_index": 1
+        }
+      ],
+      "R09": [
+        {
+          "disposition": "explanatory",
+          "explains_signal_index": 2,
+          "rationale": "“Specifically” identifies the objection to near-zero say over inspection order as the meaning of the opening authority complaint in this feedback.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "independent",
+          "rationale": "The author directly says they want to avoid having almost no say over inspection order.",
+          "signal_index": 2
+        }
+      ],
+      "R10": [
+        {
+          "disposition": "independent",
+          "rationale": "“That’s exactly what I want to avoid” directly rejects the quoted expectation that the role calls for loving sales.",
+          "signal_index": 1
+        }
+      ],
+      "R11": [
+        {
+          "disposition": "independent",
+          "rationale": "“I would enjoy” directly evaluates the posted task of facilitating the debrief after a simulation.",
+          "signal_index": 1
+        }
+      ],
+      "R12": [
+        {
+          "disposition": "independent",
+          "rationale": "Calling this AI advisor role “terrific” expresses approval of the opening itself, alongside a separate employer judgment.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "independent",
+          "rationale": "The author explicitly distrusts the employer, Trustline AI, while praising the opening.",
+          "signal_index": 2
+        }
+      ],
+      "R13": [
+        {
+          "disposition": "independent",
+          "rationale": "The author explicitly calls this particular Collection Analyst opening terrific and separately judges the hiring organization.",
+          "signal_index": 1
+        }
+      ],
+      "R14": [
+        {
+          "disposition": "independent",
+          "rationale": "The author explicitly rules out a warehouse operations career and cites inventory reconciliation as the clue to that career category.",
+          "signal_index": 1
+        }
+      ],
+      "R15": [
+        {
+          "disposition": "independent",
+          "rationale": "The author explicitly objects to having almost no say over the order of inspections.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "independent",
+          "rationale": "“I also do not want” introduces a distinct objection to roles that exclude inspection budget responsibility.",
+          "signal_index": 2
+        }
+      ],
+      "R16": [
+        {
+          "disposition": "independent",
+          "rationale": "“That’s exactly what I want to avoid” directly rejects the quoted expectation that the role calls for loving sales.",
+          "signal_index": 1
+        }
+      ],
+      "R17": [
+        {
+          "disposition": "independent",
+          "rationale": "The author explicitly calls this particular Collection Analyst opening terrific and separately judges the hiring organization.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "independent",
+          "rationale": "“I have no trust” explicitly evaluates the hiring organization, Station Heritage Trust, independently of the praised opening.",
+          "signal_index": 2
+        }
+      ],
+      "R18": [
+        {
+          "disposition": "independent",
+          "rationale": "The author explicitly objects to having almost no say over the order of inspections.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "independent",
+          "rationale": "“I also do not want” introduces a distinct objection to roles that exclude inspection budget responsibility.",
+          "signal_index": 2
+        }
+      ],
+      "R19": [],
+      "R20": [
+        {
+          "disposition": "independent",
+          "rationale": "“Too junior” explicitly evaluates the seniority level as below what the author wants.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "explanatory",
+          "explains_signal_index": 1,
+          "rationale": "The forecast of almost no decision-making autonomy gives the reason the author judges the role too junior.",
+          "signal_index": 2
+        }
+      ]
+    },
+    "two": {
+      "R01": [
+        {
+          "disposition": "explanatory",
+          "explains_signal_index": 2,
+          "rationale": "“Specifically” identifies almost no say in inspection order as the limited authority that puts the respondent off.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "independent",
+          "rationale": "The respondent explicitly objects to having almost no say in the order of inspections.",
+          "signal_index": 2
+        }
+      ],
+      "R02": [
+        {
+          "disposition": "independent",
+          "rationale": "“Terrific” directly evaluates this AI advisor opening, separately from the judgment of Trustline AI.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "independent",
+          "rationale": "The respondent states distrust of Trustline AI even while praising the role.",
+          "signal_index": 2
+        }
+      ],
+      "R03": [
+        {
+          "disposition": "independent",
+          "rationale": "The respondent says they would enjoy debrief facilitation, a distinct duty in the posting from running the simulation that they have never done.",
+          "signal_index": 1
+        }
+      ],
+      "R04": [
+        {
+          "disposition": "independent",
+          "rationale": "“Too junior” gives an explicit negative evaluation of the role level.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "unresolved",
+          "rationale": "Having almost no autonomy could be a second objection or the evidence for calling the job too junior. The semicolon leaves that relation open.",
+          "signal_index": 2
+        }
+      ],
+      "R05": [],
+      "R06": [],
+      "R07": [
+        {
+          "disposition": "independent",
+          "rationale": "The respondent explicitly avoids jobs built around giving safety briefings. The posting identifies those briefings as the heart of the role.",
+          "signal_index": 1
+        }
+      ],
+      "R08": [
+        {
+          "disposition": "independent",
+          "rationale": "The respondent expressly rejects a warehouse operations career and cites inventory reconciliation to identify the category.",
+          "signal_index": 1
+        }
+      ],
+      "R09": [
+        {
+          "disposition": "explanatory",
+          "explains_signal_index": 2,
+          "rationale": "“Specifically” identifies almost no say in inspection order as the limited authority that puts the respondent off.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "independent",
+          "rationale": "The respondent explicitly objects to having almost no say in the order of inspections.",
+          "signal_index": 2
+        }
+      ],
+      "R10": [
+        {
+          "disposition": "unresolved",
+          "rationale": "“That” could refer to doing sales work or to the employer’s requirement to love sales. The wording establishes expected enthusiasm and leaves the amount of sales work open.",
+          "signal_index": 1
+        }
+      ],
+      "R11": [
+        {
+          "disposition": "independent",
+          "rationale": "The respondent says they would enjoy debrief facilitation, a distinct duty in the posting from running the simulation that they have never done.",
+          "signal_index": 1
+        }
+      ],
+      "R12": [
+        {
+          "disposition": "independent",
+          "rationale": "“Terrific” directly evaluates this AI advisor opening, separately from the judgment of Trustline AI.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "independent",
+          "rationale": "The respondent states distrust of Trustline AI even while praising the role.",
+          "signal_index": 2
+        }
+      ],
+      "R13": [
+        {
+          "disposition": "independent",
+          "rationale": "“This particular Collection Analyst opening would be terrific” directly praises the opening apart from the judgment of the hiring organization.",
+          "signal_index": 1
+        }
+      ],
+      "R14": [
+        {
+          "disposition": "independent",
+          "rationale": "The respondent expressly rejects a warehouse operations career and cites inventory reconciliation to identify the category.",
+          "signal_index": 1
+        }
+      ],
+      "R15": [
+        {
+          "disposition": "independent",
+          "rationale": "The respondent explicitly objects to having almost no say in inspection order, a distinct decision from owning the budget.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "independent",
+          "rationale": "“I also do not want” introduces a separate objection to having no responsibility for the inspection budget.",
+          "signal_index": 2
+        }
+      ],
+      "R16": [
+        {
+          "disposition": "unresolved",
+          "rationale": "“That” could refer to doing sales work or to the employer’s requirement to love sales. The wording establishes expected enthusiasm and leaves the amount of sales work open.",
+          "signal_index": 1
+        }
+      ],
+      "R17": [
+        {
+          "disposition": "independent",
+          "rationale": "“This particular Collection Analyst opening would be terrific” directly praises the opening apart from the judgment of the hiring organization.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "independent",
+          "rationale": "The respondent explicitly states distrust of the organization hiring for the opening they praise.",
+          "signal_index": 2
+        }
+      ],
+      "R18": [
+        {
+          "disposition": "independent",
+          "rationale": "The respondent explicitly objects to having almost no say in inspection order, a distinct decision from owning the budget.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "independent",
+          "rationale": "“I also do not want” introduces a separate objection to having no responsibility for the inspection budget.",
+          "signal_index": 2
+        }
+      ],
+      "R19": [],
+      "R20": [
+        {
+          "disposition": "independent",
+          "rationale": "“Too junior” gives an explicit negative evaluation of the role level.",
+          "signal_index": 1
+        },
+        {
+          "disposition": "unresolved",
+          "rationale": "Having almost no autonomy could be a second objection or the evidence for calling the job too junior. The semicolon leaves that relation open.",
+          "signal_index": 2
+        }
+      ]
+    }
+  }
+}
