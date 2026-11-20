@@ -1,0 +1,306 @@
+{
+  "suite_version": "3.0-review-only-followup-holdout",
+  "created_date": "2026-11-20",
+  "purpose": "Fresh synthetic reference cases for posting verification, travel specificity, review routing, and career scope.",
+  "provenance": {
+    "assumption_source": "gold_cases_v3.json",
+    "case_origin": "Independently authored fictitious postings and feedback, with reference decisions fixed before inference."
+  },
+  "assumptions": {
+    "hard_rules_immutable_without_explicit_change": true,
+    "written_explanation_required_for_both_decisions": true,
+    "batch_approval_before_application": true,
+    "frozen_phase_approval_is_held": true,
+    "unknown_salary_remains_eligible": true,
+    "permanent_base_minimum_usd": 180000,
+    "w2_hourly_minimum_usd": 75,
+    "1099_hourly_minimum_usd": 100,
+    "c2c_hourly_minimum_usd": null
+  },
+  "high_risk_case_ids": ["RF3-001", "RF3-002", "RF3-003", "RF3-004", "RF3-008", "RF3-009", "RF3-010", "RF3-011", "RF3-012"],
+  "test_cases": [
+    {
+      "case_id": "RF3-001",
+      "section": "Posting verification",
+      "title": "Verify whether advertised site visits require overnight stays",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Regional Service Programs Manager",
+        "employer": "Fallowmere Service Systems"
+      },
+      "decision": "interested",
+      "original_feedback": "The listing just says 'site visits.' Can you find out whether those are day trips or overnight stays?",
+      "expected_interpretations": [],
+      "clarification_question": "Are the site visits for this role day trips, or do they require overnight stays?",
+      "prohibited_inferences": ["The user prefers day trips.", "The user objects to overnight travel.", "The listing requires overnight travel."],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "RF3-002",
+      "section": "Posting verification",
+      "title": "Verify when Saturday coverage is required",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "title": "Operations Scheduling Consultant",
+        "employer": "Ternfield Dispatch Works",
+        "hourly_rate_usd": 92
+      },
+      "decision": "rejected",
+      "original_feedback": "Could you check whether I'd be covering Saturdays every week or just filling in when somebody's out?",
+      "expected_interpretations": [],
+      "clarification_question": "Would this role cover Saturdays every week or only fill in when someone is out?",
+      "prohibited_inferences": ["The user dislikes Saturday work.", "The user is comfortable with occasional Saturday coverage.", "The user rejected the posting over its Saturday schedule."],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "RF3-003",
+      "section": "Posting verification",
+      "title": "Verify whether an advertised annual figure includes a bonus",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Facilities Planning Director",
+        "employer": "Brackenquay Building Group"
+      },
+      "decision": "interested",
+      "original_feedback": "Can you confirm whether the $192,000 they quote is base pay or includes the annual bonus?",
+      "expected_interpretations": [],
+      "clarification_question": "Is the quoted $192,000 the annual base salary, or does it include the annual bonus?",
+      "prohibited_inferences": ["The employer confirmed $192,000 as annual base pay.", "The base pay is below the minimum.", "The user wants to change a compensation rule.", "The user prefers this compensation level."],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "RF3-004",
+      "section": "Posting verification",
+      "title": "Retain an independent responsibilities preference alongside a verification request",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Senior Product Designer",
+        "employer": "Iverglass Interface Studio"
+      },
+      "decision": "interested",
+      "original_feedback": "I really like running usability tests myself. Can you check whether their learning budget covers conference travel?",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "personally running usability tests",
+          "polarity": "positive",
+          "strength": "strong",
+          "scope": {"type": "role_feature", "value": "hands-on usability testing"},
+          "evidence_quote": "I really like running usability tests myself"
+        }
+      ],
+      "prohibited_inferences": ["The user requires conference travel reimbursement.", "A conference travel budget is a condition of the usability testing preference.", "The user has made a career-level commitment to product design."],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "reference_notes": ["The conference funding question concerns this posting. The separately stated usability-testing preference is already clear and can be held for ordinary review."]
+    },
+    {
+      "case_id": "RF3-005",
+      "section": "Travel specificity",
+      "title": "Preserve an upper count and quarterly period for client travel",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Client Integration Lead",
+        "employer": "Larchweft Integration Group"
+      },
+      "decision": "interested",
+      "original_feedback": "I'd be fine making up to three client trips per quarter.",
+      "expected_interpretations": [
+        {
+          "dimension": "work_arrangement",
+          "feature": "up to three client trips per quarter",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {"type": "travel_frequency", "value": "client travel"},
+          "evidence_quote": "I'd be fine making up to three client trips per quarter",
+          "qualifiers": [{"kind": "frequency", "value": "up to three client trips per quarter"}]
+        }
+      ],
+      "prohibited_inferences": ["The user wants exactly three client trips per quarter.", "The user wants one trip each month.", "The stated count is a confirmed eligibility rule."],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "reference_notes": ["The accepted range includes the upper bound of three. A cadence without the count, a point estimate of three, or a monthly average changes the stated precision."]
+    },
+    {
+      "case_id": "RF3-006",
+      "section": "Travel specificity",
+      "title": "Preserve the overnight referent and count over a two-month interval",
+      "job_context": {
+        "employment_type": "c2c_contract",
+        "title": "Field Commissioning Advisor",
+        "employer": "Vellumkiln Controls"
+      },
+      "decision": "interested",
+      "original_feedback": "One overnight trip every two months is about right for me.",
+      "expected_interpretations": [
+        {
+          "dimension": "work_arrangement",
+          "feature": "one overnight trip every two months",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {"type": "travel_frequency", "value": "overnight work travel"},
+          "evidence_quote": "One overnight trip every two months is about right for me",
+          "qualifiers": [{"kind": "frequency", "value": "one overnight trip every two months"}]
+        }
+      ],
+      "prohibited_inferences": ["The user wants two trips each month.", "This is a hard maximum of one trip.", "The same preference applies to every type of work travel."],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "reference_notes": ["About right expresses an acceptable frequency. 'Bimonthly' alone leaves both the count and interval open to misreading."]
+    },
+    {
+      "case_id": "RF3-007",
+      "section": "Travel specificity",
+      "title": "Retain monthly cadence with a traveler-controlled schedule",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Sustainability Implementation Manager",
+        "employer": "Alderbarrow Materials"
+      },
+      "decision": "interested",
+      "original_feedback": "I'm fine with monthly travel if I can pick the travel days.",
+      "expected_interpretations": [
+        {
+          "dimension": "work_arrangement",
+          "feature": "monthly work travel",
+          "polarity": "positive",
+          "strength": "mild",
+          "scope": {"type": "travel_frequency", "value": "work travel"},
+          "evidence_quote": "I'm fine with monthly travel",
+          "qualifiers": [{"kind": "frequency", "value": "monthly"}],
+          "condition": "if I can pick the travel days"
+        }
+      ],
+      "prohibited_inferences": ["The user specified exactly one trip or one travel day each month.", "The user accepts monthly travel even if someone else picks the travel days.", "The user set a general policy against assigned schedules."],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "reference_notes": ["Retain the word monthly or an equally precise cadence without supplying a trip count. Control over the travel days governs this preference."]
+    },
+    {
+      "case_id": "RF3-008",
+      "section": "Travel specificity",
+      "title": "Ask about a trip limit that the user has yet to settle",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Training Rollout Lead",
+        "employer": "Shaleharbor Learning Systems"
+      },
+      "decision": "rejected",
+      "original_feedback": "I can't tell yet whether two or four trips a month is the most I could handle.",
+      "expected_interpretations": [],
+      "clarification_question": "Would you be comfortable with a limit of two trips a month, four trips a month, or a different number?",
+      "prohibited_inferences": ["The user agreed to two trips per month.", "The user agreed to four trips per month.", "The user wants to avoid all travel.", "The user set a hard travel limit."],
+      "expected_review_status": "NEEDS_CLARIFICATION",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false
+    },
+    {
+      "case_id": "RF3-009",
+      "section": "Rule safeguards",
+      "title": "Hold an explicit request to lower the W-2 floor for confirmation",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "title": "Migrations Delivery Lead",
+        "employer": "Glenhatch Systems Delivery",
+        "hourly_rate_usd": 88
+      },
+      "decision": "interested",
+      "original_feedback": "Please lower my W-2 minimum to $72 an hour going forward.",
+      "expected_interpretations": [],
+      "profile_fact_candidate": "The user requests lowering the general W-2 hourly minimum from $75 to $72. Confirm this proposed rule change separately before applying it.",
+      "prohibited_inferences": ["The $72 floor is already effective.", "The user changed a minimum for another employment type.", "The current posting is below the confirmed W-2 minimum."],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+      "expected_category_interest_change": false,
+      "reference_notes": ["The feedback contains a request to change the rule, with the W-2 type and the new hourly amount identified. The current rule remains $75 during review."]
+    },
+    {
+      "case_id": "RF3-010",
+      "section": "Profile and rule safeguards",
+      "title": "Review a credential statement and report a verified pay conflict",
+      "job_context": {
+        "employment_type": "w2_contract",
+        "title": "Payroll Implementation Consultant",
+        "employer": "Juniperwake Payroll Services",
+        "hourly_rate_usd": 72.5
+      },
+      "decision": "rejected",
+      "original_feedback": "I don't currently hold the Certified Payroll Professional credential. The recruiter confirmed $72.50 an hour on W-2.",
+      "expected_interpretations": [],
+      "profile_fact_candidate": "The user says they do not currently hold the Certified Payroll Professional credential.",
+      "prohibited_inferences": ["The user is uninterested in payroll implementation as a career.", "The credential is a confirmed eligibility requirement for the posting.", "The user has asked to change the W-2 pay floor.", "The user has permanently ruled out obtaining the credential."],
+      "expected_review_status": "PROFILE_FACT_REVIEW",
+      "expected_hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+      "expected_category_interest_change": false,
+      "reference_notes": ["The verified W-2 rate in structured context is below the approved $75 an hour floor. The credential statement concerns the user's current profile."]
+    },
+    {
+      "case_id": "RF3-011",
+      "section": "Career scope",
+      "title": "Recognize an explicitly stated career-category exclusion",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Procurement Operations Manager",
+        "employer": "Cliffmoss Distribution"
+      },
+      "decision": "rejected",
+      "original_feedback": "I don't want to pursue procurement operations roles anymore.",
+      "expected_interpretations": [
+        {
+          "dimension": "career_category",
+          "feature": "procurement operations roles",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {"type": "career_category", "value": "procurement operations"},
+          "evidence_quote": "I don't want to pursue procurement operations roles anymore"
+        }
+      ],
+      "prohibited_inferences": ["The user rejects all supply chain roles or every procurement specialty.", "The category exclusion has already been applied.", "The statement changes a confirmed hard eligibility rule."],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": true,
+      "reference_notes": ["The user explicitly names the category and applies the negative reaction to pursuing roles in that category. Hold the proposed interest update for review."]
+    },
+    {
+      "case_id": "RF3-012",
+      "section": "Career scope",
+      "title": "Keep a negative reaction scoped to the posting's initial duties",
+      "job_context": {
+        "employment_type": "permanent",
+        "title": "Procurement Operations Lead",
+        "employer": "Cindervale Supply Cooperative"
+      },
+      "decision": "rejected",
+      "original_feedback": "I'd pass on this job because the first six months are entirely vendor onboarding paperwork.",
+      "expected_interpretations": [
+        {
+          "dimension": "role_responsibilities",
+          "feature": "first six months devoted entirely to vendor onboarding paperwork",
+          "polarity": "negative",
+          "strength": "strong",
+          "scope": {"type": "role_feature", "value": "vendor onboarding paperwork as the initial workload"},
+          "evidence_quote": "I'd pass on this job because the first six months are entirely vendor onboarding paperwork",
+          "qualifiers": [
+            {"kind": "duration", "value": "first six months"},
+            {"kind": "time_share", "value": "entirely"}
+          ]
+        }
+      ],
+      "prohibited_inferences": ["The user wants to exclude procurement operations roles.", "The user is unwilling to do any vendor onboarding work.", "The paperwork continues as the entire workload after six months."],
+      "expected_review_status": "PENDING_APPROVAL",
+      "expected_hard_constraint_action": "UNCHANGED",
+      "expected_category_interest_change": false,
+      "reference_notes": ["The feedback identifies an exclusive share of the workload and bounds it to the first six months of this role. Both details are material to the negative reaction."]
+    }
+  ]
+}

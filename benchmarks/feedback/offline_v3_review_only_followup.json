@@ -1,0 +1,1184 @@
+{
+  "archive_configuration_sha256": "2351b0b0373d88781965f3aeca91f411eb03b977c7eb986edb1582e1593b8dfd",
+  "archive_report_sha256": "d43f65a54c67b856836f8df94535c1764d37b4209183edba42b777d3a0753d21",
+  "changed_proposals": 8,
+  "changes": [
+    {
+      "case_id": "RO3-004",
+      "changed_fields": {
+        "clarification_question": {
+          "after": "Could you verify whether the overnight shift is once in a while or the usual schedule?",
+          "before": "What specifically influenced your reaction to this opportunity?"
+        }
+      },
+      "origin_arm": "baseline",
+      "pass_number": 1,
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [],
+        "joined_employer_exception": false,
+        "new_scope_findings": [],
+        "posting_verification_repair": {
+          "after": "Could you verify whether the overnight shift is once in a while or the usual schedule?",
+          "before": "What specifically influenced your reaction to this opportunity?",
+          "clause_index": 0,
+          "evidence": {
+            "end": 118,
+            "origin": "feedback",
+            "quote": "I can't tell from the listing if the overnight shift is once in a while or the usual schedule. Can you find out which?",
+            "role": "posting_verification",
+            "source_revision": "0631f8abf2f4ec4ade0bb9d3757808abc7573e750998369fe992d0545b0eb418",
+            "start": 0
+          }
+        },
+        "travel_count_repairs": []
+      }
+    },
+    {
+      "case_id": "RO3-011",
+      "changed_fields": {
+        "interpretations": {
+          "after": [
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 0,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Accepts occasional overnight travel",
+              "evidence": [
+                {
+                  "end": 42,
+                  "origin": "feedback",
+                  "quote": "One overnight trip a quarter works for me.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 0
+                },
+                {
+                  "end": 28,
+                  "origin": "feedback",
+                  "quote": "a quarter",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 19
+                },
+                {
+                  "end": 28,
+                  "origin": "feedback",
+                  "quote": "One overnight trip a quarter",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 0
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "positive",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 28,
+                      "origin": "feedback",
+                      "quote": "a quarter",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 19
+                    },
+                    "kind": "frequency",
+                    "quote": "a quarter",
+                    "source": "feedback",
+                    "value": "a quarter"
+                  },
+                  {
+                    "evidence": {
+                      "end": 28,
+                      "origin": "feedback",
+                      "quote": "One overnight trip a quarter",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 0
+                    },
+                    "kind": "quantity",
+                    "quote": "One overnight trip a quarter",
+                    "source": "feedback",
+                    "value": "1"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "mild"
+            },
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 1,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Rejects weekly overnight travel",
+              "evidence": [
+                {
+                  "end": 90,
+                  "origin": "feedback",
+                  "quote": "Weekly overnight travel would be a dealbreaker.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                },
+                {
+                  "end": 49,
+                  "origin": "feedback",
+                  "quote": "Weekly",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "negative",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 49,
+                      "origin": "feedback",
+                      "quote": "Weekly",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 43
+                    },
+                    "kind": "frequency",
+                    "quote": "Weekly",
+                    "source": "feedback",
+                    "value": "weekly"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "strong"
+            }
+          ],
+          "before": [
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 0,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Accepts occasional overnight travel",
+              "evidence": [
+                {
+                  "end": 42,
+                  "origin": "feedback",
+                  "quote": "One overnight trip a quarter works for me.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 0
+                },
+                {
+                  "end": 28,
+                  "origin": "feedback",
+                  "quote": "a quarter",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 19
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "positive",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 28,
+                      "origin": "feedback",
+                      "quote": "a quarter",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 19
+                    },
+                    "kind": "frequency",
+                    "quote": "a quarter",
+                    "source": "feedback",
+                    "value": "a quarter"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "mild"
+            },
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 1,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Rejects weekly overnight travel",
+              "evidence": [
+                {
+                  "end": 90,
+                  "origin": "feedback",
+                  "quote": "Weekly overnight travel would be a dealbreaker.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                },
+                {
+                  "end": 49,
+                  "origin": "feedback",
+                  "quote": "Weekly",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "negative",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 49,
+                      "origin": "feedback",
+                      "quote": "Weekly",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 43
+                    },
+                    "kind": "frequency",
+                    "quote": "Weekly",
+                    "source": "feedback",
+                    "value": "weekly"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "strong"
+            }
+          ]
+        }
+      },
+      "origin_arm": "baseline",
+      "pass_number": 1,
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [],
+        "joined_employer_exception": false,
+        "new_scope_findings": [],
+        "posting_verification_repair": null,
+        "travel_count_repairs": [
+          {
+            "added_quantity": {
+              "evidence": {
+                "end": 28,
+                "origin": "feedback",
+                "quote": "One overnight trip a quarter",
+                "role": "qualifier",
+                "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                "start": 0
+              },
+              "kind": "quantity",
+              "quote": "One overnight trip a quarter",
+              "source": "feedback",
+              "value": "1"
+            },
+            "clause_index": 0,
+            "signal_index": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "RO3-004",
+      "changed_fields": {
+        "clarification_question": {
+          "after": "Could you verify whether the overnight shift is once in a while or the usual schedule?",
+          "before": "What specifically influenced your reaction to this opportunity?"
+        }
+      },
+      "origin_arm": "candidate",
+      "pass_number": 1,
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [],
+        "joined_employer_exception": false,
+        "new_scope_findings": [],
+        "posting_verification_repair": {
+          "after": "Could you verify whether the overnight shift is once in a while or the usual schedule?",
+          "before": "What specifically influenced your reaction to this opportunity?",
+          "clause_index": 0,
+          "evidence": {
+            "end": 118,
+            "origin": "feedback",
+            "quote": "I can't tell from the listing if the overnight shift is once in a while or the usual schedule. Can you find out which?",
+            "role": "posting_verification",
+            "source_revision": "0631f8abf2f4ec4ade0bb9d3757808abc7573e750998369fe992d0545b0eb418",
+            "start": 0
+          }
+        },
+        "travel_count_repairs": []
+      }
+    },
+    {
+      "case_id": "RO3-011",
+      "changed_fields": {
+        "interpretations": {
+          "after": [
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 0,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Accepts occasional overnight travel",
+              "evidence": [
+                {
+                  "end": 42,
+                  "origin": "feedback",
+                  "quote": "One overnight trip a quarter works for me.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 0
+                },
+                {
+                  "end": 28,
+                  "origin": "feedback",
+                  "quote": "a quarter",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 19
+                },
+                {
+                  "end": 28,
+                  "origin": "feedback",
+                  "quote": "One overnight trip a quarter",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 0
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "positive",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 28,
+                      "origin": "feedback",
+                      "quote": "a quarter",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 19
+                    },
+                    "kind": "frequency",
+                    "quote": "a quarter",
+                    "source": "feedback",
+                    "value": "a quarter"
+                  },
+                  {
+                    "evidence": {
+                      "end": 28,
+                      "origin": "feedback",
+                      "quote": "One overnight trip a quarter",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 0
+                    },
+                    "kind": "quantity",
+                    "quote": "One overnight trip a quarter",
+                    "source": "feedback",
+                    "value": "1"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "mild"
+            },
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 1,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Rejects weekly overnight travel",
+              "evidence": [
+                {
+                  "end": 90,
+                  "origin": "feedback",
+                  "quote": "Weekly overnight travel would be a dealbreaker.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                },
+                {
+                  "end": 49,
+                  "origin": "feedback",
+                  "quote": "Weekly",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "negative",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 49,
+                      "origin": "feedback",
+                      "quote": "Weekly",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 43
+                    },
+                    "kind": "frequency",
+                    "quote": "Weekly",
+                    "source": "feedback",
+                    "value": "weekly"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "strong"
+            }
+          ],
+          "before": [
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 0,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Accepts occasional overnight travel",
+              "evidence": [
+                {
+                  "end": 42,
+                  "origin": "feedback",
+                  "quote": "One overnight trip a quarter works for me.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 0
+                },
+                {
+                  "end": 28,
+                  "origin": "feedback",
+                  "quote": "a quarter",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 19
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "positive",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 28,
+                      "origin": "feedback",
+                      "quote": "a quarter",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 19
+                    },
+                    "kind": "frequency",
+                    "quote": "a quarter",
+                    "source": "feedback",
+                    "value": "a quarter"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "mild"
+            },
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 1,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Rejects weekly overnight travel",
+              "evidence": [
+                {
+                  "end": 90,
+                  "origin": "feedback",
+                  "quote": "Weekly overnight travel would be a dealbreaker.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                },
+                {
+                  "end": 49,
+                  "origin": "feedback",
+                  "quote": "Weekly",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "negative",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 49,
+                      "origin": "feedback",
+                      "quote": "Weekly",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 43
+                    },
+                    "kind": "frequency",
+                    "quote": "Weekly",
+                    "source": "feedback",
+                    "value": "weekly"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "strong"
+            }
+          ]
+        }
+      },
+      "origin_arm": "candidate",
+      "pass_number": 1,
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [],
+        "joined_employer_exception": false,
+        "new_scope_findings": [],
+        "posting_verification_repair": null,
+        "travel_count_repairs": [
+          {
+            "added_quantity": {
+              "evidence": {
+                "end": 28,
+                "origin": "feedback",
+                "quote": "One overnight trip a quarter",
+                "role": "qualifier",
+                "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                "start": 0
+              },
+              "kind": "quantity",
+              "quote": "One overnight trip a quarter",
+              "source": "feedback",
+              "value": "1"
+            },
+            "clause_index": 0,
+            "signal_index": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "RO3-004",
+      "changed_fields": {
+        "clarification_question": {
+          "after": "Could you verify whether the overnight shift is once in a while or the usual schedule?",
+          "before": "What specifically influenced your reaction to this opportunity?"
+        }
+      },
+      "origin_arm": "baseline",
+      "pass_number": 2,
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [],
+        "joined_employer_exception": false,
+        "new_scope_findings": [],
+        "posting_verification_repair": {
+          "after": "Could you verify whether the overnight shift is once in a while or the usual schedule?",
+          "before": "What specifically influenced your reaction to this opportunity?",
+          "clause_index": 0,
+          "evidence": {
+            "end": 118,
+            "origin": "feedback",
+            "quote": "I can't tell from the listing if the overnight shift is once in a while or the usual schedule. Can you find out which?",
+            "role": "posting_verification",
+            "source_revision": "0631f8abf2f4ec4ade0bb9d3757808abc7573e750998369fe992d0545b0eb418",
+            "start": 0
+          }
+        },
+        "travel_count_repairs": []
+      }
+    },
+    {
+      "case_id": "RO3-011",
+      "changed_fields": {
+        "interpretations": {
+          "after": [
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 0,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Accepts occasional overnight travel",
+              "evidence": [
+                {
+                  "end": 42,
+                  "origin": "feedback",
+                  "quote": "One overnight trip a quarter works for me.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 0
+                },
+                {
+                  "end": 28,
+                  "origin": "feedback",
+                  "quote": "a quarter",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 19
+                },
+                {
+                  "end": 28,
+                  "origin": "feedback",
+                  "quote": "One overnight trip a quarter",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 0
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "positive",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 28,
+                      "origin": "feedback",
+                      "quote": "a quarter",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 19
+                    },
+                    "kind": "frequency",
+                    "quote": "a quarter",
+                    "source": "feedback",
+                    "value": "a quarter"
+                  },
+                  {
+                    "evidence": {
+                      "end": 28,
+                      "origin": "feedback",
+                      "quote": "One overnight trip a quarter",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 0
+                    },
+                    "kind": "quantity",
+                    "quote": "One overnight trip a quarter",
+                    "source": "feedback",
+                    "value": "1"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "mild"
+            },
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 1,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Rejects weekly overnight travel",
+              "evidence": [
+                {
+                  "end": 90,
+                  "origin": "feedback",
+                  "quote": "Weekly overnight travel would be a dealbreaker.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                },
+                {
+                  "end": 49,
+                  "origin": "feedback",
+                  "quote": "Weekly",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "negative",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 49,
+                      "origin": "feedback",
+                      "quote": "Weekly",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 43
+                    },
+                    "kind": "frequency",
+                    "quote": "Weekly",
+                    "source": "feedback",
+                    "value": "weekly"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "strong"
+            }
+          ],
+          "before": [
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 0,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Accepts occasional overnight travel",
+              "evidence": [
+                {
+                  "end": 42,
+                  "origin": "feedback",
+                  "quote": "One overnight trip a quarter works for me.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 0
+                },
+                {
+                  "end": 28,
+                  "origin": "feedback",
+                  "quote": "a quarter",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 19
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "positive",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 28,
+                      "origin": "feedback",
+                      "quote": "a quarter",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 19
+                    },
+                    "kind": "frequency",
+                    "quote": "a quarter",
+                    "source": "feedback",
+                    "value": "a quarter"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "mild"
+            },
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 1,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Rejects weekly overnight travel",
+              "evidence": [
+                {
+                  "end": 90,
+                  "origin": "feedback",
+                  "quote": "Weekly overnight travel would be a dealbreaker.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                },
+                {
+                  "end": 49,
+                  "origin": "feedback",
+                  "quote": "Weekly",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "negative",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 49,
+                      "origin": "feedback",
+                      "quote": "Weekly",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 43
+                    },
+                    "kind": "frequency",
+                    "quote": "Weekly",
+                    "source": "feedback",
+                    "value": "weekly"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "strong"
+            }
+          ]
+        }
+      },
+      "origin_arm": "baseline",
+      "pass_number": 2,
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [],
+        "joined_employer_exception": false,
+        "new_scope_findings": [],
+        "posting_verification_repair": null,
+        "travel_count_repairs": [
+          {
+            "added_quantity": {
+              "evidence": {
+                "end": 28,
+                "origin": "feedback",
+                "quote": "One overnight trip a quarter",
+                "role": "qualifier",
+                "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                "start": 0
+              },
+              "kind": "quantity",
+              "quote": "One overnight trip a quarter",
+              "source": "feedback",
+              "value": "1"
+            },
+            "clause_index": 0,
+            "signal_index": 0
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "RO3-004",
+      "changed_fields": {
+        "clarification_question": {
+          "after": "Could you verify whether the overnight shift is once in a while or the usual schedule?",
+          "before": "What specifically influenced your reaction to this opportunity?"
+        }
+      },
+      "origin_arm": "candidate",
+      "pass_number": 2,
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [],
+        "joined_employer_exception": false,
+        "new_scope_findings": [],
+        "posting_verification_repair": {
+          "after": "Could you verify whether the overnight shift is once in a while or the usual schedule?",
+          "before": "What specifically influenced your reaction to this opportunity?",
+          "clause_index": 0,
+          "evidence": {
+            "end": 118,
+            "origin": "feedback",
+            "quote": "I can't tell from the listing if the overnight shift is once in a while or the usual schedule. Can you find out which?",
+            "role": "posting_verification",
+            "source_revision": "0631f8abf2f4ec4ade0bb9d3757808abc7573e750998369fe992d0545b0eb418",
+            "start": 0
+          }
+        },
+        "travel_count_repairs": []
+      }
+    },
+    {
+      "case_id": "RO3-011",
+      "changed_fields": {
+        "interpretations": {
+          "after": [
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 0,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Accepts occasional overnight travel",
+              "evidence": [
+                {
+                  "end": 42,
+                  "origin": "feedback",
+                  "quote": "One overnight trip a quarter works for me.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 0
+                },
+                {
+                  "end": 28,
+                  "origin": "feedback",
+                  "quote": "a quarter",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 19
+                },
+                {
+                  "end": 28,
+                  "origin": "feedback",
+                  "quote": "One overnight trip a quarter",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 0
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "positive",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 28,
+                      "origin": "feedback",
+                      "quote": "a quarter",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 19
+                    },
+                    "kind": "frequency",
+                    "quote": "a quarter",
+                    "source": "feedback",
+                    "value": "a quarter"
+                  },
+                  {
+                    "evidence": {
+                      "end": 28,
+                      "origin": "feedback",
+                      "quote": "One overnight trip a quarter",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 0
+                    },
+                    "kind": "quantity",
+                    "quote": "One overnight trip a quarter",
+                    "source": "feedback",
+                    "value": "1"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "mild"
+            },
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 1,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Rejects weekly overnight travel",
+              "evidence": [
+                {
+                  "end": 90,
+                  "origin": "feedback",
+                  "quote": "Weekly overnight travel would be a dealbreaker.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                },
+                {
+                  "end": 49,
+                  "origin": "feedback",
+                  "quote": "Weekly",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "negative",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 49,
+                      "origin": "feedback",
+                      "quote": "Weekly",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 43
+                    },
+                    "kind": "frequency",
+                    "quote": "Weekly",
+                    "source": "feedback",
+                    "value": "weekly"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "strong"
+            }
+          ],
+          "before": [
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 0,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Accepts occasional overnight travel",
+              "evidence": [
+                {
+                  "end": 42,
+                  "origin": "feedback",
+                  "quote": "One overnight trip a quarter works for me.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 0
+                },
+                {
+                  "end": 28,
+                  "origin": "feedback",
+                  "quote": "a quarter",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 19
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "positive",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 28,
+                      "origin": "feedback",
+                      "quote": "a quarter",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 19
+                    },
+                    "kind": "frequency",
+                    "quote": "a quarter",
+                    "source": "feedback",
+                    "value": "a quarter"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "mild"
+            },
+            {
+              "application_status": "held_for_review",
+              "career_evidence_review": null,
+              "clause_index": 1,
+              "condition": null,
+              "dimension": "work_arrangement",
+              "display_label": "Rejects weekly overnight travel",
+              "evidence": [
+                {
+                  "end": 90,
+                  "origin": "feedback",
+                  "quote": "Weekly overnight travel would be a dealbreaker.",
+                  "role": "preference",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                },
+                {
+                  "end": 49,
+                  "origin": "feedback",
+                  "quote": "Weekly",
+                  "role": "qualifier",
+                  "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                  "start": 43
+                }
+              ],
+              "feature_id": null,
+              "identity_status": "candidate",
+              "polarity": "negative",
+              "scope": {
+                "qualifiers": [
+                  {
+                    "evidence": {
+                      "end": 49,
+                      "origin": "feedback",
+                      "quote": "Weekly",
+                      "role": "qualifier",
+                      "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                      "start": 43
+                    },
+                    "kind": "frequency",
+                    "quote": "Weekly",
+                    "source": "feedback",
+                    "value": "weekly"
+                  }
+                ],
+                "referent": "overnight travel",
+                "type": "travel_frequency"
+              },
+              "strength": "strong"
+            }
+          ]
+        }
+      },
+      "origin_arm": "candidate",
+      "pass_number": 2,
+      "repairs": {
+        "coalesced_intensity_clause_indices": [],
+        "condition_recoveries": [],
+        "joined_employer_exception": false,
+        "new_scope_findings": [],
+        "posting_verification_repair": null,
+        "travel_count_repairs": [
+          {
+            "added_quantity": {
+              "evidence": {
+                "end": 28,
+                "origin": "feedback",
+                "quote": "One overnight trip a quarter",
+                "role": "qualifier",
+                "source_revision": "5dfea7a91526e1d4b2f64e9d8bbbd66f71f4dfa1f98aa456adb27cdfb9f42678",
+                "start": 0
+              },
+              "kind": "quantity",
+              "quote": "One overnight trip a quarter",
+              "source": "feedback",
+              "value": "1"
+            },
+            "clause_index": 0,
+            "signal_index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "inference_requests": 0,
+  "mode": "offline_review_only_followup",
+  "reference_sha256": "7eabb327ec7aed7b61e9a0f6ade44681ed747abba9db7f4c733af7c17c3f75b4",
+  "replayed_proposals": 48,
+  "unchanged_proposals": 40
+}
