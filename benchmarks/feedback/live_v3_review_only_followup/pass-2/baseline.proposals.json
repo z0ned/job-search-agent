@@ -1,0 +1,254 @@
+{
+  "RF3-001": {
+    "clauses": [
+      {
+        "detail": "Verify whether the site visits are day trips or require overnight stays.",
+        "quote": "The listing just says 'site visits.' Can you find out whether those are day trips or overnight stays?",
+        "role": "posting_verification"
+      }
+    ],
+    "signals": []
+  },
+  "RF3-002": {
+    "clauses": [
+      {
+        "detail": "Verify the Saturday coverage expectation and frequency for this opportunity.",
+        "quote": "Could you check whether I'd be covering Saturdays every week or just filling in when somebody's out?",
+        "role": "posting_verification"
+      }
+    ],
+    "signals": []
+  },
+  "RF3-003": {
+    "clauses": [
+      {
+        "detail": "Verify whether the quoted $192,000 is base salary only or total compensation including annual bonus.",
+        "quote": "Can you confirm whether the $192,000 they quote is base pay or includes the annual bonus?",
+        "role": "posting_verification"
+      }
+    ],
+    "signals": []
+  },
+  "RF3-004": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I really like running usability tests myself.",
+        "role": "preference"
+      },
+      {
+        "detail": "Whether the opportunity's learning budget covers conference travel.",
+        "quote": "Can you check whether their learning budget covers conference travel?",
+        "role": "posting_verification"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Running usability tests directly",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "running usability tests myself",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "RF3-005": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I'd be fine making up to three client trips per quarter.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Okay with client travel up to three trips per quarter",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "frequency",
+              "quote": "up to three client trips per quarter",
+              "source": "feedback",
+              "value": "up to three per quarter"
+            }
+          ],
+          "referent": "client trips",
+          "type": "travel_frequency"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "RF3-006": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "One overnight trip every two months is about right for me.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Overnight travel about every two months is acceptable",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "frequency",
+              "quote": "every two months",
+              "source": "feedback",
+              "value": "every two months"
+            }
+          ],
+          "referent": "overnight trip",
+          "type": "travel_frequency"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "RF3-007": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I'm fine with monthly travel if I can pick the travel days.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": {
+          "kind": "other",
+          "quote": "if I can pick the travel days",
+          "value": "can pick the travel days"
+        },
+        "dimension": "work_arrangement",
+        "display_label": "Okay with monthly travel when able to choose travel days",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "frequency",
+              "quote": "monthly travel",
+              "source": "feedback",
+              "value": "monthly"
+            }
+          ],
+          "referent": "travel",
+          "type": "travel_frequency"
+        },
+        "strength": "mild"
+      }
+    ]
+  },
+  "RF3-008": {
+    "clauses": [
+      {
+        "detail": "What travel frequency would feel acceptable or too much for you, and what factors determine that limit?",
+        "quote": "I can't tell yet whether two or four trips a month is the most I could handle.",
+        "role": "vague_reaction"
+      }
+    ],
+    "signals": []
+  },
+  "RF3-009": {
+    "clauses": [
+      {
+        "detail": "Requests reconsidering the confirmed W-2 hourly minimum rule to 72 USD per hour for future opportunities.",
+        "quote": "Please lower my W-2 minimum to $72 an hour going forward.",
+        "role": "rule_reconsideration"
+      }
+    ],
+    "signals": []
+  },
+  "RF3-010": {
+    "clauses": [
+      {
+        "detail": "User reports not currently having the Certified Payroll Professional credential.",
+        "quote": "I don't currently hold the Certified Payroll Professional credential.",
+        "role": "profile_fact"
+      },
+      {
+        "detail": "Reported compensation for this opportunity is $72.50 per hour on W-2.",
+        "quote": "The recruiter confirmed $72.50 an hour on W-2.",
+        "role": "job_fact"
+      }
+    ],
+    "signals": []
+  },
+  "RF3-011": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I don't want to pursue procurement operations roles anymore.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Procurement operations roles",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "procurement operations roles",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ]
+  },
+  "RF3-012": {
+    "clauses": [
+      {
+        "detail": null,
+        "quote": "I'd pass on this job because the first six months are entirely vendor onboarding paperwork.",
+        "role": "preference"
+      }
+    ],
+    "signals": [
+      {
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Dislikes roles dominated by vendor onboarding paperwork",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "kind": "duration",
+              "quote": "the first six months",
+              "source": "feedback",
+              "value": "first six months"
+            },
+            {
+              "kind": "intensity",
+              "quote": "entirely",
+              "source": "feedback",
+              "value": "entirely"
+            }
+          ],
+          "referent": "vendor onboarding paperwork",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ]
+  }
+}

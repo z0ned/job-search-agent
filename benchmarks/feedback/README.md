@@ -81,3 +81,7 @@ The two-pass trial presents one exact quote and the original feedback per reques
 ## Live v3 review-only benchmark
 
 The baseline and candidate use identical one-call model inputs on 12 new full comments over two passes. The candidate applies the verified deterministic repairs after inference. The archive includes the 48 request traces and outcomes, masked case-level adjudications, review workload counts, and an offline comparison of both validators on the same saved proposals. [Benchmark protocol and findings](../../docs/Feedback_Interpreter_Review_Only_Benchmark_v3.md) · [Semantic scorecard](live_v3_review_only_trial/semantic-report.json) · [Archived regression checks](offline_v3_review_only_regressions.json)
+
+## V3 review-only verification and travel follow-up
+
+The offline replay checks both targeted repairs against all 48 earlier replies. The live follow-up uses the original one-call model input on 12 sealed full comments in two passes, with the same reply sent to both validators. The archive binds 24 shared responses to both validations, repair records, masked verdicts, and the case-level comparison. [Follow-up protocol and findings](../../docs/Feedback_Interpreter_Review_Only_Followup_v3.md) · [Offline replay](offline_v3_review_only_followup.json) · [Fresh holdout scorecard](live_v3_review_only_followup/semantic-report.json)

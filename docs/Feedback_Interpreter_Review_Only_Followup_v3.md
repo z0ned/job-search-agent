@@ -32,3 +32,34 @@ PYTHONPATH=src python -m job_search_agent.feedback_review_only_followup_replay_v
 PYTHONPATH=src python -m job_search_agent.feedback_review_only_followup_trial_v3 \
   --output /tmp/feedback-v3-followup-live
 ```
+
+## Fresh holdout results
+
+**The repairs improved both passes on fresh feedback. The follow-up still missed the agreed gates.** Using the same model reply for each pair, the candidate improved fully correct results from 12/24 to 18/24. It recovered two missing trip counts and supplied four specific verification questions. [Semantic scorecard](../benchmarks/feedback/live_v3_review_only_followup/semantic-report.json)
+
+The implementation, offline replay, protocol, and holdout were frozen at `b436dc9639edc7e6c8a03a1b2d3a66343a4156de` before inference. All 24 requests completed at the pinned model and temperature in 49.321 seconds of summed model time. Verification checked the complete source-only inputs, all shared raw replies, and both validations of each reply. Four independent masked reviews separately scored the raw and validated outputs. [Configuration](../benchmarks/feedback/live_v3_review_only_followup/configuration.json) · [Request trace](../benchmarks/feedback/live_v3_review_only_followup/request-trace.json) · [Adjudications](../benchmarks/feedback/live_v3_review_only_followup/adjudications.json)
+
+| Measure across both passes | Prior review-only candidate | Follow-up |
+| --- | ---: | ---: |
+| Validated semantic precision | 8/13 | 10/13 |
+| Validated semantic recall | 8/12 | 10/12 |
+| Fully correct end-to-end records | 12/24 | 18/24 |
+| Correct review route labels | 23/24 | 23/24 |
+| Adequate route resolutions | 16/24 | 20/24 |
+| Correct hard-rule actions | 24/24 | 24/24 |
+| Cases requiring further review | 11/24 | 14/24 |
+| Validation rejections, unsupported career downgrades, or unauthorized hard-rule actions and mutations | 0 | 0 |
+| Passes clearing all gates | 0/2 | 0/2 |
+
+Both arms shared a raw precision of 8/13 and recall of 8/12. The follow-up's validated recall was 5/6 on each pass, below the agreed 90% minimum. Its precision was 5/7 and 5/6. The original literal case matching returned 5/12 and 6/12 for each arm, and the literal and registered-identity checks matched zero signals. [Capture diagnostics](../benchmarks/feedback/live_v3_review_only_followup/report.json)
+
+| Cases | What the holdout showed |
+| --- | --- |
+| RF3-002 and RF3-003 | The follow-up asked specific questions about recurring Saturday coverage and whether quoted pay included a bonus. It repaired both questions in both passes. |
+| RF3-006 | Both model replies gave the two-month cadence without a count. The follow-up added the exact count of one overnight trip from the source in each pass. |
+| RF3-001 | The source referred back to “site visits” with “those.” The conservative verifier left the generic clarification question in place because it could not anchor the target within its supported parsing rules. |
+| RF3-005 | The model already kept the valid upper bound of three client trips per quarter. The follow-up added a review flag in both passes because the structured value abbreviated the fully anchored phrase. These flags added work without correcting a preference. |
+| RF3-008 | The user had yet to decide between two and four trips a month. The first pass recorded an uncertain preference and sent it to approval. The follow-up flagged it for review. The second pass asked a generic frequency question that omitted the concrete choice. |
+| RF3-012 | The structured qualifiers retained the first six months and the exclusive workload. Reviewers counted the displayed claim about “roles dominated by vendor onboarding paperwork” as broader than the original posting-specific reaction. |
+
+No route label, preference polarity, hard-rule action, or held status changed between the two validators. The three additional review records came from the two unnecessary maximum-count flags and the unresolved travel limit. These tests isolate useful improvements and remaining limits in the existing one-call pipeline. The candidate stays review-only, with automatic learning on hold.

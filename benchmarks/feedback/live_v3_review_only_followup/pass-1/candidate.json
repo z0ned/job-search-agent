@@ -1,0 +1,827 @@
+{
+  "RF3-001": {
+    "clarification_question": "What specifically influenced your reaction to this opportunity?",
+    "clauses": [
+      {
+        "detail": "Verify whether the site visits are day trips or overnight stays.",
+        "evidence": {
+          "end": 101,
+          "origin": "feedback",
+          "quote": "The listing just says 'site visits.' Can you find out whether those are day trips or overnight stays?",
+          "role": "posting_verification",
+          "source_revision": "7555c9918de70894a95601b27042e1480124bc889c24feb723f8f29527f09368",
+          "start": 0
+        },
+        "index": 0,
+        "role": "posting_verification"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "The listing just says 'site visits.' Can you find out whether those are day trips or overnight stays?",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": []
+  },
+  "RF3-002": {
+    "clarification_question": "Could you verify whether I'd be covering Saturdays every week or just filling in when somebody's out?",
+    "clauses": [
+      {
+        "detail": "Verify the Saturday coverage expectation and frequency for this opportunity.",
+        "evidence": {
+          "end": 100,
+          "origin": "feedback",
+          "quote": "Could you check whether I'd be covering Saturdays every week or just filling in when somebody's out?",
+          "role": "posting_verification",
+          "source_revision": "31f74c75363022ad2f0bc717a219fefaceb7eb21bae0001ed379680c06e4b7ba",
+          "start": 0
+        },
+        "index": 0,
+        "role": "posting_verification"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Could you check whether I'd be covering Saturdays every week or just filling in when somebody's out?",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": []
+  },
+  "RF3-003": {
+    "clarification_question": "Could you verify whether the $192,000 they quote is base pay or includes the annual bonus?",
+    "clauses": [
+      {
+        "detail": "Verify whether the quoted $192,000 is base salary only or total compensation including annual bonus.",
+        "evidence": {
+          "end": 89,
+          "origin": "feedback",
+          "quote": "Can you confirm whether the $192,000 they quote is base pay or includes the annual bonus?",
+          "role": "posting_verification",
+          "source_revision": "b748acc562e60d6701a37e4137acac6b212f75d5271b031618320d9fd0bee79b",
+          "start": 0
+        },
+        "index": 0,
+        "role": "posting_verification"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Can you confirm whether the $192,000 they quote is base pay or includes the annual bonus?",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "NEEDS_CLARIFICATION",
+    "validation_issues": []
+  },
+  "RF3-004": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 45,
+          "origin": "feedback",
+          "quote": "I really like running usability tests myself.",
+          "role": "preference",
+          "source_revision": "edd7b0652564a7fc4e4f6bcaa9f2f52c0a4c9e7987f4f6f7d74093a2107cb4b0",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      },
+      {
+        "detail": "Whether the opportunity's learning budget includes conference travel coverage.",
+        "evidence": {
+          "end": 115,
+          "origin": "feedback",
+          "quote": "Can you check whether their learning budget covers conference travel?",
+          "role": "posting_verification",
+          "source_revision": "edd7b0652564a7fc4e4f6bcaa9f2f52c0a4c9e7987f4f6f7d74093a2107cb4b0",
+          "start": 46
+        },
+        "index": 1,
+        "role": "posting_verification"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Running usability tests personally",
+        "evidence": [
+          {
+            "end": 45,
+            "origin": "feedback",
+            "quote": "I really like running usability tests myself.",
+            "role": "preference",
+            "source_revision": "edd7b0652564a7fc4e4f6bcaa9f2f52c0a4c9e7987f4f6f7d74093a2107cb4b0",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [],
+          "referent": "running usability tests personally",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I really like running usability tests myself. Can you check whether their learning budget covers conference travel?",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "RF3-005": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 56,
+          "origin": "feedback",
+          "quote": "I'd be fine making up to three client trips per quarter.",
+          "role": "preference",
+          "source_revision": "bcf1b062dc668fd4b163e98c0b32dcf0e9fb4eb1bd809658daa0ab72396b87a8",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "evidence_findings": [
+      {
+        "clause_index": 0,
+        "code": "travel_trip_count_needs_review",
+        "evidence": [
+          {
+            "end": 56,
+            "origin": "feedback",
+            "quote": "I'd be fine making up to three client trips per quarter.",
+            "role": "preference",
+            "source_revision": "bcf1b062dc668fd4b163e98c0b32dcf0e9fb4eb1bd809658daa0ab72396b87a8",
+            "start": 0
+          },
+          {
+            "end": 55,
+            "origin": "feedback",
+            "quote": "up to three client trips per quarter",
+            "role": "qualifier",
+            "source_revision": "bcf1b062dc668fd4b163e98c0b32dcf0e9fb4eb1bd809658daa0ab72396b87a8",
+            "start": 19
+          }
+        ],
+        "message": "The feedback gives a trip count or limit. Check the count and cadence before treating this scope as settled.",
+        "severity": "blocking",
+        "signal_index": 0
+      }
+    ],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Okay with client travel up to three trips per quarter",
+        "evidence": [
+          {
+            "end": 56,
+            "origin": "feedback",
+            "quote": "I'd be fine making up to three client trips per quarter.",
+            "role": "preference",
+            "source_revision": "bcf1b062dc668fd4b163e98c0b32dcf0e9fb4eb1bd809658daa0ab72396b87a8",
+            "start": 0
+          },
+          {
+            "end": 55,
+            "origin": "feedback",
+            "quote": "up to three client trips per quarter",
+            "role": "qualifier",
+            "source_revision": "bcf1b062dc668fd4b163e98c0b32dcf0e9fb4eb1bd809658daa0ab72396b87a8",
+            "start": 19
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 55,
+                "origin": "feedback",
+                "quote": "up to three client trips per quarter",
+                "role": "qualifier",
+                "source_revision": "bcf1b062dc668fd4b163e98c0b32dcf0e9fb4eb1bd809658daa0ab72396b87a8",
+                "start": 19
+              },
+              "kind": "frequency",
+              "quote": "up to three client trips per quarter",
+              "source": "feedback",
+              "value": "up to three per quarter"
+            }
+          ],
+          "referent": "client trips",
+          "type": "travel_frequency"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I'd be fine making up to three client trips per quarter.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "RF3-006": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 58,
+          "origin": "feedback",
+          "quote": "One overnight trip every two months is about right for me.",
+          "role": "preference",
+          "source_revision": "5e68ecd248ac70ff56c910371d4566527175d93d2bdff8c1aad79da41a62999a",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Overnight travel about every two months is acceptable",
+        "evidence": [
+          {
+            "end": 58,
+            "origin": "feedback",
+            "quote": "One overnight trip every two months is about right for me.",
+            "role": "preference",
+            "source_revision": "5e68ecd248ac70ff56c910371d4566527175d93d2bdff8c1aad79da41a62999a",
+            "start": 0
+          },
+          {
+            "end": 35,
+            "origin": "feedback",
+            "quote": "every two months",
+            "role": "qualifier",
+            "source_revision": "5e68ecd248ac70ff56c910371d4566527175d93d2bdff8c1aad79da41a62999a",
+            "start": 19
+          },
+          {
+            "end": 35,
+            "origin": "feedback",
+            "quote": "One overnight trip every two months",
+            "role": "qualifier",
+            "source_revision": "5e68ecd248ac70ff56c910371d4566527175d93d2bdff8c1aad79da41a62999a",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 35,
+                "origin": "feedback",
+                "quote": "every two months",
+                "role": "qualifier",
+                "source_revision": "5e68ecd248ac70ff56c910371d4566527175d93d2bdff8c1aad79da41a62999a",
+                "start": 19
+              },
+              "kind": "frequency",
+              "quote": "every two months",
+              "source": "feedback",
+              "value": "every two months"
+            },
+            {
+              "evidence": {
+                "end": 35,
+                "origin": "feedback",
+                "quote": "One overnight trip every two months",
+                "role": "qualifier",
+                "source_revision": "5e68ecd248ac70ff56c910371d4566527175d93d2bdff8c1aad79da41a62999a",
+                "start": 0
+              },
+              "kind": "quantity",
+              "quote": "One overnight trip every two months",
+              "source": "feedback",
+              "value": "1"
+            }
+          ],
+          "referent": "overnight trip",
+          "type": "travel_frequency"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "One overnight trip every two months is about right for me.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "RF3-007": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 59,
+          "origin": "feedback",
+          "quote": "I'm fine with monthly travel if I can pick the travel days.",
+          "role": "preference",
+          "source_revision": "5985b2838a51d29d0bf131b29aefcd6865d97e9fc96680bf0bf595ef71b8112e",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": {
+          "evidence": {
+            "end": 58,
+            "origin": "feedback",
+            "quote": "if I can pick the travel days",
+            "role": "condition",
+            "source_revision": "5985b2838a51d29d0bf131b29aefcd6865d97e9fc96680bf0bf595ef71b8112e",
+            "start": 29
+          },
+          "kind": "other",
+          "quote": "if I can pick the travel days",
+          "value": "can pick the travel days"
+        },
+        "dimension": "work_arrangement",
+        "display_label": "Okay with monthly travel when able to choose travel days",
+        "evidence": [
+          {
+            "end": 59,
+            "origin": "feedback",
+            "quote": "I'm fine with monthly travel if I can pick the travel days.",
+            "role": "preference",
+            "source_revision": "5985b2838a51d29d0bf131b29aefcd6865d97e9fc96680bf0bf595ef71b8112e",
+            "start": 0
+          },
+          {
+            "end": 28,
+            "origin": "feedback",
+            "quote": "monthly travel",
+            "role": "qualifier",
+            "source_revision": "5985b2838a51d29d0bf131b29aefcd6865d97e9fc96680bf0bf595ef71b8112e",
+            "start": 14
+          },
+          {
+            "end": 58,
+            "origin": "feedback",
+            "quote": "if I can pick the travel days",
+            "role": "condition",
+            "source_revision": "5985b2838a51d29d0bf131b29aefcd6865d97e9fc96680bf0bf595ef71b8112e",
+            "start": 29
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "positive",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 28,
+                "origin": "feedback",
+                "quote": "monthly travel",
+                "role": "qualifier",
+                "source_revision": "5985b2838a51d29d0bf131b29aefcd6865d97e9fc96680bf0bf595ef71b8112e",
+                "start": 14
+              },
+              "kind": "frequency",
+              "quote": "monthly travel",
+              "source": "feedback",
+              "value": "monthly"
+            }
+          ],
+          "referent": "travel",
+          "type": "travel_frequency"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I'm fine with monthly travel if I can pick the travel days.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "RF3-008": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 78,
+          "origin": "feedback",
+          "quote": "I can't tell yet whether two or four trips a month is the most I could handle.",
+          "role": "preference",
+          "source_revision": "67893eff4f209c0dd7058e6df5d5b3baeacd79d2f57d2b4e466c5dd88394bbb8",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "evidence_findings": [
+      {
+        "clause_index": 0,
+        "code": "travel_trip_count_needs_review",
+        "evidence": [
+          {
+            "end": 78,
+            "origin": "feedback",
+            "quote": "I can't tell yet whether two or four trips a month is the most I could handle.",
+            "role": "preference",
+            "source_revision": "67893eff4f209c0dd7058e6df5d5b3baeacd79d2f57d2b4e466c5dd88394bbb8",
+            "start": 0
+          },
+          {
+            "end": 50,
+            "origin": "feedback",
+            "quote": "two or four trips a month",
+            "role": "qualifier",
+            "source_revision": "67893eff4f209c0dd7058e6df5d5b3baeacd79d2f57d2b4e466c5dd88394bbb8",
+            "start": 25
+          }
+        ],
+        "message": "The feedback gives a trip count or limit. Check the count and cadence before treating this scope as settled.",
+        "severity": "blocking",
+        "signal_index": 0
+      }
+    ],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "work_arrangement",
+        "display_label": "Monthly travel amount",
+        "evidence": [
+          {
+            "end": 78,
+            "origin": "feedback",
+            "quote": "I can't tell yet whether two or four trips a month is the most I could handle.",
+            "role": "preference",
+            "source_revision": "67893eff4f209c0dd7058e6df5d5b3baeacd79d2f57d2b4e466c5dd88394bbb8",
+            "start": 0
+          },
+          {
+            "end": 50,
+            "origin": "feedback",
+            "quote": "two or four trips a month",
+            "role": "qualifier",
+            "source_revision": "67893eff4f209c0dd7058e6df5d5b3baeacd79d2f57d2b4e466c5dd88394bbb8",
+            "start": 25
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "uncertain",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 50,
+                "origin": "feedback",
+                "quote": "two or four trips a month",
+                "role": "qualifier",
+                "source_revision": "67893eff4f209c0dd7058e6df5d5b3baeacd79d2f57d2b4e466c5dd88394bbb8",
+                "start": 25
+              },
+              "kind": "frequency",
+              "quote": "two or four trips a month",
+              "source": "feedback",
+              "value": "two or four a month"
+            }
+          ],
+          "referent": "trips per month",
+          "type": "travel_frequency"
+        },
+        "strength": "mild"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I can't tell yet whether two or four trips a month is the most I could handle.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "RF3-009": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "Requests reconsidering the confirmed W-2 hourly minimum rule to 72 USD/hour for future opportunities.",
+        "evidence": {
+          "end": 57,
+          "origin": "feedback",
+          "quote": "Please lower my W-2 minimum to $72 an hour going forward.",
+          "role": "rule_reconsideration",
+          "source_revision": "898a01f899b4e403648494404421b1ff4af17090d245231ce68c02d5af623041",
+          "start": 0
+        },
+        "index": 0,
+        "role": "rule_reconsideration"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "interested",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "REQUIRES_SEPARATE_EXPLICIT_RULE_CONFIRMATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "Please lower my W-2 minimum to $72 an hour going forward.",
+    "profile_fact_candidate": "Please lower my W-2 minimum to $72 an hour going forward.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  },
+  "RF3-010": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": "User reports not currently having the Certified Payroll Professional credential.",
+        "evidence": {
+          "end": 69,
+          "origin": "feedback",
+          "quote": "I don't currently hold the Certified Payroll Professional credential.",
+          "role": "profile_fact",
+          "source_revision": "605954f017edeebabe394e46b9cd75d45d091828a7719aeacc7522a338e11eef",
+          "start": 0
+        },
+        "index": 0,
+        "role": "profile_fact"
+      },
+      {
+        "detail": "Reported compensation for this opportunity is $72.50 per hour on W-2.",
+        "evidence": {
+          "end": 116,
+          "origin": "feedback",
+          "quote": "The recruiter confirmed $72.50 an hour on W-2.",
+          "role": "job_fact",
+          "source_revision": "605954f017edeebabe394e46b9cd75d45d091828a7719aeacc7522a338e11eef",
+          "start": 70
+        },
+        "index": 1,
+        "role": "job_fact"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "rejected",
+    "eligibility_violation": "The confirmed W-2 rate of $72.5 per hour is below the $75 per hour minimum.",
+    "evidence_findings": [],
+    "hard_constraint_action": "REPORT_EXISTING_ELIGIBILITY_VIOLATION",
+    "hard_constraints_mutated": false,
+    "interpretations": [],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I don't currently hold the Certified Payroll Professional credential. The recruiter confirmed $72.50 an hour on W-2.",
+    "profile_fact_candidate": "I don't currently hold the Certified Payroll Professional credential. The confirmed W-2 rate of $72.5 per hour is below the $75 per hour minimum.",
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PROFILE_FACT_REVIEW",
+    "validation_issues": []
+  },
+  "RF3-011": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 60,
+          "origin": "feedback",
+          "quote": "I don't want to pursue procurement operations roles anymore.",
+          "role": "preference",
+          "source_revision": "c4c7153d50b550724a37d3b594f03c1a79ad0f770620e53fbaf5d1662d53c725",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": "explicit_scope_cue",
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "career_category",
+        "display_label": "Procurement operations roles",
+        "evidence": [
+          {
+            "end": 60,
+            "origin": "feedback",
+            "quote": "I don't want to pursue procurement operations roles anymore.",
+            "role": "preference",
+            "source_revision": "c4c7153d50b550724a37d3b594f03c1a79ad0f770620e53fbaf5d1662d53c725",
+            "start": 0
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [],
+          "referent": "procurement operations roles",
+          "type": "career_category"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I don't want to pursue procurement operations roles anymore.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  },
+  "RF3-012": {
+    "clarification_question": null,
+    "clauses": [
+      {
+        "detail": null,
+        "evidence": {
+          "end": 91,
+          "origin": "feedback",
+          "quote": "I'd pass on this job because the first six months are entirely vendor onboarding paperwork.",
+          "role": "preference",
+          "source_revision": "c239274651708cb3f4f29843322e69474b605de0decc241c6eeeffea9147f14e",
+          "start": 0
+        },
+        "index": 0,
+        "role": "preference"
+      }
+    ],
+    "condition_recoveries": [],
+    "decision": "rejected",
+    "eligibility_violation": null,
+    "evidence_findings": [],
+    "hard_constraint_action": "UNCHANGED",
+    "hard_constraints_mutated": false,
+    "interpretations": [
+      {
+        "application_status": "held_for_review",
+        "career_evidence_review": null,
+        "clause_index": 0,
+        "condition": null,
+        "dimension": "role_responsibilities",
+        "display_label": "Dislikes roles dominated by vendor onboarding paperwork",
+        "evidence": [
+          {
+            "end": 91,
+            "origin": "feedback",
+            "quote": "I'd pass on this job because the first six months are entirely vendor onboarding paperwork.",
+            "role": "preference",
+            "source_revision": "c239274651708cb3f4f29843322e69474b605de0decc241c6eeeffea9147f14e",
+            "start": 0
+          },
+          {
+            "end": 49,
+            "origin": "feedback",
+            "quote": "the first six months",
+            "role": "qualifier",
+            "source_revision": "c239274651708cb3f4f29843322e69474b605de0decc241c6eeeffea9147f14e",
+            "start": 29
+          },
+          {
+            "end": 62,
+            "origin": "feedback",
+            "quote": "entirely",
+            "role": "qualifier",
+            "source_revision": "c239274651708cb3f4f29843322e69474b605de0decc241c6eeeffea9147f14e",
+            "start": 54
+          }
+        ],
+        "feature_id": null,
+        "identity_status": "candidate",
+        "polarity": "negative",
+        "scope": {
+          "qualifiers": [
+            {
+              "evidence": {
+                "end": 49,
+                "origin": "feedback",
+                "quote": "the first six months",
+                "role": "qualifier",
+                "source_revision": "c239274651708cb3f4f29843322e69474b605de0decc241c6eeeffea9147f14e",
+                "start": 29
+              },
+              "kind": "duration",
+              "quote": "the first six months",
+              "source": "feedback",
+              "value": "first six months"
+            },
+            {
+              "evidence": {
+                "end": 62,
+                "origin": "feedback",
+                "quote": "entirely",
+                "role": "qualifier",
+                "source_revision": "c239274651708cb3f4f29843322e69474b605de0decc241c6eeeffea9147f14e",
+                "start": 54
+              },
+              "kind": "intensity",
+              "quote": "entirely",
+              "source": "feedback",
+              "value": "entirely"
+            }
+          ],
+          "referent": "vendor onboarding paperwork",
+          "type": "role_feature"
+        },
+        "strength": "strong"
+      }
+    ],
+    "model": "gpt-5.4-2026-03-05",
+    "original_feedback": "I'd pass on this job because the first six months are entirely vendor onboarding paperwork.",
+    "profile_fact_candidate": null,
+    "prompt_version": "feedback-interpretation-v3.0",
+    "review_status": "PENDING_APPROVAL",
+    "validation_issues": []
+  }
+}

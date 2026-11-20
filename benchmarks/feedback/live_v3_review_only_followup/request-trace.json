@@ -1,0 +1,602 @@
+[
+  {
+    "case_id": "RF3-001",
+    "elapsed_seconds": 2.587384,
+    "input_sha256": "7d201ed84fa1edddddca3a8084a49914e36bebbb814b4c66d0855a0593ea2df9",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "7d201ed84fa1edddddca3a8084a49914e36bebbb814b4c66d0855a0593ea2df9",
+    "pass_number": 1,
+    "request_number": 1,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "a6df094b06be1431cd3e22e3bb63f45f651c508bd5474f9b897b03925edd6b93",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.00027,
+        "status": "completed",
+        "validated_sha256": "8c098d3738150e38f9f104f10dfcd6279f100b11c805c9e8f7b5af52a5f5fc79"
+      },
+      "candidate": {
+        "elapsed_seconds": 9.9e-05,
+        "status": "completed",
+        "validated_sha256": "8c098d3738150e38f9f104f10dfcd6279f100b11c805c9e8f7b5af52a5f5fc79"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-002",
+    "elapsed_seconds": 2.113325,
+    "input_sha256": "b3689d429be06965e1707a789918ed80dc8a351bcd1a9ee5cf2b7ca55dbd92ac",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "b3689d429be06965e1707a789918ed80dc8a351bcd1a9ee5cf2b7ca55dbd92ac",
+    "pass_number": 1,
+    "request_number": 2,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "babdc7ea54ca6b8de62d6665d5cc41401bab65336b4b9610acb44833e3ad3357",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000132,
+        "status": "completed",
+        "validated_sha256": "74d5bda5383e136767adee38081f45b9d3c31fadfa2b1b2a78b33fac9c9e187c"
+      },
+      "candidate": {
+        "elapsed_seconds": 0.00011,
+        "status": "completed",
+        "validated_sha256": "0d8b6491d8002ab5e8d01db92947b016a4c697575fc6fd3ae67a53791a492aa7"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-003",
+    "elapsed_seconds": 1.749058,
+    "input_sha256": "9f7727efd97394e3e1c3f685f17c5c478ae6ab822a31e4d440ae5c5039483197",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "9f7727efd97394e3e1c3f685f17c5c478ae6ab822a31e4d440ae5c5039483197",
+    "pass_number": 1,
+    "request_number": 3,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "24fd2bef41261d1ff71af480d9b68ad5755c2def94454098b5b5e6333fa30e86",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000135,
+        "status": "completed",
+        "validated_sha256": "646488459dceb3bb3b8edddeb5f0318a0dcc5ca53d89145aa495b0f9a12d0b45"
+      },
+      "candidate": {
+        "elapsed_seconds": 9.1e-05,
+        "status": "completed",
+        "validated_sha256": "a043f79fab366d1db3a100309118ce871221dde663e25703dedf7f28a3c16518"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-004",
+    "elapsed_seconds": 2.37113,
+    "input_sha256": "7d1886e012e3477ea2947097782523e662a2c82f3dadb74e572e73a5133cb793",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "7d1886e012e3477ea2947097782523e662a2c82f3dadb74e572e73a5133cb793",
+    "pass_number": 1,
+    "request_number": 4,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "9c5668a3b875fceb54de125401322092881d4d8691e129cdaa6402eeede61d3a",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000343,
+        "status": "completed",
+        "validated_sha256": "58294c44b74e478e22dff6da568f2444c249b93fd3acbc035276cf9177aa6538"
+      },
+      "candidate": {
+        "elapsed_seconds": 0.000128,
+        "status": "completed",
+        "validated_sha256": "58294c44b74e478e22dff6da568f2444c249b93fd3acbc035276cf9177aa6538"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-005",
+    "elapsed_seconds": 2.385799,
+    "input_sha256": "8ee88e4199b9618da7452c51b55db1de05c2aba0bf146f731862bc322c42a270",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "8ee88e4199b9618da7452c51b55db1de05c2aba0bf146f731862bc322c42a270",
+    "pass_number": 1,
+    "request_number": 5,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "fd041658d0525b79f187a7b13390520abebe8c4c382d4e04ca5d99fcc7107e0d",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000285,
+        "status": "completed",
+        "validated_sha256": "45c34b2102ad82059f3886570cda4b03a9f4aae8de7da563d058f3206c11f63a"
+      },
+      "candidate": {
+        "elapsed_seconds": 0.000279,
+        "status": "completed",
+        "validated_sha256": "fc2647339aba125033da3d91d4cc3c164b1733ac4f98c5934ce426b5781f6461"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-006",
+    "elapsed_seconds": 1.992789,
+    "input_sha256": "d0f3349b6bb483df0eeed3c3565d91a2fcac2b9dcbf112552c4475afb01d7bec",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "d0f3349b6bb483df0eeed3c3565d91a2fcac2b9dcbf112552c4475afb01d7bec",
+    "pass_number": 1,
+    "request_number": 6,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "43ac1faf67d25824c4b4af7ef27ac98578e8bf34d120cae18b07549110d5ef7d",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000227,
+        "status": "completed",
+        "validated_sha256": "36e12d80e168b7c1b33e7f1aa2c75c395d85dee8c857cfbf8dd9877a2ddff1f1"
+      },
+      "candidate": {
+        "elapsed_seconds": 0.000179,
+        "status": "completed",
+        "validated_sha256": "4b0b9a50aceb93c0f6eac5176b46f360d9706736d7817bac85b0b29a5df1d303"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-007",
+    "elapsed_seconds": 2.324667,
+    "input_sha256": "ab0dbf192426bcd6c7ce43ee1b7befa842511e3c7e35616ad8d4e7b8412714d0",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "ab0dbf192426bcd6c7ce43ee1b7befa842511e3c7e35616ad8d4e7b8412714d0",
+    "pass_number": 1,
+    "request_number": 7,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "67dc7cd440495be757b182a83b3f8f57cf7a75d335664107f07680c8d86cd183",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000556,
+        "status": "completed",
+        "validated_sha256": "cdec75f0119b47cec0ff6fa2e557fdb3c4fe6c5c636375c5881885d94e9876e9"
+      },
+      "candidate": {
+        "elapsed_seconds": 0.000189,
+        "status": "completed",
+        "validated_sha256": "cdec75f0119b47cec0ff6fa2e557fdb3c4fe6c5c636375c5881885d94e9876e9"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-008",
+    "elapsed_seconds": 2.633928,
+    "input_sha256": "dc74639b113937828aa26fcacc6004d2de4b7840dd0f5c6b89b672f6a4503eba",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "dc74639b113937828aa26fcacc6004d2de4b7840dd0f5c6b89b672f6a4503eba",
+    "pass_number": 1,
+    "request_number": 8,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "a7b3f42dd3fabccb2e29ee75bba23f9fde676f3e2dedc2d7d7479fab1c4babe5",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000239,
+        "status": "completed",
+        "validated_sha256": "bc6ef84425bf976fc254c4770991a94e4dd12f8d2f8cdeef92a2b518776b01e2"
+      },
+      "candidate": {
+        "elapsed_seconds": 0.000163,
+        "status": "completed",
+        "validated_sha256": "8084189167a373e047bb3f55ef2271bd7eef4554d2650dcf073f9090ae67f819"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-009",
+    "elapsed_seconds": 1.983719,
+    "input_sha256": "d6e64914b106a630ea3a5413da0357415683db8776133878f5a06683abc1ad64",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "d6e64914b106a630ea3a5413da0357415683db8776133878f5a06683abc1ad64",
+    "pass_number": 1,
+    "request_number": 9,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "9ac67074297ce5d2c5caa839ec06686e79142a6d0ff25d094aca4e5cdbe04e39",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000163,
+        "status": "completed",
+        "validated_sha256": "8ad80c1278865afeb43c1f56fd33161e8c0522de71fcc1c582f65f6a4fdf9c8d"
+      },
+      "candidate": {
+        "elapsed_seconds": 7.6e-05,
+        "status": "completed",
+        "validated_sha256": "8ad80c1278865afeb43c1f56fd33161e8c0522de71fcc1c582f65f6a4fdf9c8d"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-010",
+    "elapsed_seconds": 2.131099,
+    "input_sha256": "e7aa5d53e87087d722cf3c5fcb473b7d1a8acccf547474b8041c4a70c4c21fcd",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "e7aa5d53e87087d722cf3c5fcb473b7d1a8acccf547474b8041c4a70c4c21fcd",
+    "pass_number": 1,
+    "request_number": 10,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "2134781cfa79211f4fac19a7acee8c8deae502b9bc632e0eec6a23f399648d10",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000156,
+        "status": "completed",
+        "validated_sha256": "434b18519ab1a41a672422922f0b9f4fd52a522e453ad78cc4ecc434d2a87e6f"
+      },
+      "candidate": {
+        "elapsed_seconds": 7.5e-05,
+        "status": "completed",
+        "validated_sha256": "434b18519ab1a41a672422922f0b9f4fd52a522e453ad78cc4ecc434d2a87e6f"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-011",
+    "elapsed_seconds": 1.722334,
+    "input_sha256": "ddbb7c7d1f27c5dd122aedfb9fae1d66e7956c2303b2fe01887632339055b3cb",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "ddbb7c7d1f27c5dd122aedfb9fae1d66e7956c2303b2fe01887632339055b3cb",
+    "pass_number": 1,
+    "request_number": 11,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "1981d7fdbe47e90f2d8ddda78529b35809392428b92d97d3ed255ea5d958fbf6",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000227,
+        "status": "completed",
+        "validated_sha256": "4c5d351a33f47e443a8e9e06c51415fb9275a00eb2577d9b0211e22cb82e6f39"
+      },
+      "candidate": {
+        "elapsed_seconds": 0.000172,
+        "status": "completed",
+        "validated_sha256": "4c5d351a33f47e443a8e9e06c51415fb9275a00eb2577d9b0211e22cb82e6f39"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-012",
+    "elapsed_seconds": 2.597609,
+    "input_sha256": "0483ecfcb72b4757a7d51a178b009b48df60095bf6bdf681c537a760358a8f2b",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "0483ecfcb72b4757a7d51a178b009b48df60095bf6bdf681c537a760358a8f2b",
+    "pass_number": 1,
+    "request_number": 12,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "1bdc9ea8846d6e35c7b55827f9bdbb69b3999f407d116999880e0e5b4c8b346b",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000403,
+        "status": "completed",
+        "validated_sha256": "5ec553bd16347f89ac8ca992305d94a577a7753e2e9691dba11675dc3b21b8a9"
+      },
+      "candidate": {
+        "elapsed_seconds": 0.000209,
+        "status": "completed",
+        "validated_sha256": "5ec553bd16347f89ac8ca992305d94a577a7753e2e9691dba11675dc3b21b8a9"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-001",
+    "elapsed_seconds": 1.564822,
+    "input_sha256": "7d201ed84fa1edddddca3a8084a49914e36bebbb814b4c66d0855a0593ea2df9",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "7d201ed84fa1edddddca3a8084a49914e36bebbb814b4c66d0855a0593ea2df9",
+    "pass_number": 2,
+    "request_number": 13,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "78fb4ee451bba7009d2ba95252ae1f4eec5a69395951fc2c91e4e7c07694d207",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000161,
+        "status": "completed",
+        "validated_sha256": "45e3287753b376a537c5f7d8e31394d9dbddb31048faec456ead41b5b49b9eb7"
+      },
+      "candidate": {
+        "elapsed_seconds": 7.6e-05,
+        "status": "completed",
+        "validated_sha256": "45e3287753b376a537c5f7d8e31394d9dbddb31048faec456ead41b5b49b9eb7"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-002",
+    "elapsed_seconds": 1.8383,
+    "input_sha256": "b3689d429be06965e1707a789918ed80dc8a351bcd1a9ee5cf2b7ca55dbd92ac",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "b3689d429be06965e1707a789918ed80dc8a351bcd1a9ee5cf2b7ca55dbd92ac",
+    "pass_number": 2,
+    "request_number": 14,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "babdc7ea54ca6b8de62d6665d5cc41401bab65336b4b9610acb44833e3ad3357",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000137,
+        "status": "completed",
+        "validated_sha256": "74d5bda5383e136767adee38081f45b9d3c31fadfa2b1b2a78b33fac9c9e187c"
+      },
+      "candidate": {
+        "elapsed_seconds": 8.7e-05,
+        "status": "completed",
+        "validated_sha256": "0d8b6491d8002ab5e8d01db92947b016a4c697575fc6fd3ae67a53791a492aa7"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-003",
+    "elapsed_seconds": 1.668025,
+    "input_sha256": "9f7727efd97394e3e1c3f685f17c5c478ae6ab822a31e4d440ae5c5039483197",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "9f7727efd97394e3e1c3f685f17c5c478ae6ab822a31e4d440ae5c5039483197",
+    "pass_number": 2,
+    "request_number": 15,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "24fd2bef41261d1ff71af480d9b68ad5755c2def94454098b5b5e6333fa30e86",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000165,
+        "status": "completed",
+        "validated_sha256": "646488459dceb3bb3b8edddeb5f0318a0dcc5ca53d89145aa495b0f9a12d0b45"
+      },
+      "candidate": {
+        "elapsed_seconds": 8.6e-05,
+        "status": "completed",
+        "validated_sha256": "a043f79fab366d1db3a100309118ce871221dde663e25703dedf7f28a3c16518"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-004",
+    "elapsed_seconds": 2.115441,
+    "input_sha256": "7d1886e012e3477ea2947097782523e662a2c82f3dadb74e572e73a5133cb793",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "7d1886e012e3477ea2947097782523e662a2c82f3dadb74e572e73a5133cb793",
+    "pass_number": 2,
+    "request_number": 16,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "440b25455acd256ed7b6ca1e5065a1913b4da4efcc58101b3350067e9f9fc46f",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000209,
+        "status": "completed",
+        "validated_sha256": "f1a01deb8704bcb05516c75aa6e692ff6b88be7333c6b05f1e746328134edccd"
+      },
+      "candidate": {
+        "elapsed_seconds": 0.000186,
+        "status": "completed",
+        "validated_sha256": "f1a01deb8704bcb05516c75aa6e692ff6b88be7333c6b05f1e746328134edccd"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-005",
+    "elapsed_seconds": 2.077606,
+    "input_sha256": "8ee88e4199b9618da7452c51b55db1de05c2aba0bf146f731862bc322c42a270",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "8ee88e4199b9618da7452c51b55db1de05c2aba0bf146f731862bc322c42a270",
+    "pass_number": 2,
+    "request_number": 17,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "fd041658d0525b79f187a7b13390520abebe8c4c382d4e04ca5d99fcc7107e0d",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000249,
+        "status": "completed",
+        "validated_sha256": "45c34b2102ad82059f3886570cda4b03a9f4aae8de7da563d058f3206c11f63a"
+      },
+      "candidate": {
+        "elapsed_seconds": 0.000219,
+        "status": "completed",
+        "validated_sha256": "fc2647339aba125033da3d91d4cc3c164b1733ac4f98c5934ce426b5781f6461"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-006",
+    "elapsed_seconds": 2.034812,
+    "input_sha256": "d0f3349b6bb483df0eeed3c3565d91a2fcac2b9dcbf112552c4475afb01d7bec",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "d0f3349b6bb483df0eeed3c3565d91a2fcac2b9dcbf112552c4475afb01d7bec",
+    "pass_number": 2,
+    "request_number": 18,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "43ac1faf67d25824c4b4af7ef27ac98578e8bf34d120cae18b07549110d5ef7d",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000249,
+        "status": "completed",
+        "validated_sha256": "36e12d80e168b7c1b33e7f1aa2c75c395d85dee8c857cfbf8dd9877a2ddff1f1"
+      },
+      "candidate": {
+        "elapsed_seconds": 0.000169,
+        "status": "completed",
+        "validated_sha256": "4b0b9a50aceb93c0f6eac5176b46f360d9706736d7817bac85b0b29a5df1d303"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-007",
+    "elapsed_seconds": 2.350324,
+    "input_sha256": "ab0dbf192426bcd6c7ce43ee1b7befa842511e3c7e35616ad8d4e7b8412714d0",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "ab0dbf192426bcd6c7ce43ee1b7befa842511e3c7e35616ad8d4e7b8412714d0",
+    "pass_number": 2,
+    "request_number": 19,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "67dc7cd440495be757b182a83b3f8f57cf7a75d335664107f07680c8d86cd183",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000217,
+        "status": "completed",
+        "validated_sha256": "cdec75f0119b47cec0ff6fa2e557fdb3c4fe6c5c636375c5881885d94e9876e9"
+      },
+      "candidate": {
+        "elapsed_seconds": 0.000129,
+        "status": "completed",
+        "validated_sha256": "cdec75f0119b47cec0ff6fa2e557fdb3c4fe6c5c636375c5881885d94e9876e9"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-008",
+    "elapsed_seconds": 1.915492,
+    "input_sha256": "dc74639b113937828aa26fcacc6004d2de4b7840dd0f5c6b89b672f6a4503eba",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "dc74639b113937828aa26fcacc6004d2de4b7840dd0f5c6b89b672f6a4503eba",
+    "pass_number": 2,
+    "request_number": 20,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "b3422a65d2f1acdad069cbaf4212c77f0623c11c7bfb93cbfcfa3873a9ede09b",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.00016,
+        "status": "completed",
+        "validated_sha256": "9e3d03a0315cf4b230fd660b555654b49f5445cf92d77617ce72b36d6919232d"
+      },
+      "candidate": {
+        "elapsed_seconds": 6.3e-05,
+        "status": "completed",
+        "validated_sha256": "9e3d03a0315cf4b230fd660b555654b49f5445cf92d77617ce72b36d6919232d"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-009",
+    "elapsed_seconds": 1.717572,
+    "input_sha256": "d6e64914b106a630ea3a5413da0357415683db8776133878f5a06683abc1ad64",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "d6e64914b106a630ea3a5413da0357415683db8776133878f5a06683abc1ad64",
+    "pass_number": 2,
+    "request_number": 21,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "ba0032924650da1a4411a830d54b4474734f2ff85af36b61051a969abec4e5e8",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.00019,
+        "status": "completed",
+        "validated_sha256": "77dce9caf30de3e07baeefd7a8baa775529c09efcc04aedc2412d83a6fd67c69"
+      },
+      "candidate": {
+        "elapsed_seconds": 7.6e-05,
+        "status": "completed",
+        "validated_sha256": "77dce9caf30de3e07baeefd7a8baa775529c09efcc04aedc2412d83a6fd67c69"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-010",
+    "elapsed_seconds": 1.728816,
+    "input_sha256": "e7aa5d53e87087d722cf3c5fcb473b7d1a8acccf547474b8041c4a70c4c21fcd",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "e7aa5d53e87087d722cf3c5fcb473b7d1a8acccf547474b8041c4a70c4c21fcd",
+    "pass_number": 2,
+    "request_number": 22,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "2134781cfa79211f4fac19a7acee8c8deae502b9bc632e0eec6a23f399648d10",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000148,
+        "status": "completed",
+        "validated_sha256": "434b18519ab1a41a672422922f0b9f4fd52a522e453ad78cc4ecc434d2a87e6f"
+      },
+      "candidate": {
+        "elapsed_seconds": 7.3e-05,
+        "status": "completed",
+        "validated_sha256": "434b18519ab1a41a672422922f0b9f4fd52a522e453ad78cc4ecc434d2a87e6f"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-011",
+    "elapsed_seconds": 1.542557,
+    "input_sha256": "ddbb7c7d1f27c5dd122aedfb9fae1d66e7956c2303b2fe01887632339055b3cb",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "ddbb7c7d1f27c5dd122aedfb9fae1d66e7956c2303b2fe01887632339055b3cb",
+    "pass_number": 2,
+    "request_number": 23,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "1981d7fdbe47e90f2d8ddda78529b35809392428b92d97d3ed255ea5d958fbf6",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.00028,
+        "status": "completed",
+        "validated_sha256": "4c5d351a33f47e443a8e9e06c51415fb9275a00eb2577d9b0211e22cb82e6f39"
+      },
+      "candidate": {
+        "elapsed_seconds": 0.000109,
+        "status": "completed",
+        "validated_sha256": "4c5d351a33f47e443a8e9e06c51415fb9275a00eb2577d9b0211e22cb82e6f39"
+      }
+    }
+  },
+  {
+    "case_id": "RF3-012",
+    "elapsed_seconds": 2.174655,
+    "input_sha256": "0483ecfcb72b4757a7d51a178b009b48df60095bf6bdf681c537a760358a8f2b",
+    "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+    "origin_input_sha256": "0483ecfcb72b4757a7d51a178b009b48df60095bf6bdf681c537a760358a8f2b",
+    "pass_number": 2,
+    "request_number": 24,
+    "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+    "response_sha256": "1bdc9ea8846d6e35c7b55827f9bdbb69b3999f407d116999880e0e5b4c8b346b",
+    "stage": "classifier",
+    "status": "completed",
+    "validations": {
+      "baseline": {
+        "elapsed_seconds": 0.000325,
+        "status": "completed",
+        "validated_sha256": "5ec553bd16347f89ac8ca992305d94a577a7753e2e9691dba11675dc3b21b8a9"
+      },
+      "candidate": {
+        "elapsed_seconds": 0.000185,
+        "status": "completed",
+        "validated_sha256": "5ec553bd16347f89ac8ca992305d94a577a7753e2e9691dba11675dc3b21b8a9"
+      }
+    }
+  }
+]

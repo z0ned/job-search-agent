@@ -1,0 +1,141 @@
+{
+  "RF3-001": {
+    "coalesced_intensity_clause_indices": [],
+    "condition_recoveries": [],
+    "joined_employer_exception": false,
+    "new_scope_findings": [],
+    "posting_verification_repair": null,
+    "travel_count_repairs": []
+  },
+  "RF3-002": {
+    "coalesced_intensity_clause_indices": [],
+    "condition_recoveries": [],
+    "joined_employer_exception": false,
+    "new_scope_findings": [],
+    "posting_verification_repair": {
+      "after": "Could you verify whether I'd be covering Saturdays every week or just filling in when somebody's out?",
+      "before": "What specifically influenced your reaction to this opportunity?",
+      "clause_index": 0,
+      "evidence": {
+        "end": 100,
+        "origin": "feedback",
+        "quote": "Could you check whether I'd be covering Saturdays every week or just filling in when somebody's out?",
+        "role": "posting_verification",
+        "source_revision": "31f74c75363022ad2f0bc717a219fefaceb7eb21bae0001ed379680c06e4b7ba",
+        "start": 0
+      }
+    },
+    "travel_count_repairs": []
+  },
+  "RF3-003": {
+    "coalesced_intensity_clause_indices": [],
+    "condition_recoveries": [],
+    "joined_employer_exception": false,
+    "new_scope_findings": [],
+    "posting_verification_repair": {
+      "after": "Could you verify whether the $192,000 they quote is base pay or includes the annual bonus?",
+      "before": "What specifically influenced your reaction to this opportunity?",
+      "clause_index": 0,
+      "evidence": {
+        "end": 89,
+        "origin": "feedback",
+        "quote": "Can you confirm whether the $192,000 they quote is base pay or includes the annual bonus?",
+        "role": "posting_verification",
+        "source_revision": "b748acc562e60d6701a37e4137acac6b212f75d5271b031618320d9fd0bee79b",
+        "start": 0
+      }
+    },
+    "travel_count_repairs": []
+  },
+  "RF3-004": {
+    "coalesced_intensity_clause_indices": [],
+    "condition_recoveries": [],
+    "joined_employer_exception": false,
+    "new_scope_findings": [],
+    "posting_verification_repair": null,
+    "travel_count_repairs": []
+  },
+  "RF3-005": {
+    "coalesced_intensity_clause_indices": [],
+    "condition_recoveries": [],
+    "joined_employer_exception": false,
+    "new_scope_findings": [],
+    "posting_verification_repair": null,
+    "travel_count_repairs": []
+  },
+  "RF3-006": {
+    "coalesced_intensity_clause_indices": [],
+    "condition_recoveries": [],
+    "joined_employer_exception": false,
+    "new_scope_findings": [],
+    "posting_verification_repair": null,
+    "travel_count_repairs": [
+      {
+        "added_quantity": {
+          "evidence": {
+            "end": 35,
+            "origin": "feedback",
+            "quote": "One overnight trip every two months",
+            "role": "qualifier",
+            "source_revision": "5e68ecd248ac70ff56c910371d4566527175d93d2bdff8c1aad79da41a62999a",
+            "start": 0
+          },
+          "kind": "quantity",
+          "quote": "One overnight trip every two months",
+          "source": "feedback",
+          "value": "1"
+        },
+        "clause_index": 0,
+        "signal_index": 0
+      }
+    ]
+  },
+  "RF3-007": {
+    "coalesced_intensity_clause_indices": [],
+    "condition_recoveries": [],
+    "joined_employer_exception": false,
+    "new_scope_findings": [],
+    "posting_verification_repair": null,
+    "travel_count_repairs": []
+  },
+  "RF3-008": {
+    "coalesced_intensity_clause_indices": [],
+    "condition_recoveries": [],
+    "joined_employer_exception": false,
+    "new_scope_findings": [],
+    "posting_verification_repair": null,
+    "travel_count_repairs": []
+  },
+  "RF3-009": {
+    "coalesced_intensity_clause_indices": [],
+    "condition_recoveries": [],
+    "joined_employer_exception": false,
+    "new_scope_findings": [],
+    "posting_verification_repair": null,
+    "travel_count_repairs": []
+  },
+  "RF3-010": {
+    "coalesced_intensity_clause_indices": [],
+    "condition_recoveries": [],
+    "joined_employer_exception": false,
+    "new_scope_findings": [],
+    "posting_verification_repair": null,
+    "travel_count_repairs": []
+  },
+  "RF3-011": {
+    "coalesced_intensity_clause_indices": [],
+    "condition_recoveries": [],
+    "joined_employer_exception": false,
+    "new_scope_findings": [],
+    "posting_verification_repair": null,
+    "travel_count_repairs": []
+  },
+  "RF3-012": {
+    "coalesced_intensity_clause_indices": [],
+    "condition_recoveries": [],
+    "joined_employer_exception": false,
+    "new_scope_findings": [],
+    "posting_verification_repair": null,
+    "travel_count_repairs": []
+  }
+}

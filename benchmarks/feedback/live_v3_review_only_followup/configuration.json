@@ -1,0 +1,202 @@
+{
+  "arms": {
+    "baseline": {
+      "prior_review_only_candidate": true
+    },
+    "candidate": {
+      "prior_review_only_candidate": true,
+      "repair_posting_verification_question": true,
+      "repair_travel_count": true
+    }
+  },
+  "case_input_sha256": {
+    "RF3-001": "7d201ed84fa1edddddca3a8084a49914e36bebbb814b4c66d0855a0593ea2df9",
+    "RF3-002": "b3689d429be06965e1707a789918ed80dc8a351bcd1a9ee5cf2b7ca55dbd92ac",
+    "RF3-003": "9f7727efd97394e3e1c3f685f17c5c478ae6ab822a31e4d440ae5c5039483197",
+    "RF3-004": "7d1886e012e3477ea2947097782523e662a2c82f3dadb74e572e73a5133cb793",
+    "RF3-005": "8ee88e4199b9618da7452c51b55db1de05c2aba0bf146f731862bc322c42a270",
+    "RF3-006": "d0f3349b6bb483df0eeed3c3565d91a2fcac2b9dcbf112552c4475afb01d7bec",
+    "RF3-007": "ab0dbf192426bcd6c7ce43ee1b7befa842511e3c7e35616ad8d4e7b8412714d0",
+    "RF3-008": "dc74639b113937828aa26fcacc6004d2de4b7840dd0f5c6b89b672f6a4503eba",
+    "RF3-009": "d6e64914b106a630ea3a5413da0357415683db8776133878f5a06683abc1ad64",
+    "RF3-010": "e7aa5d53e87087d722cf3c5fcb473b7d1a8acccf547474b8041c4a70c4c21fcd",
+    "RF3-011": "ddbb7c7d1f27c5dd122aedfb9fae1d66e7956c2303b2fe01887632339055b3cb",
+    "RF3-012": "0483ecfcb72b4757a7d51a178b009b48df60095bf6bdf681c537a760358a8f2b"
+  },
+  "expected_requests": 24,
+  "fixtures": {
+    "fresh": {
+      "file": "benchmarks/feedback/review_only_followup_holdout_v3.json",
+      "sha256": "6076be7705b3cbfd151aa4cb8599e7d5bc1eb0fd8fd389f5baa811e7f4e1b403",
+      "version": "3.0-review-only-followup-holdout"
+    },
+    "gold": {
+      "file": "benchmarks/feedback/gold_cases_v3.json",
+      "sha256": "600677336c0ddcbc6dfe67a2532426a083300661100d8a8ea507680903177bbe",
+      "version": "3.0-gold"
+    }
+  },
+  "hard_rules_sha256": "949c019e2bd8122cbf7d05b6d1227e2302fe2437416ee995a647890dffbeb6c4",
+  "high_risk_case_ids": [
+    "RF3-001",
+    "RF3-002",
+    "RF3-003",
+    "RF3-004",
+    "RF3-008",
+    "RF3-009",
+    "RF3-010",
+    "RF3-011",
+    "RF3-012"
+  ],
+  "instructions_sha256": "2cdb2916d25bd33a1f12383872c99d694b482bc06df8ac3b9f1c66c813992fd2",
+  "mode": "review_only_followup_trial",
+  "model": "gpt-5.4-2026-03-05",
+  "planned_requests": [
+    {
+      "case_id": "RF3-001",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-002",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-003",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-004",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-005",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-006",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-007",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-008",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-009",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-010",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-011",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-012",
+      "pass_number": 1,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-001",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-002",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-003",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-004",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-005",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-006",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-007",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-008",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-009",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-010",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-011",
+      "pass_number": 2,
+      "stage": "classifier"
+    },
+    {
+      "case_id": "RF3-012",
+      "pass_number": 2,
+      "stage": "classifier"
+    }
+  ],
+  "python_version": "3.12.14",
+  "response_schema_name": "feedback_extraction_v3",
+  "response_schema_sha256": "b319d94eaa19f2210d012ee3d54a5c153ca55308ce20d6c759439c6159db1d27",
+  "shared_raw_responses": true,
+  "source_sha256": {
+    "feedback.py": "105f23392a2358e53db8699706ff7b7f14dd12a57075f86d6bc8cf3efe38db01",
+    "feedback_autonomy_review_v3.py": "b918d76b1ddc78fcd8bd3e5851ff411e6850158ca96cbb3e93f8cf9e2ff11795",
+    "feedback_conditions_v3.py": "089550696cbe0cb0a7e82f3e21689a150cccb625d92b051b0201b8a50a1bfbb9",
+    "feedback_employer_context_repair_v3.py": "77a7e27be66ee3094664a8bb3e153082e25cfa5f91c396045572ed9a6f4af0bd",
+    "feedback_enthusiasm_scope_v3.py": "a9af48018de711d037dd0fea4a3b43032ac3ba1932f18ad0f6661c5ebc93ae32",
+    "feedback_evidence_checks_v3.py": "05fbe3ec06285ae475c4f151673893fe78680d46eb717df45a3ddcd689ae4415",
+    "feedback_extraction_v3.py": "a7697c6a9bca257f85b3f88c6813c9563855198f061fb4e6a89a7373007bfce1",
+    "feedback_intensity_repair_v3.py": "ca4ff9ba3dddbec7d3aa214924a70c03f50cb7395cd8ace212bbb47f824384ff",
+    "feedback_posting_verification_repair_v3.py": "959472463d5ea8614472840e08fe19da152eb0a18e75936d7e8aa1bc8bd5916c",
+    "feedback_replay_v3.py": "82f56979c4b4dd624e1b1d4973c3fc45d78ed07eb466c9a7824e56c3413a6cf7",
+    "feedback_review_only_followup_trial_v3.py": "167ef409dd64ed4db91a66ab88457d5132f4ff3f995090f0945afc5527eb9f29",
+    "feedback_review_only_trial_v3.py": "0176096fc3e37b079bca4308fecbc1a9e9e96e2a8d84dce0d8abe20f28f6f6a3",
+    "feedback_rules_v3.py": "c9b20f588a946a23fbe8064052b8f190710c602917272a5e4a533d08307b771b",
+    "feedback_taxonomy.py": "a8753ce50757a97550932f4e2a45f5be0d897a9332355d4c95b68f116377ef62",
+    "feedback_travel_count_repair_v3.py": "85c6937a60fa6f03d770fba945da1297cba72b4d99562ae50b20de0571813f33",
+    "feedback_v3.py": "6f48aaec35bec351d293a1559c34024cdeb0e068daaf675f10f06dbac285b2b2",
+    "feedback_validation_repair_trial_v3.py": "581300d6a4e8abbae1138c90ebe9d55085c7afa6e7538ffc7d23438c8adba7e4"
+  },
+  "started_at_utc": "2026-11-20T01:04:37+00:00",
+  "temperature": 0.1,
+  "validator_prompt_version_field": "feedback-interpretation-v3.0"
+}

@@ -1,0 +1,937 @@
+{
+  "capture_report_sha256": "af52014349d379270ab6d0c5d23ad93040cac5d8ecab0f4c0575c3a92471df4d",
+  "configuration_sha256": "f721872bb7bd9541007b2503ea4cd5d354b7d31e092139a4235473d3cde167d1",
+  "masked_packets_sha256": {
+    "review-pass-1-part-1.json": "751f145b539e8a7f3d3039b4dae40f88fbbb0c83615980aef4825f1db3a702f8",
+    "review-pass-1-part-2.json": "e1b6cfac93b45eadc093548d5cbbe936e1de509d4ca4455cdc6c71715fafce50",
+    "review-pass-2-part-1.json": "f9b03b8d07a28197e4f49242b57c9044236578f5f974505418ff2751502ea248",
+    "review-pass-2-part-2.json": "fa5179abe24a080d8c8295145984220b3ea7b02b3ce0da52c651e96d58751330"
+  },
+  "passes": {
+    "1": {
+      "artifacts": {
+        "baseline": {
+          "raw_sha256": "ec1046c49c3422209a381fb61e9542fc949cb9eeaff2ef2443f0f2ff20b7200e",
+          "validated_sha256": "63d1ae031fe0c2bd8043a65165a15e7305bcfce42a6db1088c50f0b0e5173cdb"
+        },
+        "candidate": {
+          "raw_sha256": "ec1046c49c3422209a381fb61e9542fc949cb9eeaff2ef2443f0f2ff20b7200e",
+          "validated_sha256": "bd88e8ae01a7989381e6036119ae39faa5fc67bd9a04fdf5ab78e16cc768084c"
+        }
+      },
+      "mask": {
+        "RF3-001": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RF3-002": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RF3-003": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RF3-004": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RF3-005": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RF3-006": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RF3-007": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RF3-008": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RF3-009": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RF3-010": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RF3-011": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RF3-012": {
+          "A": "candidate",
+          "B": "baseline"
+        }
+      },
+      "repairs_sha256": "3ea68bd121e0b58d141fb2d9b45e36e3313d4566b223662dc3f4a51a0cbc2f09",
+      "verdicts": {
+        "RF3-001": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The verification clause accurately captures the day-trip versus overnight question. The generic clarification asks about the user’s reaction and leaves the trip type unresolved.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The verification clause accurately captures the day-trip versus overnight question. The generic clarification asks about the user’s reaction and leaves the trip type unresolved.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-002": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The grounded verification clause and specific clarification preserve weekly Saturday coverage versus filling in during absences. No preference is inferred.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The verification clause is grounded. The generic clarification asks about the user’s reaction and leaves the specific Saturday coverage question unresolved.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-003": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The grounded verification clause and specific clarification ask whether $192,000 is base pay or includes the annual bonus. No compensation preference or eligibility change is inferred.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The verification clause is grounded. The generic clarification asks about the user’s reaction and leaves the specific salary breakdown unresolved.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-004": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The grounded, strong preference for personally running usability tests is held for approval. The conference-travel funding question stays in a separate posting verification clause.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The grounded, strong preference for personally running usability tests is held for approval. The conference-travel funding question stays in a separate posting verification clause.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-005": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The signal preserves the mild acceptance of up to three client trips per quarter. The anchored frequency supports the upper bound and the preference is held for approval.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The signal preserves the mild acceptance of up to three client trips per quarter. The anchored frequency supports the upper bound and the preference is held for approval.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-006": {
+          "A": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The raw and validated scopes preserve the overnight referent and two-month interval but omit the explicit count of one. The claims they express are grounded and the preference is routed for ordinary review.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The raw signal omits the explicit count of one. Validation adds a quantity of one anchored to the overnight trip phrase and preserves the two-month interval. The complete preference is held for approval.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-007": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both stages preserve the monthly cadence and the user choosing the travel days, without specifying a trip count. The evidence anchors are exact.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both stages preserve the monthly cadence and the user choosing the travel days, without specifying a trip count. The evidence anchors are exact.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-008": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The travel-frequency signal reflects uncertainty about the two candidate amounts, with exact evidence and no asserted cap. It does not encode the uncertainty as a maximum or ask which monthly maximum the user could handle, and remains pending approval.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The travel-frequency signal reflects uncertainty about the two candidate amounts, with exact evidence and no asserted cap. It does not encode the uncertainty as a maximum or ask which monthly maximum the user could handle, and remains pending approval.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-009": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The raw clause and concrete review candidate retain the requested prospective $72 W-2 hourly floor. The validated action requires separate confirmation and leaves the confirmed $75 rule intact.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The raw clause and concrete review candidate retain the requested prospective $72 W-2 hourly floor. The validated action requires separate confirmation and leaves the confirmed $75 rule intact.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-010": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "Both stages preserve the current absence of the named credential. The final candidate includes that fact, and the separately authorized eligibility report compares the verified $72.50 W-2 rate with the confirmed $75 floor without changing the rule.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "Both stages preserve the current absence of the named credential. The final candidate includes that fact, and the separately authorized eligibility report compares the verified $72.50 W-2 rate with the confirmed $75 floor without changing the rule.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-011": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both stages correctly capture the explicit, strong negative preference about pursuing procurement operations roles. The final signal is held for review with no hard-rule change.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "Both stages correctly capture the explicit, strong negative preference about pursuing procurement operations roles. The final signal is held for review with no hard-rule change.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-012": {
+          "A": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [],
+            "evidence_grounded": false,
+            "notes": "The evidence spans and the first-six-months and entirely qualifier values are exact. The display label asserts a general dislike of roles dominated by paperwork, broadening a single-posting reaction and weakening its exclusive workload share. The approval routing is appropriate.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": false,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [],
+            "evidence_grounded": false,
+            "notes": "The evidence spans and the first-six-months and entirely qualifier values are exact. The display label asserts a general dislike of roles dominated by paperwork, broadening a single-posting reaction and weakening its exclusive workload share. The approval routing is appropriate.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": false,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        }
+      }
+    },
+    "2": {
+      "artifacts": {
+        "baseline": {
+          "raw_sha256": "cdf65e041ea6da3fb378c779259f15ee5b36ea28b85a7d7b10e68055474a5cb0",
+          "validated_sha256": "fad55e81217382748b3426740fb540c66ba1bf3fc4ecbedcba82f126082f84ac"
+        },
+        "candidate": {
+          "raw_sha256": "cdf65e041ea6da3fb378c779259f15ee5b36ea28b85a7d7b10e68055474a5cb0",
+          "validated_sha256": "e0444b9c9db2c8061353a62b280564dc4650156191f47e84dfa631725eace7e4"
+        }
+      },
+      "mask": {
+        "RF3-001": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RF3-002": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RF3-003": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RF3-004": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RF3-005": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RF3-006": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RF3-007": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RF3-008": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RF3-009": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RF3-010": {
+          "A": "baseline",
+          "B": "candidate"
+        },
+        "RF3-011": {
+          "A": "candidate",
+          "B": "baseline"
+        },
+        "RF3-012": {
+          "A": "candidate",
+          "B": "baseline"
+        }
+      },
+      "repairs_sha256": "3ea68bd121e0b58d141fb2d9b45e36e3313d4566b223662dc3f4a51a0cbc2f09",
+      "verdicts": {
+        "RF3-001": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The exact feedback at [0,101), “The listing just says 'site visits.' Can you find out whether those are day trips or overnight stays?”, supports a posting verification request and no preference signal. The generic reaction question leaves the day-trip versus overnight distinction unasked. The hard-rule action is unchanged.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The exact feedback at [0,101), “The listing just says 'site visits.' Can you find out whether those are day trips or overnight stays?”, supports a posting verification request and no preference signal. The generic reaction question leaves the day-trip versus overnight distinction unasked. The hard-rule action is unchanged.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-002": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The exact feedback at [0,100), “Could you check whether I'd be covering Saturdays every week or just filling in when somebody's out?”, supports a posting verification request. It supplies no preference or reason for rejection. The final question retains weekly coverage versus filling in for absences. The hard-rule action is unchanged.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The exact feedback at [0,100), “Could you check whether I'd be covering Saturdays every week or just filling in when somebody's out?”, supports a posting verification request. It supplies no preference or reason for rejection. The generic reaction question leaves weekly coverage versus filling in for absences unasked. The hard-rule action is unchanged.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-003": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The exact feedback at [0,89), “Can you confirm whether the $192,000 they quote is base pay or includes the annual bonus?”, supports verification of what the quoted figure includes. It supplies no confirmed base amount or compensation preference. The generic reaction question leaves base pay versus inclusion of the annual bonus unasked. The hard-rule action is unchanged.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The exact feedback at [0,89), “Can you confirm whether the $192,000 they quote is base pay or includes the annual bonus?”, supports verification of what the quoted figure includes. It supplies no confirmed base amount or compensation preference. The final question retains the $192,000 amount and asks whether it is base pay or includes the annual bonus. The hard-rule action is unchanged.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-004": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "“I really like running usability tests myself.” [0,45) supports the strong positive preference for hands-on usability testing. “Can you check whether their learning budget covers conference travel?” [46,115) is retained as independent posting verification. The role-responsibilities signal has no conference-travel condition and is held for ordinary approval. The hard-rule action is unchanged.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "“I really like running usability tests myself.” [0,45) supports the strong positive preference for hands-on usability testing. “Can you check whether their learning budget covers conference travel?” [46,115) is retained as independent posting verification. The role-responsibilities signal has no conference-travel condition and is held for ordinary approval. The hard-rule action is unchanged.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-005": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "“I'd be fine making up to three client trips per quarter.” [0,56) supports mild positive acceptance of client travel. “up to three client trips per quarter” [19,55) anchors both the upper bound and the quarterly period, which the scope preserves. The preference is held for ordinary approval. The hard-rule action is unchanged.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "“I'd be fine making up to three client trips per quarter.” [0,56) supports mild positive acceptance of client travel. “up to three client trips per quarter” [19,55) anchors both the upper bound and the quarterly period, which the scope preserves. The preference is held for ordinary approval. The hard-rule action is unchanged.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-006": {
+          "A": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "“One overnight trip every two months is about right for me.” [0,58) anchors mild acceptance of an overnight-travel cadence, and “every two months” [19,35) anchors the interval. The raw structured signal omits the count one. The final scope still lacks the explicit trip count and loses the full stated cadence. The quotes support the travel type and interval actually recorded. The preference is held for ordinary approval. The hard-rule action is unchanged.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "“One overnight trip every two months is about right for me.” [0,58) anchors mild acceptance of an overnight-travel cadence, and “every two months” [19,35) anchors the interval. The raw structured signal omits the count one. The final scope adds the quantity 1, anchored by “One overnight trip every two months” [0,35). The two-month interval and mild polarity preserve the stated cadence as a preference. The preference is held for ordinary approval. The hard-rule action is unchanged.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-007": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The signal keeps monthly work travel and makes acceptance conditional on choosing the travel days. The feedback anchors are exact and the preference is held for review.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The signal keeps monthly work travel and makes acceptance conditional on choosing the travel days. The feedback anchors are exact and the preference is held for review.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-008": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The feedback quote is exact and no limit is inferred. The clarification asks generally about acceptable travel frequency and omits the concrete unresolved choice between two and four trips per month.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The feedback quote is exact and no limit is inferred. The clarification asks generally about acceptable travel frequency and omits the concrete unresolved choice between two and four trips per month.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": false,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-009": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The exact feedback supports a proposed W-2 minimum of $72 per hour for future opportunities. The final action requires separate confirmation and leaves the existing $75 minimum in force.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The exact feedback supports a proposed W-2 minimum of $72 per hour for future opportunities. The final action requires separate confirmation and leaves the existing $75 minimum in force.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-010": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The exact clauses support the current credential statement and the W-2 compensation report. Structured job context verifies $72.50 per hour, so reporting the conflict with the $75 floor is authorized. The credential is held for profile review.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [],
+            "evidence_grounded": true,
+            "notes": "The exact clauses support the current credential statement and the W-2 compensation report. Structured job context verifies $72.50 per hour, so reporting the conflict with the $75 floor is authorized. The credential is held for profile review.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-011": {
+          "A": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The exact feedback explicitly excludes procurement operations roles. Both signals keep that career category and strong negative polarity, and the final proposal is held for review.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": true,
+            "equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "evidence_grounded": true,
+            "notes": "The exact feedback explicitly excludes procurement operations roles. Both signals keep that career category and strong negative polarity, and the final proposal is held for review.",
+            "raw_equivalent_pairs": [
+              [
+                1,
+                1
+              ]
+            ],
+            "raw_evidence_grounded": true,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        },
+        "RF3-012": {
+          "A": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [],
+            "evidence_grounded": false,
+            "notes": "The anchors are exact and the structured qualifiers retain the first six months and entirely. The label generalizes to roles dominated by vendor onboarding paperwork, loosening the share and omitting the initial-period boundary. The pending review action is appropriate.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": false,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          },
+          "B": {
+            "clear_dimension_scope_correct": false,
+            "equivalent_pairs": [],
+            "evidence_grounded": false,
+            "notes": "The anchors are exact and the structured qualifiers retain the first six months and entirely. The label generalizes to roles dominated by vendor onboarding paperwork, loosening the share and omitting the initial-period boundary. The pending review action is appropriate.",
+            "raw_equivalent_pairs": [],
+            "raw_evidence_grounded": false,
+            "raw_unsupported_career_downgrade": false,
+            "resolution_adequate": true,
+            "unauthorized_hard_rule_action": false,
+            "unsupported_career_downgrade": false
+          }
+        }
+      }
+    }
+  },
+  "reference_sha256": "6076be7705b3cbfd151aa4cb8599e7d5bc1eb0fd8fd389f5baa811e7f4e1b403"
+}
